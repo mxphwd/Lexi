@@ -111,6 +111,7 @@ export function LexiInterface() {
         <form className="composer-form" onSubmit={submitMessage}>
           <div className={`composer-frame state-${shellState}`}>
             <div className="composer-glow" aria-hidden="true" />
+            <div className="stop-light" aria-hidden="true" />
             <div className="composer-inner">
               <button
                 className="about-trigger"
@@ -138,13 +139,19 @@ export function LexiInterface() {
                 onKeyDown={handleComposerKeyDown}
               />
               <button
-                className={`send-button ${composerState === "thinking" ? "is-pause" : ""}`}
+                className={`send-button ${composerState !== "idle" ? "is-pause" : ""}`}
                 type={composerState === "thinking" ? "button" : "submit"}
                 disabled={composerState !== "thinking" && !canSend}
-                aria-label={composerState === "thinking" ? "Stop Lexi" : "Send message"}
+                aria-label={
+                  composerState === "thinking"
+                    ? "Stop Lexi"
+                    : composerState === "stopping"
+                      ? "Stopping Lexi"
+                      : "Send message"
+                }
                 onClick={composerState === "thinking" ? stopThinking : undefined}
               >
-                {composerState === "thinking" ? (
+                {composerState !== "idle" ? (
                   <span className="pause-glyph" aria-hidden="true"><i /><i /></span>
                 ) : (
                   <span className="send-glyph" aria-hidden="true" />
