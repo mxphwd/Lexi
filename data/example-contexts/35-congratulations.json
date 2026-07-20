@@ -1,0 +1,1446 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "35-congratulations",
+    "title": "Offering congratulations",
+    "description": "Common ways to congratulate someone on an achievement.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "35-congratulations-001",
+      "intent": "congratulations",
+      "input": "Congratulations on finishing the task!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "congratulations",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-002",
+      "intent": "congratulations",
+      "input": "Congratulations on reaching your goal!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "congratulations",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-003",
+      "intent": "congratulations",
+      "input": "Congratulations on the good result!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "congratulations",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-004",
+      "intent": "congratulations",
+      "input": "Congratulations on completing the project!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "congratulations",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-005",
+      "intent": "congratulations",
+      "input": "Congratulations on making progress!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "congratulations",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-006",
+      "intent": "congratulations",
+      "input": "Congratulations on passing the test!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "congratulations",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-007",
+      "intent": "congratulations",
+      "input": "Congratulations on learning something new!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "congratulations",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-008",
+      "intent": "congratulations",
+      "input": "Congratulations on solving the problem!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "congratulations",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-009",
+      "intent": "congratulations",
+      "input": "Congratulations on your achievement!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "congratulations",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-010",
+      "intent": "congratulations",
+      "input": "Congratulations on a job well done!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "congratulations",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-011",
+      "intent": "congratulations",
+      "input": "Well done on finishing the task!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "well",
+        "done",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-012",
+      "intent": "congratulations",
+      "input": "Well done on reaching your goal!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "well",
+        "done",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-013",
+      "intent": "congratulations",
+      "input": "Well done on the good result!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "well",
+        "done",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-014",
+      "intent": "congratulations",
+      "input": "Well done on completing the project!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "well",
+        "done",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-015",
+      "intent": "congratulations",
+      "input": "Well done on making progress!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "well",
+        "done",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-016",
+      "intent": "congratulations",
+      "input": "Well done on passing the test!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "well",
+        "done",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-017",
+      "intent": "congratulations",
+      "input": "Well done on learning something new!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "well",
+        "done",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-018",
+      "intent": "congratulations",
+      "input": "Well done on solving the problem!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "well",
+        "done",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-019",
+      "intent": "congratulations",
+      "input": "Well done on your achievement!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "well",
+        "done",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-020",
+      "intent": "congratulations",
+      "input": "Well done on a job well done!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "well",
+        "done",
+        "job"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-021",
+      "intent": "congratulations",
+      "input": "Great job on finishing the task!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "great",
+        "job",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-022",
+      "intent": "congratulations",
+      "input": "Great job on reaching your goal!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "great",
+        "job",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-023",
+      "intent": "congratulations",
+      "input": "Great job on the good result!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "great",
+        "job",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-024",
+      "intent": "congratulations",
+      "input": "Great job on completing the project!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "great",
+        "job",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-025",
+      "intent": "congratulations",
+      "input": "Great job on making progress!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "great",
+        "job",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-026",
+      "intent": "congratulations",
+      "input": "Great job on passing the test!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "great",
+        "job",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-027",
+      "intent": "congratulations",
+      "input": "Great job on learning something new!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "great",
+        "job",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-028",
+      "intent": "congratulations",
+      "input": "Great job on solving the problem!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "great",
+        "job",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-029",
+      "intent": "congratulations",
+      "input": "Great job on your achievement!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "great",
+        "job",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-030",
+      "intent": "congratulations",
+      "input": "Great job on a job well done!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "great",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-031",
+      "intent": "congratulations",
+      "input": "I'm happy for you on finishing the task!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "happy",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-032",
+      "intent": "congratulations",
+      "input": "I'm happy for you on reaching your goal!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "happy",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-033",
+      "intent": "congratulations",
+      "input": "I'm happy for you on the good result!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "happy",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-034",
+      "intent": "congratulations",
+      "input": "I'm happy for you on completing the project!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "happy",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-035",
+      "intent": "congratulations",
+      "input": "I'm happy for you on making progress!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "happy",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-036",
+      "intent": "congratulations",
+      "input": "I'm happy for you on passing the test!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "happy",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-037",
+      "intent": "congratulations",
+      "input": "I'm happy for you on learning something new!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "happy",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-038",
+      "intent": "congratulations",
+      "input": "I'm happy for you on solving the problem!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "happy",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-039",
+      "intent": "congratulations",
+      "input": "I'm happy for you on your achievement!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "happy",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-040",
+      "intent": "congratulations",
+      "input": "I'm happy for you on a job well done!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "happy",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-041",
+      "intent": "congratulations",
+      "input": "You did it on finishing the task!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "did",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-042",
+      "intent": "congratulations",
+      "input": "You did it on reaching your goal!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "did",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-043",
+      "intent": "congratulations",
+      "input": "You did it on the good result!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "did",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-044",
+      "intent": "congratulations",
+      "input": "You did it on completing the project!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "did",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-045",
+      "intent": "congratulations",
+      "input": "You did it on making progress!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "did",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-046",
+      "intent": "congratulations",
+      "input": "You did it on passing the test!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "did",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-047",
+      "intent": "congratulations",
+      "input": "You did it on learning something new!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "did",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-048",
+      "intent": "congratulations",
+      "input": "You did it on solving the problem!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "did",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-049",
+      "intent": "congratulations",
+      "input": "You did it on your achievement!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "did",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-050",
+      "intent": "congratulations",
+      "input": "You did it on a job well done!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "did",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-051",
+      "intent": "congratulations",
+      "input": "That is wonderful news on finishing the task!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-052",
+      "intent": "congratulations",
+      "input": "That is wonderful news on reaching your goal!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-053",
+      "intent": "congratulations",
+      "input": "That is wonderful news on the good result!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-054",
+      "intent": "congratulations",
+      "input": "That is wonderful news on completing the project!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-055",
+      "intent": "congratulations",
+      "input": "That is wonderful news on making progress!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-056",
+      "intent": "congratulations",
+      "input": "That is wonderful news on passing the test!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-057",
+      "intent": "congratulations",
+      "input": "That is wonderful news on learning something new!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-058",
+      "intent": "congratulations",
+      "input": "That is wonderful news on solving the problem!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-059",
+      "intent": "congratulations",
+      "input": "That is wonderful news on your achievement!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-060",
+      "intent": "congratulations",
+      "input": "That is wonderful news on a job well done!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "that",
+        "wonderful",
+        "news",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-061",
+      "intent": "congratulations",
+      "input": "You should be proud on finishing the task!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "should",
+        "proud",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-062",
+      "intent": "congratulations",
+      "input": "You should be proud on reaching your goal!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "should",
+        "proud",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-063",
+      "intent": "congratulations",
+      "input": "You should be proud on the good result!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "should",
+        "proud",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-064",
+      "intent": "congratulations",
+      "input": "You should be proud on completing the project!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "should",
+        "proud",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-065",
+      "intent": "congratulations",
+      "input": "You should be proud on making progress!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "should",
+        "proud",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-066",
+      "intent": "congratulations",
+      "input": "You should be proud on passing the test!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "should",
+        "proud",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-067",
+      "intent": "congratulations",
+      "input": "You should be proud on learning something new!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "should",
+        "proud",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-068",
+      "intent": "congratulations",
+      "input": "You should be proud on solving the problem!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "should",
+        "proud",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-069",
+      "intent": "congratulations",
+      "input": "You should be proud on your achievement!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "should",
+        "proud",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-070",
+      "intent": "congratulations",
+      "input": "You should be proud on a job well done!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "should",
+        "proud",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-071",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on finishing the task!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "finishing",
+        "task"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-072",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on reaching your goal!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "reaching",
+        "goal"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-073",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on the good result!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "good",
+        "result"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-074",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on completing the project!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "completing",
+        "project"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-075",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on making progress!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "making",
+        "progress"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-076",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on passing the test!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "passing",
+        "test"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-077",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on learning something new!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "learning",
+        "something",
+        "new"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-078",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on solving the problem!",
+      "response": "Thank you for expressing congratulations.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "solving",
+        "problem"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-079",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on your achievement!",
+      "response": "Thank you. I recognize the congratulatory message.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "achievement"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "35-congratulations-080",
+      "intent": "congratulations",
+      "input": "Please accept my congratulations on a job well done!",
+      "response": "The congratulations are warmly acknowledged.",
+      "keywords": [
+        "please",
+        "accept",
+        "congratulations",
+        "job",
+        "well",
+        "done"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize congratulations",
+        "tone": "warm"
+      }
+    }
+  ]
+}

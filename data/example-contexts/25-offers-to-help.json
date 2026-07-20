@@ -1,0 +1,1449 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "25-offers-to-help",
+    "title": "Offering help",
+    "description": "Ways a speaker offers practical help in a conversation.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "25-offers-to-help-001",
+      "intent": "offer-help",
+      "input": "Can I help with that task?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-002",
+      "intent": "offer-help",
+      "input": "Can I help with the next step?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-003",
+      "intent": "offer-help",
+      "input": "Can I help with the explanation?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-004",
+      "intent": "offer-help",
+      "input": "Can I help with the list?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-005",
+      "intent": "offer-help",
+      "input": "Can I help with checking the details?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-006",
+      "intent": "offer-help",
+      "input": "Can I help with organizing the ideas?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-007",
+      "intent": "offer-help",
+      "input": "Can I help with finding the mistake?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-008",
+      "intent": "offer-help",
+      "input": "Can I help with the example?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-009",
+      "intent": "offer-help",
+      "input": "Can I help with the instructions?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-010",
+      "intent": "offer-help",
+      "input": "Can I help with anything else?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-011",
+      "intent": "offer-help",
+      "input": "May I help with that task?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "may",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-012",
+      "intent": "offer-help",
+      "input": "May I help with the next step?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "may",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-013",
+      "intent": "offer-help",
+      "input": "May I help with the explanation?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "may",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-014",
+      "intent": "offer-help",
+      "input": "May I help with the list?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "may",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-015",
+      "intent": "offer-help",
+      "input": "May I help with checking the details?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "may",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-016",
+      "intent": "offer-help",
+      "input": "May I help with organizing the ideas?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "may",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-017",
+      "intent": "offer-help",
+      "input": "May I help with finding the mistake?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "may",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-018",
+      "intent": "offer-help",
+      "input": "May I help with the example?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "may",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-019",
+      "intent": "offer-help",
+      "input": "May I help with the instructions?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "may",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-020",
+      "intent": "offer-help",
+      "input": "May I help with anything else?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "may",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-021",
+      "intent": "offer-help",
+      "input": "Would you like help with that task?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-022",
+      "intent": "offer-help",
+      "input": "Would you like help with the next step?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-023",
+      "intent": "offer-help",
+      "input": "Would you like help with the explanation?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-024",
+      "intent": "offer-help",
+      "input": "Would you like help with the list?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-025",
+      "intent": "offer-help",
+      "input": "Would you like help with checking the details?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-026",
+      "intent": "offer-help",
+      "input": "Would you like help with organizing the ideas?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-027",
+      "intent": "offer-help",
+      "input": "Would you like help with finding the mistake?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-028",
+      "intent": "offer-help",
+      "input": "Would you like help with the example?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-029",
+      "intent": "offer-help",
+      "input": "Would you like help with the instructions?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-030",
+      "intent": "offer-help",
+      "input": "Would you like help with anything else?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-031",
+      "intent": "offer-help",
+      "input": "Do you need help with that task?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "need",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-032",
+      "intent": "offer-help",
+      "input": "Do you need help with the next step?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "need",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-033",
+      "intent": "offer-help",
+      "input": "Do you need help with the explanation?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "need",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-034",
+      "intent": "offer-help",
+      "input": "Do you need help with the list?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "need",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-035",
+      "intent": "offer-help",
+      "input": "Do you need help with checking the details?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "need",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-036",
+      "intent": "offer-help",
+      "input": "Do you need help with organizing the ideas?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "need",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-037",
+      "intent": "offer-help",
+      "input": "Do you need help with finding the mistake?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "need",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-038",
+      "intent": "offer-help",
+      "input": "Do you need help with the example?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "need",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-039",
+      "intent": "offer-help",
+      "input": "Do you need help with the instructions?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "need",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-040",
+      "intent": "offer-help",
+      "input": "Do you need help with anything else?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "need",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-041",
+      "intent": "offer-help",
+      "input": "I can help with that task?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-042",
+      "intent": "offer-help",
+      "input": "I can help with the next step?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-043",
+      "intent": "offer-help",
+      "input": "I can help with the explanation?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-044",
+      "intent": "offer-help",
+      "input": "I can help with the list?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-045",
+      "intent": "offer-help",
+      "input": "I can help with checking the details?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-046",
+      "intent": "offer-help",
+      "input": "I can help with organizing the ideas?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-047",
+      "intent": "offer-help",
+      "input": "I can help with finding the mistake?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-048",
+      "intent": "offer-help",
+      "input": "I can help with the example?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "can",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-049",
+      "intent": "offer-help",
+      "input": "I can help with the instructions?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "can",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-050",
+      "intent": "offer-help",
+      "input": "I can help with anything else?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "can",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-051",
+      "intent": "offer-help",
+      "input": "Let me help with that task?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "let",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-052",
+      "intent": "offer-help",
+      "input": "Let me help with the next step?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "let",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-053",
+      "intent": "offer-help",
+      "input": "Let me help with the explanation?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "let",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-054",
+      "intent": "offer-help",
+      "input": "Let me help with the list?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "let",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-055",
+      "intent": "offer-help",
+      "input": "Let me help with checking the details?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "let",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-056",
+      "intent": "offer-help",
+      "input": "Let me help with organizing the ideas?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "let",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-057",
+      "intent": "offer-help",
+      "input": "Let me help with finding the mistake?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "let",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-058",
+      "intent": "offer-help",
+      "input": "Let me help with the example?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "let",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-059",
+      "intent": "offer-help",
+      "input": "Let me help with the instructions?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "let",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-060",
+      "intent": "offer-help",
+      "input": "Let me help with anything else?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "let",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-061",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with that task?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "happy",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-062",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with the next step?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "happy",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-063",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with the explanation?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "happy",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-064",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with the list?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "happy",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-065",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with checking the details?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "happy",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-066",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with organizing the ideas?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "happy",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-067",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with finding the mistake?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "happy",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-068",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with the example?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "happy",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-069",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with the instructions?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "happy",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-070",
+      "intent": "offer-help",
+      "input": "I'd be happy to help with anything else?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "happy",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-071",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with that task?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "that",
+        "task"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-072",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with the next step?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-073",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with the explanation?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-074",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with the list?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-075",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with checking the details?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "checking",
+        "details"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-076",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with organizing the ideas?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "organizing",
+        "ideas"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-077",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with finding the mistake?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "finding",
+        "mistake"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-078",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with the example?",
+      "response": "I recognize the offer of help. You can continue by stating what you want to contribute.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-079",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with the instructions?",
+      "response": "Thank you for offering to help.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "25-offers-to-help-080",
+      "intent": "offer-help",
+      "input": "Is there a way I can help with anything else?",
+      "response": "Your offer is appreciated.",
+      "keywords": [
+        "there",
+        "way",
+        "can",
+        "help",
+        "anything",
+        "else"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an offer of help",
+        "tone": "warm"
+      }
+    }
+  ]
+}

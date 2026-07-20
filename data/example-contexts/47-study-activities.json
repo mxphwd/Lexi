@@ -1,0 +1,1492 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "47-study-activities",
+    "title": "Study activities",
+    "description": "Statements about ordinary studying and learning activities.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "47-study-activities-001",
+      "intent": "study-activity",
+      "input": "I am studying basic vocabulary.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "studying",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-002",
+      "intent": "study-activity",
+      "input": "I am studying English grammar.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "studying",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-003",
+      "intent": "study-activity",
+      "input": "I am studying simple arithmetic.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "studying",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-004",
+      "intent": "study-activity",
+      "input": "I am studying world history.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "studying",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-005",
+      "intent": "study-activity",
+      "input": "I am studying introductory science.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "studying",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-006",
+      "intent": "study-activity",
+      "input": "I am studying reading comprehension.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "studying",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-007",
+      "intent": "study-activity",
+      "input": "I am studying sentence structure.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "studying",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-008",
+      "intent": "study-activity",
+      "input": "I am studying geography.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "studying",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-009",
+      "intent": "study-activity",
+      "input": "I am studying computer basics.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "studying",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-010",
+      "intent": "study-activity",
+      "input": "I am studying writing clearly.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "studying",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-011",
+      "intent": "study-activity",
+      "input": "Today I am reviewing basic vocabulary.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-012",
+      "intent": "study-activity",
+      "input": "Today I am reviewing English grammar.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-013",
+      "intent": "study-activity",
+      "input": "Today I am reviewing simple arithmetic.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-014",
+      "intent": "study-activity",
+      "input": "Today I am reviewing world history.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-015",
+      "intent": "study-activity",
+      "input": "Today I am reviewing introductory science.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-016",
+      "intent": "study-activity",
+      "input": "Today I am reviewing reading comprehension.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-017",
+      "intent": "study-activity",
+      "input": "Today I am reviewing sentence structure.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-018",
+      "intent": "study-activity",
+      "input": "Today I am reviewing geography.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-019",
+      "intent": "study-activity",
+      "input": "Today I am reviewing computer basics.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-020",
+      "intent": "study-activity",
+      "input": "Today I am reviewing writing clearly.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "today",
+        "am",
+        "reviewing",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-021",
+      "intent": "study-activity",
+      "input": "I need to practice basic vocabulary.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "need",
+        "practice",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-022",
+      "intent": "study-activity",
+      "input": "I need to practice English grammar.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "need",
+        "practice",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-023",
+      "intent": "study-activity",
+      "input": "I need to practice simple arithmetic.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "need",
+        "practice",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-024",
+      "intent": "study-activity",
+      "input": "I need to practice world history.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "need",
+        "practice",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-025",
+      "intent": "study-activity",
+      "input": "I need to practice introductory science.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "need",
+        "practice",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-026",
+      "intent": "study-activity",
+      "input": "I need to practice reading comprehension.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "need",
+        "practice",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-027",
+      "intent": "study-activity",
+      "input": "I need to practice sentence structure.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "need",
+        "practice",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-028",
+      "intent": "study-activity",
+      "input": "I need to practice geography.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "need",
+        "practice",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-029",
+      "intent": "study-activity",
+      "input": "I need to practice computer basics.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "need",
+        "practice",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-030",
+      "intent": "study-activity",
+      "input": "I need to practice writing clearly.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "need",
+        "practice",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-031",
+      "intent": "study-activity",
+      "input": "My lesson is about basic vocabulary.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "lesson",
+        "about",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-032",
+      "intent": "study-activity",
+      "input": "My lesson is about English grammar.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "lesson",
+        "about",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-033",
+      "intent": "study-activity",
+      "input": "My lesson is about simple arithmetic.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "lesson",
+        "about",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-034",
+      "intent": "study-activity",
+      "input": "My lesson is about world history.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "lesson",
+        "about",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-035",
+      "intent": "study-activity",
+      "input": "My lesson is about introductory science.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "lesson",
+        "about",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-036",
+      "intent": "study-activity",
+      "input": "My lesson is about reading comprehension.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "lesson",
+        "about",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-037",
+      "intent": "study-activity",
+      "input": "My lesson is about sentence structure.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "lesson",
+        "about",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-038",
+      "intent": "study-activity",
+      "input": "My lesson is about geography.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "lesson",
+        "about",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-039",
+      "intent": "study-activity",
+      "input": "My lesson is about computer basics.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "lesson",
+        "about",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-040",
+      "intent": "study-activity",
+      "input": "My lesson is about writing clearly.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "lesson",
+        "about",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-041",
+      "intent": "study-activity",
+      "input": "I am learning basic vocabulary.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "learning",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-042",
+      "intent": "study-activity",
+      "input": "I am learning English grammar.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "learning",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-043",
+      "intent": "study-activity",
+      "input": "I am learning simple arithmetic.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "learning",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-044",
+      "intent": "study-activity",
+      "input": "I am learning world history.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "learning",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-045",
+      "intent": "study-activity",
+      "input": "I am learning introductory science.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "learning",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-046",
+      "intent": "study-activity",
+      "input": "I am learning reading comprehension.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "learning",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-047",
+      "intent": "study-activity",
+      "input": "I am learning sentence structure.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "learning",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-048",
+      "intent": "study-activity",
+      "input": "I am learning geography.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "am",
+        "learning",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-049",
+      "intent": "study-activity",
+      "input": "I am learning computer basics.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "am",
+        "learning",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-050",
+      "intent": "study-activity",
+      "input": "I am learning writing clearly.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "am",
+        "learning",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-051",
+      "intent": "study-activity",
+      "input": "This week I am working on basic vocabulary.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-052",
+      "intent": "study-activity",
+      "input": "This week I am working on English grammar.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-053",
+      "intent": "study-activity",
+      "input": "This week I am working on simple arithmetic.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-054",
+      "intent": "study-activity",
+      "input": "This week I am working on world history.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-055",
+      "intent": "study-activity",
+      "input": "This week I am working on introductory science.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-056",
+      "intent": "study-activity",
+      "input": "This week I am working on reading comprehension.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-057",
+      "intent": "study-activity",
+      "input": "This week I am working on sentence structure.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-058",
+      "intent": "study-activity",
+      "input": "This week I am working on geography.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-059",
+      "intent": "study-activity",
+      "input": "This week I am working on computer basics.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-060",
+      "intent": "study-activity",
+      "input": "This week I am working on writing clearly.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "week",
+        "am",
+        "working",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-061",
+      "intent": "study-activity",
+      "input": "For class I am reading about basic vocabulary.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-062",
+      "intent": "study-activity",
+      "input": "For class I am reading about English grammar.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-063",
+      "intent": "study-activity",
+      "input": "For class I am reading about simple arithmetic.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-064",
+      "intent": "study-activity",
+      "input": "For class I am reading about world history.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-065",
+      "intent": "study-activity",
+      "input": "For class I am reading about introductory science.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-066",
+      "intent": "study-activity",
+      "input": "For class I am reading about reading comprehension.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-067",
+      "intent": "study-activity",
+      "input": "For class I am reading about sentence structure.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-068",
+      "intent": "study-activity",
+      "input": "For class I am reading about geography.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-069",
+      "intent": "study-activity",
+      "input": "For class I am reading about computer basics.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-070",
+      "intent": "study-activity",
+      "input": "For class I am reading about writing clearly.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "class",
+        "am",
+        "reading",
+        "about",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-071",
+      "intent": "study-activity",
+      "input": "My current study topic is basic vocabulary.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "basic",
+        "vocabulary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-072",
+      "intent": "study-activity",
+      "input": "My current study topic is English grammar.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "english",
+        "grammar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-073",
+      "intent": "study-activity",
+      "input": "My current study topic is simple arithmetic.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "simple",
+        "arithmetic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-074",
+      "intent": "study-activity",
+      "input": "My current study topic is world history.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "world",
+        "history"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-075",
+      "intent": "study-activity",
+      "input": "My current study topic is introductory science.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "introductory",
+        "science"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-076",
+      "intent": "study-activity",
+      "input": "My current study topic is reading comprehension.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "reading",
+        "comprehension"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-077",
+      "intent": "study-activity",
+      "input": "My current study topic is sentence structure.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "sentence",
+        "structure"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-078",
+      "intent": "study-activity",
+      "input": "My current study topic is geography.",
+      "response": "The study subject is identified for this turn.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "geography"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-079",
+      "intent": "study-activity",
+      "input": "My current study topic is computer basics.",
+      "response": "I understand the study topic stated in this message.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "computer",
+        "basics"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "47-study-activities-080",
+      "intent": "study-activity",
+      "input": "My current study topic is writing clearly.",
+      "response": "That is a clear description of your current learning activity.",
+      "keywords": [
+        "current",
+        "study",
+        "topic",
+        "writing",
+        "clearly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a study activity",
+        "tone": "warm"
+      }
+    }
+  ]
+}

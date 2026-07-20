@@ -1,0 +1,1626 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "28-declining-invitations",
+    "title": "Declining invitations",
+    "description": "Polite replies declining an invitation or proposed activity.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "28-declining-invitations-001",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot talk right now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-002",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot work through the example.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-003",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot review the main idea.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-004",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot continue the discussion.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-005",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot explore another topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-006",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot practice the conversation.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-007",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot look at the next question.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-008",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot compare the sentences.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-009",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot solve the problem now.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-010",
+      "intent": "decline-invitation",
+      "input": "No thank you, I cannot begin a new topic.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "no",
+        "thank",
+        "cannot",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-011",
+      "intent": "decline-invitation",
+      "input": "I'd rather not talk right now.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "rather",
+        "not",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-012",
+      "intent": "decline-invitation",
+      "input": "I'd rather not work through the example.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "rather",
+        "not",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-013",
+      "intent": "decline-invitation",
+      "input": "I'd rather not review the main idea.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "rather",
+        "not",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-014",
+      "intent": "decline-invitation",
+      "input": "I'd rather not continue the discussion.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "rather",
+        "not",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-015",
+      "intent": "decline-invitation",
+      "input": "I'd rather not explore another topic.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "rather",
+        "not",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-016",
+      "intent": "decline-invitation",
+      "input": "I'd rather not practice the conversation.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "rather",
+        "not",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-017",
+      "intent": "decline-invitation",
+      "input": "I'd rather not look at the next question.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "rather",
+        "not",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-018",
+      "intent": "decline-invitation",
+      "input": "I'd rather not compare the sentences.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "rather",
+        "not",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-019",
+      "intent": "decline-invitation",
+      "input": "I'd rather not solve the problem now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "rather",
+        "not",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-020",
+      "intent": "decline-invitation",
+      "input": "I'd rather not begin a new topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "rather",
+        "not",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-021",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot talk right now.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-022",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot work through the example.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-023",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot review the main idea.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-024",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot continue the discussion.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-025",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot explore another topic.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-026",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot practice the conversation.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-027",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot look at the next question.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-028",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot compare the sentences.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-029",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot solve the problem now.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-030",
+      "intent": "decline-invitation",
+      "input": "I appreciate it, but I cannot begin a new topic.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "appreciate",
+        "but",
+        "cannot",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-031",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot talk right now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-032",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot work through the example.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-033",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot review the main idea.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-034",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot continue the discussion.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-035",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot explore another topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "explore",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-036",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot practice the conversation.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-037",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot look at the next question.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-038",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot compare the sentences.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-039",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot solve the problem now.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-040",
+      "intent": "decline-invitation",
+      "input": "Maybe another time; I cannot begin a new topic.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "maybe",
+        "another",
+        "time",
+        "cannot",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-041",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on talk right now.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-042",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on work through the example.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-043",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on review the main idea.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-044",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on continue the discussion.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-045",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on explore another topic.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-046",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on practice the conversation.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-047",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on look at the next question.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-048",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on compare the sentences.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-049",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on solve the problem now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-050",
+      "intent": "decline-invitation",
+      "input": "Thank you, but I'll pass on begin a new topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "thank",
+        "but",
+        "ll",
+        "pass",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-051",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot talk right now.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-052",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot work through the example.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-053",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot review the main idea.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-054",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot continue the discussion.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-055",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot explore another topic.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-056",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot practice the conversation.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-057",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot look at the next question.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-058",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot compare the sentences.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-059",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot solve the problem now.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-060",
+      "intent": "decline-invitation",
+      "input": "That sounds nice, but I cannot begin a new topic.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "that",
+        "sounds",
+        "nice",
+        "but",
+        "cannot",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-061",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot talk right now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-062",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot work through the example.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-063",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot review the main idea.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-064",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot continue the discussion.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-065",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot explore another topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-066",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot practice the conversation.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-067",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot look at the next question.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-068",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot compare the sentences.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-069",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot solve the problem now.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-070",
+      "intent": "decline-invitation",
+      "input": "I have to decline; I cannot begin a new topic.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "have",
+        "decline",
+        "cannot",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-071",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to talk right now.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "talk",
+        "right",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-072",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to work through the example.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-073",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to review the main idea.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-074",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to continue the discussion.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-075",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to explore another topic.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-076",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to practice the conversation.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-077",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to look at the next question.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-078",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to compare the sentences.",
+      "response": "Your decision is clear, and no participation is assumed.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "compare",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-079",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to solve the problem now.",
+      "response": "Understood. The invitation has been politely declined.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "solve",
+        "problem",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "28-declining-invitations-080",
+      "intent": "decline-invitation",
+      "input": "Sorry, I am not able to begin a new topic.",
+      "response": "That is fine; you do not want to take part right now.",
+      "keywords": [
+        "sorry",
+        "am",
+        "not",
+        "able",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a declined invitation",
+        "tone": "warm"
+      }
+    }
+  ]
+}

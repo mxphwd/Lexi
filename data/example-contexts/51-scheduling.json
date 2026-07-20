@@ -1,0 +1,1513 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "51-scheduling",
+    "title": "Scheduling requests",
+    "description": "Requests to arrange a time without claiming calendar access.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "51-scheduling-001",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a short meeting.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "can",
+        "schedule",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-002",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a study session.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "can",
+        "schedule",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-003",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a phone call.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "can",
+        "schedule",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-004",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a project review.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "can",
+        "schedule",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-005",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a lunch break.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "can",
+        "schedule",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-006",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a practice session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "can",
+        "schedule",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-007",
+      "intent": "scheduling-request",
+      "input": "Can we schedule an appointment.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "can",
+        "schedule",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-008",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a weekly check-in.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "can",
+        "schedule",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-009",
+      "intent": "scheduling-request",
+      "input": "Can we schedule a planning discussion.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "can",
+        "schedule",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-010",
+      "intent": "scheduling-request",
+      "input": "Can we schedule the next conversation.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "can",
+        "schedule",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-011",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a short meeting.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "short",
+        "meeting"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-012",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a study session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "study",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-013",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a phone call.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "phone",
+        "call"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-014",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a project review.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "project",
+        "review"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-015",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a lunch break.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "lunch",
+        "break"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-016",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a practice session.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "practice",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-017",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for an appointment.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "appointment"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-018",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a weekly check-in.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "weekly",
+        "check"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-019",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for a planning discussion.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "planning",
+        "discussion"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-020",
+      "intent": "scheduling-request",
+      "input": "Help me choose a time for the next conversation.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "help",
+        "choose",
+        "time",
+        "next",
+        "conversation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-021",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a short meeting.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "arrange",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-022",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a study session.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "arrange",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-023",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a phone call.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "arrange",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-024",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a project review.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "arrange",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-025",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a lunch break.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "arrange",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-026",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a practice session.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "arrange",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-027",
+      "intent": "scheduling-request",
+      "input": "I need to arrange an appointment.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "arrange",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-028",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a weekly check-in.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "arrange",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-029",
+      "intent": "scheduling-request",
+      "input": "I need to arrange a planning discussion.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "arrange",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-030",
+      "intent": "scheduling-request",
+      "input": "I need to arrange the next conversation.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "arrange",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-031",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a short meeting.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "short",
+        "meeting"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-032",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a study session.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "study",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-033",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a phone call.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "phone",
+        "call"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-034",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a project review.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "project",
+        "review"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-035",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a lunch break.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "lunch",
+        "break"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-036",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a practice session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "practice",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-037",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold an appointment.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "appointment"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-038",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a weekly check-in.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "weekly",
+        "check"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-039",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold a planning discussion.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "planning",
+        "discussion"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-040",
+      "intent": "scheduling-request",
+      "input": "Please suggest when to hold the next conversation.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "please",
+        "suggest",
+        "when",
+        "hold",
+        "next",
+        "conversation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-041",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a short meeting.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-042",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a study session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-043",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a phone call.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-044",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a project review.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-045",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a lunch break.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-046",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a practice session.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-047",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for an appointment.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-048",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a weekly check-in.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-049",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for a planning discussion.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-050",
+      "intent": "scheduling-request",
+      "input": "Let us find a time for the next conversation.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "let",
+        "us",
+        "find",
+        "time",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-051",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a short meeting.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-052",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a study session.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-053",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a phone call.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-054",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a project review.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-055",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a lunch break.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-056",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a practice session.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-057",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar an appointment.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-058",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a weekly check-in.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-059",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar a planning discussion.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-060",
+      "intent": "scheduling-request",
+      "input": "I want to put on the calendar the next conversation.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "want",
+        "put",
+        "calendar",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-061",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a short meeting.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-062",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a study session.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-063",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a phone call.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-064",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a project review.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-065",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a lunch break.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-066",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a practice session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-067",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for an appointment.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-068",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a weekly check-in.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-069",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for a planning discussion.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-070",
+      "intent": "scheduling-request",
+      "input": "Could we plan the time for the next conversation.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "could",
+        "plan",
+        "time",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-071",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a short meeting.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "schedule",
+        "short",
+        "meeting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-072",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a study session.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "schedule",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-073",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a phone call.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "schedule",
+        "phone",
+        "call"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-074",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a project review.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "schedule",
+        "project",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-075",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a lunch break.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "schedule",
+        "lunch",
+        "break"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-076",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a practice session.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "schedule",
+        "practice",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-077",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for an appointment.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "schedule",
+        "appointment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-078",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a weekly check-in.",
+      "response": "I recognize the scheduling request but cannot create a real calendar event from this corpus.",
+      "keywords": [
+        "need",
+        "schedule",
+        "weekly",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-079",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for a planning discussion.",
+      "response": "I cannot access a live calendar. Provide the available dates, times, timezone, and duration to compare options.",
+      "keywords": [
+        "need",
+        "schedule",
+        "planning",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "51-scheduling-080",
+      "intent": "scheduling-request",
+      "input": "I need a schedule for the next conversation.",
+      "response": "Scheduling requires explicit availability and timezone information.",
+      "keywords": [
+        "need",
+        "schedule",
+        "next",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request explicit scheduling constraints",
+        "tone": "precise"
+      }
+    }
+  ]
+}

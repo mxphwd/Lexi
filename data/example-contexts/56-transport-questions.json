@@ -1,0 +1,1513 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "56-transport-questions",
+    "title": "Transportation questions",
+    "description": "Questions about reaching a place by common transportation modes.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "56-transport-questions-001",
+      "intent": "transport-question",
+      "input": "How can I get there by bus?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-002",
+      "intent": "transport-question",
+      "input": "How can I get there by train?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-003",
+      "intent": "transport-question",
+      "input": "How can I get there by subway?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-004",
+      "intent": "transport-question",
+      "input": "How can I get there by taxi?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-005",
+      "intent": "transport-question",
+      "input": "How can I get there by bicycle?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-006",
+      "intent": "transport-question",
+      "input": "How can I get there by a local shuttle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-007",
+      "intent": "transport-question",
+      "input": "How can I get there by a ferry?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-008",
+      "intent": "transport-question",
+      "input": "How can I get there by an airport bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-009",
+      "intent": "transport-question",
+      "input": "How can I get there by a rental car?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-010",
+      "intent": "transport-question",
+      "input": "How can I get there by public transportation?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "can",
+        "get",
+        "there",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-011",
+      "intent": "transport-question",
+      "input": "Can I travel there using bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-012",
+      "intent": "transport-question",
+      "input": "Can I travel there using train?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-013",
+      "intent": "transport-question",
+      "input": "Can I travel there using subway?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-014",
+      "intent": "transport-question",
+      "input": "Can I travel there using taxi?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-015",
+      "intent": "transport-question",
+      "input": "Can I travel there using bicycle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-016",
+      "intent": "transport-question",
+      "input": "Can I travel there using a local shuttle?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-017",
+      "intent": "transport-question",
+      "input": "Can I travel there using a ferry?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-018",
+      "intent": "transport-question",
+      "input": "Can I travel there using an airport bus?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-019",
+      "intent": "transport-question",
+      "input": "Can I travel there using a rental car?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-020",
+      "intent": "transport-question",
+      "input": "Can I travel there using public transportation?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "can",
+        "travel",
+        "there",
+        "using",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-021",
+      "intent": "transport-question",
+      "input": "Is it possible to take bus?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "possible",
+        "take",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-022",
+      "intent": "transport-question",
+      "input": "Is it possible to take train?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "possible",
+        "take",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-023",
+      "intent": "transport-question",
+      "input": "Is it possible to take subway?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "possible",
+        "take",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-024",
+      "intent": "transport-question",
+      "input": "Is it possible to take taxi?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "possible",
+        "take",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-025",
+      "intent": "transport-question",
+      "input": "Is it possible to take bicycle?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "possible",
+        "take",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-026",
+      "intent": "transport-question",
+      "input": "Is it possible to take a local shuttle?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "possible",
+        "take",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-027",
+      "intent": "transport-question",
+      "input": "Is it possible to take a ferry?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "possible",
+        "take",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-028",
+      "intent": "transport-question",
+      "input": "Is it possible to take an airport bus?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "possible",
+        "take",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-029",
+      "intent": "transport-question",
+      "input": "Is it possible to take a rental car?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "possible",
+        "take",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-030",
+      "intent": "transport-question",
+      "input": "Is it possible to take public transportation?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "possible",
+        "take",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-031",
+      "intent": "transport-question",
+      "input": "Where would I board bus?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-032",
+      "intent": "transport-question",
+      "input": "Where would I board train?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-033",
+      "intent": "transport-question",
+      "input": "Where would I board subway?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-034",
+      "intent": "transport-question",
+      "input": "Where would I board taxi?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-035",
+      "intent": "transport-question",
+      "input": "Where would I board bicycle?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-036",
+      "intent": "transport-question",
+      "input": "Where would I board a local shuttle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-037",
+      "intent": "transport-question",
+      "input": "Where would I board a ferry?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-038",
+      "intent": "transport-question",
+      "input": "Where would I board an airport bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-039",
+      "intent": "transport-question",
+      "input": "Where would I board a rental car?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-040",
+      "intent": "transport-question",
+      "input": "Where would I board public transportation?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "where",
+        "would",
+        "board",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-041",
+      "intent": "transport-question",
+      "input": "How long does it take by bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-042",
+      "intent": "transport-question",
+      "input": "How long does it take by train?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-043",
+      "intent": "transport-question",
+      "input": "How long does it take by subway?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-044",
+      "intent": "transport-question",
+      "input": "How long does it take by taxi?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-045",
+      "intent": "transport-question",
+      "input": "How long does it take by bicycle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-046",
+      "intent": "transport-question",
+      "input": "How long does it take by a local shuttle?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-047",
+      "intent": "transport-question",
+      "input": "How long does it take by a ferry?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-048",
+      "intent": "transport-question",
+      "input": "How long does it take by an airport bus?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-049",
+      "intent": "transport-question",
+      "input": "How long does it take by a rental car?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-050",
+      "intent": "transport-question",
+      "input": "How long does it take by public transportation?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "how",
+        "long",
+        "take",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-051",
+      "intent": "transport-question",
+      "input": "What should I know about taking bus?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-052",
+      "intent": "transport-question",
+      "input": "What should I know about taking train?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-053",
+      "intent": "transport-question",
+      "input": "What should I know about taking subway?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-054",
+      "intent": "transport-question",
+      "input": "What should I know about taking taxi?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-055",
+      "intent": "transport-question",
+      "input": "What should I know about taking bicycle?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-056",
+      "intent": "transport-question",
+      "input": "What should I know about taking a local shuttle?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-057",
+      "intent": "transport-question",
+      "input": "What should I know about taking a ferry?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-058",
+      "intent": "transport-question",
+      "input": "What should I know about taking an airport bus?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-059",
+      "intent": "transport-question",
+      "input": "What should I know about taking a rental car?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-060",
+      "intent": "transport-question",
+      "input": "What should I know about taking public transportation?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "what",
+        "should",
+        "know",
+        "about",
+        "taking",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-061",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on bus?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-062",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on train?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-063",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on subway?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-064",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on taxi?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-065",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on bicycle?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-066",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on a local shuttle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-067",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on a ferry?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-068",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on an airport bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-069",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on a rental car?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-070",
+      "intent": "transport-question",
+      "input": "Could I reach the destination on public transportation?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "could",
+        "reach",
+        "destination",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-071",
+      "intent": "transport-question",
+      "input": "Which route uses bus?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-072",
+      "intent": "transport-question",
+      "input": "Which route uses train?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "train"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-073",
+      "intent": "transport-question",
+      "input": "Which route uses subway?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "subway"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-074",
+      "intent": "transport-question",
+      "input": "Which route uses taxi?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "taxi"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-075",
+      "intent": "transport-question",
+      "input": "Which route uses bicycle?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "bicycle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-076",
+      "intent": "transport-question",
+      "input": "Which route uses a local shuttle?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "local",
+        "shuttle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-077",
+      "intent": "transport-question",
+      "input": "Which route uses a ferry?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "ferry"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-078",
+      "intent": "transport-question",
+      "input": "Which route uses an airport bus?",
+      "response": "A reliable route requires the starting point, destination, travel time, and current service information.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "airport",
+        "bus"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-079",
+      "intent": "transport-question",
+      "input": "Which route uses a rental car?",
+      "response": "Provide the origin and destination; current routes and schedules must be checked with a live transport source.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "rental",
+        "car"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "56-transport-questions-080",
+      "intent": "transport-question",
+      "input": "Which route uses public transportation?",
+      "response": "That is a transportation question, but the locations and current schedule are not available here.",
+      "keywords": [
+        "which",
+        "route",
+        "uses",
+        "public",
+        "transportation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request route details and live schedule sources",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

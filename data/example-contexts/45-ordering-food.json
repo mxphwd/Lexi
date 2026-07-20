@@ -1,0 +1,1451 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "45-ordering-food",
+    "title": "Ordering food",
+    "description": "Common sentences used to order food in a restaurant or café.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "45-ordering-food-001",
+      "intent": "food-order",
+      "input": "I would like a bowl of soup.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-002",
+      "intent": "food-order",
+      "input": "I would like a vegetable sandwich.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "would",
+        "like",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-003",
+      "intent": "food-order",
+      "input": "I would like a plate of rice.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-004",
+      "intent": "food-order",
+      "input": "I would like a small salad.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-005",
+      "intent": "food-order",
+      "input": "I would like the pasta dish.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "would",
+        "like",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-006",
+      "intent": "food-order",
+      "input": "I would like a piece of bread.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-007",
+      "intent": "food-order",
+      "input": "I would like the daily special.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-008",
+      "intent": "food-order",
+      "input": "I would like a serving of noodles.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "would",
+        "like",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-009",
+      "intent": "food-order",
+      "input": "I would like a side of vegetables.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-010",
+      "intent": "food-order",
+      "input": "I would like a simple dessert.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-011",
+      "intent": "food-order",
+      "input": "Could I have a bowl of soup.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "could",
+        "have",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-012",
+      "intent": "food-order",
+      "input": "Could I have a vegetable sandwich.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-013",
+      "intent": "food-order",
+      "input": "Could I have a plate of rice.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-014",
+      "intent": "food-order",
+      "input": "Could I have a small salad.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "could",
+        "have",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-015",
+      "intent": "food-order",
+      "input": "Could I have the pasta dish.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-016",
+      "intent": "food-order",
+      "input": "Could I have a piece of bread.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-017",
+      "intent": "food-order",
+      "input": "Could I have the daily special.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "could",
+        "have",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-018",
+      "intent": "food-order",
+      "input": "Could I have a serving of noodles.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-019",
+      "intent": "food-order",
+      "input": "Could I have a side of vegetables.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-020",
+      "intent": "food-order",
+      "input": "Could I have a simple dessert.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "could",
+        "have",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-021",
+      "intent": "food-order",
+      "input": "May I order a bowl of soup.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-022",
+      "intent": "food-order",
+      "input": "May I order a vegetable sandwich.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "may",
+        "order",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-023",
+      "intent": "food-order",
+      "input": "May I order a plate of rice.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "may",
+        "order",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-024",
+      "intent": "food-order",
+      "input": "May I order a small salad.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-025",
+      "intent": "food-order",
+      "input": "May I order the pasta dish.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "may",
+        "order",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-026",
+      "intent": "food-order",
+      "input": "May I order a piece of bread.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "may",
+        "order",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-027",
+      "intent": "food-order",
+      "input": "May I order the daily special.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-028",
+      "intent": "food-order",
+      "input": "May I order a serving of noodles.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "may",
+        "order",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-029",
+      "intent": "food-order",
+      "input": "May I order a side of vegetables.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "may",
+        "order",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-030",
+      "intent": "food-order",
+      "input": "May I order a simple dessert.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-031",
+      "intent": "food-order",
+      "input": "Please bring me a bowl of soup.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "please",
+        "bring",
+        "bowl",
+        "soup"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-032",
+      "intent": "food-order",
+      "input": "Please bring me a vegetable sandwich.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "please",
+        "bring",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-033",
+      "intent": "food-order",
+      "input": "Please bring me a plate of rice.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "plate",
+        "rice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-034",
+      "intent": "food-order",
+      "input": "Please bring me a small salad.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "please",
+        "bring",
+        "small",
+        "salad"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-035",
+      "intent": "food-order",
+      "input": "Please bring me the pasta dish.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "please",
+        "bring",
+        "pasta",
+        "dish"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-036",
+      "intent": "food-order",
+      "input": "Please bring me a piece of bread.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "piece",
+        "bread"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-037",
+      "intent": "food-order",
+      "input": "Please bring me the daily special.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "please",
+        "bring",
+        "daily",
+        "special"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-038",
+      "intent": "food-order",
+      "input": "Please bring me a serving of noodles.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "please",
+        "bring",
+        "serving",
+        "noodles"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-039",
+      "intent": "food-order",
+      "input": "Please bring me a side of vegetables.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "side",
+        "vegetables"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-040",
+      "intent": "food-order",
+      "input": "Please bring me a simple dessert.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "please",
+        "bring",
+        "simple",
+        "dessert"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-041",
+      "intent": "food-order",
+      "input": "Can I get a bowl of soup.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "can",
+        "get",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-042",
+      "intent": "food-order",
+      "input": "Can I get a vegetable sandwich.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-043",
+      "intent": "food-order",
+      "input": "Can I get a plate of rice.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "can",
+        "get",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-044",
+      "intent": "food-order",
+      "input": "Can I get a small salad.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "can",
+        "get",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-045",
+      "intent": "food-order",
+      "input": "Can I get the pasta dish.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-046",
+      "intent": "food-order",
+      "input": "Can I get a piece of bread.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "can",
+        "get",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-047",
+      "intent": "food-order",
+      "input": "Can I get the daily special.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "can",
+        "get",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-048",
+      "intent": "food-order",
+      "input": "Can I get a serving of noodles.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-049",
+      "intent": "food-order",
+      "input": "Can I get a side of vegetables.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "can",
+        "get",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-050",
+      "intent": "food-order",
+      "input": "Can I get a simple dessert.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "can",
+        "get",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-051",
+      "intent": "food-order",
+      "input": "I will have a bowl of soup.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-052",
+      "intent": "food-order",
+      "input": "I will have a vegetable sandwich.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "will",
+        "have",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-053",
+      "intent": "food-order",
+      "input": "I will have a plate of rice.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "will",
+        "have",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-054",
+      "intent": "food-order",
+      "input": "I will have a small salad.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-055",
+      "intent": "food-order",
+      "input": "I will have the pasta dish.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "will",
+        "have",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-056",
+      "intent": "food-order",
+      "input": "I will have a piece of bread.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "will",
+        "have",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-057",
+      "intent": "food-order",
+      "input": "I will have the daily special.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-058",
+      "intent": "food-order",
+      "input": "I will have a serving of noodles.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "will",
+        "have",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-059",
+      "intent": "food-order",
+      "input": "I will have a side of vegetables.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "will",
+        "have",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-060",
+      "intent": "food-order",
+      "input": "I will have a simple dessert.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-061",
+      "intent": "food-order",
+      "input": "I'd like to order a bowl of soup.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "like",
+        "order",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-062",
+      "intent": "food-order",
+      "input": "I'd like to order a vegetable sandwich.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "like",
+        "order",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-063",
+      "intent": "food-order",
+      "input": "I'd like to order a plate of rice.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-064",
+      "intent": "food-order",
+      "input": "I'd like to order a small salad.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "like",
+        "order",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-065",
+      "intent": "food-order",
+      "input": "I'd like to order the pasta dish.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "like",
+        "order",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-066",
+      "intent": "food-order",
+      "input": "I'd like to order a piece of bread.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-067",
+      "intent": "food-order",
+      "input": "I'd like to order the daily special.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "like",
+        "order",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-068",
+      "intent": "food-order",
+      "input": "I'd like to order a serving of noodles.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "like",
+        "order",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-069",
+      "intent": "food-order",
+      "input": "I'd like to order a side of vegetables.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-070",
+      "intent": "food-order",
+      "input": "I'd like to order a simple dessert.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "like",
+        "order",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-071",
+      "intent": "food-order",
+      "input": "For my order, I want a bowl of soup.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "order",
+        "want",
+        "bowl",
+        "soup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-072",
+      "intent": "food-order",
+      "input": "For my order, I want a vegetable sandwich.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "order",
+        "want",
+        "vegetable",
+        "sandwich"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-073",
+      "intent": "food-order",
+      "input": "For my order, I want a plate of rice.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "order",
+        "want",
+        "plate",
+        "rice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-074",
+      "intent": "food-order",
+      "input": "For my order, I want a small salad.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "order",
+        "want",
+        "small",
+        "salad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-075",
+      "intent": "food-order",
+      "input": "For my order, I want the pasta dish.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "order",
+        "want",
+        "pasta",
+        "dish"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-076",
+      "intent": "food-order",
+      "input": "For my order, I want a piece of bread.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "order",
+        "want",
+        "piece",
+        "bread"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-077",
+      "intent": "food-order",
+      "input": "For my order, I want the daily special.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "order",
+        "want",
+        "daily",
+        "special"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-078",
+      "intent": "food-order",
+      "input": "For my order, I want a serving of noodles.",
+      "response": "The requested dish is identified for this conversational example.",
+      "keywords": [
+        "order",
+        "want",
+        "serving",
+        "noodles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-079",
+      "intent": "food-order",
+      "input": "For my order, I want a side of vegetables.",
+      "response": "I recognize the food order, but I cannot place a real transaction.",
+      "keywords": [
+        "order",
+        "want",
+        "side",
+        "vegetables"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "45-ordering-food-080",
+      "intent": "food-order",
+      "input": "For my order, I want a simple dessert.",
+      "response": "That sentence clearly requests a food item.",
+      "keywords": [
+        "order",
+        "want",
+        "simple",
+        "dessert"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a food order without claiming a transaction",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

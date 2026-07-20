@@ -1,0 +1,1480 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "40-asking-the-date",
+    "title": "Asking the date",
+    "description": "Questions asking for the current date or day.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "40-asking-the-date-001",
+      "intent": "ask-date",
+      "input": "What is the date?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-002",
+      "intent": "ask-date",
+      "input": "What is the date today?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "date",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-003",
+      "intent": "ask-date",
+      "input": "What is the date right now?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-004",
+      "intent": "ask-date",
+      "input": "What is the date where I am?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-005",
+      "intent": "ask-date",
+      "input": "What is the date in my area?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-006",
+      "intent": "ask-date",
+      "input": "What is the date at the moment?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-007",
+      "intent": "ask-date",
+      "input": "What is the date this morning?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-008",
+      "intent": "ask-date",
+      "input": "What is the date please?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "date",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-009",
+      "intent": "ask-date",
+      "input": "What is the date before we continue?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-010",
+      "intent": "ask-date",
+      "input": "What is the date as precisely as you can?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "date",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-011",
+      "intent": "ask-date",
+      "input": "What day is it?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "day"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-012",
+      "intent": "ask-date",
+      "input": "What day is it today?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "day",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-013",
+      "intent": "ask-date",
+      "input": "What day is it right now?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "day",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-014",
+      "intent": "ask-date",
+      "input": "What day is it where I am?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "day",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-015",
+      "intent": "ask-date",
+      "input": "What day is it in my area?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "day",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-016",
+      "intent": "ask-date",
+      "input": "What day is it at the moment?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "day",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-017",
+      "intent": "ask-date",
+      "input": "What day is it this morning?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "day",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-018",
+      "intent": "ask-date",
+      "input": "What day is it please?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "what",
+        "day",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-019",
+      "intent": "ask-date",
+      "input": "What day is it before we continue?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "what",
+        "day",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-020",
+      "intent": "ask-date",
+      "input": "What day is it as precisely as you can?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "what",
+        "day",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-021",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-022",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date today?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-023",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date right now?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-024",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date where I am?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-025",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date in my area?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-026",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date at the moment?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-027",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date this morning?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-028",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date please?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-029",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date before we continue?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-030",
+      "intent": "ask-date",
+      "input": "Could you tell me today's date as precisely as you can?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "could",
+        "tell",
+        "today",
+        "date",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-031",
+      "intent": "ask-date",
+      "input": "Do you know the current date?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "know",
+        "current",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-032",
+      "intent": "ask-date",
+      "input": "Do you know the current date today?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-033",
+      "intent": "ask-date",
+      "input": "Do you know the current date right now?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-034",
+      "intent": "ask-date",
+      "input": "Do you know the current date where I am?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-035",
+      "intent": "ask-date",
+      "input": "Do you know the current date in my area?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-036",
+      "intent": "ask-date",
+      "input": "Do you know the current date at the moment?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-037",
+      "intent": "ask-date",
+      "input": "Do you know the current date this morning?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-038",
+      "intent": "ask-date",
+      "input": "Do you know the current date please?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-039",
+      "intent": "ask-date",
+      "input": "Do you know the current date before we continue?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-040",
+      "intent": "ask-date",
+      "input": "Do you know the current date as precisely as you can?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "know",
+        "current",
+        "date",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-041",
+      "intent": "ask-date",
+      "input": "Can you give me the date?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "can",
+        "give",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-042",
+      "intent": "ask-date",
+      "input": "Can you give me the date today?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-043",
+      "intent": "ask-date",
+      "input": "Can you give me the date right now?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-044",
+      "intent": "ask-date",
+      "input": "Can you give me the date where I am?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-045",
+      "intent": "ask-date",
+      "input": "Can you give me the date in my area?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-046",
+      "intent": "ask-date",
+      "input": "Can you give me the date at the moment?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-047",
+      "intent": "ask-date",
+      "input": "Can you give me the date this morning?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-048",
+      "intent": "ask-date",
+      "input": "Can you give me the date please?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-049",
+      "intent": "ask-date",
+      "input": "Can you give me the date before we continue?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-050",
+      "intent": "ask-date",
+      "input": "Can you give me the date as precisely as you can?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "can",
+        "give",
+        "date",
+        "precisely"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-051",
+      "intent": "ask-date",
+      "input": "Which day is today?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "which",
+        "day",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-052",
+      "intent": "ask-date",
+      "input": "Which day is today today?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "which",
+        "day",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-053",
+      "intent": "ask-date",
+      "input": "Which day is today right now?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-054",
+      "intent": "ask-date",
+      "input": "Which day is today where I am?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-055",
+      "intent": "ask-date",
+      "input": "Which day is today in my area?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-056",
+      "intent": "ask-date",
+      "input": "Which day is today at the moment?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-057",
+      "intent": "ask-date",
+      "input": "Which day is today this morning?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-058",
+      "intent": "ask-date",
+      "input": "Which day is today please?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-059",
+      "intent": "ask-date",
+      "input": "Which day is today before we continue?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-060",
+      "intent": "ask-date",
+      "input": "Which day is today as precisely as you can?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "which",
+        "day",
+        "today",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-061",
+      "intent": "ask-date",
+      "input": "Please tell me today's date?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-062",
+      "intent": "ask-date",
+      "input": "Please tell me today's date today?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-063",
+      "intent": "ask-date",
+      "input": "Please tell me today's date right now?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-064",
+      "intent": "ask-date",
+      "input": "Please tell me today's date where I am?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-065",
+      "intent": "ask-date",
+      "input": "Please tell me today's date in my area?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-066",
+      "intent": "ask-date",
+      "input": "Please tell me today's date at the moment?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-067",
+      "intent": "ask-date",
+      "input": "Please tell me today's date this morning?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-068",
+      "intent": "ask-date",
+      "input": "Please tell me today's date please?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-069",
+      "intent": "ask-date",
+      "input": "Please tell me today's date before we continue?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-070",
+      "intent": "ask-date",
+      "input": "Please tell me today's date as precisely as you can?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "please",
+        "tell",
+        "today",
+        "date",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-071",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-072",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date today?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-073",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date right now?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-074",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date where I am?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-075",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date in my area?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-076",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date at the moment?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-077",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date this morning?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-078",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date please?",
+      "response": "A current date requires live calendar and timezone context that is not recorded here.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-079",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date before we continue?",
+      "response": "I do not have a live calendar source in this corpus, so I cannot safely state today's date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "40-asking-the-date-080",
+      "intent": "ask-date",
+      "input": "Would you check the calendar date as precisely as you can?",
+      "response": "Please check your device calendar for the current local date.",
+      "keywords": [
+        "would",
+        "check",
+        "calendar",
+        "date",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live calendar source",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

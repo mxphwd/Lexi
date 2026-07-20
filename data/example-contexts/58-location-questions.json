@@ -1,0 +1,1441 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "58-location-questions",
+    "title": "Location questions",
+    "description": "Questions asking where a common place or object is located.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "58-location-questions-001",
+      "intent": "location-question",
+      "input": "Where is the station?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-002",
+      "intent": "location-question",
+      "input": "Where is the nearest exit?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-003",
+      "intent": "location-question",
+      "input": "Where is the city center?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-004",
+      "intent": "location-question",
+      "input": "Where is the library?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-005",
+      "intent": "location-question",
+      "input": "Where is the hospital?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-006",
+      "intent": "location-question",
+      "input": "Where is the airport?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-007",
+      "intent": "location-question",
+      "input": "Where is the bus stop?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-008",
+      "intent": "location-question",
+      "input": "Where is the hotel?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-009",
+      "intent": "location-question",
+      "input": "Where is the information desk?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-010",
+      "intent": "location-question",
+      "input": "Where is the main entrance?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-011",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the station?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-012",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the nearest exit?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-013",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the city center?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-014",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the library?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-015",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the hospital?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-016",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the airport?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-017",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the bus stop?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-018",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the hotel?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-019",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the information desk?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-020",
+      "intent": "location-question",
+      "input": "Can you tell me the location of the main entrance?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "can",
+        "tell",
+        "location",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-021",
+      "intent": "location-question",
+      "input": "Do you know where to find the station?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-022",
+      "intent": "location-question",
+      "input": "Do you know where to find the nearest exit?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-023",
+      "intent": "location-question",
+      "input": "Do you know where to find the city center?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-024",
+      "intent": "location-question",
+      "input": "Do you know where to find the library?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-025",
+      "intent": "location-question",
+      "input": "Do you know where to find the hospital?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-026",
+      "intent": "location-question",
+      "input": "Do you know where to find the airport?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-027",
+      "intent": "location-question",
+      "input": "Do you know where to find the bus stop?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-028",
+      "intent": "location-question",
+      "input": "Do you know where to find the hotel?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-029",
+      "intent": "location-question",
+      "input": "Do you know where to find the information desk?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-030",
+      "intent": "location-question",
+      "input": "Do you know where to find the main entrance?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "know",
+        "where",
+        "find",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-031",
+      "intent": "location-question",
+      "input": "Which way is the station?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "which",
+        "way",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-032",
+      "intent": "location-question",
+      "input": "Which way is the nearest exit?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "which",
+        "way",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-033",
+      "intent": "location-question",
+      "input": "Which way is the city center?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "which",
+        "way",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-034",
+      "intent": "location-question",
+      "input": "Which way is the library?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "which",
+        "way",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-035",
+      "intent": "location-question",
+      "input": "Which way is the hospital?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "which",
+        "way",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-036",
+      "intent": "location-question",
+      "input": "Which way is the airport?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "which",
+        "way",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-037",
+      "intent": "location-question",
+      "input": "Which way is the bus stop?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "which",
+        "way",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-038",
+      "intent": "location-question",
+      "input": "Which way is the hotel?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "which",
+        "way",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-039",
+      "intent": "location-question",
+      "input": "Which way is the information desk?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "which",
+        "way",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-040",
+      "intent": "location-question",
+      "input": "Which way is the main entrance?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "which",
+        "way",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-041",
+      "intent": "location-question",
+      "input": "How far away is the station?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-042",
+      "intent": "location-question",
+      "input": "How far away is the nearest exit?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-043",
+      "intent": "location-question",
+      "input": "How far away is the city center?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-044",
+      "intent": "location-question",
+      "input": "How far away is the library?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-045",
+      "intent": "location-question",
+      "input": "How far away is the hospital?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-046",
+      "intent": "location-question",
+      "input": "How far away is the airport?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-047",
+      "intent": "location-question",
+      "input": "How far away is the bus stop?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-048",
+      "intent": "location-question",
+      "input": "How far away is the hotel?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-049",
+      "intent": "location-question",
+      "input": "How far away is the information desk?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-050",
+      "intent": "location-question",
+      "input": "How far away is the main entrance?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "how",
+        "far",
+        "away",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-051",
+      "intent": "location-question",
+      "input": "Could you locate the station?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "could",
+        "locate",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-052",
+      "intent": "location-question",
+      "input": "Could you locate the nearest exit?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "could",
+        "locate",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-053",
+      "intent": "location-question",
+      "input": "Could you locate the city center?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "could",
+        "locate",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-054",
+      "intent": "location-question",
+      "input": "Could you locate the library?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "could",
+        "locate",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-055",
+      "intent": "location-question",
+      "input": "Could you locate the hospital?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "could",
+        "locate",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-056",
+      "intent": "location-question",
+      "input": "Could you locate the airport?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "could",
+        "locate",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-057",
+      "intent": "location-question",
+      "input": "Could you locate the bus stop?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "could",
+        "locate",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-058",
+      "intent": "location-question",
+      "input": "Could you locate the hotel?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "could",
+        "locate",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-059",
+      "intent": "location-question",
+      "input": "Could you locate the information desk?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "could",
+        "locate",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-060",
+      "intent": "location-question",
+      "input": "Could you locate the main entrance?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "could",
+        "locate",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-061",
+      "intent": "location-question",
+      "input": "Where should I look for the station?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-062",
+      "intent": "location-question",
+      "input": "Where should I look for the nearest exit?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-063",
+      "intent": "location-question",
+      "input": "Where should I look for the city center?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-064",
+      "intent": "location-question",
+      "input": "Where should I look for the library?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-065",
+      "intent": "location-question",
+      "input": "Where should I look for the hospital?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-066",
+      "intent": "location-question",
+      "input": "Where should I look for the airport?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-067",
+      "intent": "location-question",
+      "input": "Where should I look for the bus stop?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-068",
+      "intent": "location-question",
+      "input": "Where should I look for the hotel?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-069",
+      "intent": "location-question",
+      "input": "Where should I look for the information desk?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-070",
+      "intent": "location-question",
+      "input": "Where should I look for the main entrance?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "where",
+        "should",
+        "look",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-071",
+      "intent": "location-question",
+      "input": "What is the address of the station?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "what",
+        "address",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-072",
+      "intent": "location-question",
+      "input": "What is the address of the nearest exit?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "what",
+        "address",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-073",
+      "intent": "location-question",
+      "input": "What is the address of the city center?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "what",
+        "address",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-074",
+      "intent": "location-question",
+      "input": "What is the address of the library?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "what",
+        "address",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-075",
+      "intent": "location-question",
+      "input": "What is the address of the hospital?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "what",
+        "address",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-076",
+      "intent": "location-question",
+      "input": "What is the address of the airport?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "what",
+        "address",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-077",
+      "intent": "location-question",
+      "input": "What is the address of the bus stop?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "what",
+        "address",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-078",
+      "intent": "location-question",
+      "input": "What is the address of the hotel?",
+      "response": "A reliable location answer requires the relevant local context or a current map source.",
+      "keywords": [
+        "what",
+        "address",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-079",
+      "intent": "location-question",
+      "input": "What is the address of the information desk?",
+      "response": "I need a city, building, or supplied map context to identify that location.",
+      "keywords": [
+        "what",
+        "address",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "58-location-questions-080",
+      "intent": "location-question",
+      "input": "What is the address of the main entrance?",
+      "response": "The place is named, but its actual location is not recorded in this conversational context.",
+      "keywords": [
+        "what",
+        "address",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the need for local or supplied location context",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

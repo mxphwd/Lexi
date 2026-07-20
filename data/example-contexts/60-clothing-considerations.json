@@ -1,0 +1,1579 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "60-clothing-considerations",
+    "title": "Choosing clothing for conditions",
+    "description": "Questions about choosing clothing based on stated activities or conditions.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "60-clothing-considerations-001",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a rainy walk?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-002",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a cold morning?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-003",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a hot afternoon?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-004",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a formal meeting?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-005",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a casual dinner?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-006",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a long train ride?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-007",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for an outdoor event?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-008",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a day at work?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-009",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a short hike?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-010",
+      "intent": "clothing-consideration",
+      "input": "What should I wear for a windy evening?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "should",
+        "wear",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-011",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a rainy walk?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-012",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a cold morning?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-013",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a hot afternoon?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-014",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a formal meeting?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-015",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a casual dinner?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-016",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a long train ride?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-017",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for an outdoor event?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-018",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a day at work?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-019",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a short hike?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-020",
+      "intent": "clothing-consideration",
+      "input": "How should I dress for a windy evening?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "how",
+        "should",
+        "dress",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-021",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a rainy walk?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-022",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a cold morning?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-023",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a hot afternoon?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-024",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a formal meeting?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-025",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a casual dinner?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-026",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a long train ride?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-027",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for an outdoor event?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-028",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a day at work?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-029",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a short hike?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-030",
+      "intent": "clothing-consideration",
+      "input": "Do I need special clothing for a windy evening?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "need",
+        "special",
+        "clothing",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-031",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a rainy walk?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-032",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a cold morning?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-033",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a hot afternoon?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-034",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a formal meeting?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-035",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a casual dinner?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-036",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a long train ride?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-037",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit an outdoor event?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-038",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a day at work?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-039",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a short hike?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-040",
+      "intent": "clothing-consideration",
+      "input": "Which clothes would suit a windy evening?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "which",
+        "clothes",
+        "would",
+        "suit",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-041",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a rainy walk?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-042",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a cold morning?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-043",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a hot afternoon?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-044",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a formal meeting?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-045",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a casual dinner?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-046",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a long train ride?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-047",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for an outdoor event?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-048",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a day at work?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-049",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a short hike?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-050",
+      "intent": "clothing-consideration",
+      "input": "Can you help me choose clothes for a windy evening?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "help",
+        "choose",
+        "clothes",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-051",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a rainy walk?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-052",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a cold morning?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-053",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a hot afternoon?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-054",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a formal meeting?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-055",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a casual dinner?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-056",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a long train ride?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-057",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for an outdoor event?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-058",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a day at work?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-059",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a short hike?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-060",
+      "intent": "clothing-consideration",
+      "input": "What kind of outfit works for a windy evening?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "kind",
+        "outfit",
+        "works",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-061",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a rainy walk?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-062",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a cold morning?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-063",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a hot afternoon?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-064",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a formal meeting?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-065",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a casual dinner?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-066",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a long train ride?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-067",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for an outdoor event?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-068",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a day at work?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-069",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a short hike?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-070",
+      "intent": "clothing-consideration",
+      "input": "Should I bring a jacket for a windy evening?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "should",
+        "bring",
+        "jacket",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-071",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a rainy walk?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "rainy",
+        "walk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-072",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a cold morning?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "cold",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-073",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a hot afternoon?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "hot",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-074",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a formal meeting?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "formal",
+        "meeting"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-075",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a casual dinner?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "casual",
+        "dinner"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-076",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a long train ride?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "long",
+        "train",
+        "ride"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-077",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for an outdoor event?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "outdoor",
+        "event"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-078",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a day at work?",
+      "response": "I can recognize the clothing question without assuming live weather or a dress code.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "day",
+        "work"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-079",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a short hike?",
+      "response": "Clothing depends on the actual weather, activity, dress code, and personal needs; provide those details first.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "short",
+        "hike"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "60-clothing-considerations-080",
+      "intent": "clothing-consideration",
+      "input": "What footwear makes sense for a windy evening?",
+      "response": "The occasion is identified, but current conditions and personal requirements are needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "footwear",
+        "makes",
+        "sense",
+        "windy",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request conditions before suggesting clothing",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

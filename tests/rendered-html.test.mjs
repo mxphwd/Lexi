@@ -32,15 +32,15 @@ test("server-renders the finished Lexi surface", async () => {
 
 test("ships the modular corpus and complete lexical source artifacts", async () => {
   const contextFiles = (await readdir(new URL("../data/example-contexts/", import.meta.url)))
-    .filter((file) => /^\d{2}-.+\.json$/.test(file));
-  assert.equal(contextFiles.length, 12);
+    .filter((file) => /^\d{2,}-.+\.json$/.test(file));
+  assert.equal(contextFiles.length, 62);
 
   const pages = await Promise.all(
     contextFiles.map(async (file) =>
       JSON.parse(await readFile(new URL(`../data/example-contexts/${file}`, import.meta.url), "utf8")),
     ),
   );
-  assert.equal(pages.reduce((sum, page) => sum + page.entries.length, 0), 180);
+  assert.equal(pages.reduce((sum, page) => sum + page.entries.length, 0), 4_180);
 
   const wordset = await stat(new URL("../data/lexicon/vendor/wordset/allwords_wordset.json.gz", import.meta.url));
   const moby = await stat(new URL("../data/lexicon/vendor/moby/words.txt", import.meta.url));

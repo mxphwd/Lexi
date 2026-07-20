@@ -1,0 +1,1470 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "49-work-updates",
+    "title": "Basic work updates",
+    "description": "Statements reporting ordinary progress on work or a project.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "49-work-updates-001",
+      "intent": "work-update",
+      "input": "I have finished the first task.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "finished",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-002",
+      "intent": "work-update",
+      "input": "I have finished the written report.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "finished",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-003",
+      "intent": "work-update",
+      "input": "I have finished the project outline.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "finished",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-004",
+      "intent": "work-update",
+      "input": "I have finished the final review.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "finished",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-005",
+      "intent": "work-update",
+      "input": "I have finished the meeting notes.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "finished",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-006",
+      "intent": "work-update",
+      "input": "I have finished the next assignment.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "finished",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-007",
+      "intent": "work-update",
+      "input": "I have finished the data check.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "finished",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-008",
+      "intent": "work-update",
+      "input": "I have finished the presentation draft.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "finished",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-009",
+      "intent": "work-update",
+      "input": "I have finished the customer request.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "finished",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-010",
+      "intent": "work-update",
+      "input": "I have finished the weekly summary.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "finished",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-011",
+      "intent": "work-update",
+      "input": "I am working on the first task.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "working",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-012",
+      "intent": "work-update",
+      "input": "I am working on the written report.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "working",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-013",
+      "intent": "work-update",
+      "input": "I am working on the project outline.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "working",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-014",
+      "intent": "work-update",
+      "input": "I am working on the final review.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "working",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-015",
+      "intent": "work-update",
+      "input": "I am working on the meeting notes.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "working",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-016",
+      "intent": "work-update",
+      "input": "I am working on the next assignment.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "working",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-017",
+      "intent": "work-update",
+      "input": "I am working on the data check.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "working",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-018",
+      "intent": "work-update",
+      "input": "I am working on the presentation draft.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "working",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-019",
+      "intent": "work-update",
+      "input": "I am working on the customer request.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "working",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-020",
+      "intent": "work-update",
+      "input": "I am working on the weekly summary.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "working",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-021",
+      "intent": "work-update",
+      "input": "I have started the first task.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-022",
+      "intent": "work-update",
+      "input": "I have started the written report.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-023",
+      "intent": "work-update",
+      "input": "I have started the project outline.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "started",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-024",
+      "intent": "work-update",
+      "input": "I have started the final review.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-025",
+      "intent": "work-update",
+      "input": "I have started the meeting notes.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-026",
+      "intent": "work-update",
+      "input": "I have started the next assignment.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "started",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-027",
+      "intent": "work-update",
+      "input": "I have started the data check.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-028",
+      "intent": "work-update",
+      "input": "I have started the presentation draft.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-029",
+      "intent": "work-update",
+      "input": "I have started the customer request.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "have",
+        "started",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-030",
+      "intent": "work-update",
+      "input": "I have started the weekly summary.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-031",
+      "intent": "work-update",
+      "input": "I still need to complete the first task.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-032",
+      "intent": "work-update",
+      "input": "I still need to complete the written report.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-033",
+      "intent": "work-update",
+      "input": "I still need to complete the project outline.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-034",
+      "intent": "work-update",
+      "input": "I still need to complete the final review.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-035",
+      "intent": "work-update",
+      "input": "I still need to complete the meeting notes.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-036",
+      "intent": "work-update",
+      "input": "I still need to complete the next assignment.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-037",
+      "intent": "work-update",
+      "input": "I still need to complete the data check.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-038",
+      "intent": "work-update",
+      "input": "I still need to complete the presentation draft.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-039",
+      "intent": "work-update",
+      "input": "I still need to complete the customer request.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-040",
+      "intent": "work-update",
+      "input": "I still need to complete the weekly summary.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "still",
+        "need",
+        "complete",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-041",
+      "intent": "work-update",
+      "input": "Today I reviewed the first task.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-042",
+      "intent": "work-update",
+      "input": "Today I reviewed the written report.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-043",
+      "intent": "work-update",
+      "input": "Today I reviewed the project outline.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-044",
+      "intent": "work-update",
+      "input": "Today I reviewed the final review.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-045",
+      "intent": "work-update",
+      "input": "Today I reviewed the meeting notes.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-046",
+      "intent": "work-update",
+      "input": "Today I reviewed the next assignment.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-047",
+      "intent": "work-update",
+      "input": "Today I reviewed the data check.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-048",
+      "intent": "work-update",
+      "input": "Today I reviewed the presentation draft.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-049",
+      "intent": "work-update",
+      "input": "Today I reviewed the customer request.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-050",
+      "intent": "work-update",
+      "input": "Today I reviewed the weekly summary.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "today",
+        "reviewed",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-051",
+      "intent": "work-update",
+      "input": "My current task is the first task.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "current",
+        "task",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-052",
+      "intent": "work-update",
+      "input": "My current task is the written report.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "current",
+        "task",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-053",
+      "intent": "work-update",
+      "input": "My current task is the project outline.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "current",
+        "task",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-054",
+      "intent": "work-update",
+      "input": "My current task is the final review.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "current",
+        "task",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-055",
+      "intent": "work-update",
+      "input": "My current task is the meeting notes.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "current",
+        "task",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-056",
+      "intent": "work-update",
+      "input": "My current task is the next assignment.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "current",
+        "task",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-057",
+      "intent": "work-update",
+      "input": "My current task is the data check.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "current",
+        "task",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-058",
+      "intent": "work-update",
+      "input": "My current task is the presentation draft.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "current",
+        "task",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-059",
+      "intent": "work-update",
+      "input": "My current task is the customer request.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "current",
+        "task",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-060",
+      "intent": "work-update",
+      "input": "My current task is the weekly summary.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "current",
+        "task",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-061",
+      "intent": "work-update",
+      "input": "I made progress on the first task.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "made",
+        "progress",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-062",
+      "intent": "work-update",
+      "input": "I made progress on the written report.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "made",
+        "progress",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-063",
+      "intent": "work-update",
+      "input": "I made progress on the project outline.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "made",
+        "progress",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-064",
+      "intent": "work-update",
+      "input": "I made progress on the final review.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "made",
+        "progress",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-065",
+      "intent": "work-update",
+      "input": "I made progress on the meeting notes.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "made",
+        "progress",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-066",
+      "intent": "work-update",
+      "input": "I made progress on the next assignment.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "made",
+        "progress",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-067",
+      "intent": "work-update",
+      "input": "I made progress on the data check.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "made",
+        "progress",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-068",
+      "intent": "work-update",
+      "input": "I made progress on the presentation draft.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "made",
+        "progress",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-069",
+      "intent": "work-update",
+      "input": "I made progress on the customer request.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "made",
+        "progress",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-070",
+      "intent": "work-update",
+      "input": "I made progress on the weekly summary.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "made",
+        "progress",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-071",
+      "intent": "work-update",
+      "input": "I am waiting to begin the first task.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "first",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-072",
+      "intent": "work-update",
+      "input": "I am waiting to begin the written report.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "written",
+        "report"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-073",
+      "intent": "work-update",
+      "input": "I am waiting to begin the project outline.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "project",
+        "outline"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-074",
+      "intent": "work-update",
+      "input": "I am waiting to begin the final review.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "final",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-075",
+      "intent": "work-update",
+      "input": "I am waiting to begin the meeting notes.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "meeting",
+        "notes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-076",
+      "intent": "work-update",
+      "input": "I am waiting to begin the next assignment.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-077",
+      "intent": "work-update",
+      "input": "I am waiting to begin the data check.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "data",
+        "check"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-078",
+      "intent": "work-update",
+      "input": "I am waiting to begin the presentation draft.",
+      "response": "The reported work stage is acknowledged for this turn.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "presentation",
+        "draft"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-079",
+      "intent": "work-update",
+      "input": "I am waiting to begin the customer request.",
+      "response": "I understand the work status stated in this message.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "customer",
+        "request"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "49-work-updates-080",
+      "intent": "work-update",
+      "input": "I am waiting to begin the weekly summary.",
+      "response": "That is a clear update about task progress.",
+      "keywords": [
+        "am",
+        "waiting",
+        "begin",
+        "weekly",
+        "summary"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a work update",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

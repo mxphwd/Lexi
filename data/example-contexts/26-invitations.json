@@ -1,0 +1,1477 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "26-invitations",
+    "title": "Making invitations",
+    "description": "Everyday invitations to shared activities.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "26-invitations-001",
+      "intent": "invitation",
+      "input": "Would you like to talk for a while?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "like",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-002",
+      "intent": "invitation",
+      "input": "Would you like to work through an example?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "like",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-003",
+      "intent": "invitation",
+      "input": "Would you like to review the main idea?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "like",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-004",
+      "intent": "invitation",
+      "input": "Would you like to continue this discussion?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "like",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-005",
+      "intent": "invitation",
+      "input": "Would you like to explore another topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "like",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-006",
+      "intent": "invitation",
+      "input": "Would you like to practice a conversation?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "like",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-007",
+      "intent": "invitation",
+      "input": "Would you like to look at the next question?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "like",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-008",
+      "intent": "invitation",
+      "input": "Would you like to compare two sentences?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "like",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-009",
+      "intent": "invitation",
+      "input": "Would you like to solve a language problem?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "like",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-010",
+      "intent": "invitation",
+      "input": "Would you like to begin a new topic?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "like",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-011",
+      "intent": "invitation",
+      "input": "Do you want to talk for a while?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "want",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-012",
+      "intent": "invitation",
+      "input": "Do you want to work through an example?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "want",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-013",
+      "intent": "invitation",
+      "input": "Do you want to review the main idea?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "want",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-014",
+      "intent": "invitation",
+      "input": "Do you want to continue this discussion?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "want",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-015",
+      "intent": "invitation",
+      "input": "Do you want to explore another topic?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "want",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-016",
+      "intent": "invitation",
+      "input": "Do you want to practice a conversation?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "want",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-017",
+      "intent": "invitation",
+      "input": "Do you want to look at the next question?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "want",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-018",
+      "intent": "invitation",
+      "input": "Do you want to compare two sentences?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "want",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-019",
+      "intent": "invitation",
+      "input": "Do you want to solve a language problem?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "want",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-020",
+      "intent": "invitation",
+      "input": "Do you want to begin a new topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "want",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-021",
+      "intent": "invitation",
+      "input": "Can you talk for a while?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "can",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-022",
+      "intent": "invitation",
+      "input": "Can you work through an example?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "can",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-023",
+      "intent": "invitation",
+      "input": "Can you review the main idea?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "can",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-024",
+      "intent": "invitation",
+      "input": "Can you continue this discussion?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "can",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-025",
+      "intent": "invitation",
+      "input": "Can you explore another topic?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "can",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-026",
+      "intent": "invitation",
+      "input": "Can you practice a conversation?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "can",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-027",
+      "intent": "invitation",
+      "input": "Can you look at the next question?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "can",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-028",
+      "intent": "invitation",
+      "input": "Can you compare two sentences?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "can",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-029",
+      "intent": "invitation",
+      "input": "Can you solve a language problem?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "can",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-030",
+      "intent": "invitation",
+      "input": "Can you begin a new topic?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "can",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-031",
+      "intent": "invitation",
+      "input": "Will you talk for a while?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "will",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-032",
+      "intent": "invitation",
+      "input": "Will you work through an example?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "will",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-033",
+      "intent": "invitation",
+      "input": "Will you review the main idea?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "will",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-034",
+      "intent": "invitation",
+      "input": "Will you continue this discussion?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "will",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-035",
+      "intent": "invitation",
+      "input": "Will you explore another topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "will",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-036",
+      "intent": "invitation",
+      "input": "Will you practice a conversation?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "will",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-037",
+      "intent": "invitation",
+      "input": "Will you look at the next question?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "will",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-038",
+      "intent": "invitation",
+      "input": "Will you compare two sentences?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "will",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-039",
+      "intent": "invitation",
+      "input": "Will you solve a language problem?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "will",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-040",
+      "intent": "invitation",
+      "input": "Will you begin a new topic?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "will",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-041",
+      "intent": "invitation",
+      "input": "How about we talk for a while?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "how",
+        "about",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-042",
+      "intent": "invitation",
+      "input": "How about we work through an example?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "how",
+        "about",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-043",
+      "intent": "invitation",
+      "input": "How about we review the main idea?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "how",
+        "about",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-044",
+      "intent": "invitation",
+      "input": "How about we continue this discussion?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "how",
+        "about",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-045",
+      "intent": "invitation",
+      "input": "How about we explore another topic?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "how",
+        "about",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-046",
+      "intent": "invitation",
+      "input": "How about we practice a conversation?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "how",
+        "about",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-047",
+      "intent": "invitation",
+      "input": "How about we look at the next question?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "how",
+        "about",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-048",
+      "intent": "invitation",
+      "input": "How about we compare two sentences?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "how",
+        "about",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-049",
+      "intent": "invitation",
+      "input": "How about we solve a language problem?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "how",
+        "about",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-050",
+      "intent": "invitation",
+      "input": "How about we begin a new topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "how",
+        "about",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-051",
+      "intent": "invitation",
+      "input": "Why don't we talk for a while?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "why",
+        "don",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-052",
+      "intent": "invitation",
+      "input": "Why don't we work through an example?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "why",
+        "don",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-053",
+      "intent": "invitation",
+      "input": "Why don't we review the main idea?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "why",
+        "don",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-054",
+      "intent": "invitation",
+      "input": "Why don't we continue this discussion?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "why",
+        "don",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-055",
+      "intent": "invitation",
+      "input": "Why don't we explore another topic?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "why",
+        "don",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-056",
+      "intent": "invitation",
+      "input": "Why don't we practice a conversation?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "why",
+        "don",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-057",
+      "intent": "invitation",
+      "input": "Why don't we look at the next question?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "why",
+        "don",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-058",
+      "intent": "invitation",
+      "input": "Why don't we compare two sentences?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "why",
+        "don",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-059",
+      "intent": "invitation",
+      "input": "Why don't we solve a language problem?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "why",
+        "don",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-060",
+      "intent": "invitation",
+      "input": "Why don't we begin a new topic?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "why",
+        "don",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-061",
+      "intent": "invitation",
+      "input": "I'd like to invite you to talk for a while?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "like",
+        "invite",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-062",
+      "intent": "invitation",
+      "input": "I'd like to invite you to work through an example?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "like",
+        "invite",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-063",
+      "intent": "invitation",
+      "input": "I'd like to invite you to review the main idea?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "like",
+        "invite",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-064",
+      "intent": "invitation",
+      "input": "I'd like to invite you to continue this discussion?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "like",
+        "invite",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-065",
+      "intent": "invitation",
+      "input": "I'd like to invite you to explore another topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "like",
+        "invite",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-066",
+      "intent": "invitation",
+      "input": "I'd like to invite you to practice a conversation?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "like",
+        "invite",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-067",
+      "intent": "invitation",
+      "input": "I'd like to invite you to look at the next question?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "like",
+        "invite",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-068",
+      "intent": "invitation",
+      "input": "I'd like to invite you to compare two sentences?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "like",
+        "invite",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-069",
+      "intent": "invitation",
+      "input": "I'd like to invite you to solve a language problem?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "like",
+        "invite",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-070",
+      "intent": "invitation",
+      "input": "I'd like to invite you to begin a new topic?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "like",
+        "invite",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-071",
+      "intent": "invitation",
+      "input": "Would you be interested in talk for a while?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "interested",
+        "talk",
+        "while"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-072",
+      "intent": "invitation",
+      "input": "Would you be interested in work through an example?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "interested",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-073",
+      "intent": "invitation",
+      "input": "Would you be interested in review the main idea?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "interested",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-074",
+      "intent": "invitation",
+      "input": "Would you be interested in continue this discussion?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "interested",
+        "continue",
+        "discussion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-075",
+      "intent": "invitation",
+      "input": "Would you be interested in explore another topic?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "interested",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-076",
+      "intent": "invitation",
+      "input": "Would you be interested in practice a conversation?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "interested",
+        "practice",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-077",
+      "intent": "invitation",
+      "input": "Would you be interested in look at the next question?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "interested",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-078",
+      "intent": "invitation",
+      "input": "Would you be interested in compare two sentences?",
+      "response": "I can join the text-based part of that activity.",
+      "keywords": [
+        "would",
+        "interested",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-079",
+      "intent": "invitation",
+      "input": "Would you be interested in solve a language problem?",
+      "response": "I can participate in that activity here through supported text conversation.",
+      "keywords": [
+        "would",
+        "interested",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "26-invitations-080",
+      "intent": "invitation",
+      "input": "Would you be interested in begin a new topic?",
+      "response": "Yes, we can do that within this chat and the contexts I have learned.",
+      "keywords": [
+        "would",
+        "interested",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "respond to an invitation without claiming physical participation",
+        "tone": "warm"
+      }
+    }
+  ]
+}

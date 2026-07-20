@@ -1,0 +1,1458 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "20-clarification-requests",
+    "title": "Requests for clarification",
+    "description": "Questions asking for an unclear statement to be made more precise.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "20-clarification-requests-001",
+      "intent": "clarification-request",
+      "input": "Could you clarify that point?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "clarify",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-002",
+      "intent": "clarification-request",
+      "input": "Could you clarify the last sentence?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "clarify",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-003",
+      "intent": "clarification-request",
+      "input": "Could you clarify what happens next?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "clarify",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-004",
+      "intent": "clarification-request",
+      "input": "Could you clarify the main idea?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "clarify",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-005",
+      "intent": "clarification-request",
+      "input": "Could you clarify that word?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "clarify",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-006",
+      "intent": "clarification-request",
+      "input": "Could you clarify the difference?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "clarify",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-007",
+      "intent": "clarification-request",
+      "input": "Could you clarify your conclusion?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "clarify",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-008",
+      "intent": "clarification-request",
+      "input": "Could you clarify the instructions?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "clarify",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-009",
+      "intent": "clarification-request",
+      "input": "Could you clarify the example?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "clarify",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-010",
+      "intent": "clarification-request",
+      "input": "Could you clarify the context?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "clarify",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-011",
+      "intent": "clarification-request",
+      "input": "Can you explain that point?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "explain",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-012",
+      "intent": "clarification-request",
+      "input": "Can you explain the last sentence?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "explain",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-013",
+      "intent": "clarification-request",
+      "input": "Can you explain what happens next?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "explain",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-014",
+      "intent": "clarification-request",
+      "input": "Can you explain the main idea?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "explain",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-015",
+      "intent": "clarification-request",
+      "input": "Can you explain that word?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "explain",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-016",
+      "intent": "clarification-request",
+      "input": "Can you explain the difference?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "explain",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-017",
+      "intent": "clarification-request",
+      "input": "Can you explain your conclusion?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "explain",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-018",
+      "intent": "clarification-request",
+      "input": "Can you explain the instructions?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "explain",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-019",
+      "intent": "clarification-request",
+      "input": "Can you explain the example?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "explain",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-020",
+      "intent": "clarification-request",
+      "input": "Can you explain the context?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "explain",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-021",
+      "intent": "clarification-request",
+      "input": "What do you mean by that point?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "what",
+        "mean",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-022",
+      "intent": "clarification-request",
+      "input": "What do you mean by the last sentence?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "what",
+        "mean",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-023",
+      "intent": "clarification-request",
+      "input": "What do you mean by what happens next?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "what",
+        "mean",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-024",
+      "intent": "clarification-request",
+      "input": "What do you mean by the main idea?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "what",
+        "mean",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-025",
+      "intent": "clarification-request",
+      "input": "What do you mean by that word?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "what",
+        "mean",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-026",
+      "intent": "clarification-request",
+      "input": "What do you mean by the difference?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "what",
+        "mean",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-027",
+      "intent": "clarification-request",
+      "input": "What do you mean by your conclusion?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "what",
+        "mean",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-028",
+      "intent": "clarification-request",
+      "input": "What do you mean by the instructions?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "what",
+        "mean",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-029",
+      "intent": "clarification-request",
+      "input": "What do you mean by the example?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "what",
+        "mean",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-030",
+      "intent": "clarification-request",
+      "input": "What do you mean by the context?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "what",
+        "mean",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-031",
+      "intent": "clarification-request",
+      "input": "Please make clearer that point?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-032",
+      "intent": "clarification-request",
+      "input": "Please make clearer the last sentence?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-033",
+      "intent": "clarification-request",
+      "input": "Please make clearer what happens next?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-034",
+      "intent": "clarification-request",
+      "input": "Please make clearer the main idea?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-035",
+      "intent": "clarification-request",
+      "input": "Please make clearer that word?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-036",
+      "intent": "clarification-request",
+      "input": "Please make clearer the difference?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-037",
+      "intent": "clarification-request",
+      "input": "Please make clearer your conclusion?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-038",
+      "intent": "clarification-request",
+      "input": "Please make clearer the instructions?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-039",
+      "intent": "clarification-request",
+      "input": "Please make clearer the example?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-040",
+      "intent": "clarification-request",
+      "input": "Please make clearer the context?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "please",
+        "make",
+        "clearer",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-041",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about that point?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-042",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the last sentence?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-043",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about what happens next?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-044",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the main idea?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-045",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about that word?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-046",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the difference?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-047",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about your conclusion?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-048",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the instructions?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-049",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the example?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-050",
+      "intent": "clarification-request",
+      "input": "Could you be more specific about the context?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "could",
+        "more",
+        "specific",
+        "about",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-051",
+      "intent": "clarification-request",
+      "input": "I need clarification about that point?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-052",
+      "intent": "clarification-request",
+      "input": "I need clarification about the last sentence?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-053",
+      "intent": "clarification-request",
+      "input": "I need clarification about what happens next?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-054",
+      "intent": "clarification-request",
+      "input": "I need clarification about the main idea?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-055",
+      "intent": "clarification-request",
+      "input": "I need clarification about that word?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-056",
+      "intent": "clarification-request",
+      "input": "I need clarification about the difference?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-057",
+      "intent": "clarification-request",
+      "input": "I need clarification about your conclusion?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-058",
+      "intent": "clarification-request",
+      "input": "I need clarification about the instructions?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-059",
+      "intent": "clarification-request",
+      "input": "I need clarification about the example?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-060",
+      "intent": "clarification-request",
+      "input": "I need clarification about the context?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "need",
+        "clarification",
+        "about",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-061",
+      "intent": "clarification-request",
+      "input": "Would you clarify that point?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "would",
+        "clarify",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-062",
+      "intent": "clarification-request",
+      "input": "Would you clarify the last sentence?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "would",
+        "clarify",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-063",
+      "intent": "clarification-request",
+      "input": "Would you clarify what happens next?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "would",
+        "clarify",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-064",
+      "intent": "clarification-request",
+      "input": "Would you clarify the main idea?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "would",
+        "clarify",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-065",
+      "intent": "clarification-request",
+      "input": "Would you clarify that word?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "would",
+        "clarify",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-066",
+      "intent": "clarification-request",
+      "input": "Would you clarify the difference?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "would",
+        "clarify",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-067",
+      "intent": "clarification-request",
+      "input": "Would you clarify your conclusion?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "would",
+        "clarify",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-068",
+      "intent": "clarification-request",
+      "input": "Would you clarify the instructions?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "would",
+        "clarify",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-069",
+      "intent": "clarification-request",
+      "input": "Would you clarify the example?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "would",
+        "clarify",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-070",
+      "intent": "clarification-request",
+      "input": "Would you clarify the context?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "would",
+        "clarify",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-071",
+      "intent": "clarification-request",
+      "input": "Can you unpack that point?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "unpack",
+        "that",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-072",
+      "intent": "clarification-request",
+      "input": "Can you unpack the last sentence?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "unpack",
+        "last",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-073",
+      "intent": "clarification-request",
+      "input": "Can you unpack what happens next?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "unpack",
+        "what",
+        "happens",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-074",
+      "intent": "clarification-request",
+      "input": "Can you unpack the main idea?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "unpack",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-075",
+      "intent": "clarification-request",
+      "input": "Can you unpack that word?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "unpack",
+        "that",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-076",
+      "intent": "clarification-request",
+      "input": "Can you unpack the difference?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "unpack",
+        "difference"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-077",
+      "intent": "clarification-request",
+      "input": "Can you unpack your conclusion?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "unpack",
+        "conclusion"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-078",
+      "intent": "clarification-request",
+      "input": "Can you unpack the instructions?",
+      "response": "Tell me which statement you want explained more precisely.",
+      "keywords": [
+        "can",
+        "unpack",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-079",
+      "intent": "clarification-request",
+      "input": "Can you unpack the example?",
+      "response": "Please identify the exact word or point that needs clarification, and I will match it against my recorded contexts.",
+      "keywords": [
+        "can",
+        "unpack",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "20-clarification-requests-080",
+      "intent": "clarification-request",
+      "input": "Can you unpack the context?",
+      "response": "I can clarify a recorded topic. Name the part that is unclear.",
+      "keywords": [
+        "can",
+        "unpack",
+        "context"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "ask what needs clarification",
+        "tone": "precise"
+      }
+    }
+  ]
+}

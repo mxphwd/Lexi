@@ -1,0 +1,1501 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "55-travel-planning",
+    "title": "Basic travel planning",
+    "description": "Requests for organizing a trip without claiming live booking access.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "55-travel-planning-001",
+      "intent": "travel-planning",
+      "input": "Help me plan a weekend trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "help",
+        "plan",
+        "weekend",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-002",
+      "intent": "travel-planning",
+      "input": "Help me plan a day trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "help",
+        "plan",
+        "day",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-003",
+      "intent": "travel-planning",
+      "input": "Help me plan a train journey.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "help",
+        "plan",
+        "train",
+        "journey"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-004",
+      "intent": "travel-planning",
+      "input": "Help me plan a family visit.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "help",
+        "plan",
+        "family",
+        "visit"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-005",
+      "intent": "travel-planning",
+      "input": "Help me plan a short vacation.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "help",
+        "plan",
+        "short",
+        "vacation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-006",
+      "intent": "travel-planning",
+      "input": "Help me plan a business trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "help",
+        "plan",
+        "business",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-007",
+      "intent": "travel-planning",
+      "input": "Help me plan an overnight stay.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "help",
+        "plan",
+        "overnight",
+        "stay"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-008",
+      "intent": "travel-planning",
+      "input": "Help me plan a city visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "help",
+        "plan",
+        "city",
+        "visit"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-009",
+      "intent": "travel-planning",
+      "input": "Help me plan an airport transfer.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "help",
+        "plan",
+        "airport",
+        "transfer"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-010",
+      "intent": "travel-planning",
+      "input": "Help me plan a return journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "help",
+        "plan",
+        "return",
+        "journey"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-011",
+      "intent": "travel-planning",
+      "input": "I want to organize a weekend trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "want",
+        "organize",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-012",
+      "intent": "travel-planning",
+      "input": "I want to organize a day trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "want",
+        "organize",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-013",
+      "intent": "travel-planning",
+      "input": "I want to organize a train journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "want",
+        "organize",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-014",
+      "intent": "travel-planning",
+      "input": "I want to organize a family visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "want",
+        "organize",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-015",
+      "intent": "travel-planning",
+      "input": "I want to organize a short vacation.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "want",
+        "organize",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-016",
+      "intent": "travel-planning",
+      "input": "I want to organize a business trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "want",
+        "organize",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-017",
+      "intent": "travel-planning",
+      "input": "I want to organize an overnight stay.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "want",
+        "organize",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-018",
+      "intent": "travel-planning",
+      "input": "I want to organize a city visit.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "want",
+        "organize",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-019",
+      "intent": "travel-planning",
+      "input": "I want to organize an airport transfer.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "want",
+        "organize",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-020",
+      "intent": "travel-planning",
+      "input": "I want to organize a return journey.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "want",
+        "organize",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-021",
+      "intent": "travel-planning",
+      "input": "Can we outline a weekend trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "outline",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-022",
+      "intent": "travel-planning",
+      "input": "Can we outline a day trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "outline",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-023",
+      "intent": "travel-planning",
+      "input": "Can we outline a train journey.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "outline",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-024",
+      "intent": "travel-planning",
+      "input": "Can we outline a family visit.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "outline",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-025",
+      "intent": "travel-planning",
+      "input": "Can we outline a short vacation.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "outline",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-026",
+      "intent": "travel-planning",
+      "input": "Can we outline a business trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "outline",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-027",
+      "intent": "travel-planning",
+      "input": "Can we outline an overnight stay.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "outline",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-028",
+      "intent": "travel-planning",
+      "input": "Can we outline a city visit.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "outline",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-029",
+      "intent": "travel-planning",
+      "input": "Can we outline an airport transfer.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "outline",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-030",
+      "intent": "travel-planning",
+      "input": "Can we outline a return journey.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "outline",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-031",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a weekend trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-032",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a day trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-033",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a train journey.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-034",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a family visit.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-035",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a short vacation.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-036",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a business trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-037",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for an overnight stay.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-038",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a city visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-039",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for an airport transfer.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-040",
+      "intent": "travel-planning",
+      "input": "I need a basic plan for a return journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "need",
+        "basic",
+        "plan",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-041",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a weekend trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "weekend",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-042",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a day trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "day",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-043",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a train journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "train",
+        "journey"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-044",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a family visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "family",
+        "visit"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-045",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a short vacation.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "short",
+        "vacation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-046",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a business trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "business",
+        "trip"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-047",
+      "intent": "travel-planning",
+      "input": "Please help me prepare an overnight stay.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "overnight",
+        "stay"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-048",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a city visit.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "city",
+        "visit"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-049",
+      "intent": "travel-planning",
+      "input": "Please help me prepare an airport transfer.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "airport",
+        "transfer"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-050",
+      "intent": "travel-planning",
+      "input": "Please help me prepare a return journey.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "please",
+        "help",
+        "prepare",
+        "return",
+        "journey"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-051",
+      "intent": "travel-planning",
+      "input": "What should I consider for a weekend trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-052",
+      "intent": "travel-planning",
+      "input": "What should I consider for a day trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-053",
+      "intent": "travel-planning",
+      "input": "What should I consider for a train journey.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-054",
+      "intent": "travel-planning",
+      "input": "What should I consider for a family visit.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-055",
+      "intent": "travel-planning",
+      "input": "What should I consider for a short vacation.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-056",
+      "intent": "travel-planning",
+      "input": "What should I consider for a business trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-057",
+      "intent": "travel-planning",
+      "input": "What should I consider for an overnight stay.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-058",
+      "intent": "travel-planning",
+      "input": "What should I consider for a city visit.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-059",
+      "intent": "travel-planning",
+      "input": "What should I consider for an airport transfer.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-060",
+      "intent": "travel-planning",
+      "input": "What should I consider for a return journey.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "what",
+        "should",
+        "consider",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-061",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a weekend trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-062",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a day trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-063",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a train journey.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-064",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a family visit.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-065",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a short vacation.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-066",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a business trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-067",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for an overnight stay.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-068",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a city visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-069",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for an airport transfer.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-070",
+      "intent": "travel-planning",
+      "input": "Can you make a checklist for a return journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-071",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a weekend trip.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "weekend",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-072",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a day trip.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "day",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-073",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a train journey.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "train",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-074",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a family visit.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "family",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-075",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a short vacation.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "short",
+        "vacation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-076",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a business trip.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "business",
+        "trip"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-077",
+      "intent": "travel-planning",
+      "input": "I am starting to plan an overnight stay.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "overnight",
+        "stay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-078",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a city visit.",
+      "response": "A bounded travel plan needs explicit dates, locations, budget, and mobility requirements.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "city",
+        "visit"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-079",
+      "intent": "travel-planning",
+      "input": "I am starting to plan an airport transfer.",
+      "response": "Provide the destination, dates, budget, travelers, and constraints before planning the trip.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "airport",
+        "transfer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "55-travel-planning-080",
+      "intent": "travel-planning",
+      "input": "I am starting to plan a return journey.",
+      "response": "I can recognize the travel-planning request but cannot verify live bookings or entry requirements from this corpus.",
+      "keywords": [
+        "am",
+        "starting",
+        "plan",
+        "return",
+        "journey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request destination and travel constraints",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

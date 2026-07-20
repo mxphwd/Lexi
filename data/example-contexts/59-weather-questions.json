@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "59-weather-questions",
+    "title": "Basic weather questions",
+    "description": "Questions about current or near-term weather conditions.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "59-weather-questions-001",
+      "intent": "weather-question",
+      "input": "What is the weather?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "weather"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-002",
+      "intent": "weather-question",
+      "input": "What is the weather today?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "weather",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-003",
+      "intent": "weather-question",
+      "input": "What is the weather right now?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "weather",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-004",
+      "intent": "weather-question",
+      "input": "What is the weather this morning?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "weather",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-005",
+      "intent": "weather-question",
+      "input": "What is the weather this afternoon?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "weather",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-006",
+      "intent": "weather-question",
+      "input": "What is the weather this evening?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "weather",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-007",
+      "intent": "weather-question",
+      "input": "What is the weather where I am?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "weather",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-008",
+      "intent": "weather-question",
+      "input": "What is the weather in my city?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "weather",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-009",
+      "intent": "weather-question",
+      "input": "What is the weather tomorrow?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "weather",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-010",
+      "intent": "weather-question",
+      "input": "What is the weather this weekend?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "weather",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-011",
+      "intent": "weather-question",
+      "input": "Is it raining?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "raining"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-012",
+      "intent": "weather-question",
+      "input": "Is it raining today?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "raining",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-013",
+      "intent": "weather-question",
+      "input": "Is it raining right now?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "raining",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-014",
+      "intent": "weather-question",
+      "input": "Is it raining this morning?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "raining",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-015",
+      "intent": "weather-question",
+      "input": "Is it raining this afternoon?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "raining",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-016",
+      "intent": "weather-question",
+      "input": "Is it raining this evening?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "raining",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-017",
+      "intent": "weather-question",
+      "input": "Is it raining where I am?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "raining",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-018",
+      "intent": "weather-question",
+      "input": "Is it raining in my city?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "raining",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-019",
+      "intent": "weather-question",
+      "input": "Is it raining tomorrow?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "raining",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-020",
+      "intent": "weather-question",
+      "input": "Is it raining this weekend?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "raining",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-021",
+      "intent": "weather-question",
+      "input": "Will it be sunny?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "will",
+        "sunny"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-022",
+      "intent": "weather-question",
+      "input": "Will it be sunny today?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "will",
+        "sunny",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-023",
+      "intent": "weather-question",
+      "input": "Will it be sunny right now?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "will",
+        "sunny",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-024",
+      "intent": "weather-question",
+      "input": "Will it be sunny this morning?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "will",
+        "sunny",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-025",
+      "intent": "weather-question",
+      "input": "Will it be sunny this afternoon?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "will",
+        "sunny",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-026",
+      "intent": "weather-question",
+      "input": "Will it be sunny this evening?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "will",
+        "sunny",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-027",
+      "intent": "weather-question",
+      "input": "Will it be sunny where I am?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "will",
+        "sunny",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-028",
+      "intent": "weather-question",
+      "input": "Will it be sunny in my city?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "will",
+        "sunny",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-029",
+      "intent": "weather-question",
+      "input": "Will it be sunny tomorrow?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "will",
+        "sunny",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-030",
+      "intent": "weather-question",
+      "input": "Will it be sunny this weekend?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "will",
+        "sunny",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-031",
+      "intent": "weather-question",
+      "input": "How warm is it?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "how",
+        "warm"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-032",
+      "intent": "weather-question",
+      "input": "How warm is it today?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "how",
+        "warm",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-033",
+      "intent": "weather-question",
+      "input": "How warm is it right now?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "how",
+        "warm",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-034",
+      "intent": "weather-question",
+      "input": "How warm is it this morning?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "how",
+        "warm",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-035",
+      "intent": "weather-question",
+      "input": "How warm is it this afternoon?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "how",
+        "warm",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-036",
+      "intent": "weather-question",
+      "input": "How warm is it this evening?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "how",
+        "warm",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-037",
+      "intent": "weather-question",
+      "input": "How warm is it where I am?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "how",
+        "warm",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-038",
+      "intent": "weather-question",
+      "input": "How warm is it in my city?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "how",
+        "warm",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-039",
+      "intent": "weather-question",
+      "input": "How warm is it tomorrow?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "how",
+        "warm",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-040",
+      "intent": "weather-question",
+      "input": "How warm is it this weekend?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "how",
+        "warm",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-041",
+      "intent": "weather-question",
+      "input": "Is it cold outside?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "cold",
+        "outside"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-042",
+      "intent": "weather-question",
+      "input": "Is it cold outside today?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "cold",
+        "outside",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-043",
+      "intent": "weather-question",
+      "input": "Is it cold outside right now?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "cold",
+        "outside",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-044",
+      "intent": "weather-question",
+      "input": "Is it cold outside this morning?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "cold",
+        "outside",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-045",
+      "intent": "weather-question",
+      "input": "Is it cold outside this afternoon?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "cold",
+        "outside",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-046",
+      "intent": "weather-question",
+      "input": "Is it cold outside this evening?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "cold",
+        "outside",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-047",
+      "intent": "weather-question",
+      "input": "Is it cold outside where I am?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "cold",
+        "outside",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-048",
+      "intent": "weather-question",
+      "input": "Is it cold outside in my city?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "cold",
+        "outside",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-049",
+      "intent": "weather-question",
+      "input": "Is it cold outside tomorrow?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "cold",
+        "outside",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-050",
+      "intent": "weather-question",
+      "input": "Is it cold outside this weekend?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "cold",
+        "outside",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-051",
+      "intent": "weather-question",
+      "input": "What is the forecast?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "forecast"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-052",
+      "intent": "weather-question",
+      "input": "What is the forecast today?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "forecast",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-053",
+      "intent": "weather-question",
+      "input": "What is the forecast right now?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "forecast",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-054",
+      "intent": "weather-question",
+      "input": "What is the forecast this morning?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "forecast",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-055",
+      "intent": "weather-question",
+      "input": "What is the forecast this afternoon?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "forecast",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-056",
+      "intent": "weather-question",
+      "input": "What is the forecast this evening?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "forecast",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-057",
+      "intent": "weather-question",
+      "input": "What is the forecast where I am?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "forecast",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-058",
+      "intent": "weather-question",
+      "input": "What is the forecast in my city?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "what",
+        "forecast",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-059",
+      "intent": "weather-question",
+      "input": "What is the forecast tomorrow?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "what",
+        "forecast",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-060",
+      "intent": "weather-question",
+      "input": "What is the forecast this weekend?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "what",
+        "forecast",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-061",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "need",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-062",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella today?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-063",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella right now?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-064",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella this morning?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-065",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella this afternoon?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-066",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella this evening?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-067",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella where I am?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-068",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella in my city?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-069",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella tomorrow?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-070",
+      "intent": "weather-question",
+      "input": "Do I need an umbrella this weekend?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "need",
+        "umbrella",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-071",
+      "intent": "weather-question",
+      "input": "Are storms expected?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "storms",
+        "expected"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-072",
+      "intent": "weather-question",
+      "input": "Are storms expected today?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "storms",
+        "expected",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-073",
+      "intent": "weather-question",
+      "input": "Are storms expected right now?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "storms",
+        "expected",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-074",
+      "intent": "weather-question",
+      "input": "Are storms expected this morning?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "storms",
+        "expected",
+        "morning"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-075",
+      "intent": "weather-question",
+      "input": "Are storms expected this afternoon?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "storms",
+        "expected",
+        "afternoon"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-076",
+      "intent": "weather-question",
+      "input": "Are storms expected this evening?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "storms",
+        "expected",
+        "evening"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-077",
+      "intent": "weather-question",
+      "input": "Are storms expected where I am?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "storms",
+        "expected",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-078",
+      "intent": "weather-question",
+      "input": "Are storms expected in my city?",
+      "response": "That is a weather question; an accurate answer requires a current weather service.",
+      "keywords": [
+        "storms",
+        "expected",
+        "city"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-079",
+      "intent": "weather-question",
+      "input": "Are storms expected tomorrow?",
+      "response": "I do not have live weather data. Check a current forecast for your specified location.",
+      "keywords": [
+        "storms",
+        "expected",
+        "tomorrow"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "59-weather-questions-080",
+      "intent": "weather-question",
+      "input": "Are storms expected this weekend?",
+      "response": "Weather depends on location and time, and neither a live source nor sufficient context is available here.",
+      "keywords": [
+        "storms",
+        "expected",
+        "weekend"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live weather data",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

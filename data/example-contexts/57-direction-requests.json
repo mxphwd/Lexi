@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "57-direction-requests",
+    "title": "Requests for directions",
+    "description": "Questions asking how to reach a common type of destination.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "57-direction-requests-001",
+      "intent": "direction-request",
+      "input": "How do I get to the station?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "get",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-002",
+      "intent": "direction-request",
+      "input": "How do I get to the nearest exit?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "get",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-003",
+      "intent": "direction-request",
+      "input": "How do I get to the city center?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "get",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-004",
+      "intent": "direction-request",
+      "input": "How do I get to the library?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "get",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-005",
+      "intent": "direction-request",
+      "input": "How do I get to the hospital?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "get",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-006",
+      "intent": "direction-request",
+      "input": "How do I get to the airport?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "get",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-007",
+      "intent": "direction-request",
+      "input": "How do I get to the bus stop?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "get",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-008",
+      "intent": "direction-request",
+      "input": "How do I get to the hotel?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "get",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-009",
+      "intent": "direction-request",
+      "input": "How do I get to the information desk?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "get",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-010",
+      "intent": "direction-request",
+      "input": "How do I get to the main entrance?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "get",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-011",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the station?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-012",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the nearest exit?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-013",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the city center?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-014",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the library?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-015",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the hospital?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-016",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the airport?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-017",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the bus stop?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-018",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the hotel?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-019",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the information desk?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-020",
+      "intent": "direction-request",
+      "input": "Can you show me the way to the main entrance?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "can",
+        "show",
+        "way",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-021",
+      "intent": "direction-request",
+      "input": "Which direction is the station?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "which",
+        "direction",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-022",
+      "intent": "direction-request",
+      "input": "Which direction is the nearest exit?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "which",
+        "direction",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-023",
+      "intent": "direction-request",
+      "input": "Which direction is the city center?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "which",
+        "direction",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-024",
+      "intent": "direction-request",
+      "input": "Which direction is the library?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "which",
+        "direction",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-025",
+      "intent": "direction-request",
+      "input": "Which direction is the hospital?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "which",
+        "direction",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-026",
+      "intent": "direction-request",
+      "input": "Which direction is the airport?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "which",
+        "direction",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-027",
+      "intent": "direction-request",
+      "input": "Which direction is the bus stop?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "which",
+        "direction",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-028",
+      "intent": "direction-request",
+      "input": "Which direction is the hotel?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "which",
+        "direction",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-029",
+      "intent": "direction-request",
+      "input": "Which direction is the information desk?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "which",
+        "direction",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-030",
+      "intent": "direction-request",
+      "input": "Which direction is the main entrance?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "which",
+        "direction",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-031",
+      "intent": "direction-request",
+      "input": "What route should I take to the station?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-032",
+      "intent": "direction-request",
+      "input": "What route should I take to the nearest exit?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-033",
+      "intent": "direction-request",
+      "input": "What route should I take to the city center?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-034",
+      "intent": "direction-request",
+      "input": "What route should I take to the library?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-035",
+      "intent": "direction-request",
+      "input": "What route should I take to the hospital?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-036",
+      "intent": "direction-request",
+      "input": "What route should I take to the airport?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-037",
+      "intent": "direction-request",
+      "input": "What route should I take to the bus stop?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-038",
+      "intent": "direction-request",
+      "input": "What route should I take to the hotel?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-039",
+      "intent": "direction-request",
+      "input": "What route should I take to the information desk?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-040",
+      "intent": "direction-request",
+      "input": "What route should I take to the main entrance?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "what",
+        "route",
+        "should",
+        "take",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-041",
+      "intent": "direction-request",
+      "input": "Could you guide me to the station?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "could",
+        "guide",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-042",
+      "intent": "direction-request",
+      "input": "Could you guide me to the nearest exit?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "could",
+        "guide",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-043",
+      "intent": "direction-request",
+      "input": "Could you guide me to the city center?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "could",
+        "guide",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-044",
+      "intent": "direction-request",
+      "input": "Could you guide me to the library?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "could",
+        "guide",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-045",
+      "intent": "direction-request",
+      "input": "Could you guide me to the hospital?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "could",
+        "guide",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-046",
+      "intent": "direction-request",
+      "input": "Could you guide me to the airport?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "could",
+        "guide",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-047",
+      "intent": "direction-request",
+      "input": "Could you guide me to the bus stop?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "could",
+        "guide",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-048",
+      "intent": "direction-request",
+      "input": "Could you guide me to the hotel?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "could",
+        "guide",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-049",
+      "intent": "direction-request",
+      "input": "Could you guide me to the information desk?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "could",
+        "guide",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-050",
+      "intent": "direction-request",
+      "input": "Could you guide me to the main entrance?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "could",
+        "guide",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-051",
+      "intent": "direction-request",
+      "input": "Where should I turn for the station?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-052",
+      "intent": "direction-request",
+      "input": "Where should I turn for the nearest exit?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-053",
+      "intent": "direction-request",
+      "input": "Where should I turn for the city center?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-054",
+      "intent": "direction-request",
+      "input": "Where should I turn for the library?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-055",
+      "intent": "direction-request",
+      "input": "Where should I turn for the hospital?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-056",
+      "intent": "direction-request",
+      "input": "Where should I turn for the airport?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-057",
+      "intent": "direction-request",
+      "input": "Where should I turn for the bus stop?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-058",
+      "intent": "direction-request",
+      "input": "Where should I turn for the hotel?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-059",
+      "intent": "direction-request",
+      "input": "Where should I turn for the information desk?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-060",
+      "intent": "direction-request",
+      "input": "Where should I turn for the main entrance?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "where",
+        "should",
+        "turn",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-061",
+      "intent": "direction-request",
+      "input": "How can I walk to the station?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-062",
+      "intent": "direction-request",
+      "input": "How can I walk to the nearest exit?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-063",
+      "intent": "direction-request",
+      "input": "How can I walk to the city center?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-064",
+      "intent": "direction-request",
+      "input": "How can I walk to the library?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-065",
+      "intent": "direction-request",
+      "input": "How can I walk to the hospital?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-066",
+      "intent": "direction-request",
+      "input": "How can I walk to the airport?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-067",
+      "intent": "direction-request",
+      "input": "How can I walk to the bus stop?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-068",
+      "intent": "direction-request",
+      "input": "How can I walk to the hotel?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-069",
+      "intent": "direction-request",
+      "input": "How can I walk to the information desk?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-070",
+      "intent": "direction-request",
+      "input": "How can I walk to the main entrance?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "how",
+        "can",
+        "walk",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-071",
+      "intent": "direction-request",
+      "input": "Please give me directions to the station?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "station"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-072",
+      "intent": "direction-request",
+      "input": "Please give me directions to the nearest exit?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "nearest",
+        "exit"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-073",
+      "intent": "direction-request",
+      "input": "Please give me directions to the city center?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "city",
+        "center"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-074",
+      "intent": "direction-request",
+      "input": "Please give me directions to the library?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "library"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-075",
+      "intent": "direction-request",
+      "input": "Please give me directions to the hospital?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "hospital"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-076",
+      "intent": "direction-request",
+      "input": "Please give me directions to the airport?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "airport"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-077",
+      "intent": "direction-request",
+      "input": "Please give me directions to the bus stop?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "bus",
+        "stop"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-078",
+      "intent": "direction-request",
+      "input": "Please give me directions to the hotel?",
+      "response": "Accurate directions require a specific starting location and current route information.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "hotel"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-079",
+      "intent": "direction-request",
+      "input": "Please give me directions to the information desk?",
+      "response": "I need your starting point and a current map source to give reliable directions.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "information",
+        "desk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "57-direction-requests-080",
+      "intent": "direction-request",
+      "input": "Please give me directions to the main entrance?",
+      "response": "The destination is clear, but no origin or live map is present in this context.",
+      "keywords": [
+        "please",
+        "give",
+        "directions",
+        "main",
+        "entrance"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request an origin and map source",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

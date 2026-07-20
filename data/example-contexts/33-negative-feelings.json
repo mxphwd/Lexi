@@ -1,0 +1,1371 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "33-negative-feelings",
+    "title": "Expressing difficult feelings",
+    "description": "Everyday statements describing unpleasant emotional states.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "33-negative-feelings-001",
+      "intent": "negative-feeling",
+      "input": "I feel sad.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feel",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-002",
+      "intent": "negative-feeling",
+      "input": "I feel worried.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feel",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-003",
+      "intent": "negative-feeling",
+      "input": "I feel frustrated.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feel",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-004",
+      "intent": "negative-feeling",
+      "input": "I feel confused.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feel",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-005",
+      "intent": "negative-feeling",
+      "input": "I feel lonely.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feel",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-006",
+      "intent": "negative-feeling",
+      "input": "I feel disappointed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feel",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-007",
+      "intent": "negative-feeling",
+      "input": "I feel nervous.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feel",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-008",
+      "intent": "negative-feeling",
+      "input": "I feel tired.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feel",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-009",
+      "intent": "negative-feeling",
+      "input": "I feel overwhelmed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feel",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-010",
+      "intent": "negative-feeling",
+      "input": "I feel uncertain.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feel",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-011",
+      "intent": "negative-feeling",
+      "input": "I'm feeling sad.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feeling",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-012",
+      "intent": "negative-feeling",
+      "input": "I'm feeling worried.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feeling",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-013",
+      "intent": "negative-feeling",
+      "input": "I'm feeling frustrated.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feeling",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-014",
+      "intent": "negative-feeling",
+      "input": "I'm feeling confused.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feeling",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-015",
+      "intent": "negative-feeling",
+      "input": "I'm feeling lonely.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feeling",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-016",
+      "intent": "negative-feeling",
+      "input": "I'm feeling disappointed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feeling",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-017",
+      "intent": "negative-feeling",
+      "input": "I'm feeling nervous.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feeling",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-018",
+      "intent": "negative-feeling",
+      "input": "I'm feeling tired.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "feeling",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-019",
+      "intent": "negative-feeling",
+      "input": "I'm feeling overwhelmed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "feeling",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-020",
+      "intent": "negative-feeling",
+      "input": "I'm feeling uncertain.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "feeling",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-021",
+      "intent": "negative-feeling",
+      "input": "Today I feel sad.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-022",
+      "intent": "negative-feeling",
+      "input": "Today I feel worried.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-023",
+      "intent": "negative-feeling",
+      "input": "Today I feel frustrated.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "today",
+        "feel",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-024",
+      "intent": "negative-feeling",
+      "input": "Today I feel confused.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-025",
+      "intent": "negative-feeling",
+      "input": "Today I feel lonely.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-026",
+      "intent": "negative-feeling",
+      "input": "Today I feel disappointed.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "today",
+        "feel",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-027",
+      "intent": "negative-feeling",
+      "input": "Today I feel nervous.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-028",
+      "intent": "negative-feeling",
+      "input": "Today I feel tired.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-029",
+      "intent": "negative-feeling",
+      "input": "Today I feel overwhelmed.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "today",
+        "feel",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-030",
+      "intent": "negative-feeling",
+      "input": "Today I feel uncertain.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-031",
+      "intent": "negative-feeling",
+      "input": "Right now I'm sad.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-032",
+      "intent": "negative-feeling",
+      "input": "Right now I'm worried.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "right",
+        "now",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-033",
+      "intent": "negative-feeling",
+      "input": "Right now I'm frustrated.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-034",
+      "intent": "negative-feeling",
+      "input": "Right now I'm confused.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-035",
+      "intent": "negative-feeling",
+      "input": "Right now I'm lonely.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "right",
+        "now",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-036",
+      "intent": "negative-feeling",
+      "input": "Right now I'm disappointed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-037",
+      "intent": "negative-feeling",
+      "input": "Right now I'm nervous.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-038",
+      "intent": "negative-feeling",
+      "input": "Right now I'm tired.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "right",
+        "now",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-039",
+      "intent": "negative-feeling",
+      "input": "Right now I'm overwhelmed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-040",
+      "intent": "negative-feeling",
+      "input": "Right now I'm uncertain.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-041",
+      "intent": "negative-feeling",
+      "input": "This makes me feel sad.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "makes",
+        "feel",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-042",
+      "intent": "negative-feeling",
+      "input": "This makes me feel worried.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-043",
+      "intent": "negative-feeling",
+      "input": "This makes me feel frustrated.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-044",
+      "intent": "negative-feeling",
+      "input": "This makes me feel confused.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "makes",
+        "feel",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-045",
+      "intent": "negative-feeling",
+      "input": "This makes me feel lonely.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-046",
+      "intent": "negative-feeling",
+      "input": "This makes me feel disappointed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-047",
+      "intent": "negative-feeling",
+      "input": "This makes me feel nervous.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "makes",
+        "feel",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-048",
+      "intent": "negative-feeling",
+      "input": "This makes me feel tired.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-049",
+      "intent": "negative-feeling",
+      "input": "This makes me feel overwhelmed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-050",
+      "intent": "negative-feeling",
+      "input": "This makes me feel uncertain.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "makes",
+        "feel",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-051",
+      "intent": "negative-feeling",
+      "input": "I have been feeling sad.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-052",
+      "intent": "negative-feeling",
+      "input": "I have been feeling worried.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-053",
+      "intent": "negative-feeling",
+      "input": "I have been feeling frustrated.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-054",
+      "intent": "negative-feeling",
+      "input": "I have been feeling confused.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-055",
+      "intent": "negative-feeling",
+      "input": "I have been feeling lonely.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-056",
+      "intent": "negative-feeling",
+      "input": "I have been feeling disappointed.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-057",
+      "intent": "negative-feeling",
+      "input": "I have been feeling nervous.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-058",
+      "intent": "negative-feeling",
+      "input": "I have been feeling tired.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-059",
+      "intent": "negative-feeling",
+      "input": "I have been feeling overwhelmed.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-060",
+      "intent": "negative-feeling",
+      "input": "I have been feeling uncertain.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-061",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm sad.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "moment",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-062",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm worried.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "moment",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-063",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm frustrated.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "moment",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-064",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm confused.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "moment",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-065",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm lonely.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "moment",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-066",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm disappointed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "moment",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-067",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm nervous.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "moment",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-068",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm tired.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "moment",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-069",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm overwhelmed.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "moment",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-070",
+      "intent": "negative-feeling",
+      "input": "At the moment I'm uncertain.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "moment",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-071",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel sad.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "sad"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-072",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel worried.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "worried"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-073",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel frustrated.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "frustrated"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-074",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel confused.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "confused"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-075",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel lonely.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "lonely"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-076",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel disappointed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "disappointed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-077",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel nervous.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "nervous"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-078",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel tired.",
+      "response": "Your message communicates an unpleasant emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "tired"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-079",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel overwhelmed.",
+      "response": "I understand that you are describing a difficult feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "overwhelmed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "33-negative-feelings-080",
+      "intent": "negative-feeling",
+      "input": "I want to say that I feel uncertain.",
+      "response": "Thank you for stating how you feel. I can acknowledge it, though I cannot diagnose its cause.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "uncertain"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a difficult feeling without diagnosis",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

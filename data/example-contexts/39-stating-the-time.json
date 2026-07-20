@@ -1,0 +1,1433 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "39-stating-the-time",
+    "title": "Stating a time",
+    "description": "Statements that provide a time for conversational reference.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "39-stating-the-time-001",
+      "intent": "state-time",
+      "input": "The time is seven o'clock.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "time",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-002",
+      "intent": "state-time",
+      "input": "The time is eight thirty.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "time",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-003",
+      "intent": "state-time",
+      "input": "The time is nine in the morning.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "time",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-004",
+      "intent": "state-time",
+      "input": "The time is ten fifteen.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "time",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-005",
+      "intent": "state-time",
+      "input": "The time is noon.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "time",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-006",
+      "intent": "state-time",
+      "input": "The time is one in the afternoon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "time",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-007",
+      "intent": "state-time",
+      "input": "The time is three forty-five.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "time",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-008",
+      "intent": "state-time",
+      "input": "The time is five in the evening.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "time",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-009",
+      "intent": "state-time",
+      "input": "The time is six twenty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "time",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-010",
+      "intent": "state-time",
+      "input": "The time is midnight.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "time",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-011",
+      "intent": "state-time",
+      "input": "It is seven o'clock.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-012",
+      "intent": "state-time",
+      "input": "It is eight thirty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-013",
+      "intent": "state-time",
+      "input": "It is nine in the morning.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-014",
+      "intent": "state-time",
+      "input": "It is ten fifteen.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-015",
+      "intent": "state-time",
+      "input": "It is noon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-016",
+      "intent": "state-time",
+      "input": "It is one in the afternoon.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-017",
+      "intent": "state-time",
+      "input": "It is three forty-five.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-018",
+      "intent": "state-time",
+      "input": "It is five in the evening.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-019",
+      "intent": "state-time",
+      "input": "It is six twenty.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-020",
+      "intent": "state-time",
+      "input": "It is midnight.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-021",
+      "intent": "state-time",
+      "input": "The meeting starts at seven o'clock.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-022",
+      "intent": "state-time",
+      "input": "The meeting starts at eight thirty.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-023",
+      "intent": "state-time",
+      "input": "The meeting starts at nine in the morning.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-024",
+      "intent": "state-time",
+      "input": "The meeting starts at ten fifteen.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-025",
+      "intent": "state-time",
+      "input": "The meeting starts at noon.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-026",
+      "intent": "state-time",
+      "input": "The meeting starts at one in the afternoon.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-027",
+      "intent": "state-time",
+      "input": "The meeting starts at three forty-five.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-028",
+      "intent": "state-time",
+      "input": "The meeting starts at five in the evening.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-029",
+      "intent": "state-time",
+      "input": "The meeting starts at six twenty.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-030",
+      "intent": "state-time",
+      "input": "The meeting starts at midnight.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "meeting",
+        "starts",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-031",
+      "intent": "state-time",
+      "input": "I will arrive at seven o'clock.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-032",
+      "intent": "state-time",
+      "input": "I will arrive at eight thirty.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-033",
+      "intent": "state-time",
+      "input": "I will arrive at nine in the morning.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-034",
+      "intent": "state-time",
+      "input": "I will arrive at ten fifteen.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-035",
+      "intent": "state-time",
+      "input": "I will arrive at noon.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-036",
+      "intent": "state-time",
+      "input": "I will arrive at one in the afternoon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-037",
+      "intent": "state-time",
+      "input": "I will arrive at three forty-five.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-038",
+      "intent": "state-time",
+      "input": "I will arrive at five in the evening.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-039",
+      "intent": "state-time",
+      "input": "I will arrive at six twenty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-040",
+      "intent": "state-time",
+      "input": "I will arrive at midnight.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-041",
+      "intent": "state-time",
+      "input": "Let us begin at seven o'clock.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-042",
+      "intent": "state-time",
+      "input": "Let us begin at eight thirty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-043",
+      "intent": "state-time",
+      "input": "Let us begin at nine in the morning.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-044",
+      "intent": "state-time",
+      "input": "Let us begin at ten fifteen.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-045",
+      "intent": "state-time",
+      "input": "Let us begin at noon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-046",
+      "intent": "state-time",
+      "input": "Let us begin at one in the afternoon.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-047",
+      "intent": "state-time",
+      "input": "Let us begin at three forty-five.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-048",
+      "intent": "state-time",
+      "input": "Let us begin at five in the evening.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-049",
+      "intent": "state-time",
+      "input": "Let us begin at six twenty.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-050",
+      "intent": "state-time",
+      "input": "Let us begin at midnight.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-051",
+      "intent": "state-time",
+      "input": "The appointment is at seven o'clock.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "appointment",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-052",
+      "intent": "state-time",
+      "input": "The appointment is at eight thirty.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "appointment",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-053",
+      "intent": "state-time",
+      "input": "The appointment is at nine in the morning.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-054",
+      "intent": "state-time",
+      "input": "The appointment is at ten fifteen.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "appointment",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-055",
+      "intent": "state-time",
+      "input": "The appointment is at noon.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "appointment",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-056",
+      "intent": "state-time",
+      "input": "The appointment is at one in the afternoon.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-057",
+      "intent": "state-time",
+      "input": "The appointment is at three forty-five.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "appointment",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-058",
+      "intent": "state-time",
+      "input": "The appointment is at five in the evening.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "appointment",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-059",
+      "intent": "state-time",
+      "input": "The appointment is at six twenty.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-060",
+      "intent": "state-time",
+      "input": "The appointment is at midnight.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "appointment",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-061",
+      "intent": "state-time",
+      "input": "Please remember the stated time is seven o'clock.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "seven",
+        "clock"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-062",
+      "intent": "state-time",
+      "input": "Please remember the stated time is eight thirty.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "eight",
+        "thirty"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-063",
+      "intent": "state-time",
+      "input": "Please remember the stated time is nine in the morning.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "nine",
+        "morning"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-064",
+      "intent": "state-time",
+      "input": "Please remember the stated time is ten fifteen.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-065",
+      "intent": "state-time",
+      "input": "Please remember the stated time is noon.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "noon"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-066",
+      "intent": "state-time",
+      "input": "Please remember the stated time is one in the afternoon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "one",
+        "afternoon"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-067",
+      "intent": "state-time",
+      "input": "Please remember the stated time is three forty-five.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-068",
+      "intent": "state-time",
+      "input": "Please remember the stated time is five in the evening.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "five",
+        "evening"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-069",
+      "intent": "state-time",
+      "input": "Please remember the stated time is six twenty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "six",
+        "twenty"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-070",
+      "intent": "state-time",
+      "input": "Please remember the stated time is midnight.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "please",
+        "remember",
+        "stated",
+        "time",
+        "midnight"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-071",
+      "intent": "state-time",
+      "input": "For this example, use seven o'clock.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "example",
+        "use",
+        "seven",
+        "clock"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-072",
+      "intent": "state-time",
+      "input": "For this example, use eight thirty.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "example",
+        "use",
+        "eight",
+        "thirty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-073",
+      "intent": "state-time",
+      "input": "For this example, use nine in the morning.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "example",
+        "use",
+        "nine",
+        "morning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-074",
+      "intent": "state-time",
+      "input": "For this example, use ten fifteen.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "example",
+        "use",
+        "ten",
+        "fifteen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-075",
+      "intent": "state-time",
+      "input": "For this example, use noon.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "example",
+        "use",
+        "noon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-076",
+      "intent": "state-time",
+      "input": "For this example, use one in the afternoon.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "example",
+        "use",
+        "one",
+        "afternoon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-077",
+      "intent": "state-time",
+      "input": "For this example, use three forty-five.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "example",
+        "use",
+        "three",
+        "forty",
+        "five"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-078",
+      "intent": "state-time",
+      "input": "For this example, use five in the evening.",
+      "response": "That time has been identified, though I do not retain schedules between conversations.",
+      "keywords": [
+        "example",
+        "use",
+        "five",
+        "evening"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-079",
+      "intent": "state-time",
+      "input": "For this example, use six twenty.",
+      "response": "I recognize the time stated in this message.",
+      "keywords": [
+        "example",
+        "use",
+        "six",
+        "twenty"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "39-stating-the-time-080",
+      "intent": "state-time",
+      "input": "For this example, use midnight.",
+      "response": "The supplied time is clear for this turn.",
+      "keywords": [
+        "example",
+        "use",
+        "midnight"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied time without claiming persistence",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

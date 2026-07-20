@@ -12,6 +12,9 @@
     "test": "npm run build && node --import tsx --test tests/*.test.*",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "corpus:generate": "node scripts/generate-example-contexts.mjs",
+    "corpus:generate-basic": "node scripts/generate-basic-conversations.mjs",
+    "corpus:generate-daily": "node scripts/generate-daily-life-contexts.mjs",
+    "corpus:inventory": "node scripts/build-context-inventory.mjs",
     "corpus:validate": "node scripts/validate-corpus.mjs",
     "lexicon:build": "node scripts/build-lexicon-index.mjs"
   },

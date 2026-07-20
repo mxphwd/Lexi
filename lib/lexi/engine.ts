@@ -1,4 +1,5 @@
 import contextPages from "@/data/example-contexts/catalog";
+import { basicPhrasePatternCount, matchBasicPhrase } from "@/core/basic-phrases";
 import { connectWords } from "@/modules/connect";
 import { determineContext } from "@/modules/context";
 import { searchContexts } from "@/modules/search";
@@ -8,6 +9,25 @@ import type { ContextEntry, LexiReply } from "./types";
 const entries: ContextEntry[] = contextPages.flatMap((page) => page.entries);
 
 export function respond(input: string): LexiReply {
+  const basicPhrase = matchBasicPhrase(input);
+  if (basicPhrase) {
+    const { definition, normalizedInput } = basicPhrase;
+
+    return {
+      text: definition.response,
+      trace: {
+        normalizedInput,
+        sentenceMode: definition.mode,
+        interpretedIntent: definition.intent,
+        confidence: 1,
+        matchedExampleIds: [`core:${definition.id}`],
+        matchedTerms: definition.evidence,
+        selectedStructure: `core:${definition.id}`,
+        source: "core-phrase",
+      },
+    };
+  }
+
   const { analysis, matches } = searchContexts(input, entries);
   const decision = determineContext(analysis, matches);
   const connected = connectWords(analysis, decision);
@@ -36,5 +56,6 @@ export function corpusStats() {
     pages: contextPages.length,
     examples: entries.length,
     sentences: entries.length * 2,
+    basicPhrasePatterns: basicPhrasePatternCount,
   };
 }

@@ -4,7 +4,10 @@ Lexi Language 1.0 Pre-build 260720-1A is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
 same prompt and the same corpus always follow the same inspectable path:
 
-`sentence analysis → Search → Context → Connect → Structure → response`
+`Basic Phrases → sentence analysis → Search → Context → Connect → Structure → response`
+
+The Basic Phrases gate returns only when a complete foundational phrase matches.
+Otherwise it passes the message unchanged into the corpus-driven pipeline.
 
 ## Run the prototype
 
@@ -21,6 +24,9 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
 
 ## Mechanical modules
 
+- `core/basic-phrases/` contains the independent, fixed-response layer for
+  greetings, identity, model age, thanks, farewells, and other foundational
+  exchanges. It runs before every corpus module and retains no personal state.
 - `modules/search/` normalizes English, inspects sentence mode, expands the
   compact lexicon, and ranks recorded examples.
 - `modules/context/` aggregates example evidence and explicit phrase rules into
@@ -32,8 +38,8 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
 - `lib/lexi/engine.ts` passes records between the modules and returns the reply
   together with a public trace.
 
-The prototype currently includes 12 context pages, 180 input-response examples,
-and 360 paired sentences. This is a foundation for the intended much larger
+The prototype currently includes 62 context pages, 4,180 input-response examples,
+and 8,360 paired sentences. This is a foundation for the intended much larger
 corpus; it is not represented as a million-example system yet.
 
 ## Teach Lexi with new examples
@@ -52,6 +58,14 @@ After adding a file:
 You can regenerate the included reference pages with
 `npm run corpus:generate`. That command overwrites only the numbered starter
 pages, so do not use it for hand-edited production pages.
+
+The 2,000 generated basic-conversation examples can be rebuilt with
+`npm run corpus:generate-basic`. This command overwrites pages 13 through 37.
+
+The next 2,000 daily-life examples can be rebuilt with
+`npm run corpus:generate-daily`. This command overwrites pages 38 through 62.
+Run `npm run corpus:inventory` after changing corpus pages; the checked-in
+`context-inventory.json` ledger records every page, intent, and example count.
 
 ## Dictionary and thesaurus
 

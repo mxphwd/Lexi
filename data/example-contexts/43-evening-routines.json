@@ -1,0 +1,1478 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "43-evening-routines",
+    "title": "Evening routines",
+    "description": "Statements about ordinary activities performed in the evening.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "43-evening-routines-001",
+      "intent": "evening-routine",
+      "input": "Every evening I wash the dishes.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "every",
+        "evening",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-002",
+      "intent": "evening-routine",
+      "input": "Every evening I take a shower.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "every",
+        "evening",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-003",
+      "intent": "evening-routine",
+      "input": "Every evening I read a book.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "evening",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-004",
+      "intent": "evening-routine",
+      "input": "Every evening I prepare for tomorrow.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "every",
+        "evening",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-005",
+      "intent": "evening-routine",
+      "input": "Every evening I set an alarm.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "every",
+        "evening",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-006",
+      "intent": "evening-routine",
+      "input": "Every evening I tidy the room.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "evening",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-007",
+      "intent": "evening-routine",
+      "input": "Every evening I talk with my family.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "every",
+        "evening",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-008",
+      "intent": "evening-routine",
+      "input": "Every evening I review the day.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "every",
+        "evening",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-009",
+      "intent": "evening-routine",
+      "input": "Every evening I turn off the lights.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "evening",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-010",
+      "intent": "evening-routine",
+      "input": "Every evening I relax for a while.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "every",
+        "evening",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-011",
+      "intent": "evening-routine",
+      "input": "In the evening I usually wash the dishes.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "usually",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-012",
+      "intent": "evening-routine",
+      "input": "In the evening I usually take a shower.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "usually",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-013",
+      "intent": "evening-routine",
+      "input": "In the evening I usually read a book.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "usually",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-014",
+      "intent": "evening-routine",
+      "input": "In the evening I usually prepare for tomorrow.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "usually",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-015",
+      "intent": "evening-routine",
+      "input": "In the evening I usually set an alarm.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "usually",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-016",
+      "intent": "evening-routine",
+      "input": "In the evening I usually tidy the room.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "usually",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-017",
+      "intent": "evening-routine",
+      "input": "In the evening I usually talk with my family.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "usually",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-018",
+      "intent": "evening-routine",
+      "input": "In the evening I usually review the day.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "usually",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-019",
+      "intent": "evening-routine",
+      "input": "In the evening I usually turn off the lights.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "usually",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-020",
+      "intent": "evening-routine",
+      "input": "In the evening I usually relax for a while.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "usually",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-021",
+      "intent": "evening-routine",
+      "input": "My evening routine is to wash the dishes.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "routine",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-022",
+      "intent": "evening-routine",
+      "input": "My evening routine is to take a shower.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "routine",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-023",
+      "intent": "evening-routine",
+      "input": "My evening routine is to read a book.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "routine",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-024",
+      "intent": "evening-routine",
+      "input": "My evening routine is to prepare for tomorrow.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "routine",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-025",
+      "intent": "evening-routine",
+      "input": "My evening routine is to set an alarm.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "routine",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-026",
+      "intent": "evening-routine",
+      "input": "My evening routine is to tidy the room.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "routine",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-027",
+      "intent": "evening-routine",
+      "input": "My evening routine is to talk with my family.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "routine",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-028",
+      "intent": "evening-routine",
+      "input": "My evening routine is to review the day.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "evening",
+        "routine",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-029",
+      "intent": "evening-routine",
+      "input": "My evening routine is to turn off the lights.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "evening",
+        "routine",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-030",
+      "intent": "evening-routine",
+      "input": "My evening routine is to relax for a while.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "evening",
+        "routine",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-031",
+      "intent": "evening-routine",
+      "input": "After dinner I wash the dishes.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "after",
+        "dinner",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-032",
+      "intent": "evening-routine",
+      "input": "After dinner I take a shower.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "after",
+        "dinner",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-033",
+      "intent": "evening-routine",
+      "input": "After dinner I read a book.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "dinner",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-034",
+      "intent": "evening-routine",
+      "input": "After dinner I prepare for tomorrow.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "after",
+        "dinner",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-035",
+      "intent": "evening-routine",
+      "input": "After dinner I set an alarm.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "after",
+        "dinner",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-036",
+      "intent": "evening-routine",
+      "input": "After dinner I tidy the room.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "dinner",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-037",
+      "intent": "evening-routine",
+      "input": "After dinner I talk with my family.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "after",
+        "dinner",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-038",
+      "intent": "evening-routine",
+      "input": "After dinner I review the day.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "after",
+        "dinner",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-039",
+      "intent": "evening-routine",
+      "input": "After dinner I turn off the lights.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "dinner",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-040",
+      "intent": "evening-routine",
+      "input": "After dinner I relax for a while.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "after",
+        "dinner",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-041",
+      "intent": "evening-routine",
+      "input": "Before bed I wash the dishes.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "before",
+        "bed",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-042",
+      "intent": "evening-routine",
+      "input": "Before bed I take a shower.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "bed",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-043",
+      "intent": "evening-routine",
+      "input": "Before bed I read a book.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "before",
+        "bed",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-044",
+      "intent": "evening-routine",
+      "input": "Before bed I prepare for tomorrow.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "before",
+        "bed",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-045",
+      "intent": "evening-routine",
+      "input": "Before bed I set an alarm.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "bed",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-046",
+      "intent": "evening-routine",
+      "input": "Before bed I tidy the room.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "before",
+        "bed",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-047",
+      "intent": "evening-routine",
+      "input": "Before bed I talk with my family.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "before",
+        "bed",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-048",
+      "intent": "evening-routine",
+      "input": "Before bed I review the day.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "bed",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-049",
+      "intent": "evening-routine",
+      "input": "Before bed I turn off the lights.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "before",
+        "bed",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-050",
+      "intent": "evening-routine",
+      "input": "Before bed I relax for a while.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "before",
+        "bed",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-051",
+      "intent": "evening-routine",
+      "input": "On weeknights I wash the dishes.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "weeknights",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-052",
+      "intent": "evening-routine",
+      "input": "On weeknights I take a shower.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "weeknights",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-053",
+      "intent": "evening-routine",
+      "input": "On weeknights I read a book.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "weeknights",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-054",
+      "intent": "evening-routine",
+      "input": "On weeknights I prepare for tomorrow.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "weeknights",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-055",
+      "intent": "evening-routine",
+      "input": "On weeknights I set an alarm.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "weeknights",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-056",
+      "intent": "evening-routine",
+      "input": "On weeknights I tidy the room.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "weeknights",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-057",
+      "intent": "evening-routine",
+      "input": "On weeknights I talk with my family.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "weeknights",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-058",
+      "intent": "evening-routine",
+      "input": "On weeknights I review the day.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "weeknights",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-059",
+      "intent": "evening-routine",
+      "input": "On weeknights I turn off the lights.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "weeknights",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-060",
+      "intent": "evening-routine",
+      "input": "On weeknights I relax for a while.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "weeknights",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-061",
+      "intent": "evening-routine",
+      "input": "I end my day when I wash the dishes.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-062",
+      "intent": "evening-routine",
+      "input": "I end my day when I take a shower.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-063",
+      "intent": "evening-routine",
+      "input": "I end my day when I read a book.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-064",
+      "intent": "evening-routine",
+      "input": "I end my day when I prepare for tomorrow.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-065",
+      "intent": "evening-routine",
+      "input": "I end my day when I set an alarm.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-066",
+      "intent": "evening-routine",
+      "input": "I end my day when I tidy the room.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-067",
+      "intent": "evening-routine",
+      "input": "I end my day when I talk with my family.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-068",
+      "intent": "evening-routine",
+      "input": "I end my day when I review the day.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-069",
+      "intent": "evening-routine",
+      "input": "I end my day when I turn off the lights.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-070",
+      "intent": "evening-routine",
+      "input": "I end my day when I relax for a while.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "end",
+        "day",
+        "when",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-071",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to wash the dishes.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-072",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to take a shower.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "take",
+        "shower"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-073",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to read a book.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "read",
+        "book"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-074",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to prepare for tomorrow.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "prepare",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-075",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to set an alarm.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-076",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to tidy the room.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "tidy",
+        "room"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-077",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to talk with my family.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "talk",
+        "family"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-078",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to review the day.",
+      "response": "Your evening activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "review",
+        "day"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-079",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to turn off the lights.",
+      "response": "I understand that this activity is part of your evening routine.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "43-evening-routines-080",
+      "intent": "evening-routine",
+      "input": "A normal evening includes time to relax for a while.",
+      "response": "That statement describes an ordinary evening habit.",
+      "keywords": [
+        "normal",
+        "evening",
+        "includes",
+        "time",
+        "relax",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge an evening routine",
+        "tone": "warm"
+      }
+    }
+  ]
+}

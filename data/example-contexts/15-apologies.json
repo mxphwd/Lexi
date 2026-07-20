@@ -1,0 +1,1457 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "15-apologies",
+    "title": "Making apologies",
+    "description": "Common ways a speaker apologizes for an ordinary conversational mistake.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "15-apologies-001",
+      "intent": "apology",
+      "input": "I'm sorry for being late.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "sorry",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-002",
+      "intent": "apology",
+      "input": "I'm sorry for the confusion.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "sorry",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-003",
+      "intent": "apology",
+      "input": "I'm sorry for interrupting.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "sorry",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-004",
+      "intent": "apology",
+      "input": "I'm sorry for misunderstanding you.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "sorry",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-005",
+      "intent": "apology",
+      "input": "I'm sorry for the mistake.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "sorry",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-006",
+      "intent": "apology",
+      "input": "I'm sorry for speaking too quickly.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "sorry",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-007",
+      "intent": "apology",
+      "input": "I'm sorry for forgetting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "sorry",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-008",
+      "intent": "apology",
+      "input": "I'm sorry for the inconvenience.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "sorry",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-009",
+      "intent": "apology",
+      "input": "I'm sorry for changing the plan.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "sorry",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-010",
+      "intent": "apology",
+      "input": "I'm sorry for not being clear.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "sorry",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-011",
+      "intent": "apology",
+      "input": "I apologize for being late.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "apologize",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-012",
+      "intent": "apology",
+      "input": "I apologize for the confusion.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "apologize",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-013",
+      "intent": "apology",
+      "input": "I apologize for interrupting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "apologize",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-014",
+      "intent": "apology",
+      "input": "I apologize for misunderstanding you.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "apologize",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-015",
+      "intent": "apology",
+      "input": "I apologize for the mistake.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "apologize",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-016",
+      "intent": "apology",
+      "input": "I apologize for speaking too quickly.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "apologize",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-017",
+      "intent": "apology",
+      "input": "I apologize for forgetting.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "apologize",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-018",
+      "intent": "apology",
+      "input": "I apologize for the inconvenience.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "apologize",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-019",
+      "intent": "apology",
+      "input": "I apologize for changing the plan.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "apologize",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-020",
+      "intent": "apology",
+      "input": "I apologize for not being clear.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "apologize",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-021",
+      "intent": "apology",
+      "input": "Please forgive me for being late.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "please",
+        "forgive",
+        "being",
+        "late"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-022",
+      "intent": "apology",
+      "input": "Please forgive me for the confusion.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "please",
+        "forgive",
+        "confusion"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-023",
+      "intent": "apology",
+      "input": "Please forgive me for interrupting.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "please",
+        "forgive",
+        "interrupting"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-024",
+      "intent": "apology",
+      "input": "Please forgive me for misunderstanding you.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "please",
+        "forgive",
+        "misunderstanding"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-025",
+      "intent": "apology",
+      "input": "Please forgive me for the mistake.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "please",
+        "forgive",
+        "mistake"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-026",
+      "intent": "apology",
+      "input": "Please forgive me for speaking too quickly.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "please",
+        "forgive",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-027",
+      "intent": "apology",
+      "input": "Please forgive me for forgetting.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "please",
+        "forgive",
+        "forgetting"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-028",
+      "intent": "apology",
+      "input": "Please forgive me for the inconvenience.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "please",
+        "forgive",
+        "inconvenience"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-029",
+      "intent": "apology",
+      "input": "Please forgive me for changing the plan.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "please",
+        "forgive",
+        "changing",
+        "plan"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-030",
+      "intent": "apology",
+      "input": "Please forgive me for not being clear.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "please",
+        "forgive",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-031",
+      "intent": "apology",
+      "input": "That was my mistake for being late.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-032",
+      "intent": "apology",
+      "input": "That was my mistake for the confusion.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-033",
+      "intent": "apology",
+      "input": "That was my mistake for interrupting.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-034",
+      "intent": "apology",
+      "input": "That was my mistake for misunderstanding you.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-035",
+      "intent": "apology",
+      "input": "That was my mistake for the mistake.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-036",
+      "intent": "apology",
+      "input": "That was my mistake for speaking too quickly.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-037",
+      "intent": "apology",
+      "input": "That was my mistake for forgetting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-038",
+      "intent": "apology",
+      "input": "That was my mistake for the inconvenience.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-039",
+      "intent": "apology",
+      "input": "That was my mistake for changing the plan.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-040",
+      "intent": "apology",
+      "input": "That was my mistake for not being clear.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "that",
+        "was",
+        "mistake",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-041",
+      "intent": "apology",
+      "input": "I want to say sorry for being late.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-042",
+      "intent": "apology",
+      "input": "I want to say sorry for the confusion.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-043",
+      "intent": "apology",
+      "input": "I want to say sorry for interrupting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-044",
+      "intent": "apology",
+      "input": "I want to say sorry for misunderstanding you.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-045",
+      "intent": "apology",
+      "input": "I want to say sorry for the mistake.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-046",
+      "intent": "apology",
+      "input": "I want to say sorry for speaking too quickly.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-047",
+      "intent": "apology",
+      "input": "I want to say sorry for forgetting.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-048",
+      "intent": "apology",
+      "input": "I want to say sorry for the inconvenience.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-049",
+      "intent": "apology",
+      "input": "I want to say sorry for changing the plan.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-050",
+      "intent": "apology",
+      "input": "I want to say sorry for not being clear.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "want",
+        "say",
+        "sorry",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-051",
+      "intent": "apology",
+      "input": "I owe you an apology for being late.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "owe",
+        "apology",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-052",
+      "intent": "apology",
+      "input": "I owe you an apology for the confusion.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "owe",
+        "apology",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-053",
+      "intent": "apology",
+      "input": "I owe you an apology for interrupting.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "owe",
+        "apology",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-054",
+      "intent": "apology",
+      "input": "I owe you an apology for misunderstanding you.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "owe",
+        "apology",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-055",
+      "intent": "apology",
+      "input": "I owe you an apology for the mistake.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "owe",
+        "apology",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-056",
+      "intent": "apology",
+      "input": "I owe you an apology for speaking too quickly.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "owe",
+        "apology",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-057",
+      "intent": "apology",
+      "input": "I owe you an apology for forgetting.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "owe",
+        "apology",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-058",
+      "intent": "apology",
+      "input": "I owe you an apology for the inconvenience.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "owe",
+        "apology",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-059",
+      "intent": "apology",
+      "input": "I owe you an apology for changing the plan.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "owe",
+        "apology",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-060",
+      "intent": "apology",
+      "input": "I owe you an apology for not being clear.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "owe",
+        "apology",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-061",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for being late.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-062",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for the confusion.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-063",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for interrupting.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-064",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for misunderstanding you.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-065",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for the mistake.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-066",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for speaking too quickly.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-067",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for forgetting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-068",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for the inconvenience.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-069",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for changing the plan.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-070",
+      "intent": "apology",
+      "input": "I did not mean to cause trouble for not being clear.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "did",
+        "not",
+        "mean",
+        "cause",
+        "trouble",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-071",
+      "intent": "apology",
+      "input": "I regret what happened for being late.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "being",
+        "late"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-072",
+      "intent": "apology",
+      "input": "I regret what happened for the confusion.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-073",
+      "intent": "apology",
+      "input": "I regret what happened for interrupting.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "interrupting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-074",
+      "intent": "apology",
+      "input": "I regret what happened for misunderstanding you.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-075",
+      "intent": "apology",
+      "input": "I regret what happened for the mistake.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-076",
+      "intent": "apology",
+      "input": "I regret what happened for speaking too quickly.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "speaking",
+        "too",
+        "quickly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-077",
+      "intent": "apology",
+      "input": "I regret what happened for forgetting.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "forgetting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-078",
+      "intent": "apology",
+      "input": "I regret what happened for the inconvenience.",
+      "response": "I understand that you are apologizing, and we can move forward.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "inconvenience"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-079",
+      "intent": "apology",
+      "input": "I regret what happened for changing the plan.",
+      "response": "Thank you for apologizing. We can continue from here.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "changing",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "15-apologies-080",
+      "intent": "apology",
+      "input": "I regret what happened for not being clear.",
+      "response": "Your apology is acknowledged.",
+      "keywords": [
+        "regret",
+        "what",
+        "happened",
+        "not",
+        "being",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an apology",
+        "tone": "warm"
+      }
+    }
+  ]
+}

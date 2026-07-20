@@ -1,0 +1,1473 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "38-asking-the-time",
+    "title": "Asking the time",
+    "description": "Questions asking for the current or local time.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "38-asking-the-time-001",
+      "intent": "ask-time",
+      "input": "What time is it?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-002",
+      "intent": "ask-time",
+      "input": "What time is it now?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-003",
+      "intent": "ask-time",
+      "input": "What time is it right now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-004",
+      "intent": "ask-time",
+      "input": "What time is it where I am?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-005",
+      "intent": "ask-time",
+      "input": "What time is it in my area?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-006",
+      "intent": "ask-time",
+      "input": "What time is it at the moment?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-007",
+      "intent": "ask-time",
+      "input": "What time is it today?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-008",
+      "intent": "ask-time",
+      "input": "What time is it please?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-009",
+      "intent": "ask-time",
+      "input": "What time is it before we continue?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-010",
+      "intent": "ask-time",
+      "input": "What time is it as precisely as you can?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-011",
+      "intent": "ask-time",
+      "input": "Could you tell me the time?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-012",
+      "intent": "ask-time",
+      "input": "Could you tell me the time now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-013",
+      "intent": "ask-time",
+      "input": "Could you tell me the time right now?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-014",
+      "intent": "ask-time",
+      "input": "Could you tell me the time where I am?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-015",
+      "intent": "ask-time",
+      "input": "Could you tell me the time in my area?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-016",
+      "intent": "ask-time",
+      "input": "Could you tell me the time at the moment?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-017",
+      "intent": "ask-time",
+      "input": "Could you tell me the time today?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-018",
+      "intent": "ask-time",
+      "input": "Could you tell me the time please?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-019",
+      "intent": "ask-time",
+      "input": "Could you tell me the time before we continue?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-020",
+      "intent": "ask-time",
+      "input": "Could you tell me the time as precisely as you can?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "could",
+        "tell",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-021",
+      "intent": "ask-time",
+      "input": "Do you know the time?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "know",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-022",
+      "intent": "ask-time",
+      "input": "Do you know the time now?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "know",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-023",
+      "intent": "ask-time",
+      "input": "Do you know the time right now?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "know",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-024",
+      "intent": "ask-time",
+      "input": "Do you know the time where I am?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "know",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-025",
+      "intent": "ask-time",
+      "input": "Do you know the time in my area?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "know",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-026",
+      "intent": "ask-time",
+      "input": "Do you know the time at the moment?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "know",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-027",
+      "intent": "ask-time",
+      "input": "Do you know the time today?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "know",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-028",
+      "intent": "ask-time",
+      "input": "Do you know the time please?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "know",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-029",
+      "intent": "ask-time",
+      "input": "Do you know the time before we continue?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "know",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-030",
+      "intent": "ask-time",
+      "input": "Do you know the time as precisely as you can?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "know",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-031",
+      "intent": "ask-time",
+      "input": "Can you give me the current time?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-032",
+      "intent": "ask-time",
+      "input": "Can you give me the current time now?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-033",
+      "intent": "ask-time",
+      "input": "Can you give me the current time right now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-034",
+      "intent": "ask-time",
+      "input": "Can you give me the current time where I am?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-035",
+      "intent": "ask-time",
+      "input": "Can you give me the current time in my area?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-036",
+      "intent": "ask-time",
+      "input": "Can you give me the current time at the moment?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-037",
+      "intent": "ask-time",
+      "input": "Can you give me the current time today?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-038",
+      "intent": "ask-time",
+      "input": "Can you give me the current time please?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-039",
+      "intent": "ask-time",
+      "input": "Can you give me the current time before we continue?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-040",
+      "intent": "ask-time",
+      "input": "Can you give me the current time as precisely as you can?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "can",
+        "give",
+        "current",
+        "time",
+        "precisely"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-041",
+      "intent": "ask-time",
+      "input": "What is the local time?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "local",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-042",
+      "intent": "ask-time",
+      "input": "What is the local time now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-043",
+      "intent": "ask-time",
+      "input": "What is the local time right now?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-044",
+      "intent": "ask-time",
+      "input": "What is the local time where I am?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-045",
+      "intent": "ask-time",
+      "input": "What is the local time in my area?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-046",
+      "intent": "ask-time",
+      "input": "What is the local time at the moment?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-047",
+      "intent": "ask-time",
+      "input": "What is the local time today?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-048",
+      "intent": "ask-time",
+      "input": "What is the local time please?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-049",
+      "intent": "ask-time",
+      "input": "What is the local time before we continue?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-050",
+      "intent": "ask-time",
+      "input": "What is the local time as precisely as you can?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "what",
+        "local",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-051",
+      "intent": "ask-time",
+      "input": "May I ask what time it is?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-052",
+      "intent": "ask-time",
+      "input": "May I ask what time it is now?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-053",
+      "intent": "ask-time",
+      "input": "May I ask what time it is right now?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-054",
+      "intent": "ask-time",
+      "input": "May I ask what time it is where I am?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-055",
+      "intent": "ask-time",
+      "input": "May I ask what time it is in my area?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-056",
+      "intent": "ask-time",
+      "input": "May I ask what time it is at the moment?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-057",
+      "intent": "ask-time",
+      "input": "May I ask what time it is today?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-058",
+      "intent": "ask-time",
+      "input": "May I ask what time it is please?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-059",
+      "intent": "ask-time",
+      "input": "May I ask what time it is before we continue?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-060",
+      "intent": "ask-time",
+      "input": "May I ask what time it is as precisely as you can?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "may",
+        "ask",
+        "what",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-061",
+      "intent": "ask-time",
+      "input": "Please tell me the time?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-062",
+      "intent": "ask-time",
+      "input": "Please tell me the time now?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-063",
+      "intent": "ask-time",
+      "input": "Please tell me the time right now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-064",
+      "intent": "ask-time",
+      "input": "Please tell me the time where I am?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-065",
+      "intent": "ask-time",
+      "input": "Please tell me the time in my area?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-066",
+      "intent": "ask-time",
+      "input": "Please tell me the time at the moment?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-067",
+      "intent": "ask-time",
+      "input": "Please tell me the time today?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-068",
+      "intent": "ask-time",
+      "input": "Please tell me the time please?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-069",
+      "intent": "ask-time",
+      "input": "Please tell me the time before we continue?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-070",
+      "intent": "ask-time",
+      "input": "Please tell me the time as precisely as you can?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "please",
+        "tell",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-071",
+      "intent": "ask-time",
+      "input": "Would you check the time?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "would",
+        "check",
+        "time"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-072",
+      "intent": "ask-time",
+      "input": "Would you check the time now?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-073",
+      "intent": "ask-time",
+      "input": "Would you check the time right now?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "right",
+        "now"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-074",
+      "intent": "ask-time",
+      "input": "Would you check the time where I am?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "where",
+        "am"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-075",
+      "intent": "ask-time",
+      "input": "Would you check the time in my area?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "area"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-076",
+      "intent": "ask-time",
+      "input": "Would you check the time at the moment?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "moment"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-077",
+      "intent": "ask-time",
+      "input": "Would you check the time today?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-078",
+      "intent": "ask-time",
+      "input": "Would you check the time please?",
+      "response": "A current time requires a live clock and location, which this recorded context does not provide.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "please"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-079",
+      "intent": "ask-time",
+      "input": "Would you check the time before we continue?",
+      "response": "I do not have a live clock source in this corpus, so I cannot safely state the current time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "before",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "38-asking-the-time-080",
+      "intent": "ask-time",
+      "input": "Would you check the time as precisely as you can?",
+      "response": "Please check your device clock for the current local time.",
+      "keywords": [
+        "would",
+        "check",
+        "time",
+        "precisely",
+        "can"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of a live clock source",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

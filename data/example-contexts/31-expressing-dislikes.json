@@ -1,0 +1,1513 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "31-expressing-dislikes",
+    "title": "Expressing dislikes",
+    "description": "Basic negative preference statements about everyday topics.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "31-expressing-dislikes-001",
+      "intent": "express-dislike",
+      "input": "I dislike unclear instructions.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "dislike",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-002",
+      "intent": "express-dislike",
+      "input": "I dislike very loud places.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "dislike",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-003",
+      "intent": "express-dislike",
+      "input": "I dislike waiting without information.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "dislike",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-004",
+      "intent": "express-dislike",
+      "input": "I dislike confusing explanations.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "dislike",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-005",
+      "intent": "express-dislike",
+      "input": "I dislike rushed decisions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "dislike",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-006",
+      "intent": "express-dislike",
+      "input": "I dislike wasting time.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "dislike",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-007",
+      "intent": "express-dislike",
+      "input": "I dislike repeating the same mistake.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "dislike",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-008",
+      "intent": "express-dislike",
+      "input": "I dislike unnecessary arguments.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "dislike",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-009",
+      "intent": "express-dislike",
+      "input": "I dislike being interrupted.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "dislike",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-010",
+      "intent": "express-dislike",
+      "input": "I dislike missing important details.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "dislike",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-011",
+      "intent": "express-dislike",
+      "input": "I do not like unclear instructions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "not",
+        "like",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-012",
+      "intent": "express-dislike",
+      "input": "I do not like very loud places.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "not",
+        "like",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-013",
+      "intent": "express-dislike",
+      "input": "I do not like waiting without information.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "not",
+        "like",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-014",
+      "intent": "express-dislike",
+      "input": "I do not like confusing explanations.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "not",
+        "like",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-015",
+      "intent": "express-dislike",
+      "input": "I do not like rushed decisions.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "not",
+        "like",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-016",
+      "intent": "express-dislike",
+      "input": "I do not like wasting time.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "not",
+        "like",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-017",
+      "intent": "express-dislike",
+      "input": "I do not like repeating the same mistake.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "not",
+        "like",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-018",
+      "intent": "express-dislike",
+      "input": "I do not like unnecessary arguments.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "not",
+        "like",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-019",
+      "intent": "express-dislike",
+      "input": "I do not like being interrupted.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "not",
+        "like",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-020",
+      "intent": "express-dislike",
+      "input": "I do not like missing important details.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "not",
+        "like",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-021",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy unclear instructions.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-022",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy very loud places.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-023",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy waiting without information.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-024",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy confusing explanations.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-025",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy rushed decisions.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-026",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy wasting time.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-027",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy repeating the same mistake.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-028",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy unnecessary arguments.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-029",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy being interrupted.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-030",
+      "intent": "express-dislike",
+      "input": "I really don't enjoy missing important details.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "really",
+        "don",
+        "enjoy",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-031",
+      "intent": "express-dislike",
+      "input": "I am not fond of unclear instructions.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-032",
+      "intent": "express-dislike",
+      "input": "I am not fond of very loud places.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-033",
+      "intent": "express-dislike",
+      "input": "I am not fond of waiting without information.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-034",
+      "intent": "express-dislike",
+      "input": "I am not fond of confusing explanations.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-035",
+      "intent": "express-dislike",
+      "input": "I am not fond of rushed decisions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-036",
+      "intent": "express-dislike",
+      "input": "I am not fond of wasting time.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-037",
+      "intent": "express-dislike",
+      "input": "I am not fond of repeating the same mistake.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-038",
+      "intent": "express-dislike",
+      "input": "I am not fond of unnecessary arguments.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-039",
+      "intent": "express-dislike",
+      "input": "I am not fond of being interrupted.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-040",
+      "intent": "express-dislike",
+      "input": "I am not fond of missing important details.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "am",
+        "not",
+        "fond",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-041",
+      "intent": "express-dislike",
+      "input": "I would rather avoid unclear instructions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-042",
+      "intent": "express-dislike",
+      "input": "I would rather avoid very loud places.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-043",
+      "intent": "express-dislike",
+      "input": "I would rather avoid waiting without information.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-044",
+      "intent": "express-dislike",
+      "input": "I would rather avoid confusing explanations.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-045",
+      "intent": "express-dislike",
+      "input": "I would rather avoid rushed decisions.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-046",
+      "intent": "express-dislike",
+      "input": "I would rather avoid wasting time.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-047",
+      "intent": "express-dislike",
+      "input": "I would rather avoid repeating the same mistake.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-048",
+      "intent": "express-dislike",
+      "input": "I would rather avoid unnecessary arguments.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-049",
+      "intent": "express-dislike",
+      "input": "I would rather avoid being interrupted.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-050",
+      "intent": "express-dislike",
+      "input": "I would rather avoid missing important details.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "would",
+        "rather",
+        "avoid",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-051",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is unclear instructions.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-052",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is very loud places.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-053",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is waiting without information.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-054",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is confusing explanations.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-055",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is rushed decisions.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-056",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is wasting time.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-057",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is repeating the same mistake.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-058",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is unnecessary arguments.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-059",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is being interrupted.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-060",
+      "intent": "express-dislike",
+      "input": "One thing I dislike is missing important details.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "one",
+        "thing",
+        "dislike",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-061",
+      "intent": "express-dislike",
+      "input": "I have no preference for unclear instructions.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-062",
+      "intent": "express-dislike",
+      "input": "I have no preference for very loud places.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-063",
+      "intent": "express-dislike",
+      "input": "I have no preference for waiting without information.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-064",
+      "intent": "express-dislike",
+      "input": "I have no preference for confusing explanations.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-065",
+      "intent": "express-dislike",
+      "input": "I have no preference for rushed decisions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-066",
+      "intent": "express-dislike",
+      "input": "I have no preference for wasting time.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-067",
+      "intent": "express-dislike",
+      "input": "I have no preference for repeating the same mistake.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-068",
+      "intent": "express-dislike",
+      "input": "I have no preference for unnecessary arguments.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-069",
+      "intent": "express-dislike",
+      "input": "I have no preference for being interrupted.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-070",
+      "intent": "express-dislike",
+      "input": "I have no preference for missing important details.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "have",
+        "no",
+        "preference",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-071",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with unclear instructions.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "uncomfortable",
+        "unclear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-072",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with very loud places.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "uncomfortable",
+        "very",
+        "loud",
+        "places"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-073",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with waiting without information.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "uncomfortable",
+        "waiting",
+        "without",
+        "information"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-074",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with confusing explanations.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "uncomfortable",
+        "confusing",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-075",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with rushed decisions.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "uncomfortable",
+        "rushed",
+        "decisions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-076",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with wasting time.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "uncomfortable",
+        "wasting",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-077",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with repeating the same mistake.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "uncomfortable",
+        "repeating",
+        "same",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-078",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with unnecessary arguments.",
+      "response": "That statement identifies something you would rather avoid.",
+      "keywords": [
+        "uncomfortable",
+        "unnecessary",
+        "arguments"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-079",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with being interrupted.",
+      "response": "I understand that you dislike that situation or quality.",
+      "keywords": [
+        "uncomfortable",
+        "being",
+        "interrupted"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "31-expressing-dislikes-080",
+      "intent": "express-dislike",
+      "input": "I'm uncomfortable with missing important details.",
+      "response": "Your negative preference is clear in this turn.",
+      "keywords": [
+        "uncomfortable",
+        "missing",
+        "important",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated dislike",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

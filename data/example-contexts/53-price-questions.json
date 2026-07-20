@@ -1,0 +1,1551 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "53-price-questions",
+    "title": "Asking prices",
+    "description": "Shopping questions asking for the price of an ordinary item.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "53-price-questions-001",
+      "intent": "price-question",
+      "input": "How much is a small notebook?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-002",
+      "intent": "price-question",
+      "input": "How much is a blue pen?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-003",
+      "intent": "price-question",
+      "input": "How much is a phone charger?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-004",
+      "intent": "price-question",
+      "input": "How much is a reusable bottle?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-005",
+      "intent": "price-question",
+      "input": "How much is a plain shirt?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-006",
+      "intent": "price-question",
+      "input": "How much is a pair of socks?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-007",
+      "intent": "price-question",
+      "input": "How much is a travel bag?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-008",
+      "intent": "price-question",
+      "input": "How much is a desk lamp?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-009",
+      "intent": "price-question",
+      "input": "How much is a basic umbrella?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-010",
+      "intent": "price-question",
+      "input": "How much is a gift card?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-011",
+      "intent": "price-question",
+      "input": "What does it cost to buy a small notebook?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-012",
+      "intent": "price-question",
+      "input": "What does it cost to buy a blue pen?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-013",
+      "intent": "price-question",
+      "input": "What does it cost to buy a phone charger?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-014",
+      "intent": "price-question",
+      "input": "What does it cost to buy a reusable bottle?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-015",
+      "intent": "price-question",
+      "input": "What does it cost to buy a plain shirt?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-016",
+      "intent": "price-question",
+      "input": "What does it cost to buy a pair of socks?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-017",
+      "intent": "price-question",
+      "input": "What does it cost to buy a travel bag?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-018",
+      "intent": "price-question",
+      "input": "What does it cost to buy a desk lamp?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-019",
+      "intent": "price-question",
+      "input": "What does it cost to buy a basic umbrella?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-020",
+      "intent": "price-question",
+      "input": "What does it cost to buy a gift card?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "cost",
+        "buy",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-021",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a small notebook?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-022",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a blue pen?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-023",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a phone charger?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-024",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a reusable bottle?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-025",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a plain shirt?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-026",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a pair of socks?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-027",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a travel bag?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-028",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a desk lamp?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-029",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a basic umbrella?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-030",
+      "intent": "price-question",
+      "input": "Can you tell me the price of a gift card?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "can",
+        "tell",
+        "price",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-031",
+      "intent": "price-question",
+      "input": "What is the current price of a small notebook?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-032",
+      "intent": "price-question",
+      "input": "What is the current price of a blue pen?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-033",
+      "intent": "price-question",
+      "input": "What is the current price of a phone charger?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-034",
+      "intent": "price-question",
+      "input": "What is the current price of a reusable bottle?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-035",
+      "intent": "price-question",
+      "input": "What is the current price of a plain shirt?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-036",
+      "intent": "price-question",
+      "input": "What is the current price of a pair of socks?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-037",
+      "intent": "price-question",
+      "input": "What is the current price of a travel bag?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-038",
+      "intent": "price-question",
+      "input": "What is the current price of a desk lamp?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-039",
+      "intent": "price-question",
+      "input": "What is the current price of a basic umbrella?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-040",
+      "intent": "price-question",
+      "input": "What is the current price of a gift card?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "current",
+        "price",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-041",
+      "intent": "price-question",
+      "input": "How much would I pay for a small notebook?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-042",
+      "intent": "price-question",
+      "input": "How much would I pay for a blue pen?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-043",
+      "intent": "price-question",
+      "input": "How much would I pay for a phone charger?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-044",
+      "intent": "price-question",
+      "input": "How much would I pay for a reusable bottle?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-045",
+      "intent": "price-question",
+      "input": "How much would I pay for a plain shirt?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-046",
+      "intent": "price-question",
+      "input": "How much would I pay for a pair of socks?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-047",
+      "intent": "price-question",
+      "input": "How much would I pay for a travel bag?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-048",
+      "intent": "price-question",
+      "input": "How much would I pay for a desk lamp?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-049",
+      "intent": "price-question",
+      "input": "How much would I pay for a basic umbrella?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-050",
+      "intent": "price-question",
+      "input": "How much would I pay for a gift card?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "how",
+        "much",
+        "would",
+        "pay",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-051",
+      "intent": "price-question",
+      "input": "Could you check the cost of a small notebook?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-052",
+      "intent": "price-question",
+      "input": "Could you check the cost of a blue pen?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-053",
+      "intent": "price-question",
+      "input": "Could you check the cost of a phone charger?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-054",
+      "intent": "price-question",
+      "input": "Could you check the cost of a reusable bottle?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-055",
+      "intent": "price-question",
+      "input": "Could you check the cost of a plain shirt?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-056",
+      "intent": "price-question",
+      "input": "Could you check the cost of a pair of socks?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-057",
+      "intent": "price-question",
+      "input": "Could you check the cost of a travel bag?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-058",
+      "intent": "price-question",
+      "input": "Could you check the cost of a desk lamp?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-059",
+      "intent": "price-question",
+      "input": "Could you check the cost of a basic umbrella?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-060",
+      "intent": "price-question",
+      "input": "Could you check the cost of a gift card?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "could",
+        "check",
+        "cost",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-061",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a small notebook?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-062",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a blue pen?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-063",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a phone charger?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-064",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a reusable bottle?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-065",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a plain shirt?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-066",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a pair of socks?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-067",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a travel bag?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-068",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a desk lamp?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-069",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a basic umbrella?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-070",
+      "intent": "price-question",
+      "input": "Do you know how much they charge for a gift card?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "know",
+        "how",
+        "much",
+        "they",
+        "charge",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-071",
+      "intent": "price-question",
+      "input": "What is the listed price for a small notebook?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-072",
+      "intent": "price-question",
+      "input": "What is the listed price for a blue pen?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-073",
+      "intent": "price-question",
+      "input": "What is the listed price for a phone charger?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-074",
+      "intent": "price-question",
+      "input": "What is the listed price for a reusable bottle?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-075",
+      "intent": "price-question",
+      "input": "What is the listed price for a plain shirt?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-076",
+      "intent": "price-question",
+      "input": "What is the listed price for a pair of socks?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-077",
+      "intent": "price-question",
+      "input": "What is the listed price for a travel bag?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-078",
+      "intent": "price-question",
+      "input": "What is the listed price for a desk lamp?",
+      "response": "The item is identified; an accurate price requires a live seller, location, and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-079",
+      "intent": "price-question",
+      "input": "What is the listed price for a basic umbrella?",
+      "response": "I cannot verify live prices. Check the seller's current listing and currency.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "53-price-questions-080",
+      "intent": "price-question",
+      "input": "What is the listed price for a gift card?",
+      "response": "That is a price question, but no current price source is present in this corpus.",
+      "keywords": [
+        "what",
+        "listed",
+        "price",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live pricing",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

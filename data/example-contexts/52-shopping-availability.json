@@ -1,0 +1,1431 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "52-shopping-availability",
+    "title": "Asking about product availability",
+    "description": "Shopping questions asking whether an ordinary item is available.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "52-shopping-availability-001",
+      "intent": "product-availability",
+      "input": "Do you have a small notebook?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "have",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-002",
+      "intent": "product-availability",
+      "input": "Do you have a blue pen?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "have",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-003",
+      "intent": "product-availability",
+      "input": "Do you have a phone charger?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "have",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-004",
+      "intent": "product-availability",
+      "input": "Do you have a reusable bottle?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "have",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-005",
+      "intent": "product-availability",
+      "input": "Do you have a plain shirt?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "have",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-006",
+      "intent": "product-availability",
+      "input": "Do you have a pair of socks?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "have",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-007",
+      "intent": "product-availability",
+      "input": "Do you have a travel bag?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "have",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-008",
+      "intent": "product-availability",
+      "input": "Do you have a desk lamp?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "have",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-009",
+      "intent": "product-availability",
+      "input": "Do you have a basic umbrella?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "have",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-010",
+      "intent": "product-availability",
+      "input": "Do you have a gift card?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "have",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-011",
+      "intent": "product-availability",
+      "input": "Is there a small notebook?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "there",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-012",
+      "intent": "product-availability",
+      "input": "Is there a blue pen?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "there",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-013",
+      "intent": "product-availability",
+      "input": "Is there a phone charger?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "there",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-014",
+      "intent": "product-availability",
+      "input": "Is there a reusable bottle?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "there",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-015",
+      "intent": "product-availability",
+      "input": "Is there a plain shirt?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "there",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-016",
+      "intent": "product-availability",
+      "input": "Is there a pair of socks?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "there",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-017",
+      "intent": "product-availability",
+      "input": "Is there a travel bag?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "there",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-018",
+      "intent": "product-availability",
+      "input": "Is there a desk lamp?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "there",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-019",
+      "intent": "product-availability",
+      "input": "Is there a basic umbrella?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "there",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-020",
+      "intent": "product-availability",
+      "input": "Is there a gift card?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "there",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-021",
+      "intent": "product-availability",
+      "input": "Can I buy a small notebook?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "can",
+        "buy",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-022",
+      "intent": "product-availability",
+      "input": "Can I buy a blue pen?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "can",
+        "buy",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-023",
+      "intent": "product-availability",
+      "input": "Can I buy a phone charger?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "can",
+        "buy",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-024",
+      "intent": "product-availability",
+      "input": "Can I buy a reusable bottle?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "can",
+        "buy",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-025",
+      "intent": "product-availability",
+      "input": "Can I buy a plain shirt?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "can",
+        "buy",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-026",
+      "intent": "product-availability",
+      "input": "Can I buy a pair of socks?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "can",
+        "buy",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-027",
+      "intent": "product-availability",
+      "input": "Can I buy a travel bag?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "can",
+        "buy",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-028",
+      "intent": "product-availability",
+      "input": "Can I buy a desk lamp?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "can",
+        "buy",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-029",
+      "intent": "product-availability",
+      "input": "Can I buy a basic umbrella?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "can",
+        "buy",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-030",
+      "intent": "product-availability",
+      "input": "Can I buy a gift card?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "can",
+        "buy",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-031",
+      "intent": "product-availability",
+      "input": "Is this store carrying a small notebook?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "store",
+        "carrying",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-032",
+      "intent": "product-availability",
+      "input": "Is this store carrying a blue pen?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "store",
+        "carrying",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-033",
+      "intent": "product-availability",
+      "input": "Is this store carrying a phone charger?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "store",
+        "carrying",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-034",
+      "intent": "product-availability",
+      "input": "Is this store carrying a reusable bottle?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "store",
+        "carrying",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-035",
+      "intent": "product-availability",
+      "input": "Is this store carrying a plain shirt?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "store",
+        "carrying",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-036",
+      "intent": "product-availability",
+      "input": "Is this store carrying a pair of socks?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "store",
+        "carrying",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-037",
+      "intent": "product-availability",
+      "input": "Is this store carrying a travel bag?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "store",
+        "carrying",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-038",
+      "intent": "product-availability",
+      "input": "Is this store carrying a desk lamp?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "store",
+        "carrying",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-039",
+      "intent": "product-availability",
+      "input": "Is this store carrying a basic umbrella?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "store",
+        "carrying",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-040",
+      "intent": "product-availability",
+      "input": "Is this store carrying a gift card?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "store",
+        "carrying",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-041",
+      "intent": "product-availability",
+      "input": "Could you check for a small notebook?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "could",
+        "check",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-042",
+      "intent": "product-availability",
+      "input": "Could you check for a blue pen?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "could",
+        "check",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-043",
+      "intent": "product-availability",
+      "input": "Could you check for a phone charger?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "could",
+        "check",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-044",
+      "intent": "product-availability",
+      "input": "Could you check for a reusable bottle?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "could",
+        "check",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-045",
+      "intent": "product-availability",
+      "input": "Could you check for a plain shirt?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "could",
+        "check",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-046",
+      "intent": "product-availability",
+      "input": "Could you check for a pair of socks?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "could",
+        "check",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-047",
+      "intent": "product-availability",
+      "input": "Could you check for a travel bag?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "could",
+        "check",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-048",
+      "intent": "product-availability",
+      "input": "Could you check for a desk lamp?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "could",
+        "check",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-049",
+      "intent": "product-availability",
+      "input": "Could you check for a basic umbrella?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "could",
+        "check",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-050",
+      "intent": "product-availability",
+      "input": "Could you check for a gift card?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "could",
+        "check",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-051",
+      "intent": "product-availability",
+      "input": "Do they sell a small notebook?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "they",
+        "sell",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-052",
+      "intent": "product-availability",
+      "input": "Do they sell a blue pen?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "they",
+        "sell",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-053",
+      "intent": "product-availability",
+      "input": "Do they sell a phone charger?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "they",
+        "sell",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-054",
+      "intent": "product-availability",
+      "input": "Do they sell a reusable bottle?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "they",
+        "sell",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-055",
+      "intent": "product-availability",
+      "input": "Do they sell a plain shirt?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "they",
+        "sell",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-056",
+      "intent": "product-availability",
+      "input": "Do they sell a pair of socks?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "they",
+        "sell",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-057",
+      "intent": "product-availability",
+      "input": "Do they sell a travel bag?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "they",
+        "sell",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-058",
+      "intent": "product-availability",
+      "input": "Do they sell a desk lamp?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "they",
+        "sell",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-059",
+      "intent": "product-availability",
+      "input": "Do they sell a basic umbrella?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "they",
+        "sell",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-060",
+      "intent": "product-availability",
+      "input": "Do they sell a gift card?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "they",
+        "sell",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-061",
+      "intent": "product-availability",
+      "input": "Is it possible to find a small notebook?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "possible",
+        "find",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-062",
+      "intent": "product-availability",
+      "input": "Is it possible to find a blue pen?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "possible",
+        "find",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-063",
+      "intent": "product-availability",
+      "input": "Is it possible to find a phone charger?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "possible",
+        "find",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-064",
+      "intent": "product-availability",
+      "input": "Is it possible to find a reusable bottle?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "possible",
+        "find",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-065",
+      "intent": "product-availability",
+      "input": "Is it possible to find a plain shirt?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "possible",
+        "find",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-066",
+      "intent": "product-availability",
+      "input": "Is it possible to find a pair of socks?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "possible",
+        "find",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-067",
+      "intent": "product-availability",
+      "input": "Is it possible to find a travel bag?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "possible",
+        "find",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-068",
+      "intent": "product-availability",
+      "input": "Is it possible to find a desk lamp?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "possible",
+        "find",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-069",
+      "intent": "product-availability",
+      "input": "Is it possible to find a basic umbrella?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "possible",
+        "find",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-070",
+      "intent": "product-availability",
+      "input": "Is it possible to find a gift card?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "possible",
+        "find",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-071",
+      "intent": "product-availability",
+      "input": "I am looking for a small notebook?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "am",
+        "looking",
+        "small",
+        "notebook"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-072",
+      "intent": "product-availability",
+      "input": "I am looking for a blue pen?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "am",
+        "looking",
+        "blue",
+        "pen"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-073",
+      "intent": "product-availability",
+      "input": "I am looking for a phone charger?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "am",
+        "looking",
+        "phone",
+        "charger"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-074",
+      "intent": "product-availability",
+      "input": "I am looking for a reusable bottle?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "am",
+        "looking",
+        "reusable",
+        "bottle"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-075",
+      "intent": "product-availability",
+      "input": "I am looking for a plain shirt?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "am",
+        "looking",
+        "plain",
+        "shirt"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-076",
+      "intent": "product-availability",
+      "input": "I am looking for a pair of socks?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "am",
+        "looking",
+        "pair",
+        "socks"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-077",
+      "intent": "product-availability",
+      "input": "I am looking for a travel bag?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "am",
+        "looking",
+        "travel",
+        "bag"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-078",
+      "intent": "product-availability",
+      "input": "I am looking for a desk lamp?",
+      "response": "The requested item is clear; availability requires a live source from the relevant store.",
+      "keywords": [
+        "am",
+        "looking",
+        "desk",
+        "lamp"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-079",
+      "intent": "product-availability",
+      "input": "I am looking for a basic umbrella?",
+      "response": "I cannot check live store inventory. Contact the seller or inspect its current listing.",
+      "keywords": [
+        "am",
+        "looking",
+        "basic",
+        "umbrella"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "52-shopping-availability-080",
+      "intent": "product-availability",
+      "input": "I am looking for a gift card?",
+      "response": "That is a product-availability question, but no current inventory is recorded here.",
+      "keywords": [
+        "am",
+        "looking",
+        "gift",
+        "card"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "state the lack of live inventory",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

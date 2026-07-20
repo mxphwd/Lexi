@@ -1,0 +1,1479 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "21-repetition-requests",
+    "title": "Requests for repetition",
+    "description": "Common requests to repeat or restate information.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "21-repetition-requests-001",
+      "intent": "repetition-request",
+      "input": "Could you repeat the answer?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "repeat",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-002",
+      "intent": "repetition-request",
+      "input": "Could you repeat the last point?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "repeat",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-003",
+      "intent": "repetition-request",
+      "input": "Could you repeat that sentence?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "repeat",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-004",
+      "intent": "repetition-request",
+      "input": "Could you repeat the instructions?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "repeat",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-005",
+      "intent": "repetition-request",
+      "input": "Could you repeat the main idea?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "repeat",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-006",
+      "intent": "repetition-request",
+      "input": "Could you repeat the example?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "repeat",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-007",
+      "intent": "repetition-request",
+      "input": "Could you repeat the explanation?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "repeat",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-008",
+      "intent": "repetition-request",
+      "input": "Could you repeat the question?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "repeat",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-009",
+      "intent": "repetition-request",
+      "input": "Could you repeat what you just said?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "repeat",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-010",
+      "intent": "repetition-request",
+      "input": "Could you repeat the important part?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "repeat",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-011",
+      "intent": "repetition-request",
+      "input": "Please say again the answer?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-012",
+      "intent": "repetition-request",
+      "input": "Please say again the last point?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-013",
+      "intent": "repetition-request",
+      "input": "Please say again that sentence?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-014",
+      "intent": "repetition-request",
+      "input": "Please say again the instructions?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-015",
+      "intent": "repetition-request",
+      "input": "Please say again the main idea?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-016",
+      "intent": "repetition-request",
+      "input": "Please say again the example?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-017",
+      "intent": "repetition-request",
+      "input": "Please say again the explanation?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-018",
+      "intent": "repetition-request",
+      "input": "Please say again the question?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-019",
+      "intent": "repetition-request",
+      "input": "Please say again what you just said?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-020",
+      "intent": "repetition-request",
+      "input": "Please say again the important part?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "say",
+        "again",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-021",
+      "intent": "repetition-request",
+      "input": "Can you restate the answer?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "restate",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-022",
+      "intent": "repetition-request",
+      "input": "Can you restate the last point?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "restate",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-023",
+      "intent": "repetition-request",
+      "input": "Can you restate that sentence?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "restate",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-024",
+      "intent": "repetition-request",
+      "input": "Can you restate the instructions?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "restate",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-025",
+      "intent": "repetition-request",
+      "input": "Can you restate the main idea?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "restate",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-026",
+      "intent": "repetition-request",
+      "input": "Can you restate the example?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "restate",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-027",
+      "intent": "repetition-request",
+      "input": "Can you restate the explanation?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "restate",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-028",
+      "intent": "repetition-request",
+      "input": "Can you restate the question?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "restate",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-029",
+      "intent": "repetition-request",
+      "input": "Can you restate what you just said?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "restate",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-030",
+      "intent": "repetition-request",
+      "input": "Can you restate the important part?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "restate",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-031",
+      "intent": "repetition-request",
+      "input": "Would you repeat the answer?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "would",
+        "repeat",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-032",
+      "intent": "repetition-request",
+      "input": "Would you repeat the last point?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "would",
+        "repeat",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-033",
+      "intent": "repetition-request",
+      "input": "Would you repeat that sentence?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "would",
+        "repeat",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-034",
+      "intent": "repetition-request",
+      "input": "Would you repeat the instructions?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "would",
+        "repeat",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-035",
+      "intent": "repetition-request",
+      "input": "Would you repeat the main idea?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "would",
+        "repeat",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-036",
+      "intent": "repetition-request",
+      "input": "Would you repeat the example?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "would",
+        "repeat",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-037",
+      "intent": "repetition-request",
+      "input": "Would you repeat the explanation?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "would",
+        "repeat",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-038",
+      "intent": "repetition-request",
+      "input": "Would you repeat the question?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "would",
+        "repeat",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-039",
+      "intent": "repetition-request",
+      "input": "Would you repeat what you just said?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "would",
+        "repeat",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-040",
+      "intent": "repetition-request",
+      "input": "Would you repeat the important part?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "would",
+        "repeat",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-041",
+      "intent": "repetition-request",
+      "input": "I need to hear again the answer?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-042",
+      "intent": "repetition-request",
+      "input": "I need to hear again the last point?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-043",
+      "intent": "repetition-request",
+      "input": "I need to hear again that sentence?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-044",
+      "intent": "repetition-request",
+      "input": "I need to hear again the instructions?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-045",
+      "intent": "repetition-request",
+      "input": "I need to hear again the main idea?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-046",
+      "intent": "repetition-request",
+      "input": "I need to hear again the example?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-047",
+      "intent": "repetition-request",
+      "input": "I need to hear again the explanation?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-048",
+      "intent": "repetition-request",
+      "input": "I need to hear again the question?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-049",
+      "intent": "repetition-request",
+      "input": "I need to hear again what you just said?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-050",
+      "intent": "repetition-request",
+      "input": "I need to hear again the important part?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "need",
+        "hear",
+        "again",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-051",
+      "intent": "repetition-request",
+      "input": "Please go over the answer?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-052",
+      "intent": "repetition-request",
+      "input": "Please go over the last point?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-053",
+      "intent": "repetition-request",
+      "input": "Please go over that sentence?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-054",
+      "intent": "repetition-request",
+      "input": "Please go over the instructions?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-055",
+      "intent": "repetition-request",
+      "input": "Please go over the main idea?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-056",
+      "intent": "repetition-request",
+      "input": "Please go over the example?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-057",
+      "intent": "repetition-request",
+      "input": "Please go over the explanation?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-058",
+      "intent": "repetition-request",
+      "input": "Please go over the question?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-059",
+      "intent": "repetition-request",
+      "input": "Please go over what you just said?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-060",
+      "intent": "repetition-request",
+      "input": "Please go over the important part?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "please",
+        "go",
+        "over",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-061",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the answer?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-062",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the last point?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-063",
+      "intent": "repetition-request",
+      "input": "Could you tell me again that sentence?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-064",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the instructions?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-065",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the main idea?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-066",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the example?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-067",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the explanation?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-068",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the question?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-069",
+      "intent": "repetition-request",
+      "input": "Could you tell me again what you just said?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-070",
+      "intent": "repetition-request",
+      "input": "Could you tell me again the important part?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "could",
+        "tell",
+        "again",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-071",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the answer?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "answer"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-072",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the last point?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "last",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-073",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly that sentence?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "that",
+        "sentence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-074",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the instructions?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-075",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the main idea?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "main",
+        "idea"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-076",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the example?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-077",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the explanation?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "explanation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-078",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the question?",
+      "response": "I can repeat the relevant point after you identify it.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-079",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly what you just said?",
+      "response": "I can restate a recorded answer when you name the topic you want repeated.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "what",
+        "just",
+        "said"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "21-repetition-requests-080",
+      "intent": "repetition-request",
+      "input": "Can you repeat more slowly the important part?",
+      "response": "Tell me which topic to repeat, and I will retrieve the closest recorded response.",
+      "keywords": [
+        "can",
+        "repeat",
+        "more",
+        "slowly",
+        "important",
+        "part"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "offer a bounded restatement",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

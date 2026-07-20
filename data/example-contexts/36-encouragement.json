@@ -1,0 +1,1443 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "36-encouragement",
+    "title": "Giving encouragement",
+    "description": "Supportive language encouraging someone to continue an effort.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "36-encouragement-001",
+      "intent": "encouragement",
+      "input": "Keep going with the task.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "going",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-002",
+      "intent": "encouragement",
+      "input": "Keep going with the next step.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "going",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-003",
+      "intent": "encouragement",
+      "input": "Keep going with the difficult part.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "going",
+        "difficult",
+        "part"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-004",
+      "intent": "encouragement",
+      "input": "Keep going with your practice.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "going",
+        "practice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-005",
+      "intent": "encouragement",
+      "input": "Keep going with the project.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "going",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-006",
+      "intent": "encouragement",
+      "input": "Keep going with the explanation.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "going",
+        "explanation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-007",
+      "intent": "encouragement",
+      "input": "Keep going with the problem.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "going",
+        "problem"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-008",
+      "intent": "encouragement",
+      "input": "Keep going with your learning.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "going",
+        "learning"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-009",
+      "intent": "encouragement",
+      "input": "Keep going with the final details.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "going",
+        "final",
+        "details"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-010",
+      "intent": "encouragement",
+      "input": "Keep going with what you started.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "going",
+        "what",
+        "started"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-011",
+      "intent": "encouragement",
+      "input": "You can handle the task.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "can",
+        "handle",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-012",
+      "intent": "encouragement",
+      "input": "You can handle the next step.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "can",
+        "handle",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-013",
+      "intent": "encouragement",
+      "input": "You can handle the difficult part.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "can",
+        "handle",
+        "difficult",
+        "part"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-014",
+      "intent": "encouragement",
+      "input": "You can handle your practice.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "can",
+        "handle",
+        "practice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-015",
+      "intent": "encouragement",
+      "input": "You can handle the project.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "can",
+        "handle",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-016",
+      "intent": "encouragement",
+      "input": "You can handle the explanation.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "can",
+        "handle",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-017",
+      "intent": "encouragement",
+      "input": "You can handle the problem.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "can",
+        "handle",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-018",
+      "intent": "encouragement",
+      "input": "You can handle your learning.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "can",
+        "handle",
+        "learning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-019",
+      "intent": "encouragement",
+      "input": "You can handle the final details.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "can",
+        "handle",
+        "final",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-020",
+      "intent": "encouragement",
+      "input": "You can handle what you started.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "can",
+        "handle",
+        "what",
+        "started"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-021",
+      "intent": "encouragement",
+      "input": "Do not give up on the task.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-022",
+      "intent": "encouragement",
+      "input": "Do not give up on the next step.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-023",
+      "intent": "encouragement",
+      "input": "Do not give up on the difficult part.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "difficult",
+        "part"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-024",
+      "intent": "encouragement",
+      "input": "Do not give up on your practice.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "practice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-025",
+      "intent": "encouragement",
+      "input": "Do not give up on the project.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-026",
+      "intent": "encouragement",
+      "input": "Do not give up on the explanation.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-027",
+      "intent": "encouragement",
+      "input": "Do not give up on the problem.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-028",
+      "intent": "encouragement",
+      "input": "Do not give up on your learning.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "learning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-029",
+      "intent": "encouragement",
+      "input": "Do not give up on the final details.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "final",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-030",
+      "intent": "encouragement",
+      "input": "Do not give up on what you started.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "not",
+        "give",
+        "up",
+        "what",
+        "started"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-031",
+      "intent": "encouragement",
+      "input": "Take your time with the task.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "take",
+        "time",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-032",
+      "intent": "encouragement",
+      "input": "Take your time with the next step.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "take",
+        "time",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-033",
+      "intent": "encouragement",
+      "input": "Take your time with the difficult part.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "take",
+        "time",
+        "difficult",
+        "part"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-034",
+      "intent": "encouragement",
+      "input": "Take your time with your practice.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "take",
+        "time",
+        "practice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-035",
+      "intent": "encouragement",
+      "input": "Take your time with the project.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "take",
+        "time",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-036",
+      "intent": "encouragement",
+      "input": "Take your time with the explanation.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "take",
+        "time",
+        "explanation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-037",
+      "intent": "encouragement",
+      "input": "Take your time with the problem.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "take",
+        "time",
+        "problem"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-038",
+      "intent": "encouragement",
+      "input": "Take your time with your learning.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "take",
+        "time",
+        "learning"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-039",
+      "intent": "encouragement",
+      "input": "Take your time with the final details.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "take",
+        "time",
+        "final",
+        "details"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-040",
+      "intent": "encouragement",
+      "input": "Take your time with what you started.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "take",
+        "time",
+        "what",
+        "started"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-041",
+      "intent": "encouragement",
+      "input": "I believe you can finish the task.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-042",
+      "intent": "encouragement",
+      "input": "I believe you can finish the next step.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-043",
+      "intent": "encouragement",
+      "input": "I believe you can finish the difficult part.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "difficult",
+        "part"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-044",
+      "intent": "encouragement",
+      "input": "I believe you can finish your practice.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "practice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-045",
+      "intent": "encouragement",
+      "input": "I believe you can finish the project.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-046",
+      "intent": "encouragement",
+      "input": "I believe you can finish the explanation.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-047",
+      "intent": "encouragement",
+      "input": "I believe you can finish the problem.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-048",
+      "intent": "encouragement",
+      "input": "I believe you can finish your learning.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "learning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-049",
+      "intent": "encouragement",
+      "input": "I believe you can finish the final details.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "final",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-050",
+      "intent": "encouragement",
+      "input": "I believe you can finish what you started.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "believe",
+        "can",
+        "finish",
+        "what",
+        "started"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-051",
+      "intent": "encouragement",
+      "input": "Stay focused on the task.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "stay",
+        "focused",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-052",
+      "intent": "encouragement",
+      "input": "Stay focused on the next step.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "stay",
+        "focused",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-053",
+      "intent": "encouragement",
+      "input": "Stay focused on the difficult part.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "stay",
+        "focused",
+        "difficult",
+        "part"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-054",
+      "intent": "encouragement",
+      "input": "Stay focused on your practice.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "stay",
+        "focused",
+        "practice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-055",
+      "intent": "encouragement",
+      "input": "Stay focused on the project.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "stay",
+        "focused",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-056",
+      "intent": "encouragement",
+      "input": "Stay focused on the explanation.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "stay",
+        "focused",
+        "explanation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-057",
+      "intent": "encouragement",
+      "input": "Stay focused on the problem.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "stay",
+        "focused",
+        "problem"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-058",
+      "intent": "encouragement",
+      "input": "Stay focused on your learning.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "stay",
+        "focused",
+        "learning"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-059",
+      "intent": "encouragement",
+      "input": "Stay focused on the final details.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "stay",
+        "focused",
+        "final",
+        "details"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-060",
+      "intent": "encouragement",
+      "input": "Stay focused on what you started.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "stay",
+        "focused",
+        "what",
+        "started"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-061",
+      "intent": "encouragement",
+      "input": "You're making progress with the task.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-062",
+      "intent": "encouragement",
+      "input": "You're making progress with the next step.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-063",
+      "intent": "encouragement",
+      "input": "You're making progress with the difficult part.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "difficult",
+        "part"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-064",
+      "intent": "encouragement",
+      "input": "You're making progress with your practice.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "practice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-065",
+      "intent": "encouragement",
+      "input": "You're making progress with the project.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-066",
+      "intent": "encouragement",
+      "input": "You're making progress with the explanation.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-067",
+      "intent": "encouragement",
+      "input": "You're making progress with the problem.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-068",
+      "intent": "encouragement",
+      "input": "You're making progress with your learning.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "learning"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-069",
+      "intent": "encouragement",
+      "input": "You're making progress with the final details.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "final",
+        "details"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-070",
+      "intent": "encouragement",
+      "input": "You're making progress with what you started.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "re",
+        "making",
+        "progress",
+        "what",
+        "started"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-071",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the task.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-072",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the next step.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-073",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the difficult part.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "difficult",
+        "part"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-074",
+      "intent": "encouragement",
+      "input": "Keep trying to complete your practice.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "practice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-075",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the project.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-076",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the explanation.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "explanation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-077",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the problem.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "problem"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-078",
+      "intent": "encouragement",
+      "input": "Keep trying to complete your learning.",
+      "response": "The supportive intent is understood and appreciated.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "learning"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-079",
+      "intent": "encouragement",
+      "input": "Keep trying to complete the final details.",
+      "response": "Thank you for the encouragement.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "final",
+        "details"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "36-encouragement-080",
+      "intent": "encouragement",
+      "input": "Keep trying to complete what you started.",
+      "response": "That message expresses clear support to continue.",
+      "keywords": [
+        "keep",
+        "trying",
+        "complete",
+        "what",
+        "started"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize supportive encouragement",
+        "tone": "warm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1361 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "13-introductions",
+    "title": "Personal introductions",
+    "description": "Ways a user can introduce themselves at the start of a conversation.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "13-introductions-001",
+      "intent": "introduction",
+      "input": "My name is Alex.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "name",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-002",
+      "intent": "introduction",
+      "input": "My name is Bailey.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "name",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-003",
+      "intent": "introduction",
+      "input": "My name is Casey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "name",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-004",
+      "intent": "introduction",
+      "input": "My name is Dana.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "name",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-005",
+      "intent": "introduction",
+      "input": "My name is Eli.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "name",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-006",
+      "intent": "introduction",
+      "input": "My name is Frankie.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "name",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-007",
+      "intent": "introduction",
+      "input": "My name is Harper.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "name",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-008",
+      "intent": "introduction",
+      "input": "My name is Jordan.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "name",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-009",
+      "intent": "introduction",
+      "input": "My name is Morgan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "name",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-010",
+      "intent": "introduction",
+      "input": "My name is Riley.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "name",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-011",
+      "intent": "introduction",
+      "input": "I'm Alex.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-012",
+      "intent": "introduction",
+      "input": "I'm Bailey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-013",
+      "intent": "introduction",
+      "input": "I'm Casey.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-014",
+      "intent": "introduction",
+      "input": "I'm Dana.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-015",
+      "intent": "introduction",
+      "input": "I'm Eli.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-016",
+      "intent": "introduction",
+      "input": "I'm Frankie.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-017",
+      "intent": "introduction",
+      "input": "I'm Harper.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-018",
+      "intent": "introduction",
+      "input": "I'm Jordan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-019",
+      "intent": "introduction",
+      "input": "I'm Morgan.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-020",
+      "intent": "introduction",
+      "input": "I'm Riley.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-021",
+      "intent": "introduction",
+      "input": "You can call me Alex.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "can",
+        "call",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-022",
+      "intent": "introduction",
+      "input": "You can call me Bailey.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "can",
+        "call",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-023",
+      "intent": "introduction",
+      "input": "You can call me Casey.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "can",
+        "call",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-024",
+      "intent": "introduction",
+      "input": "You can call me Dana.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "can",
+        "call",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-025",
+      "intent": "introduction",
+      "input": "You can call me Eli.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "can",
+        "call",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-026",
+      "intent": "introduction",
+      "input": "You can call me Frankie.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "can",
+        "call",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-027",
+      "intent": "introduction",
+      "input": "You can call me Harper.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "can",
+        "call",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-028",
+      "intent": "introduction",
+      "input": "You can call me Jordan.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "can",
+        "call",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-029",
+      "intent": "introduction",
+      "input": "You can call me Morgan.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "can",
+        "call",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-030",
+      "intent": "introduction",
+      "input": "You can call me Riley.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "can",
+        "call",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-031",
+      "intent": "introduction",
+      "input": "I go by Alex.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "go",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-032",
+      "intent": "introduction",
+      "input": "I go by Bailey.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "go",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-033",
+      "intent": "introduction",
+      "input": "I go by Casey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "go",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-034",
+      "intent": "introduction",
+      "input": "I go by Dana.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "go",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-035",
+      "intent": "introduction",
+      "input": "I go by Eli.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "go",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-036",
+      "intent": "introduction",
+      "input": "I go by Frankie.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "go",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-037",
+      "intent": "introduction",
+      "input": "I go by Harper.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "go",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-038",
+      "intent": "introduction",
+      "input": "I go by Jordan.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "go",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-039",
+      "intent": "introduction",
+      "input": "I go by Morgan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "go",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-040",
+      "intent": "introduction",
+      "input": "I go by Riley.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "go",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-041",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Alex.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-042",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Bailey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-043",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Casey.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-044",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Dana.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-045",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Eli.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-046",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Frankie.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-047",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Harper.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-048",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Jordan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-049",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Morgan.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-050",
+      "intent": "introduction",
+      "input": "I'd like to introduce myself as Riley.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "like",
+        "introduce",
+        "myself",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-051",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Alex.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-052",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Bailey.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-053",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Casey.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-054",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Dana.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-055",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Eli.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-056",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Frankie.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-057",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Harper.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-058",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Jordan.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-059",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Morgan.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-060",
+      "intent": "introduction",
+      "input": "Let me introduce myself; I'm Riley.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "let",
+        "introduce",
+        "myself",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-061",
+      "intent": "introduction",
+      "input": "For this conversation, call me Alex.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "conversation",
+        "call",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-062",
+      "intent": "introduction",
+      "input": "For this conversation, call me Bailey.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "conversation",
+        "call",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-063",
+      "intent": "introduction",
+      "input": "For this conversation, call me Casey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "conversation",
+        "call",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-064",
+      "intent": "introduction",
+      "input": "For this conversation, call me Dana.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "conversation",
+        "call",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-065",
+      "intent": "introduction",
+      "input": "For this conversation, call me Eli.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "conversation",
+        "call",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-066",
+      "intent": "introduction",
+      "input": "For this conversation, call me Frankie.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "conversation",
+        "call",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-067",
+      "intent": "introduction",
+      "input": "For this conversation, call me Harper.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "conversation",
+        "call",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-068",
+      "intent": "introduction",
+      "input": "For this conversation, call me Jordan.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "conversation",
+        "call",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-069",
+      "intent": "introduction",
+      "input": "For this conversation, call me Morgan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "conversation",
+        "call",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-070",
+      "intent": "introduction",
+      "input": "For this conversation, call me Riley.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "conversation",
+        "call",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-071",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Alex.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "alex"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-072",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Bailey.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "bailey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-073",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Casey.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "casey"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-074",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Dana.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "dana"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-075",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Eli.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "eli"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-076",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Frankie.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "frankie"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-077",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Harper.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "harper"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-078",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Jordan.",
+      "response": "It is good to meet you. I am Lexi Language.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "jordan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-079",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Morgan.",
+      "response": "Nice to meet you. I can use the name in this message while responding to this turn.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "morgan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "13-introductions-080",
+      "intent": "introduction",
+      "input": "I should introduce myself—I'm Riley.",
+      "response": "Hello, and thank you for introducing yourself.",
+      "keywords": [
+        "should",
+        "introduce",
+        "myself",
+        "riley"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge an introduction",
+        "tone": "warm"
+      }
+    }
+  ]
+}

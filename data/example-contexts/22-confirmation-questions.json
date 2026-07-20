@@ -1,0 +1,1548 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "22-confirmation-questions",
+    "title": "Confirmation questions",
+    "description": "Questions checking whether an interpretation or next step is correct.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "22-confirmation-questions-001",
+      "intent": "confirmation-question",
+      "input": "Did you mean that we should continue?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-002",
+      "intent": "confirmation-question",
+      "input": "Did you mean that this is the main point?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-003",
+      "intent": "confirmation-question",
+      "input": "Did you mean that the answer is limited?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-004",
+      "intent": "confirmation-question",
+      "input": "Did you mean that the first step comes next?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-005",
+      "intent": "confirmation-question",
+      "input": "Did you mean that the two ideas differ?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-006",
+      "intent": "confirmation-question",
+      "input": "Did you mean that this example belongs here?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-007",
+      "intent": "confirmation-question",
+      "input": "Did you mean that the instruction is complete?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-008",
+      "intent": "confirmation-question",
+      "input": "Did you mean that no other action is needed?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-009",
+      "intent": "confirmation-question",
+      "input": "Did you mean that this wording is accurate?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-010",
+      "intent": "confirmation-question",
+      "input": "Did you mean that I understood correctly?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "did",
+        "mean",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-011",
+      "intent": "confirmation-question",
+      "input": "Are you saying that we should continue?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "saying",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-012",
+      "intent": "confirmation-question",
+      "input": "Are you saying that this is the main point?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "saying",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-013",
+      "intent": "confirmation-question",
+      "input": "Are you saying that the answer is limited?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "saying",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-014",
+      "intent": "confirmation-question",
+      "input": "Are you saying that the first step comes next?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "saying",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-015",
+      "intent": "confirmation-question",
+      "input": "Are you saying that the two ideas differ?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "saying",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-016",
+      "intent": "confirmation-question",
+      "input": "Are you saying that this example belongs here?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "saying",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-017",
+      "intent": "confirmation-question",
+      "input": "Are you saying that the instruction is complete?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "saying",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-018",
+      "intent": "confirmation-question",
+      "input": "Are you saying that no other action is needed?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "saying",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-019",
+      "intent": "confirmation-question",
+      "input": "Are you saying that this wording is accurate?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "saying",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-020",
+      "intent": "confirmation-question",
+      "input": "Are you saying that I understood correctly?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "saying",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-021",
+      "intent": "confirmation-question",
+      "input": "Is it correct that we should continue?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "correct",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-022",
+      "intent": "confirmation-question",
+      "input": "Is it correct that this is the main point?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "correct",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-023",
+      "intent": "confirmation-question",
+      "input": "Is it correct that the answer is limited?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "correct",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-024",
+      "intent": "confirmation-question",
+      "input": "Is it correct that the first step comes next?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "correct",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-025",
+      "intent": "confirmation-question",
+      "input": "Is it correct that the two ideas differ?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "correct",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-026",
+      "intent": "confirmation-question",
+      "input": "Is it correct that this example belongs here?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "correct",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-027",
+      "intent": "confirmation-question",
+      "input": "Is it correct that the instruction is complete?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "correct",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-028",
+      "intent": "confirmation-question",
+      "input": "Is it correct that no other action is needed?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "correct",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-029",
+      "intent": "confirmation-question",
+      "input": "Is it correct that this wording is accurate?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "correct",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-030",
+      "intent": "confirmation-question",
+      "input": "Is it correct that I understood correctly?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "correct",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-031",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that we should continue?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-032",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that this is the main point?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-033",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that the answer is limited?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-034",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that the first step comes next?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-035",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that the two ideas differ?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-036",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that this example belongs here?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-037",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that the instruction is complete?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-038",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that no other action is needed?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-039",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that this wording is accurate?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-040",
+      "intent": "confirmation-question",
+      "input": "Can you confirm that I understood correctly?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "can",
+        "confirm",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-041",
+      "intent": "confirmation-question",
+      "input": "Am I right that that we should continue?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-042",
+      "intent": "confirmation-question",
+      "input": "Am I right that that this is the main point?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-043",
+      "intent": "confirmation-question",
+      "input": "Am I right that that the answer is limited?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-044",
+      "intent": "confirmation-question",
+      "input": "Am I right that that the first step comes next?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-045",
+      "intent": "confirmation-question",
+      "input": "Am I right that that the two ideas differ?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-046",
+      "intent": "confirmation-question",
+      "input": "Am I right that that this example belongs here?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-047",
+      "intent": "confirmation-question",
+      "input": "Am I right that that the instruction is complete?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-048",
+      "intent": "confirmation-question",
+      "input": "Am I right that that no other action is needed?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-049",
+      "intent": "confirmation-question",
+      "input": "Am I right that that this wording is accurate?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-050",
+      "intent": "confirmation-question",
+      "input": "Am I right that that I understood correctly?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "am",
+        "right",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-051",
+      "intent": "confirmation-question",
+      "input": "Should I understand that we should continue?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-052",
+      "intent": "confirmation-question",
+      "input": "Should I understand that this is the main point?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-053",
+      "intent": "confirmation-question",
+      "input": "Should I understand that the answer is limited?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-054",
+      "intent": "confirmation-question",
+      "input": "Should I understand that the first step comes next?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-055",
+      "intent": "confirmation-question",
+      "input": "Should I understand that the two ideas differ?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-056",
+      "intent": "confirmation-question",
+      "input": "Should I understand that this example belongs here?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-057",
+      "intent": "confirmation-question",
+      "input": "Should I understand that the instruction is complete?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-058",
+      "intent": "confirmation-question",
+      "input": "Should I understand that no other action is needed?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-059",
+      "intent": "confirmation-question",
+      "input": "Should I understand that this wording is accurate?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-060",
+      "intent": "confirmation-question",
+      "input": "Should I understand that I understood correctly?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "should",
+        "understand",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-061",
+      "intent": "confirmation-question",
+      "input": "Is the idea that we should continue?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "idea",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-062",
+      "intent": "confirmation-question",
+      "input": "Is the idea that this is the main point?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "idea",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-063",
+      "intent": "confirmation-question",
+      "input": "Is the idea that the answer is limited?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "idea",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-064",
+      "intent": "confirmation-question",
+      "input": "Is the idea that the first step comes next?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "idea",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-065",
+      "intent": "confirmation-question",
+      "input": "Is the idea that the two ideas differ?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "idea",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-066",
+      "intent": "confirmation-question",
+      "input": "Is the idea that this example belongs here?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "idea",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-067",
+      "intent": "confirmation-question",
+      "input": "Is the idea that the instruction is complete?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "idea",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-068",
+      "intent": "confirmation-question",
+      "input": "Is the idea that no other action is needed?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "idea",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-069",
+      "intent": "confirmation-question",
+      "input": "Is the idea that this wording is accurate?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "idea",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-070",
+      "intent": "confirmation-question",
+      "input": "Is the idea that I understood correctly?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "idea",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-071",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that we should continue?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "should",
+        "continue"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-072",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that this is the main point?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "main",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-073",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that the answer is limited?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "answer",
+        "limited"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-074",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that the first step comes next?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "first",
+        "step",
+        "comes",
+        "next"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-075",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that the two ideas differ?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "two",
+        "ideas",
+        "differ"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-076",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that this example belongs here?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "example",
+        "belongs",
+        "here"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-077",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that the instruction is complete?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "instruction",
+        "complete"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-078",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that no other action is needed?",
+      "response": "Please state the point as a complete claim so I can check it without guessing.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "no",
+        "other",
+        "action",
+        "needed"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-079",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that this wording is accurate?",
+      "response": "I can confirm only a specific recorded claim. State the proposition directly if you want a yes-or-no check.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "wording",
+        "accurate"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "22-confirmation-questions-080",
+      "intent": "confirmation-question",
+      "input": "Do I have this right: that I understood correctly?",
+      "response": "Your message asks for confirmation; the exact claim must be compared with the available context.",
+      "keywords": [
+        "have",
+        "right",
+        "that",
+        "understood",
+        "correctly"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "request a precise proposition",
+        "tone": "precise"
+      }
+    }
+  ]
+}

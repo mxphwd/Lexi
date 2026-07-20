@@ -1,0 +1,1507 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "44-meal-planning",
+    "title": "Planning a meal",
+    "description": "Basic questions and requests about choosing a meal.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "44-meal-planning-001",
+      "intent": "meal-planning",
+      "input": "Help me plan a simple breakfast.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "help",
+        "plan",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-002",
+      "intent": "meal-planning",
+      "input": "Help me plan a quick lunch.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "help",
+        "plan",
+        "quick",
+        "lunch"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-003",
+      "intent": "meal-planning",
+      "input": "Help me plan an easy dinner.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "help",
+        "plan",
+        "easy",
+        "dinner"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-004",
+      "intent": "meal-planning",
+      "input": "Help me plan a light snack.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "help",
+        "plan",
+        "light",
+        "snack"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-005",
+      "intent": "meal-planning",
+      "input": "Help me plan a family meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "help",
+        "plan",
+        "family",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-006",
+      "intent": "meal-planning",
+      "input": "Help me plan a packed lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "help",
+        "plan",
+        "packed",
+        "lunch"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-007",
+      "intent": "meal-planning",
+      "input": "Help me plan a vegetarian meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "help",
+        "plan",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-008",
+      "intent": "meal-planning",
+      "input": "Help me plan a meal with few ingredients.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "help",
+        "plan",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-009",
+      "intent": "meal-planning",
+      "input": "Help me plan a meal for tomorrow.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "help",
+        "plan",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-010",
+      "intent": "meal-planning",
+      "input": "Help me plan a basic weekend meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "help",
+        "plan",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-011",
+      "intent": "meal-planning",
+      "input": "Can we choose a simple breakfast.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "can",
+        "choose",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-012",
+      "intent": "meal-planning",
+      "input": "Can we choose a quick lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "choose",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-013",
+      "intent": "meal-planning",
+      "input": "Can we choose an easy dinner.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "can",
+        "choose",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-014",
+      "intent": "meal-planning",
+      "input": "Can we choose a light snack.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "can",
+        "choose",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-015",
+      "intent": "meal-planning",
+      "input": "Can we choose a family meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "choose",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-016",
+      "intent": "meal-planning",
+      "input": "Can we choose a packed lunch.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "can",
+        "choose",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-017",
+      "intent": "meal-planning",
+      "input": "Can we choose a vegetarian meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "can",
+        "choose",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-018",
+      "intent": "meal-planning",
+      "input": "Can we choose a meal with few ingredients.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "can",
+        "choose",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-019",
+      "intent": "meal-planning",
+      "input": "Can we choose a meal for tomorrow.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "can",
+        "choose",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-020",
+      "intent": "meal-planning",
+      "input": "Can we choose a basic weekend meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "can",
+        "choose",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-021",
+      "intent": "meal-planning",
+      "input": "I need an idea for a simple breakfast.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "idea",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-022",
+      "intent": "meal-planning",
+      "input": "I need an idea for a quick lunch.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "idea",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-023",
+      "intent": "meal-planning",
+      "input": "I need an idea for an easy dinner.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "idea",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-024",
+      "intent": "meal-planning",
+      "input": "I need an idea for a light snack.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "idea",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-025",
+      "intent": "meal-planning",
+      "input": "I need an idea for a family meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "idea",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-026",
+      "intent": "meal-planning",
+      "input": "I need an idea for a packed lunch.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "idea",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-027",
+      "intent": "meal-planning",
+      "input": "I need an idea for a vegetarian meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "idea",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-028",
+      "intent": "meal-planning",
+      "input": "I need an idea for a meal with few ingredients.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "idea",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-029",
+      "intent": "meal-planning",
+      "input": "I need an idea for a meal for tomorrow.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "idea",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-030",
+      "intent": "meal-planning",
+      "input": "I need an idea for a basic weekend meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "idea",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-031",
+      "intent": "meal-planning",
+      "input": "What could I make for a simple breakfast.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-032",
+      "intent": "meal-planning",
+      "input": "What could I make for a quick lunch.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-033",
+      "intent": "meal-planning",
+      "input": "What could I make for an easy dinner.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-034",
+      "intent": "meal-planning",
+      "input": "What could I make for a light snack.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-035",
+      "intent": "meal-planning",
+      "input": "What could I make for a family meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-036",
+      "intent": "meal-planning",
+      "input": "What could I make for a packed lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-037",
+      "intent": "meal-planning",
+      "input": "What could I make for a vegetarian meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-038",
+      "intent": "meal-planning",
+      "input": "What could I make for a meal with few ingredients.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-039",
+      "intent": "meal-planning",
+      "input": "What could I make for a meal for tomorrow.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-040",
+      "intent": "meal-planning",
+      "input": "What could I make for a basic weekend meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "what",
+        "could",
+        "make",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-041",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a simple breakfast.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-042",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a quick lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "quick",
+        "lunch"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-043",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of an easy dinner.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "easy",
+        "dinner"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-044",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a light snack.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "light",
+        "snack"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-045",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a family meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "family",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-046",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a packed lunch.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "packed",
+        "lunch"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-047",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a vegetarian meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-048",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a meal with few ingredients.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-049",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a meal for tomorrow.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-050",
+      "intent": "meal-planning",
+      "input": "Please suggest the structure of a basic weekend meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "please",
+        "suggest",
+        "structure",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-051",
+      "intent": "meal-planning",
+      "input": "I am deciding on a simple breakfast.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "am",
+        "deciding",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-052",
+      "intent": "meal-planning",
+      "input": "I am deciding on a quick lunch.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "am",
+        "deciding",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-053",
+      "intent": "meal-planning",
+      "input": "I am deciding on an easy dinner.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "am",
+        "deciding",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-054",
+      "intent": "meal-planning",
+      "input": "I am deciding on a light snack.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "am",
+        "deciding",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-055",
+      "intent": "meal-planning",
+      "input": "I am deciding on a family meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "am",
+        "deciding",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-056",
+      "intent": "meal-planning",
+      "input": "I am deciding on a packed lunch.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "am",
+        "deciding",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-057",
+      "intent": "meal-planning",
+      "input": "I am deciding on a vegetarian meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "am",
+        "deciding",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-058",
+      "intent": "meal-planning",
+      "input": "I am deciding on a meal with few ingredients.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "am",
+        "deciding",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-059",
+      "intent": "meal-planning",
+      "input": "I am deciding on a meal for tomorrow.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "am",
+        "deciding",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-060",
+      "intent": "meal-planning",
+      "input": "I am deciding on a basic weekend meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "am",
+        "deciding",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-061",
+      "intent": "meal-planning",
+      "input": "Let us think about a simple breakfast.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-062",
+      "intent": "meal-planning",
+      "input": "Let us think about a quick lunch.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-063",
+      "intent": "meal-planning",
+      "input": "Let us think about an easy dinner.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-064",
+      "intent": "meal-planning",
+      "input": "Let us think about a light snack.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-065",
+      "intent": "meal-planning",
+      "input": "Let us think about a family meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-066",
+      "intent": "meal-planning",
+      "input": "Let us think about a packed lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-067",
+      "intent": "meal-planning",
+      "input": "Let us think about a vegetarian meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-068",
+      "intent": "meal-planning",
+      "input": "Let us think about a meal with few ingredients.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-069",
+      "intent": "meal-planning",
+      "input": "Let us think about a meal for tomorrow.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-070",
+      "intent": "meal-planning",
+      "input": "Let us think about a basic weekend meal.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "let",
+        "us",
+        "think",
+        "about",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-071",
+      "intent": "meal-planning",
+      "input": "I need to prepare a simple breakfast.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "prepare",
+        "simple",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-072",
+      "intent": "meal-planning",
+      "input": "I need to prepare a quick lunch.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "prepare",
+        "quick",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-073",
+      "intent": "meal-planning",
+      "input": "I need to prepare an easy dinner.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "prepare",
+        "easy",
+        "dinner"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-074",
+      "intent": "meal-planning",
+      "input": "I need to prepare a light snack.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "prepare",
+        "light",
+        "snack"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-075",
+      "intent": "meal-planning",
+      "input": "I need to prepare a family meal.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "prepare",
+        "family",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-076",
+      "intent": "meal-planning",
+      "input": "I need to prepare a packed lunch.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "prepare",
+        "packed",
+        "lunch"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-077",
+      "intent": "meal-planning",
+      "input": "I need to prepare a vegetarian meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "prepare",
+        "vegetarian",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-078",
+      "intent": "meal-planning",
+      "input": "I need to prepare a meal with few ingredients.",
+      "response": "I can recognize the meal-planning request; provide the constraints needed for a bounded suggestion.",
+      "keywords": [
+        "need",
+        "prepare",
+        "meal",
+        "few",
+        "ingredients"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-079",
+      "intent": "meal-planning",
+      "input": "I need to prepare a meal for tomorrow.",
+      "response": "State the available ingredients and any dietary constraints so the meal can be planned without guessing.",
+      "keywords": [
+        "need",
+        "prepare",
+        "meal",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "44-meal-planning-080",
+      "intent": "meal-planning",
+      "input": "I need to prepare a basic weekend meal.",
+      "response": "A meal plan needs the ingredients, number of people, and dietary limits.",
+      "keywords": [
+        "need",
+        "prepare",
+        "basic",
+        "weekend",
+        "meal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request relevant dietary and ingredient constraints",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

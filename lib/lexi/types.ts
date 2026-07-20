@@ -67,7 +67,7 @@ export type LexiTrace = {
   matchedExampleIds: string[];
   matchedTerms: string[];
   selectedStructure: string;
-  source: "exact-example" | "context-pattern" | "safe-fallback";
+  source: "core-phrase" | "exact-example" | "context-pattern" | "safe-fallback";
 };
 
 export type LexiReply = {

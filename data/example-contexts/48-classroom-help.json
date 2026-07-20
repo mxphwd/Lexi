@@ -1,0 +1,1481 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "48-classroom-help",
+    "title": "Classroom help requests",
+    "description": "Requests for basic help with class materials and instructions.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "48-classroom-help-001",
+      "intent": "classroom-help",
+      "input": "Can you help me understand this lesson?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-002",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the homework instructions?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-003",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the first exercise?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-004",
+      "intent": "classroom-help",
+      "input": "Can you help me understand this vocabulary list?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-005",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the grammar rule?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-006",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the reading question?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-007",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the worked example?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-008",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the assignment goal?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-009",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the main concept?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-010",
+      "intent": "classroom-help",
+      "input": "Can you help me understand the next step?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "help",
+        "understand",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-011",
+      "intent": "classroom-help",
+      "input": "Please explain this lesson?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "explain",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-012",
+      "intent": "classroom-help",
+      "input": "Please explain the homework instructions?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "explain",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-013",
+      "intent": "classroom-help",
+      "input": "Please explain the first exercise?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "explain",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-014",
+      "intent": "classroom-help",
+      "input": "Please explain this vocabulary list?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "explain",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-015",
+      "intent": "classroom-help",
+      "input": "Please explain the grammar rule?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "explain",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-016",
+      "intent": "classroom-help",
+      "input": "Please explain the reading question?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "explain",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-017",
+      "intent": "classroom-help",
+      "input": "Please explain the worked example?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "explain",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-018",
+      "intent": "classroom-help",
+      "input": "Please explain the assignment goal?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "explain",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-019",
+      "intent": "classroom-help",
+      "input": "Please explain the main concept?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "explain",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-020",
+      "intent": "classroom-help",
+      "input": "Please explain the next step?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "explain",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-021",
+      "intent": "classroom-help",
+      "input": "I need help with this lesson?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "need",
+        "help",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-022",
+      "intent": "classroom-help",
+      "input": "I need help with the homework instructions?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "need",
+        "help",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-023",
+      "intent": "classroom-help",
+      "input": "I need help with the first exercise?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "need",
+        "help",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-024",
+      "intent": "classroom-help",
+      "input": "I need help with this vocabulary list?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "need",
+        "help",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-025",
+      "intent": "classroom-help",
+      "input": "I need help with the grammar rule?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "need",
+        "help",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-026",
+      "intent": "classroom-help",
+      "input": "I need help with the reading question?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "need",
+        "help",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-027",
+      "intent": "classroom-help",
+      "input": "I need help with the worked example?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "need",
+        "help",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-028",
+      "intent": "classroom-help",
+      "input": "I need help with the assignment goal?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "need",
+        "help",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-029",
+      "intent": "classroom-help",
+      "input": "I need help with the main concept?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "need",
+        "help",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-030",
+      "intent": "classroom-help",
+      "input": "I need help with the next step?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "need",
+        "help",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-031",
+      "intent": "classroom-help",
+      "input": "Could you show an example of this lesson?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-032",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the homework instructions?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-033",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the first exercise?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-034",
+      "intent": "classroom-help",
+      "input": "Could you show an example of this vocabulary list?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-035",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the grammar rule?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-036",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the reading question?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-037",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the worked example?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "worked"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-038",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the assignment goal?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-039",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the main concept?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-040",
+      "intent": "classroom-help",
+      "input": "Could you show an example of the next step?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "show",
+        "example",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-041",
+      "intent": "classroom-help",
+      "input": "Can you summarize this lesson?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "summarize",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-042",
+      "intent": "classroom-help",
+      "input": "Can you summarize the homework instructions?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "summarize",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-043",
+      "intent": "classroom-help",
+      "input": "Can you summarize the first exercise?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "summarize",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-044",
+      "intent": "classroom-help",
+      "input": "Can you summarize this vocabulary list?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "summarize",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-045",
+      "intent": "classroom-help",
+      "input": "Can you summarize the grammar rule?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "summarize",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-046",
+      "intent": "classroom-help",
+      "input": "Can you summarize the reading question?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "summarize",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-047",
+      "intent": "classroom-help",
+      "input": "Can you summarize the worked example?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "summarize",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-048",
+      "intent": "classroom-help",
+      "input": "Can you summarize the assignment goal?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "can",
+        "summarize",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-049",
+      "intent": "classroom-help",
+      "input": "Can you summarize the main concept?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "can",
+        "summarize",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-050",
+      "intent": "classroom-help",
+      "input": "Can you summarize the next step?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "can",
+        "summarize",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-051",
+      "intent": "classroom-help",
+      "input": "Please clarify this lesson?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "clarify",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-052",
+      "intent": "classroom-help",
+      "input": "Please clarify the homework instructions?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "clarify",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-053",
+      "intent": "classroom-help",
+      "input": "Please clarify the first exercise?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "clarify",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-054",
+      "intent": "classroom-help",
+      "input": "Please clarify this vocabulary list?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "clarify",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-055",
+      "intent": "classroom-help",
+      "input": "Please clarify the grammar rule?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "clarify",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-056",
+      "intent": "classroom-help",
+      "input": "Please clarify the reading question?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "clarify",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-057",
+      "intent": "classroom-help",
+      "input": "Please clarify the worked example?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "clarify",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-058",
+      "intent": "classroom-help",
+      "input": "Please clarify the assignment goal?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "please",
+        "clarify",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-059",
+      "intent": "classroom-help",
+      "input": "Please clarify the main concept?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "please",
+        "clarify",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-060",
+      "intent": "classroom-help",
+      "input": "Please clarify the next step?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "please",
+        "clarify",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-061",
+      "intent": "classroom-help",
+      "input": "I have a question about this lesson?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-062",
+      "intent": "classroom-help",
+      "input": "I have a question about the homework instructions?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-063",
+      "intent": "classroom-help",
+      "input": "I have a question about the first exercise?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-064",
+      "intent": "classroom-help",
+      "input": "I have a question about this vocabulary list?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-065",
+      "intent": "classroom-help",
+      "input": "I have a question about the grammar rule?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-066",
+      "intent": "classroom-help",
+      "input": "I have a question about the reading question?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "reading"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-067",
+      "intent": "classroom-help",
+      "input": "I have a question about the worked example?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-068",
+      "intent": "classroom-help",
+      "input": "I have a question about the assignment goal?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-069",
+      "intent": "classroom-help",
+      "input": "I have a question about the main concept?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-070",
+      "intent": "classroom-help",
+      "input": "I have a question about the next step?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "have",
+        "question",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-071",
+      "intent": "classroom-help",
+      "input": "Could you walk me through this lesson?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "lesson"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-072",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the homework instructions?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "homework",
+        "instructions"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-073",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the first exercise?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "first",
+        "exercise"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-074",
+      "intent": "classroom-help",
+      "input": "Could you walk me through this vocabulary list?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "vocabulary",
+        "list"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-075",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the grammar rule?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "grammar",
+        "rule"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-076",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the reading question?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "reading",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-077",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the worked example?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "worked",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-078",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the assignment goal?",
+      "response": "Please include the specific exercise or rule that needs explanation.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "assignment",
+        "goal"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-079",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the main concept?",
+      "response": "Provide the exact lesson text or question so I can match it against supported material.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "main",
+        "concept"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "48-classroom-help-080",
+      "intent": "classroom-help",
+      "input": "Could you walk me through the next step?",
+      "response": "I recognize the classroom-help request; the relevant instructions or content must be supplied.",
+      "keywords": [
+        "could",
+        "walk",
+        "through",
+        "next",
+        "step"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "ask for the exact classroom material",
+        "tone": "precise"
+      }
+    }
+  ]
+}

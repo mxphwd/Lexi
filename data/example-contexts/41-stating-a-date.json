@@ -1,0 +1,1427 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "41-stating-a-date",
+    "title": "Stating a date",
+    "description": "Statements that provide a date for conversational reference.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "41-stating-a-date-001",
+      "intent": "state-date",
+      "input": "The date is January fifth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "date",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-002",
+      "intent": "state-date",
+      "input": "The date is February tenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "date",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-003",
+      "intent": "state-date",
+      "input": "The date is March fifteenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "date",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-004",
+      "intent": "state-date",
+      "input": "The date is April twentieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "date",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-005",
+      "intent": "state-date",
+      "input": "The date is May first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "date",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-006",
+      "intent": "state-date",
+      "input": "The date is June twelfth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "date",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-007",
+      "intent": "state-date",
+      "input": "The date is July eighteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "date",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-008",
+      "intent": "state-date",
+      "input": "The date is August twenty-third.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "date",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-009",
+      "intent": "state-date",
+      "input": "The date is September thirtieth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "date",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-010",
+      "intent": "state-date",
+      "input": "The date is December thirty-first.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "date",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-011",
+      "intent": "state-date",
+      "input": "Today is January fifth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "today",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-012",
+      "intent": "state-date",
+      "input": "Today is February tenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "today",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-013",
+      "intent": "state-date",
+      "input": "Today is March fifteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "today",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-014",
+      "intent": "state-date",
+      "input": "Today is April twentieth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "today",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-015",
+      "intent": "state-date",
+      "input": "Today is May first.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "today",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-016",
+      "intent": "state-date",
+      "input": "Today is June twelfth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "today",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-017",
+      "intent": "state-date",
+      "input": "Today is July eighteenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "today",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-018",
+      "intent": "state-date",
+      "input": "Today is August twenty-third.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "today",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-019",
+      "intent": "state-date",
+      "input": "Today is September thirtieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "today",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-020",
+      "intent": "state-date",
+      "input": "Today is December thirty-first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "today",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-021",
+      "intent": "state-date",
+      "input": "The meeting is on January fifth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "meeting",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-022",
+      "intent": "state-date",
+      "input": "The meeting is on February tenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "meeting",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-023",
+      "intent": "state-date",
+      "input": "The meeting is on March fifteenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-024",
+      "intent": "state-date",
+      "input": "The meeting is on April twentieth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "meeting",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-025",
+      "intent": "state-date",
+      "input": "The meeting is on May first.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "meeting",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-026",
+      "intent": "state-date",
+      "input": "The meeting is on June twelfth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-027",
+      "intent": "state-date",
+      "input": "The meeting is on July eighteenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "meeting",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-028",
+      "intent": "state-date",
+      "input": "The meeting is on August twenty-third.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "meeting",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-029",
+      "intent": "state-date",
+      "input": "The meeting is on September thirtieth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "meeting",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-030",
+      "intent": "state-date",
+      "input": "The meeting is on December thirty-first.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "meeting",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-031",
+      "intent": "state-date",
+      "input": "I will arrive on January fifth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-032",
+      "intent": "state-date",
+      "input": "I will arrive on February tenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-033",
+      "intent": "state-date",
+      "input": "I will arrive on March fifteenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-034",
+      "intent": "state-date",
+      "input": "I will arrive on April twentieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-035",
+      "intent": "state-date",
+      "input": "I will arrive on May first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-036",
+      "intent": "state-date",
+      "input": "I will arrive on June twelfth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-037",
+      "intent": "state-date",
+      "input": "I will arrive on July eighteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-038",
+      "intent": "state-date",
+      "input": "I will arrive on August twenty-third.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "will",
+        "arrive",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-039",
+      "intent": "state-date",
+      "input": "I will arrive on September thirtieth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "will",
+        "arrive",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-040",
+      "intent": "state-date",
+      "input": "I will arrive on December thirty-first.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "will",
+        "arrive",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-041",
+      "intent": "state-date",
+      "input": "Let us begin on January fifth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-042",
+      "intent": "state-date",
+      "input": "Let us begin on February tenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-043",
+      "intent": "state-date",
+      "input": "Let us begin on March fifteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-044",
+      "intent": "state-date",
+      "input": "Let us begin on April twentieth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-045",
+      "intent": "state-date",
+      "input": "Let us begin on May first.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-046",
+      "intent": "state-date",
+      "input": "Let us begin on June twelfth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-047",
+      "intent": "state-date",
+      "input": "Let us begin on July eighteenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-048",
+      "intent": "state-date",
+      "input": "Let us begin on August twenty-third.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-049",
+      "intent": "state-date",
+      "input": "Let us begin on September thirtieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-050",
+      "intent": "state-date",
+      "input": "Let us begin on December thirty-first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "let",
+        "us",
+        "begin",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-051",
+      "intent": "state-date",
+      "input": "The appointment is on January fifth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "appointment",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-052",
+      "intent": "state-date",
+      "input": "The appointment is on February tenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "appointment",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-053",
+      "intent": "state-date",
+      "input": "The appointment is on March fifteenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-054",
+      "intent": "state-date",
+      "input": "The appointment is on April twentieth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "appointment",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-055",
+      "intent": "state-date",
+      "input": "The appointment is on May first.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "appointment",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-056",
+      "intent": "state-date",
+      "input": "The appointment is on June twelfth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-057",
+      "intent": "state-date",
+      "input": "The appointment is on July eighteenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "appointment",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-058",
+      "intent": "state-date",
+      "input": "The appointment is on August twenty-third.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "appointment",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-059",
+      "intent": "state-date",
+      "input": "The appointment is on September thirtieth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "appointment",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-060",
+      "intent": "state-date",
+      "input": "The appointment is on December thirty-first.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "appointment",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-061",
+      "intent": "state-date",
+      "input": "For this example, the date is January fifth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "example",
+        "date",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-062",
+      "intent": "state-date",
+      "input": "For this example, the date is February tenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "example",
+        "date",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-063",
+      "intent": "state-date",
+      "input": "For this example, the date is March fifteenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "example",
+        "date",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-064",
+      "intent": "state-date",
+      "input": "For this example, the date is April twentieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "example",
+        "date",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-065",
+      "intent": "state-date",
+      "input": "For this example, the date is May first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "example",
+        "date",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-066",
+      "intent": "state-date",
+      "input": "For this example, the date is June twelfth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "example",
+        "date",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-067",
+      "intent": "state-date",
+      "input": "For this example, the date is July eighteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "example",
+        "date",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-068",
+      "intent": "state-date",
+      "input": "For this example, the date is August twenty-third.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "example",
+        "date",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-069",
+      "intent": "state-date",
+      "input": "For this example, the date is September thirtieth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "example",
+        "date",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-070",
+      "intent": "state-date",
+      "input": "For this example, the date is December thirty-first.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "example",
+        "date",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-071",
+      "intent": "state-date",
+      "input": "The deadline is January fifth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "deadline",
+        "january",
+        "fifth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-072",
+      "intent": "state-date",
+      "input": "The deadline is February tenth.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "deadline",
+        "february",
+        "tenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-073",
+      "intent": "state-date",
+      "input": "The deadline is March fifteenth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "deadline",
+        "march",
+        "fifteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-074",
+      "intent": "state-date",
+      "input": "The deadline is April twentieth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "deadline",
+        "april",
+        "twentieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-075",
+      "intent": "state-date",
+      "input": "The deadline is May first.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "deadline",
+        "may",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-076",
+      "intent": "state-date",
+      "input": "The deadline is June twelfth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "deadline",
+        "june",
+        "twelfth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-077",
+      "intent": "state-date",
+      "input": "The deadline is July eighteenth.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "deadline",
+        "july",
+        "eighteenth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-078",
+      "intent": "state-date",
+      "input": "The deadline is August twenty-third.",
+      "response": "That date has been identified, though I do not maintain a calendar between conversations.",
+      "keywords": [
+        "deadline",
+        "august",
+        "twenty",
+        "third"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-079",
+      "intent": "state-date",
+      "input": "The deadline is September thirtieth.",
+      "response": "I recognize the date stated in this message.",
+      "keywords": [
+        "deadline",
+        "september",
+        "thirtieth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "41-stating-a-date-080",
+      "intent": "state-date",
+      "input": "The deadline is December thirty-first.",
+      "response": "The supplied date is clear for this turn.",
+      "keywords": [
+        "deadline",
+        "december",
+        "thirty",
+        "first"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a supplied date without claiming persistence",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1481 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "46-requesting-drinks",
+    "title": "Requesting drinks",
+    "description": "Common sentences used to request a drink.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "46-requesting-drinks-001",
+      "intent": "drink-request",
+      "input": "I would like a glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "would",
+        "like",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-002",
+      "intent": "drink-request",
+      "input": "I would like a cup of tea.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "would",
+        "like",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-003",
+      "intent": "drink-request",
+      "input": "I would like a small coffee.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-004",
+      "intent": "drink-request",
+      "input": "I would like some orange juice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "would",
+        "like",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-005",
+      "intent": "drink-request",
+      "input": "I would like a cold drink.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "would",
+        "like",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-006",
+      "intent": "drink-request",
+      "input": "I would like a warm drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-007",
+      "intent": "drink-request",
+      "input": "I would like water without ice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "would",
+        "like",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-008",
+      "intent": "drink-request",
+      "input": "I would like tea without sugar.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "would",
+        "like",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-009",
+      "intent": "drink-request",
+      "input": "I would like coffee with milk.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-010",
+      "intent": "drink-request",
+      "input": "I would like another glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "would",
+        "like",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-011",
+      "intent": "drink-request",
+      "input": "Could I have a glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "could",
+        "have",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-012",
+      "intent": "drink-request",
+      "input": "Could I have a cup of tea.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-013",
+      "intent": "drink-request",
+      "input": "Could I have a small coffee.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "could",
+        "have",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-014",
+      "intent": "drink-request",
+      "input": "Could I have some orange juice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "could",
+        "have",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-015",
+      "intent": "drink-request",
+      "input": "Could I have a cold drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-016",
+      "intent": "drink-request",
+      "input": "Could I have a warm drink.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "could",
+        "have",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-017",
+      "intent": "drink-request",
+      "input": "Could I have water without ice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "could",
+        "have",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-018",
+      "intent": "drink-request",
+      "input": "Could I have tea without sugar.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-019",
+      "intent": "drink-request",
+      "input": "Could I have coffee with milk.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "could",
+        "have",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-020",
+      "intent": "drink-request",
+      "input": "Could I have another glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "could",
+        "have",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-021",
+      "intent": "drink-request",
+      "input": "May I order a glass of water.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-022",
+      "intent": "drink-request",
+      "input": "May I order a cup of tea.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "may",
+        "order",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-023",
+      "intent": "drink-request",
+      "input": "May I order a small coffee.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "may",
+        "order",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-024",
+      "intent": "drink-request",
+      "input": "May I order some orange juice.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-025",
+      "intent": "drink-request",
+      "input": "May I order a cold drink.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "may",
+        "order",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-026",
+      "intent": "drink-request",
+      "input": "May I order a warm drink.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "may",
+        "order",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-027",
+      "intent": "drink-request",
+      "input": "May I order water without ice.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-028",
+      "intent": "drink-request",
+      "input": "May I order tea without sugar.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "may",
+        "order",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-029",
+      "intent": "drink-request",
+      "input": "May I order coffee with milk.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "may",
+        "order",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-030",
+      "intent": "drink-request",
+      "input": "May I order another glass of water.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "may",
+        "order",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-031",
+      "intent": "drink-request",
+      "input": "Please bring me a glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "please",
+        "bring",
+        "glass",
+        "water"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-032",
+      "intent": "drink-request",
+      "input": "Please bring me a cup of tea.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "please",
+        "bring",
+        "cup",
+        "tea"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-033",
+      "intent": "drink-request",
+      "input": "Please bring me a small coffee.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "small",
+        "coffee"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-034",
+      "intent": "drink-request",
+      "input": "Please bring me some orange juice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "please",
+        "bring",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-035",
+      "intent": "drink-request",
+      "input": "Please bring me a cold drink.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "please",
+        "bring",
+        "cold",
+        "drink"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-036",
+      "intent": "drink-request",
+      "input": "Please bring me a warm drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "warm",
+        "drink"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-037",
+      "intent": "drink-request",
+      "input": "Please bring me water without ice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "please",
+        "bring",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-038",
+      "intent": "drink-request",
+      "input": "Please bring me tea without sugar.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "please",
+        "bring",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-039",
+      "intent": "drink-request",
+      "input": "Please bring me coffee with milk.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "please",
+        "bring",
+        "coffee",
+        "milk"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-040",
+      "intent": "drink-request",
+      "input": "Please bring me another glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "please",
+        "bring",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-041",
+      "intent": "drink-request",
+      "input": "Can I get a glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "can",
+        "get",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-042",
+      "intent": "drink-request",
+      "input": "Can I get a cup of tea.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-043",
+      "intent": "drink-request",
+      "input": "Can I get a small coffee.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "can",
+        "get",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-044",
+      "intent": "drink-request",
+      "input": "Can I get some orange juice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "can",
+        "get",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-045",
+      "intent": "drink-request",
+      "input": "Can I get a cold drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-046",
+      "intent": "drink-request",
+      "input": "Can I get a warm drink.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "can",
+        "get",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-047",
+      "intent": "drink-request",
+      "input": "Can I get water without ice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "can",
+        "get",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-048",
+      "intent": "drink-request",
+      "input": "Can I get tea without sugar.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "can",
+        "get",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-049",
+      "intent": "drink-request",
+      "input": "Can I get coffee with milk.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "can",
+        "get",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-050",
+      "intent": "drink-request",
+      "input": "Can I get another glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "can",
+        "get",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-051",
+      "intent": "drink-request",
+      "input": "I will have a glass of water.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-052",
+      "intent": "drink-request",
+      "input": "I will have a cup of tea.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "will",
+        "have",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-053",
+      "intent": "drink-request",
+      "input": "I will have a small coffee.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "will",
+        "have",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-054",
+      "intent": "drink-request",
+      "input": "I will have some orange juice.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-055",
+      "intent": "drink-request",
+      "input": "I will have a cold drink.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "will",
+        "have",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-056",
+      "intent": "drink-request",
+      "input": "I will have a warm drink.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "will",
+        "have",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-057",
+      "intent": "drink-request",
+      "input": "I will have water without ice.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-058",
+      "intent": "drink-request",
+      "input": "I will have tea without sugar.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "will",
+        "have",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-059",
+      "intent": "drink-request",
+      "input": "I will have coffee with milk.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "will",
+        "have",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-060",
+      "intent": "drink-request",
+      "input": "I will have another glass of water.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "will",
+        "have",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-061",
+      "intent": "drink-request",
+      "input": "I'd like to order a glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "like",
+        "order",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-062",
+      "intent": "drink-request",
+      "input": "I'd like to order a cup of tea.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "like",
+        "order",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-063",
+      "intent": "drink-request",
+      "input": "I'd like to order a small coffee.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-064",
+      "intent": "drink-request",
+      "input": "I'd like to order some orange juice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "like",
+        "order",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-065",
+      "intent": "drink-request",
+      "input": "I'd like to order a cold drink.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "like",
+        "order",
+        "cold",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-066",
+      "intent": "drink-request",
+      "input": "I'd like to order a warm drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "warm",
+        "drink"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-067",
+      "intent": "drink-request",
+      "input": "I'd like to order water without ice.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "like",
+        "order",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-068",
+      "intent": "drink-request",
+      "input": "I'd like to order tea without sugar.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "like",
+        "order",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-069",
+      "intent": "drink-request",
+      "input": "I'd like to order coffee with milk.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "like",
+        "order",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-070",
+      "intent": "drink-request",
+      "input": "I'd like to order another glass of water.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "like",
+        "order",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-071",
+      "intent": "drink-request",
+      "input": "For my drink, I want a glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "drink",
+        "want",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-072",
+      "intent": "drink-request",
+      "input": "For my drink, I want a cup of tea.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "drink",
+        "want",
+        "cup",
+        "tea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-073",
+      "intent": "drink-request",
+      "input": "For my drink, I want a small coffee.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "drink",
+        "want",
+        "small",
+        "coffee"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-074",
+      "intent": "drink-request",
+      "input": "For my drink, I want some orange juice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "drink",
+        "want",
+        "some",
+        "orange",
+        "juice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-075",
+      "intent": "drink-request",
+      "input": "For my drink, I want a cold drink.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "drink",
+        "want",
+        "cold"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-076",
+      "intent": "drink-request",
+      "input": "For my drink, I want a warm drink.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "drink",
+        "want",
+        "warm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-077",
+      "intent": "drink-request",
+      "input": "For my drink, I want water without ice.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "drink",
+        "want",
+        "water",
+        "without",
+        "ice"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-078",
+      "intent": "drink-request",
+      "input": "For my drink, I want tea without sugar.",
+      "response": "The requested drink is identified for this conversational example.",
+      "keywords": [
+        "drink",
+        "want",
+        "tea",
+        "without",
+        "sugar"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-079",
+      "intent": "drink-request",
+      "input": "For my drink, I want coffee with milk.",
+      "response": "I recognize the drink request, but I cannot place or fulfill a real order.",
+      "keywords": [
+        "drink",
+        "want",
+        "coffee",
+        "milk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "46-requesting-drinks-080",
+      "intent": "drink-request",
+      "input": "For my drink, I want another glass of water.",
+      "response": "That sentence clearly requests a drink.",
+      "keywords": [
+        "drink",
+        "want",
+        "another",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize a drink request without claiming a transaction",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

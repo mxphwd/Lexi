@@ -1,0 +1,1441 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "54-quantity-requests",
+    "title": "Requests with quantities",
+    "description": "Ordinary requests specifying a count or amount.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "54-quantity-requests-001",
+      "intent": "quantity-request",
+      "input": "Please give me one copy.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "give",
+        "one",
+        "copy"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-002",
+      "intent": "quantity-request",
+      "input": "Please give me two tickets.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "give",
+        "two",
+        "tickets"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-003",
+      "intent": "quantity-request",
+      "input": "Please give me three examples.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "give",
+        "three",
+        "examples"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-004",
+      "intent": "quantity-request",
+      "input": "Please give me four pages.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "give",
+        "four",
+        "pages"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-005",
+      "intent": "quantity-request",
+      "input": "Please give me five items.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "give",
+        "five",
+        "items"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-006",
+      "intent": "quantity-request",
+      "input": "Please give me six bottles.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "give",
+        "six",
+        "bottles"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-007",
+      "intent": "quantity-request",
+      "input": "Please give me seven labels.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "give",
+        "seven",
+        "labels"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-008",
+      "intent": "quantity-request",
+      "input": "Please give me eight chairs.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "give",
+        "eight",
+        "chairs"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-009",
+      "intent": "quantity-request",
+      "input": "Please give me nine cards.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "give",
+        "nine",
+        "cards"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-010",
+      "intent": "quantity-request",
+      "input": "Please give me ten minutes.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "give",
+        "ten",
+        "minutes"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-011",
+      "intent": "quantity-request",
+      "input": "I would like one copy.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-012",
+      "intent": "quantity-request",
+      "input": "I would like two tickets.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "would",
+        "like",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-013",
+      "intent": "quantity-request",
+      "input": "I would like three examples.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-014",
+      "intent": "quantity-request",
+      "input": "I would like four pages.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-015",
+      "intent": "quantity-request",
+      "input": "I would like five items.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "would",
+        "like",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-016",
+      "intent": "quantity-request",
+      "input": "I would like six bottles.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-017",
+      "intent": "quantity-request",
+      "input": "I would like seven labels.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-018",
+      "intent": "quantity-request",
+      "input": "I would like eight chairs.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "would",
+        "like",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-019",
+      "intent": "quantity-request",
+      "input": "I would like nine cards.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "would",
+        "like",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-020",
+      "intent": "quantity-request",
+      "input": "I would like ten minutes.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "would",
+        "like",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-021",
+      "intent": "quantity-request",
+      "input": "Could I have one copy.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "could",
+        "have",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-022",
+      "intent": "quantity-request",
+      "input": "Could I have two tickets.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-023",
+      "intent": "quantity-request",
+      "input": "Could I have three examples.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-024",
+      "intent": "quantity-request",
+      "input": "Could I have four pages.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "could",
+        "have",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-025",
+      "intent": "quantity-request",
+      "input": "Could I have five items.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-026",
+      "intent": "quantity-request",
+      "input": "Could I have six bottles.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-027",
+      "intent": "quantity-request",
+      "input": "Could I have seven labels.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "could",
+        "have",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-028",
+      "intent": "quantity-request",
+      "input": "Could I have eight chairs.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "could",
+        "have",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-029",
+      "intent": "quantity-request",
+      "input": "Could I have nine cards.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "could",
+        "have",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-030",
+      "intent": "quantity-request",
+      "input": "Could I have ten minutes.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "could",
+        "have",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-031",
+      "intent": "quantity-request",
+      "input": "Can you prepare one copy.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "can",
+        "prepare",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-032",
+      "intent": "quantity-request",
+      "input": "Can you prepare two tickets.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "can",
+        "prepare",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-033",
+      "intent": "quantity-request",
+      "input": "Can you prepare three examples.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "can",
+        "prepare",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-034",
+      "intent": "quantity-request",
+      "input": "Can you prepare four pages.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "can",
+        "prepare",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-035",
+      "intent": "quantity-request",
+      "input": "Can you prepare five items.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "can",
+        "prepare",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-036",
+      "intent": "quantity-request",
+      "input": "Can you prepare six bottles.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "can",
+        "prepare",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-037",
+      "intent": "quantity-request",
+      "input": "Can you prepare seven labels.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "can",
+        "prepare",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-038",
+      "intent": "quantity-request",
+      "input": "Can you prepare eight chairs.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "can",
+        "prepare",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-039",
+      "intent": "quantity-request",
+      "input": "Can you prepare nine cards.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "can",
+        "prepare",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-040",
+      "intent": "quantity-request",
+      "input": "Can you prepare ten minutes.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "can",
+        "prepare",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-041",
+      "intent": "quantity-request",
+      "input": "I need one copy.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "need",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-042",
+      "intent": "quantity-request",
+      "input": "I need two tickets.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "need",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-043",
+      "intent": "quantity-request",
+      "input": "I need three examples.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "need",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-044",
+      "intent": "quantity-request",
+      "input": "I need four pages.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "need",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-045",
+      "intent": "quantity-request",
+      "input": "I need five items.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "need",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-046",
+      "intent": "quantity-request",
+      "input": "I need six bottles.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "need",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-047",
+      "intent": "quantity-request",
+      "input": "I need seven labels.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "need",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-048",
+      "intent": "quantity-request",
+      "input": "I need eight chairs.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "need",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-049",
+      "intent": "quantity-request",
+      "input": "I need nine cards.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "need",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-050",
+      "intent": "quantity-request",
+      "input": "I need ten minutes.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "need",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-051",
+      "intent": "quantity-request",
+      "input": "Please set aside one copy.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "one",
+        "copy"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-052",
+      "intent": "quantity-request",
+      "input": "Please set aside two tickets.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "two",
+        "tickets"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-053",
+      "intent": "quantity-request",
+      "input": "Please set aside three examples.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "three",
+        "examples"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-054",
+      "intent": "quantity-request",
+      "input": "Please set aside four pages.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "four",
+        "pages"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-055",
+      "intent": "quantity-request",
+      "input": "Please set aside five items.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "five",
+        "items"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-056",
+      "intent": "quantity-request",
+      "input": "Please set aside six bottles.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "six",
+        "bottles"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-057",
+      "intent": "quantity-request",
+      "input": "Please set aside seven labels.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "seven",
+        "labels"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-058",
+      "intent": "quantity-request",
+      "input": "Please set aside eight chairs.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "eight",
+        "chairs"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-059",
+      "intent": "quantity-request",
+      "input": "Please set aside nine cards.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "nine",
+        "cards"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-060",
+      "intent": "quantity-request",
+      "input": "Please set aside ten minutes.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "please",
+        "set",
+        "aside",
+        "ten",
+        "minutes"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-061",
+      "intent": "quantity-request",
+      "input": "For this example, provide one copy.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "example",
+        "provide",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-062",
+      "intent": "quantity-request",
+      "input": "For this example, provide two tickets.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "example",
+        "provide",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-063",
+      "intent": "quantity-request",
+      "input": "For this example, provide three examples.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "example",
+        "provide",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-064",
+      "intent": "quantity-request",
+      "input": "For this example, provide four pages.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "example",
+        "provide",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-065",
+      "intent": "quantity-request",
+      "input": "For this example, provide five items.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "example",
+        "provide",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-066",
+      "intent": "quantity-request",
+      "input": "For this example, provide six bottles.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "example",
+        "provide",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-067",
+      "intent": "quantity-request",
+      "input": "For this example, provide seven labels.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "example",
+        "provide",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-068",
+      "intent": "quantity-request",
+      "input": "For this example, provide eight chairs.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "example",
+        "provide",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-069",
+      "intent": "quantity-request",
+      "input": "For this example, provide nine cards.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "example",
+        "provide",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-070",
+      "intent": "quantity-request",
+      "input": "For this example, provide ten minutes.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "example",
+        "provide",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-071",
+      "intent": "quantity-request",
+      "input": "The request is for one copy.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "request",
+        "one",
+        "copy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-072",
+      "intent": "quantity-request",
+      "input": "The request is for two tickets.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "request",
+        "two",
+        "tickets"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-073",
+      "intent": "quantity-request",
+      "input": "The request is for three examples.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "request",
+        "three",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-074",
+      "intent": "quantity-request",
+      "input": "The request is for four pages.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "request",
+        "four",
+        "pages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-075",
+      "intent": "quantity-request",
+      "input": "The request is for five items.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "request",
+        "five",
+        "items"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-076",
+      "intent": "quantity-request",
+      "input": "The request is for six bottles.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "request",
+        "six",
+        "bottles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-077",
+      "intent": "quantity-request",
+      "input": "The request is for seven labels.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "request",
+        "seven",
+        "labels"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-078",
+      "intent": "quantity-request",
+      "input": "The request is for eight chairs.",
+      "response": "That sentence contains an explicit quantity and requested item.",
+      "keywords": [
+        "request",
+        "eight",
+        "chairs"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-079",
+      "intent": "quantity-request",
+      "input": "The request is for nine cards.",
+      "response": "I recognize the quantity stated in the request, but I cannot fulfill a physical transaction.",
+      "keywords": [
+        "request",
+        "nine",
+        "cards"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "54-quantity-requests-080",
+      "intent": "quantity-request",
+      "input": "The request is for ten minutes.",
+      "response": "The requested amount is clear for this conversational example.",
+      "keywords": [
+        "request",
+        "ten",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "recognize an explicitly stated quantity",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

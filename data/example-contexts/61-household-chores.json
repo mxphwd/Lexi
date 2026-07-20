@@ -1,0 +1,1459 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "61-household-chores",
+    "title": "Household chores",
+    "description": "Statements about ordinary household tasks.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "61-household-chores-001",
+      "intent": "household-chore",
+      "input": "I need to wash the dishes.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "need",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-002",
+      "intent": "household-chore",
+      "input": "I need to sweep the floor.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "need",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-003",
+      "intent": "household-chore",
+      "input": "I need to take out the trash.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "need",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-004",
+      "intent": "household-chore",
+      "input": "I need to do the laundry.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "need",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-005",
+      "intent": "household-chore",
+      "input": "I need to clean the table.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "need",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-006",
+      "intent": "household-chore",
+      "input": "I need to organize the shelf.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "need",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-007",
+      "intent": "household-chore",
+      "input": "I need to water the plants.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "need",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-008",
+      "intent": "household-chore",
+      "input": "I need to make the bed.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "need",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-009",
+      "intent": "household-chore",
+      "input": "I need to tidy the kitchen.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "need",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-010",
+      "intent": "household-chore",
+      "input": "I need to put away the groceries.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "need",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-011",
+      "intent": "household-chore",
+      "input": "Today I will wash the dishes.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "today",
+        "will",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-012",
+      "intent": "household-chore",
+      "input": "Today I will sweep the floor.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "today",
+        "will",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-013",
+      "intent": "household-chore",
+      "input": "Today I will take out the trash.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "today",
+        "will",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-014",
+      "intent": "household-chore",
+      "input": "Today I will do the laundry.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "today",
+        "will",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-015",
+      "intent": "household-chore",
+      "input": "Today I will clean the table.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "today",
+        "will",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-016",
+      "intent": "household-chore",
+      "input": "Today I will organize the shelf.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "today",
+        "will",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-017",
+      "intent": "household-chore",
+      "input": "Today I will water the plants.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "today",
+        "will",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-018",
+      "intent": "household-chore",
+      "input": "Today I will make the bed.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "today",
+        "will",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-019",
+      "intent": "household-chore",
+      "input": "Today I will tidy the kitchen.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "today",
+        "will",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-020",
+      "intent": "household-chore",
+      "input": "Today I will put away the groceries.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "today",
+        "will",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-021",
+      "intent": "household-chore",
+      "input": "My next chore is to wash the dishes.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "next",
+        "chore",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-022",
+      "intent": "household-chore",
+      "input": "My next chore is to sweep the floor.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "next",
+        "chore",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-023",
+      "intent": "household-chore",
+      "input": "My next chore is to take out the trash.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "next",
+        "chore",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-024",
+      "intent": "household-chore",
+      "input": "My next chore is to do the laundry.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "next",
+        "chore",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-025",
+      "intent": "household-chore",
+      "input": "My next chore is to clean the table.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "next",
+        "chore",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-026",
+      "intent": "household-chore",
+      "input": "My next chore is to organize the shelf.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "next",
+        "chore",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-027",
+      "intent": "household-chore",
+      "input": "My next chore is to water the plants.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "next",
+        "chore",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-028",
+      "intent": "household-chore",
+      "input": "My next chore is to make the bed.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "next",
+        "chore",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-029",
+      "intent": "household-chore",
+      "input": "My next chore is to tidy the kitchen.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "next",
+        "chore",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-030",
+      "intent": "household-chore",
+      "input": "My next chore is to put away the groceries.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "next",
+        "chore",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-031",
+      "intent": "household-chore",
+      "input": "I have started to wash the dishes.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-032",
+      "intent": "household-chore",
+      "input": "I have started to sweep the floor.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "have",
+        "started",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-033",
+      "intent": "household-chore",
+      "input": "I have started to take out the trash.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-034",
+      "intent": "household-chore",
+      "input": "I have started to do the laundry.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-035",
+      "intent": "household-chore",
+      "input": "I have started to clean the table.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "have",
+        "started",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-036",
+      "intent": "household-chore",
+      "input": "I have started to organize the shelf.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-037",
+      "intent": "household-chore",
+      "input": "I have started to water the plants.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-038",
+      "intent": "household-chore",
+      "input": "I have started to make the bed.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "have",
+        "started",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-039",
+      "intent": "household-chore",
+      "input": "I have started to tidy the kitchen.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "have",
+        "started",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-040",
+      "intent": "household-chore",
+      "input": "I have started to put away the groceries.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "have",
+        "started",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-041",
+      "intent": "household-chore",
+      "input": "I just finished wash the dishes.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "just",
+        "finished",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-042",
+      "intent": "household-chore",
+      "input": "I just finished sweep the floor.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "just",
+        "finished",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-043",
+      "intent": "household-chore",
+      "input": "I just finished take out the trash.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "just",
+        "finished",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-044",
+      "intent": "household-chore",
+      "input": "I just finished do the laundry.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "just",
+        "finished",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-045",
+      "intent": "household-chore",
+      "input": "I just finished clean the table.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "just",
+        "finished",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-046",
+      "intent": "household-chore",
+      "input": "I just finished organize the shelf.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "just",
+        "finished",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-047",
+      "intent": "household-chore",
+      "input": "I just finished water the plants.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "just",
+        "finished",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-048",
+      "intent": "household-chore",
+      "input": "I just finished make the bed.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "just",
+        "finished",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-049",
+      "intent": "household-chore",
+      "input": "I just finished tidy the kitchen.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "just",
+        "finished",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-050",
+      "intent": "household-chore",
+      "input": "I just finished put away the groceries.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "just",
+        "finished",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-051",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to wash the dishes.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-052",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to sweep the floor.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-053",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to take out the trash.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-054",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to do the laundry.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-055",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to clean the table.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-056",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to organize the shelf.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-057",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to water the plants.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-058",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to make the bed.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-059",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to tidy the kitchen.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-060",
+      "intent": "household-chore",
+      "input": "This afternoon I plan to put away the groceries.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "afternoon",
+        "plan",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-061",
+      "intent": "household-chore",
+      "input": "Before I rest, I should wash the dishes.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-062",
+      "intent": "household-chore",
+      "input": "Before I rest, I should sweep the floor.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-063",
+      "intent": "household-chore",
+      "input": "Before I rest, I should take out the trash.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-064",
+      "intent": "household-chore",
+      "input": "Before I rest, I should do the laundry.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-065",
+      "intent": "household-chore",
+      "input": "Before I rest, I should clean the table.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-066",
+      "intent": "household-chore",
+      "input": "Before I rest, I should organize the shelf.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-067",
+      "intent": "household-chore",
+      "input": "Before I rest, I should water the plants.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-068",
+      "intent": "household-chore",
+      "input": "Before I rest, I should make the bed.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-069",
+      "intent": "household-chore",
+      "input": "Before I rest, I should tidy the kitchen.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-070",
+      "intent": "household-chore",
+      "input": "Before I rest, I should put away the groceries.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "before",
+        "rest",
+        "should",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-071",
+      "intent": "household-chore",
+      "input": "The household task is to wash the dishes.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "household",
+        "task",
+        "wash",
+        "dishes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-072",
+      "intent": "household-chore",
+      "input": "The household task is to sweep the floor.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "household",
+        "task",
+        "sweep",
+        "floor"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-073",
+      "intent": "household-chore",
+      "input": "The household task is to take out the trash.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "household",
+        "task",
+        "take",
+        "out",
+        "trash"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-074",
+      "intent": "household-chore",
+      "input": "The household task is to do the laundry.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "household",
+        "task",
+        "laundry"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-075",
+      "intent": "household-chore",
+      "input": "The household task is to clean the table.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "household",
+        "task",
+        "clean",
+        "table"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-076",
+      "intent": "household-chore",
+      "input": "The household task is to organize the shelf.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "household",
+        "task",
+        "organize",
+        "shelf"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-077",
+      "intent": "household-chore",
+      "input": "The household task is to water the plants.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "household",
+        "task",
+        "water",
+        "plants"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-078",
+      "intent": "household-chore",
+      "input": "The household task is to make the bed.",
+      "response": "The chore and its current status are clear for this turn.",
+      "keywords": [
+        "household",
+        "task",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-079",
+      "intent": "household-chore",
+      "input": "The household task is to tidy the kitchen.",
+      "response": "I understand the household task stated in this message.",
+      "keywords": [
+        "household",
+        "task",
+        "tidy",
+        "kitchen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "61-household-chores-080",
+      "intent": "household-chore",
+      "input": "The household task is to put away the groceries.",
+      "response": "That sentence describes an ordinary household chore.",
+      "keywords": [
+        "household",
+        "task",
+        "put",
+        "away",
+        "groceries"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a household task",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

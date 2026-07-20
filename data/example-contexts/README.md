@@ -26,6 +26,9 @@ Writing rules:
    can learn the boundary.
 6. Run `npm run corpus:validate` before committing new pages.
 
-The prototype ships with 12 pages and 180 input-response examples (360 paired
-sentences). Millions of sentences are a future corpus goal, not a property of
-this initial build.
+The prototype ships with 62 pages and 4,180 input-response examples (8,360 paired
+sentences). Pages 13 through 37 contain the generated basic-conversation corpus;
+pages 38 through 62 contain daily-life contexts. Rebuild them with
+`npm run corpus:generate-basic` and `npm run corpus:generate-daily`, then refresh
+the machine-readable ledger with `npm run corpus:inventory`. Millions of
+sentences remain a future corpus goal.

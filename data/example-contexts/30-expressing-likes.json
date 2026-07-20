@@ -1,0 +1,1437 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "30-expressing-likes",
+    "title": "Expressing likes",
+    "description": "Basic positive preference statements about everyday topics.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "30-expressing-likes-001",
+      "intent": "express-like",
+      "input": "I like reading books.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "like",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-002",
+      "intent": "express-like",
+      "input": "I like learning languages.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "like",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-003",
+      "intent": "express-like",
+      "input": "I like quiet mornings.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "like",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-004",
+      "intent": "express-like",
+      "input": "I like clear explanations.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "like",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-005",
+      "intent": "express-like",
+      "input": "I like helpful examples.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "like",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-006",
+      "intent": "express-like",
+      "input": "I like walking outside.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "like",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-007",
+      "intent": "express-like",
+      "input": "I like listening to music.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "like",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-008",
+      "intent": "express-like",
+      "input": "I like solving puzzles.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "like",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-009",
+      "intent": "express-like",
+      "input": "I like trying new food.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "like",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-010",
+      "intent": "express-like",
+      "input": "I like meeting new people.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "like",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-011",
+      "intent": "express-like",
+      "input": "I really like reading books.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "really",
+        "like",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-012",
+      "intent": "express-like",
+      "input": "I really like learning languages.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "really",
+        "like",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-013",
+      "intent": "express-like",
+      "input": "I really like quiet mornings.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "really",
+        "like",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-014",
+      "intent": "express-like",
+      "input": "I really like clear explanations.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "really",
+        "like",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-015",
+      "intent": "express-like",
+      "input": "I really like helpful examples.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "really",
+        "like",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-016",
+      "intent": "express-like",
+      "input": "I really like walking outside.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "really",
+        "like",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-017",
+      "intent": "express-like",
+      "input": "I really like listening to music.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "really",
+        "like",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-018",
+      "intent": "express-like",
+      "input": "I really like solving puzzles.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "really",
+        "like",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-019",
+      "intent": "express-like",
+      "input": "I really like trying new food.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "really",
+        "like",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-020",
+      "intent": "express-like",
+      "input": "I really like meeting new people.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "really",
+        "like",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-021",
+      "intent": "express-like",
+      "input": "I enjoy reading books.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "enjoy",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-022",
+      "intent": "express-like",
+      "input": "I enjoy learning languages.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "enjoy",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-023",
+      "intent": "express-like",
+      "input": "I enjoy quiet mornings.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "enjoy",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-024",
+      "intent": "express-like",
+      "input": "I enjoy clear explanations.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "enjoy",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-025",
+      "intent": "express-like",
+      "input": "I enjoy helpful examples.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "enjoy",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-026",
+      "intent": "express-like",
+      "input": "I enjoy walking outside.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "enjoy",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-027",
+      "intent": "express-like",
+      "input": "I enjoy listening to music.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "enjoy",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-028",
+      "intent": "express-like",
+      "input": "I enjoy solving puzzles.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "enjoy",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-029",
+      "intent": "express-like",
+      "input": "I enjoy trying new food.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "enjoy",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-030",
+      "intent": "express-like",
+      "input": "I enjoy meeting new people.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "enjoy",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-031",
+      "intent": "express-like",
+      "input": "I am fond of reading books.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "am",
+        "fond",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-032",
+      "intent": "express-like",
+      "input": "I am fond of learning languages.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "am",
+        "fond",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-033",
+      "intent": "express-like",
+      "input": "I am fond of quiet mornings.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "am",
+        "fond",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-034",
+      "intent": "express-like",
+      "input": "I am fond of clear explanations.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "am",
+        "fond",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-035",
+      "intent": "express-like",
+      "input": "I am fond of helpful examples.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "am",
+        "fond",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-036",
+      "intent": "express-like",
+      "input": "I am fond of walking outside.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "am",
+        "fond",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-037",
+      "intent": "express-like",
+      "input": "I am fond of listening to music.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "am",
+        "fond",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-038",
+      "intent": "express-like",
+      "input": "I am fond of solving puzzles.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "am",
+        "fond",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-039",
+      "intent": "express-like",
+      "input": "I am fond of trying new food.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "am",
+        "fond",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-040",
+      "intent": "express-like",
+      "input": "I am fond of meeting new people.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "am",
+        "fond",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-041",
+      "intent": "express-like",
+      "input": "I appreciate reading books.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "appreciate",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-042",
+      "intent": "express-like",
+      "input": "I appreciate learning languages.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "appreciate",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-043",
+      "intent": "express-like",
+      "input": "I appreciate quiet mornings.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "appreciate",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-044",
+      "intent": "express-like",
+      "input": "I appreciate clear explanations.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "appreciate",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-045",
+      "intent": "express-like",
+      "input": "I appreciate helpful examples.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "appreciate",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-046",
+      "intent": "express-like",
+      "input": "I appreciate walking outside.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "appreciate",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-047",
+      "intent": "express-like",
+      "input": "I appreciate listening to music.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "appreciate",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-048",
+      "intent": "express-like",
+      "input": "I appreciate solving puzzles.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "appreciate",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-049",
+      "intent": "express-like",
+      "input": "I appreciate trying new food.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "appreciate",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-050",
+      "intent": "express-like",
+      "input": "I appreciate meeting new people.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "appreciate",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-051",
+      "intent": "express-like",
+      "input": "One thing I like is reading books.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-052",
+      "intent": "express-like",
+      "input": "One thing I like is learning languages.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-053",
+      "intent": "express-like",
+      "input": "One thing I like is quiet mornings.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-054",
+      "intent": "express-like",
+      "input": "One thing I like is clear explanations.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-055",
+      "intent": "express-like",
+      "input": "One thing I like is helpful examples.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-056",
+      "intent": "express-like",
+      "input": "One thing I like is walking outside.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-057",
+      "intent": "express-like",
+      "input": "One thing I like is listening to music.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-058",
+      "intent": "express-like",
+      "input": "One thing I like is solving puzzles.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-059",
+      "intent": "express-like",
+      "input": "One thing I like is trying new food.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-060",
+      "intent": "express-like",
+      "input": "One thing I like is meeting new people.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "one",
+        "thing",
+        "like",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-061",
+      "intent": "express-like",
+      "input": "I have a preference for reading books.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "have",
+        "preference",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-062",
+      "intent": "express-like",
+      "input": "I have a preference for learning languages.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "have",
+        "preference",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-063",
+      "intent": "express-like",
+      "input": "I have a preference for quiet mornings.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "have",
+        "preference",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-064",
+      "intent": "express-like",
+      "input": "I have a preference for clear explanations.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "have",
+        "preference",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-065",
+      "intent": "express-like",
+      "input": "I have a preference for helpful examples.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "have",
+        "preference",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-066",
+      "intent": "express-like",
+      "input": "I have a preference for walking outside.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "have",
+        "preference",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-067",
+      "intent": "express-like",
+      "input": "I have a preference for listening to music.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "have",
+        "preference",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-068",
+      "intent": "express-like",
+      "input": "I have a preference for solving puzzles.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "have",
+        "preference",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-069",
+      "intent": "express-like",
+      "input": "I have a preference for trying new food.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "have",
+        "preference",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-070",
+      "intent": "express-like",
+      "input": "I have a preference for meeting new people.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "have",
+        "preference",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-071",
+      "intent": "express-like",
+      "input": "I'm interested in reading books.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "interested",
+        "reading",
+        "books"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-072",
+      "intent": "express-like",
+      "input": "I'm interested in learning languages.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "interested",
+        "learning",
+        "languages"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-073",
+      "intent": "express-like",
+      "input": "I'm interested in quiet mornings.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "interested",
+        "quiet",
+        "mornings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-074",
+      "intent": "express-like",
+      "input": "I'm interested in clear explanations.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "interested",
+        "clear",
+        "explanations"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-075",
+      "intent": "express-like",
+      "input": "I'm interested in helpful examples.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "interested",
+        "helpful",
+        "examples"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-076",
+      "intent": "express-like",
+      "input": "I'm interested in walking outside.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "interested",
+        "walking",
+        "outside"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-077",
+      "intent": "express-like",
+      "input": "I'm interested in listening to music.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "interested",
+        "listening",
+        "music"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-078",
+      "intent": "express-like",
+      "input": "I'm interested in solving puzzles.",
+      "response": "That statement clearly expresses something you enjoy.",
+      "keywords": [
+        "interested",
+        "solving",
+        "puzzles"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-079",
+      "intent": "express-like",
+      "input": "I'm interested in trying new food.",
+      "response": "I understand that you like that activity or quality.",
+      "keywords": [
+        "interested",
+        "trying",
+        "new",
+        "food"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "30-expressing-likes-080",
+      "intent": "express-like",
+      "input": "I'm interested in meeting new people.",
+      "response": "Your positive preference has been noted in this turn.",
+      "keywords": [
+        "interested",
+        "meeting",
+        "new",
+        "people"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a stated like",
+        "tone": "warm"
+      }
+    }
+  ]
+}

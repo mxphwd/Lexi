@@ -1,0 +1,1371 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "32-positive-feelings",
+    "title": "Expressing positive feelings",
+    "description": "Everyday statements describing pleasant emotional states.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "32-positive-feelings-001",
+      "intent": "positive-feeling",
+      "input": "I feel happy.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feel",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-002",
+      "intent": "positive-feeling",
+      "input": "I feel calm.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feel",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-003",
+      "intent": "positive-feeling",
+      "input": "I feel excited.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feel",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-004",
+      "intent": "positive-feeling",
+      "input": "I feel hopeful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feel",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-005",
+      "intent": "positive-feeling",
+      "input": "I feel relieved.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feel",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-006",
+      "intent": "positive-feeling",
+      "input": "I feel grateful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feel",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-007",
+      "intent": "positive-feeling",
+      "input": "I feel confident.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feel",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-008",
+      "intent": "positive-feeling",
+      "input": "I feel proud.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feel",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-009",
+      "intent": "positive-feeling",
+      "input": "I feel comfortable.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feel",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-010",
+      "intent": "positive-feeling",
+      "input": "I feel cheerful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feel",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-011",
+      "intent": "positive-feeling",
+      "input": "I'm feeling happy.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feeling",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-012",
+      "intent": "positive-feeling",
+      "input": "I'm feeling calm.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feeling",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-013",
+      "intent": "positive-feeling",
+      "input": "I'm feeling excited.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feeling",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-014",
+      "intent": "positive-feeling",
+      "input": "I'm feeling hopeful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feeling",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-015",
+      "intent": "positive-feeling",
+      "input": "I'm feeling relieved.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feeling",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-016",
+      "intent": "positive-feeling",
+      "input": "I'm feeling grateful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feeling",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-017",
+      "intent": "positive-feeling",
+      "input": "I'm feeling confident.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feeling",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-018",
+      "intent": "positive-feeling",
+      "input": "I'm feeling proud.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "feeling",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-019",
+      "intent": "positive-feeling",
+      "input": "I'm feeling comfortable.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "feeling",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-020",
+      "intent": "positive-feeling",
+      "input": "I'm feeling cheerful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "feeling",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-021",
+      "intent": "positive-feeling",
+      "input": "Today I feel happy.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-022",
+      "intent": "positive-feeling",
+      "input": "Today I feel calm.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-023",
+      "intent": "positive-feeling",
+      "input": "Today I feel excited.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "today",
+        "feel",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-024",
+      "intent": "positive-feeling",
+      "input": "Today I feel hopeful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-025",
+      "intent": "positive-feeling",
+      "input": "Today I feel relieved.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-026",
+      "intent": "positive-feeling",
+      "input": "Today I feel grateful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "today",
+        "feel",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-027",
+      "intent": "positive-feeling",
+      "input": "Today I feel confident.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-028",
+      "intent": "positive-feeling",
+      "input": "Today I feel proud.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "today",
+        "feel",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-029",
+      "intent": "positive-feeling",
+      "input": "Today I feel comfortable.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "today",
+        "feel",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-030",
+      "intent": "positive-feeling",
+      "input": "Today I feel cheerful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "today",
+        "feel",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-031",
+      "intent": "positive-feeling",
+      "input": "Right now I'm happy.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-032",
+      "intent": "positive-feeling",
+      "input": "Right now I'm calm.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "right",
+        "now",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-033",
+      "intent": "positive-feeling",
+      "input": "Right now I'm excited.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-034",
+      "intent": "positive-feeling",
+      "input": "Right now I'm hopeful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-035",
+      "intent": "positive-feeling",
+      "input": "Right now I'm relieved.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "right",
+        "now",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-036",
+      "intent": "positive-feeling",
+      "input": "Right now I'm grateful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-037",
+      "intent": "positive-feeling",
+      "input": "Right now I'm confident.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-038",
+      "intent": "positive-feeling",
+      "input": "Right now I'm proud.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "right",
+        "now",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-039",
+      "intent": "positive-feeling",
+      "input": "Right now I'm comfortable.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "right",
+        "now",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-040",
+      "intent": "positive-feeling",
+      "input": "Right now I'm cheerful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "right",
+        "now",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-041",
+      "intent": "positive-feeling",
+      "input": "This makes me feel happy.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "makes",
+        "feel",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-042",
+      "intent": "positive-feeling",
+      "input": "This makes me feel calm.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-043",
+      "intent": "positive-feeling",
+      "input": "This makes me feel excited.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-044",
+      "intent": "positive-feeling",
+      "input": "This makes me feel hopeful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "makes",
+        "feel",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-045",
+      "intent": "positive-feeling",
+      "input": "This makes me feel relieved.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-046",
+      "intent": "positive-feeling",
+      "input": "This makes me feel grateful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-047",
+      "intent": "positive-feeling",
+      "input": "This makes me feel confident.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "makes",
+        "feel",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-048",
+      "intent": "positive-feeling",
+      "input": "This makes me feel proud.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "makes",
+        "feel",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-049",
+      "intent": "positive-feeling",
+      "input": "This makes me feel comfortable.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "makes",
+        "feel",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-050",
+      "intent": "positive-feeling",
+      "input": "This makes me feel cheerful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "makes",
+        "feel",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-051",
+      "intent": "positive-feeling",
+      "input": "I have been feeling happy.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-052",
+      "intent": "positive-feeling",
+      "input": "I have been feeling calm.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-053",
+      "intent": "positive-feeling",
+      "input": "I have been feeling excited.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-054",
+      "intent": "positive-feeling",
+      "input": "I have been feeling hopeful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-055",
+      "intent": "positive-feeling",
+      "input": "I have been feeling relieved.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-056",
+      "intent": "positive-feeling",
+      "input": "I have been feeling grateful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-057",
+      "intent": "positive-feeling",
+      "input": "I have been feeling confident.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-058",
+      "intent": "positive-feeling",
+      "input": "I have been feeling proud.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-059",
+      "intent": "positive-feeling",
+      "input": "I have been feeling comfortable.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-060",
+      "intent": "positive-feeling",
+      "input": "I have been feeling cheerful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "have",
+        "been",
+        "feeling",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-061",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm happy.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "moment",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-062",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm calm.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "moment",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-063",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm excited.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "moment",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-064",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm hopeful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "moment",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-065",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm relieved.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "moment",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-066",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm grateful.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "moment",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-067",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm confident.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "moment",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-068",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm proud.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "moment",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-069",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm comfortable.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "moment",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-070",
+      "intent": "positive-feeling",
+      "input": "At the moment I'm cheerful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "moment",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-071",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel happy.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "happy"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-072",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel calm.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "calm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-073",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel excited.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "excited"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-074",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel hopeful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "hopeful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-075",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel relieved.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "relieved"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-076",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel grateful.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "grateful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-077",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel confident.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "confident"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-078",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel proud.",
+      "response": "Your message communicates a positive emotional state.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "proud"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-079",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel comfortable.",
+      "response": "I understand that you are describing a positive feeling.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "comfortable"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "32-positive-feelings-080",
+      "intent": "positive-feeling",
+      "input": "I want to say that I feel cheerful.",
+      "response": "Thank you for sharing how you feel.",
+      "keywords": [
+        "want",
+        "say",
+        "that",
+        "feel",
+        "cheerful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "acknowledge a positive feeling",
+        "tone": "warm"
+      }
+    }
+  ]
+}

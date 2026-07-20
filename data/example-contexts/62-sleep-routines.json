@@ -1,0 +1,1550 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "62-sleep-routines",
+    "title": "Sleep routines",
+    "description": "Statements about ordinary non-medical bedtime and waking habits.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "62-sleep-routines-001",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I set an alarm.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-002",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I turn off the lights.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-003",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I put away my phone.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-004",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I read for a few minutes.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-005",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I close the curtains.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-006",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I prepare clothes for tomorrow.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-007",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I drink some water.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-008",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I check the room temperature.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-009",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I write down tomorrow's tasks.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-010",
+      "intent": "sleep-routine",
+      "input": "Before sleeping I wake up at a regular time.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "sleeping",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-011",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually set an alarm.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-012",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually turn off the lights.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-013",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually put away my phone.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-014",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually read for a few minutes.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-015",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually close the curtains.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-016",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually prepare clothes for tomorrow.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-017",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually drink some water.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-018",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually check the room temperature.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-019",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually write down tomorrow's tasks.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-020",
+      "intent": "sleep-routine",
+      "input": "At bedtime I usually wake up at a regular time.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "bedtime",
+        "usually",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-021",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to set an alarm.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-022",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to turn off the lights.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-023",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to put away my phone.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-024",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to read for a few minutes.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-025",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to close the curtains.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-026",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to prepare clothes for tomorrow.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-027",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to drink some water.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-028",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to check the room temperature.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-029",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to write down tomorrow's tasks.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-030",
+      "intent": "sleep-routine",
+      "input": "My sleep routine is to wake up at a regular time.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "sleep",
+        "routine",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-031",
+      "intent": "sleep-routine",
+      "input": "Each night I set an alarm.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "each",
+        "night",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-032",
+      "intent": "sleep-routine",
+      "input": "Each night I turn off the lights.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "each",
+        "night",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-033",
+      "intent": "sleep-routine",
+      "input": "Each night I put away my phone.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "each",
+        "night",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-034",
+      "intent": "sleep-routine",
+      "input": "Each night I read for a few minutes.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "each",
+        "night",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-035",
+      "intent": "sleep-routine",
+      "input": "Each night I close the curtains.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "each",
+        "night",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-036",
+      "intent": "sleep-routine",
+      "input": "Each night I prepare clothes for tomorrow.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "each",
+        "night",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-037",
+      "intent": "sleep-routine",
+      "input": "Each night I drink some water.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "each",
+        "night",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-038",
+      "intent": "sleep-routine",
+      "input": "Each night I check the room temperature.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "each",
+        "night",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-039",
+      "intent": "sleep-routine",
+      "input": "Each night I write down tomorrow's tasks.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "each",
+        "night",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-040",
+      "intent": "sleep-routine",
+      "input": "Each night I wake up at a regular time.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "each",
+        "night",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-041",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I set an alarm.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-042",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I turn off the lights.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-043",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I put away my phone.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-044",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I read for a few minutes.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-045",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I close the curtains.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-046",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I prepare clothes for tomorrow.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-047",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I drink some water.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-048",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I check the room temperature.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-049",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I write down tomorrow's tasks.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-050",
+      "intent": "sleep-routine",
+      "input": "Before I go to bed, I wake up at a regular time.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "before",
+        "go",
+        "bed",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-051",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I set an alarm.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-052",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I turn off the lights.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-053",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I put away my phone.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-054",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I read for a few minutes.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-055",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I close the curtains.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-056",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I prepare clothes for tomorrow.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-057",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I drink some water.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-058",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I check the room temperature.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-059",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I write down tomorrow's tasks.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-060",
+      "intent": "sleep-routine",
+      "input": "To prepare for sleep, I wake up at a regular time.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "prepare",
+        "sleep",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-061",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually set an alarm.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "morning",
+        "usually",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-062",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually turn off the lights.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "morning",
+        "usually",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-063",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually put away my phone.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-064",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually read for a few minutes.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "morning",
+        "usually",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-065",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually close the curtains.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "morning",
+        "usually",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-066",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually prepare clothes for tomorrow.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-067",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually drink some water.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "morning",
+        "usually",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-068",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually check the room temperature.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "morning",
+        "usually",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-069",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually write down tomorrow's tasks.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-070",
+      "intent": "sleep-routine",
+      "input": "In the morning I usually wake up at a regular time.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "morning",
+        "usually",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-071",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to set an alarm.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "set",
+        "alarm"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-072",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to turn off the lights.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "turn",
+        "off",
+        "lights"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-073",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to put away my phone.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "put",
+        "away",
+        "phone"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-074",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to read for a few minutes.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "read",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-075",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to close the curtains.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "close",
+        "curtains"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-076",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to prepare clothes for tomorrow.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "prepare",
+        "clothes",
+        "tomorrow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-077",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to drink some water.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "drink",
+        "some",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-078",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to check the room temperature.",
+      "response": "The routine is clear for this turn.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "check",
+        "room",
+        "temperature"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-079",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to write down tomorrow's tasks.",
+      "response": "I understand the sleep-related routine stated in this message.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "write",
+        "down",
+        "tomorrow",
+        "tasks"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "62-sleep-routines-080",
+      "intent": "sleep-routine",
+      "input": "My usual waking habit is to wake up at a regular time.",
+      "response": "That describes an ordinary bedtime or waking habit, not a medical condition.",
+      "keywords": [
+        "usual",
+        "waking",
+        "habit",
+        "wake",
+        "up",
+        "regular",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a sleep-related routine without medical advice",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

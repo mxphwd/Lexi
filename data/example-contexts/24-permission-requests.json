@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "24-permission-requests",
+    "title": "Asking permission",
+    "description": "Basic questions requesting permission to take an ordinary action.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "24-permission-requests-001",
+      "intent": "permission-request",
+      "input": "May I ask another question?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "may",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-002",
+      "intent": "permission-request",
+      "input": "May I start again?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "may",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-003",
+      "intent": "permission-request",
+      "input": "May I change the subject?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "may",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-004",
+      "intent": "permission-request",
+      "input": "May I take a short break?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "may",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-005",
+      "intent": "permission-request",
+      "input": "May I give an example?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "may",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-006",
+      "intent": "permission-request",
+      "input": "May I explain my view?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "may",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-007",
+      "intent": "permission-request",
+      "input": "May I check one detail?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "may",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-008",
+      "intent": "permission-request",
+      "input": "May I continue the conversation?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "may",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-009",
+      "intent": "permission-request",
+      "input": "May I use a different word?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "may",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-010",
+      "intent": "permission-request",
+      "input": "May I return to the earlier point?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "may",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-011",
+      "intent": "permission-request",
+      "input": "Can I ask another question?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "can",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-012",
+      "intent": "permission-request",
+      "input": "Can I start again?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "can",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-013",
+      "intent": "permission-request",
+      "input": "Can I change the subject?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "can",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-014",
+      "intent": "permission-request",
+      "input": "Can I take a short break?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "can",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-015",
+      "intent": "permission-request",
+      "input": "Can I give an example?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "can",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-016",
+      "intent": "permission-request",
+      "input": "Can I explain my view?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "can",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-017",
+      "intent": "permission-request",
+      "input": "Can I check one detail?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "can",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-018",
+      "intent": "permission-request",
+      "input": "Can I continue the conversation?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "can",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-019",
+      "intent": "permission-request",
+      "input": "Can I use a different word?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "can",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-020",
+      "intent": "permission-request",
+      "input": "Can I return to the earlier point?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "can",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-021",
+      "intent": "permission-request",
+      "input": "Could I ask another question?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "could",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-022",
+      "intent": "permission-request",
+      "input": "Could I start again?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "could",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-023",
+      "intent": "permission-request",
+      "input": "Could I change the subject?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "could",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-024",
+      "intent": "permission-request",
+      "input": "Could I take a short break?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "could",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-025",
+      "intent": "permission-request",
+      "input": "Could I give an example?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "could",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-026",
+      "intent": "permission-request",
+      "input": "Could I explain my view?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "could",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-027",
+      "intent": "permission-request",
+      "input": "Could I check one detail?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "could",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-028",
+      "intent": "permission-request",
+      "input": "Could I continue the conversation?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "could",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-029",
+      "intent": "permission-request",
+      "input": "Could I use a different word?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "could",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-030",
+      "intent": "permission-request",
+      "input": "Could I return to the earlier point?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "could",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-031",
+      "intent": "permission-request",
+      "input": "Would it be okay if I ask another question?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-032",
+      "intent": "permission-request",
+      "input": "Would it be okay if I start again?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-033",
+      "intent": "permission-request",
+      "input": "Would it be okay if I change the subject?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-034",
+      "intent": "permission-request",
+      "input": "Would it be okay if I take a short break?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-035",
+      "intent": "permission-request",
+      "input": "Would it be okay if I give an example?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-036",
+      "intent": "permission-request",
+      "input": "Would it be okay if I explain my view?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-037",
+      "intent": "permission-request",
+      "input": "Would it be okay if I check one detail?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-038",
+      "intent": "permission-request",
+      "input": "Would it be okay if I continue the conversation?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-039",
+      "intent": "permission-request",
+      "input": "Would it be okay if I use a different word?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-040",
+      "intent": "permission-request",
+      "input": "Would it be okay if I return to the earlier point?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "okay",
+        "if",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-041",
+      "intent": "permission-request",
+      "input": "Do you mind if I ask another question?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "mind",
+        "if",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-042",
+      "intent": "permission-request",
+      "input": "Do you mind if I start again?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "mind",
+        "if",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-043",
+      "intent": "permission-request",
+      "input": "Do you mind if I change the subject?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "mind",
+        "if",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-044",
+      "intent": "permission-request",
+      "input": "Do you mind if I take a short break?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "mind",
+        "if",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-045",
+      "intent": "permission-request",
+      "input": "Do you mind if I give an example?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "mind",
+        "if",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-046",
+      "intent": "permission-request",
+      "input": "Do you mind if I explain my view?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "mind",
+        "if",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-047",
+      "intent": "permission-request",
+      "input": "Do you mind if I check one detail?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "mind",
+        "if",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-048",
+      "intent": "permission-request",
+      "input": "Do you mind if I continue the conversation?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "mind",
+        "if",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-049",
+      "intent": "permission-request",
+      "input": "Do you mind if I use a different word?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "mind",
+        "if",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-050",
+      "intent": "permission-request",
+      "input": "Do you mind if I return to the earlier point?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "mind",
+        "if",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-051",
+      "intent": "permission-request",
+      "input": "Is it all right to ask another question?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "all",
+        "right",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-052",
+      "intent": "permission-request",
+      "input": "Is it all right to start again?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "all",
+        "right",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-053",
+      "intent": "permission-request",
+      "input": "Is it all right to change the subject?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "all",
+        "right",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-054",
+      "intent": "permission-request",
+      "input": "Is it all right to take a short break?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "all",
+        "right",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-055",
+      "intent": "permission-request",
+      "input": "Is it all right to give an example?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "all",
+        "right",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-056",
+      "intent": "permission-request",
+      "input": "Is it all right to explain my view?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "all",
+        "right",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-057",
+      "intent": "permission-request",
+      "input": "Is it all right to check one detail?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "all",
+        "right",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-058",
+      "intent": "permission-request",
+      "input": "Is it all right to continue the conversation?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "all",
+        "right",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-059",
+      "intent": "permission-request",
+      "input": "Is it all right to use a different word?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "all",
+        "right",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-060",
+      "intent": "permission-request",
+      "input": "Is it all right to return to the earlier point?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "all",
+        "right",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-061",
+      "intent": "permission-request",
+      "input": "Am I allowed to ask another question?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "am",
+        "allowed",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-062",
+      "intent": "permission-request",
+      "input": "Am I allowed to start again?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "am",
+        "allowed",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-063",
+      "intent": "permission-request",
+      "input": "Am I allowed to change the subject?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "am",
+        "allowed",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-064",
+      "intent": "permission-request",
+      "input": "Am I allowed to take a short break?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "am",
+        "allowed",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-065",
+      "intent": "permission-request",
+      "input": "Am I allowed to give an example?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "am",
+        "allowed",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-066",
+      "intent": "permission-request",
+      "input": "Am I allowed to explain my view?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "am",
+        "allowed",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-067",
+      "intent": "permission-request",
+      "input": "Am I allowed to check one detail?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "am",
+        "allowed",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-068",
+      "intent": "permission-request",
+      "input": "Am I allowed to continue the conversation?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "am",
+        "allowed",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-069",
+      "intent": "permission-request",
+      "input": "Am I allowed to use a different word?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "am",
+        "allowed",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-070",
+      "intent": "permission-request",
+      "input": "Am I allowed to return to the earlier point?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "am",
+        "allowed",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-071",
+      "intent": "permission-request",
+      "input": "Would you permit me to ask another question?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "permit",
+        "ask",
+        "another",
+        "question"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-072",
+      "intent": "permission-request",
+      "input": "Would you permit me to start again?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "permit",
+        "start",
+        "again"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-073",
+      "intent": "permission-request",
+      "input": "Would you permit me to change the subject?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "permit",
+        "change",
+        "subject"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-074",
+      "intent": "permission-request",
+      "input": "Would you permit me to take a short break?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "permit",
+        "take",
+        "short",
+        "break"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-075",
+      "intent": "permission-request",
+      "input": "Would you permit me to give an example?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "permit",
+        "give",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-076",
+      "intent": "permission-request",
+      "input": "Would you permit me to explain my view?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "permit",
+        "explain",
+        "view"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-077",
+      "intent": "permission-request",
+      "input": "Would you permit me to check one detail?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "permit",
+        "check",
+        "one",
+        "detail"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-078",
+      "intent": "permission-request",
+      "input": "Would you permit me to continue the conversation?",
+      "response": "You may proceed. I will respond within the contexts I support.",
+      "keywords": [
+        "would",
+        "permit",
+        "continue",
+        "conversation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-079",
+      "intent": "permission-request",
+      "input": "Would you permit me to use a different word?",
+      "response": "Yes, you may continue with that conversational action.",
+      "keywords": [
+        "would",
+        "permit",
+        "use",
+        "different",
+        "word"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "24-permission-requests-080",
+      "intent": "permission-request",
+      "input": "Would you permit me to return to the earlier point?",
+      "response": "That is fine within this conversation.",
+      "keywords": [
+        "would",
+        "permit",
+        "return",
+        "earlier",
+        "point"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize a request for permission",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

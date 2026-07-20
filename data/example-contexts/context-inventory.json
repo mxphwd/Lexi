@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "totalPages": 62,
+  "totalExamples": 4180,
+  "totalPairedSentences": 8360,
+  "pages": [
+    {
+      "id": "01-greetings",
+      "file": "01-greetings.json",
+      "title": "Greetings and openings",
+      "description": "Friendly ways a conversation with Lexi can begin.",
+      "examples": 15,
+      "intents": [
+        "greeting"
+      ]
+    },
+    {
+      "id": "02-identity",
+      "file": "02-identity.json",
+      "title": "Lexi identity",
+      "description": "Questions about what Lexi is and how it describes itself.",
+      "examples": 15,
+      "intents": [
+        "identity"
+      ]
+    },
+    {
+      "id": "03-alphaine-origin",
+      "file": "03-alphaine-origin.json",
+      "title": "Alphaine and origin",
+      "description": "The project name, the Lexi name, and their relationship.",
+      "examples": 15,
+      "intents": [
+        "origin"
+      ]
+    },
+    {
+      "id": "04-mechanical-pipeline",
+      "file": "04-mechanical-pipeline.json",
+      "title": "Mechanical response pipeline",
+      "description": "End-to-end questions about how a prompt becomes a response.",
+      "examples": 15,
+      "intents": [
+        "mechanism"
+      ]
+    },
+    {
+      "id": "05-ai-comparison",
+      "file": "05-ai-comparison.json",
+      "title": "Traditional AI comparison",
+      "description": "Ways users contrast Lexi with predictive LLMs.",
+      "examples": 15,
+      "intents": [
+        "compare-ai"
+      ]
+    },
+    {
+      "id": "06-context-module",
+      "file": "06-context-module.json",
+      "title": "Context Module",
+      "description": "Examples that teach how Lexi discusses context selection.",
+      "examples": 15,
+      "intents": [
+        "context-module"
+      ]
+    },
+    {
+      "id": "07-search-module",
+      "file": "07-search-module.json",
+      "title": "Search Module",
+      "description": "Retrieval, normalization, and similarity questions.",
+      "examples": 15,
+      "intents": [
+        "search-module"
+      ]
+    },
+    {
+      "id": "08-connect-module",
+      "file": "08-connect-module.json",
+      "title": "Connect Module",
+      "description": "How selected context becomes connected answer material.",
+      "examples": 15,
+      "intents": [
+        "connect-module"
+      ]
+    },
+    {
+      "id": "09-structure-module",
+      "file": "09-structure-module.json",
+      "title": "Structure Module and English clauses",
+      "description": "Sentence realization using declarative, interrogative, imperative, and exclamative analysis.",
+      "examples": 15,
+      "intents": [
+        "structure-module"
+      ]
+    },
+    {
+      "id": "10-capabilities",
+      "file": "10-capabilities.json",
+      "title": "Prototype capabilities",
+      "description": "What this early build can do reliably.",
+      "examples": 15,
+      "intents": [
+        "capabilities"
+      ]
+    },
+    {
+      "id": "11-limitations",
+      "file": "11-limitations.json",
+      "title": "Limits and safe failure",
+      "description": "Examples that teach Lexi to state uncertainty without fabricating.",
+      "examples": 15,
+      "intents": [
+        "limitations"
+      ]
+    },
+    {
+      "id": "12-dialogue-basics",
+      "file": "12-dialogue-basics.json",
+      "title": "Dialogue basics",
+      "description": "Gratitude, farewells, wellbeing, and requests for guidance.",
+      "examples": 15,
+      "intents": [
+        "farewell",
+        "gratitude",
+        "help",
+        "wellbeing"
+      ]
+    },
+    {
+      "id": "13-introductions",
+      "file": "13-introductions.json",
+      "title": "Personal introductions",
+      "description": "Ways a user can introduce themselves at the start of a conversation.",
+      "examples": 80,
+      "intents": [
+        "introduction"
+      ]
+    },
+    {
+      "id": "14-asking-a-name",
+      "file": "14-asking-a-name.json",
+      "title": "Asking a conversational partner's name",
+      "description": "Basic questions asking Lexi to identify itself by name.",
+      "examples": 80,
+      "intents": [
+        "ask-name"
+      ]
+    },
+    {
+      "id": "15-apologies",
+      "file": "15-apologies.json",
+      "title": "Making apologies",
+      "description": "Common ways a speaker apologizes for an ordinary conversational mistake.",
+      "examples": 80,
+      "intents": [
+        "apology"
+      ]
+    },
+    {
+      "id": "16-accepting-apologies",
+      "file": "16-accepting-apologies.json",
+      "title": "Accepting apologies",
+      "description": "Reassuring replies that accept an apology and continue the exchange.",
+      "examples": 80,
+      "intents": [
+        "accept-apology"
+      ]
+    },
+    {
+      "id": "17-acknowledgements",
+      "file": "17-acknowledgements.json",
+      "title": "Acknowledging information",
+      "description": "Short turns showing that information was heard or understood.",
+      "examples": 80,
+      "intents": [
+        "acknowledgement"
+      ]
+    },
+    {
+      "id": "18-agreement",
+      "file": "18-agreement.json",
+      "title": "Expressing agreement",
+      "description": "Everyday language for agreeing with an idea or proposed direction.",
+      "examples": 80,
+      "intents": [
+        "agreement"
+      ]
+    },
+    {
+      "id": "19-disagreement",
+      "file": "19-disagreement.json",
+      "title": "Expressing respectful disagreement",
+      "description": "Polite ways to disagree without ending the conversation.",
+      "examples": 80,
+      "intents": [
+        "disagreement"
+      ]
+    },
+    {
+      "id": "20-clarification-requests",
+      "file": "20-clarification-requests.json",
+      "title": "Requests for clarification",
+      "description": "Questions asking for an unclear statement to be made more precise.",
+      "examples": 80,
+      "intents": [
+        "clarification-request"
+      ]
+    },
+    {
+      "id": "21-repetition-requests",
+      "file": "21-repetition-requests.json",
+      "title": "Requests for repetition",
+      "description": "Common requests to repeat or restate information.",
+      "examples": 80,
+      "intents": [
+        "repetition-request"
+      ]
+    },
+    {
+      "id": "22-confirmation-questions",
+      "file": "22-confirmation-questions.json",
+      "title": "Confirmation questions",
+      "description": "Questions checking whether an interpretation or next step is correct.",
+      "examples": 80,
+      "intents": [
+        "confirmation-question"
+      ]
+    },
+    {
+      "id": "23-simple-requests",
+      "file": "23-simple-requests.json",
+      "title": "Simple conversational requests",
+      "description": "Polite requests for basic explanation and presentation actions.",
+      "examples": 80,
+      "intents": [
+        "simple-request"
+      ]
+    },
+    {
+      "id": "24-permission-requests",
+      "file": "24-permission-requests.json",
+      "title": "Asking permission",
+      "description": "Basic questions requesting permission to take an ordinary action.",
+      "examples": 80,
+      "intents": [
+        "permission-request"
+      ]
+    },
+    {
+      "id": "25-offers-to-help",
+      "file": "25-offers-to-help.json",
+      "title": "Offering help",
+      "description": "Ways a speaker offers practical help in a conversation.",
+      "examples": 80,
+      "intents": [
+        "offer-help"
+      ]
+    },
+    {
+      "id": "26-invitations",
+      "file": "26-invitations.json",
+      "title": "Making invitations",
+      "description": "Everyday invitations to shared activities.",
+      "examples": 80,
+      "intents": [
+        "invitation"
+      ]
+    },
+    {
+      "id": "27-accepting-invitations",
+      "file": "27-accepting-invitations.json",
+      "title": "Accepting invitations",
+      "description": "Positive replies accepting an invitation or proposed activity.",
+      "examples": 80,
+      "intents": [
+        "accept-invitation"
+      ]
+    },
+    {
+      "id": "28-declining-invitations",
+      "file": "28-declining-invitations.json",
+      "title": "Declining invitations",
+      "description": "Polite replies declining an invitation or proposed activity.",
+      "examples": 80,
+      "intents": [
+        "decline-invitation"
+      ]
+    },
+    {
+      "id": "29-preference-questions",
+      "file": "29-preference-questions.json",
+      "title": "Asking about preferences",
+      "description": "Simple either-or questions about a conversational partner's preferences.",
+      "examples": 80,
+      "intents": [
+        "preference-question"
+      ]
+    },
+    {
+      "id": "30-expressing-likes",
+      "file": "30-expressing-likes.json",
+      "title": "Expressing likes",
+      "description": "Basic positive preference statements about everyday topics.",
+      "examples": 80,
+      "intents": [
+        "express-like"
+      ]
+    },
+    {
+      "id": "31-expressing-dislikes",
+      "file": "31-expressing-dislikes.json",
+      "title": "Expressing dislikes",
+      "description": "Basic negative preference statements about everyday topics.",
+      "examples": 80,
+      "intents": [
+        "express-dislike"
+      ]
+    },
+    {
+      "id": "32-positive-feelings",
+      "file": "32-positive-feelings.json",
+      "title": "Expressing positive feelings",
+      "description": "Everyday statements describing pleasant emotional states.",
+      "examples": 80,
+      "intents": [
+        "positive-feeling"
+      ]
+    },
+    {
+      "id": "33-negative-feelings",
+      "file": "33-negative-feelings.json",
+      "title": "Expressing difficult feelings",
+      "description": "Everyday statements describing unpleasant emotional states.",
+      "examples": 80,
+      "intents": [
+        "negative-feeling"
+      ]
+    },
+    {
+      "id": "34-compliments",
+      "file": "34-compliments.json",
+      "title": "Giving compliments",
+      "description": "Friendly compliments about a response or conversational quality.",
+      "examples": 80,
+      "intents": [
+        "compliment"
+      ]
+    },
+    {
+      "id": "35-congratulations",
+      "file": "35-congratulations.json",
+      "title": "Offering congratulations",
+      "description": "Common ways to congratulate someone on an achievement.",
+      "examples": 80,
+      "intents": [
+        "congratulations"
+      ]
+    },
+    {
+      "id": "36-encouragement",
+      "file": "36-encouragement.json",
+      "title": "Giving encouragement",
+      "description": "Supportive language encouraging someone to continue an effort.",
+      "examples": 80,
+      "intents": [
+        "encouragement"
+      ]
+    },
+    {
+      "id": "37-small-talk",
+      "file": "37-small-talk.json",
+      "title": "Basic small talk",
+      "description": "Low-stakes questions that open casual conversation with Lexi.",
+      "examples": 80,
+      "intents": [
+        "small-talk"
+      ]
+    },
+    {
+      "id": "38-asking-the-time",
+      "file": "38-asking-the-time.json",
+      "title": "Asking the time",
+      "description": "Questions asking for the current or local time.",
+      "examples": 80,
+      "intents": [
+        "ask-time"
+      ]
+    },
+    {
+      "id": "39-stating-the-time",
+      "file": "39-stating-the-time.json",
+      "title": "Stating a time",
+      "description": "Statements that provide a time for conversational reference.",
+      "examples": 80,
+      "intents": [
+        "state-time"
+      ]
+    },
+    {
+      "id": "40-asking-the-date",
+      "file": "40-asking-the-date.json",
+      "title": "Asking the date",
+      "description": "Questions asking for the current date or day.",
+      "examples": 80,
+      "intents": [
+        "ask-date"
+      ]
+    },
+    {
+      "id": "41-stating-a-date",
+      "file": "41-stating-a-date.json",
+      "title": "Stating a date",
+      "description": "Statements that provide a date for conversational reference.",
+      "examples": 80,
+      "intents": [
+        "state-date"
+      ]
+    },
+    {
+      "id": "42-morning-routines",
+      "file": "42-morning-routines.json",
+      "title": "Morning routines",
+      "description": "Statements about ordinary activities performed in the morning.",
+      "examples": 80,
+      "intents": [
+        "morning-routine"
+      ]
+    },
+    {
+      "id": "43-evening-routines",
+      "file": "43-evening-routines.json",
+      "title": "Evening routines",
+      "description": "Statements about ordinary activities performed in the evening.",
+      "examples": 80,
+      "intents": [
+        "evening-routine"
+      ]
+    },
+    {
+      "id": "44-meal-planning",
+      "file": "44-meal-planning.json",
+      "title": "Planning a meal",
+      "description": "Basic questions and requests about choosing a meal.",
+      "examples": 80,
+      "intents": [
+        "meal-planning"
+      ]
+    },
+    {
+      "id": "45-ordering-food",
+      "file": "45-ordering-food.json",
+      "title": "Ordering food",
+      "description": "Common sentences used to order food in a restaurant or café.",
+      "examples": 80,
+      "intents": [
+        "food-order"
+      ]
+    },
+    {
+      "id": "46-requesting-drinks",
+      "file": "46-requesting-drinks.json",
+      "title": "Requesting drinks",
+      "description": "Common sentences used to request a drink.",
+      "examples": 80,
+      "intents": [
+        "drink-request"
+      ]
+    },
+    {
+      "id": "47-study-activities",
+      "file": "47-study-activities.json",
+      "title": "Study activities",
+      "description": "Statements about ordinary studying and learning activities.",
+      "examples": 80,
+      "intents": [
+        "study-activity"
+      ]
+    },
+    {
+      "id": "48-classroom-help",
+      "file": "48-classroom-help.json",
+      "title": "Classroom help requests",
+      "description": "Requests for basic help with class materials and instructions.",
+      "examples": 80,
+      "intents": [
+        "classroom-help"
+      ]
+    },
+    {
+      "id": "49-work-updates",
+      "file": "49-work-updates.json",
+      "title": "Basic work updates",
+      "description": "Statements reporting ordinary progress on work or a project.",
+      "examples": 80,
+      "intents": [
+        "work-update"
+      ]
+    },
+    {
+      "id": "50-task-planning",
+      "file": "50-task-planning.json",
+      "title": "Planning tasks",
+      "description": "Requests for organizing a bounded task into manageable steps.",
+      "examples": 80,
+      "intents": [
+        "task-planning"
+      ]
+    },
+    {
+      "id": "51-scheduling",
+      "file": "51-scheduling.json",
+      "title": "Scheduling requests",
+      "description": "Requests to arrange a time without claiming calendar access.",
+      "examples": 80,
+      "intents": [
+        "scheduling-request"
+      ]
+    },
+    {
+      "id": "52-shopping-availability",
+      "file": "52-shopping-availability.json",
+      "title": "Asking about product availability",
+      "description": "Shopping questions asking whether an ordinary item is available.",
+      "examples": 80,
+      "intents": [
+        "product-availability"
+      ]
+    },
+    {
+      "id": "53-price-questions",
+      "file": "53-price-questions.json",
+      "title": "Asking prices",
+      "description": "Shopping questions asking for the price of an ordinary item.",
+      "examples": 80,
+      "intents": [
+        "price-question"
+      ]
+    },
+    {
+      "id": "54-quantity-requests",
+      "file": "54-quantity-requests.json",
+      "title": "Requests with quantities",
+      "description": "Ordinary requests specifying a count or amount.",
+      "examples": 80,
+      "intents": [
+        "quantity-request"
+      ]
+    },
+    {
+      "id": "55-travel-planning",
+      "file": "55-travel-planning.json",
+      "title": "Basic travel planning",
+      "description": "Requests for organizing a trip without claiming live booking access.",
+      "examples": 80,
+      "intents": [
+        "travel-planning"
+      ]
+    },
+    {
+      "id": "56-transport-questions",
+      "file": "56-transport-questions.json",
+      "title": "Transportation questions",
+      "description": "Questions about reaching a place by common transportation modes.",
+      "examples": 80,
+      "intents": [
+        "transport-question"
+      ]
+    },
+    {
+      "id": "57-direction-requests",
+      "file": "57-direction-requests.json",
+      "title": "Requests for directions",
+      "description": "Questions asking how to reach a common type of destination.",
+      "examples": 80,
+      "intents": [
+        "direction-request"
+      ]
+    },
+    {
+      "id": "58-location-questions",
+      "file": "58-location-questions.json",
+      "title": "Location questions",
+      "description": "Questions asking where a common place or object is located.",
+      "examples": 80,
+      "intents": [
+        "location-question"
+      ]
+    },
+    {
+      "id": "59-weather-questions",
+      "file": "59-weather-questions.json",
+      "title": "Basic weather questions",
+      "description": "Questions about current or near-term weather conditions.",
+      "examples": 80,
+      "intents": [
+        "weather-question"
+      ]
+    },
+    {
+      "id": "60-clothing-considerations",
+      "file": "60-clothing-considerations.json",
+      "title": "Choosing clothing for conditions",
+      "description": "Questions about choosing clothing based on stated activities or conditions.",
+      "examples": 80,
+      "intents": [
+        "clothing-consideration"
+      ]
+    },
+    {
+      "id": "61-household-chores",
+      "file": "61-household-chores.json",
+      "title": "Household chores",
+      "description": "Statements about ordinary household tasks.",
+      "examples": 80,
+      "intents": [
+        "household-chore"
+      ]
+    },
+    {
+      "id": "62-sleep-routines",
+      "file": "62-sleep-routines.json",
+      "title": "Sleep routines",
+      "description": "Statements about ordinary non-medical bedtime and waking habits.",
+      "examples": 80,
+      "intents": [
+        "sleep-routine"
+      ]
+    }
+  ]
+}

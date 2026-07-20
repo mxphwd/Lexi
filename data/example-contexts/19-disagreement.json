@@ -1,0 +1,1502 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "19-disagreement",
+    "title": "Expressing respectful disagreement",
+    "description": "Polite ways to disagree without ending the conversation.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "19-disagreement-001",
+      "intent": "disagreement",
+      "input": "I disagree about the main point.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "disagree",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-002",
+      "intent": "disagreement",
+      "input": "I disagree on this issue.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "disagree",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-003",
+      "intent": "disagreement",
+      "input": "I disagree with that explanation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "disagree",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-004",
+      "intent": "disagreement",
+      "input": "I disagree about the next step.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "disagree",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-005",
+      "intent": "disagreement",
+      "input": "I disagree with the proposed plan.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "disagree",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-006",
+      "intent": "disagreement",
+      "input": "I disagree on the basic idea.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "disagree",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-007",
+      "intent": "disagreement",
+      "input": "I disagree with that conclusion.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "disagree",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-008",
+      "intent": "disagreement",
+      "input": "I disagree about how to proceed.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "disagree",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-009",
+      "intent": "disagreement",
+      "input": "I disagree with that interpretation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "disagree",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-010",
+      "intent": "disagreement",
+      "input": "I disagree on what matters most.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "disagree",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-011",
+      "intent": "disagreement",
+      "input": "I do not think so about the main point.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-012",
+      "intent": "disagreement",
+      "input": "I do not think so on this issue.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-013",
+      "intent": "disagreement",
+      "input": "I do not think so with that explanation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-014",
+      "intent": "disagreement",
+      "input": "I do not think so about the next step.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-015",
+      "intent": "disagreement",
+      "input": "I do not think so with the proposed plan.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-016",
+      "intent": "disagreement",
+      "input": "I do not think so on the basic idea.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-017",
+      "intent": "disagreement",
+      "input": "I do not think so with that conclusion.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-018",
+      "intent": "disagreement",
+      "input": "I do not think so about how to proceed.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-019",
+      "intent": "disagreement",
+      "input": "I do not think so with that interpretation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-020",
+      "intent": "disagreement",
+      "input": "I do not think so on what matters most.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "think",
+        "so",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-021",
+      "intent": "disagreement",
+      "input": "I see it differently about the main point.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "see",
+        "differently",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-022",
+      "intent": "disagreement",
+      "input": "I see it differently on this issue.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "see",
+        "differently",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-023",
+      "intent": "disagreement",
+      "input": "I see it differently with that explanation.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "see",
+        "differently",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-024",
+      "intent": "disagreement",
+      "input": "I see it differently about the next step.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "see",
+        "differently",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-025",
+      "intent": "disagreement",
+      "input": "I see it differently with the proposed plan.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "see",
+        "differently",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-026",
+      "intent": "disagreement",
+      "input": "I see it differently on the basic idea.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "see",
+        "differently",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-027",
+      "intent": "disagreement",
+      "input": "I see it differently with that conclusion.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "see",
+        "differently",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-028",
+      "intent": "disagreement",
+      "input": "I see it differently about how to proceed.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "see",
+        "differently",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-029",
+      "intent": "disagreement",
+      "input": "I see it differently with that interpretation.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "see",
+        "differently",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-030",
+      "intent": "disagreement",
+      "input": "I see it differently on what matters most.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "see",
+        "differently",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-031",
+      "intent": "disagreement",
+      "input": "I'm not convinced about the main point.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "convinced",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-032",
+      "intent": "disagreement",
+      "input": "I'm not convinced on this issue.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "convinced",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-033",
+      "intent": "disagreement",
+      "input": "I'm not convinced with that explanation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "convinced",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-034",
+      "intent": "disagreement",
+      "input": "I'm not convinced about the next step.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "convinced",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-035",
+      "intent": "disagreement",
+      "input": "I'm not convinced with the proposed plan.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "convinced",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-036",
+      "intent": "disagreement",
+      "input": "I'm not convinced on the basic idea.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "convinced",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-037",
+      "intent": "disagreement",
+      "input": "I'm not convinced with that conclusion.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "convinced",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-038",
+      "intent": "disagreement",
+      "input": "I'm not convinced about how to proceed.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "not",
+        "convinced",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-039",
+      "intent": "disagreement",
+      "input": "I'm not convinced with that interpretation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "not",
+        "convinced",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-040",
+      "intent": "disagreement",
+      "input": "I'm not convinced on what matters most.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "not",
+        "convinced",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-041",
+      "intent": "disagreement",
+      "input": "That does not seem right about the main point.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-042",
+      "intent": "disagreement",
+      "input": "That does not seem right on this issue.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-043",
+      "intent": "disagreement",
+      "input": "That does not seem right with that explanation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-044",
+      "intent": "disagreement",
+      "input": "That does not seem right about the next step.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-045",
+      "intent": "disagreement",
+      "input": "That does not seem right with the proposed plan.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-046",
+      "intent": "disagreement",
+      "input": "That does not seem right on the basic idea.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-047",
+      "intent": "disagreement",
+      "input": "That does not seem right with that conclusion.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-048",
+      "intent": "disagreement",
+      "input": "That does not seem right about how to proceed.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-049",
+      "intent": "disagreement",
+      "input": "That does not seem right with that interpretation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-050",
+      "intent": "disagreement",
+      "input": "That does not seem right on what matters most.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "that",
+        "not",
+        "seem",
+        "right",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-051",
+      "intent": "disagreement",
+      "input": "I have another view about the main point.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-052",
+      "intent": "disagreement",
+      "input": "I have another view on this issue.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-053",
+      "intent": "disagreement",
+      "input": "I have another view with that explanation.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-054",
+      "intent": "disagreement",
+      "input": "I have another view about the next step.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-055",
+      "intent": "disagreement",
+      "input": "I have another view with the proposed plan.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-056",
+      "intent": "disagreement",
+      "input": "I have another view on the basic idea.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-057",
+      "intent": "disagreement",
+      "input": "I have another view with that conclusion.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-058",
+      "intent": "disagreement",
+      "input": "I have another view about how to proceed.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-059",
+      "intent": "disagreement",
+      "input": "I have another view with that interpretation.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-060",
+      "intent": "disagreement",
+      "input": "I have another view on what matters most.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "have",
+        "another",
+        "view",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-061",
+      "intent": "disagreement",
+      "input": "I cannot agree about the main point.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-062",
+      "intent": "disagreement",
+      "input": "I cannot agree on this issue.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-063",
+      "intent": "disagreement",
+      "input": "I cannot agree with that explanation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-064",
+      "intent": "disagreement",
+      "input": "I cannot agree about the next step.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-065",
+      "intent": "disagreement",
+      "input": "I cannot agree with the proposed plan.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-066",
+      "intent": "disagreement",
+      "input": "I cannot agree on the basic idea.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-067",
+      "intent": "disagreement",
+      "input": "I cannot agree with that conclusion.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-068",
+      "intent": "disagreement",
+      "input": "I cannot agree about how to proceed.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-069",
+      "intent": "disagreement",
+      "input": "I cannot agree with that interpretation.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-070",
+      "intent": "disagreement",
+      "input": "I cannot agree on what matters most.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "cannot",
+        "agree",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-071",
+      "intent": "disagreement",
+      "input": "I respectfully disagree about the main point.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-072",
+      "intent": "disagreement",
+      "input": "I respectfully disagree on this issue.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-073",
+      "intent": "disagreement",
+      "input": "I respectfully disagree with that explanation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-074",
+      "intent": "disagreement",
+      "input": "I respectfully disagree about the next step.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-075",
+      "intent": "disagreement",
+      "input": "I respectfully disagree with the proposed plan.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-076",
+      "intent": "disagreement",
+      "input": "I respectfully disagree on the basic idea.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-077",
+      "intent": "disagreement",
+      "input": "I respectfully disagree with that conclusion.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "that",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-078",
+      "intent": "disagreement",
+      "input": "I respectfully disagree about how to proceed.",
+      "response": "I recognize the disagreement and can compare the competing statements if you provide them.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-079",
+      "intent": "disagreement",
+      "input": "I respectfully disagree with that interpretation.",
+      "response": "Your disagreement is clear. You can state the specific point you would change.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    },
+    {
+      "id": "19-disagreement-080",
+      "intent": "disagreement",
+      "input": "I respectfully disagree on what matters most.",
+      "response": "Understood. A different view has been expressed.",
+      "keywords": [
+        "respectfully",
+        "disagree",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize disagreement",
+        "tone": "cautious"
+      }
+    }
+  ]
+}

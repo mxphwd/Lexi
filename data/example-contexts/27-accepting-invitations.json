@@ -1,0 +1,1537 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "27-accepting-invitations",
+    "title": "Accepting invitations",
+    "description": "Positive replies accepting an invitation or proposed activity.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "27-accepting-invitations-001",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to talk for a while.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "like",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-002",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to work through an example.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "like",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-003",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to review the main idea.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "like",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-004",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to continue the discussion.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "like",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-005",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to explore another topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "like",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-006",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to practice a conversation.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "like",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-007",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to look at the next question.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "like",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-008",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to compare two sentences.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "like",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-009",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to solve the language problem.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "like",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-010",
+      "intent": "accept-invitation",
+      "input": "Yes, I'd like to begin a new topic.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "like",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-011",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's talk for a while.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-012",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's work through an example.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-013",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's review the main idea.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-014",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's continue the discussion.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-015",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's explore another topic.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-016",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's practice a conversation.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-017",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's look at the next question.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-018",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's compare two sentences.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-019",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's solve the language problem.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-020",
+      "intent": "accept-invitation",
+      "input": "That sounds good; let's begin a new topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "sounds",
+        "good",
+        "let",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-021",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to talk for a while.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "happy",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-022",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to work through an example.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "happy",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-023",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to review the main idea.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "happy",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-024",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to continue the discussion.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "happy",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-025",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to explore another topic.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "happy",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-026",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to practice a conversation.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "happy",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-027",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to look at the next question.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "happy",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-028",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to compare two sentences.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "happy",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-029",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to solve the language problem.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "happy",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-030",
+      "intent": "accept-invitation",
+      "input": "I'd be happy to begin a new topic.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "happy",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-031",
+      "intent": "accept-invitation",
+      "input": "Sure, we can talk for a while.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "sure",
+        "can",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-032",
+      "intent": "accept-invitation",
+      "input": "Sure, we can work through an example.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "sure",
+        "can",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-033",
+      "intent": "accept-invitation",
+      "input": "Sure, we can review the main idea.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "sure",
+        "can",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-034",
+      "intent": "accept-invitation",
+      "input": "Sure, we can continue the discussion.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "sure",
+        "can",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-035",
+      "intent": "accept-invitation",
+      "input": "Sure, we can explore another topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "sure",
+        "can",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-036",
+      "intent": "accept-invitation",
+      "input": "Sure, we can practice a conversation.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "sure",
+        "can",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-037",
+      "intent": "accept-invitation",
+      "input": "Sure, we can look at the next question.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "sure",
+        "can",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-038",
+      "intent": "accept-invitation",
+      "input": "Sure, we can compare two sentences.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "sure",
+        "can",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-039",
+      "intent": "accept-invitation",
+      "input": "Sure, we can solve the language problem.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "sure",
+        "can",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-040",
+      "intent": "accept-invitation",
+      "input": "Sure, we can begin a new topic.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "sure",
+        "can",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-041",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's talk for a while.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "count",
+        "let",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-042",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's work through an example.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "count",
+        "let",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-043",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's review the main idea.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "count",
+        "let",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-044",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's continue the discussion.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "count",
+        "let",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-045",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's explore another topic.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "count",
+        "let",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-046",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's practice a conversation.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "count",
+        "let",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-047",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's look at the next question.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "count",
+        "let",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-048",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's compare two sentences.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "count",
+        "let",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-049",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's solve the language problem.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "count",
+        "let",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-050",
+      "intent": "accept-invitation",
+      "input": "Count me in; let's begin a new topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "count",
+        "let",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-051",
+      "intent": "accept-invitation",
+      "input": "I accept; let's talk for a while.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "accept",
+        "let",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-052",
+      "intent": "accept-invitation",
+      "input": "I accept; let's work through an example.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "accept",
+        "let",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-053",
+      "intent": "accept-invitation",
+      "input": "I accept; let's review the main idea.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "accept",
+        "let",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-054",
+      "intent": "accept-invitation",
+      "input": "I accept; let's continue the discussion.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "accept",
+        "let",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-055",
+      "intent": "accept-invitation",
+      "input": "I accept; let's explore another topic.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "accept",
+        "let",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-056",
+      "intent": "accept-invitation",
+      "input": "I accept; let's practice a conversation.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "accept",
+        "let",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-057",
+      "intent": "accept-invitation",
+      "input": "I accept; let's look at the next question.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "accept",
+        "let",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-058",
+      "intent": "accept-invitation",
+      "input": "I accept; let's compare two sentences.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "accept",
+        "let",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-059",
+      "intent": "accept-invitation",
+      "input": "I accept; let's solve the language problem.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "accept",
+        "let",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-060",
+      "intent": "accept-invitation",
+      "input": "I accept; let's begin a new topic.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "accept",
+        "let",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-061",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's talk for a while.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-062",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's work through an example.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-063",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's review the main idea.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-064",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's continue the discussion.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-065",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's explore another topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-066",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's practice a conversation.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-067",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's look at the next question.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-068",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's compare two sentences.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-069",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's solve the language problem.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-070",
+      "intent": "accept-invitation",
+      "input": "That would be nice; let's begin a new topic.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "that",
+        "would",
+        "nice",
+        "let",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-071",
+      "intent": "accept-invitation",
+      "input": "Yes, I can talk for a while.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "can",
+        "talk",
+        "while"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-072",
+      "intent": "accept-invitation",
+      "input": "Yes, I can work through an example.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "can",
+        "work",
+        "through",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-073",
+      "intent": "accept-invitation",
+      "input": "Yes, I can review the main idea.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "can",
+        "review",
+        "main",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-074",
+      "intent": "accept-invitation",
+      "input": "Yes, I can continue the discussion.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "can",
+        "continue",
+        "discussion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-075",
+      "intent": "accept-invitation",
+      "input": "Yes, I can explore another topic.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "can",
+        "explore",
+        "another",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-076",
+      "intent": "accept-invitation",
+      "input": "Yes, I can practice a conversation.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "can",
+        "practice",
+        "conversation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-077",
+      "intent": "accept-invitation",
+      "input": "Yes, I can look at the next question.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "can",
+        "look",
+        "next",
+        "question"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-078",
+      "intent": "accept-invitation",
+      "input": "Yes, I can compare two sentences.",
+      "response": "Your acceptance is clear, so the proposed activity can begin.",
+      "keywords": [
+        "yes",
+        "can",
+        "compare",
+        "two",
+        "sentences"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-079",
+      "intent": "accept-invitation",
+      "input": "Yes, I can solve the language problem.",
+      "response": "The invitation has been accepted.",
+      "keywords": [
+        "yes",
+        "can",
+        "solve",
+        "language",
+        "problem"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "27-accepting-invitations-080",
+      "intent": "accept-invitation",
+      "input": "Yes, I can begin a new topic.",
+      "response": "Understood. You would like to take part.",
+      "keywords": [
+        "yes",
+        "can",
+        "begin",
+        "new",
+        "topic"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an invitation",
+        "tone": "warm"
+      }
+    }
+  ]
+}

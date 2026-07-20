@@ -1,0 +1,1449 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "34-compliments",
+    "title": "Giving compliments",
+    "description": "Friendly compliments about a response or conversational quality.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "34-compliments-001",
+      "intent": "compliment",
+      "input": "That explanation was helpful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-002",
+      "intent": "compliment",
+      "input": "That explanation was clear.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-003",
+      "intent": "compliment",
+      "input": "That explanation was thoughtful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-004",
+      "intent": "compliment",
+      "input": "That explanation was useful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-005",
+      "intent": "compliment",
+      "input": "That explanation was easy to follow.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-006",
+      "intent": "compliment",
+      "input": "That explanation was well organized.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-007",
+      "intent": "compliment",
+      "input": "That explanation was precise.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-008",
+      "intent": "compliment",
+      "input": "That explanation was interesting.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-009",
+      "intent": "compliment",
+      "input": "That explanation was better than I expected.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-010",
+      "intent": "compliment",
+      "input": "That explanation was exactly what I needed.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "that",
+        "explanation",
+        "was",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-011",
+      "intent": "compliment",
+      "input": "Your answer was helpful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "answer",
+        "was",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-012",
+      "intent": "compliment",
+      "input": "Your answer was clear.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "answer",
+        "was",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-013",
+      "intent": "compliment",
+      "input": "Your answer was thoughtful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "answer",
+        "was",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-014",
+      "intent": "compliment",
+      "input": "Your answer was useful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "answer",
+        "was",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-015",
+      "intent": "compliment",
+      "input": "Your answer was easy to follow.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "answer",
+        "was",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-016",
+      "intent": "compliment",
+      "input": "Your answer was well organized.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "answer",
+        "was",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-017",
+      "intent": "compliment",
+      "input": "Your answer was precise.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "answer",
+        "was",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-018",
+      "intent": "compliment",
+      "input": "Your answer was interesting.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "answer",
+        "was",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-019",
+      "intent": "compliment",
+      "input": "Your answer was better than I expected.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "answer",
+        "was",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-020",
+      "intent": "compliment",
+      "input": "Your answer was exactly what I needed.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "answer",
+        "was",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-021",
+      "intent": "compliment",
+      "input": "You were helpful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "were",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-022",
+      "intent": "compliment",
+      "input": "You were clear.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "were",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-023",
+      "intent": "compliment",
+      "input": "You were thoughtful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "were",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-024",
+      "intent": "compliment",
+      "input": "You were useful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "were",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-025",
+      "intent": "compliment",
+      "input": "You were easy to follow.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "were",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-026",
+      "intent": "compliment",
+      "input": "You were well organized.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "were",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-027",
+      "intent": "compliment",
+      "input": "You were precise.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "were",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-028",
+      "intent": "compliment",
+      "input": "You were interesting.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "were",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-029",
+      "intent": "compliment",
+      "input": "You were better than I expected.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "were",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-030",
+      "intent": "compliment",
+      "input": "You were exactly what I needed.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "were",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-031",
+      "intent": "compliment",
+      "input": "This explanation is helpful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "explanation",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-032",
+      "intent": "compliment",
+      "input": "This explanation is clear.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "explanation",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-033",
+      "intent": "compliment",
+      "input": "This explanation is thoughtful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "explanation",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-034",
+      "intent": "compliment",
+      "input": "This explanation is useful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "explanation",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-035",
+      "intent": "compliment",
+      "input": "This explanation is easy to follow.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "explanation",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-036",
+      "intent": "compliment",
+      "input": "This explanation is well organized.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "explanation",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-037",
+      "intent": "compliment",
+      "input": "This explanation is precise.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "explanation",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-038",
+      "intent": "compliment",
+      "input": "This explanation is interesting.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "explanation",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-039",
+      "intent": "compliment",
+      "input": "This explanation is better than I expected.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "explanation",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-040",
+      "intent": "compliment",
+      "input": "This explanation is exactly what I needed.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "explanation",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-041",
+      "intent": "compliment",
+      "input": "I think your response is helpful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "think",
+        "response",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-042",
+      "intent": "compliment",
+      "input": "I think your response is clear.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "think",
+        "response",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-043",
+      "intent": "compliment",
+      "input": "I think your response is thoughtful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "think",
+        "response",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-044",
+      "intent": "compliment",
+      "input": "I think your response is useful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "think",
+        "response",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-045",
+      "intent": "compliment",
+      "input": "I think your response is easy to follow.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "think",
+        "response",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-046",
+      "intent": "compliment",
+      "input": "I think your response is well organized.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "think",
+        "response",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-047",
+      "intent": "compliment",
+      "input": "I think your response is precise.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "think",
+        "response",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-048",
+      "intent": "compliment",
+      "input": "I think your response is interesting.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "think",
+        "response",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-049",
+      "intent": "compliment",
+      "input": "I think your response is better than I expected.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "think",
+        "response",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-050",
+      "intent": "compliment",
+      "input": "I think your response is exactly what I needed.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "think",
+        "response",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-051",
+      "intent": "compliment",
+      "input": "The way you explained that was helpful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-052",
+      "intent": "compliment",
+      "input": "The way you explained that was clear.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-053",
+      "intent": "compliment",
+      "input": "The way you explained that was thoughtful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-054",
+      "intent": "compliment",
+      "input": "The way you explained that was useful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-055",
+      "intent": "compliment",
+      "input": "The way you explained that was easy to follow.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-056",
+      "intent": "compliment",
+      "input": "The way you explained that was well organized.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-057",
+      "intent": "compliment",
+      "input": "The way you explained that was precise.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-058",
+      "intent": "compliment",
+      "input": "The way you explained that was interesting.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-059",
+      "intent": "compliment",
+      "input": "The way you explained that was better than I expected.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-060",
+      "intent": "compliment",
+      "input": "The way you explained that was exactly what I needed.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "way",
+        "explained",
+        "that",
+        "was",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-061",
+      "intent": "compliment",
+      "input": "Your help has been helpful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-062",
+      "intent": "compliment",
+      "input": "Your help has been clear.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-063",
+      "intent": "compliment",
+      "input": "Your help has been thoughtful.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-064",
+      "intent": "compliment",
+      "input": "Your help has been useful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-065",
+      "intent": "compliment",
+      "input": "Your help has been easy to follow.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-066",
+      "intent": "compliment",
+      "input": "Your help has been well organized.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-067",
+      "intent": "compliment",
+      "input": "Your help has been precise.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-068",
+      "intent": "compliment",
+      "input": "Your help has been interesting.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-069",
+      "intent": "compliment",
+      "input": "Your help has been better than I expected.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-070",
+      "intent": "compliment",
+      "input": "Your help has been exactly what I needed.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "help",
+        "has",
+        "been",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-071",
+      "intent": "compliment",
+      "input": "I found that answer helpful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-072",
+      "intent": "compliment",
+      "input": "I found that answer clear.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "clear"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-073",
+      "intent": "compliment",
+      "input": "I found that answer thoughtful.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "thoughtful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-074",
+      "intent": "compliment",
+      "input": "I found that answer useful.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "useful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-075",
+      "intent": "compliment",
+      "input": "I found that answer easy to follow.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "easy",
+        "follow"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-076",
+      "intent": "compliment",
+      "input": "I found that answer well organized.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "well",
+        "organized"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-077",
+      "intent": "compliment",
+      "input": "I found that answer precise.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "precise"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-078",
+      "intent": "compliment",
+      "input": "I found that answer interesting.",
+      "response": "Thank you. I am glad the recorded response matched what you needed.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "interesting"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-079",
+      "intent": "compliment",
+      "input": "I found that answer better than I expected.",
+      "response": "Thank you for the compliment.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "better",
+        "than",
+        "expected"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "34-compliments-080",
+      "intent": "compliment",
+      "input": "I found that answer exactly what I needed.",
+      "response": "I appreciate the positive feedback.",
+      "keywords": [
+        "found",
+        "that",
+        "answer",
+        "exactly",
+        "what",
+        "needed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "accept a compliment",
+        "tone": "warm"
+      }
+    }
+  ]
+}

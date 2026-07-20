@@ -1,0 +1,1481 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "16-accepting-apologies",
+    "title": "Accepting apologies",
+    "description": "Reassuring replies that accept an apology and continue the exchange.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "16-accepting-apologies-001",
+      "intent": "accept-apology",
+      "input": "That's okay about the delay.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "that",
+        "okay",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-002",
+      "intent": "accept-apology",
+      "input": "That's okay about the confusion.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "that",
+        "okay",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-003",
+      "intent": "accept-apology",
+      "input": "That's okay about the interruption.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "that",
+        "okay",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-004",
+      "intent": "accept-apology",
+      "input": "That's okay about the misunderstanding.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "that",
+        "okay",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-005",
+      "intent": "accept-apology",
+      "input": "That's okay about the mistake.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "that",
+        "okay",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-006",
+      "intent": "accept-apology",
+      "input": "That's okay this time.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "that",
+        "okay",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-007",
+      "intent": "accept-apology",
+      "input": "That's okay and appreciate the apology.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "that",
+        "okay",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-008",
+      "intent": "accept-apology",
+      "input": "That's okay so let us continue.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "that",
+        "okay",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-009",
+      "intent": "accept-apology",
+      "input": "That's okay and there are no hard feelings.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "that",
+        "okay",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-010",
+      "intent": "accept-apology",
+      "input": "That's okay because mistakes happen.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "that",
+        "okay",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-011",
+      "intent": "accept-apology",
+      "input": "No problem about the delay.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "no",
+        "problem",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-012",
+      "intent": "accept-apology",
+      "input": "No problem about the confusion.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "no",
+        "problem",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-013",
+      "intent": "accept-apology",
+      "input": "No problem about the interruption.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "no",
+        "problem",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-014",
+      "intent": "accept-apology",
+      "input": "No problem about the misunderstanding.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "no",
+        "problem",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-015",
+      "intent": "accept-apology",
+      "input": "No problem about the mistake.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "no",
+        "problem",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-016",
+      "intent": "accept-apology",
+      "input": "No problem this time.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "no",
+        "problem",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-017",
+      "intent": "accept-apology",
+      "input": "No problem and appreciate the apology.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "no",
+        "problem",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-018",
+      "intent": "accept-apology",
+      "input": "No problem so let us continue.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "no",
+        "problem",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-019",
+      "intent": "accept-apology",
+      "input": "No problem and there are no hard feelings.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "no",
+        "problem",
+        "there",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-020",
+      "intent": "accept-apology",
+      "input": "No problem because mistakes happen.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "no",
+        "problem",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-021",
+      "intent": "accept-apology",
+      "input": "I accept your apology about the delay.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "accept",
+        "apology",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-022",
+      "intent": "accept-apology",
+      "input": "I accept your apology about the confusion.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "accept",
+        "apology",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-023",
+      "intent": "accept-apology",
+      "input": "I accept your apology about the interruption.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "accept",
+        "apology",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-024",
+      "intent": "accept-apology",
+      "input": "I accept your apology about the misunderstanding.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "accept",
+        "apology",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-025",
+      "intent": "accept-apology",
+      "input": "I accept your apology about the mistake.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "accept",
+        "apology",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-026",
+      "intent": "accept-apology",
+      "input": "I accept your apology this time.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "accept",
+        "apology",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-027",
+      "intent": "accept-apology",
+      "input": "I accept your apology and appreciate the apology.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "accept",
+        "apology",
+        "appreciate"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-028",
+      "intent": "accept-apology",
+      "input": "I accept your apology so let us continue.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "accept",
+        "apology",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-029",
+      "intent": "accept-apology",
+      "input": "I accept your apology and there are no hard feelings.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "accept",
+        "apology",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-030",
+      "intent": "accept-apology",
+      "input": "I accept your apology because mistakes happen.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "accept",
+        "apology",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-031",
+      "intent": "accept-apology",
+      "input": "Do not worry about the delay.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "not",
+        "worry",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-032",
+      "intent": "accept-apology",
+      "input": "Do not worry about the confusion.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "not",
+        "worry",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-033",
+      "intent": "accept-apology",
+      "input": "Do not worry about the interruption.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "not",
+        "worry",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-034",
+      "intent": "accept-apology",
+      "input": "Do not worry about the misunderstanding.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "not",
+        "worry",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-035",
+      "intent": "accept-apology",
+      "input": "Do not worry about the mistake.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "not",
+        "worry",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-036",
+      "intent": "accept-apology",
+      "input": "Do not worry this time.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "not",
+        "worry",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-037",
+      "intent": "accept-apology",
+      "input": "Do not worry and appreciate the apology.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "not",
+        "worry",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-038",
+      "intent": "accept-apology",
+      "input": "Do not worry so let us continue.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "not",
+        "worry",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-039",
+      "intent": "accept-apology",
+      "input": "Do not worry and there are no hard feelings.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "not",
+        "worry",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-040",
+      "intent": "accept-apology",
+      "input": "Do not worry because mistakes happen.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "not",
+        "worry",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-041",
+      "intent": "accept-apology",
+      "input": "It is all right about the delay.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "all",
+        "right",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-042",
+      "intent": "accept-apology",
+      "input": "It is all right about the confusion.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "all",
+        "right",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-043",
+      "intent": "accept-apology",
+      "input": "It is all right about the interruption.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "all",
+        "right",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-044",
+      "intent": "accept-apology",
+      "input": "It is all right about the misunderstanding.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "all",
+        "right",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-045",
+      "intent": "accept-apology",
+      "input": "It is all right about the mistake.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "all",
+        "right",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-046",
+      "intent": "accept-apology",
+      "input": "It is all right this time.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "all",
+        "right",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-047",
+      "intent": "accept-apology",
+      "input": "It is all right and appreciate the apology.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "all",
+        "right",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-048",
+      "intent": "accept-apology",
+      "input": "It is all right so let us continue.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "all",
+        "right",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-049",
+      "intent": "accept-apology",
+      "input": "It is all right and there are no hard feelings.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "all",
+        "right",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-050",
+      "intent": "accept-apology",
+      "input": "It is all right because mistakes happen.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "all",
+        "right",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-051",
+      "intent": "accept-apology",
+      "input": "We can move on about the delay.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "can",
+        "move",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-052",
+      "intent": "accept-apology",
+      "input": "We can move on about the confusion.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "can",
+        "move",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-053",
+      "intent": "accept-apology",
+      "input": "We can move on about the interruption.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "can",
+        "move",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-054",
+      "intent": "accept-apology",
+      "input": "We can move on about the misunderstanding.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "can",
+        "move",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-055",
+      "intent": "accept-apology",
+      "input": "We can move on about the mistake.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "can",
+        "move",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-056",
+      "intent": "accept-apology",
+      "input": "We can move on this time.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "can",
+        "move",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-057",
+      "intent": "accept-apology",
+      "input": "We can move on and appreciate the apology.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "can",
+        "move",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-058",
+      "intent": "accept-apology",
+      "input": "We can move on so let us continue.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "can",
+        "move",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-059",
+      "intent": "accept-apology",
+      "input": "We can move on and there are no hard feelings.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "can",
+        "move",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-060",
+      "intent": "accept-apology",
+      "input": "We can move on because mistakes happen.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "can",
+        "move",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-061",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry about the delay.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-062",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry about the confusion.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-063",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry about the interruption.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-064",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry about the misunderstanding.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-065",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry about the mistake.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-066",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry this time.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-067",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry and appreciate the apology.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-068",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry so let us continue.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-069",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry and there are no hard feelings.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-070",
+      "intent": "accept-apology",
+      "input": "Thanks for saying sorry because mistakes happen.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "thanks",
+        "saying",
+        "sorry",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-071",
+      "intent": "accept-apology",
+      "input": "I understand about the delay.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "understand",
+        "about",
+        "delay"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-072",
+      "intent": "accept-apology",
+      "input": "I understand about the confusion.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "understand",
+        "about",
+        "confusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-073",
+      "intent": "accept-apology",
+      "input": "I understand about the interruption.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "understand",
+        "about",
+        "interruption"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-074",
+      "intent": "accept-apology",
+      "input": "I understand about the misunderstanding.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "understand",
+        "about",
+        "misunderstanding"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-075",
+      "intent": "accept-apology",
+      "input": "I understand about the mistake.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "understand",
+        "about",
+        "mistake"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-076",
+      "intent": "accept-apology",
+      "input": "I understand this time.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "understand",
+        "time"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-077",
+      "intent": "accept-apology",
+      "input": "I understand and appreciate the apology.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "understand",
+        "appreciate",
+        "apology"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-078",
+      "intent": "accept-apology",
+      "input": "I understand so let us continue.",
+      "response": "That acceptance is clear; we can move to the next point.",
+      "keywords": [
+        "understand",
+        "so",
+        "let",
+        "us",
+        "continue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-079",
+      "intent": "accept-apology",
+      "input": "I understand and there are no hard feelings.",
+      "response": "Thank you. I understand that the apology has been accepted.",
+      "keywords": [
+        "understand",
+        "there",
+        "no",
+        "hard",
+        "feelings"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "16-accepting-apologies-080",
+      "intent": "accept-apology",
+      "input": "I understand because mistakes happen.",
+      "response": "Understood. The conversation can continue.",
+      "keywords": [
+        "understand",
+        "because",
+        "mistakes",
+        "happen"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize acceptance of an apology",
+        "tone": "warm"
+      }
+    }
+  ]
+}

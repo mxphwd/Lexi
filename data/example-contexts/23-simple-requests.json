@@ -1,0 +1,1465 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "23-simple-requests",
+    "title": "Simple conversational requests",
+    "description": "Polite requests for basic explanation and presentation actions.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "23-simple-requests-001",
+      "intent": "simple-request",
+      "input": "Please explain that simply.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "please",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-002",
+      "intent": "simple-request",
+      "input": "Please give one example.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "please",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-003",
+      "intent": "simple-request",
+      "input": "Please summarize the main point.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "please",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-004",
+      "intent": "simple-request",
+      "input": "Please show the next step.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "please",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-005",
+      "intent": "simple-request",
+      "input": "Please use shorter words.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "please",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-006",
+      "intent": "simple-request",
+      "input": "Please list the basic ideas.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "please",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-007",
+      "intent": "simple-request",
+      "input": "Please describe the difference.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "please",
+        "describe",
+        "difference"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-008",
+      "intent": "simple-request",
+      "input": "Please state the answer directly.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "please",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-009",
+      "intent": "simple-request",
+      "input": "Please help me begin.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "please",
+        "help",
+        "begin"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-010",
+      "intent": "simple-request",
+      "input": "Please make the instructions clearer.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "please",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-011",
+      "intent": "simple-request",
+      "input": "Could you explain that simply.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "could",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-012",
+      "intent": "simple-request",
+      "input": "Could you give one example.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "could",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-013",
+      "intent": "simple-request",
+      "input": "Could you summarize the main point.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "could",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-014",
+      "intent": "simple-request",
+      "input": "Could you show the next step.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "could",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-015",
+      "intent": "simple-request",
+      "input": "Could you use shorter words.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "could",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-016",
+      "intent": "simple-request",
+      "input": "Could you list the basic ideas.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "could",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-017",
+      "intent": "simple-request",
+      "input": "Could you describe the difference.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "could",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-018",
+      "intent": "simple-request",
+      "input": "Could you state the answer directly.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "could",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-019",
+      "intent": "simple-request",
+      "input": "Could you help me begin.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "could",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-020",
+      "intent": "simple-request",
+      "input": "Could you make the instructions clearer.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "could",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-021",
+      "intent": "simple-request",
+      "input": "Can you explain that simply.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "can",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-022",
+      "intent": "simple-request",
+      "input": "Can you give one example.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "can",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-023",
+      "intent": "simple-request",
+      "input": "Can you summarize the main point.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "can",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-024",
+      "intent": "simple-request",
+      "input": "Can you show the next step.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "can",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-025",
+      "intent": "simple-request",
+      "input": "Can you use shorter words.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "can",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-026",
+      "intent": "simple-request",
+      "input": "Can you list the basic ideas.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "can",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-027",
+      "intent": "simple-request",
+      "input": "Can you describe the difference.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "can",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-028",
+      "intent": "simple-request",
+      "input": "Can you state the answer directly.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "can",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-029",
+      "intent": "simple-request",
+      "input": "Can you help me begin.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "can",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-030",
+      "intent": "simple-request",
+      "input": "Can you make the instructions clearer.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "can",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-031",
+      "intent": "simple-request",
+      "input": "Would you explain that simply.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-032",
+      "intent": "simple-request",
+      "input": "Would you give one example.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-033",
+      "intent": "simple-request",
+      "input": "Would you summarize the main point.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-034",
+      "intent": "simple-request",
+      "input": "Would you show the next step.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-035",
+      "intent": "simple-request",
+      "input": "Would you use shorter words.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-036",
+      "intent": "simple-request",
+      "input": "Would you list the basic ideas.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-037",
+      "intent": "simple-request",
+      "input": "Would you describe the difference.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-038",
+      "intent": "simple-request",
+      "input": "Would you state the answer directly.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-039",
+      "intent": "simple-request",
+      "input": "Would you help me begin.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-040",
+      "intent": "simple-request",
+      "input": "Would you make the instructions clearer.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-041",
+      "intent": "simple-request",
+      "input": "I would like you to explain that simply.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "like",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-042",
+      "intent": "simple-request",
+      "input": "I would like you to give one example.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "like",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-043",
+      "intent": "simple-request",
+      "input": "I would like you to summarize the main point.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "like",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-044",
+      "intent": "simple-request",
+      "input": "I would like you to show the next step.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "like",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-045",
+      "intent": "simple-request",
+      "input": "I would like you to use shorter words.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "like",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-046",
+      "intent": "simple-request",
+      "input": "I would like you to list the basic ideas.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "like",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-047",
+      "intent": "simple-request",
+      "input": "I would like you to describe the difference.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "like",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-048",
+      "intent": "simple-request",
+      "input": "I would like you to state the answer directly.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "would",
+        "like",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-049",
+      "intent": "simple-request",
+      "input": "I would like you to help me begin.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "would",
+        "like",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-050",
+      "intent": "simple-request",
+      "input": "I would like you to make the instructions clearer.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "would",
+        "like",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-051",
+      "intent": "simple-request",
+      "input": "I need you to explain that simply.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "need",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-052",
+      "intent": "simple-request",
+      "input": "I need you to give one example.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "need",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-053",
+      "intent": "simple-request",
+      "input": "I need you to summarize the main point.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "need",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-054",
+      "intent": "simple-request",
+      "input": "I need you to show the next step.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "need",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-055",
+      "intent": "simple-request",
+      "input": "I need you to use shorter words.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "need",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-056",
+      "intent": "simple-request",
+      "input": "I need you to list the basic ideas.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "need",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-057",
+      "intent": "simple-request",
+      "input": "I need you to describe the difference.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "need",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-058",
+      "intent": "simple-request",
+      "input": "I need you to state the answer directly.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "need",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-059",
+      "intent": "simple-request",
+      "input": "I need you to help me begin.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "need",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-060",
+      "intent": "simple-request",
+      "input": "I need you to make the instructions clearer.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "need",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-061",
+      "intent": "simple-request",
+      "input": "Kindly explain that simply.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "kindly",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-062",
+      "intent": "simple-request",
+      "input": "Kindly give one example.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "kindly",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-063",
+      "intent": "simple-request",
+      "input": "Kindly summarize the main point.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "kindly",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-064",
+      "intent": "simple-request",
+      "input": "Kindly show the next step.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "kindly",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-065",
+      "intent": "simple-request",
+      "input": "Kindly use shorter words.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "kindly",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-066",
+      "intent": "simple-request",
+      "input": "Kindly list the basic ideas.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "kindly",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-067",
+      "intent": "simple-request",
+      "input": "Kindly describe the difference.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "kindly",
+        "describe",
+        "difference"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-068",
+      "intent": "simple-request",
+      "input": "Kindly state the answer directly.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "kindly",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-069",
+      "intent": "simple-request",
+      "input": "Kindly help me begin.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "kindly",
+        "help",
+        "begin"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-070",
+      "intent": "simple-request",
+      "input": "Kindly make the instructions clearer.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "kindly",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-071",
+      "intent": "simple-request",
+      "input": "When you can, please explain that simply.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "explain",
+        "that",
+        "simply"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-072",
+      "intent": "simple-request",
+      "input": "When you can, please give one example.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "give",
+        "one",
+        "example"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-073",
+      "intent": "simple-request",
+      "input": "When you can, please summarize the main point.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "summarize",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-074",
+      "intent": "simple-request",
+      "input": "When you can, please show the next step.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "show",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-075",
+      "intent": "simple-request",
+      "input": "When you can, please use shorter words.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "use",
+        "shorter",
+        "words"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-076",
+      "intent": "simple-request",
+      "input": "When you can, please list the basic ideas.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "list",
+        "basic",
+        "ideas"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-077",
+      "intent": "simple-request",
+      "input": "When you can, please describe the difference.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "describe",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-078",
+      "intent": "simple-request",
+      "input": "When you can, please state the answer directly.",
+      "response": "The request is understood; I still need a supported topic to answer without inventing information.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "state",
+        "answer",
+        "directly"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-079",
+      "intent": "simple-request",
+      "input": "When you can, please help me begin.",
+      "response": "I recognize the requested action. I can perform it when the topic exists in my recorded contexts.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "help",
+        "begin"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "23-simple-requests-080",
+      "intent": "simple-request",
+      "input": "When you can, please make the instructions clearer.",
+      "response": "That is a clear request. Provide the topic, and I will use the closest supported response.",
+      "keywords": [
+        "when",
+        "can",
+        "please",
+        "make",
+        "instructions",
+        "clearer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "identify a requested action",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1507 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "18-agreement",
+    "title": "Expressing agreement",
+    "description": "Everyday language for agreeing with an idea or proposed direction.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "18-agreement-001",
+      "intent": "agreement",
+      "input": "I agree about the main point.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "agree",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-002",
+      "intent": "agreement",
+      "input": "I agree on this issue.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "agree",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-003",
+      "intent": "agreement",
+      "input": "I agree with that explanation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "agree",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-004",
+      "intent": "agreement",
+      "input": "I agree about the next step.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "agree",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-005",
+      "intent": "agreement",
+      "input": "I agree with the proposed plan.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "agree",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-006",
+      "intent": "agreement",
+      "input": "I agree on the basic idea.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "agree",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-007",
+      "intent": "agreement",
+      "input": "I agree with your conclusion.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "agree",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-008",
+      "intent": "agreement",
+      "input": "I agree about how to proceed.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "agree",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-009",
+      "intent": "agreement",
+      "input": "I agree with that interpretation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "agree",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-010",
+      "intent": "agreement",
+      "input": "I agree on what matters most.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "agree",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-011",
+      "intent": "agreement",
+      "input": "That sounds right about the main point.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-012",
+      "intent": "agreement",
+      "input": "That sounds right on this issue.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-013",
+      "intent": "agreement",
+      "input": "That sounds right with that explanation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-014",
+      "intent": "agreement",
+      "input": "That sounds right about the next step.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-015",
+      "intent": "agreement",
+      "input": "That sounds right with the proposed plan.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-016",
+      "intent": "agreement",
+      "input": "That sounds right on the basic idea.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-017",
+      "intent": "agreement",
+      "input": "That sounds right with your conclusion.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-018",
+      "intent": "agreement",
+      "input": "That sounds right about how to proceed.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-019",
+      "intent": "agreement",
+      "input": "That sounds right with that interpretation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-020",
+      "intent": "agreement",
+      "input": "That sounds right on what matters most.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "sounds",
+        "right",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-021",
+      "intent": "agreement",
+      "input": "I think so too about the main point.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-022",
+      "intent": "agreement",
+      "input": "I think so too on this issue.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-023",
+      "intent": "agreement",
+      "input": "I think so too with that explanation.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-024",
+      "intent": "agreement",
+      "input": "I think so too about the next step.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-025",
+      "intent": "agreement",
+      "input": "I think so too with the proposed plan.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-026",
+      "intent": "agreement",
+      "input": "I think so too on the basic idea.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-027",
+      "intent": "agreement",
+      "input": "I think so too with your conclusion.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-028",
+      "intent": "agreement",
+      "input": "I think so too about how to proceed.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-029",
+      "intent": "agreement",
+      "input": "I think so too with that interpretation.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-030",
+      "intent": "agreement",
+      "input": "I think so too on what matters most.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "think",
+        "so",
+        "too",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-031",
+      "intent": "agreement",
+      "input": "We are on the same page about the main point.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "same",
+        "page",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-032",
+      "intent": "agreement",
+      "input": "We are on the same page on this issue.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "same",
+        "page",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-033",
+      "intent": "agreement",
+      "input": "We are on the same page with that explanation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "same",
+        "page",
+        "that",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-034",
+      "intent": "agreement",
+      "input": "We are on the same page about the next step.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "same",
+        "page",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-035",
+      "intent": "agreement",
+      "input": "We are on the same page with the proposed plan.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "same",
+        "page",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-036",
+      "intent": "agreement",
+      "input": "We are on the same page on the basic idea.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "same",
+        "page",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-037",
+      "intent": "agreement",
+      "input": "We are on the same page with your conclusion.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "same",
+        "page",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-038",
+      "intent": "agreement",
+      "input": "We are on the same page about how to proceed.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "same",
+        "page",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-039",
+      "intent": "agreement",
+      "input": "We are on the same page with that interpretation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "same",
+        "page",
+        "that",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-040",
+      "intent": "agreement",
+      "input": "We are on the same page on what matters most.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "same",
+        "page",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-041",
+      "intent": "agreement",
+      "input": "That works for me about the main point.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "works",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-042",
+      "intent": "agreement",
+      "input": "That works for me on this issue.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "works",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-043",
+      "intent": "agreement",
+      "input": "That works for me with that explanation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "works",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-044",
+      "intent": "agreement",
+      "input": "That works for me about the next step.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "works",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-045",
+      "intent": "agreement",
+      "input": "That works for me with the proposed plan.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "works",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-046",
+      "intent": "agreement",
+      "input": "That works for me on the basic idea.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "works",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-047",
+      "intent": "agreement",
+      "input": "That works for me with your conclusion.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "works",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-048",
+      "intent": "agreement",
+      "input": "That works for me about how to proceed.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "that",
+        "works",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-049",
+      "intent": "agreement",
+      "input": "That works for me with that interpretation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "that",
+        "works",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-050",
+      "intent": "agreement",
+      "input": "That works for me on what matters most.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "that",
+        "works",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-051",
+      "intent": "agreement",
+      "input": "I share that view about the main point.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-052",
+      "intent": "agreement",
+      "input": "I share that view on this issue.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-053",
+      "intent": "agreement",
+      "input": "I share that view with that explanation.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-054",
+      "intent": "agreement",
+      "input": "I share that view about the next step.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-055",
+      "intent": "agreement",
+      "input": "I share that view with the proposed plan.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-056",
+      "intent": "agreement",
+      "input": "I share that view on the basic idea.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-057",
+      "intent": "agreement",
+      "input": "I share that view with your conclusion.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-058",
+      "intent": "agreement",
+      "input": "I share that view about how to proceed.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-059",
+      "intent": "agreement",
+      "input": "I share that view with that interpretation.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-060",
+      "intent": "agreement",
+      "input": "I share that view on what matters most.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "share",
+        "that",
+        "view",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-061",
+      "intent": "agreement",
+      "input": "Yes, that makes sense about the main point.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-062",
+      "intent": "agreement",
+      "input": "Yes, that makes sense on this issue.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-063",
+      "intent": "agreement",
+      "input": "Yes, that makes sense with that explanation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-064",
+      "intent": "agreement",
+      "input": "Yes, that makes sense about the next step.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-065",
+      "intent": "agreement",
+      "input": "Yes, that makes sense with the proposed plan.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-066",
+      "intent": "agreement",
+      "input": "Yes, that makes sense on the basic idea.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-067",
+      "intent": "agreement",
+      "input": "Yes, that makes sense with your conclusion.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-068",
+      "intent": "agreement",
+      "input": "Yes, that makes sense about how to proceed.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-069",
+      "intent": "agreement",
+      "input": "Yes, that makes sense with that interpretation.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-070",
+      "intent": "agreement",
+      "input": "Yes, that makes sense on what matters most.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "yes",
+        "that",
+        "makes",
+        "sense",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-071",
+      "intent": "agreement",
+      "input": "I support that approach about the main point.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "about",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-072",
+      "intent": "agreement",
+      "input": "I support that approach on this issue.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "issue"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-073",
+      "intent": "agreement",
+      "input": "I support that approach with that explanation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-074",
+      "intent": "agreement",
+      "input": "I support that approach about the next step.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "about",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-075",
+      "intent": "agreement",
+      "input": "I support that approach with the proposed plan.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "proposed",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-076",
+      "intent": "agreement",
+      "input": "I support that approach on the basic idea.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "basic",
+        "idea"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-077",
+      "intent": "agreement",
+      "input": "I support that approach with your conclusion.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "conclusion"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-078",
+      "intent": "agreement",
+      "input": "I support that approach about how to proceed.",
+      "response": "I recognize that you agree with that direction.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "about",
+        "how",
+        "proceed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-079",
+      "intent": "agreement",
+      "input": "I support that approach with that interpretation.",
+      "response": "Your agreement is clear.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "interpretation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "18-agreement-080",
+      "intent": "agreement",
+      "input": "I support that approach on what matters most.",
+      "response": "Understood. You support the stated point.",
+      "keywords": [
+        "support",
+        "that",
+        "approach",
+        "what",
+        "matters",
+        "most"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize agreement",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

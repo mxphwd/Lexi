@@ -1,0 +1,1361 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "17-acknowledgements",
+    "title": "Acknowledging information",
+    "description": "Short turns showing that information was heard or understood.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "17-acknowledgements-001",
+      "intent": "acknowledgement",
+      "input": "I understand now.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understand",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-002",
+      "intent": "acknowledgement",
+      "input": "I understand the main point.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understand",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-003",
+      "intent": "acknowledgement",
+      "input": "I understand what you mean.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understand",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-004",
+      "intent": "acknowledgement",
+      "input": "I understand the explanation.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understand",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-005",
+      "intent": "acknowledgement",
+      "input": "I understand the instructions.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understand",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-006",
+      "intent": "acknowledgement",
+      "input": "I understand the difference.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understand",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-007",
+      "intent": "acknowledgement",
+      "input": "I understand the next step.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understand",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-008",
+      "intent": "acknowledgement",
+      "input": "I understand your answer.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understand",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-009",
+      "intent": "acknowledgement",
+      "input": "I understand the context.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understand",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-010",
+      "intent": "acknowledgement",
+      "input": "I understand that detail.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understand",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-011",
+      "intent": "acknowledgement",
+      "input": "Got it now.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "got",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-012",
+      "intent": "acknowledgement",
+      "input": "Got it the main point.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "got",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-013",
+      "intent": "acknowledgement",
+      "input": "Got it what you mean.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "got",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-014",
+      "intent": "acknowledgement",
+      "input": "Got it the explanation.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "got",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-015",
+      "intent": "acknowledgement",
+      "input": "Got it the instructions.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "got",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-016",
+      "intent": "acknowledgement",
+      "input": "Got it the difference.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "got",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-017",
+      "intent": "acknowledgement",
+      "input": "Got it the next step.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "got",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-018",
+      "intent": "acknowledgement",
+      "input": "Got it your answer.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "got",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-019",
+      "intent": "acknowledgement",
+      "input": "Got it the context.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "got",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-020",
+      "intent": "acknowledgement",
+      "input": "Got it that detail.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "got",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-021",
+      "intent": "acknowledgement",
+      "input": "That makes sense now.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-022",
+      "intent": "acknowledgement",
+      "input": "That makes sense the main point.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-023",
+      "intent": "acknowledgement",
+      "input": "That makes sense what you mean.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-024",
+      "intent": "acknowledgement",
+      "input": "That makes sense the explanation.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-025",
+      "intent": "acknowledgement",
+      "input": "That makes sense the instructions.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-026",
+      "intent": "acknowledgement",
+      "input": "That makes sense the difference.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-027",
+      "intent": "acknowledgement",
+      "input": "That makes sense the next step.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-028",
+      "intent": "acknowledgement",
+      "input": "That makes sense your answer.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-029",
+      "intent": "acknowledgement",
+      "input": "That makes sense the context.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-030",
+      "intent": "acknowledgement",
+      "input": "That makes sense that detail.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "makes",
+        "sense",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-031",
+      "intent": "acknowledgement",
+      "input": "I see now.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "see",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-032",
+      "intent": "acknowledgement",
+      "input": "I see the main point.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "see",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-033",
+      "intent": "acknowledgement",
+      "input": "I see what you mean.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "see",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-034",
+      "intent": "acknowledgement",
+      "input": "I see the explanation.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "see",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-035",
+      "intent": "acknowledgement",
+      "input": "I see the instructions.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "see",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-036",
+      "intent": "acknowledgement",
+      "input": "I see the difference.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "see",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-037",
+      "intent": "acknowledgement",
+      "input": "I see the next step.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "see",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-038",
+      "intent": "acknowledgement",
+      "input": "I see your answer.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "see",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-039",
+      "intent": "acknowledgement",
+      "input": "I see the context.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "see",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-040",
+      "intent": "acknowledgement",
+      "input": "I see that detail.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "see",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-041",
+      "intent": "acknowledgement",
+      "input": "Understood now.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understood",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-042",
+      "intent": "acknowledgement",
+      "input": "Understood the main point.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understood",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-043",
+      "intent": "acknowledgement",
+      "input": "Understood what you mean.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understood",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-044",
+      "intent": "acknowledgement",
+      "input": "Understood the explanation.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understood",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-045",
+      "intent": "acknowledgement",
+      "input": "Understood the instructions.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understood",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-046",
+      "intent": "acknowledgement",
+      "input": "Understood the difference.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understood",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-047",
+      "intent": "acknowledgement",
+      "input": "Understood the next step.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understood",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-048",
+      "intent": "acknowledgement",
+      "input": "Understood your answer.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "understood",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-049",
+      "intent": "acknowledgement",
+      "input": "Understood the context.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "understood",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-050",
+      "intent": "acknowledgement",
+      "input": "Understood that detail.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "understood",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-051",
+      "intent": "acknowledgement",
+      "input": "I follow you now.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "follow",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-052",
+      "intent": "acknowledgement",
+      "input": "I follow you the main point.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "follow",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-053",
+      "intent": "acknowledgement",
+      "input": "I follow you what you mean.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "follow",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-054",
+      "intent": "acknowledgement",
+      "input": "I follow you the explanation.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "follow",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-055",
+      "intent": "acknowledgement",
+      "input": "I follow you the instructions.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "follow",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-056",
+      "intent": "acknowledgement",
+      "input": "I follow you the difference.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "follow",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-057",
+      "intent": "acknowledgement",
+      "input": "I follow you the next step.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "follow",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-058",
+      "intent": "acknowledgement",
+      "input": "I follow you your answer.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "follow",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-059",
+      "intent": "acknowledgement",
+      "input": "I follow you the context.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "follow",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-060",
+      "intent": "acknowledgement",
+      "input": "I follow you that detail.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "follow",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-061",
+      "intent": "acknowledgement",
+      "input": "That is clear now.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "clear",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-062",
+      "intent": "acknowledgement",
+      "input": "That is clear the main point.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "clear",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-063",
+      "intent": "acknowledgement",
+      "input": "That is clear what you mean.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "clear",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-064",
+      "intent": "acknowledgement",
+      "input": "That is clear the explanation.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "clear",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-065",
+      "intent": "acknowledgement",
+      "input": "That is clear the instructions.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "clear",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-066",
+      "intent": "acknowledgement",
+      "input": "That is clear the difference.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "clear",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-067",
+      "intent": "acknowledgement",
+      "input": "That is clear the next step.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "clear",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-068",
+      "intent": "acknowledgement",
+      "input": "That is clear your answer.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "that",
+        "clear",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-069",
+      "intent": "acknowledgement",
+      "input": "That is clear the context.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "that",
+        "clear",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-070",
+      "intent": "acknowledgement",
+      "input": "That is clear that detail.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "that",
+        "clear",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-071",
+      "intent": "acknowledgement",
+      "input": "I have noted now.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "have",
+        "noted",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-072",
+      "intent": "acknowledgement",
+      "input": "I have noted the main point.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "have",
+        "noted",
+        "main",
+        "point"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-073",
+      "intent": "acknowledgement",
+      "input": "I have noted what you mean.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "have",
+        "noted",
+        "what",
+        "mean"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-074",
+      "intent": "acknowledgement",
+      "input": "I have noted the explanation.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "have",
+        "noted",
+        "explanation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-075",
+      "intent": "acknowledgement",
+      "input": "I have noted the instructions.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "have",
+        "noted",
+        "instructions"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-076",
+      "intent": "acknowledgement",
+      "input": "I have noted the difference.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "have",
+        "noted",
+        "difference"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-077",
+      "intent": "acknowledgement",
+      "input": "I have noted the next step.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "have",
+        "noted",
+        "next",
+        "step"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-078",
+      "intent": "acknowledgement",
+      "input": "I have noted your answer.",
+      "response": "Thank you for confirming that the explanation was clear.",
+      "keywords": [
+        "have",
+        "noted",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-079",
+      "intent": "acknowledgement",
+      "input": "I have noted the context.",
+      "response": "Good. The point has been acknowledged.",
+      "keywords": [
+        "have",
+        "noted",
+        "context"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "17-acknowledgements-080",
+      "intent": "acknowledgement",
+      "input": "I have noted that detail.",
+      "response": "Understood. We can continue when you are ready.",
+      "keywords": [
+        "have",
+        "noted",
+        "that",
+        "detail"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "recognize understanding",
+        "tone": "neutral"
+      }
+    }
+  ]
+}

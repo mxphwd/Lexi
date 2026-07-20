@@ -1,0 +1,1504 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "42-morning-routines",
+    "title": "Morning routines",
+    "description": "Statements about ordinary activities performed in the morning.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "42-morning-routines-001",
+      "intent": "morning-routine",
+      "input": "Every morning I make the bed.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "every",
+        "morning",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-002",
+      "intent": "morning-routine",
+      "input": "Every morning I brush my teeth.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "every",
+        "morning",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-003",
+      "intent": "morning-routine",
+      "input": "Every morning I wash my face.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "morning",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-004",
+      "intent": "morning-routine",
+      "input": "Every morning I drink a glass of water.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "every",
+        "morning",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-005",
+      "intent": "morning-routine",
+      "input": "Every morning I eat breakfast.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "every",
+        "morning",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-006",
+      "intent": "morning-routine",
+      "input": "Every morning I read the news.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "morning",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-007",
+      "intent": "morning-routine",
+      "input": "Every morning I stretch for a few minutes.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "every",
+        "morning",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-008",
+      "intent": "morning-routine",
+      "input": "Every morning I prepare for work.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "every",
+        "morning",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-009",
+      "intent": "morning-routine",
+      "input": "Every morning I pack my bag.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "every",
+        "morning",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-010",
+      "intent": "morning-routine",
+      "input": "Every morning I write a short plan.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "every",
+        "morning",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-011",
+      "intent": "morning-routine",
+      "input": "In the morning I usually make the bed.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "usually",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-012",
+      "intent": "morning-routine",
+      "input": "In the morning I usually brush my teeth.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-013",
+      "intent": "morning-routine",
+      "input": "In the morning I usually wash my face.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "usually",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-014",
+      "intent": "morning-routine",
+      "input": "In the morning I usually drink a glass of water.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "usually",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-015",
+      "intent": "morning-routine",
+      "input": "In the morning I usually eat breakfast.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-016",
+      "intent": "morning-routine",
+      "input": "In the morning I usually read the news.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "usually",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-017",
+      "intent": "morning-routine",
+      "input": "In the morning I usually stretch for a few minutes.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "usually",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-018",
+      "intent": "morning-routine",
+      "input": "In the morning I usually prepare for work.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "usually",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-019",
+      "intent": "morning-routine",
+      "input": "In the morning I usually pack my bag.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "usually",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-020",
+      "intent": "morning-routine",
+      "input": "In the morning I usually write a short plan.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "usually",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-021",
+      "intent": "morning-routine",
+      "input": "My morning routine is to make the bed.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "routine",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-022",
+      "intent": "morning-routine",
+      "input": "My morning routine is to brush my teeth.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "routine",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-023",
+      "intent": "morning-routine",
+      "input": "My morning routine is to wash my face.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "routine",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-024",
+      "intent": "morning-routine",
+      "input": "My morning routine is to drink a glass of water.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "routine",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-025",
+      "intent": "morning-routine",
+      "input": "My morning routine is to eat breakfast.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "routine",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-026",
+      "intent": "morning-routine",
+      "input": "My morning routine is to read the news.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "routine",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-027",
+      "intent": "morning-routine",
+      "input": "My morning routine is to stretch for a few minutes.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "routine",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-028",
+      "intent": "morning-routine",
+      "input": "My morning routine is to prepare for work.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "morning",
+        "routine",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-029",
+      "intent": "morning-routine",
+      "input": "My morning routine is to pack my bag.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "morning",
+        "routine",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-030",
+      "intent": "morning-routine",
+      "input": "My morning routine is to write a short plan.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "morning",
+        "routine",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-031",
+      "intent": "morning-routine",
+      "input": "After I wake up, I make the bed.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-032",
+      "intent": "morning-routine",
+      "input": "After I wake up, I brush my teeth.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-033",
+      "intent": "morning-routine",
+      "input": "After I wake up, I wash my face.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-034",
+      "intent": "morning-routine",
+      "input": "After I wake up, I drink a glass of water.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-035",
+      "intent": "morning-routine",
+      "input": "After I wake up, I eat breakfast.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-036",
+      "intent": "morning-routine",
+      "input": "After I wake up, I read the news.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-037",
+      "intent": "morning-routine",
+      "input": "After I wake up, I stretch for a few minutes.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-038",
+      "intent": "morning-routine",
+      "input": "After I wake up, I prepare for work.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-039",
+      "intent": "morning-routine",
+      "input": "After I wake up, I pack my bag.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-040",
+      "intent": "morning-routine",
+      "input": "After I wake up, I write a short plan.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "after",
+        "wake",
+        "up",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-041",
+      "intent": "morning-routine",
+      "input": "Before breakfast I make the bed.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-042",
+      "intent": "morning-routine",
+      "input": "Before breakfast I brush my teeth.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-043",
+      "intent": "morning-routine",
+      "input": "Before breakfast I wash my face.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-044",
+      "intent": "morning-routine",
+      "input": "Before breakfast I drink a glass of water.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-045",
+      "intent": "morning-routine",
+      "input": "Before breakfast I eat breakfast.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "eat"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-046",
+      "intent": "morning-routine",
+      "input": "Before breakfast I read the news.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-047",
+      "intent": "morning-routine",
+      "input": "Before breakfast I stretch for a few minutes.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-048",
+      "intent": "morning-routine",
+      "input": "Before breakfast I prepare for work.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-049",
+      "intent": "morning-routine",
+      "input": "Before breakfast I pack my bag.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-050",
+      "intent": "morning-routine",
+      "input": "Before breakfast I write a short plan.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "before",
+        "breakfast",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-051",
+      "intent": "morning-routine",
+      "input": "On weekdays I make the bed.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "weekdays",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-052",
+      "intent": "morning-routine",
+      "input": "On weekdays I brush my teeth.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "weekdays",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-053",
+      "intent": "morning-routine",
+      "input": "On weekdays I wash my face.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "weekdays",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-054",
+      "intent": "morning-routine",
+      "input": "On weekdays I drink a glass of water.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "weekdays",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-055",
+      "intent": "morning-routine",
+      "input": "On weekdays I eat breakfast.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "weekdays",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-056",
+      "intent": "morning-routine",
+      "input": "On weekdays I read the news.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "weekdays",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-057",
+      "intent": "morning-routine",
+      "input": "On weekdays I stretch for a few minutes.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "weekdays",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-058",
+      "intent": "morning-routine",
+      "input": "On weekdays I prepare for work.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "weekdays",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-059",
+      "intent": "morning-routine",
+      "input": "On weekdays I pack my bag.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "weekdays",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-060",
+      "intent": "morning-routine",
+      "input": "On weekdays I write a short plan.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "weekdays",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-061",
+      "intent": "morning-routine",
+      "input": "I start my day when I make the bed.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-062",
+      "intent": "morning-routine",
+      "input": "I start my day when I brush my teeth.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-063",
+      "intent": "morning-routine",
+      "input": "I start my day when I wash my face.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-064",
+      "intent": "morning-routine",
+      "input": "I start my day when I drink a glass of water.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-065",
+      "intent": "morning-routine",
+      "input": "I start my day when I eat breakfast.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-066",
+      "intent": "morning-routine",
+      "input": "I start my day when I read the news.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-067",
+      "intent": "morning-routine",
+      "input": "I start my day when I stretch for a few minutes.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-068",
+      "intent": "morning-routine",
+      "input": "I start my day when I prepare for work.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-069",
+      "intent": "morning-routine",
+      "input": "I start my day when I pack my bag.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-070",
+      "intent": "morning-routine",
+      "input": "I start my day when I write a short plan.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "start",
+        "day",
+        "when",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-071",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I make the bed.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "make",
+        "bed"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-072",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I brush my teeth.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "brush",
+        "teeth"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-073",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I wash my face.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "wash",
+        "face"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-074",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I drink a glass of water.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "drink",
+        "glass",
+        "water"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-075",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I eat breakfast.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "eat",
+        "breakfast"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-076",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I read the news.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "read",
+        "news"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-077",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I stretch for a few minutes.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "stretch",
+        "few",
+        "minutes"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-078",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I prepare for work.",
+      "response": "Your morning activity is clear in this turn.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "prepare",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-079",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I pack my bag.",
+      "response": "I understand that this activity is part of your morning routine.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "pack",
+        "bag"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "42-morning-routines-080",
+      "intent": "morning-routine",
+      "input": "A normal morning begins when I write a short plan.",
+      "response": "That statement describes an ordinary morning habit.",
+      "keywords": [
+        "normal",
+        "morning",
+        "begins",
+        "when",
+        "write",
+        "short",
+        "plan"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "acknowledge a morning routine",
+        "tone": "warm"
+      }
+    }
+  ]
+}

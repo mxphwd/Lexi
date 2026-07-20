@@ -1,0 +1,1491 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "50-task-planning",
+    "title": "Planning tasks",
+    "description": "Requests for organizing a bounded task into manageable steps.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "50-task-planning-001",
+      "intent": "task-planning",
+      "input": "Help me plan a small project.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "help",
+        "plan",
+        "small",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-002",
+      "intent": "task-planning",
+      "input": "Help me plan today's work.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "help",
+        "plan",
+        "today",
+        "work"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-003",
+      "intent": "task-planning",
+      "input": "Help me plan a writing task.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "help",
+        "plan",
+        "writing",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-004",
+      "intent": "task-planning",
+      "input": "Help me plan a study session.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "help",
+        "plan",
+        "study",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-005",
+      "intent": "task-planning",
+      "input": "Help me plan a room cleanup.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "help",
+        "plan",
+        "room",
+        "cleanup"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-006",
+      "intent": "task-planning",
+      "input": "Help me plan a short presentation.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "help",
+        "plan",
+        "short",
+        "presentation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-007",
+      "intent": "task-planning",
+      "input": "Help me plan a basic review.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "help",
+        "plan",
+        "basic",
+        "review"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-008",
+      "intent": "task-planning",
+      "input": "Help me plan a simple event.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "help",
+        "plan",
+        "simple",
+        "event"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-009",
+      "intent": "task-planning",
+      "input": "Help me plan a weekly goal.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "help",
+        "plan",
+        "weekly",
+        "goal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-010",
+      "intent": "task-planning",
+      "input": "Help me plan the next assignment.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "help",
+        "plan",
+        "next",
+        "assignment"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-011",
+      "intent": "task-planning",
+      "input": "Can you break down a small project.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "small",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-012",
+      "intent": "task-planning",
+      "input": "Can you break down today's work.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "today",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-013",
+      "intent": "task-planning",
+      "input": "Can you break down a writing task.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "writing",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-014",
+      "intent": "task-planning",
+      "input": "Can you break down a study session.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-015",
+      "intent": "task-planning",
+      "input": "Can you break down a room cleanup.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "room",
+        "cleanup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-016",
+      "intent": "task-planning",
+      "input": "Can you break down a short presentation.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "short",
+        "presentation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-017",
+      "intent": "task-planning",
+      "input": "Can you break down a basic review.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "basic",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-018",
+      "intent": "task-planning",
+      "input": "Can you break down a simple event.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "simple",
+        "event"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-019",
+      "intent": "task-planning",
+      "input": "Can you break down a weekly goal.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "weekly",
+        "goal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-020",
+      "intent": "task-planning",
+      "input": "Can you break down the next assignment.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "break",
+        "down",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-021",
+      "intent": "task-planning",
+      "input": "I need steps for a small project.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "need",
+        "steps",
+        "small",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-022",
+      "intent": "task-planning",
+      "input": "I need steps for today's work.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "need",
+        "steps",
+        "today",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-023",
+      "intent": "task-planning",
+      "input": "I need steps for a writing task.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "need",
+        "steps",
+        "writing",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-024",
+      "intent": "task-planning",
+      "input": "I need steps for a study session.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "need",
+        "steps",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-025",
+      "intent": "task-planning",
+      "input": "I need steps for a room cleanup.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "need",
+        "steps",
+        "room",
+        "cleanup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-026",
+      "intent": "task-planning",
+      "input": "I need steps for a short presentation.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "need",
+        "steps",
+        "short",
+        "presentation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-027",
+      "intent": "task-planning",
+      "input": "I need steps for a basic review.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "need",
+        "steps",
+        "basic",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-028",
+      "intent": "task-planning",
+      "input": "I need steps for a simple event.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "need",
+        "steps",
+        "simple",
+        "event"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-029",
+      "intent": "task-planning",
+      "input": "I need steps for a weekly goal.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "need",
+        "steps",
+        "weekly",
+        "goal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-030",
+      "intent": "task-planning",
+      "input": "I need steps for the next assignment.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "need",
+        "steps",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-031",
+      "intent": "task-planning",
+      "input": "Please help me organize a small project.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "small",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-032",
+      "intent": "task-planning",
+      "input": "Please help me organize today's work.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "today",
+        "work"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-033",
+      "intent": "task-planning",
+      "input": "Please help me organize a writing task.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "writing",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-034",
+      "intent": "task-planning",
+      "input": "Please help me organize a study session.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "study",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-035",
+      "intent": "task-planning",
+      "input": "Please help me organize a room cleanup.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "room",
+        "cleanup"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-036",
+      "intent": "task-planning",
+      "input": "Please help me organize a short presentation.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "short",
+        "presentation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-037",
+      "intent": "task-planning",
+      "input": "Please help me organize a basic review.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "basic",
+        "review"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-038",
+      "intent": "task-planning",
+      "input": "Please help me organize a simple event.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "simple",
+        "event"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-039",
+      "intent": "task-planning",
+      "input": "Please help me organize a weekly goal.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "weekly",
+        "goal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-040",
+      "intent": "task-planning",
+      "input": "Please help me organize the next assignment.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "help",
+        "organize",
+        "next",
+        "assignment"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-041",
+      "intent": "task-planning",
+      "input": "How should I begin a small project.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "small",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-042",
+      "intent": "task-planning",
+      "input": "How should I begin today's work.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "today",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-043",
+      "intent": "task-planning",
+      "input": "How should I begin a writing task.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "writing",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-044",
+      "intent": "task-planning",
+      "input": "How should I begin a study session.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-045",
+      "intent": "task-planning",
+      "input": "How should I begin a room cleanup.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "room",
+        "cleanup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-046",
+      "intent": "task-planning",
+      "input": "How should I begin a short presentation.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "short",
+        "presentation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-047",
+      "intent": "task-planning",
+      "input": "How should I begin a basic review.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "basic",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-048",
+      "intent": "task-planning",
+      "input": "How should I begin a simple event.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "simple",
+        "event"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-049",
+      "intent": "task-planning",
+      "input": "How should I begin a weekly goal.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "weekly",
+        "goal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-050",
+      "intent": "task-planning",
+      "input": "How should I begin the next assignment.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "how",
+        "should",
+        "begin",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-051",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a small project.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "small",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-052",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for today's work.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "today",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-053",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a writing task.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "writing",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-054",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a study session.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-055",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a room cleanup.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "room",
+        "cleanup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-056",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a short presentation.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "short",
+        "presentation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-057",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a basic review.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "basic",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-058",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a simple event.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "simple",
+        "event"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-059",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for a weekly goal.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "weekly",
+        "goal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-060",
+      "intent": "task-planning",
+      "input": "Can we make a checklist for the next assignment.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "can",
+        "make",
+        "checklist",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-061",
+      "intent": "task-planning",
+      "input": "I want to structure a small project.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "want",
+        "structure",
+        "small",
+        "project"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-062",
+      "intent": "task-planning",
+      "input": "I want to structure today's work.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "want",
+        "structure",
+        "today",
+        "work"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-063",
+      "intent": "task-planning",
+      "input": "I want to structure a writing task.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "want",
+        "structure",
+        "writing",
+        "task"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-064",
+      "intent": "task-planning",
+      "input": "I want to structure a study session.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "want",
+        "structure",
+        "study",
+        "session"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-065",
+      "intent": "task-planning",
+      "input": "I want to structure a room cleanup.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "want",
+        "structure",
+        "room",
+        "cleanup"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-066",
+      "intent": "task-planning",
+      "input": "I want to structure a short presentation.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "want",
+        "structure",
+        "short",
+        "presentation"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-067",
+      "intent": "task-planning",
+      "input": "I want to structure a basic review.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "want",
+        "structure",
+        "basic",
+        "review"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-068",
+      "intent": "task-planning",
+      "input": "I want to structure a simple event.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "want",
+        "structure",
+        "simple",
+        "event"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-069",
+      "intent": "task-planning",
+      "input": "I want to structure a weekly goal.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "want",
+        "structure",
+        "weekly",
+        "goal"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-070",
+      "intent": "task-planning",
+      "input": "I want to structure the next assignment.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "want",
+        "structure",
+        "next",
+        "assignment"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-071",
+      "intent": "task-planning",
+      "input": "Please outline a small project.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "outline",
+        "small",
+        "project"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-072",
+      "intent": "task-planning",
+      "input": "Please outline today's work.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "outline",
+        "today",
+        "work"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-073",
+      "intent": "task-planning",
+      "input": "Please outline a writing task.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "outline",
+        "writing",
+        "task"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-074",
+      "intent": "task-planning",
+      "input": "Please outline a study session.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "outline",
+        "study",
+        "session"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-075",
+      "intent": "task-planning",
+      "input": "Please outline a room cleanup.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "outline",
+        "room",
+        "cleanup"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-076",
+      "intent": "task-planning",
+      "input": "Please outline a short presentation.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "outline",
+        "short",
+        "presentation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-077",
+      "intent": "task-planning",
+      "input": "Please outline a basic review.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "outline",
+        "basic",
+        "review"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-078",
+      "intent": "task-planning",
+      "input": "Please outline a simple event.",
+      "response": "I recognize the planning request; provide the concrete task details needed to avoid assumptions.",
+      "keywords": [
+        "please",
+        "outline",
+        "simple",
+        "event"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-079",
+      "intent": "task-planning",
+      "input": "Please outline a weekly goal.",
+      "response": "State the goal, deadline, and constraints so the task can be divided into supported steps.",
+      "keywords": [
+        "please",
+        "outline",
+        "weekly",
+        "goal"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    },
+    {
+      "id": "50-task-planning-080",
+      "intent": "task-planning",
+      "input": "Please outline the next assignment.",
+      "response": "A useful task plan needs a clear outcome and the limits on time or resources.",
+      "keywords": [
+        "please",
+        "outline",
+        "next",
+        "assignment"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "daily life",
+        "purpose": "request a task goal and constraints",
+        "tone": "precise"
+      }
+    }
+  ]
+}
