@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "10-capabilities",
+    "title": "Prototype capabilities",
+    "description": "What this early build can do reliably.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "10-capabilities-01",
+      "intent": "capabilities",
+      "input": "What can you do?",
+      "response": "This prototype can discuss Lexi and Alphaine, explain its four modules, classify basic English sentence modes, match paraphrased examples, and retrieve a compact set of word relations.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-02",
+      "intent": "capabilities",
+      "input": "What are your capabilities?",
+      "response": "You can test greetings, project questions, architecture questions, limitations, sentence structure, and requests for synonyms of core indexed terms.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-03",
+      "intent": "capabilities",
+      "input": "Which questions can Lexi answer?",
+      "response": "The corpus is designed to grow through versioned JSON context pages, and every answer includes an optional match trace.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-04",
+      "intent": "capabilities",
+      "input": "Can you explain the modules?",
+      "response": "This prototype can discuss Lexi and Alphaine, explain its four modules, classify basic English sentence modes, match paraphrased examples, and retrieve a compact set of word relations.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-05",
+      "intent": "capabilities",
+      "input": "Can you inspect sentence structure?",
+      "response": "You can test greetings, project questions, architecture questions, limitations, sentence structure, and requests for synonyms of core indexed terms.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-06",
+      "intent": "capabilities",
+      "input": "Can you find synonyms?",
+      "response": "The corpus is designed to grow through versioned JSON context pages, and every answer includes an optional match trace.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-07",
+      "intent": "capabilities",
+      "input": "What is supported in this prototype?",
+      "response": "This prototype can discuss Lexi and Alphaine, explain its four modules, classify basic English sentence modes, match paraphrased examples, and retrieve a compact set of word relations.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-08",
+      "intent": "capabilities",
+      "input": "How should I test Lexi?",
+      "response": "You can test greetings, project questions, architecture questions, limitations, sentence structure, and requests for synonyms of core indexed terms.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-09",
+      "intent": "capabilities",
+      "input": "What topics do you know?",
+      "response": "The corpus is designed to grow through versioned JSON context pages, and every answer includes an optional match trace.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-10",
+      "intent": "capabilities",
+      "input": "Can you show your reasoning trace?",
+      "response": "This prototype can discuss Lexi and Alphaine, explain its four modules, classify basic English sentence modes, match paraphrased examples, and retrieve a compact set of word relations.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-11",
+      "intent": "capabilities",
+      "input": "Do you use a dictionary?",
+      "response": "You can test greetings, project questions, architecture questions, limitations, sentence structure, and requests for synonyms of core indexed terms.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-12",
+      "intent": "capabilities",
+      "input": "Can I add new examples?",
+      "response": "The corpus is designed to grow through versioned JSON context pages, and every answer includes an optional match trace.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-13",
+      "intent": "capabilities",
+      "input": "Can the corpus grow?",
+      "response": "This prototype can discuss Lexi and Alphaine, explain its four modules, classify basic English sentence modes, match paraphrased examples, and retrieve a compact set of word relations.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-14",
+      "intent": "capabilities",
+      "input": "What does version one include?",
+      "response": "You can test greetings, project questions, architecture questions, limitations, sentence structure, and requests for synonyms of core indexed terms.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    },
+    {
+      "id": "10-capabilities-15",
+      "intent": "capabilities",
+      "input": "Give me a list of working features.",
+      "response": "The corpus is designed to grow through versioned JSON context pages, and every answer includes an optional match trace.",
+      "keywords": [
+        "capability",
+        "feature",
+        "can",
+        "support",
+        "answer",
+        "prototype"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "product support",
+        "purpose": "state available functions",
+        "tone": "neutral"
+      },
+      "slots": {
+        "subject": "This prototype",
+        "action": "supports",
+        "object": "bounded, traceable English conversations"
+      }
+    }
+  ]
+}

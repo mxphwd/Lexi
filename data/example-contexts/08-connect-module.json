@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "08-connect-module",
+    "title": "Connect Module",
+    "description": "How selected context becomes connected answer material.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "08-connect-module-01",
+      "intent": "connect-module",
+      "input": "What does the Connect Module do?",
+      "response": "The Connect Module takes the selected context and prepares explicit subject, action, object, and qualifier slots for the Structure Module.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-02",
+      "intent": "connect-module",
+      "input": "How are answer words connected?",
+      "response": "Connect reuses answer material stored with the best matching examples; for synonym requests, it reads the compact Moby-derived relation graph.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-03",
+      "intent": "connect-module",
+      "input": "Explain the Connect stage.",
+      "response": "This stage selects words but does not freely generate prose. It passes a bounded record to Structure.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-04",
+      "intent": "connect-module",
+      "input": "Where does answer material come from?",
+      "response": "The Connect Module takes the selected context and prepares explicit subject, action, object, and qualifier slots for the Structure Module.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-05",
+      "intent": "connect-module",
+      "input": "How does context choose words?",
+      "response": "Connect reuses answer material stored with the best matching examples; for synonym requests, it reads the compact Moby-derived relation graph.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-06",
+      "intent": "connect-module",
+      "input": "What are response slots?",
+      "response": "This stage selects words but does not freely generate prose. It passes a bounded record to Structure.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-07",
+      "intent": "connect-module",
+      "input": "Do modules share word records?",
+      "response": "The Connect Module takes the selected context and prepares explicit subject, action, object, and qualifier slots for the Structure Module.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-08",
+      "intent": "connect-module",
+      "input": "How are subjects and actions selected?",
+      "response": "Connect reuses answer material stored with the best matching examples; for synonym requests, it reads the compact Moby-derived relation graph.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-09",
+      "intent": "connect-module",
+      "input": "How do synonyms change an answer?",
+      "response": "This stage selects words but does not freely generate prose. It passes a bounded record to Structure.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-10",
+      "intent": "connect-module",
+      "input": "Does Connect write the final sentence?",
+      "response": "The Connect Module takes the selected context and prepares explicit subject, action, object, and qualifier slots for the Structure Module.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-11",
+      "intent": "connect-module",
+      "input": "What follows context selection?",
+      "response": "Connect reuses answer material stored with the best matching examples; for synonym requests, it reads the compact Moby-derived relation graph.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-12",
+      "intent": "connect-module",
+      "input": "Describe mechanical word connection.",
+      "response": "This stage selects words but does not freely generate prose. It passes a bounded record to Structure.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-13",
+      "intent": "connect-module",
+      "input": "How are relevant words fetched?",
+      "response": "The Connect Module takes the selected context and prepares explicit subject, action, object, and qualifier slots for the Structure Module.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-14",
+      "intent": "connect-module",
+      "input": "Can Connect use a thesaurus?",
+      "response": "Connect reuses answer material stored with the best matching examples; for synonym requests, it reads the compact Moby-derived relation graph.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    },
+    {
+      "id": "08-connect-module-15",
+      "intent": "connect-module",
+      "input": "What record goes to Structure?",
+      "response": "This stage selects words but does not freely generate prose. It passes a bounded record to Structure.",
+      "keywords": [
+        "connect",
+        "combine",
+        "word",
+        "slot",
+        "answer",
+        "relation"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain word connection",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Connect Module",
+        "action": "prepares",
+        "object": "bounded answer-word slots"
+      }
+    }
+  ]
+}

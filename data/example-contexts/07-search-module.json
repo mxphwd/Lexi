@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "07-search-module",
+    "title": "Search Module",
+    "description": "Retrieval, normalization, and similarity questions.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "07-search-module-01",
+      "intent": "search-module",
+      "input": "What does the Search Module do?",
+      "response": "The Search Module normalizes the prompt, separates useful terms, expands a compact synonym graph, and ranks examples by lexical, phrase, and structure similarity.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-02",
+      "intent": "search-module",
+      "input": "How do you find matching examples?",
+      "response": "Search returns a short ordered set of example records with scores and the exact terms that matched.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-03",
+      "intent": "search-module",
+      "input": "Explain lexical search.",
+      "response": "The current prototype uses deterministic in-memory scoring; its interface can later be backed by a larger precomputed index without changing other modules.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-04",
+      "intent": "search-module",
+      "input": "How are prompts normalized?",
+      "response": "The Search Module normalizes the prompt, separates useful terms, expands a compact synonym graph, and ranks examples by lexical, phrase, and structure similarity.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-05",
+      "intent": "search-module",
+      "input": "Do you rank example texts?",
+      "response": "Search returns a short ordered set of example records with scores and the exact terms that matched.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-06",
+      "intent": "search-module",
+      "input": "What is phrase similarity?",
+      "response": "The current prototype uses deterministic in-memory scoring; its interface can later be backed by a larger precomputed index without changing other modules.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-07",
+      "intent": "search-module",
+      "input": "How are related words used in search?",
+      "response": "The Search Module normalizes the prompt, separates useful terms, expands a compact synonym graph, and ranks examples by lexical, phrase, and structure similarity.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-08",
+      "intent": "search-module",
+      "input": "Does punctuation affect retrieval?",
+      "response": "Search returns a short ordered set of example records with scores and the exact terms that matched.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-09",
+      "intent": "search-module",
+      "input": "How do you search the corpus quickly?",
+      "response": "The current prototype uses deterministic in-memory scoring; its interface can later be backed by a larger precomputed index without changing other modules.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-10",
+      "intent": "search-module",
+      "input": "What does the search score contain?",
+      "response": "The Search Module normalizes the prompt, separates useful terms, expands a compact synonym graph, and ranks examples by lexical, phrase, and structure similarity.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-11",
+      "intent": "search-module",
+      "input": "How many examples are retrieved?",
+      "response": "Search returns a short ordered set of example records with scores and the exact terms that matched.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-12",
+      "intent": "search-module",
+      "input": "Describe the first module.",
+      "response": "The current prototype uses deterministic in-memory scoring; its interface can later be backed by a larger precomputed index without changing other modules.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-13",
+      "intent": "search-module",
+      "input": "Can Search find paraphrases?",
+      "response": "The Search Module normalizes the prompt, separates useful terms, expands a compact synonym graph, and ranks examples by lexical, phrase, and structure similarity.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-14",
+      "intent": "search-module",
+      "input": "How does the index help?",
+      "response": "Search returns a short ordered set of example records with scores and the exact terms that matched.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    },
+    {
+      "id": "07-search-module-15",
+      "intent": "search-module",
+      "input": "What information leaves the Search Module?",
+      "response": "The current prototype uses deterministic in-memory scoring; its interface can later be backed by a larger precomputed index without changing other modules.",
+      "keywords": [
+        "search",
+        "retrieve",
+        "index",
+        "token",
+        "similarity",
+        "example"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain retrieval",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Search Module",
+        "action": "retrieves",
+        "object": "ranked example contexts"
+      }
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "09-structure-module",
+    "title": "Structure Module and English clauses",
+    "description": "Sentence realization using declarative, interrogative, imperative, and exclamative analysis.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "09-structure-module-01",
+      "intent": "structure-module",
+      "input": "What does the Structure Module do?",
+      "response": "The Structure Module selects an intent-specific pattern and fills only its declared slots, then applies capitalization, spacing, and punctuation rules.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-02",
+      "intent": "structure-module",
+      "input": "How is the final sentence built?",
+      "response": "The prototype recognizes declarative, interrogative, imperative, and exclamative input modes while realizing responses through fixed English patterns.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-03",
+      "intent": "structure-module",
+      "input": "Explain sentence structures.",
+      "response": "Its clause model starts with subject and verb, with optional objects, complements, and adjunct-like qualifiers. More structures can be added as data, not hidden behavior.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-04",
+      "intent": "structure-module",
+      "input": "What is a clause?",
+      "response": "The Structure Module selects an intent-specific pattern and fills only its declared slots, then applies capitalization, spacing, and punctuation rules.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-05",
+      "intent": "structure-module",
+      "input": "What are subject and verb slots?",
+      "response": "The prototype recognizes declarative, interrogative, imperative, and exclamative input modes while realizing responses through fixed English patterns.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-06",
+      "intent": "structure-module",
+      "input": "Do you recognize questions?",
+      "response": "Its clause model starts with subject and verb, with optional objects, complements, and adjunct-like qualifiers. More structures can be added as data, not hidden behavior.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-07",
+      "intent": "structure-module",
+      "input": "Can you identify imperatives?",
+      "response": "The Structure Module selects an intent-specific pattern and fills only its declared slots, then applies capitalization, spacing, and punctuation rules.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-08",
+      "intent": "structure-module",
+      "input": "What is a declarative sentence?",
+      "response": "The prototype recognizes declarative, interrogative, imperative, and exclamative input modes while realizing responses through fixed English patterns.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-09",
+      "intent": "structure-module",
+      "input": "How are response templates selected?",
+      "response": "Its clause model starts with subject and verb, with optional objects, complements, and adjunct-like qualifiers. More structures can be added as data, not hidden behavior.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-10",
+      "intent": "structure-module",
+      "input": "Does word order matter?",
+      "response": "The Structure Module selects an intent-specific pattern and fills only its declared slots, then applies capitalization, spacing, and punctuation rules.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-11",
+      "intent": "structure-module",
+      "input": "What are the main sentence modes?",
+      "response": "The prototype recognizes declarative, interrogative, imperative, and exclamative input modes while realizing responses through fixed English patterns.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-12",
+      "intent": "structure-module",
+      "input": "How does grammar constrain the reply?",
+      "response": "Its clause model starts with subject and verb, with optional objects, complements, and adjunct-like qualifiers. More structures can be added as data, not hidden behavior.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-13",
+      "intent": "structure-module",
+      "input": "Describe deterministic sentence realization.",
+      "response": "The Structure Module selects an intent-specific pattern and fills only its declared slots, then applies capitalization, spacing, and punctuation rules.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-14",
+      "intent": "structure-module",
+      "input": "Can Structure make complex sentences?",
+      "response": "The prototype recognizes declarative, interrogative, imperative, and exclamative input modes while realizing responses through fixed English patterns.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    },
+    {
+      "id": "09-structure-module-15",
+      "intent": "structure-module",
+      "input": "Where is punctuation added?",
+      "response": "Its clause model starts with subject and verb, with optional objects, complements, and adjunct-like qualifiers. More structures can be added as data, not hidden behavior.",
+      "keywords": [
+        "structure",
+        "sentence",
+        "clause",
+        "subject",
+        "verb",
+        "object",
+        "grammar"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "English grammar",
+        "purpose": "explain sentence realization",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Structure Module",
+        "action": "realizes",
+        "object": "connected words through declared patterns"
+      }
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "01-greetings",
+    "title": "Greetings and openings",
+    "description": "Friendly ways a conversation with Lexi can begin.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "01-greetings-01",
+      "intent": "greeting",
+      "input": "Hello, Lexi.",
+      "response": "Hello. I’m Lexi. I’m ready to match your words with the contexts I have learned.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-02",
+      "intent": "greeting",
+      "input": "Hi Lexi!",
+      "response": "Hello. Ask me about Lexi, Alphaine, language structure, or one of my mechanical modules.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "exclamative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-03",
+      "intent": "greeting",
+      "input": "Hey, are you there?",
+      "response": "Greetings. I will answer from recorded examples and rules, and I will say when the match is uncertain.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-04",
+      "intent": "greeting",
+      "input": "Good morning, Lexi.",
+      "response": "Hello. I’m Lexi. I’m ready to match your words with the contexts I have learned.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-05",
+      "intent": "greeting",
+      "input": "Good afternoon.",
+      "response": "Hello. Ask me about Lexi, Alphaine, language structure, or one of my mechanical modules.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-06",
+      "intent": "greeting",
+      "input": "Good evening, Lexi.",
+      "response": "Greetings. I will answer from recorded examples and rules, and I will say when the match is uncertain.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-07",
+      "intent": "greeting",
+      "input": "Greetings.",
+      "response": "Hello. I’m Lexi. I’m ready to match your words with the contexts I have learned.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-08",
+      "intent": "greeting",
+      "input": "Hello there.",
+      "response": "Hello. Ask me about Lexi, Alphaine, language structure, or one of my mechanical modules.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-09",
+      "intent": "greeting",
+      "input": "Hi, I would like to talk.",
+      "response": "Greetings. I will answer from recorded examples and rules, and I will say when the match is uncertain.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-10",
+      "intent": "greeting",
+      "input": "Can we begin?",
+      "response": "Hello. I’m Lexi. I’m ready to match your words with the contexts I have learned.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-11",
+      "intent": "greeting",
+      "input": "Let us start a conversation.",
+      "response": "Hello. Ask me about Lexi, Alphaine, language structure, or one of my mechanical modules.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-12",
+      "intent": "greeting",
+      "input": "I want to talk to Lexi.",
+      "response": "Greetings. I will answer from recorded examples and rules, and I will say when the match is uncertain.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-13",
+      "intent": "greeting",
+      "input": "Hey Lexi, let us begin.",
+      "response": "Hello. I’m Lexi. I’m ready to match your words with the contexts I have learned.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-14",
+      "intent": "greeting",
+      "input": "Hello, mechanical thinker.",
+      "response": "Hello. Ask me about Lexi, Alphaine, language structure, or one of my mechanical modules.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    },
+    {
+      "id": "01-greetings-15",
+      "intent": "greeting",
+      "input": "Is Lexi ready to talk?",
+      "response": "Greetings. I will answer from recorded examples and rules, and I will say when the match is uncertain.",
+      "keywords": [
+        "hello",
+        "hi",
+        "greeting",
+        "start",
+        "talk"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "open a dialogue",
+        "tone": "warm"
+      },
+      "slots": {
+        "subject": "Lexi",
+        "action": "opens",
+        "object": "the conversation"
+      }
+    }
+  ]
+}

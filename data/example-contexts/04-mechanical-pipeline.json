@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "04-mechanical-pipeline",
+    "title": "Mechanical response pipeline",
+    "description": "End-to-end questions about how a prompt becomes a response.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "04-mechanical-pipeline-01",
+      "intent": "mechanism",
+      "input": "How does Lexi work?",
+      "response": "I divide the input into a sentence analysis, search recorded examples, aggregate the strongest context, connect relevant answer words, and realize them through a selected structure.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-02",
+      "intent": "mechanism",
+      "input": "Explain the mechanism.",
+      "response": "The pipeline is Search → Context → Connect → Structure. Every stage passes a small, inspectable record to the next one.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-03",
+      "intent": "mechanism",
+      "input": "What happens after I send a prompt?",
+      "response": "First I normalize and inspect the sentence. Then I score examples, choose an intent, connect answer material, and fill a deterministic sentence pattern.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-04",
+      "intent": "mechanism",
+      "input": "Describe the response pipeline.",
+      "response": "I divide the input into a sentence analysis, search recorded examples, aggregate the strongest context, connect relevant answer words, and realize them through a selected structure.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-05",
+      "intent": "mechanism",
+      "input": "How do the modules work together?",
+      "response": "The pipeline is Search → Context → Connect → Structure. Every stage passes a small, inspectable record to the next one.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-06",
+      "intent": "mechanism",
+      "input": "Walk me through each step.",
+      "response": "First I normalize and inspect the sentence. Then I score examples, choose an intent, connect answer material, and fill a deterministic sentence pattern.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-07",
+      "intent": "mechanism",
+      "input": "How does input become output?",
+      "response": "I divide the input into a sentence analysis, search recorded examples, aggregate the strongest context, connect relevant answer words, and realize them through a selected structure.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-08",
+      "intent": "mechanism",
+      "input": "What is Lexi's processing sequence?",
+      "response": "The pipeline is Search → Context → Connect → Structure. Every stage passes a small, inspectable record to the next one.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-09",
+      "intent": "mechanism",
+      "input": "Tell me the mechanical process.",
+      "response": "First I normalize and inspect the sentence. Then I score examples, choose an intent, connect answer material, and fill a deterministic sentence pattern.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-10",
+      "intent": "mechanism",
+      "input": "How is a reply constructed?",
+      "response": "I divide the input into a sentence analysis, search recorded examples, aggregate the strongest context, connect relevant answer words, and realize them through a selected structure.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-11",
+      "intent": "mechanism",
+      "input": "What does Lexi do with my sentence?",
+      "response": "The pipeline is Search → Context → Connect → Structure. Every stage passes a small, inspectable record to the next one.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-12",
+      "intent": "mechanism",
+      "input": "Explain the engine from beginning to end.",
+      "response": "First I normalize and inspect the sentence. Then I score examples, choose an intent, connect answer material, and fill a deterministic sentence pattern.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-13",
+      "intent": "mechanism",
+      "input": "How does the program answer?",
+      "response": "I divide the input into a sentence analysis, search recorded examples, aggregate the strongest context, connect relevant answer words, and realize them through a selected structure.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-14",
+      "intent": "mechanism",
+      "input": "Which stages process a question?",
+      "response": "The pipeline is Search → Context → Connect → Structure. Every stage passes a small, inspectable record to the next one.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    },
+    {
+      "id": "04-mechanical-pipeline-15",
+      "intent": "mechanism",
+      "input": "Give me the five-stage mechanism.",
+      "response": "First I normalize and inspect the sentence. Then I score examples, choose an intent, connect answer material, and fill a deterministic sentence pattern.",
+      "keywords": [
+        "mechanism",
+        "pipeline",
+        "process",
+        "step",
+        "work",
+        "response"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "system architecture",
+        "purpose": "explain the pipeline",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The pipeline",
+        "action": "moves through",
+        "object": "Search, Context, Connect, and Structure"
+      }
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "06-context-module",
+    "title": "Context Module",
+    "description": "Examples that teach how Lexi discusses context selection.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "06-context-module-01",
+      "intent": "context-module",
+      "input": "What does the Context Module do?",
+      "response": "The Context Module aggregates the best example matches by intent, adds explicit phrase rules, and chooses a context only when its confidence clears a threshold.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-02",
+      "intent": "context-module",
+      "input": "How do you understand context?",
+      "response": "Context is inferred from overlapping terms, related words, phrase similarity, sentence mode, and the intents attached to recorded examples.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-03",
+      "intent": "context-module",
+      "input": "Explain context matching.",
+      "response": "When evidence is weak, the Context Module selects a safe fallback instead of inventing an answer.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-04",
+      "intent": "context-module",
+      "input": "How is an intent selected?",
+      "response": "The Context Module aggregates the best example matches by intent, adds explicit phrase rules, and chooses a context only when its confidence clears a threshold.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-05",
+      "intent": "context-module",
+      "input": "How are example scores combined?",
+      "response": "Context is inferred from overlapping terms, related words, phrase similarity, sentence mode, and the intents attached to recorded examples.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-06",
+      "intent": "context-module",
+      "input": "What does context confidence mean?",
+      "response": "When evidence is weak, the Context Module selects a safe fallback instead of inventing an answer.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-07",
+      "intent": "context-module",
+      "input": "How can examples teach meaning?",
+      "response": "The Context Module aggregates the best example matches by intent, adds explicit phrase rules, and chooses a context only when its confidence clears a threshold.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-08",
+      "intent": "context-module",
+      "input": "Does the Context Module read several matches?",
+      "response": "Context is inferred from overlapping terms, related words, phrase similarity, sentence mode, and the intents attached to recorded examples.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-09",
+      "intent": "context-module",
+      "input": "How do similar questions share context?",
+      "response": "When evidence is weak, the Context Module selects a safe fallback instead of inventing an answer.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-10",
+      "intent": "context-module",
+      "input": "What if two contexts are close?",
+      "response": "The Context Module aggregates the best example matches by intent, adds explicit phrase rules, and chooses a context only when its confidence clears a threshold.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-11",
+      "intent": "context-module",
+      "input": "How is ambiguity handled?",
+      "response": "Context is inferred from overlapping terms, related words, phrase similarity, sentence mode, and the intents attached to recorded examples.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-12",
+      "intent": "context-module",
+      "input": "Describe the central Context Module.",
+      "response": "When evidence is weak, the Context Module selects a safe fallback instead of inventing an answer.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-13",
+      "intent": "context-module",
+      "input": "Why is context the most important module?",
+      "response": "The Context Module aggregates the best example matches by intent, adds explicit phrase rules, and chooses a context only when its confidence clears a threshold.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-14",
+      "intent": "context-module",
+      "input": "How does Lexi interpret my words?",
+      "response": "Context is inferred from overlapping terms, related words, phrase similarity, sentence mode, and the intents attached to recorded examples.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    },
+    {
+      "id": "06-context-module-15",
+      "intent": "context-module",
+      "input": "What evidence supports a context decision?",
+      "response": "When evidence is weak, the Context Module selects a safe fallback instead of inventing an answer.",
+      "keywords": [
+        "context",
+        "intent",
+        "aggregate",
+        "meaning",
+        "match",
+        "confidence"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "module documentation",
+        "purpose": "explain context inference",
+        "tone": "precise"
+      },
+      "slots": {
+        "subject": "The Context Module",
+        "action": "aggregates",
+        "object": "example evidence into an intent"
+      }
+    }
+  ]
+}

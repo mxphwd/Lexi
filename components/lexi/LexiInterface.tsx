@@ -1,0 +1,214 @@
+"use client";
+
+import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+import { corpusStats, respond } from "@/lib/lexi/engine";
+import type { LexiReply } from "@/lib/lexi/types";
+import { hasUnsupportedWritingSystem } from "@/modules/search";
+
+type ComposerState = "idle" | "thinking" | "stopping";
+
+const DOCUMENTATION_QUOTE =
+  "Lexi model, including Lexi Language is Alphaine’s approach to the next step of language models, challenging traditional AI-based LLM(or Large Language Model)s. Alphaine aims to create mechanical thinking language model using the fundamentals of linguistics that delivers exactly how it knows about it, without hallucination.";
+
+const GITHUB_URL = "https://github.com/yourmelody";
+const BRAND_LETTERS = [..."Alphaine"];
+const stats = corpusStats();
+
+export function LexiInterface() {
+  const [input, setInput] = useState("");
+  const [composerState, setComposerState] = useState<ComposerState>("idle");
+  const [reply, setReply] = useState<LexiReply | null>(null);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [showVersion, setShowVersion] = useState(false);
+  const [brandEntrance, setBrandEntrance] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+  const unsupported = hasUnsupportedWritingSystem(input);
+  const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, []);
+
+  function resizeTextarea() {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    textarea.style.height = "0px";
+    textarea.style.height = `${Math.min(textarea.scrollHeight, 116)}px`;
+  }
+
+  function submitMessage(event?: FormEvent) {
+    event?.preventDefault();
+    if (!canSend) return;
+
+    const prompt = input.trim();
+    const preparedReply = respond(prompt);
+    setComposerState("thinking");
+    setAboutOpen(false);
+    setReply(null);
+
+    timerRef.current = setTimeout(() => {
+      setReply(preparedReply);
+      setComposerState("idle");
+      setInput("");
+      requestAnimationFrame(resizeTextarea);
+      timerRef.current = null;
+    }, Math.min(1650, 840 + prompt.length * 11));
+  }
+
+  function stopThinking() {
+    if (composerState !== "thinking") return;
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = null;
+    setComposerState("stopping");
+    window.setTimeout(() => setComposerState("idle"), 680);
+  }
+
+  function handleComposerKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      submitMessage();
+    }
+  }
+
+  function handleBrandClick(event: React.MouseEvent<HTMLAnchorElement>) {
+    if (!event.shiftKey) return;
+    event.preventDefault();
+    const returningToLogo = showVersion;
+    setShowVersion((current) => !current);
+    setBrandEntrance(returningToLogo);
+    if (returningToLogo) window.setTimeout(() => setBrandEntrance(false), 1300);
+  }
+
+  const shellState = unsupported
+    ? "unsupported"
+    : composerState === "thinking"
+      ? "thinking"
+      : composerState === "stopping"
+        ? "stopping"
+        : "idle";
+
+  return (
+    <main className="lexi-page">
+      <div className="ambient ambient-one" aria-hidden="true" />
+      <div className="ambient ambient-two" aria-hidden="true" />
+
+      <section className={`lexi-stage ${reply ? "has-reply" : ""}`} aria-label="Talk to Lexi">
+        <div className="greeting-wrap">
+          <button
+            className="greeting"
+            type="button"
+            aria-expanded={aboutOpen}
+            aria-controls="lexi-about"
+            onClick={() => setAboutOpen((current) => !current)}
+          >
+            <span>Hello, I’m Lexi.</span>
+            <span className="greeting-mark" aria-hidden="true">↗</span>
+          </button>
+
+          <aside
+            id="lexi-about"
+            className={`about-popover ${aboutOpen ? "is-open" : ""}`}
+            aria-hidden={!aboutOpen}
+          >
+            <span className="about-label">From the Lexi documentation</span>
+            <blockquote>“{DOCUMENTATION_QUOTE}”</blockquote>
+          </aside>
+        </div>
+
+        <div className={`reply-region ${reply ? "is-visible" : ""}`} aria-live="polite">
+          {reply ? (
+            <article className="reply-card">
+              <p>{reply.text}</p>
+              <details className="trace">
+                <summary>Why this response</summary>
+                <dl>
+                  <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
+                  <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
+                  <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
+                  <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
+                  <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
+                </dl>
+                <p className="corpus-note">
+                  Matched against {stats.examples} examples across {stats.pages} context pages.
+                </p>
+              </details>
+            </article>
+          ) : null}
+        </div>
+
+        <form className="composer-form" onSubmit={submitMessage}>
+          <div className={`composer-frame state-${shellState}`}>
+            <div className="composer-glow" aria-hidden="true" />
+            <div className="composer-inner">
+              <textarea
+                ref={textareaRef}
+                value={input}
+                rows={1}
+                maxLength={600}
+                className="composer-input"
+                placeholder="Talk to Lexi..."
+                aria-label="Message Lexi"
+                aria-describedby={unsupported ? "language-warning" : undefined}
+                onChange={(event) => {
+                  setInput(event.target.value);
+                  requestAnimationFrame(resizeTextarea);
+                }}
+                onKeyDown={handleComposerKeyDown}
+              />
+              <button
+                className={`send-button ${composerState === "thinking" ? "is-pause" : ""}`}
+                type={composerState === "thinking" ? "button" : "submit"}
+                disabled={composerState !== "thinking" && !canSend}
+                aria-label={composerState === "thinking" ? "Stop Lexi" : "Send message"}
+                onClick={composerState === "thinking" ? stopThinking : undefined}
+              >
+                {composerState === "thinking" ? (
+                  <span className="pause-glyph" aria-hidden="true"><i /><i /></span>
+                ) : (
+                  <span className="send-glyph" aria-hidden="true">↑</span>
+                )}
+              </button>
+            </div>
+          </div>
+          <p
+            id="language-warning"
+            className={`language-warning ${unsupported ? "is-visible" : ""}`}
+            role={unsupported ? "alert" : undefined}
+          >
+            Currently, languages apart from English are unsupported.
+          </p>
+        </form>
+      </section>
+
+      <footer className="brand-footer">
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noreferrer"
+          className={`brand-link ${showVersion ? "show-version" : "show-logo"}`}
+          onClick={handleBrandClick}
+          aria-label={
+            showVersion
+              ? "Alphaine Lexi Language version. Shift-click to show the Alphaine logo."
+              : "Alphaine on GitHub. Shift-click to show the Lexi version."
+          }
+          title="Open GitHub · Shift-click for build information"
+        >
+          {showVersion ? (
+            <span className="version-text">Alphaine™ Lexi Language 1.0 Pre-build 260720-1A</span>
+          ) : (
+            <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
+              {BRAND_LETTERS.map((letter, index) => (
+                <span key={`${letter}-${index}`} style={{ "--letter": index } as React.CSSProperties}>{letter}</span>
+              ))}
+              <sup>TM</sup>
+            </span>
+          )}
+        </a>
+      </footer>
+    </main>
+  );
+}

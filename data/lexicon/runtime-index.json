@@ -1,0 +1,2691 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": {
+    "wordset": {
+      "repository": "https://github.com/wordset/wordset-dictionary",
+      "sha256": "5702e39c0049de5a2ef4639ab44adb84d47110d998beafdd74f8e04f160f30c9",
+      "license": "CC BY-SA 4.0"
+    },
+    "moby": {
+      "repository": "https://github.com/words/moby",
+      "sha256": "63fcdcec2efe34414825945c7837f4381c7df7344ae34fdf1e8368eda19d59f3",
+      "license": "Public domain (Moby source); see vendored README"
+    }
+  },
+  "dictionary": {
+    "ai": {
+      "word": "ai",
+      "meanings": [
+        {
+          "definition": "a sloth that has three long claws on each forefoot and each hindfoot",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "three-toed sloth"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "word": "answer",
+      "meanings": [
+        {
+          "definition": "a nonverbal reaction",
+          "partOfSpeech": "noun",
+          "example": "Your answer to any problem was to get drunk.",
+          "synonyms": []
+        },
+        {
+          "definition": "the principal pleading by the defendant in response to plaintiff's complaint",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "a statement that solves a problem or explains how to solve the problem",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "resolution"
+          ]
+        }
+      ]
+    },
+    "artificial intelligence": {
+      "word": "artificial intelligence",
+      "meanings": [
+        {
+          "definition": "the branch of computer science that deal with writing computer programs that can solve problems creatively",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    "build": {
+      "word": "build",
+      "meanings": [
+        {
+          "definition": "constitution of the human body",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "physique"
+          ]
+        },
+        {
+          "definition": "alternative names for the body of a human being",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "shape"
+          ]
+        },
+        {
+          "definition": "to develop and grow",
+          "partOfSpeech": "verb",
+          "example": "Suspense was building right from the beginning of the opera.",
+          "synonyms": []
+        }
+      ]
+    },
+    "capability": {
+      "word": "capability",
+      "meanings": [
+        {
+          "definition": "the quality of being able -- physically or intellectually or legally",
+          "partOfSpeech": "noun",
+          "example": "To prepare for the big match, we trained to the limits of our team's capability.",
+          "synonyms": [
+            "capableness"
+          ]
+        },
+        {
+          "definition": "an aptitude that may be developed",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "capableness",
+            "potentiality"
+          ]
+        },
+        {
+          "definition": "the susceptibility of something to a particular treatment",
+          "partOfSpeech": "noun",
+          "example": "the capability of a metal to be fused",
+          "synonyms": [
+            "capacity"
+          ]
+        }
+      ]
+    },
+    "clause": {
+      "word": "clause",
+      "meanings": [
+        {
+          "definition": "(grammar) an expression including a subject and predicate but not constituting a complete sentence",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "a separate section of a legal document (as a statute or contract or will)",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "article"
+          ]
+        }
+      ]
+    },
+    "combine": {
+      "word": "combine",
+      "meanings": [
+        {
+          "definition": "harvester that heads and threshes and cleans grain while moving across the field",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "an occurrence that results in things being united",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "combining"
+          ]
+        },
+        {
+          "definition": "a consortium of independent organizations formed to limit competition by controlling the production and distribution of a product or service",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "trust",
+            "corporate trust",
+            "cartel"
+          ]
+        }
+      ]
+    },
+    "connect": {
+      "word": "connect",
+      "meanings": [
+        {
+          "definition": "to make a logical or causal connection",
+          "partOfSpeech": "verb",
+          "example": "I cannot connect these two pieces of evidence in my mind",
+          "synonyms": [
+            "link"
+          ]
+        },
+        {
+          "definition": "to join for the purpose of communication",
+          "partOfSpeech": "verb",
+          "example": "Operator, could you connect me to the Raffles in Singapore?",
+          "synonyms": []
+        },
+        {
+          "definition": "to join by means of communication equipment",
+          "partOfSpeech": "verb",
+          "example": "The telephone company finally put in lines to connect the towns in this area.",
+          "synonyms": []
+        }
+      ]
+    },
+    "context": {
+      "word": "context",
+      "meanings": [
+        {
+          "definition": "discourse that surrounds a language unit and helps to determine its interpretation",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "linguistic context",
+            "context of use"
+          ]
+        },
+        {
+          "definition": "the set of facts or circumstances that surround a situation or event",
+          "partOfSpeech": "noun",
+          "example": "the historical context",
+          "synonyms": [
+            "setting"
+          ]
+        }
+      ]
+    },
+    "create": {
+      "word": "create",
+      "meanings": [
+        {
+          "definition": "to make, cause to be or to become",
+          "partOfSpeech": "verb",
+          "example": "I created a new song over the weekend.",
+          "synonyms": [
+            "make"
+          ]
+        },
+        {
+          "definition": "to create or manufacture a man-made product",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "make"
+          ]
+        },
+        {
+          "definition": "to create by artistic means",
+          "partOfSpeech": "verb",
+          "example": "create a poem",
+          "synonyms": [
+            "make"
+          ]
+        }
+      ]
+    },
+    "define": {
+      "word": "define",
+      "meanings": [
+        {
+          "definition": "decide upon or fix definitely",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "fix"
+          ]
+        },
+        {
+          "definition": "give a definition for the meaning of a word",
+          "partOfSpeech": "verb",
+          "synonyms": []
+        },
+        {
+          "definition": "determine the essential quality of",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "delineate"
+          ]
+        }
+      ]
+    },
+    "deterministic": {
+      "word": "deterministic",
+      "meanings": [
+        {
+          "definition": "an inevitable consequence of antecedent sufficient causes",
+          "partOfSpeech": "adjective",
+          "synonyms": []
+        }
+      ]
+    },
+    "dictionary": {
+      "word": "dictionary",
+      "meanings": [
+        {
+          "definition": "a reference book containing an alphabetical list of words with information about them",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "lexicon"
+          ]
+        }
+      ]
+    },
+    "different": {
+      "word": "different",
+      "meanings": [
+        {
+          "definition": "differing from all others",
+          "partOfSpeech": "adjective",
+          "synonyms": []
+        },
+        {
+          "definition": "marked by dissimilarity",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "unlike",
+            "dissimilar"
+          ]
+        },
+        {
+          "definition": "unlike in nature or quality or form or degree",
+          "partOfSpeech": "adjective",
+          "example": "took different approaches to the problem",
+          "synonyms": []
+        }
+      ]
+    },
+    "example": {
+      "word": "example",
+      "meanings": [
+        {
+          "definition": "a task performed or problem solved in order to develop skill or understanding",
+          "partOfSpeech": "noun",
+          "example": "you must work the examples at the end of each chapter in the textbook",
+          "synonyms": [
+            "exercise"
+          ]
+        },
+        {
+          "definition": "an item of information that is typical of a class or group",
+          "partOfSpeech": "noun",
+          "example": "this patient provides a typical example of the syndrome",
+          "synonyms": [
+            "representative",
+            "illustration",
+            "instance"
+          ]
+        },
+        {
+          "definition": "something to be imitated",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "model",
+            "exemplar",
+            "good example"
+          ]
+        }
+      ]
+    },
+    "generate": {
+      "word": "generate",
+      "meanings": [
+        {
+          "definition": "make children",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "get"
+          ]
+        },
+        {
+          "definition": "bring into existence",
+          "partOfSpeech": "verb",
+          "example": "The new manager generated a lot of problems",
+          "synonyms": [
+            "bring forth",
+            "create"
+          ]
+        },
+        {
+          "definition": "produce (energy)",
+          "partOfSpeech": "verb",
+          "example": "We can't generate enough power for the entire city",
+          "synonyms": []
+        }
+      ]
+    },
+    "grammar": {
+      "word": "grammar",
+      "meanings": [
+        {
+          "definition": "the branch of linguistics that deals with syntax and morphology (and sometimes also deals with semantics)",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        }
+      ]
+    },
+    "greeting": {
+      "word": "greeting",
+      "meanings": [
+        {
+          "definition": "(usually plural) an acknowledgment or expression of good will (especially on meeting)",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "salutation"
+          ]
+        }
+      ]
+    },
+    "hello": {
+      "word": "hello",
+      "meanings": [
+        {
+          "definition": "an expression of greeting",
+          "partOfSpeech": "noun",
+          "example": "Every morning they exchanged polite hellos.",
+          "synonyms": [
+            "hullo",
+            "hi",
+            "howdy",
+            "how-do-you-do"
+          ]
+        }
+      ]
+    },
+    "help": {
+      "word": "help",
+      "meanings": [
+        {
+          "definition": "the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "assist"
+          ]
+        },
+        {
+          "definition": "a means of serving",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "service"
+          ]
+        },
+        {
+          "definition": "a resource",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "aid"
+          ]
+        }
+      ]
+    },
+    "interpret": {
+      "word": "interpret",
+      "meanings": [
+        {
+          "definition": "make sense of a language",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "read"
+          ]
+        },
+        {
+          "definition": "make sense of",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "see"
+          ]
+        },
+        {
+          "definition": "give an interpretation or explanation to",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "rede"
+          ]
+        }
+      ]
+    },
+    "language": {
+      "word": "language",
+      "meanings": [
+        {
+          "definition": "the mental faculty or power of vocal communication",
+          "partOfSpeech": "noun",
+          "example": "language sets homo sapiens apart from all other animals",
+          "synonyms": [
+            "speech"
+          ]
+        },
+        {
+          "definition": "the cognitive processes involved in producing and understanding linguistic communication",
+          "partOfSpeech": "noun",
+          "example": "We didn't have the language to express our feelings.",
+          "synonyms": [
+            "linguistic process"
+          ]
+        },
+        {
+          "definition": "a systematic means of communicating by the use of sounds or conventional symbols",
+          "partOfSpeech": "noun",
+          "example": "I taught foreign languages.",
+          "synonyms": [
+            "linguistic communication"
+          ]
+        }
+      ]
+    },
+    "lexicon": {
+      "word": "lexicon",
+      "meanings": [
+        {
+          "definition": "a language user's knowledge of words",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "vocabulary"
+          ]
+        },
+        {
+          "definition": "a reference book containing an alphabetical list of words with information about them",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "dictionary"
+          ]
+        }
+      ]
+    },
+    "meaning": {
+      "word": "meaning",
+      "meanings": [
+        {
+          "definition": "rich in significance or implication",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "pregnant"
+          ]
+        },
+        {
+          "definition": "the idea that is intended",
+          "partOfSpeech": "noun",
+          "example": "What is the meaning of this proverb?",
+          "synonyms": [
+            "substance"
+          ]
+        },
+        {
+          "definition": "the message that is intended or expressed or signified",
+          "partOfSpeech": "noun",
+          "example": "what is the meaning of this sentence",
+          "synonyms": [
+            "import"
+          ]
+        }
+      ]
+    },
+    "mechanical": {
+      "word": "mechanical",
+      "meanings": [
+        {
+          "definition": "using (or as if using) mechanisms or tools or devices",
+          "partOfSpeech": "adjective",
+          "example": "a mechanical process",
+          "synonyms": []
+        },
+        {
+          "definition": "relating to or governed by or in accordance with mechanics",
+          "partOfSpeech": "adjective",
+          "example": "a belief that the universe is a mechanical contrivance",
+          "synonyms": []
+        },
+        {
+          "definition": "relating to or concerned with machinery or tools",
+          "partOfSpeech": "adjective",
+          "example": "mechanical arts",
+          "synonyms": [
+            "mechanically skillful"
+          ]
+        }
+      ]
+    },
+    "model": {
+      "word": "model",
+      "meanings": [
+        {
+          "definition": "worthy of imitation",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "exemplary"
+          ]
+        },
+        {
+          "definition": "the act of representing something (usually on a smaller scale)",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "modelling",
+            "modeling"
+          ]
+        },
+        {
+          "definition": "representation of something (sometimes on a smaller scale)",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "simulation"
+          ]
+        }
+      ]
+    },
+    "module": {
+      "word": "module",
+      "meanings": [
+        {
+          "definition": "a self-contained component (unit or item) that is used in combination with other components",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "computer circuit consisting of an assembly of electronic components (as of computer hardware)",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "detachable compartment of a spacecraft",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        }
+      ]
+    },
+    "predict": {
+      "word": "predict",
+      "meanings": [
+        {
+          "definition": "indicate by signs",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "forecast"
+          ]
+        },
+        {
+          "definition": "make a prediction about",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "call"
+          ]
+        }
+      ]
+    },
+    "reply": {
+      "word": "reply",
+      "meanings": [
+        {
+          "definition": "a statement (either spoken or written) that is made to reply to a question or request or criticism or accusation",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "response"
+          ]
+        },
+        {
+          "definition": "the speech act of continuing a conversational exchange",
+          "partOfSpeech": "noun",
+          "example": "They growled their reply to the harsh question.",
+          "synonyms": [
+            "response"
+          ]
+        },
+        {
+          "definition": "react verbally",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "respond"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "word": "response",
+      "meanings": [
+        {
+          "definition": "a bodily process occurring due to the effect of some antecedent stimulus or agent",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "reaction"
+          ]
+        },
+        {
+          "definition": "the manner in which an electrical or mechanical device responds to an input signal or a range of input signals",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        },
+        {
+          "definition": "a phrase recited or sung by the congregation following a versicle by the priest or minister",
+          "partOfSpeech": "noun",
+          "synonyms": []
+        }
+      ]
+    },
+    "rule": {
+      "word": "rule",
+      "meanings": [
+        {
+          "definition": "measuring stick consisting of a strip of wood or metal or plastic with a straight edge that is used for drawing straight lines and measuring lengths",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "ruler"
+          ]
+        },
+        {
+          "definition": "something regarded as a normative example",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "pattern"
+          ]
+        },
+        {
+          "definition": "a principle or condition that customarily governs behavior",
+          "partOfSpeech": "noun",
+          "example": "It was their rule to take a walk before breakfast.",
+          "synonyms": [
+            "regulation"
+          ]
+        }
+      ]
+    },
+    "search": {
+      "word": "search",
+      "meanings": [
+        {
+          "definition": "an investigation seeking answers",
+          "partOfSpeech": "noun",
+          "example": "a thorough search of the ledgers revealed nothing",
+          "synonyms": []
+        },
+        {
+          "definition": "boarding and inspecting a ship on the high seas",
+          "partOfSpeech": "noun",
+          "example": "right of search",
+          "synonyms": []
+        },
+        {
+          "definition": "the activity of looking thoroughly in order to find something or someone",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "hunt"
+          ]
+        }
+      ]
+    },
+    "sentence": {
+      "word": "sentence",
+      "meanings": [
+        {
+          "definition": "(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "conviction"
+          ]
+        },
+        {
+          "definition": "a string of words satisfying the grammatical rules of a language",
+          "partOfSpeech": "noun",
+          "example": "They always spoke in grammatical sentences.",
+          "synonyms": []
+        },
+        {
+          "definition": "the period of time a prisoner is imprisoned",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "time"
+          ]
+        }
+      ]
+    },
+    "similar": {
+      "word": "similar",
+      "meanings": [
+        {
+          "definition": "resembling or similar",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "like"
+          ]
+        },
+        {
+          "definition": "having the same or similar characteristics",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "alike",
+            "like"
+          ]
+        },
+        {
+          "definition": "capable of replacing or changing places with something else",
+          "partOfSpeech": "adjective",
+          "synonyms": [
+            "exchangeable"
+          ]
+        }
+      ]
+    },
+    "structure": {
+      "word": "structure",
+      "meanings": [
+        {
+          "definition": "a particular complex anatomical part of a living thing",
+          "partOfSpeech": "noun",
+          "example": "I have good bone structure.",
+          "synonyms": [
+            "anatomical structure",
+            "complex body part",
+            "bodily structure",
+            "body structure"
+          ]
+        },
+        {
+          "definition": "the complex composition of knowledge as elements and their combinations",
+          "partOfSpeech": "noun",
+          "example": "The professor's lectures have no structure.",
+          "synonyms": []
+        },
+        {
+          "definition": "the people in a society considered as a system organized by a characteristic pattern of relationships",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "social organization",
+            "social organisation",
+            "social structure",
+            "social system"
+          ]
+        }
+      ]
+    },
+    "synonym": {
+      "word": "synonym",
+      "meanings": [
+        {
+          "definition": "two words that can be interchanged in a context are said to be synonymous relative to that context",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "equivalent word"
+          ]
+        }
+      ]
+    },
+    "thesaurus": {
+      "word": "thesaurus",
+      "meanings": [
+        {
+          "definition": "a book containing a classified list of synonyms",
+          "partOfSpeech": "noun",
+          "synonyms": [
+            "synonym finder"
+          ]
+        }
+      ]
+    },
+    "understand": {
+      "word": "understand",
+      "meanings": [
+        {
+          "definition": "know and comprehend the nature or meaning of",
+          "partOfSpeech": "verb",
+          "example": "They did not understand what I was explaining.",
+          "synonyms": []
+        },
+        {
+          "definition": "perceive (an idea or situation) mentally",
+          "partOfSpeech": "verb",
+          "synonyms": [
+            "see"
+          ]
+        },
+        {
+          "definition": "believe to be the case",
+          "partOfSpeech": "verb",
+          "example": "I understand you have no previous experience?",
+          "synonyms": [
+            "infer"
+          ]
+        }
+      ]
+    },
+    "word": {
+      "word": "word",
+      "meanings": [
+        {
+          "definition": "a unit of language that native speakers can identify",
+          "partOfSpeech": "noun",
+          "example": "Words are the blocks from which sentences are made.",
+          "synonyms": []
+        },
+        {
+          "definition": "information about recent and important events",
+          "partOfSpeech": "noun",
+          "example": "What's the word on the new smart phone?",
+          "synonyms": [
+            "intelligence"
+          ]
+        },
+        {
+          "definition": "a secret word or phrase known only to a restricted group",
+          "partOfSpeech": "noun",
+          "example": "I forgot the word, but can you still let me in?",
+          "synonyms": [
+            "parole"
+          ]
+        }
+      ]
+    }
+  },
+  "thesaurus": {
+    "ai": [
+      "three-toed sloth"
+    ],
+    "answer": [
+      "ability",
+      "accomplished fact",
+      "accomplishment",
+      "accomplishments",
+      "achievement",
+      "acquirement",
+      "acquisition of knowledge",
+      "acquisitions",
+      "act",
+      "acta",
+      "action",
+      "administration",
+      "advance",
+      "advancement",
+      "advent",
+      "adventure",
+      "amplification",
+      "appearance",
+      "approach",
+      "arrival",
+      "ascertainment",
+      "attainment",
+      "attainments",
+      "blossoming",
+      "blow",
+      "bringing to fruition",
+      "clearing up",
+      "coming",
+      "commission",
+      "completion",
+      "conclusion",
+      "conduct",
+      "consummation",
+      "coup",
+      "cracking",
+      "culmination",
+      "dealings",
+      "decipherment",
+      "decoding",
+      "deed",
+      "denouement",
+      "determination",
+      "development",
+      "developmental change",
+      "discharge",
+      "disentanglement",
+      "dispatch",
+      "doing"
+    ],
+    "artificial intelligence": [
+      "ai"
+    ],
+    "build": [
+      "add to",
+      "aggrandize",
+      "amplify",
+      "augment",
+      "bloat",
+      "blow up",
+      "boost",
+      "broaden",
+      "build up",
+      "bulk",
+      "bulk out",
+      "crescendo",
+      "develop",
+      "dilate",
+      "distend",
+      "enlarge",
+      "exalt",
+      "expand",
+      "extend",
+      "fatten",
+      "fill out",
+      "fortify",
+      "hike",
+      "hike up",
+      "huff",
+      "increase",
+      "inflate",
+      "jack up",
+      "jump up",
+      "lengthen",
+      "magnify",
+      "maximize",
+      "parlay",
+      "puff",
+      "puff up",
+      "pump",
+      "pump up",
+      "put up",
+      "pyramid",
+      "raise",
+      "rarefy",
+      "recruit",
+      "reinforce",
+      "strengthen",
+      "stretch",
+      "sufflate",
+      "supplement",
+      "swell"
+    ],
+    "capability": [
+      "ability",
+      "ableness",
+      "address",
+      "adeptness",
+      "adequacy",
+      "adroitness",
+      "airmanship",
+      "aptitude",
+      "aptness",
+      "artfulness",
+      "artisanship",
+      "artistry",
+      "bravura",
+      "brilliance",
+      "bump",
+      "caliber",
+      "capableness",
+      "capacity",
+      "capital",
+      "cleverness",
+      "command",
+      "competence",
+      "competency",
+      "condition",
+      "control",
+      "coordination",
+      "craft",
+      "craftsmanship",
+      "cunning",
+      "deftness",
+      "devices",
+      "dexterity",
+      "dexterousness",
+      "dextrousness",
+      "diplomacy",
+      "disposable resources",
+      "dower",
+      "dowry",
+      "efficacy",
+      "efficiency",
+      "endowment",
+      "equipment",
+      "expertise",
+      "expertism",
+      "expertness",
+      "facility",
+      "faculty",
+      "finesse"
+    ],
+    "clause": [
+      "addendum",
+      "addition",
+      "advance",
+      "advancement",
+      "alteration",
+      "amelioration",
+      "amendment",
+      "ascent",
+      "attachment",
+      "bettering",
+      "betterment",
+      "bill",
+      "boost",
+      "calendar",
+      "change",
+      "change of allegiance",
+      "change of heart",
+      "change of mind",
+      "companion bills amendment",
+      "correction",
+      "dragnet clause",
+      "editing",
+      "emendation",
+      "enacting clause",
+      "enhancement",
+      "enrichment",
+      "escalator clause",
+      "eugenics",
+      "euthenics",
+      "furtherance",
+      "great leap forward",
+      "headway",
+      "hold-up bill",
+      "improvement",
+      "joker",
+      "lift",
+      "melioration",
+      "mend",
+      "mending",
+      "motion",
+      "new birth",
+      "omnibus bill",
+      "paragraph",
+      "pickup",
+      "preferment",
+      "privileged question",
+      "progress",
+      "progression"
+    ],
+    "combine": [
+      "accompany",
+      "agree",
+      "associate",
+      "associate with",
+      "assort with",
+      "attend",
+      "band together",
+      "be in phase",
+      "be in time",
+      "chaperon",
+      "chaperone",
+      "chord",
+      "coexist",
+      "coextend",
+      "coincide",
+      "companion",
+      "concertize",
+      "concur",
+      "confederate",
+      "consociate",
+      "consort with",
+      "contemporize",
+      "convoy",
+      "couple with",
+      "do",
+      "escort",
+      "execute",
+      "flock together",
+      "go along with",
+      "go with",
+      "hang around with",
+      "herd together",
+      "interpret",
+      "isochronize",
+      "keep company with",
+      "keep in step",
+      "keep pace with",
+      "make music",
+      "match",
+      "perform",
+      "play",
+      "play by ear",
+      "render",
+      "run with",
+      "squire",
+      "symphonize",
+      "synchronize",
+      "time"
+    ],
+    "connect": [
+      "abut",
+      "abut on",
+      "accouple",
+      "accrue",
+      "accumulate",
+      "adjoin",
+      "advance",
+      "agglomerate",
+      "agglutinate",
+      "aggregate",
+      "aggroup",
+      "amass",
+      "appose",
+      "be based on",
+      "be contiguous",
+      "be in contact",
+      "bear on",
+      "bestraddle",
+      "bestride",
+      "border",
+      "border on",
+      "bring near",
+      "butt",
+      "communicate",
+      "conjoin",
+      "join",
+      "juxtapose",
+      "juxtaposit",
+      "lean on",
+      "lie by",
+      "lie on",
+      "line",
+      "march",
+      "neighbor",
+      "perch",
+      "put with",
+      "rely on",
+      "repose on",
+      "rest on",
+      "ride",
+      "sit on",
+      "stand by",
+      "stand on",
+      "straddle",
+      "stride",
+      "touch",
+      "verge",
+      "verge upon"
+    ],
+    "context": [
+      "alentours",
+      "ambience",
+      "ambient",
+      "ambit",
+      "arena",
+      "atmosphere",
+      "bailiwick",
+      "beat",
+      "border",
+      "borderland",
+      "borderlands",
+      "circle",
+      "circuit",
+      "circumambiencies",
+      "circumjacencies",
+      "circumstances",
+      "climate",
+      "compass",
+      "constituency",
+      "cycle",
+      "demesne",
+      "department",
+      "domain",
+      "dominion",
+      "entourage",
+      "environing circumstances",
+      "environment",
+      "environs",
+      "extension",
+      "extent",
+      "gestalt",
+      "habitat",
+      "medium",
+      "milieu",
+      "mise-en-scene",
+      "neighborhood",
+      "outposts",
+      "outskirts",
+      "perimeter",
+      "periphery",
+      "precincts",
+      "purlieus",
+      "situation",
+      "suburbs",
+      "surroundings",
+      "total environment",
+      "vicinage",
+      "vicinity"
+    ],
+    "create": [
+      "accouple",
+      "accumulate",
+      "agglomerate",
+      "agglutinate",
+      "aggregate",
+      "aggroup",
+      "amass",
+      "articulate",
+      "assemble",
+      "associate",
+      "band",
+      "batch",
+      "bond",
+      "bracket",
+      "bridge",
+      "bridge over",
+      "bring together",
+      "build",
+      "build up",
+      "bulk",
+      "bunch",
+      "bunch together",
+      "bunch up",
+      "carve",
+      "cast",
+      "cement",
+      "chain",
+      "chase",
+      "chisel",
+      "clap together",
+      "clot",
+      "clump",
+      "cluster",
+      "collect",
+      "colligate",
+      "collocate",
+      "combine",
+      "come together",
+      "compare",
+      "compile",
+      "compose",
+      "compound",
+      "comprise",
+      "concatenate",
+      "concoct",
+      "conglobulate",
+      "conglomerate",
+      "congregate"
+    ],
+    "define": [
+      "abalienate",
+      "accredit",
+      "alien",
+      "alienate",
+      "allocate",
+      "allot",
+      "allow",
+      "amortize",
+      "apply",
+      "appoint",
+      "apportion",
+      "appropriate",
+      "appropriate to",
+      "ascribe",
+      "assign",
+      "assign to",
+      "associate",
+      "attach",
+      "attribute",
+      "authorize",
+      "barter",
+      "bequeath",
+      "carry over",
+      "cede",
+      "charge",
+      "charter",
+      "choose",
+      "classify",
+      "collocate",
+      "commend",
+      "commission",
+      "commit",
+      "communicate",
+      "confer",
+      "confide",
+      "consign",
+      "convey",
+      "credit",
+      "decide",
+      "deed",
+      "deed over",
+      "delegate",
+      "deliver",
+      "demise",
+      "denominate",
+      "deploy",
+      "deport",
+      "depute"
+    ],
+    "deterministic": [],
+    "dictionary": [
+      "about ship",
+      "aesopian language",
+      "affectation",
+      "affectedness",
+      "alert",
+      "angle",
+      "angularity",
+      "animate",
+      "animated",
+      "apex",
+      "argot",
+      "ascend",
+      "babble",
+      "babel",
+      "back and fill",
+      "bank",
+      "be hypocritical",
+      "bear away",
+      "bear off",
+      "bear to starboard",
+      "beat",
+      "beat about",
+      "bend",
+      "bifurcation",
+      "bight",
+      "blandish",
+      "box off",
+      "break",
+      "bring about",
+      "bring round",
+      "cant",
+      "cant round",
+      "careen",
+      "cast",
+      "cast about",
+      "change course",
+      "change the heading",
+      "chevron",
+      "cipher",
+      "climb",
+      "code",
+      "coin",
+      "colloquialize",
+      "greek",
+      "l",
+      "pecksniffery",
+      "tartuffery",
+      "tartuffism"
+    ],
+    "different": [
+      "aberrant",
+      "aberrative",
+      "abnormal",
+      "abominable",
+      "abroad",
+      "adrift",
+      "all abroad",
+      "all off",
+      "all wrong",
+      "amiss",
+      "amorphous",
+      "anomalistic",
+      "anomalous",
+      "askew",
+      "astray",
+      "at fault",
+      "atrocious",
+      "atypical",
+      "awry",
+      "beside the mark",
+      "circuitous",
+      "corrupt",
+      "criminal",
+      "deceptive",
+      "defective",
+      "delinquent",
+      "delusive",
+      "departing",
+      "desultory",
+      "deviant",
+      "deviating",
+      "deviational",
+      "deviative",
+      "deviatory",
+      "devious",
+      "digressive",
+      "discursive",
+      "disgraceful",
+      "disparate",
+      "distorted",
+      "divergent",
+      "eccentric",
+      "errant",
+      "erratic",
+      "erring",
+      "erroneous",
+      "evil",
+      "exceptional"
+    ],
+    "example": [
+      "admonishment",
+      "admonition",
+      "advice",
+      "advising",
+      "advocacy",
+      "alarm",
+      "briefing",
+      "castigation",
+      "caution",
+      "cautioning",
+      "caveat",
+      "chastisement",
+      "chiding",
+      "consultation",
+      "correction",
+      "council",
+      "counsel",
+      "determent",
+      "deterrence",
+      "deterrent example",
+      "direction",
+      "exhortation",
+      "expostulation",
+      "final notice",
+      "final warning",
+      "forewarning",
+      "frightening off",
+      "guidance",
+      "hint",
+      "hortation",
+      "idea",
+      "instruction",
+      "intimidation",
+      "lecture",
+      "lesson",
+      "monition",
+      "moral",
+      "notice",
+      "notification",
+      "object lesson",
+      "objurgation",
+      "opinion",
+      "parley",
+      "proposal",
+      "rap",
+      "rating",
+      "rebuke",
+      "recommendation"
+    ],
+    "generate": [
+      "add to",
+      "agent provocateur",
+      "aggrandize",
+      "aggravate",
+      "amplify",
+      "annoy",
+      "augment",
+      "ballyhoo",
+      "bloat",
+      "blow up",
+      "boost",
+      "broaden",
+      "build",
+      "build up",
+      "bulk",
+      "bulk out",
+      "burlesque",
+      "caricature",
+      "carry too far",
+      "charge",
+      "complete",
+      "crescendo",
+      "deepen",
+      "descant",
+      "detail",
+      "deteriorate",
+      "develop",
+      "dilate",
+      "distend",
+      "draw the longbow",
+      "elaborate",
+      "electrify",
+      "embellish",
+      "embitter",
+      "embroider",
+      "energize",
+      "enhance",
+      "enlarge",
+      "enlarge upon",
+      "enter into detail",
+      "evolve",
+      "exacerbate",
+      "exaggerate",
+      "exalt",
+      "exasperate",
+      "expand",
+      "expatiate",
+      "explicate"
+    ],
+    "grammar": [
+      "abecedarium",
+      "abecedary",
+      "alphabet",
+      "alphabet book",
+      "alphabetics",
+      "and arithmetic",
+      "art",
+      "basics",
+      "battledore",
+      "beginning",
+      "blueprint",
+      "casebook",
+      "charactering",
+      "characterization",
+      "chart",
+      "choreography",
+      "commencement",
+      "conventional representation",
+      "dance notation",
+      "delineation",
+      "demonstration",
+      "depiction",
+      "elementary education",
+      "elements",
+      "exercise book",
+      "first steps",
+      "gradus",
+      "hornbook",
+      "initial teaching alphabet",
+      "initiation",
+      "international phonetic alphabet",
+      "introduction",
+      "ipa",
+      "ita",
+      "manual",
+      "manual of instruction",
+      "primer",
+      "propaedeutic",
+      "reader",
+      "reading",
+      "rudiments",
+      "schoolbook",
+      "speller",
+      "spelling book",
+      "t",
+      "text",
+      "workbook",
+      "writing"
+    ],
+    "greeting": [
+      "abiding place",
+      "ability",
+      "abode",
+      "accost",
+      "action",
+      "actions",
+      "activity",
+      "acts",
+      "address",
+      "adduce",
+      "adeptness",
+      "adroitness",
+      "advance",
+      "affability",
+      "affectation",
+      "affirmation",
+      "after-dinner speech",
+      "aim",
+      "air",
+      "airmanship",
+      "allegation",
+      "allege",
+      "allocution",
+      "angle for",
+      "animadvert",
+      "answer",
+      "apostrophe",
+      "apostrophize",
+      "appeal to",
+      "application",
+      "apply",
+      "apply to",
+      "approach",
+      "artfulness",
+      "artisanship",
+      "artistry",
+      "asking",
+      "assertion",
+      "associate",
+      "attend",
+      "averment",
+      "bearing",
+      "beau",
+      "behavior",
+      "behavior pattern",
+      "behavioral norm",
+      "behavioral science",
+      "parthian shot"
+    ],
+    "hello": [
+      "abiding place",
+      "ability",
+      "abode",
+      "accost",
+      "action",
+      "actions",
+      "activity",
+      "acts",
+      "address",
+      "adduce",
+      "adeptness",
+      "adroitness",
+      "advance",
+      "affability",
+      "affectation",
+      "affirmation",
+      "after-dinner speech",
+      "aim",
+      "air",
+      "airmanship",
+      "allegation",
+      "allege",
+      "allocution",
+      "angle for",
+      "animadvert",
+      "answer",
+      "apostrophe",
+      "apostrophize",
+      "appeal to",
+      "application",
+      "apply",
+      "apply to",
+      "approach",
+      "artfulness",
+      "artisanship",
+      "artistry",
+      "asking",
+      "assertion",
+      "associate",
+      "attend",
+      "averment",
+      "bearing",
+      "beau",
+      "behavior",
+      "behavior pattern",
+      "behavioral norm",
+      "behavioral science",
+      "parthian shot"
+    ],
+    "help": [
+      "abet",
+      "advance",
+      "advocate",
+      "aid",
+      "aid and abet",
+      "approve of",
+      "ask for",
+      "assist",
+      "avail",
+      "bail out",
+      "bear a hand",
+      "befriend",
+      "benefit",
+      "comfort",
+      "condone",
+      "countenance",
+      "do for",
+      "do good",
+      "doctor",
+      "ease",
+      "egg",
+      "egg on",
+      "embolden",
+      "encourage",
+      "endorse",
+      "exhort",
+      "favor",
+      "feed",
+      "foment",
+      "foster",
+      "further",
+      "give a boost",
+      "give a hand",
+      "give a lift",
+      "give encouragement",
+      "give help",
+      "go for",
+      "goad",
+      "hearten",
+      "help out",
+      "incite",
+      "instigate",
+      "invite",
+      "keep in countenance",
+      "lend a hand",
+      "lend one aid",
+      "nourish",
+      "nurture"
+    ],
+    "interpret": [
+      "accompany",
+      "agree",
+      "associate",
+      "associate with",
+      "assort with",
+      "attend",
+      "band together",
+      "be in phase",
+      "be in time",
+      "chaperon",
+      "chaperone",
+      "chord",
+      "coexist",
+      "coextend",
+      "coincide",
+      "combine",
+      "companion",
+      "concertize",
+      "concur",
+      "confederate",
+      "consociate",
+      "consort with",
+      "contemporize",
+      "convoy",
+      "couple with",
+      "do",
+      "escort",
+      "execute",
+      "flock together",
+      "go along with",
+      "go with",
+      "hang around with",
+      "herd together",
+      "isochronize",
+      "keep company with",
+      "keep in step",
+      "keep pace with",
+      "make music",
+      "match",
+      "perform",
+      "play",
+      "play by ear",
+      "render",
+      "run with",
+      "squire",
+      "symphonize",
+      "synchronize",
+      "time"
+    ],
+    "language": [
+      "accent",
+      "accent mark",
+      "accents",
+      "accentuate",
+      "accentuation",
+      "alexandrine",
+      "amphibrach",
+      "amphimacer",
+      "anacrusis",
+      "anapest",
+      "antispast",
+      "arsis",
+      "articulation",
+      "bacchius",
+      "bar",
+      "beat",
+      "belabor",
+      "broad accent",
+      "brogue",
+      "burr",
+      "cadence",
+      "caesura",
+      "cancel",
+      "catalexis",
+      "character",
+      "chatter",
+      "chloriamb",
+      "chloriambus",
+      "colon",
+      "comment",
+      "concern",
+      "concernment",
+      "consequence",
+      "consequentiality",
+      "consideration",
+      "conversation",
+      "counterpoint",
+      "cretic",
+      "custos",
+      "dactyl",
+      "dactylic hexameter",
+      "diacritical mark",
+      "diaeresis",
+      "dimeter",
+      "dipody",
+      "direct",
+      "discourse",
+      "distinguish"
+    ],
+    "lexicon": [
+      "about ship",
+      "aesopian language",
+      "affectation",
+      "affectedness",
+      "alert",
+      "angle",
+      "angularity",
+      "animate",
+      "animated",
+      "apex",
+      "argot",
+      "ascend",
+      "babble",
+      "babel",
+      "back and fill",
+      "bank",
+      "be hypocritical",
+      "bear away",
+      "bear off",
+      "bear to starboard",
+      "beat",
+      "beat about",
+      "bend",
+      "bifurcation",
+      "bight",
+      "blandish",
+      "box off",
+      "break",
+      "bring about",
+      "bring round",
+      "cant",
+      "cant round",
+      "careen",
+      "cast",
+      "cast about",
+      "change course",
+      "change the heading",
+      "chevron",
+      "cipher",
+      "climb",
+      "code",
+      "coin",
+      "colloquialize",
+      "greek",
+      "l",
+      "pecksniffery",
+      "tartuffery",
+      "tartuffism"
+    ],
+    "meaning": [
+      "address",
+      "affectation",
+      "aim",
+      "aim at",
+      "ambition",
+      "angle",
+      "animus",
+      "aspiration",
+      "aspire",
+      "aspire after",
+      "aspire to",
+      "atmosphere",
+      "attempt",
+      "aura",
+      "azimuth",
+      "be after",
+      "be determined",
+      "bear",
+      "bearing",
+      "bend",
+      "bent",
+      "butt",
+      "by-end",
+      "by-purpose",
+      "cast",
+      "character",
+      "choose",
+      "complacency",
+      "concentrate",
+      "contemplate",
+      "counsel",
+      "course",
+      "covet",
+      "crave",
+      "current",
+      "descant",
+      "desideration",
+      "desideratum",
+      "design",
+      "desire",
+      "destination",
+      "destine",
+      "determination",
+      "determine",
+      "diapason",
+      "direct",
+      "direction",
+      "direction line"
+    ],
+    "mechanical": [
+      "accordant",
+      "akin",
+      "alike",
+      "all one",
+      "all the same",
+      "analogous",
+      "aped",
+      "as is",
+      "at par",
+      "au pair",
+      "automatic",
+      "balanced",
+      "coequally",
+      "coextensively",
+      "coincidentally",
+      "commensurate",
+      "comparable",
+      "congruently",
+      "consimilar",
+      "consistent",
+      "consonant",
+      "constant",
+      "consubstantial",
+      "continuous",
+      "copied",
+      "correspondent",
+      "correspondently",
+      "corresponding",
+      "correspondingly",
+      "coterminously",
+      "counterfeit",
+      "ditto",
+      "drawn",
+      "duplicate",
+      "equable",
+      "equal",
+      "equalized",
+      "equally",
+      "ersatz",
+      "even",
+      "even stephen",
+      "exactly alike",
+      "fake",
+      "favoring",
+      "fifty-fifty",
+      "flat",
+      "following",
+      "half-and-half"
+    ],
+    "model": [
+      "admirable",
+      "adorable",
+      "angelic",
+      "antetype",
+      "antitype",
+      "archetype",
+      "awe-inspiring",
+      "beyond all praise",
+      "biotype",
+      "caressable",
+      "charming",
+      "classic example",
+      "commendable",
+      "creditable",
+      "criterion",
+      "cuddlesome",
+      "deserving",
+      "epitome",
+      "estimable",
+      "excellent",
+      "exemplary",
+      "fine",
+      "first-class",
+      "first-rate",
+      "fugleman",
+      "fugler",
+      "great",
+      "kissable",
+      "laudable",
+      "likable",
+      "lovable",
+      "lovely",
+      "lovesome",
+      "magic",
+      "meritorious",
+      "praiseworthy",
+      "seraphic",
+      "smashing",
+      "splendid",
+      "superior",
+      "sweet",
+      "top-drawer",
+      "unexceptionable",
+      "well-deserving",
+      "winning",
+      "winsome",
+      "wonderful",
+      "worthy"
+    ],
+    "module": [
+      "acme",
+      "all",
+      "apex",
+      "aphelion",
+      "apogee",
+      "astronomical longitude",
+      "attitude-control rocket",
+      "autumnal equinox",
+      "ballistic capsule",
+      "brow",
+      "burn",
+      "cap",
+      "capstone",
+      "capsule",
+      "ceiling",
+      "celestial equator",
+      "celestial longitude",
+      "celestial meridian",
+      "circle",
+      "climax",
+      "cloud nine",
+      "colures",
+      "crest",
+      "crown",
+      "culmen",
+      "culmination",
+      "deep-space ship",
+      "docking",
+      "docking maneuver",
+      "earth insertion",
+      "ecliptic",
+      "edge",
+      "end",
+      "equator",
+      "equinoctial",
+      "equinoctial circle",
+      "equinoctial colure",
+      "equinox",
+      "extreme",
+      "extreme limit",
+      "extremity",
+      "far cry",
+      "far piece",
+      "ferry rocket",
+      "fuel ship",
+      "galactic longitude",
+      "lem",
+      "lm"
+    ],
+    "predict": [
+      "adumbrate",
+      "allude to",
+      "argue",
+      "augur",
+      "auspicate",
+      "becloud",
+      "bedim",
+      "bespeak",
+      "betoken",
+      "block out",
+      "bode",
+      "body forth",
+      "call",
+      "chalk out",
+      "characterize",
+      "cloud",
+      "darken",
+      "demonstrate",
+      "denote",
+      "dim",
+      "draft",
+      "drop a hint",
+      "embody",
+      "exemplify",
+      "figure",
+      "fog",
+      "forebode",
+      "forecast",
+      "foreshadow",
+      "foreshow",
+      "foretell",
+      "give a hint",
+      "give the cue",
+      "glance at",
+      "gloom",
+      "have a hunch",
+      "have an intimation",
+      "hint",
+      "hint at",
+      "illustrate",
+      "image",
+      "impersonate",
+      "imply",
+      "incarnate",
+      "indicate",
+      "insinuate",
+      "intimate",
+      "lower"
+    ],
+    "reply": [
+      "accept",
+      "account for",
+      "accredit with",
+      "accrete to",
+      "acknowledge",
+      "admit",
+      "admit everything",
+      "affirm",
+      "agree",
+      "agree provisionally",
+      "allege",
+      "allow",
+      "announce",
+      "answer",
+      "answer back",
+      "apply to",
+      "ascribe to",
+      "assent grudgingly",
+      "asseverate",
+      "assign to",
+      "attach to",
+      "attest",
+      "attribute to",
+      "aver",
+      "avouch",
+      "avow",
+      "bear the expense",
+      "bear witness",
+      "blame",
+      "blame for",
+      "blame on",
+      "bless",
+      "bring home to",
+      "certify",
+      "charge on",
+      "charge to",
+      "chip in",
+      "come back",
+      "come back at",
+      "come clean",
+      "concede",
+      "confess",
+      "connect with",
+      "consider",
+      "cop a plea",
+      "credit",
+      "credit with",
+      "declare"
+    ],
+    "response": [
+      "abject apology",
+      "acceptance",
+      "acknowledgment",
+      "acknowledgments",
+      "acquittance",
+      "admission",
+      "allowance",
+      "answer",
+      "answering",
+      "antiphon",
+      "apology",
+      "appreciation",
+      "avowal",
+      "back",
+      "back answer",
+      "back matter",
+      "back talk",
+      "backchat",
+      "bastard title",
+      "benediction",
+      "bibliography",
+      "billet",
+      "blurb",
+      "boost",
+      "breast-beating",
+      "buildup",
+      "business letter",
+      "by-line",
+      "canceled check",
+      "catch line",
+      "catchword",
+      "chit",
+      "citation",
+      "cognizance",
+      "colophon",
+      "comeback",
+      "commendation",
+      "communication",
+      "concession",
+      "confession",
+      "contents",
+      "contents page",
+      "contrition",
+      "copyright page",
+      "credit",
+      "credit line",
+      "crediting",
+      "declaration"
+    ],
+    "rule": [
+      "acme",
+      "acme of perfection",
+      "aerial heights",
+      "all",
+      "apex",
+      "apogee",
+      "apotheosis",
+      "authority",
+      "authorization",
+      "be-all and end-all",
+      "beau ideal",
+      "best type",
+      "blue ribbon",
+      "brow",
+      "cap",
+      "capstone",
+      "ceiling",
+      "championship",
+      "climax",
+      "cloud nine",
+      "command",
+      "consummation",
+      "control",
+      "crest",
+      "crown",
+      "culmen",
+      "culmination",
+      "cynosure",
+      "directorship",
+      "dizzy heights",
+      "dominion",
+      "edge",
+      "effectiveness",
+      "ego ideal",
+      "elevation",
+      "eminence",
+      "end",
+      "ether",
+      "extreme",
+      "extreme limit",
+      "extremity",
+      "first place",
+      "first prize",
+      "headship",
+      "heaven",
+      "heavens",
+      "hegemony",
+      "olympian heights"
+    ],
+    "search": [
+      "about ship",
+      "abrade",
+      "abscond",
+      "accent",
+      "accentuation",
+      "addle",
+      "addled",
+      "aerate",
+      "agitate",
+      "air lane",
+      "alexandrine",
+      "all in",
+      "all up with",
+      "alternation",
+      "amaze",
+      "ambit",
+      "amphibrach",
+      "amphimacer",
+      "anacrusis",
+      "anapest",
+      "andante tempo",
+      "antispast",
+      "area",
+      "arena",
+      "arrhythmia",
+      "arsis",
+      "article",
+      "at a loss",
+      "atomize",
+      "bacchius",
+      "back and fill",
+      "baffle",
+      "baffled",
+      "bailiwick",
+      "balk",
+      "bamboozle",
+      "bamboozled",
+      "bang",
+      "bar beat",
+      "barnacle",
+      "barrage",
+      "bash",
+      "baste",
+      "bastinado",
+      "baton",
+      "batter",
+      "beat",
+      "bohemian"
+    ],
+    "sentence": [
+      "accordance",
+      "acquitment",
+      "acquittal",
+      "acquittance",
+      "adherence",
+      "amortization",
+      "amortizement",
+      "binder",
+      "care",
+      "carrying out",
+      "cash",
+      "cash payment",
+      "clearance",
+      "compliance",
+      "condemnation",
+      "conformance",
+      "conformity",
+      "debt service",
+      "decision",
+      "defrayal",
+      "defrayment",
+      "deposit",
+      "disbursal",
+      "discharge",
+      "doling out",
+      "down payment",
+      "earnest",
+      "earnest money",
+      "execution",
+      "fulfillment",
+      "heed",
+      "heeding",
+      "hire purchase",
+      "hire purchase plan",
+      "installment",
+      "installment plan",
+      "interest payment",
+      "judgment",
+      "keeping",
+      "landmark decision",
+      "liquidation",
+      "monthly payments",
+      "never-never",
+      "observance",
+      "observation",
+      "paying",
+      "paying off",
+      "paying out"
+    ],
+    "similar": [
+      "affiliated",
+      "affinal",
+      "affinitive",
+      "agnate",
+      "akin",
+      "alike",
+      "allied",
+      "analogous",
+      "avuncular",
+      "closely related",
+      "cognate",
+      "collateral",
+      "comparable",
+      "congeneric",
+      "congenerous",
+      "congenial",
+      "connate",
+      "connatural",
+      "connected",
+      "consanguine",
+      "consanguinean",
+      "consanguineous",
+      "conspecific",
+      "correlative",
+      "corresponding",
+      "distantly related",
+      "enate",
+      "foster",
+      "genetically related",
+      "german",
+      "germane",
+      "incident",
+      "kindred",
+      "matrilateral",
+      "matrilineal",
+      "matroclinous",
+      "novercal",
+      "of common source",
+      "of the blood",
+      "parallel",
+      "patrilateral",
+      "patrilineal",
+      "patroclinous",
+      "related",
+      "related by blood",
+      "sib",
+      "sibling",
+      "undifferentiated"
+    ],
+    "structure": [
+      "accomplished fact",
+      "accomplishment",
+      "achievement",
+      "act",
+      "acta",
+      "action",
+      "actions",
+      "activeness",
+      "activism",
+      "activity",
+      "acts",
+      "ad hoc measure",
+      "address",
+      "adventure",
+      "aerial combat",
+      "affectation",
+      "affray",
+      "agency",
+      "air",
+      "amphibious operations",
+      "anagnorisis",
+      "angle",
+      "answer",
+      "architectonics",
+      "architecture",
+      "argument",
+      "armored combat",
+      "artifice",
+      "atmosphere",
+      "automatic control",
+      "award",
+      "background",
+      "ball",
+      "battle",
+      "battle royal",
+      "bearing",
+      "behavior",
+      "behavior pattern",
+      "behavioral norm",
+      "behavioral science",
+      "big time",
+      "blow",
+      "brush",
+      "bullfight",
+      "business",
+      "carriage",
+      "cascade control",
+      "case"
+    ],
+    "synonym": [
+      "antipode",
+      "antipodes",
+      "antipole",
+      "antithesis",
+      "antonym",
+      "articulation",
+      "contra",
+      "converse",
+      "counter",
+      "counterbalance",
+      "countercheck",
+      "counterpoint",
+      "counterpoise",
+      "counterpole",
+      "counterterm",
+      "expression",
+      "foil",
+      "free form",
+      "homograph",
+      "homonym",
+      "homophone",
+      "indian file",
+      "inverse",
+      "lexeme",
+      "linguistic form",
+      "locution",
+      "logos",
+      "metonym",
+      "minimum free form",
+      "monosyllable",
+      "obverse",
+      "offset",
+      "opposite",
+      "opposite number",
+      "polysyllable",
+      "reverse",
+      "setoff",
+      "syllable",
+      "term",
+      "the contrary",
+      "the other side",
+      "usage",
+      "utterance",
+      "verbalism",
+      "verbum",
+      "vis-a-vis",
+      "vocable",
+      "word"
+    ],
+    "thesaurus": [
+      "atlas",
+      "biographical dictionary",
+      "calendar",
+      "cant",
+      "casebook",
+      "catalog",
+      "catalogue raisonne",
+      "chemical dictionary",
+      "city directory",
+      "city editor",
+      "classified catalog",
+      "columnist",
+      "concordance",
+      "copy chief",
+      "desk dictionary",
+      "dialect dictionary",
+      "dictionary",
+      "dictionary of quotations",
+      "electronics dictionary",
+      "etymological dictionary",
+      "foreign-language dictionary",
+      "gazetteer",
+      "general dictionary",
+      "geological dictionary",
+      "gloss",
+      "glossary",
+      "gradus",
+      "jargon",
+      "language",
+      "lexicon",
+      "nomenclator",
+      "onomasticon",
+      "palaver",
+      "phrase book",
+      "polyglot dictionary",
+      "promptorium",
+      "rhyming dictionary",
+      "science dictionary",
+      "slang dictionary",
+      "specialized dictionary",
+      "synonym dictionary",
+      "synonymy",
+      "terminology",
+      "treasury of words",
+      "unabridged dictionary",
+      "vocabulary",
+      "word list",
+      "wordbook"
+    ],
+    "understand": [
+      "ablate",
+      "absorb",
+      "absorb the attention",
+      "adsorb",
+      "appreciate",
+      "apprehend",
+      "appropriate",
+      "arrest",
+      "assimilate",
+      "be with one",
+      "bleed white",
+      "blot",
+      "blot up",
+      "burn up",
+      "buy up",
+      "catch",
+      "catch on",
+      "catch up in",
+      "charm",
+      "chemisorb",
+      "chemosorb",
+      "come uppermost",
+      "comprehend",
+      "conceive",
+      "concern",
+      "consume",
+      "corner",
+      "deplete",
+      "dig",
+      "digest",
+      "drain",
+      "drain of resources",
+      "draw in",
+      "drink",
+      "drink in",
+      "drink up",
+      "eat",
+      "eat up",
+      "embarrass",
+      "embody",
+      "enchant",
+      "engage",
+      "engage the attention",
+      "engage the mind",
+      "engage the thoughts",
+      "engross",
+      "engross the mind",
+      "engross the thoughts"
+    ],
+    "word": [
+      "a reckoning of",
+      "account",
+      "account current",
+      "account for",
+      "account of",
+      "account rendered",
+      "account stated",
+      "accounting",
+      "accounts",
+      "acquaintance",
+      "acta",
+      "adjudge",
+      "adjudicate",
+      "advantage",
+      "aggregate",
+      "allow",
+      "allow for",
+      "allowance",
+      "amount",
+      "anecdotage",
+      "anecdote",
+      "annals",
+      "announcement",
+      "annual",
+      "answer for",
+      "approbation",
+      "approval",
+      "assessment",
+      "balance",
+      "bank account",
+      "bank balance",
+      "be judicious",
+      "benefit",
+      "bill",
+      "bill of account",
+      "bill of fare",
+      "bill of lading",
+      "blackmail",
+      "blood money",
+      "blue book",
+      "body count",
+      "books",
+      "box score",
+      "brief",
+      "briefing",
+      "bulletin",
+      "calculation",
+      "capitulation"
+    ]
+  }
+}

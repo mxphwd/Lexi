@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alphaine.example/schemas/lexi-context-page-v1.json",
+  "title": "Lexi Context Page",
+  "type": "object",
+  "required": ["schemaVersion", "page", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "page": {
+      "type": "object",
+      "required": ["id", "title", "description", "language"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "language": { "const": "en" }
+      },
+      "additionalProperties": false
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "intent", "input", "response", "keywords", "mode", "context"],
+        "properties": {
+          "id": { "type": "string", "minLength": 3 },
+          "intent": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "input": { "type": "string", "minLength": 2 },
+          "response": { "type": "string", "minLength": 2 },
+          "keywords": { "type": "array", "items": { "type": "string" } },
+          "mode": { "enum": ["declarative", "interrogative", "imperative", "exclamative"] },
+          "context": {
+            "type": "object",
+            "required": ["domain", "purpose", "tone"],
+            "properties": {
+              "domain": { "type": "string" },
+              "purpose": { "type": "string" },
+              "tone": { "enum": ["neutral", "warm", "precise", "cautious"] }
+            },
+            "additionalProperties": false
+          },
+          "slots": { "type": "object", "additionalProperties": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

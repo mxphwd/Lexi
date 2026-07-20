@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "id": "12-dialogue-basics",
+    "title": "Dialogue basics",
+    "description": "Gratitude, farewells, wellbeing, and requests for guidance.",
+    "language": "en"
+  },
+  "entries": [
+    {
+      "id": "12-dialogue-basics-01",
+      "intent": "gratitude",
+      "input": "Thank you, Lexi.",
+      "response": "You’re welcome. Your message matched a recorded gratitude context.",
+      "keywords": [
+        "thank",
+        "you",
+        "lexi"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-02",
+      "intent": "gratitude",
+      "input": "Thanks for explaining.",
+      "response": "You’re welcome. I’m glad the mechanical explanation was useful.",
+      "keywords": [
+        "thanks",
+        "for",
+        "explaining"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-03",
+      "intent": "gratitude",
+      "input": "I appreciate the answer.",
+      "response": "You’re welcome. The response remains available with its match trace.",
+      "keywords": [
+        "i",
+        "appreciate",
+        "the",
+        "answer"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-04",
+      "intent": "farewell",
+      "input": "Goodbye, Lexi.",
+      "response": "Goodbye. Add more example contexts when you are ready to teach me further.",
+      "keywords": [
+        "goodbye",
+        "lexi"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-05",
+      "intent": "farewell",
+      "input": "Bye for now.",
+      "response": "Goodbye for now.",
+      "keywords": [
+        "bye",
+        "for",
+        "now"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-06",
+      "intent": "farewell",
+      "input": "I will talk to you later.",
+      "response": "I’ll be ready when you return.",
+      "keywords": [
+        "i",
+        "will",
+        "talk",
+        "to",
+        "you",
+        "later"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-07",
+      "intent": "wellbeing",
+      "input": "How are you?",
+      "response": "I do not have feelings, but my deterministic modules are ready.",
+      "keywords": [
+        "how",
+        "are",
+        "you"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-08",
+      "intent": "wellbeing",
+      "input": "How are you doing today?",
+      "response": "I do not experience a day, but the current engine is operating normally.",
+      "keywords": [
+        "how",
+        "are",
+        "you",
+        "doing",
+        "today"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-09",
+      "intent": "wellbeing",
+      "input": "Are you feeling well?",
+      "response": "I do not have feelings. I can report that this response path completed.",
+      "keywords": [
+        "are",
+        "you",
+        "feeling",
+        "well"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-10",
+      "intent": "help",
+      "input": "Help me get started.",
+      "response": "Try asking: ‘How does Lexi work?’, ‘What does the Context Module do?’, or ‘What can you do?’",
+      "keywords": [
+        "help",
+        "me",
+        "get",
+        "started"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-11",
+      "intent": "help",
+      "input": "What should I ask?",
+      "response": "Ask about Lexi, Alphaine, the mechanical pipeline, one of the four modules, or the prototype’s limits.",
+      "keywords": [
+        "what",
+        "should",
+        "i",
+        "ask"
+      ],
+      "mode": "interrogative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-12",
+      "intent": "help",
+      "input": "Show me an example question.",
+      "response": "A useful example is: ‘How is Lexi different from a traditional LLM?’",
+      "keywords": [
+        "show",
+        "me",
+        "an",
+        "example",
+        "question"
+      ],
+      "mode": "imperative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-13",
+      "intent": "help",
+      "input": "I need guidance.",
+      "response": "Begin with the mechanism, then inspect the optional trace under the response.",
+      "keywords": [
+        "i",
+        "need",
+        "guidance"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-14",
+      "intent": "gratitude",
+      "input": "That was helpful.",
+      "response": "You’re welcome.",
+      "keywords": [
+        "that",
+        "was",
+        "helpful"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    },
+    {
+      "id": "12-dialogue-basics-15",
+      "intent": "farewell",
+      "input": "See you soon.",
+      "response": "Goodbye. I’ll use the same recorded rules when you return.",
+      "keywords": [
+        "see",
+        "you",
+        "soon"
+      ],
+      "mode": "declarative",
+      "context": {
+        "domain": "conversation",
+        "purpose": "handle short dialogue turns",
+        "tone": "warm"
+      }
+    }
+  ]
+}
