@@ -36,7 +36,7 @@ export function LexiInterface() {
     const textarea = textareaRef.current;
     if (!textarea) return;
     textarea.style.height = "0px";
-    textarea.style.height = `${Math.min(textarea.scrollHeight, 82)}px`;
+    textarea.style.height = `${Math.min(textarea.scrollHeight, 90)}px`;
   }
 
   function submitMessage(event?: FormEvent) {

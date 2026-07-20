@@ -56,7 +56,7 @@ a {
 .lexi-stage {
   position: relative;
   display: flex;
-  width: min(438px, calc(100vw - 48px));
+  width: min(468px, calc(100vw - 48px));
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
@@ -111,19 +111,19 @@ a {
 
 .composer-inner {
   display: flex;
-  min-height: 46px;
+  min-height: 50px;
   align-items: center;
-  gap: 8px;
-  padding: 6px 6px 6px 9px;
+  gap: 9px;
+  padding: 7px 7px 7px 10px;
   border-radius: 11px;
   background: rgba(250, 251, 248, 0.92);
 }
 
 .about-trigger {
   display: grid;
-  width: 20px;
-  height: 20px;
-  flex: 0 0 20px;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
   place-items: center;
   border: 1px solid rgba(55, 61, 55, 0.2);
   border-radius: 5px;
@@ -131,7 +131,7 @@ a {
   color: #747a74;
   cursor: pointer;
   font-family: var(--mono);
-  font-size: 0.55rem;
+  font-size: 0.58rem;
   line-height: 1;
   transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
 }
@@ -153,17 +153,17 @@ a {
 .composer-input {
   display: block;
   width: 100%;
-  height: 32px;
-  min-height: 32px;
-  max-height: 82px;
+  height: 35px;
+  min-height: 35px;
+  max-height: 90px;
   resize: none;
   border: 0;
   outline: none;
   background: transparent;
   color: #2f322f;
-  font-size: 0.82rem;
+  font-size: 0.87rem;
   line-height: 1.42;
-  padding: 7px 0 6px;
+  padding: 8px 0 7px;
   scrollbar-width: thin;
 }
 
@@ -175,9 +175,9 @@ a {
 .send-button {
   position: relative;
   display: grid;
-  width: 32px;
-  height: 32px;
-  flex: 0 0 32px;
+  width: 35px;
+  height: 35px;
+  flex: 0 0 35px;
   place-items: center;
   border: 0;
   border-radius: 8px;
@@ -328,10 +328,10 @@ a {
 
 .about-popover {
   position: absolute;
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 20px);
   left: 0;
-  width: min(332px, calc(100vw - 48px));
-  padding: 12px 13px 11px;
+  width: min(350px, calc(100vw - 48px));
+  padding: 13px 14px 12px;
   border: 1px solid rgba(44, 49, 44, 0.2);
   border-radius: 9px 9px 9px 3px;
   background: rgba(247, 248, 245, 0.94);
@@ -354,7 +354,7 @@ a {
   margin-bottom: 6px;
   color: #777d77;
   font-family: var(--mono);
-  font-size: 0.43rem;
+  font-size: 0.46rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -362,7 +362,7 @@ a {
 .about-popover blockquote {
   margin: 0;
   color: #454945;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   line-height: 1.48;
 }
 
@@ -394,7 +394,7 @@ a {
 
 .reply-card {
   position: relative;
-  padding: 18px 15px 13px;
+  padding: 19px 16px 14px;
   border: 1px solid rgba(47, 52, 47, 0.16);
   border-radius: 8px;
   background: var(--panel-white);
@@ -414,7 +414,7 @@ a {
 .reply-card > p {
   margin: 0;
   color: #363a36;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   line-height: 1.52;
 }
 
@@ -422,7 +422,7 @@ a {
   margin-top: 8px;
   color: #767c76;
   font-family: var(--mono);
-  font-size: 0.47rem;
+  font-size: 0.5rem;
 }
 
 .trace summary {
@@ -505,7 +505,7 @@ a {
 }
 
 .brand-word {
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1;
@@ -530,7 +530,7 @@ a {
 
 .version-text {
   font-family: var(--mono);
-  font-size: 0.47rem;
+  font-size: 0.5rem;
   letter-spacing: 0.035em;
   white-space: nowrap;
   animation: version-enter 280ms ease both;
@@ -557,11 +557,11 @@ a {
 
 @media (max-width: 520px) {
   .lexi-stage {
-    width: min(100% - 32px, 438px);
+    width: min(100% - 32px, 468px);
   }
 
   .about-popover {
-    width: min(318px, calc(100vw - 32px));
+    width: min(338px, calc(100vw - 32px));
   }
 
   .brand-footer {
