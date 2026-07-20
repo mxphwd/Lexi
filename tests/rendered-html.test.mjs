@@ -21,9 +21,10 @@ test("server-renders the finished Lexi surface", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Lexi Language — Alphaine<\/title>/i);
-  assert.match(html, /Hello, I’m Lexi\./);
   assert.match(html, /Talk to Lexi\.\.\./);
+  assert.match(html, /About Lexi/);
   assert.match(html, /Alphaine/);
+  assert.doesNotMatch(html, /Hello, I’m Lexi\./);
   assert.match(html, /Currently, languages apart from English are unsupported\./);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -52,5 +53,5 @@ test("ships the modular corpus and complete lexical source artifacts", async () 
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
-  assert.ok((await stat(new URL("../public/og.png", import.meta.url))).size > 100_000);
+  assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });

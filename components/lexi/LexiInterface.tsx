@@ -36,7 +36,7 @@ export function LexiInterface() {
     const textarea = textareaRef.current;
     if (!textarea) return;
     textarea.style.height = "0px";
-    textarea.style.height = `${Math.min(textarea.scrollHeight, 116)}px`;
+    textarea.style.height = `${Math.min(textarea.scrollHeight, 82)}px`;
   }
 
   function submitMessage(event?: FormEvent) {
@@ -92,57 +92,21 @@ export function LexiInterface() {
 
   return (
     <main className="lexi-page">
-      <div className="ambient ambient-one" aria-hidden="true" />
-      <div className="ambient ambient-two" aria-hidden="true" />
-
       <section className={`lexi-stage ${reply ? "has-reply" : ""}`} aria-label="Talk to Lexi">
-        <div className="greeting-wrap">
-          <button
-            className="greeting"
-            type="button"
-            aria-expanded={aboutOpen}
-            aria-controls="lexi-about"
-            onClick={() => setAboutOpen((current) => !current)}
-          >
-            <span>Hello, I’m Lexi.</span>
-            <span className="greeting-mark" aria-hidden="true">↗</span>
-          </button>
-
-          <aside
-            id="lexi-about"
-            className={`about-popover ${aboutOpen ? "is-open" : ""}`}
-            aria-hidden={!aboutOpen}
-          >
-            <span className="about-label">From the Lexi documentation</span>
-            <blockquote>“{DOCUMENTATION_QUOTE}”</blockquote>
-          </aside>
-        </div>
-
-        <div className={`reply-region ${reply ? "is-visible" : ""}`} aria-live="polite">
-          {reply ? (
-            <article className="reply-card">
-              <p>{reply.text}</p>
-              <details className="trace">
-                <summary>Why this response</summary>
-                <dl>
-                  <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
-                  <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
-                  <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
-                  <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
-                  <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
-                </dl>
-                <p className="corpus-note">
-                  Matched against {stats.examples} examples across {stats.pages} context pages.
-                </p>
-              </details>
-            </article>
-          ) : null}
-        </div>
-
         <form className="composer-form" onSubmit={submitMessage}>
           <div className={`composer-frame state-${shellState}`}>
             <div className="composer-glow" aria-hidden="true" />
             <div className="composer-inner">
+              <button
+                className="about-trigger"
+                type="button"
+                aria-label="About Lexi"
+                aria-expanded={aboutOpen}
+                aria-controls="lexi-about"
+                onClick={() => setAboutOpen((current) => !current)}
+              >
+                i
+              </button>
               <textarea
                 ref={textareaRef}
                 value={input}
@@ -168,10 +132,18 @@ export function LexiInterface() {
                 {composerState === "thinking" ? (
                   <span className="pause-glyph" aria-hidden="true"><i /><i /></span>
                 ) : (
-                  <span className="send-glyph" aria-hidden="true">↑</span>
+                  <span className="send-glyph" aria-hidden="true" />
                 )}
               </button>
             </div>
+            <aside
+              id="lexi-about"
+              className={`about-popover ${aboutOpen ? "is-open" : ""}`}
+              aria-hidden={!aboutOpen}
+            >
+              <span className="about-label">Lexi / definition</span>
+              <blockquote>“{DOCUMENTATION_QUOTE}”</blockquote>
+            </aside>
           </div>
           <p
             id="language-warning"
@@ -181,6 +153,29 @@ export function LexiInterface() {
             Currently, languages apart from English are unsupported.
           </p>
         </form>
+
+        <div className={`reply-region ${reply ? "is-visible" : ""}`} aria-live="polite">
+          <div className="reply-shell">
+            {reply ? (
+              <article className="reply-card">
+                <p>{reply.text}</p>
+                <details className="trace">
+                  <summary>Why this response</summary>
+                  <dl>
+                    <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
+                    <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
+                    <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
+                    <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
+                    <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
+                  </dl>
+                  <p className="corpus-note">
+                    Matched against {stats.examples} examples across {stats.pages} context pages.
+                  </p>
+                </details>
+              </article>
+            ) : null}
+          </div>
+        </div>
       </section>
 
       <footer className="brand-footer">
