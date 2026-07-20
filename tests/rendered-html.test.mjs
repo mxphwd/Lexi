@@ -24,6 +24,7 @@ test("server-renders the finished Lexi surface", async () => {
   assert.match(html, /Talk to Lexi\.\.\./);
   assert.match(html, /About Lexi/);
   assert.match(html, /Alphaine/);
+  assert.match(html, /brand-word reenter/);
   assert.doesNotMatch(html, /Hello, I’m Lexi\./);
   assert.match(html, /Currently, languages apart from English are unsupported\./);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);

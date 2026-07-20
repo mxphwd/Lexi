@@ -20,15 +20,22 @@ export function LexiInterface() {
   const [reply, setReply] = useState<LexiReply | null>(null);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [showVersion, setShowVersion] = useState(false);
-  const [brandEntrance, setBrandEntrance] = useState(false);
+  const [brandEntrance, setBrandEntrance] = useState(true);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const brandTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
   const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
 
   useEffect(() => {
+    brandTimerRef.current = setTimeout(() => {
+      setBrandEntrance(false);
+      brandTimerRef.current = null;
+    }, 1300);
+
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
+      if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
     };
   }, []);
 
@@ -78,8 +85,16 @@ export function LexiInterface() {
     event.preventDefault();
     const returningToLogo = showVersion;
     setShowVersion((current) => !current);
-    setBrandEntrance(returningToLogo);
-    if (returningToLogo) window.setTimeout(() => setBrandEntrance(false), 1300);
+    if (returningToLogo) {
+      if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
+      setBrandEntrance(true);
+      brandTimerRef.current = setTimeout(() => {
+        setBrandEntrance(false);
+        brandTimerRef.current = null;
+      }, 1300);
+    } else {
+      setBrandEntrance(false);
+    }
   }
 
   const shellState = unsupported

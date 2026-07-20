@@ -528,6 +528,12 @@ a {
   animation-delay: calc(var(--letter) * 58ms);
 }
 
+.brand-word.reenter sup {
+  display: inline-block;
+  opacity: 0;
+  animation: trademark-enter 320ms ease 780ms forwards;
+}
+
 .version-text {
   font-family: var(--mono);
   font-size: 0.5rem;
@@ -548,6 +554,11 @@ a {
 @keyframes letter-enter {
   from { opacity: 0; filter: blur(3px); transform: translateY(4px); }
   to { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+@keyframes trademark-enter {
+  from { opacity: 0; filter: blur(2px); }
+  to { opacity: 1; filter: blur(0); }
 }
 
 @keyframes version-enter {
