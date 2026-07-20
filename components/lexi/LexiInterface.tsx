@@ -10,7 +10,7 @@ type ComposerState = "idle" | "thinking" | "stopping";
 const DOCUMENTATION_QUOTE =
   "Lexi model, including Lexi Language is Alphaine’s approach to the next step of language models, challenging traditional AI-based LLM(or Large Language Model)s. Alphaine aims to create mechanical thinking language model using the fundamentals of linguistics that delivers exactly how it knows about it, without hallucination.";
 
-const GITHUB_URL = "https://github.com/yourmelody";
+const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
 const stats = corpusStats();
 
@@ -157,7 +157,21 @@ export function LexiInterface() {
               aria-hidden={!aboutOpen}
             >
               <span className="about-label">Lexi / definition</span>
-              <blockquote>“{DOCUMENTATION_QUOTE}”</blockquote>
+              <blockquote>
+                “{DOCUMENTATION_QUOTE.split(/(Alphaine)/g).map((part, index) =>
+                  part === "Alphaine" ? (
+                    <a
+                      key={`alphaine-${index}`}
+                      className="about-alphaine-link"
+                      href={GITHUB_URL}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <strong>{part}</strong>
+                    </a>
+                  ) : part,
+                )}”
+              </blockquote>
             </aside>
           </div>
           <p

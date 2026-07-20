@@ -366,6 +366,30 @@ a {
   line-height: 1.48;
 }
 
+.about-alphaine-link {
+  color: inherit;
+  text-decoration-color: rgba(54, 91, 70, 0.38);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.about-alphaine-link strong {
+  font-weight: 700;
+}
+
+.about-alphaine-link:hover,
+.about-alphaine-link:focus-visible {
+  color: #385c49;
+  text-decoration-color: currentColor;
+}
+
+.about-alphaine-link:focus-visible {
+  border-radius: 2px;
+  outline: 1px solid rgba(61, 100, 79, 0.5);
+  outline-offset: 2px;
+}
+
 .reply-region {
   display: grid;
   grid-template-rows: 0fr;
