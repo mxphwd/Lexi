@@ -28,3 +28,5 @@ export function realiseSentence(
 
   return { text: sentenceCase(text), structureId: structure.id };
 }
+
+export { realiseCombinedResponses } from "./combine";

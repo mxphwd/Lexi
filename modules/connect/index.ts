@@ -18,10 +18,11 @@ function extractRequestedTerm(analysis: SentenceAnalysis): string | undefined {
 export function connectWords(
   analysis: SentenceAnalysis,
   decision: ContextDecision,
+  contextEntries: ContextEntry[] = [],
 ): ConnectedWords {
   const sourceEntry = decision.topMatches.find(
     (match) => match.entry.intent === decision.intent,
-  )?.entry;
+  )?.entry ?? contextEntries.find((entry) => entry.intent === decision.intent);
   const term = extractRequestedTerm(analysis);
 
   if (decision.intent === "synonym" && term) {

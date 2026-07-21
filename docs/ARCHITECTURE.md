@@ -11,7 +11,10 @@ fact outside those inputs.
 User text
    │
    ▼
-Sentence analysis ── normalized words + sentence mode
+Discourse Module ─── up to four explicit clauses
+   │
+   ▼
+Basic Phrases gate or sentence analysis
    │
    ▼
 Search Module ────── ranked ContextEntry records + term evidence
@@ -23,13 +26,24 @@ Context Module ───── intent + confidence + supporting matches
 Connect Module ───── subject/action/object/qualifier slots
    │
    ▼
-Structure Module ─── selected template + realized response
+Structure Module ─── clause realization + reviewed combination pattern
    │
    ├──► visible answer
-   └──► inspectable LexiTrace
+   └──► inspectable clause-aware LexiTrace
 ```
 
 ## Module boundaries
+
+### Discourse
+
+`modules/discourse/` owns explicit sentence and coordinated-request boundaries.
+It processes at most four clauses, deduplicates identical answers, and combines
+their trace evidence. It does not infer an unstated clause or add answer facts.
+
+### Basic Phrases
+
+`core/basic-phrases/` is checked independently for each clause. A match must
+cover the complete normalized clause; unmatched clauses continue into Search.
 
 ### Search
 
@@ -61,6 +75,8 @@ thesaurus record. It never writes the final sentence.
 `modules/structure/` owns realization. Each intent names a structure; each
 structure declares a literal template. Adding hundreds of structures means
 adding data and tests here rather than introducing a general-purpose generator.
+The module also owns literal multi-answer structures for openings, ordered
+parts, and closings.
 
 ## Traceability
 
@@ -73,6 +89,7 @@ Every response returns a `LexiTrace` containing:
 - selected sentence structure
 - whether the response came from an exact example, a context pattern, or the
   safe fallback
+- for a combined response, the number and ordered intents of its clauses
 
 The interface exposes this under “Why this response.”
 

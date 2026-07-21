@@ -37,6 +37,8 @@ export type SentenceAnalysis = {
   contentTokens: string[];
   mode: SentenceMode;
   questionWord?: string;
+  auxiliary?: string;
+  negated: boolean;
   subject?: string;
   predicate?: string;
   object?: string;
@@ -67,7 +69,14 @@ export type LexiTrace = {
   matchedExampleIds: string[];
   matchedTerms: string[];
   selectedStructure: string;
-  source: "core-phrase" | "exact-example" | "context-pattern" | "safe-fallback";
+  source:
+    | "core-phrase"
+    | "exact-example"
+    | "context-pattern"
+    | "safe-fallback"
+    | "combined-response";
+  clauseCount?: number;
+  clauseIntents?: string[];
 };
 
 export type LexiReply = {

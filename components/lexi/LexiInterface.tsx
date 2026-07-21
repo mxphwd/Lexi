@@ -3,6 +3,7 @@
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { corpusStats, respond } from "@/lib/lexi/engine";
 import type { LexiReply } from "@/lib/lexi/types";
+import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
 import { hasUnsupportedWritingSystem } from "@/modules/search";
 
 type ComposerState = "idle" | "thinking" | "stopping";
@@ -201,6 +202,9 @@ export function LexiInterface() {
                     <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
                     <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
                     <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
+                    {reply.trace.clauseIntents ? (
+                      <div><dt>Parts</dt><dd>{reply.trace.clauseIntents.join(" → ")}</dd></div>
+                    ) : null}
                     <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
                     <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
                   </dl>
@@ -229,7 +233,7 @@ export function LexiInterface() {
           title="Open GitHub · Shift-click for build information"
         >
           {showVersion ? (
-            <span className="version-text">Alphaine™ Lexi Language 1.0 Pre-build 260720-1A</span>
+            <span className="version-text">{LEXI_VERSION_LABEL}</span>
           ) : (
             <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
               {BRAND_LETTERS.map((letter, index) => (

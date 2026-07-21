@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { respond } from "@/lib/lexi/engine";
-import { hasUnsupportedWritingSystem } from "@/modules/search";
+import { splitIntoClauses } from "@/modules/discourse";
+import { analyseSentence, hasUnsupportedWritingSystem } from "@/modules/search";
 
 test("selects stable intents for representative prompts", () => {
   assert.equal(respond("Hello Lexi").trace.interpretedIntent, "greeting");
@@ -93,7 +94,7 @@ test("handles foundational phrases before the corpus modules", () => {
   const age = respond("How old are you?");
   assert.equal(age.trace.interpretedIntent, "model-age");
   assert.equal(age.trace.source, "core-phrase");
-  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260720-1A/);
+  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260721-0A/);
 
   assert.equal(respond("What’s your name?").trace.interpretedIntent, "identity");
   assert.equal(respond("HOW ARE YOU?").trace.interpretedIntent, "wellbeing");
@@ -105,4 +106,64 @@ test("does not let core phrases capture longer contextual messages", () => {
   assert.notEqual(respond("Hello, can you explain the Context Module?").trace.source, "core-phrase");
   assert.equal(respond("My name is Alex.").trace.interpretedIntent, "introduction");
   assert.equal(respond("How does Lexi work?").trace.interpretedIntent, "mechanism");
+});
+
+test("understands polite imperatives, contractions, and grammatical roles", () => {
+  const question = analyseSentence("How does Lexi work?");
+  assert.equal(question.mode, "interrogative");
+  assert.equal(question.questionWord, "how");
+  assert.equal(question.auxiliary, "does");
+  assert.equal(question.subject, "lexi");
+  assert.equal(question.predicate, "work");
+
+  const imperative = analyseSentence("Please explain the Context Module.");
+  assert.equal(imperative.mode, "imperative");
+  assert.equal(imperative.subject, "you");
+  assert.equal(imperative.predicate, "explain");
+  assert.equal(imperative.object, "the context module");
+
+  assert.equal(analyseSentence("What’s Lexi?").normalized, "what is lexi");
+
+  const politeContext = respond("Can you explain the Context Module?");
+  assert.equal(politeContext.trace.interpretedIntent, "context-module");
+  assert.notEqual(politeContext.text, "{response}");
+  assert.match(politeContext.text, /Context Module/);
+
+  const imperativeContext = respond("Please explain the Context Module.");
+  assert.equal(imperativeContext.trace.interpretedIntent, "context-module");
+  assert.notEqual(imperativeContext.text, "{response}");
+});
+
+test("segments only explicit discourse and request boundaries", () => {
+  assert.deepEqual(
+    splitIntoClauses("Hello! Explain the Context Module and then explain the Search Module."),
+    ["Hello", "Explain the Context Module", "explain the Search Module"],
+  );
+  assert.deepEqual(splitIntoClauses("Explain the dictionary and thesaurus."), [
+    "Explain the dictionary and thesaurus",
+  ]);
+});
+
+test("combines multiple bounded answers with reviewed structures", () => {
+  const opening = respond("Hello! What’s your name?");
+  assert.equal(opening.trace.source, "combined-response");
+  assert.equal(opening.trace.interpretedIntent, "greeting + identity");
+  assert.equal(opening.trace.clauseCount, 2);
+  assert.deepEqual(opening.trace.clauseIntents, ["greeting", "identity"]);
+  assert.equal(opening.trace.selectedStructure, "discourse-opening-answer");
+  assert.match(opening.text, /^Hello\./);
+  assert.match(opening.text, /I’m Lexi/);
+
+  const twoPart = respond("What’s your name and how old are you?");
+  assert.equal(twoPart.trace.source, "combined-response");
+  assert.equal(twoPart.trace.selectedStructure, "discourse-multipart");
+  assert.match(twoPart.text, /^First:/);
+  assert.match(twoPart.text, /Second:/);
+  assert.match(twoPart.text, /260721-0A/);
+
+  const modules = respond(
+    "Explain the Context Module and then explain the Search Module.",
+  );
+  assert.equal(modules.trace.interpretedIntent, "context-module + search-module");
+  assert.equal(modules.trace.source, "combined-response");
 });

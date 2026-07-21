@@ -1,4 +1,5 @@
 import type { BasicPhraseDefinition } from "./types";
+import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
 
 export const BASIC_PHRASES: readonly BasicPhraseDefinition[] = [
   {
@@ -21,8 +22,7 @@ export const BASIC_PHRASES: readonly BasicPhraseDefinition[] = [
       /^what is your age$/,
       /^when were you (?:born|made|created)$/,
     ],
-    response:
-      "I don’t have a human age. I am Alphaine™ Lexi Language 1.0 Pre-build 260720-1A.",
+    response: `I don’t have a human age. I am ${LEXI_VERSION_LABEL}.`,
     evidence: ["model age", "build identity"],
     mode: "interrogative",
   },

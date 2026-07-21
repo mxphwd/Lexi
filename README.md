@@ -1,13 +1,16 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260720-1A is a deterministic language-model
+Lexi Language 1.0 Pre-build 260721-0A is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
 same prompt and the same corpus always follow the same inspectable path:
 
-`Basic Phrases → sentence analysis → Search → Context → Connect → Structure → response`
+`Discourse → Basic Phrases or Search → Context → Connect → Structure → combination → response`
 
 The Basic Phrases gate returns only when a complete foundational phrase matches.
 Otherwise it passes the message unchanged into the corpus-driven pipeline.
+The Discourse Module separates explicit multi-part requests, sends each clause
+through that same bounded path, and recombines no more than four recorded
+answers with reviewed Structure Module patterns.
 
 ## Run the prototype
 
@@ -29,12 +32,15 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
   exchanges. It runs before every corpus module and retains no personal state.
 - `modules/search/` normalizes English, inspects sentence mode, expands the
   compact lexicon, and ranks recorded examples.
+- `modules/discourse/` separates explicit sentence and coordinated-request
+  boundaries, deduplicates replies, and aggregates their trace evidence.
 - `modules/context/` aggregates example evidence and explicit phrase rules into
   one bounded intent with a confidence score.
 - `modules/connect/` turns that intent into subject, action, object, and
   qualifier slots or a lexicon result.
 - `modules/structure/` selects an English realization pattern and fills only
-  the declared slots.
+  the declared slots. It also owns the reviewed opening, multipart, and closing
+  structures used to combine answers.
 - `lib/lexi/engine.ts` passes records between the modules and returns the reply
   together with a public trace.
 

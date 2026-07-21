@@ -1,6 +1,6 @@
 import type { ContextEntry, SearchMatch, SentenceAnalysis } from "@/lib/lexi/types";
 import { diceCoefficient, jaccard } from "./similarity";
-import { analyseSentence, contentTokens, tokenize } from "./tokenize";
+import { analyseSentence, contentTokens, normalizeText, tokenize } from "./tokenize";
 import { expandTerms } from "./thesaurus";
 
 function scoreEntry(analysis: SentenceAnalysis, entry: ContextEntry): SearchMatch {
@@ -13,7 +13,7 @@ function scoreEntry(analysis: SentenceAnalysis, entry: ContextEntry): SearchMatc
   const directOverlap = jaccard(queryTerms, entryTerms);
   const expandedOverlap = jaccard(expandedSet, entryTerms);
   const lexicalScore = directOverlap * 0.7 + expandedOverlap * 0.3;
-  const phraseScore = diceCoefficient(analysis.normalized, entry.input.toLowerCase());
+  const phraseScore = diceCoefficient(analysis.normalized, normalizeText(entry.input));
   const structureScore = analysis.mode === entry.mode ? 1 : 0.35;
   const matchedTerms = [...entryTerms].filter(
     (term) => queryTerms.has(term) || expandedSet.has(term),

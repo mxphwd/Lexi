@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260720-1a",
+  "version": "1.0.0-prebuild.260721-0a",
   "private": true,
   "engines": {
     "node": ">=22.13.0"

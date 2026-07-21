@@ -52,12 +52,13 @@ test("ships the modular corpus and complete lexical source artifacts", async () 
   assert.ok(wordset.size > 8_000_000);
   assert.ok(moby.size > 20_000_000);
 
-  for (const moduleName of ["search", "context", "connect", "structure"]) {
+  for (const moduleName of ["search", "context", "connect", "structure", "discourse"]) {
     const moduleEntry = await stat(new URL(`../modules/${moduleName}/index.ts`, import.meta.url));
     assert.ok(moduleEntry.isFile());
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
+  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260721-0a");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });
