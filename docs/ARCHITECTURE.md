@@ -14,7 +14,7 @@ User text
 Discourse Module ─── up to four explicit clauses
    │
    ▼
-Basic Phrases gate or sentence analysis
+Basic Phrases gate, full Dictionary lookup, or sentence analysis
    │
    ▼
 Search Module ────── ranked ContextEntry records + term evidence
@@ -37,8 +37,10 @@ Structure Module ─── clause realization + reviewed combination pattern
 ### Discourse
 
 `modules/discourse/` owns explicit sentence and coordinated-request boundaries.
-It processes at most four clauses, deduplicates identical answers, and combines
-their trace evidence. It does not infer an unstated clause or add answer facts.
+Recognized request frames are inherited across coordinated items, so “What is
+math and science?” becomes two complete definition requests. It processes at
+most four clauses, deduplicates identical answers, and combines their trace
+evidence. It does not add answer facts.
 
 ### Basic Phrases
 
@@ -54,6 +56,15 @@ choose the final intent.
 The current scorer combines direct term overlap, expanded-term overlap, a
 bigram Dice coefficient, and sentence-mode compatibility. Results are sorted by
 score and then stable ID, so ties remain deterministic.
+
+### Dictionary
+
+`modules/dictionary/` recognizes bounded definition forms and reads the complete
+vendored Wordset dictionary. Its compressed public archive is loaded only for a
+definition request, cached after the first load, and looked up mechanically. A
+successful definition records the Wordset entry ID and uses the literal
+`definition-full-wordset` structure; a missing entry returns to the ordinary
+corpus path.
 
 ### Context
 
@@ -87,8 +98,8 @@ Every response returns a `LexiTrace` containing:
 - the three most relevant example IDs
 - matched evidence terms
 - selected sentence structure
-- whether the response came from an exact example, a context pattern, or the
-  safe fallback
+- whether the response came from an exact example, a context pattern, the full
+  Wordset dictionary, or the safe fallback
 - for a combined response, the number and ordered intents of its clauses
 
 The interface exposes this under “Why this response.”
@@ -100,7 +111,8 @@ The interface exposes this under “Why this response.”
 3. Evaluate every context release against a frozen ambiguity suite.
 4. Promote only contexts whose thresholds reduce false matches.
 5. Add structures as reviewed grammar data.
-6. Keep dictionary and thesaurus compilers offline; ship compact runtime slices.
+6. Keep thesaurus compilation offline; keep the compressed full dictionary and
+   the fast conversational slice as distinct runtime paths.
 7. Preserve source IDs through every compiled artifact.
 
 Large corpus size alone does not create understanding. Labels, negative

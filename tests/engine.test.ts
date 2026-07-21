@@ -1,8 +1,18 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { respond } from "@/lib/lexi/engine";
+import { respond, respondAsync } from "@/lib/lexi/engine";
 import { splitIntoClauses } from "@/modules/discourse";
 import { analyseSentence, hasUnsupportedWritingSystem } from "@/modules/search";
+
+const wordsetArchive = readFile(
+  new URL("../public/lexicon/wordset-dictionary.json.gz", import.meta.url),
+);
+const localWordsetFetcher = async () =>
+  new Response(new Uint8Array(await wordsetArchive), {
+    status: 200,
+    headers: { "content-type": "application/gzip" },
+  });
 
 test("selects stable intents for representative prompts", () => {
   assert.equal(respond("Hello Lexi").trace.interpretedIntent, "greeting");
@@ -134,13 +144,25 @@ test("understands polite imperatives, contractions, and grammatical roles", () =
   assert.notEqual(imperativeContext.text, "{response}");
 });
 
-test("segments only explicit discourse and request boundaries", () => {
+test("segments explicit requests and inherits recognized connection frames", () => {
   assert.deepEqual(
     splitIntoClauses("Hello! Explain the Context Module and then explain the Search Module."),
     ["Hello", "Explain the Context Module", "explain the Search Module"],
   );
   assert.deepEqual(splitIntoClauses("Explain the dictionary and thesaurus."), [
-    "Explain the dictionary and thesaurus",
+    "Explain the dictionary",
+    "Explain thesaurus",
+  ]);
+  assert.deepEqual(splitIntoClauses("What is math and science?"), [
+    "What is math",
+    "What is science",
+  ]);
+  assert.deepEqual(splitIntoClauses("What’s your name and your age?"), [
+    "What’s your name",
+    "What’s your age",
+  ]);
+  assert.deepEqual(splitIntoClauses("Bread and butter are foods."), [
+    "Bread and butter are foods",
   ]);
 });
 
@@ -166,4 +188,33 @@ test("combines multiple bounded answers with reviewed structures", () => {
   );
   assert.equal(modules.trace.interpretedIntent, "context-module + search-module");
   assert.equal(modules.trace.source, "combined-response");
+});
+
+test("answers arbitrary definition requests from the complete embedded Wordset archive", async () => {
+  const dictionaryOptions = { fetcher: localWordsetFetcher };
+  const math = await respondAsync("What is Math?", dictionaryOptions);
+
+  assert.equal(math.trace.interpretedIntent, "definition");
+  assert.equal(math.trace.source, "full-dictionary");
+  assert.equal(math.trace.selectedStructure, "definition-full-wordset");
+  assert.deepEqual(math.trace.matchedExampleIds, ["wordset:47fb0bb180"]);
+  assert.match(math.text, /^Math means a science/);
+
+  const combined = await respondAsync("What is math and science?", dictionaryOptions);
+  assert.equal(combined.trace.source, "combined-response");
+  assert.equal(combined.trace.clauseCount, 2);
+  assert.deepEqual(combined.trace.clauseIntents, ["definition", "definition"]);
+  assert.match(combined.text, /^First: Math means/);
+  assert.match(combined.text, /Second: Science means/);
+});
+
+test("combines inherited basic-question frames without dictionary collisions", async () => {
+  const reply = await respondAsync("What’s your name and your age?", {
+    fetcher: localWordsetFetcher,
+  });
+
+  assert.equal(reply.trace.source, "combined-response");
+  assert.deepEqual(reply.trace.clauseIntents, ["identity", "model-age"]);
+  assert.match(reply.text, /I’m Lexi/);
+  assert.match(reply.text, /260721-0A/);
 });

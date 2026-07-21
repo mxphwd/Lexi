@@ -1,0 +1,8 @@
+Wordset Dictionary
+Source: https://github.com/wordset/wordset-dictionary
+License: Creative Commons Attribution-ShareAlike 4.0 International
+License text: WORDSET-LICENSE.txt
+
+This compressed archive is an unmodified copy of
+data/lexicon/vendor/wordset/allwords_wordset.json.gz. Lexi loads it locally and
+quotes its recorded definitions; it is not a generative model or remote API.

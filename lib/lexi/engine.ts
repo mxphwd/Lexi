@@ -2,8 +2,13 @@ import contextPages from "@/data/example-contexts/catalog";
 import { basicPhrasePatternCount, matchBasicPhrase } from "@/core/basic-phrases";
 import { connectWords } from "@/modules/connect";
 import { determineContext } from "@/modules/context";
+import {
+  extractDefinitionTerm,
+  findWordsetEntry,
+  type DictionaryLookupOptions,
+} from "@/modules/dictionary";
 import { combineClauseReplies, splitIntoClauses } from "@/modules/discourse";
-import { searchContexts } from "@/modules/search";
+import { analyseSentence, searchContexts } from "@/modules/search";
 import { realiseSentence } from "@/modules/structure";
 import type { ContextEntry, LexiReply } from "./types";
 
@@ -52,6 +57,51 @@ function respondToClause(input: string): LexiReply {
   };
 }
 
+function dictionaryReply(input: string, term: string, word: string, wordsetId: string, definition: string, partOfSpeech?: string): LexiReply {
+  const analysis = analyseSentence(input);
+  const label = word ? word[0].toLocaleUpperCase("en-US") + word.slice(1) : term;
+  const cleanedDefinition = definition.trim().replace(/[.!?]+$/, "");
+  const qualifier = partOfSpeech ? ` (${partOfSpeech})` : "";
+
+  return {
+    text: `${label} means ${cleanedDefinition}${qualifier}.`,
+    trace: {
+      normalizedInput: analysis.normalized,
+      sentenceMode: analysis.mode,
+      interpretedIntent: "definition",
+      confidence: 1,
+      matchedExampleIds: [`wordset:${wordsetId}`],
+      matchedTerms: [term, partOfSpeech].filter((value): value is string => Boolean(value)),
+      selectedStructure: "definition-full-wordset",
+      source: "full-dictionary",
+    },
+  };
+}
+
+async function respondToClauseAsync(
+  input: string,
+  dictionaryOptions: DictionaryLookupOptions,
+): Promise<LexiReply> {
+  const ordinaryReply = respondToClause(input);
+  if (ordinaryReply.trace.source === "core-phrase") return ordinaryReply;
+
+  const term = extractDefinitionTerm(input);
+  if (!term) return ordinaryReply;
+
+  const entry = await findWordsetEntry(term, dictionaryOptions);
+  const meaning = entry?.meanings.find((candidate) => candidate.def.trim());
+  if (!entry || !meaning) return ordinaryReply;
+
+  return dictionaryReply(
+    input,
+    term,
+    entry.word,
+    entry.wordset_id,
+    meaning.def,
+    meaning.speech_part,
+  );
+}
+
 export function respond(input: string): LexiReply {
   const clauses = splitIntoClauses(input);
   if (clauses.length > 1) {
@@ -59,6 +109,19 @@ export function respond(input: string): LexiReply {
   }
 
   return respondToClause(input);
+}
+
+export async function respondAsync(
+  input: string,
+  dictionaryOptions: DictionaryLookupOptions = {},
+): Promise<LexiReply> {
+  const clauses = splitIntoClauses(input);
+  const replies = await Promise.all(
+    clauses.map((clause) => respondToClauseAsync(clause, dictionaryOptions)),
+  );
+
+  if (replies.length > 1) return combineClauseReplies(input, replies);
+  return replies[0] ?? respondToClause(input);
 }
 
 export function corpusStats() {

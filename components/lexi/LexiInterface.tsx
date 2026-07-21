@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
-import { corpusStats, respond } from "@/lib/lexi/engine";
+import { corpusStats, respond, respondAsync } from "@/lib/lexi/engine";
 import type { LexiReply } from "@/lib/lexi/types";
 import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
 import { hasUnsupportedWritingSystem } from "@/modules/search";
@@ -23,7 +23,9 @@ export function LexiInterface() {
   const [showVersion, setShowVersion] = useState(false);
   const [brandEntrance, setBrandEntrance] = useState(true);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const stopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const brandTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const requestRef = useRef(0);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
   const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
@@ -35,7 +37,9 @@ export function LexiInterface() {
     }, 1300);
 
     return () => {
+      requestRef.current += 1;
       if (timerRef.current) clearTimeout(timerRef.current);
+      if (stopTimerRef.current) clearTimeout(stopTimerRef.current);
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
     };
   }, []);
@@ -52,26 +56,44 @@ export function LexiInterface() {
     if (!canSend) return;
 
     const prompt = input.trim();
-    const preparedReply = respond(prompt);
+    const requestId = requestRef.current + 1;
+    const startedAt = performance.now();
+    const minimumThinkingTime = Math.min(1650, 840 + prompt.length * 11);
+    requestRef.current = requestId;
     setComposerState("thinking");
     setAboutOpen(false);
     setReply(null);
 
-    timerRef.current = setTimeout(() => {
-      setReply(preparedReply);
-      setComposerState("idle");
-      setInput("");
-      requestAnimationFrame(resizeTextarea);
-      timerRef.current = null;
-    }, Math.min(1650, 840 + prompt.length * 11));
+    void respondAsync(prompt)
+      .catch(() => respond(prompt))
+      .then((preparedReply) => {
+        if (requestRef.current !== requestId) return;
+
+        const remainingDelay = Math.max(
+          0,
+          minimumThinkingTime - (performance.now() - startedAt),
+        );
+        timerRef.current = setTimeout(() => {
+          if (requestRef.current !== requestId) return;
+          setReply(preparedReply);
+          setComposerState("idle");
+          setInput("");
+          requestAnimationFrame(resizeTextarea);
+          timerRef.current = null;
+        }, remainingDelay);
+      });
   }
 
   function stopThinking() {
     if (composerState !== "thinking") return;
+    requestRef.current += 1;
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = null;
     setComposerState("stopping");
-    window.setTimeout(() => setComposerState("idle"), 680);
+    stopTimerRef.current = window.setTimeout(() => {
+      setComposerState("idle");
+      stopTimerRef.current = null;
+    }, 680);
   }
 
   function handleComposerKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {

@@ -4,13 +4,14 @@ Lexi Language 1.0 Pre-build 260721-0A is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
 same prompt and the same corpus always follow the same inspectable path:
 
-`Discourse → Basic Phrases or Search → Context → Connect → Structure → combination → response`
+`Discourse → Basic Phrases or Dictionary or Search → Context → Connect → Structure → combination → response`
 
 The Basic Phrases gate returns only when a complete foundational phrase matches.
 Otherwise it passes the message unchanged into the corpus-driven pipeline.
-The Discourse Module separates explicit multi-part requests, sends each clause
-through that same bounded path, and recombines no more than four recorded
-answers with reviewed Structure Module patterns.
+The Discourse Module separates explicit multi-part requests and inherits a
+recognized opening frame across coordinated items. It sends each clause through
+that same bounded path and recombines no more than four recorded answers with
+reviewed Structure Module patterns.
 
 ## Run the prototype
 
@@ -33,7 +34,11 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
 - `modules/search/` normalizes English, inspects sentence mode, expands the
   compact lexicon, and ranks recorded examples.
 - `modules/discourse/` separates explicit sentence and coordinated-request
-  boundaries, deduplicates replies, and aggregates their trace evidence.
+  boundaries, including shared frames such as “What is math and science?”,
+  deduplicates replies, and aggregates their trace evidence.
+- `modules/dictionary/` recognizes definition requests and lazily reads the
+  complete compressed Wordset archive. Its definitions retain their Wordset
+  source IDs in the public response trace.
 - `modules/context/` aggregates example evidence and explicit phrase rules into
   one bounded intent with a confidence score.
 - `modules/connect/` turns that intent into subject, action, object, and
@@ -80,11 +85,12 @@ The complete requested sources are vendored under `data/lexicon/vendor/`:
 - Wordset dictionary: compressed complete dictionary archive
 - Moby Thesaurus: complete `words.txt` relation dataset
 
-`npm run lexicon:build` deterministically extracts the small browser index in
-`data/lexicon/runtime-index.json`. Expand `selectedTerms` in
-`scripts/build-lexicon-index.mjs` as the context corpus grows. Source hashes,
-repository URLs, and license notes are recorded in the generated index and in
-`data/lexicon/ATTRIBUTION.md`.
+`npm run lexicon:build` deterministically extracts the fast conversational index
+in `data/lexicon/runtime-index.json`. Definition questions additionally use the
+complete compressed archive published at
+`public/lexicon/wordset-dictionary.json.gz`; it is fetched and decoded once on
+first use, then cached for the session. Source hashes, repository URLs, license
+notes, and the redistributed Wordset license are kept with the artifacts.
 
 ## Verification
 

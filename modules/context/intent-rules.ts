@@ -18,7 +18,7 @@ const rules: IntentRule[] = [
   { intent: "compare-ai", any: ["ai", "llm", "chatgpt", "prediction", "token"], weight: 0.89 },
   {
     intent: "context-module",
-    any: ["module", "interpret", "understand", "meaning", "confidence"],
+    any: ["module", "interpret", "understand", "meaning", "confidence", "explain"],
     all: ["context"],
     weight: 0.9,
   },

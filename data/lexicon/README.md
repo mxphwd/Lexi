@@ -1,9 +1,16 @@
 # Lexi lexicon data
 
-`vendor/` contains the complete source artifacts requested for Lexi. The web
-interface does not parse tens of megabytes at runtime. Instead,
+`vendor/` contains the complete source artifacts requested for Lexi.
 `scripts/build-lexicon-index.mjs` reads both sources offline and creates the
-deterministic `runtime-index.json` used by Search and Connect.
+deterministic `runtime-index.json` used by Search and Connect for ordinary
+conversation.
+
+Definition requests use a second bounded path. The unmodified compressed
+Wordset archive is copied to `public/lexicon/wordset-dictionary.json.gz`, loaded
+on first use, decompressed by the browser, and cached for the session. This gives
+Lexi access to every entry without adding the uncompressed dictionary to the
+JavaScript bundle. `public/lexicon/ATTRIBUTION.txt` and
+`public/lexicon/WORDSET-LICENSE.txt` travel with the deployed copy.
 
 To add runtime vocabulary, edit the `selectedTerms` list in that script and run:
 
