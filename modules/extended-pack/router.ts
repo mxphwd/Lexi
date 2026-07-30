@@ -2,6 +2,8 @@ import { normalizeText } from "@/modules/search/tokenize";
 import { matchExtendedConversation } from "./conversation";
 import { prepareLinguisticInput, type AnswerStyle } from "./linguistic-features";
 import { parsePackQueries } from "./query";
+import { matchDeterministicReasoning } from "./reasoning";
+import { prepareSemanticTarget } from "./semantic-routing";
 import { knowledgeTopics } from "./topics";
 import type { KnowledgeTopic, PackFocus, PackResponse } from "./types";
 
@@ -23,14 +25,31 @@ function cleanTarget(value: string): string {
     .trim();
 }
 
-function findTopic(value: string): KnowledgeTopic | undefined {
-  const target = cleanTarget(value);
-  const direct = topicByAlias.get(target);
-  if (direct) return direct;
+type TopicMatch = {
+  topic: KnowledgeTopic;
+  appliedFeatures: string[];
+};
 
-  if (target.endsWith("ies")) return topicByAlias.get(`${target.slice(0, -3)}y`);
-  if (target.endsWith("es")) return topicByAlias.get(target.slice(0, -2));
-  if (target.endsWith("s")) return topicByAlias.get(target.slice(0, -1));
+function findTopic(value: string): TopicMatch | undefined {
+  const semantic = prepareSemanticTarget(cleanTarget(value));
+  const target = semantic.target;
+  const direct = topicByAlias.get(target);
+  if (direct) return { topic: direct, appliedFeatures: semantic.appliedFeatures };
+
+  const inflected =
+    target.endsWith("ies")
+      ? topicByAlias.get(`${target.slice(0, -3)}y`)
+      : target.endsWith("es")
+        ? topicByAlias.get(target.slice(0, -2))
+        : target.endsWith("s")
+          ? topicByAlias.get(target.slice(0, -1))
+          : undefined;
+  if (inflected) {
+    return {
+      topic: inflected,
+      appliedFeatures: [...semantic.appliedFeatures, "semantic-number-normalization"],
+    };
+  }
   return undefined;
 }
 
@@ -92,6 +111,44 @@ function applyAnswerStyle(
   if (style === "exampled") {
     if (focus === "example") return direct;
     return `${direct} ${sentence(`For example, ${topic.example}`)}`;
+  }
+
+  if (style === "practical") {
+    return `${direct} ${sentence(`In practice, ${topic.example}`)}`;
+  }
+
+  if (style === "analogy") {
+    return `${direct} ${sentence(
+      `A concrete way to picture the idea is through this recorded example: ${topic.example}`,
+    )}`;
+  }
+
+  if (style === "stepwise") {
+    return [
+      `First, ${sentence(`${topic.term} is ${topic.definition}`)}`,
+      `Second, ${sentence(topic.mechanism ?? `it serves to ${topic.purpose}`)}`,
+      `Finally, ${sentence(`connect it to ${topic.example}`)}`,
+    ].join(" ");
+  }
+
+  if (style === "technical") {
+    const components = topic.components?.length
+      ? sentence(`Its principal elements are ${topic.components.join(", ")}`)
+      : "";
+    return [
+      direct,
+      topic.mechanism ? sentence(`Mechanically, ${topic.mechanism}`) : "",
+      components,
+      sentence(`Related concepts include ${topic.related.join(", ")}`),
+    ].filter(Boolean).join(" ");
+  }
+
+  if (style === "balanced") {
+    return [
+      direct,
+      sentence(`Its central value is that ${topic.importance}`),
+      "This is a bounded overview; specialized cases can introduce constraints that are not recorded in this basic knowledge entry.",
+    ].join(" ");
   }
 
   if (focus === "summary") return direct;
@@ -187,6 +244,17 @@ export function matchExtendedPack(input: string): PackResponse | undefined {
   const prepared = prepareLinguisticInput(input);
   if (!prepared.core) return undefined;
 
+  const reasoning = matchDeterministicReasoning(prepared.core);
+  if (reasoning) {
+    return {
+      ...reasoning,
+      evidence: [
+        ...reasoning.evidence,
+        ...prepared.appliedFeatures.map((feature) => `feature:${feature}`),
+      ],
+    };
+  }
+
   const conversation = matchExtendedConversation(prepared.core);
   if (conversation) {
     return {
@@ -199,14 +267,20 @@ export function matchExtendedPack(input: string): PackResponse | undefined {
   }
 
   for (const parsed of parsePackQueries(input)) {
-    const left = findTopic(parsed.target);
-    if (!left) continue;
+    const leftMatch = findTopic(parsed.target);
+    if (!leftMatch) continue;
+    const left = leftMatch.topic;
+    const semanticFeatures = [
+      ...parsed.appliedFeatures,
+      ...leftMatch.appliedFeatures,
+    ];
 
     if (
       (parsed.focus === "comparison" || parsed.focus === "similarity") &&
       parsed.secondTarget
     ) {
-      const right = findTopic(parsed.secondTarget);
+      const rightMatch = findTopic(parsed.secondTarget);
+      const right = rightMatch?.topic;
       if (right && left.id !== right.id) {
         return comparisonResponse(
           left,
@@ -214,7 +288,7 @@ export function matchExtendedPack(input: string): PackResponse | undefined {
           parsed.focus,
           parsed.style,
           parsed.frameId,
-          parsed.appliedFeatures,
+          [...semanticFeatures, ...(rightMatch?.appliedFeatures ?? [])],
         );
       }
       continue;
@@ -225,18 +299,18 @@ export function matchExtendedPack(input: string): PackResponse | undefined {
       parsed.focus,
       parsed.style,
       parsed.frameId,
-      parsed.appliedFeatures,
+      semanticFeatures,
     );
   }
 
   const directTopic = findTopic(prepared.core);
   return directTopic
     ? topicResponse(
-        directTopic,
+        directTopic.topic,
         "definition",
         prepared.style,
         "direct-subject",
-        prepared.appliedFeatures,
+        [...prepared.appliedFeatures, ...directTopic.appliedFeatures],
       )
     : undefined;
 }

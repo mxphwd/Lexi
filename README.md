@@ -1,6 +1,6 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260730-DV5 is a deterministic language-model
+Lexi Language 1.0 Pre-build 260730-DV6 is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
 same prompt and the same embedded sources always follow the same inspectable
 path:
@@ -35,11 +35,13 @@ the interactive Release notes control.
 - `core/basic-phrases/` contains the independent, fixed-response layer for
   greetings, identity, model age, thanks, farewells, and other foundational
   exchanges. It runs before every corpus module and retains no personal state.
-- `modules/extended-pack/` is DV5's primary general-answer layer. Its 122
-  authored subjects, 434 recognized names, 164 question frames, 58 linguistic
-  rewrites, 58 bounded reference rules, and 67 complete conversational patterns
-  provide 347 linguistic features and at least 71,243 direct constructions
-  without searching example sentences or opening the dictionary.
+- `modules/extended-pack/` is DV6's primary general-answer layer. Its 222
+  authored subjects, 1,000 recognized names, 500 question frames, 158
+  linguistic rewrites, 118 bounded reference rules, 247 complete conversational
+  patterns, 100 deterministic reasoning patterns, and 24 semantic-routing
+  features provide 1,147 counted linguistic features and at least 500,347
+  direct constructions without searching example sentences or opening the
+  dictionary.
 - `modules/search/` normalizes English, inspects sentence mode, expands the
   compact lexicon, and ranks recorded examples.
 - `modules/discourse/` separates explicit sentence and coordinated-request
@@ -59,10 +61,10 @@ the interactive Release notes control.
   together with a public trace.
 
 The fallback corpus includes 62 context pages, 4,180 input-response examples,
-and 8,360 paired sentences. It extends rather than defines DV5's direct
+and 8,360 paired sentences. It extends rather than defines DV6's direct
 knowledge coverage.
 
-## Extend DV5 knowledge
+## Extend DV6 knowledge
 
 Add or revise typed records under `modules/extended-pack/topics/`. Every record
 contains a definition, purpose, importance, example, related concepts, and
@@ -73,16 +75,23 @@ Add complete conversational behaviors to
 `modules/extended-pack/conversation.ts`. These patterns must cover the complete
 normalized message; do not use loose substring matches.
 
-DV5 preserves DV4's intentionally conservative availability measure:
-`434 subject names × 164 semantic question frames + 67 complete conversation
-patterns = 71,243 direct constructions`. That is 3.99 times DV3's 17,861
-construction baseline. Politeness, answer-style, and discourse rewrites are not
-multiplied into that total.
+DV6's availability measure is intentionally conservative:
+`1,000 subject names × 500 semantic question frames + 247 complete conversation
+patterns + 100 reasoning patterns = 500,347 direct constructions`. That is
+7.02 times DV5's 71,243-construction baseline. Politeness, answer-style,
+semantic-routing, and discourse-reference variants are not multiplied into that
+total.
+
+DV6 borrows bounded abstractions common in modern language-model pipelines:
+staged text representation, context-focused routing, compositional answer
+realization, and explicit style control. Lexi implements them as inspectable
+rules and authored records. It has no learned weights, token sampling, hidden
+chain of thought, or generative-model call.
 
 ## Release history
 
 Shift-click the Alphaine wordmark, then choose **Release notes** to open Lexi's
-interactive capability graph. The five DV5 milestones are stored as typed
+interactive capability graph. The six DV6 milestones are stored as typed
 records in `lib/lexi/releases.ts`; each point contains its update notes,
 quantitative highlight, capability index, and comparison with the preceding
 version.

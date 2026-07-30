@@ -42,7 +42,28 @@ function splitSentences(input: string): string[] {
   return sentences;
 }
 
+function splitCoordinatedRequests(sentence: string): string[] {
+  if (
+    /^(?:if|given|all|no)\b/i.test(sentence) &&
+    /\b(?:and|implies|leads to)\b/i.test(sentence)
+  ) {
+    return [sentence];
+  }
+  return sentence.split(coordinatedRequestBoundary);
+}
+
 function inheritSharedRequestFrame(clause: string): string[] {
+  if (/\bsupply and demand\b/i.test(clause)) {
+    return [clause];
+  }
+
+  if (
+    /\d/.test(clause) &&
+    /\b(?:plus|minus|times|multiplied|divided|percent|average|mean|sum|product|quotient|ratio|sequence)\b/i.test(clause)
+  ) {
+    return [clause];
+  }
+
   if (
     /^(?:what\s+is\s+)?(?:the\s+)?difference\s+between\b/i.test(clause) ||
     /^(?:please\s+)?(?:compare|contrast)\b/i.test(clause)
@@ -79,7 +100,7 @@ export function splitIntoClauses(input: string): string[] {
       const prepared = prepareDiscourseInput(sentence);
       return prepared.appliedFeatures.length ? prepared.core : sentence;
     })
-    .flatMap((sentence) => sentence.split(coordinatedRequestBoundary))
+    .flatMap(splitCoordinatedRequests)
     .map((clause) => clause.replace(/^\s*(?:and then|and|also|then)\s+/i, "").trim())
     .filter(Boolean)
     .flatMap(inheritSharedRequestFrame),

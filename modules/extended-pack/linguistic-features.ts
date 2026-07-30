@@ -1,6 +1,21 @@
 import { normalizeText } from "@/modules/search/tokenize";
+import {
+  dv6LinguisticFeatureCount,
+  prepareDv6Framing,
+  prepareDv6LinguisticInput,
+} from "./dv6-linguistic-features";
 
-export type AnswerStyle = "plain" | "brief" | "simple" | "detailed" | "exampled";
+export type AnswerStyle =
+  | "plain"
+  | "brief"
+  | "simple"
+  | "detailed"
+  | "exampled"
+  | "stepwise"
+  | "technical"
+  | "practical"
+  | "analogy"
+  | "balanced";
 
 export type LinguisticPreparation = {
   originalNormalized: string;
@@ -188,7 +203,10 @@ function prepareFraming(
 export function prepareDiscourseInput(input: string): LinguisticPreparation {
   const originalNormalized = normalizeText(input);
   const appliedFeatures: string[] = [];
-  const core = prepareFraming(originalNormalized, appliedFeatures);
+  const core = prepareDv6Framing(
+    prepareFraming(originalNormalized, appliedFeatures),
+    appliedFeatures,
+  );
   return {
     originalNormalized,
     core,
@@ -216,6 +234,10 @@ export function prepareLinguisticInput(input: string): LinguisticPreparation {
     appliedFeatures.push(feature.id);
   }
 
+  const dv6 = prepareDv6LinguisticInput(core, style, appliedFeatures);
+  core = dv6.core;
+  style = dv6.style;
+
   return { originalNormalized, core, style, appliedFeatures };
 }
 
@@ -224,4 +246,5 @@ export const linguisticRewriteFeatureCount =
   indirectFeatures.length +
   trailingFeatures.length +
   styleFeatures.length +
-  1;
+  1 +
+  dv6LinguisticFeatureCount;

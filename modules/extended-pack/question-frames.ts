@@ -1,4 +1,8 @@
 import type { PackFocus } from "./types";
+import {
+  dv6ComparisonFrames,
+  dv6SingleSubjectFrames,
+} from "./dv6-question-frames";
 
 export type QuestionFrame = {
   id: string;
@@ -180,6 +184,7 @@ export const singleSubjectFrames: QuestionFrame[] = [
     ["study-order", /^what order should i study (.+?) in$/],
     ["foundation", /^what is the foundation for learning (.+)$/],
   ]),
+  ...dv6SingleSubjectFrames,
 ];
 
 export const comparisonFrames: QuestionFrame[] = [
@@ -203,6 +208,7 @@ export const comparisonFrames: QuestionFrame[] = [
     ["how-similar", /^how similar are (.+?) and (.+)$/],
     ["related-how", /^how are (.+?) and (.+?) related$/],
   ]),
+  ...dv6ComparisonFrames,
 ];
 
 export const extendedQuestionFrameCount =

@@ -9,7 +9,7 @@ It performs two bounded operations:
    frame. For example, “What is math and science?” becomes “What is math?” and
    “What is science?” It also carries an explicit subject into bounded follow-up
    forms: “What is math and why is it important?” becomes a definition request
-   plus “Why is math important?” `reference.ts` contains 42 singular and 16
+   plus “Why is math important?” `reference.ts` contains 72 singular and 46
    paired reference forms. A third possible antecedent stops plural resolution
    and requests clarification instead of selecting the last two. Ordinary
    statements containing `and` remain intact.

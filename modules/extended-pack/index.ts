@@ -5,6 +5,8 @@ import {
   prepareLinguisticInput,
 } from "./linguistic-features";
 import { extendedQuestionFrameCount } from "./question-frames";
+import { deterministicReasoningFeatureCount } from "./reasoning";
+import { semanticRoutingFeatureCount } from "./semantic-routing";
 import { extendedAliasCount, matchExtendedPack } from "./router";
 import { knowledgeTopics } from "./topics";
 
@@ -20,10 +22,15 @@ export function extendedPackStats() {
     linguisticFeatures:
       extendedQuestionFrameCount +
       linguisticRewriteFeatureCount +
-      extendedConversationPatternCount,
+      extendedConversationPatternCount +
+      deterministicReasoningFeatureCount +
+      semanticRoutingFeatureCount,
     rewriteFeatures: linguisticRewriteFeatureCount,
+    reasoningFeatures: deterministicReasoningFeatureCount,
+    semanticRoutingFeatures: semanticRoutingFeatureCount,
     minimumQuestionConstructions:
       extendedAliasCount * extendedQuestionFrameCount +
-      extendedConversationPatternCount,
+      extendedConversationPatternCount +
+      deterministicReasoningFeatureCount,
   };
 }

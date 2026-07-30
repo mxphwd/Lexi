@@ -17,7 +17,7 @@ Discourse Module ─── up to four explicit clauses
 Basic Phrases gate
    │
    ▼
-Extended Pack ────── subject + requested semantic field
+Extended Pack ────── conversation / reasoning / subject + semantic field
    │ if unmatched
    ▼
 Full Dictionary lookup for definition forms
@@ -62,24 +62,41 @@ Extended Pack.
 
 ### Extended Pack
 
-`modules/extended-pack/` is the primary direct-answer layer for DV5. A
+`modules/extended-pack/` is the primary direct-answer layer for DV6. A
 grammatical router recognizes definition, purpose, mechanism, importance,
 example, component, relation, summary, learning, difference, and similarity
 requests. It resolves the subject through canonical terms and aliases, then
 selects one explicit field from an authored semantic record.
 
-The pack currently holds 122 subjects and 434 recognized subject names. Its 164
-question frames and 67 complete conversation patterns produce a conservative
-lower bound of 71,243 direct constructions—3.99 times DV3's measured 17,861.
-Its 347 linguistic features also include polite and indirect framing, answer
-styles, and bounded singular or paired reference rules. Those rewrites are not
-multiplied into the construction count.
+The pack currently holds 222 subjects and 1,000 recognized subject names. Its
+500 question frames, 247 complete conversation patterns, and 100 reasoning
+patterns produce a conservative lower bound of 500,347 direct constructions—
+7.02 times DV5's measured 71,243. Its 1,147 counted features include exactly
+800 additions over DV5: 336 semantic frames, 100 framing and answer-style
+rewrites, 180 conversation patterns, 60 reference rules, 100 reasoning
+patterns, and 24 semantic-routing modifiers.
 
 `linguistic-features.ts` removes non-semantic discourse framing, recognizes
-brief, simple, detailed, and example-supported requests, and records every
-applied transformation. `query.ts` tests specific semantic forms before broad
+brief, simple, detailed, example-supported, stepwise, technical, practical,
+analogy-supported, and balanced requests, and records every applied
+transformation. `query.ts` tests specific semantic forms before broad
 definition forms so “What is mathematics used for?” cannot be captured as a
 definition of “mathematics used for.”
+
+`semantic-routing.ts` is an attention-inspired but non-statistical focus stage.
+It removes only 24 declared non-subject modifiers, then still requires one exact
+known subject or alias. It does not use embeddings, learned similarity, or
+probabilistic completion.
+
+`reasoning.ts` contains 100 complete, anchored forms for arithmetic,
+percentages, averages, ratios, ordering, arithmetic sequences, text
+measurement, premise-only deduction, and criterion-bound decisions. Every
+result exposes its operands or premises and refuses division by zero,
+non-arithmetic sequence guesses, or preference invention.
+
+`topics/dv6-technical.ts` adds 100 authored engineering, computing,
+data-science, medical, mathematical, business, legal, and research concepts.
+Medical entries are explanatory records, not diagnosis or treatment advice.
 
 ### Search
 
@@ -147,8 +164,8 @@ quantitative highlight, and reviewed notes for every plotted release.
 The capability index is an internal development index—not an external
 benchmark. It combines deterministic response reach, contextual precision,
 lexical coverage, and model transparency on a stable 0–100 scale. Exact
-measurements such as DV4's 3.99× direct-answer availability remain separate
-highlighted metrics.
+measurements such as DV4's 3.99× and DV6's 7.02× direct-answer availability
+remain separate highlighted metrics.
 
 Every change to `LEXI_BUILD` must add one newest release record. Tests require
 the latest record to match the current build and require the capability curve

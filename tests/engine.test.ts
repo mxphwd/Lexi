@@ -4,6 +4,10 @@ import test from "node:test";
 import { corpusStats, respond, respondAsync } from "@/lib/lexi/engine";
 import { splitIntoClauses } from "@/modules/discourse";
 import { extendedPackStats } from "@/modules/extended-pack";
+import { dv6ConversationPatternCount } from "@/modules/extended-pack/dv6-conversation";
+import { dv6LinguisticFeatureCount } from "@/modules/extended-pack/dv6-linguistic-features";
+import { dv6QuestionFrameCount } from "@/modules/extended-pack/dv6-question-frames";
+import { deterministicReasoningFeatureCount } from "@/modules/extended-pack/reasoning";
 import {
   comparisonFrames,
   singleSubjectFrames,
@@ -25,7 +29,7 @@ test("selects stable intents for representative prompts", () => {
   assert.equal(respond("How does Lexi work?").trace.interpretedIntent, "mechanism");
   assert.equal(
     respond("How is Lexi different from an LLM?").trace.interpretedIntent,
-    "compare-ai",
+    "comparison",
   );
   assert.equal(
     respond("What does the Context Module do?").trace.interpretedIntent,
@@ -111,7 +115,7 @@ test("handles foundational phrases before the corpus modules", () => {
   const age = respond("How old are you?");
   assert.equal(age.trace.interpretedIntent, "model-age");
   assert.equal(age.trace.source, "core-phrase");
-  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260730-DV5/);
+  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260730-DV6/);
 
   assert.equal(respond("What’s your name?").trace.interpretedIntent, "identity");
   assert.equal(respond("HOW ARE YOU?").trace.interpretedIntent, "wellbeing");
@@ -201,7 +205,7 @@ test("combines multiple bounded answers with reviewed structures", () => {
   assert.equal(twoPart.trace.selectedStructure, "discourse-multipart");
   assert.match(twoPart.text, /^First:/);
   assert.match(twoPart.text, /Second:/);
-  assert.match(twoPart.text, /260730-DV5/);
+  assert.match(twoPart.text, /260730-DV6/);
 
   const modules = respond(
     "Explain the Context Module and then explain the Search Module.",
@@ -394,7 +398,7 @@ test("combines inherited basic-question frames without dictionary collisions", a
   assert.equal(reply.trace.source, "combined-response");
   assert.deepEqual(reply.trace.clauseIntents, ["identity", "model-age"]);
   assert.match(reply.text, /I’m Lexi/);
-  assert.match(reply.text, /260730-DV5/);
+  assert.match(reply.text, /260730-DV6/);
 });
 
 test("handles extended conversational phrases without approximate corpus matching", () => {
@@ -413,7 +417,7 @@ test("handles extended conversational phrases without approximate corpus matchin
   assert.equal(decision.trace.interpretedIntent, "decision-support");
 });
 
-test("keeps every authored DV4 topic reachable across semantic question focuses", () => {
+test("keeps every authored DV6 topic reachable across semantic question focuses", () => {
   const ids = new Set<string>();
 
   for (const topic of knowledgeTopics) {
@@ -445,31 +449,142 @@ test("keeps every authored DV4 topic reachable across semantic question focuses"
   }
 
   const stats = extendedPackStats();
-  assert.equal(stats.topics, 122);
-  assert.equal(stats.aliases, 434);
-  assert.equal(stats.questionFrames, 164);
-  assert.equal(stats.minimumQuestionConstructions, 71_243);
+  assert.equal(stats.topics, 222);
+  assert.equal(stats.aliases, 1_000);
+  assert.equal(stats.questionFrames, 500);
+  assert.equal(stats.conversationPatterns, 247);
+  assert.equal(stats.reasoningFeatures, 100);
+  assert.equal(stats.semanticRoutingFeatures, 24);
+  assert.equal(stats.minimumQuestionConstructions, 500_347);
 
-  const previousAvailability = 17_861;
+  const previousAvailability = 71_243;
   const availabilityMultiplier =
     stats.minimumQuestionConstructions / previousAvailability;
-  assert.ok(availabilityMultiplier >= 3);
-  assert.ok(availabilityMultiplier <= 4);
+  assert.ok(availabilityMultiplier >= 7);
+  assert.ok(availabilityMultiplier < 7.1);
 
   const engineStats = corpusStats();
-  assert.equal(engineStats.linguisticFeatures, 347);
+  assert.equal(engineStats.linguisticFeatures, 1_147);
+  assert.equal(engineStats.linguisticFeatures - 347, 800);
 });
 
-test("keeps the DV4 grammatical frame registry unique and within the 4x release target", () => {
+test("keeps the DV6 grammatical frame registry unique and within the release target", () => {
   const frames = [...singleSubjectFrames, ...comparisonFrames];
   const frameIds = new Set(frames.map((frame) => frame.id));
 
-  assert.equal(frames.length, 164);
+  assert.equal(frames.length, 500);
   assert.equal(frameIds.size, frames.length);
   assert.ok(frames.every((frame) => frame.pattern.source.startsWith("^")));
   assert.ok(frames.every((frame) => frame.pattern.source.endsWith("$")));
 
-  const multiplier = extendedPackStats().minimumQuestionConstructions / 17_861;
-  assert.ok(multiplier > 3.98);
-  assert.ok(multiplier < 4);
+  assert.equal(dv6QuestionFrameCount, 336);
+  assert.equal(dv6LinguisticFeatureCount, 100);
+  assert.equal(dv6ConversationPatternCount, 180);
+  assert.equal(deterministicReasoningFeatureCount, 100);
+
+  const constructions = extendedPackStats().minimumQuestionConstructions;
+  assert.ok(constructions >= 500_000);
+  assert.ok(constructions <= 700_000);
+  const multiplier = constructions / 71_243;
+  assert.ok(multiplier >= 7);
+  assert.ok(multiplier < 7.1);
+});
+
+test("answers DV6 field-specific and technical questions through authored records", () => {
+  const llm = respond("What is a large language model?");
+  assert.equal(llm.trace.source, "extended-pack");
+  assert.match(llm.text, /many learned parameters/i);
+
+  const attention = respond(
+    "To be clear, could you outline attention mechanisms at its core in technical terms?",
+  );
+  assert.equal(attention.trace.source, "extended-pack");
+  assert.equal(attention.trace.selectedStructure, "extended-knowledge:definition:technical");
+  assert.match(attention.text, /queries are compared with keys/i);
+  assert.ok(attention.trace.matchedTerms.includes("feature:semantic-at-core"));
+
+  const practical = respond("Explain cloud computing with a practical use.");
+  assert.equal(practical.trace.selectedStructure, "extended-knowledge:definition:practical");
+  assert.match(practical.text, /rented virtual servers/i);
+
+  const medicine = respond("How does a vaccine work?");
+  assert.equal(medicine.trace.source, "extended-pack");
+  assert.match(medicine.text, /adaptive immune response/i);
+});
+
+test("performs bounded DV6 arithmetic, sequence, text, and logical reasoning", () => {
+  const addition = respond("What is 27 plus 15?");
+  assert.equal(addition.trace.interpretedIntent, "reasoning:addition");
+  assert.equal(addition.text, "27 plus 15 is 42.");
+
+  assert.equal(
+    respond("What is 20 percent of 80?").text,
+    "20 percent of 80 is 16.",
+  );
+  assert.equal(
+    respond("What is the average of 2, 4, 6?").text,
+    "The arithmetic mean of 2, 4, 6 is 4.",
+  );
+  assert.equal(
+    respond("What comes next in 2, 4, 6, 8?").text,
+    "The constant difference is 2, so the next term is 10.",
+  );
+  assert.match(
+    respond("What comes next in 2, 4, 9?").text,
+    /will not guess/i,
+  );
+  assert.equal(
+    respond("How many words are in mechanical language model?").text,
+    '"mechanical language model" contains 3 words.',
+  );
+
+  const logic = respond(
+    "If all cats are mammals and Luna is a cat, is Luna a mammal?",
+  );
+  assert.equal(logic.trace.interpretedIntent, "reasoning:logic");
+  assert.match(logic.text, /^Yes\./);
+  assert.match(logic.text, /stated premises/);
+});
+
+test("covers common DV6 conversation repair, emotion, planning, and play scenarios", () => {
+  const cases = [
+    ["I am back.", "greeting"],
+    ["I feel overwhelmed.", "negative-feeling"],
+    ["Rephrase that.", "clarification-request"],
+    ["Let's change the topic.", "conversation-control"],
+    ["Help me plan my day.", "task-planning"],
+    ["I keep procrastinating.", "task-planning"],
+    ["Help me troubleshoot.", "problem-solving"],
+    ["Tell me a fun fact.", "conversation-request"],
+    ["Tell me a riddle.", "humor"],
+    ["Be honest with me.", "certainty-check"],
+  ] as const;
+
+  for (const [prompt, intent] of cases) {
+    const reply = respond(prompt);
+    assert.equal(reply.trace.source, "extended-pack", prompt);
+    assert.equal(reply.trace.interpretedIntent, intent, prompt);
+  }
+});
+
+test("resolves DV6 singular and paired follow-ups without guessing antecedents", () => {
+  const singular = respond(
+    "What is a neural network? What are its main elements? Explain it technically.",
+  );
+  assert.deepEqual(singular.trace.clauseIntents, [
+    "definition",
+    "components",
+    "definition",
+  ]);
+  assert.match(singular.text, /input representation/i);
+
+  const paired = respond(
+    "What are correlation and causation? What is their key difference?",
+  );
+  assert.deepEqual(paired.trace.clauseIntents, [
+    "definition",
+    "definition",
+    "comparison",
+  ]);
+  assert.match(paired.text, /whereas causation is/i);
 });

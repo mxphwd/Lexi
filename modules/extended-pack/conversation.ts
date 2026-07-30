@@ -1,4 +1,8 @@
 import type { ConversationRule, PackResponse } from "./types";
+import {
+  dv6ConversationPatternCount,
+  matchDv6Conversation,
+} from "./dv6-conversation";
 
 const rules: ConversationRule[] = [
   {
@@ -144,6 +148,9 @@ const rules: ConversationRule[] = [
 ];
 
 export function matchExtendedConversation(normalized: string): PackResponse | undefined {
+  const dv6 = matchDv6Conversation(normalized);
+  if (dv6) return dv6;
+
   const rule = rules.find((candidate) =>
     candidate.patterns.some((pattern) => pattern.test(normalized)),
   );
@@ -161,5 +168,5 @@ export function matchExtendedConversation(normalized: string): PackResponse | un
 
 export const extendedConversationPatternCount = rules.reduce(
   (sum, rule) => sum + rule.patterns.length,
-  0,
+  dv6ConversationPatternCount,
 );

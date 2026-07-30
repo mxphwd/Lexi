@@ -6,7 +6,12 @@ export type KnowledgeCategory =
   | "humanities"
   | "everyday"
   | "world"
-  | "lexi";
+  | "lexi"
+  | "engineering"
+  | "data-science"
+  | "medicine"
+  | "business"
+  | "law";
 
 export type KnowledgeTopic = {
   id: string;

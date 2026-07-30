@@ -4,12 +4,12 @@ import { LEXI_RELEASES, releaseImprovement } from "../lib/lexi/releases.ts";
 import { LEXI_BUILD } from "../lib/lexi/version.ts";
 
 test("keeps every Lexi version synchronized with its release-note point", () => {
-  assert.equal(LEXI_RELEASES.length, 5);
+  assert.equal(LEXI_RELEASES.length, 6);
   assert.equal(LEXI_RELEASES.at(-1)?.build, LEXI_BUILD);
-  assert.equal(LEXI_RELEASES.at(-1)?.build, "260730-DV5");
+  assert.equal(LEXI_RELEASES.at(-1)?.build, "260730-DV6");
   assert.deepEqual(
     LEXI_RELEASES.map((release) => release.build),
-    ["260720-1A", "260721-0A", "260730-DV3", "260730-DV4", "260730-DV5"],
+    ["260720-1A", "260721-0A", "260730-DV3", "260730-DV4", "260730-DV5", "260730-DV6"],
   );
 
   LEXI_RELEASES.forEach((release, index) => {
@@ -23,4 +23,5 @@ test("keeps every Lexi version synchronized with its release-note point", () => 
   });
 
   assert.equal(LEXI_RELEASES[3].metric, "3.99× availability");
+  assert.equal(LEXI_RELEASES[5].metric, "7.02× availability");
 });
