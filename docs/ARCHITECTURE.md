@@ -62,7 +62,7 @@ Extended Pack.
 
 ### Extended Pack
 
-`modules/extended-pack/` is the primary direct-answer layer for DV4. A
+`modules/extended-pack/` is the primary direct-answer layer for DV5. A
 grammatical router recognizes definition, purpose, mechanism, importance,
 example, component, relation, summary, learning, difference, and similarity
 requests. It resolves the subject through canonical terms and aliases, then
@@ -137,6 +137,22 @@ Every response returns a `LexiTrace` containing:
 - for a combined response, the number and ordered intents of its clauses
 
 The interface exposes this under “Why this response.”
+
+## Release-history contract
+
+`lib/lexi/releases.ts` is the single authored source for the interactive
+release graph. It records a version label, date, relative capability index,
+quantitative highlight, and reviewed notes for every plotted release.
+
+The capability index is an internal development index—not an external
+benchmark. It combines deterministic response reach, contextual precision,
+lexical coverage, and model transparency on a stable 0–100 scale. Exact
+measurements such as DV4's 3.99× direct-answer availability remain separate
+highlighted metrics.
+
+Every change to `LEXI_BUILD` must add one newest release record. Tests require
+the latest record to match the current build and require the capability curve
+to remain chronological and non-decreasing.
 
 ## Scaling without changing the model philosophy
 

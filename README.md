@@ -1,6 +1,6 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260730-DV4 is a deterministic language-model
+Lexi Language 1.0 Pre-build 260730-DV5 is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
 same prompt and the same embedded sources always follow the same inspectable
 path:
@@ -27,14 +27,15 @@ npm run dev
 
 Open the local address printed in the terminal. Enter sends a message;
 Shift+Enter adds a line. While Lexi is matching context, the send control becomes
-a stop control. Shift-click the Alphaine wordmark to reveal the model build.
+a stop control. Shift-click the Alphaine wordmark to reveal the model build and
+the interactive Release notes control.
 
 ## Mechanical modules
 
 - `core/basic-phrases/` contains the independent, fixed-response layer for
   greetings, identity, model age, thanks, farewells, and other foundational
   exchanges. It runs before every corpus module and retains no personal state.
-- `modules/extended-pack/` is DV4's primary general-answer layer. Its 122
+- `modules/extended-pack/` is DV5's primary general-answer layer. Its 122
   authored subjects, 434 recognized names, 164 question frames, 58 linguistic
   rewrites, 58 bounded reference rules, and 67 complete conversational patterns
   provide 347 linguistic features and at least 71,243 direct constructions
@@ -58,10 +59,10 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
   together with a public trace.
 
 The fallback corpus includes 62 context pages, 4,180 input-response examples,
-and 8,360 paired sentences. It extends rather than defines DV4's direct
+and 8,360 paired sentences. It extends rather than defines DV5's direct
 knowledge coverage.
 
-## Extend DV4 knowledge
+## Extend DV5 knowledge
 
 Add or revise typed records under `modules/extended-pack/topics/`. Every record
 contains a definition, purpose, importance, example, related concepts, and
@@ -72,11 +73,23 @@ Add complete conversational behaviors to
 `modules/extended-pack/conversation.ts`. These patterns must cover the complete
 normalized message; do not use loose substring matches.
 
-DV4's availability measure is intentionally conservative:
+DV5 preserves DV4's intentionally conservative availability measure:
 `434 subject names × 164 semantic question frames + 67 complete conversation
 patterns = 71,243 direct constructions`. That is 3.99 times DV3's 17,861
 construction baseline. Politeness, answer-style, and discourse rewrites are not
 multiplied into that total.
+
+## Release history
+
+Shift-click the Alphaine wordmark, then choose **Release notes** to open Lexi's
+interactive capability graph. The five DV5 milestones are stored as typed
+records in `lib/lexi/releases.ts`; each point contains its update notes,
+quantitative highlight, capability index, and comparison with the preceding
+version.
+
+Every future Lexi version bump must add exactly one corresponding record to
+`LEXI_RELEASES`. The release-history test requires the latest record to match
+`LEXI_BUILD`, keeping the footer version and graph synchronized.
 
 ## Teach Lexi with new examples
 
@@ -126,7 +139,9 @@ npm test
 ```
 
 The tests cover deterministic intent selection, safe fallback behavior,
-non-Latin writing-system detection, corpus integrity, and the rendered page.
+non-Latin writing-system detection, corpus integrity, release-history
+synchronization, and the rendered page.
 See `docs/ARCHITECTURE.md` for the component contract and
 `docs/LINGUISTIC_SOURCES.md` for the linguistic references used by the first
-Structure Module.
+Structure Module. The permanent release-entry rule is recorded in
+`docs/RELEASES.md`.

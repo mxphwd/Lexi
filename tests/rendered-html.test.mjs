@@ -58,7 +58,7 @@ test("ships the modular corpus and complete lexical source artifacts", async () 
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
-  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260730-dv4");
+  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260730-dv5");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });

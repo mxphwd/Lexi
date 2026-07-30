@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
 import { corpusStats, respond, respondAsync } from "@/lib/lexi/engine";
 import type { LexiReply } from "@/lib/lexi/types";
 import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
@@ -21,6 +22,7 @@ export function LexiInterface() {
   const [reply, setReply] = useState<LexiReply | null>(null);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [showVersion, setShowVersion] = useState(false);
+  const [releaseNotesOpen, setReleaseNotesOpen] = useState(false);
   const [brandEntrance, setBrandEntrance] = useState(true);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const stopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -243,31 +245,53 @@ export function LexiInterface() {
         </div>
       </section>
 
+      <ReleaseNotes
+        open={releaseNotesOpen}
+        onClose={() => setReleaseNotesOpen(false)}
+      />
+
       <footer className="brand-footer">
-        <a
-          href={GITHUB_URL}
-          target="_blank"
-          rel="noreferrer"
-          className={`brand-link ${showVersion ? "show-version" : "show-logo"}`}
-          onClick={handleBrandClick}
-          aria-label={
-            showVersion
-              ? "Alphaine Lexi Language version. Shift-click to show the Alphaine logo."
-              : "Alphaine on GitHub. Shift-click to show the Lexi version."
-          }
-          title="Open GitHub · Shift-click for build information"
-        >
+        <div className={`brand-footer-inner ${showVersion ? "shows-version" : ""}`}>
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className={`brand-link ${showVersion ? "show-version" : "show-logo"}`}
+            onClick={handleBrandClick}
+            aria-label={
+              showVersion
+                ? "Alphaine Lexi Language version. Shift-click to show the Alphaine logo."
+                : "Alphaine on GitHub. Shift-click to show the Lexi version."
+            }
+            title="Open GitHub · Shift-click for build information"
+          >
+            {showVersion ? (
+              <span className="version-text">{LEXI_VERSION_LABEL}</span>
+            ) : (
+              <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
+                {BRAND_LETTERS.map((letter, index) => (
+                  <span key={`${letter}-${index}`} style={{ "--letter": index } as React.CSSProperties}>{letter}</span>
+                ))}
+                <sup>TM</sup>
+              </span>
+            )}
+          </a>
           {showVersion ? (
-            <span className="version-text">{LEXI_VERSION_LABEL}</span>
-          ) : (
-            <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
-              {BRAND_LETTERS.map((letter, index) => (
-                <span key={`${letter}-${index}`} style={{ "--letter": index } as React.CSSProperties}>{letter}</span>
-              ))}
-              <sup>TM</sup>
-            </span>
-          )}
-        </a>
+            <>
+              <span className="version-divider" aria-hidden="true">·</span>
+              <button
+                className="release-trigger"
+                type="button"
+                onClick={() => {
+                  setAboutOpen(false);
+                  setReleaseNotesOpen(true);
+                }}
+              >
+                Release notes
+              </button>
+            </>
+          ) : null}
+        </div>
       </footer>
     </main>
   );
