@@ -1,12 +1,14 @@
 import { extendedConversationPatternCount } from "./conversation";
 import {
-  extendedAliasCount,
-  extendedQuestionFrameCount,
-  matchExtendedPack,
-} from "./router";
+  linguisticRewriteFeatureCount,
+  prepareDiscourseInput,
+  prepareLinguisticInput,
+} from "./linguistic-features";
+import { extendedQuestionFrameCount } from "./question-frames";
+import { extendedAliasCount, matchExtendedPack } from "./router";
 import { knowledgeTopics } from "./topics";
 
-export { matchExtendedPack };
+export { matchExtendedPack, prepareDiscourseInput, prepareLinguisticInput };
 export type { KnowledgeTopic, PackFocus, PackResponse } from "./types";
 
 export function extendedPackStats() {
@@ -15,6 +17,11 @@ export function extendedPackStats() {
     aliases: extendedAliasCount,
     questionFrames: extendedQuestionFrameCount,
     conversationPatterns: extendedConversationPatternCount,
+    linguisticFeatures:
+      extendedQuestionFrameCount +
+      linguisticRewriteFeatureCount +
+      extendedConversationPatternCount,
+    rewriteFeatures: linguisticRewriteFeatureCount,
     minimumQuestionConstructions:
       extendedAliasCount * extendedQuestionFrameCount +
       extendedConversationPatternCount,

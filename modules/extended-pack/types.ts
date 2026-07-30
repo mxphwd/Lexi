@@ -30,7 +30,10 @@ export type PackFocus =
   | "example"
   | "components"
   | "related"
-  | "comparison";
+  | "summary"
+  | "learning"
+  | "comparison"
+  | "similarity";
 
 export type PackResponse = {
   text: string;

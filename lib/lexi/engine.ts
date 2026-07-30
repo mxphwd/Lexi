@@ -7,8 +7,17 @@ import {
   findWordsetEntry,
   type DictionaryLookupOptions,
 } from "@/modules/dictionary";
-import { combineClauseReplies, splitIntoClauses } from "@/modules/discourse";
-import { extendedPackStats, matchExtendedPack } from "@/modules/extended-pack";
+import {
+  combineClauseReplies,
+  discourseReferenceFeatureCount,
+  hasUnresolvedReference,
+  splitIntoClauses,
+} from "@/modules/discourse";
+import {
+  extendedPackStats,
+  matchExtendedPack,
+  prepareLinguisticInput,
+} from "@/modules/extended-pack";
 import { analyseSentence, searchContexts } from "@/modules/search";
 import { realiseSentence } from "@/modules/structure";
 import type { ContextEntry, LexiReply } from "./types";
@@ -16,7 +25,12 @@ import type { ContextEntry, LexiReply } from "./types";
 const entries: ContextEntry[] = contextPages.flatMap((page) => page.entries);
 
 function respondToClause(input: string): LexiReply {
-  const basicPhrase = matchBasicPhrase(input);
+  const prepared = prepareLinguisticInput(input);
+  const basicPhrase =
+    matchBasicPhrase(input) ??
+    (prepared.core !== prepared.originalNormalized
+      ? matchBasicPhrase(prepared.core)
+      : undefined);
   if (basicPhrase) {
     const { definition, normalizedInput } = basicPhrase;
 
@@ -49,6 +63,23 @@ function respondToClause(input: string): LexiReply {
         matchedTerms: extended.evidence,
         selectedStructure: extended.structureId,
         source: "extended-pack",
+      },
+    };
+  }
+
+  if (hasUnresolvedReference(input)) {
+    const analysis = analyseSentence(input);
+    return {
+      text: "I cannot resolve that reference to exactly one supported subject or pair. Name one subject, or compare exactly two subjects, then ask the question again.",
+      trace: {
+        normalizedInput: analysis.normalized,
+        sentenceMode: analysis.mode,
+        interpretedIntent: "reference-clarification",
+        confidence: 1,
+        matchedExampleIds: ["grammar:unresolved-reference"],
+        matchedTerms: ["unresolved reference", "subject required"],
+        selectedStructure: "reference-clarification",
+        source: "safe-fallback",
       },
     };
   }
@@ -159,5 +190,7 @@ export function corpusStats() {
     extendedAliases: extended.aliases,
     extendedQuestionFrames: extended.questionFrames,
     extendedConstructions: extended.minimumQuestionConstructions,
+    linguisticFeatures:
+      extended.linguisticFeatures + discourseReferenceFeatureCount,
   };
 }

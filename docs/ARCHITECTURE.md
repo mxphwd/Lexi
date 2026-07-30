@@ -49,8 +49,10 @@ Structure Module ─── clause realization + reviewed combination pattern
 Recognized request frames are inherited across coordinated items, so “What is
 math and science?” becomes two complete definition requests. It processes at
 most four clauses and can carry one explicit subject into a bounded pronoun or
-implicit follow-up such as “why is it important?” It deduplicates identical
-answers and combines their trace evidence. It does not add answer facts.
+implicit follow-up such as “why is it important?” Two explicit subjects support
+`they`, `them`, and `both`; three or more subjects deliberately require
+clarification instead of guessing a pair. It deduplicates identical answers and
+combines their trace evidence. It does not add answer facts.
 
 ### Basic Phrases
 
@@ -60,16 +62,24 @@ Extended Pack.
 
 ### Extended Pack
 
-`modules/extended-pack/` is the primary direct-answer layer for DV3. A
+`modules/extended-pack/` is the primary direct-answer layer for DV4. A
 grammatical router recognizes definition, purpose, mechanism, importance,
-example, component, relation, and comparison requests. It resolves the subject
-through canonical terms and aliases, then selects one explicit field from an
-authored semantic record.
+example, component, relation, summary, learning, difference, and similarity
+requests. It resolves the subject through canonical terms and aliases, then
+selects one explicit field from an authored semantic record.
 
-The pack currently holds 122 subjects and 434 recognized subject names. Its 41
+The pack currently holds 122 subjects and 434 recognized subject names. Its 164
 question frames and 67 complete conversation patterns produce a conservative
-lower bound of 17,861 direct constructions. This count is derived from grammar
-and aliases; it is not presented as a corpus of 17,861 hand-written examples.
+lower bound of 71,243 direct constructions—3.99 times DV3's measured 17,861.
+Its 347 linguistic features also include polite and indirect framing, answer
+styles, and bounded singular or paired reference rules. Those rewrites are not
+multiplied into the construction count.
+
+`linguistic-features.ts` removes non-semantic discourse framing, recognizes
+brief, simple, detailed, and example-supported requests, and records every
+applied transformation. `query.ts` tests specific semantic forms before broad
+definition forms so “What is mathematics used for?” cannot be captured as a
+definition of “mathematics used for.”
 
 ### Search
 

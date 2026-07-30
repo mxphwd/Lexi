@@ -1,5 +1,7 @@
 import { normalizeText } from "@/modules/search/tokenize";
 import { matchExtendedConversation } from "./conversation";
+import { prepareLinguisticInput, type AnswerStyle } from "./linguistic-features";
+import { parsePackQueries } from "./query";
 import { knowledgeTopics } from "./topics";
 import type { KnowledgeTopic, PackFocus, PackResponse } from "./types";
 
@@ -12,25 +14,13 @@ for (const topic of knowledgeTopics) {
   }
 }
 
-const targetSuffixes = [
-  " in simple terms",
-  " simply",
-  " briefly",
-  " for a beginner",
-  " in an easy way",
-  " to me",
-];
-
 function cleanTarget(value: string): string {
-  let target = value
+  return value
     .replace(/^(?:a|an|the)\s+/, "")
     .replace(/\s+(?:please|again)$/, "")
+    .replace(/^(?:concept|idea|topic)\s+of\s+/, "")
+    .replace(/(?:'s|s')\s+(?:meaning|purpose|importance)$/, "")
     .trim();
-
-  for (const suffix of targetSuffixes) {
-    if (target.endsWith(suffix)) target = target.slice(0, -suffix.length).trim();
-  }
-  return target;
 }
 
 function findTopic(value: string): KnowledgeTopic | undefined {
@@ -39,182 +29,216 @@ function findTopic(value: string): KnowledgeTopic | undefined {
   if (direct) return direct;
 
   if (target.endsWith("ies")) return topicByAlias.get(`${target.slice(0, -3)}y`);
+  if (target.endsWith("es")) return topicByAlias.get(target.slice(0, -2));
   if (target.endsWith("s")) return topicByAlias.get(target.slice(0, -1));
   return undefined;
 }
-
-const focusedForms: Array<{ focus: PackFocus; patterns: RegExp[] }> = [
-  {
-    focus: "purpose",
-    patterns: [
-      /^what (?:is|are) (.+?) (?:used )?for$/,
-      /^what (?:does|do) (.+?) do$/,
-      /^what is the (?:purpose|use) of (.+)$/,
-      /^why (?:do we|would someone) use (.+)$/,
-      /^(?:tell|show) me the (?:purpose|use) of (.+)$/,
-    ],
-  },
-  {
-    focus: "mechanism",
-    patterns: [
-      /^how (?:does|do) (.+?) work$/,
-      /^how (?:does|do) (.+?) happen$/,
-      /^how (?:is|are) (.+?) made$/,
-      /^what is the process behind (.+)$/,
-      /^(?:explain|describe) how (.+?) works$/,
-      /^(?:can|could|would|will) you (?:please )?(?:explain|describe) how (.+?) works$/,
-    ],
-  },
-  {
-    focus: "importance",
-    patterns: [
-      /^why (?:is|are) (.+?) important$/,
-      /^why (?:does|do) (.+?) matter$/,
-      /^what is the importance of (.+)$/,
-      /^(?:explain|describe) why (.+?) (?:is|are) important$/,
-    ],
-  },
-  {
-    focus: "example",
-    patterns: [
-      /^(?:give|show) me (?:a|an|one) example of (.+)$/,
-      /^what (?:is|are) (?:a|an|some) examples? of (.+)$/,
-      /^can you give me (?:a|an) example of (.+)$/,
-      /^example of (.+)$/,
-    ],
-  },
-  {
-    focus: "components",
-    patterns: [
-      /^what are the (?:parts|components|elements) of (.+)$/,
-      /^what (?:does|do) (.+?) consist of$/,
-      /^(?:list|name) the (?:parts|components|elements) of (.+)$/,
-      /^what is (.+?) made of$/,
-    ],
-  },
-  {
-    focus: "related",
-    patterns: [
-      /^what (?:is|are) (.+?) related to$/,
-      /^what concepts are related to (.+)$/,
-      /^what goes with (.+)$/,
-      /^(?:list|name) topics related to (.+)$/,
-    ],
-  },
-  {
-    focus: "definition",
-    patterns: [
-      /^what (?:is|are) (.+)$/,
-      /^what does (.+?) mean$/,
-      /^(?:please )?(?:define|describe|explain) (.+)$/,
-      /^(?:can|could|would|will) you (?:define|describe|explain) (.+)$/,
-      /^(?:please )?tell me about (.+)$/,
-      /^i (?:want|would like) to (?:know|learn) about (.+)$/,
-      /^help me understand (.+)$/,
-      /^give me (?:a )?(?:simple |brief )?(?:explanation|overview) of (.+)$/,
-      /^what do you know about (.+)$/,
-      /^meaning of (.+)$/,
-    ],
-  },
-];
-
-const comparisonForms = [
-  /^what is the difference between (.+?) and (.+)$/,
-  /^how (?:is|are) (.+?) different from (.+)$/,
-  /^(?:compare|contrast) (.+?) (?:and|with) (.+)$/,
-  /^what is similar about (.+?) and (.+)$/,
-];
 
 function sentence(value: string): string {
   const trimmed = value.trim().replace(/[.!?]+$/, "");
   return `${trimmed}.`;
 }
 
-function topicResponse(topic: KnowledgeTopic, focus: PackFocus): PackResponse {
-  let text: string;
+function capitalize(value: string): string {
+  return value ? value[0].toLocaleUpperCase("en-US") + value.slice(1) : value;
+}
+
+function unarticledTerm(topic: KnowledgeTopic): string {
+  return topic.term.replace(/^(?:a|an|the)\s+/i, "");
+}
+
+function baseTopicText(topic: KnowledgeTopic, focus: PackFocus): string {
   switch (focus) {
     case "purpose":
-      text = `${topic.term} is used to ${topic.purpose}`;
-      break;
+      return `${topic.term} is used to ${topic.purpose}`;
     case "mechanism":
-      text = topic.mechanism
-        ? `${topic.term} works through ${topic.mechanism}`
+      return topic.mechanism
+        ? `at a basic level, ${topic.mechanism}`
         : `${topic.term} works by organizing ideas and actions around its basic purpose: to ${topic.purpose}`;
-      break;
     case "importance":
-      text = `${topic.term} matters because ${topic.importance}`;
-      break;
+      return `${topic.term} matters because ${topic.importance}`;
     case "example":
-      text = `An example of ${topic.term} is ${topic.example}`;
-      break;
+      return `an example of ${topic.term} is ${topic.example}`;
     case "components":
-      text = topic.components?.length
-        ? `The main parts of ${topic.term} include ${topic.components.join(", ")}`
+      return topic.components?.length
+        ? `the main parts of ${topic.term} include ${topic.components.join(", ")}`
         : `${topic.term} does not have one fixed parts list in this pack; its closest related concepts are ${topic.related.join(", ")}`;
-      break;
     case "related":
-      text = `${topic.term} is closely related to ${topic.related.join(", ")}`;
-      break;
+      return `${topic.term} is closely related to ${topic.related.join(", ")}`;
+    case "summary":
+      return `${topic.term} is ${topic.definition}. Its main purpose is to ${topic.purpose}. It matters because ${topic.importance}`;
+    case "learning": {
+      const foundations = topic.components?.slice(0, 3) ?? topic.related.slice(0, 3);
+      return `to learn ${unarticledTerm(topic)}, start with ${foundations.join(", ")}. Then connect those basics to ${topic.related.slice(0, 3).join(", ")}, and test your understanding through ${topic.example}`;
+    }
     default:
-      text = `${topic.term} is ${topic.definition}`;
+      return `${topic.term} is ${topic.definition}`;
+  }
+}
+
+function applyAnswerStyle(
+  base: string,
+  topic: KnowledgeTopic,
+  focus: PackFocus,
+  style: AnswerStyle,
+): string {
+  const direct = sentence(capitalize(base));
+  if (style === "plain" || style === "brief") return direct;
+
+  if (style === "simple") {
+    return `In simple terms, ${direct[0].toLocaleLowerCase("en-US")}${direct.slice(1)}`;
   }
 
+  if (style === "exampled") {
+    if (focus === "example") return direct;
+    return `${direct} ${sentence(`For example, ${topic.example}`)}`;
+  }
+
+  if (focus === "summary") return direct;
+  const mechanism = topic.mechanism
+    ? sentence(`At a basic level, it works through ${topic.mechanism}`)
+    : "";
+  return [
+    direct,
+    sentence(`Its main purpose is to ${topic.purpose}`),
+    mechanism,
+    sentence(`It matters because ${topic.importance}`),
+  ].filter(Boolean).join(" ");
+}
+
+function topicResponse(
+  topic: KnowledgeTopic,
+  focus: PackFocus,
+  style: AnswerStyle,
+  frameId: string,
+  appliedFeatures: string[],
+): PackResponse {
   return {
-    text: sentence(text[0].toLocaleUpperCase("en-US") + text.slice(1)),
+    text: applyAnswerStyle(baseTopicText(topic, focus), topic, focus, style),
     intent: focus,
     recordIds: [`knowledge:${topic.id}`],
-    evidence: [topic.term, topic.category, focus],
-    structureId: `extended-knowledge:${focus}`,
+    evidence: [...new Set([
+      topic.term,
+      topic.category,
+      focus,
+      `frame:${frameId}`,
+      ...appliedFeatures.map((feature) => `feature:${feature}`),
+    ])],
+    structureId: `extended-knowledge:${focus}:${style}`,
     confidence: 1,
   };
+}
+
+function topicsExplicitlyRelated(left: KnowledgeTopic, right: KnowledgeTopic): boolean {
+  const leftRelations = new Set(left.related.map(normalizeText));
+  const rightNames = [right.term, ...right.aliases].map(normalizeText);
+  const rightRelations = new Set(right.related.map(normalizeText));
+  const leftNames = [left.term, ...left.aliases].map(normalizeText);
+  return (
+    rightNames.some((name) => leftRelations.has(name)) ||
+    leftNames.some((name) => rightRelations.has(name))
+  );
 }
 
 function comparisonResponse(
   left: KnowledgeTopic,
   right: KnowledgeTopic,
+  focus: "comparison" | "similarity",
+  style: AnswerStyle,
+  frameId: string,
+  appliedFeatures: string[],
 ): PackResponse {
+  const leftLabel = capitalize(left.term);
+  let text: string;
+
+  if (focus === "similarity") {
+    if (topicsExplicitlyRelated(left, right)) {
+      text = `${leftLabel} and ${right.term} are directly related concepts. ${leftLabel} is ${left.definition}, while ${right.term} is ${right.definition}.`;
+    } else if (left.category === right.category) {
+      text = `${leftLabel} and ${right.term} both belong to the same broad subject area. ${leftLabel} is ${left.definition}, while ${right.term} is ${right.definition}.`;
+    } else {
+      text = `This pack records no direct relationship between ${left.term} and ${right.term}. ${leftLabel} is ${left.definition}, while ${right.term} is ${right.definition}.`;
+    }
+  } else {
+    text = `${leftLabel} is ${left.definition}, whereas ${right.term} is ${right.definition}.`;
+  }
+
+  if (style === "detailed") {
+    text += ` ${leftLabel} is used to ${left.purpose}; ${right.term} is used to ${right.purpose}.`;
+  }
+
   return {
-    text: sentence(
-      `${left.term[0].toLocaleUpperCase("en-US") + left.term.slice(1)} is ${left.definition}, whereas ${right.term} is ${right.definition}`,
-    ),
-    intent: "comparison",
+    text,
+    intent: focus,
     recordIds: [`knowledge:${left.id}`, `knowledge:${right.id}`],
-    evidence: [left.term, right.term, "contrast"],
-    structureId: "extended-knowledge:comparison",
+    evidence: [...new Set([
+      left.term,
+      right.term,
+      focus,
+      `frame:${frameId}`,
+      ...appliedFeatures.map((feature) => `feature:${feature}`),
+    ])],
+    structureId: `extended-knowledge:${focus}:${style}`,
     confidence: 1,
   };
 }
 
 export function matchExtendedPack(input: string): PackResponse | undefined {
-  const normalized = normalizeText(input);
-  if (!normalized) return undefined;
+  const prepared = prepareLinguisticInput(input);
+  if (!prepared.core) return undefined;
 
-  const conversation = matchExtendedConversation(normalized);
-  if (conversation) return conversation;
-
-  for (const pattern of comparisonForms) {
-    const match = normalized.match(pattern);
-    if (!match) continue;
-    const left = findTopic(match[1]);
-    const right = findTopic(match[2]);
-    if (left && right && left.id !== right.id) return comparisonResponse(left, right);
+  const conversation = matchExtendedConversation(prepared.core);
+  if (conversation) {
+    return {
+      ...conversation,
+      evidence: [
+        ...conversation.evidence,
+        ...prepared.appliedFeatures.map((feature) => `feature:${feature}`),
+      ],
+    };
   }
 
-  for (const form of focusedForms) {
-    for (const pattern of form.patterns) {
-      const target = normalized.match(pattern)?.[1];
-      if (!target) continue;
-      const topic = findTopic(target);
-      if (topic) return topicResponse(topic, form.focus);
+  for (const parsed of parsePackQueries(input)) {
+    const left = findTopic(parsed.target);
+    if (!left) continue;
+
+    if (
+      (parsed.focus === "comparison" || parsed.focus === "similarity") &&
+      parsed.secondTarget
+    ) {
+      const right = findTopic(parsed.secondTarget);
+      if (right && left.id !== right.id) {
+        return comparisonResponse(
+          left,
+          right,
+          parsed.focus,
+          parsed.style,
+          parsed.frameId,
+          parsed.appliedFeatures,
+        );
+      }
+      continue;
     }
+
+    return topicResponse(
+      left,
+      parsed.focus,
+      parsed.style,
+      parsed.frameId,
+      parsed.appliedFeatures,
+    );
   }
 
-  const directTopic = findTopic(normalized);
-  return directTopic ? topicResponse(directTopic, "definition") : undefined;
+  const directTopic = findTopic(prepared.core);
+  return directTopic
+    ? topicResponse(
+        directTopic,
+        "definition",
+        prepared.style,
+        "direct-subject",
+        prepared.appliedFeatures,
+      )
+    : undefined;
 }
-
-export const extendedQuestionFrameCount =
-  focusedForms.reduce((sum, form) => sum + form.patterns.length, 0) +
-  comparisonForms.length;
 
 export const extendedAliasCount = topicByAlias.size;

@@ -1,9 +1,13 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { respond, respondAsync } from "@/lib/lexi/engine";
+import { corpusStats, respond, respondAsync } from "@/lib/lexi/engine";
 import { splitIntoClauses } from "@/modules/discourse";
 import { extendedPackStats } from "@/modules/extended-pack";
+import {
+  comparisonFrames,
+  singleSubjectFrames,
+} from "@/modules/extended-pack/question-frames";
 import { knowledgeTopics } from "@/modules/extended-pack/topics";
 import { analyseSentence, hasUnsupportedWritingSystem } from "@/modules/search";
 
@@ -107,7 +111,7 @@ test("handles foundational phrases before the corpus modules", () => {
   const age = respond("How old are you?");
   assert.equal(age.trace.interpretedIntent, "model-age");
   assert.equal(age.trace.source, "core-phrase");
-  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260730-DV3/);
+  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260730-DV4/);
 
   assert.equal(respond("What’s your name?").trace.interpretedIntent, "identity");
   assert.equal(respond("HOW ARE YOU?").trace.interpretedIntent, "wellbeing");
@@ -168,6 +172,10 @@ test("segments explicit requests and inherits recognized connection frames", () 
   assert.deepEqual(splitIntoClauses("Bread and butter are foods."), [
     "Bread and butter are foods",
   ]);
+  assert.deepEqual(
+    splitIntoClauses("What are math, science, and language?"),
+    ["What are math", "What are science", "What are language"],
+  );
   assert.deepEqual(splitIntoClauses("What is math and why is it important?"), [
     "What is math",
     "Why is math important",
@@ -193,7 +201,7 @@ test("combines multiple bounded answers with reviewed structures", () => {
   assert.equal(twoPart.trace.selectedStructure, "discourse-multipart");
   assert.match(twoPart.text, /^First:/);
   assert.match(twoPart.text, /Second:/);
-  assert.match(twoPart.text, /260730-DV3/);
+  assert.match(twoPart.text, /260730-DV4/);
 
   const modules = respond(
     "Explain the Context Module and then explain the Search Module.",
@@ -252,6 +260,111 @@ test("carries a known subject into coordinated semantic follow-up questions", ()
   assert.match(example.text, /Earth keeping the Moon in orbit/);
 });
 
+test("resolves singular and paired references only from explicit local antecedents", () => {
+  const singular = respond(
+    "What is math? How exactly does it work? Why should I care about it?",
+  );
+  assert.deepEqual(singular.trace.clauseIntents, [
+    "definition",
+    "mechanism",
+    "importance",
+  ]);
+  assert.match(singular.text, /definitions and assumptions/);
+  assert.match(singular.text, /precise language for science/);
+
+  const pair = respond(
+    "What are math and science, and how are they related?",
+  );
+  assert.deepEqual(pair.trace.clauseIntents, [
+    "definition",
+    "definition",
+    "similarity",
+  ]);
+  assert.match(pair.text, /directly related concepts/);
+
+  const pairedExamples = respond(
+    "Compare math and science. Give me an example of each.",
+  );
+  assert.deepEqual(pairedExamples.trace.clauseIntents, [
+    "comparison",
+    "example",
+    "example",
+  ]);
+
+  const switched = respond(
+    "What is math? What is gravity? How does it work?",
+  );
+  assert.deepEqual(switched.trace.clauseIntents, [
+    "definition",
+    "definition",
+    "mechanism",
+  ]);
+  assert.match(switched.text, /mass-energy shapes spacetime/);
+
+  const unresolved = respond("How does it work?");
+  assert.equal(unresolved.trace.source, "safe-fallback");
+  assert.equal(unresolved.trace.interpretedIntent, "reference-clarification");
+  assert.match(unresolved.text, /exactly one supported subject or pair/);
+
+  const ambiguousGroup = respond(
+    "What are math, science, and language, and how are they related?",
+  );
+  assert.deepEqual(ambiguousGroup.trace.clauseIntents, [
+    "definition",
+    "definition",
+    "definition",
+    "reference-clarification",
+  ]);
+});
+
+test("understands indirect, polite, styled, and discourse-marked questions", () => {
+  const simple = respond(
+    "Well, could you explain math in simple terms, please?",
+  );
+  assert.equal(simple.trace.source, "extended-pack");
+  assert.equal(simple.trace.interpretedIntent, "definition");
+  assert.match(simple.text, /^In simple terms,/);
+  assert.match(simple.trace.selectedStructure, /:simple$/);
+
+  const exampled = respond(
+    "I was wondering if you could tell me about gravity with an example.",
+  );
+  assert.equal(exampled.trace.interpretedIntent, "definition");
+  assert.match(exampled.text, /For example, Earth keeping the Moon in orbit/);
+  assert.match(exampled.trace.selectedStructure, /:exampled$/);
+
+  const detailed = respond("Would you mind explaining climate in detail?");
+  assert.equal(detailed.trace.interpretedIntent, "definition");
+  assert.match(detailed.trace.selectedStructure, /:detailed$/);
+  assert.match(detailed.text, /Its main purpose/);
+
+  const wrappedGreeting = respond("Well, hello, please.");
+  assert.equal(wrappedGreeting.trace.source, "core-phrase");
+  assert.equal(wrappedGreeting.trace.interpretedIntent, "greeting");
+});
+
+test("supports summaries, learning paths, and relationship-aware comparisons", () => {
+  const summary = respond("Give me the big picture of an algorithm.");
+  assert.equal(summary.trace.interpretedIntent, "summary");
+  assert.match(summary.text, /Its main purpose/);
+  assert.match(summary.text, /It matters because/);
+
+  const learning = respond("Where should I start with biology?");
+  assert.equal(learning.trace.interpretedIntent, "learning");
+  assert.match(learning.text, /^To learn biology/);
+  assert.match(learning.text, /cell biology/);
+
+  const similarity = respond("What do weather and climate have in common?");
+  assert.equal(similarity.trace.interpretedIntent, "similarity");
+  assert.match(similarity.text, /directly related concepts/);
+
+  const unsupportedRelation = respond(
+    "What do encryption and nutrition have in common?",
+  );
+  assert.equal(unsupportedRelation.trace.interpretedIntent, "similarity");
+  assert.match(unsupportedRelation.text, /no direct relationship/);
+});
+
 test("uses complete embedded Wordset only for subjects outside the Extended Pack", async () => {
   const dictionaryOptions = { fetcher: localWordsetFetcher };
   const math = await respondAsync("What is Math?", dictionaryOptions);
@@ -281,7 +394,7 @@ test("combines inherited basic-question frames without dictionary collisions", a
   assert.equal(reply.trace.source, "combined-response");
   assert.deepEqual(reply.trace.clauseIntents, ["identity", "model-age"]);
   assert.match(reply.text, /I’m Lexi/);
-  assert.match(reply.text, /260730-DV3/);
+  assert.match(reply.text, /260730-DV4/);
 });
 
 test("handles extended conversational phrases without approximate corpus matching", () => {
@@ -300,7 +413,7 @@ test("handles extended conversational phrases without approximate corpus matchin
   assert.equal(decision.trace.interpretedIntent, "decision-support");
 });
 
-test("keeps every authored DV3 topic reachable across semantic question focuses", () => {
+test("keeps every authored DV4 topic reachable across semantic question focuses", () => {
   const ids = new Set<string>();
 
   for (const topic of knowledgeTopics) {
@@ -314,6 +427,8 @@ test("keeps every authored DV3 topic reachable across semantic question focuses"
       `Why is ${topic.term} important?`,
       `Give me an example of ${topic.term}.`,
       `What concepts are related to ${topic.term}?`,
+      `Summarize ${topic.term}.`,
+      `How can I learn ${topic.term}?`,
     ];
     if (topic.components?.length) {
       prompts.push(`What are the parts of ${topic.term}?`);
@@ -332,6 +447,29 @@ test("keeps every authored DV3 topic reachable across semantic question focuses"
   const stats = extendedPackStats();
   assert.equal(stats.topics, 122);
   assert.equal(stats.aliases, 434);
-  assert.equal(stats.questionFrames, 41);
-  assert.ok(stats.minimumQuestionConstructions >= 17_861);
+  assert.equal(stats.questionFrames, 164);
+  assert.equal(stats.minimumQuestionConstructions, 71_243);
+
+  const previousAvailability = 17_861;
+  const availabilityMultiplier =
+    stats.minimumQuestionConstructions / previousAvailability;
+  assert.ok(availabilityMultiplier >= 3);
+  assert.ok(availabilityMultiplier <= 4);
+
+  const engineStats = corpusStats();
+  assert.equal(engineStats.linguisticFeatures, 347);
+});
+
+test("keeps the DV4 grammatical frame registry unique and within the 4x release target", () => {
+  const frames = [...singleSubjectFrames, ...comparisonFrames];
+  const frameIds = new Set(frames.map((frame) => frame.id));
+
+  assert.equal(frames.length, 164);
+  assert.equal(frameIds.size, frames.length);
+  assert.ok(frames.every((frame) => frame.pattern.source.startsWith("^")));
+  assert.ok(frames.every((frame) => frame.pattern.source.endsWith("$")));
+
+  const multiplier = extendedPackStats().minimumQuestionConstructions / 17_861;
+  assert.ok(multiplier > 3.98);
+  assert.ok(multiplier < 4);
 });

@@ -1,13 +1,18 @@
+import { prepareDiscourseInput } from "@/modules/extended-pack";
+import { resolveClauseReferences } from "./reference";
+
 const MAX_CLAUSES = 4;
 
 const coordinatedRequestBoundary =
-  /\s*(?:(?:,\s*)?(?:and then|and|also|then)|,)\s+(?=(?:please\s+)?(?:tell|explain|define|describe|show|give|help|what|who|where|when|why|how|can|could|would|do|does|did|is|are|will|should|may)\b)/gi;
+  /\s*(?:(?:,\s*)?(?:and then|and|also|then)|,)\s+(?=(?:please\s+)?(?:tell|explain|define|describe|summarize|introduce|provide|illustrate|list|name|compare|contrast|break|show|give|help|what|who|where|when|why|how|can|could|would|do|does|did|is|are|will|should|may)\b)/gi;
 
 const sharedRequestFrames = [
   /^(?<frame>(?:please\s+)?(?:what\s+(?:is|are)|what['’]s|who\s+(?:is|are)|who['’]s))\s+(?<items>.+)$/i,
   /^(?<frame>(?:please\s+)?(?:define|describe|explain))\s+(?<items>.+)$/i,
   /^(?<frame>(?:(?:can|could|would|will)\s+you\s+)(?:define|describe|explain))\s+(?<items>.+)$/i,
+  /^(?<frame>(?:(?:can|could|would|will)\s+you\s+)(?:tell\s+me\s+about|summarize))\s+(?<items>.+)$/i,
   /^(?<frame>(?:please\s+)?tell\s+me\s+about)\s+(?<items>.+)$/i,
+  /^(?<frame>(?:please\s+)?(?:summarize|introduce))\s+(?<items>.+)$/i,
   /^(?<frame>(?:please\s+)?give\s+me\s+(?:the\s+)?definitions?\s+(?:of|for))\s+(?<items>.+)$/i,
 ];
 
@@ -52,8 +57,11 @@ function inheritSharedRequestFrame(clause: string): string[] {
     if (!frame || !items) continue;
 
     const coordinatedItems = items
-      .split(/\s+(?:and|as\s+well\s+as)\s+/i)
-      .map((item) => item.replace(/^,\s*/, "").trim())
+      .replace(/^both\s+/i, "")
+      .split(/\s*(?:,\s+(?=[^,]+)|\s+(?:and(?:\s+also)?|as\s+well\s+as|along\s+with|plus|together\s+with)\s+)/i)
+      .map((item) =>
+        item.replace(/^,\s*/, "").replace(/^(?:and|also)\s+/i, "").trim(),
+      )
       .filter(Boolean);
 
     if (coordinatedItems.length > 1) {
@@ -64,52 +72,13 @@ function inheritSharedRequestFrame(clause: string): string[] {
   return [clause];
 }
 
-function explicitRequestSubject(clause: string): string | undefined {
-  const patterns = [
-    /^(?:what\s+(?:is|are)|what['’]s)\s+(.+)$/i,
-    /^(?:please\s+)?(?:define|describe|explain)\s+(.+)$/i,
-    /^(?:(?:can|could|would|will)\s+you\s+)(?:define|describe|explain)\s+(.+)$/i,
-    /^(?:please\s+)?tell\s+me\s+about\s+(.+)$/i,
-  ];
-
-  for (const pattern of patterns) {
-    const subject = clause.match(pattern)?.[1]?.trim();
-    if (subject && !/^(?:how|why|what|who|where|when)\b/i.test(subject)) {
-      return subject;
-    }
-  }
-  return undefined;
-}
-
-function inheritFollowUpSubjects(clauses: string[]): string[] {
-  let activeSubject: string | undefined;
-
-  return clauses.map((clause) => {
-    if (activeSubject) {
-      const replacements: Array<[RegExp, string]> = [
-        [/^why\s+is\s+it\s+important$/i, `Why is ${activeSubject} important`],
-        [/^why\s+does\s+it\s+matter$/i, `Why does ${activeSubject} matter`],
-        [/^(?:explain|describe)\s+why\s+it\s+is\s+important$/i, `Explain why ${activeSubject} is important`],
-        [/^how\s+does\s+it\s+work$/i, `How does ${activeSubject} work`],
-        [/^(?:explain|describe)\s+how\s+it\s+works$/i, `Explain how ${activeSubject} works`],
-        [/^what\s+is\s+it\s+(?:used\s+)?for$/i, `What is ${activeSubject} used for`],
-        [/^(?:give|show)\s+me\s+(?:a|an|one)\s+example(?:\s+of\s+it)?$/i, `Give me an example of ${activeSubject}`],
-        [/^what\s+are\s+its\s+(?:parts|components|elements)$/i, `What are the parts of ${activeSubject}`],
-        [/^what\s+is\s+it\s+related\s+to$/i, `What is ${activeSubject} related to`],
-      ];
-
-      const replacement = replacements.find(([pattern]) => pattern.test(clause));
-      if (replacement) return replacement[1];
-    }
-
-    activeSubject = explicitRequestSubject(clause) ?? activeSubject;
-    return clause;
-  });
-}
-
 export function splitIntoClauses(input: string): string[] {
-  const clauses = inheritFollowUpSubjects(
+  const clauses = resolveClauseReferences(
     splitSentences(input)
+    .map((sentence) => {
+      const prepared = prepareDiscourseInput(sentence);
+      return prepared.appliedFeatures.length ? prepared.core : sentence;
+    })
     .flatMap((sentence) => sentence.split(coordinatedRequestBoundary))
     .map((clause) => clause.replace(/^\s*(?:and then|and|also|then)\s+/i, "").trim())
     .filter(Boolean)
