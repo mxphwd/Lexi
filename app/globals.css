@@ -655,11 +655,11 @@ a {
 .release-window {
   position: relative;
   display: flex;
-  width: min(76vw, 1080px);
-  height: min(74svh, 760px);
-  min-height: 470px;
+  width: min(84vw, 1190px);
+  height: min(82svh, 840px);
+  min-height: 520px;
   flex-direction: column;
-  padding: 24px 26px 17px;
+  padding: 27px 30px 20px;
   border: 1px solid rgba(44, 50, 44, 0.2);
   border-radius: 12px;
   background: rgba(248, 249, 246, 0.965);
@@ -676,7 +676,7 @@ a {
   color: rgba(50, 57, 50, 0.24);
   content: "VISUAL CHANGELOG / DV5";
   font-family: var(--mono);
-  font-size: 0.38rem;
+  font-size: 0.43rem;
   letter-spacing: 0.09em;
 }
 
@@ -693,7 +693,7 @@ a {
   margin-bottom: 4px;
   color: rgba(71, 79, 71, 0.5);
   font-family: var(--mono);
-  font-size: 0.43rem;
+  font-size: 0.49rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -701,7 +701,7 @@ a {
 .release-header h1 {
   margin: 0;
   color: #303530;
-  font-size: clamp(1rem, 1.65vw, 1.34rem);
+  font-size: clamp(1.12rem, 1.8vw, 1.5rem);
   font-weight: 500;
   letter-spacing: 0.015em;
   line-height: 1.1;
@@ -709,8 +709,8 @@ a {
 
 .release-close {
   position: relative;
-  width: 26px;
-  height: 26px;
+  width: 29px;
+  height: 29px;
   padding: 0;
   border: 1px solid rgba(48, 54, 48, 0.18);
   border-radius: 6px;
@@ -729,9 +729,9 @@ a {
 .release-close span::before,
 .release-close span::after {
   position: absolute;
-  top: 12px;
-  left: 7px;
-  width: 11px;
+  top: 13px;
+  left: 8px;
+  width: 12px;
   height: 1px;
   background: currentColor;
   content: "";
@@ -749,7 +749,7 @@ a {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
-  margin: 24px 34px 18px 47px;
+  margin: 28px 39px 46px 54px;
   border-bottom: 1px solid rgba(44, 51, 44, 0.25);
   border-left: 1px solid rgba(44, 51, 44, 0.25);
   animation: release-element-enter 520ms ease 160ms both;
@@ -757,7 +757,7 @@ a {
 
 .release-plot {
   position: absolute;
-  inset: 12px 18px 10px 22px;
+  inset: 14px 20px 12px 25px;
 }
 
 .release-line {
@@ -771,7 +771,7 @@ a {
   position: absolute;
   color: rgba(57, 64, 57, 0.54);
   font-family: var(--mono);
-  font-size: 0.43rem;
+  font-size: 0.49rem;
   letter-spacing: 0.065em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -779,12 +779,12 @@ a {
 
 .release-axis-y {
   top: 50%;
-  left: -36px;
+  left: -41px;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .release-axis-x {
-  bottom: -27px;
+  bottom: -32px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -798,12 +798,16 @@ a {
   height: 0;
 }
 
+.release-point-anchor.is-active {
+  z-index: 30;
+}
+
 .release-point-label {
   position: absolute;
-  bottom: 13px;
+  bottom: 15px;
   left: 50%;
   color: rgba(43, 51, 44, 0.82);
-  font-size: clamp(0.58rem, 0.86vw, 0.75rem);
+  font-size: clamp(0.65rem, 0.96vw, 0.84rem);
   font-weight: 500;
   letter-spacing: 0.025em;
   opacity: 0;
@@ -818,8 +822,8 @@ a {
   top: 0;
   left: 0;
   display: grid;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   padding: 0;
   place-items: center;
   border: 1px solid rgba(54, 99, 72, 0.88);
@@ -837,8 +841,8 @@ a {
 }
 
 .release-point span {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #48765a;
   transition: transform 180ms ease, background 180ms ease;
@@ -863,24 +867,26 @@ a {
 .release-tooltip {
   position: absolute;
   top: 0;
-  z-index: 8;
-  width: min(258px, 34vw);
-  padding: 13px 14px 12px;
+  z-index: 40;
+  width: min(290px, 37vw);
+  padding: 15px 16px 14px;
   border: 1px solid rgba(47, 55, 48, 0.18);
   border-radius: 8px;
-  background: rgba(250, 251, 248, 0.985);
-  box-shadow: 0 15px 36px rgba(38, 45, 39, 0.14);
+  background: rgba(250, 251, 248, 0.995);
+  box-shadow:
+    0 18px 42px rgba(38, 45, 39, 0.17),
+    0 0 0 1px rgba(255, 255, 255, 0.66) inset;
   pointer-events: none;
   animation: release-tooltip-enter 230ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .release-tooltip.opens-right {
-  left: 19px;
+  left: 22px;
   transform-origin: 0 50%;
 }
 
 .release-tooltip.opens-left {
-  right: 19px;
+  right: 22px;
   transform-origin: 100% 50%;
 }
 
@@ -895,7 +901,7 @@ a {
 
 .release-tooltip-heading {
   display: flex;
-  gap: 9px;
+  gap: 11px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -903,7 +909,7 @@ a {
 .release-tooltip-heading strong {
   display: block;
   color: #343a34;
-  font-size: 0.7rem;
+  font-size: 0.79rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 1.25;
@@ -914,32 +920,34 @@ a {
   margin-top: 2px;
   color: #8a908a;
   font-family: var(--mono);
-  font-size: 0.4rem;
+  font-size: 0.45rem;
   letter-spacing: 0.02em;
 }
 
 .release-metric {
   flex: 0 0 auto;
-  padding: 3px 5px;
-  border: 1px solid rgba(65, 113, 82, 0.2);
-  border-radius: 4px;
-  background: rgba(92, 147, 111, 0.08);
-  color: #3c674b;
+  padding: 4px 7px;
+  border: 1px solid rgba(75, 128, 94, 0.22);
+  border-radius: 5px;
+  background:
+    linear-gradient(100deg, rgba(164, 218, 184, 0.2), rgba(205, 234, 216, 0.34));
+  box-shadow: 0 0 12px rgba(112, 180, 137, 0.11);
+  color: #315f42;
   font-family: var(--mono);
-  font-size: 0.39rem;
-  font-weight: 600;
+  font-size: 0.46rem;
+  font-weight: 700;
   letter-spacing: 0.015em;
   white-space: nowrap;
 }
 
 .release-tooltip ul {
   display: grid;
-  gap: 5px;
-  margin: 10px 0 0;
-  padding: 0 0 0 13px;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0 0 0 15px;
   color: #5f655f;
-  font-size: 0.57rem;
-  line-height: 1.35;
+  font-size: 0.64rem;
+  line-height: 1.4;
 }
 
 .release-tooltip li::marker {
@@ -949,9 +957,9 @@ a {
 
 .release-comparison {
   display: flex;
-  gap: 5px;
-  margin-top: 10px;
-  padding-top: 8px;
+  gap: 6px;
+  margin-top: 12px;
+  padding-top: 9px;
   border-top: 1px solid rgba(46, 53, 47, 0.14);
   flex-direction: column;
   font-family: var(--mono);
@@ -959,23 +967,24 @@ a {
 
 .release-comparison span {
   color: #969b96;
-  font-size: 0.38rem;
+  font-size: 0.43rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
 .release-comparison strong {
   color: #45634f;
-  font-size: 0.46rem;
+  font-size: 0.52rem;
   font-weight: 600;
 }
 
 .release-index-note {
   flex: 0 0 auto;
-  margin: 0;
+  margin: 0 0 1px;
   color: rgba(67, 74, 67, 0.46);
   font-family: var(--mono);
-  font-size: 0.4rem;
+  font-size: 0.45rem;
+  line-height: 1.45;
   letter-spacing: 0.02em;
   text-align: center;
   animation: release-element-enter 480ms ease 240ms both;
@@ -1109,18 +1118,18 @@ a {
 
   .release-window {
     width: calc(100vw - 24px);
-    height: calc(100svh - 34px);
+    height: calc(100svh - 24px);
     min-height: 0;
-    padding: 20px 16px 14px;
+    padding: 22px 18px 16px;
   }
 
   .release-window::before {
     right: 48px;
-    font-size: 0.32rem;
+    font-size: 0.36rem;
   }
 
   .release-chart-shell {
-    margin: 21px 11px 18px 31px;
+    margin: 24px 12px 42px 34px;
   }
 
   .release-plot {
@@ -1128,22 +1137,22 @@ a {
   }
 
   .release-axis-y {
-    left: -25px;
+    left: -27px;
   }
 
   .release-point-label {
-    bottom: 12px;
-    font-size: 0.5rem;
+    bottom: 13px;
+    font-size: 0.56rem;
   }
 
   .release-point {
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
   }
 
   .release-tooltip {
-    width: min(220px, 66vw);
-    padding: 11px 12px 10px;
+    width: min(242px, 70vw);
+    padding: 13px 14px 12px;
   }
 
   .release-tooltip.opens-right {
@@ -1165,8 +1174,8 @@ a {
 
   .release-index-note {
     padding: 0 6px;
-    font-size: 0.34rem;
-    line-height: 1.4;
+    font-size: 0.39rem;
+    line-height: 1.5;
   }
 }
 

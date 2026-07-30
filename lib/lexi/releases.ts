@@ -21,7 +21,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "260720-1A",
     date: "20 July 2026",
     capabilityIndex: 14,
-    metric: "First operational prototype",
+    metric: "4 core modules",
     notes: [
       "Established the Search, Context, Connect, and Structure module path.",
       "Added the first deterministic example-context responses.",
@@ -73,7 +73,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV5",
     date: "30 July 2026",
     capabilityIndex: 94,
-    metric: "5 releases mapped",
+    metric: "5 release milestones",
     notes: [
       "Added an interactive, version-linked capability history inside Lexi.",
       "Made quantitative gains and release-specific changes directly inspectable.",

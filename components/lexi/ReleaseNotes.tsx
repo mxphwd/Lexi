@@ -221,7 +221,9 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
 
               return (
                 <div
-                  className="release-point-anchor"
+                  className={`release-point-anchor ${
+                    activeIndex === index ? "is-active" : ""
+                  }`}
                   key={release.build}
                   style={pointStyle}
                 >
