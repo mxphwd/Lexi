@@ -8,6 +8,7 @@ import {
   type DictionaryLookupOptions,
 } from "@/modules/dictionary";
 import { combineClauseReplies, splitIntoClauses } from "@/modules/discourse";
+import { extendedPackStats, matchExtendedPack } from "@/modules/extended-pack";
 import { analyseSentence, searchContexts } from "@/modules/search";
 import { realiseSentence } from "@/modules/structure";
 import type { ContextEntry, LexiReply } from "./types";
@@ -30,6 +31,24 @@ function respondToClause(input: string): LexiReply {
         matchedTerms: definition.evidence,
         selectedStructure: `core:${definition.id}`,
         source: "core-phrase",
+      },
+    };
+  }
+
+  const extended = matchExtendedPack(input);
+  if (extended) {
+    const analysis = analyseSentence(input);
+    return {
+      text: extended.text,
+      trace: {
+        normalizedInput: analysis.normalized,
+        sentenceMode: analysis.mode,
+        interpretedIntent: extended.intent,
+        confidence: extended.confidence,
+        matchedExampleIds: extended.recordIds,
+        matchedTerms: extended.evidence,
+        selectedStructure: extended.structureId,
+        source: "extended-pack",
       },
     };
   }
@@ -83,7 +102,12 @@ async function respondToClauseAsync(
   dictionaryOptions: DictionaryLookupOptions,
 ): Promise<LexiReply> {
   const ordinaryReply = respondToClause(input);
-  if (ordinaryReply.trace.source === "core-phrase") return ordinaryReply;
+  if (
+    ordinaryReply.trace.source === "core-phrase" ||
+    ordinaryReply.trace.source === "extended-pack"
+  ) {
+    return ordinaryReply;
+  }
 
   const term = extractDefinitionTerm(input);
   if (!term) return ordinaryReply;
@@ -125,10 +149,15 @@ export async function respondAsync(
 }
 
 export function corpusStats() {
+  const extended = extendedPackStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
     sentences: entries.length * 2,
     basicPhrasePatterns: basicPhrasePatternCount,
+    extendedTopics: extended.topics,
+    extendedAliases: extended.aliases,
+    extendedQuestionFrames: extended.questionFrames,
+    extendedConstructions: extended.minimumQuestionConstructions,
   };
 }

@@ -2,10 +2,10 @@
 
 ## Contract
 
-Lexi is corpus-bound and deterministic. A response may reuse an attributed
-dictionary definition, return a response attached to a matched example, fill a
-declared sentence pattern, or fall back. No module is permitted to invent a
-fact outside those inputs.
+Lexi is source-bound and deterministic. A response may select an authored
+Extended Pack field, reuse an attributed dictionary definition, return a
+response attached to a matched example, fill a declared sentence pattern, or
+fall back. No module is permitted to invent a fact outside those inputs.
 
 ```text
 User text
@@ -14,7 +14,16 @@ User text
 Discourse Module ─── up to four explicit clauses
    │
    ▼
-Basic Phrases gate, full Dictionary lookup, or sentence analysis
+Basic Phrases gate
+   │
+   ▼
+Extended Pack ────── subject + requested semantic field
+   │ if unmatched
+   ▼
+Full Dictionary lookup for definition forms
+   │ if unmatched
+   ▼
+Sentence analysis
    │
    ▼
 Search Module ────── ranked ContextEntry records + term evidence
@@ -39,13 +48,28 @@ Structure Module ─── clause realization + reviewed combination pattern
 `modules/discourse/` owns explicit sentence and coordinated-request boundaries.
 Recognized request frames are inherited across coordinated items, so “What is
 math and science?” becomes two complete definition requests. It processes at
-most four clauses, deduplicates identical answers, and combines their trace
-evidence. It does not add answer facts.
+most four clauses and can carry one explicit subject into a bounded pronoun or
+implicit follow-up such as “why is it important?” It deduplicates identical
+answers and combines their trace evidence. It does not add answer facts.
 
 ### Basic Phrases
 
 `core/basic-phrases/` is checked independently for each clause. A match must
-cover the complete normalized clause; unmatched clauses continue into Search.
+cover the complete normalized clause; unmatched clauses continue into the
+Extended Pack.
+
+### Extended Pack
+
+`modules/extended-pack/` is the primary direct-answer layer for DV3. A
+grammatical router recognizes definition, purpose, mechanism, importance,
+example, component, relation, and comparison requests. It resolves the subject
+through canonical terms and aliases, then selects one explicit field from an
+authored semantic record.
+
+The pack currently holds 122 subjects and 434 recognized subject names. Its 41
+question frames and 67 complete conversation patterns produce a conservative
+lower bound of 17,861 direct constructions. This count is derived from grammar
+and aliases; it is not presented as a corpus of 17,861 hand-written examples.
 
 ### Search
 
@@ -59,12 +83,12 @@ score and then stable ID, so ties remain deterministic.
 
 ### Dictionary
 
-`modules/dictionary/` recognizes bounded definition forms and reads the complete
-vendored Wordset dictionary. Its compressed public archive is loaded only for a
-definition request, cached after the first load, and looked up mechanically. A
-successful definition records the Wordset entry ID and uses the literal
-`definition-full-wordset` structure; a missing entry returns to the ordinary
-corpus path.
+`modules/dictionary/` recognizes bounded definition forms for subjects not
+covered by the Extended Pack and reads the complete vendored Wordset dictionary.
+Its compressed public archive is loaded only for a definition request, cached
+after the first load, and looked up mechanically. A successful definition
+records the Wordset entry ID and uses the literal `definition-full-wordset`
+structure; a missing entry returns to the ordinary corpus path.
 
 ### Context
 
@@ -99,21 +123,22 @@ Every response returns a `LexiTrace` containing:
 - matched evidence terms
 - selected sentence structure
 - whether the response came from an exact example, a context pattern, the full
-  Wordset dictionary, or the safe fallback
+  Wordset dictionary, the Extended Pack, or the safe fallback
 - for a combined response, the number and ordered intents of its clauses
 
 The interface exposes this under “Why this response.”
 
 ## Scaling without changing the model philosophy
 
-1. Partition example pages by domain and version.
-2. Build offline token, phrase, and intent indexes.
-3. Evaluate every context release against a frozen ambiguity suite.
-4. Promote only contexts whose thresholds reduce false matches.
-5. Add structures as reviewed grammar data.
-6. Keep thesaurus compilation offline; keep the compressed full dictionary and
+1. Extend semantic topics with reviewed fields and aliases.
+2. Evaluate every question frame against ambiguity and collision tests.
+3. Partition fallback example pages by domain and version.
+4. Build offline token, phrase, and intent indexes.
+5. Promote only contexts whose thresholds reduce false matches.
+6. Add structures as reviewed grammar data.
+7. Keep thesaurus compilation offline; keep the compressed full dictionary and
    the fast conversational slice as distinct runtime paths.
-7. Preserve source IDs through every compiled artifact.
+8. Preserve source IDs through every compiled artifact.
 
 Large corpus size alone does not create understanding. Labels, negative
 examples, ambiguity boundaries, licensing, and evaluation quality are part of

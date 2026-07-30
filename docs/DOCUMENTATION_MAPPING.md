@@ -6,6 +6,7 @@ prototype maps each one to a concrete boundary:
 | Documentation mechanism | Prototype implementation |
 | --- | --- |
 | Divide prompts using basic English sentence structure | `modules/search/tokenize.ts` produces normalized tokens, sentence mode, and basic subject/predicate/object fields. |
+| Directly answer common subjects across varied question structures | `modules/extended-pack/router.ts` maps grammatical focus and subject aliases to explicit semantic fields under `modules/extended-pack/topics/`. |
 | Correspond each word to relevant recorded examples | `modules/search/index.ts` ranks all registered context examples and records matched and expanded terms. |
 | Aggregate word contexts to extract a full prompt context | `modules/context/index.ts` aggregates matches by intent and enforces a confidence floor. |
 | Fetch relevant answer words using Connect | `modules/connect/index.ts` prepares bounded response slots or dictionary/thesaurus material. |

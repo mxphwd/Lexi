@@ -38,6 +38,13 @@ function splitSentences(input: string): string[] {
 }
 
 function inheritSharedRequestFrame(clause: string): string[] {
+  if (
+    /^(?:what\s+is\s+)?(?:the\s+)?difference\s+between\b/i.test(clause) ||
+    /^(?:please\s+)?(?:compare|contrast)\b/i.test(clause)
+  ) {
+    return [clause];
+  }
+
   for (const pattern of sharedRequestFrames) {
     const match = clause.match(pattern);
     const frame = match?.groups?.frame?.trim();
@@ -57,12 +64,57 @@ function inheritSharedRequestFrame(clause: string): string[] {
   return [clause];
 }
 
+function explicitRequestSubject(clause: string): string | undefined {
+  const patterns = [
+    /^(?:what\s+(?:is|are)|what['’]s)\s+(.+)$/i,
+    /^(?:please\s+)?(?:define|describe|explain)\s+(.+)$/i,
+    /^(?:(?:can|could|would|will)\s+you\s+)(?:define|describe|explain)\s+(.+)$/i,
+    /^(?:please\s+)?tell\s+me\s+about\s+(.+)$/i,
+  ];
+
+  for (const pattern of patterns) {
+    const subject = clause.match(pattern)?.[1]?.trim();
+    if (subject && !/^(?:how|why|what|who|where|when)\b/i.test(subject)) {
+      return subject;
+    }
+  }
+  return undefined;
+}
+
+function inheritFollowUpSubjects(clauses: string[]): string[] {
+  let activeSubject: string | undefined;
+
+  return clauses.map((clause) => {
+    if (activeSubject) {
+      const replacements: Array<[RegExp, string]> = [
+        [/^why\s+is\s+it\s+important$/i, `Why is ${activeSubject} important`],
+        [/^why\s+does\s+it\s+matter$/i, `Why does ${activeSubject} matter`],
+        [/^(?:explain|describe)\s+why\s+it\s+is\s+important$/i, `Explain why ${activeSubject} is important`],
+        [/^how\s+does\s+it\s+work$/i, `How does ${activeSubject} work`],
+        [/^(?:explain|describe)\s+how\s+it\s+works$/i, `Explain how ${activeSubject} works`],
+        [/^what\s+is\s+it\s+(?:used\s+)?for$/i, `What is ${activeSubject} used for`],
+        [/^(?:give|show)\s+me\s+(?:a|an|one)\s+example(?:\s+of\s+it)?$/i, `Give me an example of ${activeSubject}`],
+        [/^what\s+are\s+its\s+(?:parts|components|elements)$/i, `What are the parts of ${activeSubject}`],
+        [/^what\s+is\s+it\s+related\s+to$/i, `What is ${activeSubject} related to`],
+      ];
+
+      const replacement = replacements.find(([pattern]) => pattern.test(clause));
+      if (replacement) return replacement[1];
+    }
+
+    activeSubject = explicitRequestSubject(clause) ?? activeSubject;
+    return clause;
+  });
+}
+
 export function splitIntoClauses(input: string): string[] {
-  const clauses = splitSentences(input)
+  const clauses = inheritFollowUpSubjects(
+    splitSentences(input)
     .flatMap((sentence) => sentence.split(coordinatedRequestBoundary))
     .map((clause) => clause.replace(/^\s*(?:and then|and|also|then)\s+/i, "").trim())
     .filter(Boolean)
-    .flatMap(inheritSharedRequestFrame);
+    .flatMap(inheritSharedRequestFrame),
+  );
 
   if (clauses.length <= MAX_CLAUSES) return clauses;
 

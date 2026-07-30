@@ -73,6 +73,7 @@ export type LexiTrace = {
     | "core-phrase"
     | "exact-example"
     | "context-pattern"
+    | "extended-pack"
     | "full-dictionary"
     | "safe-fallback"
     | "combined-response";

@@ -231,7 +231,9 @@ export function LexiInterface() {
                     <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
                   </dl>
                   <p className="corpus-note">
-                    Matched against {stats.examples} examples across {stats.pages} context pages.
+                    Direct pack: {stats.extendedTopics} subjects across at least{" "}
+                    {stats.extendedConstructions.toLocaleString()} recognized constructions.
+                    Corpus fallback: {stats.examples} examples across {stats.pages} pages.
                   </p>
                 </details>
               </article>

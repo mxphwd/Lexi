@@ -1,13 +1,16 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260721-0A is a deterministic language-model
+Lexi Language 1.0 Pre-build 260730-DV3 is a deterministic language-model
 prototype. It does not call a generative model or predict tokens. Instead, the
-same prompt and the same corpus always follow the same inspectable path:
+same prompt and the same embedded sources always follow the same inspectable
+path:
 
-`Discourse → Basic Phrases or Dictionary or Search → Context → Connect → Structure → combination → response`
+`Discourse → Basic Phrases → Extended Pack → Dictionary → Search → Context → Connect → Structure → response`
 
 The Basic Phrases gate returns only when a complete foundational phrase matches.
-Otherwise it passes the message unchanged into the corpus-driven pipeline.
+The Extended Pack then answers recognized subjects directly from authored
+semantic fields and grammatical question frames. Only unknown pack subjects
+continue to dictionary or corpus matching.
 The Discourse Module separates explicit multi-part requests and inherits a
 recognized opening frame across coordinated items. It sends each clause through
 that same bounded path and recombines no more than four recorded answers with
@@ -31,6 +34,10 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
 - `core/basic-phrases/` contains the independent, fixed-response layer for
   greetings, identity, model age, thanks, farewells, and other foundational
   exchanges. It runs before every corpus module and retains no personal state.
+- `modules/extended-pack/` is DV3's primary general-answer layer. Its 122
+  authored subjects, 434 recognized names, 41 question frames, and 67 complete
+  conversational patterns represent at least 17,861 direct constructions
+  without searching example sentences or opening the dictionary.
 - `modules/search/` normalizes English, inspects sentence mode, expands the
   compact lexicon, and ranks recorded examples.
 - `modules/discourse/` separates explicit sentence and coordinated-request
@@ -49,9 +56,20 @@ a stop control. Shift-click the Alphaine wordmark to reveal the model build.
 - `lib/lexi/engine.ts` passes records between the modules and returns the reply
   together with a public trace.
 
-The prototype currently includes 62 context pages, 4,180 input-response examples,
-and 8,360 paired sentences. This is a foundation for the intended much larger
-corpus; it is not represented as a million-example system yet.
+The fallback corpus includes 62 context pages, 4,180 input-response examples,
+and 8,360 paired sentences. It extends rather than defines DV3's direct
+knowledge coverage.
+
+## Extend DV3 knowledge
+
+Add or revise typed records under `modules/extended-pack/topics/`. Every record
+contains a definition, purpose, importance, example, related concepts, and
+usually a mechanism and component list. The same record automatically supports
+all compatible question frames and keeps one inspectable knowledge ID.
+
+Add complete conversational behaviors to
+`modules/extended-pack/conversation.ts`. These patterns must cover the complete
+normalized message; do not use loose substring matches.
 
 ## Teach Lexi with new examples
 
@@ -86,8 +104,8 @@ The complete requested sources are vendored under `data/lexicon/vendor/`:
 - Moby Thesaurus: complete `words.txt` relation dataset
 
 `npm run lexicon:build` deterministically extracts the fast conversational index
-in `data/lexicon/runtime-index.json`. Definition questions additionally use the
-complete compressed archive published at
+in `data/lexicon/runtime-index.json`. Definition questions for subjects outside
+the Extended Pack additionally use the complete compressed archive published at
 `public/lexicon/wordset-dictionary.json.gz`; it is fetched and decoded once on
 first use, then cached for the session. Source hashes, repository URLs, license
 notes, and the redistributed Wordset license are kept with the artifacts.
