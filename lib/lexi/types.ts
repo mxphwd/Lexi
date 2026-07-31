@@ -74,11 +74,15 @@ export type LexiTrace = {
     | "exact-example"
     | "context-pattern"
     | "extended-pack"
+    | "knowledge-graph"
+    | "session-memory"
     | "full-dictionary"
     | "safe-fallback"
     | "combined-response";
   clauseCount?: number;
   clauseIntents?: string[];
+  subjectIds?: string[];
+  proof?: string[];
 };
 
 export type LexiReply = {

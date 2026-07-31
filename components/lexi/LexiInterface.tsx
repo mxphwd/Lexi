@@ -2,7 +2,10 @@
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
-import { corpusStats, respond, respondAsync } from "@/lib/lexi/engine";
+import {
+  corpusStats,
+  createLexiSession,
+} from "@/lib/lexi/engine";
 import type { LexiReply } from "@/lib/lexi/types";
 import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
 import { hasUnsupportedWritingSystem } from "@/modules/search";
@@ -28,6 +31,7 @@ export function LexiInterface() {
   const stopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const brandTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const requestRef = useRef(0);
+  const sessionRef = useRef(createLexiSession());
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
   const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
@@ -66,8 +70,8 @@ export function LexiInterface() {
     setAboutOpen(false);
     setReply(null);
 
-    void respondAsync(prompt)
-      .catch(() => respond(prompt))
+    void sessionRef.current.respondAsync(prompt)
+      .catch(() => sessionRef.current.respond(prompt))
       .then((preparedReply) => {
         if (requestRef.current !== requestId) return;
 

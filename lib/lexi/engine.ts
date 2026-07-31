@@ -18,13 +18,49 @@ import {
   matchExtendedPack,
   prepareLinguisticInput,
 } from "@/modules/extended-pack";
+import {
+  dv7AvailabilityStats,
+  matchDv7Conversation,
+  matchDv7Knowledge,
+} from "@/modules/dv7";
+import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
+import { LexiSessionMemory } from "@/modules/memory";
 import { analyseSentence, searchContexts } from "@/modules/search";
 import { realiseSentence } from "@/modules/structure";
 import type { ContextEntry, LexiReply } from "./types";
 
 const entries: ContextEntry[] = contextPages.flatMap((page) => page.entries);
 
-function respondToClause(input: string): LexiReply {
+type EngineState = {
+  activeSubjectIds: string[];
+  memory?: LexiSessionMemory;
+};
+
+function memoryReply(input: string, state?: EngineState): LexiReply | undefined {
+  const recalled = state?.memory?.interpret(input);
+  if (!recalled) return undefined;
+  const analysis = analyseSentence(input);
+  return {
+    text: recalled.text,
+    trace: {
+      normalizedInput: analysis.normalized,
+      sentenceMode: analysis.mode,
+      interpretedIntent: recalled.intent,
+      confidence: 1,
+      matchedExampleIds: [recalled.evidence[0]],
+      matchedTerms: recalled.evidence,
+      selectedStructure: recalled.structureId,
+      source: "session-memory",
+      subjectIds: [...(state?.activeSubjectIds ?? [])],
+      proof: [`Used the explicit ${recalled.field} value stored in this session.`],
+    },
+  };
+}
+
+function respondToClauseCore(input: string, state?: EngineState): LexiReply {
+  const remembered = memoryReply(input, state);
+  if (remembered) return remembered;
+
   const prepared = prepareLinguisticInput(input);
   const basicPhrase =
     matchBasicPhrase(input) ??
@@ -50,6 +86,31 @@ function respondToClause(input: string): LexiReply {
   }
 
   const extended = matchExtendedPack(input);
+  if (extended?.intent.startsWith("reasoning:")) {
+    const analysis = analyseSentence(input);
+    return {
+      text: extended.text,
+      trace: {
+        normalizedInput: analysis.normalized,
+        sentenceMode: analysis.mode,
+        interpretedIntent: extended.intent,
+        confidence: extended.confidence,
+        matchedExampleIds: extended.recordIds,
+        matchedTerms: extended.evidence,
+        selectedStructure: extended.structureId,
+        source: "extended-pack",
+      },
+    };
+  }
+
+  const semantic = matchDv7Knowledge(input, {
+    activeSubjectIds: state?.activeSubjectIds,
+  });
+  if (semantic) return semantic;
+
+  const dv7Conversation = matchDv7Conversation(input);
+  if (dv7Conversation) return dv7Conversation;
+
   if (extended) {
     const analysis = analyseSentence(input);
     return {
@@ -107,6 +168,27 @@ function respondToClause(input: string): LexiReply {
   };
 }
 
+function updateEngineState(
+  input: string,
+  reply: LexiReply,
+  state: EngineState,
+) {
+  const subjectIds =
+    reply.trace.subjectIds?.length
+      ? reply.trace.subjectIds
+      : lexiKnowledgeGraph.findMentions(input).map((mention) => mention.entityId);
+  if (subjectIds.length > 0) {
+    state.activeSubjectIds = [...new Set(subjectIds)].slice(0, 2);
+    state.memory?.setActiveSubjects(state.activeSubjectIds);
+  }
+}
+
+function respondToClause(input: string, state: EngineState): LexiReply {
+  const reply = respondToClauseCore(input, state);
+  updateEngineState(input, reply, state);
+  return reply;
+}
+
 function dictionaryReply(input: string, term: string, word: string, wordsetId: string, definition: string, partOfSpeech?: string): LexiReply {
   const analysis = analyseSentence(input);
   const label = word ? word[0].toLocaleUpperCase("en-US") + word.slice(1) : term;
@@ -131,11 +213,14 @@ function dictionaryReply(input: string, term: string, word: string, wordsetId: s
 async function respondToClauseAsync(
   input: string,
   dictionaryOptions: DictionaryLookupOptions,
+  state: EngineState,
 ): Promise<LexiReply> {
-  const ordinaryReply = respondToClause(input);
+  const ordinaryReply = respondToClause(input, state);
   if (
     ordinaryReply.trace.source === "core-phrase" ||
-    ordinaryReply.trace.source === "extended-pack"
+    ordinaryReply.trace.source === "extended-pack" ||
+    ordinaryReply.trace.source === "knowledge-graph" ||
+    ordinaryReply.trace.source === "session-memory"
   ) {
     return ordinaryReply;
   }
@@ -147,7 +232,7 @@ async function respondToClauseAsync(
   const meaning = entry?.meanings.find((candidate) => candidate.def.trim());
   if (!entry || !meaning) return ordinaryReply;
 
-  return dictionaryReply(
+  const reply = dictionaryReply(
     input,
     term,
     entry.word,
@@ -155,32 +240,84 @@ async function respondToClauseAsync(
     meaning.def,
     meaning.speech_part,
   );
+  updateEngineState(input, reply, state);
+  return reply;
 }
 
 export function respond(input: string): LexiReply {
+  const state: EngineState = { activeSubjectIds: [] };
+  return respondWithState(input, state);
+}
+
+function respondWithState(input: string, state: EngineState): LexiReply {
   const clauses = splitIntoClauses(input);
   if (clauses.length > 1) {
-    return combineClauseReplies(input, clauses.map(respondToClause));
+    return combineClauseReplies(
+      input,
+      clauses.map((clause) => respondToClause(clause, state)),
+    );
   }
 
-  return respondToClause(input);
+  return respondToClause(input, state);
 }
 
 export async function respondAsync(
   input: string,
   dictionaryOptions: DictionaryLookupOptions = {},
 ): Promise<LexiReply> {
+  const state: EngineState = { activeSubjectIds: [] };
+  return respondAsyncWithState(input, dictionaryOptions, state);
+}
+
+async function respondAsyncWithState(
+  input: string,
+  dictionaryOptions: DictionaryLookupOptions,
+  state: EngineState,
+): Promise<LexiReply> {
   const clauses = splitIntoClauses(input);
-  const replies = await Promise.all(
-    clauses.map((clause) => respondToClauseAsync(clause, dictionaryOptions)),
-  );
+  const replies: LexiReply[] = [];
+  for (const clause of clauses) {
+    replies.push(await respondToClauseAsync(clause, dictionaryOptions, state));
+  }
 
   if (replies.length > 1) return combineClauseReplies(input, replies);
-  return replies[0] ?? respondToClause(input);
+  return replies[0] ?? respondToClause(input, state);
+}
+
+export class LexiSession {
+  private readonly memory = new LexiSessionMemory();
+  private readonly state: EngineState = {
+    activeSubjectIds: [],
+    memory: this.memory,
+  };
+
+  respond(input: string): LexiReply {
+    const reply = respondWithState(input, this.state);
+    this.memory.recordTurn(input, reply.text);
+    return reply;
+  }
+
+  async respondAsync(
+    input: string,
+    dictionaryOptions: DictionaryLookupOptions = {},
+  ): Promise<LexiReply> {
+    const reply = await respondAsyncWithState(input, dictionaryOptions, this.state);
+    this.memory.recordTurn(input, reply.text);
+    return reply;
+  }
+
+  snapshot() {
+    return this.memory.snapshot();
+  }
+}
+
+export function createLexiSession() {
+  return new LexiSession();
 }
 
 export function corpusStats() {
   const extended = extendedPackStats();
+  const dv7 = dv7AvailabilityStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
@@ -192,5 +329,9 @@ export function corpusStats() {
     extendedConstructions: extended.minimumQuestionConstructions,
     linguisticFeatures:
       extended.linguisticFeatures + discourseReferenceFeatureCount,
+    knowledgeEntities: dv7.entities,
+    knowledgePropositions: dv7.propositions,
+    semanticConstructions: dv7.semanticConstructions,
+    availabilityMultipleOverDv6: dv7.multipleOverDv6,
   };
 }

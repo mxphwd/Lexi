@@ -20,7 +20,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260720-1A",
     shortLabel: "260720-1A",
     date: "20 July 2026",
-    capabilityIndex: 4,
+    capabilityIndex: 1,
     metric: "4 core modules",
     notes: [
       "Established the Search, Context, Connect, and Structure module path.",
@@ -33,7 +33,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260721-0A",
     shortLabel: "260721-0A",
     date: "21 July 2026",
-    capabilityIndex: 9,
+    capabilityIndex: 2,
     metric: "4,180 recorded examples",
     notes: [
       "Added an independent foundational phrase gate for greetings, identity, age, thanks, and farewells.",
@@ -46,7 +46,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV3",
     shortLabel: "DV3",
     date: "30 July 2026",
-    capabilityIndex: 14,
+    capabilityIndex: 3,
     metric: "17,861 direct constructions",
     notes: [
       "Introduced the Extended Pack as an authored direct-answer layer.",
@@ -59,7 +59,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV4",
     shortLabel: "DV4",
     date: "30 July 2026",
-    capabilityIndex: 47,
+    capabilityIndex: 8,
     metric: "3.99× availability",
     notes: [
       "Added 347 linguistic, conversational, and reference-resolution features.",
@@ -72,7 +72,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV5",
     shortLabel: "DV5",
     date: "30 July 2026",
-    capabilityIndex: 50,
+    capabilityIndex: 9,
     metric: "5 release milestones",
     notes: [
       "Added an interactive, version-linked capability history inside Lexi.",
@@ -85,12 +85,25 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV6",
     shortLabel: "DV6",
     date: "30 July 2026",
-    capabilityIndex: 100,
+    capabilityIndex: 18,
     metric: "7.02× availability",
     notes: [
       "Expanded the direct layer to 500,347 constructions across 222 subjects and 1,000 recognized names.",
       "Added exactly 800 linguistic, reasoning, conversation, reference, and semantic-routing features.",
       "Introduced 100 technical contexts, 100 deterministic reasoning patterns, and 180 simple-conversation patterns.",
+    ],
+  },
+  {
+    build: "260731-DV7",
+    label: "Pre-build 260731-DV7",
+    shortLabel: "DV7",
+    date: "31 July 2026",
+    capabilityIndex: 100,
+    metric: "492.79× semantic availability",
+    notes: [
+      "Rebuilt question understanding around typed subjects, relations, properties, conditions, quantities, and time.",
+      "Added a 590-entity, 3,132-proposition knowledge graph with explicit inheritance, transitive classification, comparison, and derived-location proofs.",
+      "Added session memory and passed all 3,211 ordinary-question, reachability, reasoning, conversation, and reference benchmark cases.",
     ],
   },
 ] as const;

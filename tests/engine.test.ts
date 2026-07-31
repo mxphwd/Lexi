@@ -37,10 +37,10 @@ test("selects stable intents for representative prompts", () => {
   );
 });
 
-test("uses the Extended Pack before lexical and corpus fallbacks", () => {
+test("uses the DV7 graph before lexical and corpus fallbacks", () => {
   const definition = respond("Define language");
   assert.equal(definition.trace.interpretedIntent, "definition");
-  assert.equal(definition.trace.source, "extended-pack");
+  assert.equal(definition.trace.source, "knowledge-graph");
   assert.match(definition.text, /^Language is /);
 
   const synonym = respond("Give me a synonym for context");
@@ -115,7 +115,7 @@ test("handles foundational phrases before the corpus modules", () => {
   const age = respond("How old are you?");
   assert.equal(age.trace.interpretedIntent, "model-age");
   assert.equal(age.trace.source, "core-phrase");
-  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260730-DV6/);
+  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260731-DV7/);
 
   assert.equal(respond("What’s your name?").trace.interpretedIntent, "identity");
   assert.equal(respond("HOW ARE YOU?").trace.interpretedIntent, "wellbeing");
@@ -147,7 +147,7 @@ test("understands polite imperatives, contractions, and grammatical roles", () =
 
   const politeContext = respond("Can you explain the Context Module?");
   assert.equal(politeContext.trace.interpretedIntent, "definition");
-  assert.equal(politeContext.trace.source, "extended-pack");
+  assert.equal(politeContext.trace.source, "knowledge-graph");
   assert.notEqual(politeContext.text, "{response}");
   assert.match(politeContext.text, /Context Module/);
 
@@ -205,7 +205,7 @@ test("combines multiple bounded answers with reviewed structures", () => {
   assert.equal(twoPart.trace.selectedStructure, "discourse-multipart");
   assert.match(twoPart.text, /^First:/);
   assert.match(twoPart.text, /Second:/);
-  assert.match(twoPart.text, /260730-DV6/);
+  assert.match(twoPart.text, /260731-DV7/);
 
   const modules = respond(
     "Explain the Context Module and then explain the Search Module.",
@@ -217,12 +217,12 @@ test("combines multiple bounded answers with reviewed structures", () => {
 
 test("answers broad natural questions directly from authored semantic fields", () => {
   const purpose = respond("What is mathematics used for?");
-  assert.equal(purpose.trace.source, "extended-pack");
+  assert.equal(purpose.trace.source, "knowledge-graph");
   assert.equal(purpose.trace.interpretedIntent, "purpose");
   assert.match(purpose.text, /describe patterns/);
 
   const mechanism = respond("Could you explain how photosynthesis works?");
-  assert.equal(mechanism.trace.source, "extended-pack");
+  assert.equal(mechanism.trace.source, "knowledge-graph");
   assert.equal(mechanism.trace.interpretedIntent, "mechanism");
   assert.match(mechanism.text, /light-driven reactions/);
 
@@ -245,11 +245,11 @@ test("answers broad natural questions directly from authored semantic fields", (
 
 test("compares two known subjects without searching example sentences", () => {
   const comparison = respond("What is the difference between weather and climate?");
-  assert.equal(comparison.trace.source, "extended-pack");
+  assert.equal(comparison.trace.source, "knowledge-graph");
   assert.equal(comparison.trace.interpretedIntent, "comparison");
   assert.equal(comparison.trace.matchedExampleIds.length, 2);
-  assert.match(comparison.text, /Weather is/);
-  assert.match(comparison.text, /whereas climate is/);
+  assert.match(comparison.text, /Weather has the recorded definition/);
+  assert.match(comparison.text, /while climate has/);
 });
 
 test("carries a known subject into coordinated semantic follow-up questions", () => {
@@ -325,7 +325,7 @@ test("understands indirect, polite, styled, and discourse-marked questions", () 
   const simple = respond(
     "Well, could you explain math in simple terms, please?",
   );
-  assert.equal(simple.trace.source, "extended-pack");
+  assert.equal(simple.trace.source, "knowledge-graph");
   assert.equal(simple.trace.interpretedIntent, "definition");
   assert.match(simple.text, /^In simple terms,/);
   assert.match(simple.trace.selectedStructure, /:simple$/);
@@ -334,13 +334,13 @@ test("understands indirect, polite, styled, and discourse-marked questions", () 
     "I was wondering if you could tell me about gravity with an example.",
   );
   assert.equal(exampled.trace.interpretedIntent, "definition");
-  assert.match(exampled.text, /For example, Earth keeping the Moon in orbit/);
+  assert.match(exampled.text, /example involving gravity is Earth keeping the Moon in orbit/i);
   assert.match(exampled.trace.selectedStructure, /:exampled$/);
 
   const detailed = respond("Would you mind explaining climate in detail?");
   assert.equal(detailed.trace.interpretedIntent, "definition");
   assert.match(detailed.trace.selectedStructure, /:detailed$/);
-  assert.match(detailed.text, /Its main purpose/);
+  assert.match(detailed.text, /Climate is used to/);
 
   const wrappedGreeting = respond("Well, hello, please.");
   assert.equal(wrappedGreeting.trace.source, "core-phrase");
@@ -374,7 +374,7 @@ test("uses complete embedded Wordset only for subjects outside the Extended Pack
   const math = await respondAsync("What is Math?", dictionaryOptions);
 
   assert.equal(math.trace.interpretedIntent, "definition");
-  assert.equal(math.trace.source, "extended-pack");
+  assert.equal(math.trace.source, "knowledge-graph");
   assert.match(math.text, /^Mathematics is/);
 
   const zeppelin = await respondAsync("What is a zeppelin?", dictionaryOptions);
@@ -398,7 +398,7 @@ test("combines inherited basic-question frames without dictionary collisions", a
   assert.equal(reply.trace.source, "combined-response");
   assert.deepEqual(reply.trace.clauseIntents, ["identity", "model-age"]);
   assert.match(reply.text, /I’m Lexi/);
-  assert.match(reply.text, /260730-DV6/);
+  assert.match(reply.text, /260731-DV7/);
 });
 
 test("handles extended conversational phrases without approximate corpus matching", () => {
@@ -440,11 +440,24 @@ test("keeps every authored DV6 topic reachable across semantic question focuses"
 
     for (const prompt of prompts) {
       const reply = respond(prompt);
-      assert.equal(reply.trace.source, "extended-pack", `${topic.id}: ${prompt}`);
       assert.ok(
-        reply.trace.matchedExampleIds.includes(`knowledge:${topic.id}`),
-        `${topic.id}: missing source record for ${prompt}`,
+        reply.trace.source === "knowledge-graph" ||
+          reply.trace.source === "extended-pack",
+        `${topic.id}: ${prompt} routed to ${reply.trace.source}`,
       );
+      if (reply.trace.source === "knowledge-graph") {
+        assert.ok(
+          reply.trace.matchedExampleIds.some((id) =>
+            id.startsWith("proposition:")
+          ),
+          `${topic.id}: missing proposition for ${prompt}`,
+        );
+      } else {
+        assert.ok(
+          reply.trace.matchedExampleIds.includes(`knowledge:${topic.id}`),
+          `${topic.id}: missing compatibility record for ${prompt}`,
+        );
+      }
     }
   }
 
@@ -492,7 +505,7 @@ test("keeps the DV6 grammatical frame registry unique and within the release tar
 
 test("answers DV6 field-specific and technical questions through authored records", () => {
   const llm = respond("What is a large language model?");
-  assert.equal(llm.trace.source, "extended-pack");
+  assert.equal(llm.trace.source, "knowledge-graph");
   assert.match(llm.text, /many learned parameters/i);
 
   const attention = respond(
@@ -504,11 +517,11 @@ test("answers DV6 field-specific and technical questions through authored record
   assert.ok(attention.trace.matchedTerms.includes("feature:semantic-at-core"));
 
   const practical = respond("Explain cloud computing with a practical use.");
-  assert.equal(practical.trace.selectedStructure, "extended-knowledge:definition:practical");
+  assert.equal(practical.trace.selectedStructure, "dv7-proposition:open:definition:practical");
   assert.match(practical.text, /rented virtual servers/i);
 
   const medicine = respond("How does a vaccine work?");
-  assert.equal(medicine.trace.source, "extended-pack");
+  assert.equal(medicine.trace.source, "knowledge-graph");
   assert.match(medicine.text, /adaptive immune response/i);
 });
 
@@ -586,5 +599,5 @@ test("resolves DV6 singular and paired follow-ups without guessing antecedents",
     "definition",
     "comparison",
   ]);
-  assert.match(paired.text, /whereas causation is/i);
+  assert.match(paired.text, /while causation has/i);
 });

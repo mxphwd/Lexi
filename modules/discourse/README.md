@@ -15,6 +15,7 @@ It performs two bounded operations:
    statements containing `and` remain intact.
 2. `combine.ts` deduplicates identical answers, aggregates their evidence, and sends them to the reviewed combination structures in the Structure Module.
 
-Every clause still passes through Basic Phrases, the Extended Pack, or the
-Search → Context → Connect → Structure fallback path. No response text is
-predicted, and no new fact is introduced during combination.
+Every clause passes through session memory, Basic Phrases, deterministic
+reasoning, the typed semantic graph, and then the Extended Pack or
+Search → Context → Connect → Structure compatibility fallbacks. No response
+text is predicted, and no new fact is introduced during combination.

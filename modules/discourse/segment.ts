@@ -1,4 +1,5 @@
 import { prepareDiscourseInput } from "@/modules/extended-pack";
+import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { resolveClauseReferences } from "./reference";
 
 const MAX_CLAUSES = 4;
@@ -66,6 +67,7 @@ function inheritSharedRequestFrame(clause: string): string[] {
 
   if (
     /^(?:what\s+is\s+)?(?:the\s+)?difference\s+between\b/i.test(clause) ||
+    /^(?:please\s+)?(?:explain|show|give).*\b(?:difference|comparison)\s+(?:between|of)\b/i.test(clause) ||
     /^(?:please\s+)?(?:compare|contrast)\b/i.test(clause)
   ) {
     return [clause];
@@ -76,6 +78,14 @@ function inheritSharedRequestFrame(clause: string): string[] {
     const frame = match?.groups?.frame?.trim();
     const items = match?.groups?.items?.trim();
     if (!frame || !items) continue;
+    if (
+      lexiKnowledgeGraph.resolveExact(items) ||
+      lexiKnowledgeGraph
+        .findMentions(items)
+        .some((mention) => mention.alias.includes(" and "))
+    ) {
+      return [clause];
+    }
 
     const coordinatedItems = items
       .replace(/^both\s+/i, "")

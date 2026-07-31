@@ -45,6 +45,14 @@ export function combineClauseReplies(input: string, replies: LexiReply[]): LexiR
       source: "combined-response",
       clauseCount: uniqueReplies.length,
       clauseIntents,
+      subjectIds: uniqueValues(
+        uniqueReplies.flatMap((reply) => reply.trace.subjectIds ?? []),
+        4,
+      ),
+      proof: uniqueValues(
+        uniqueReplies.flatMap((reply) => reply.trace.proof ?? []),
+        12,
+      ),
     },
   };
 }
