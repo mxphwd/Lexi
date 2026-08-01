@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260731-dv7",
+  "version": "1.0.0-prebuild.260801-dv8",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -17,7 +17,8 @@
     "corpus:inventory": "node scripts/build-context-inventory.mjs",
     "corpus:validate": "node scripts/validate-corpus.mjs",
     "lexicon:build": "node scripts/build-lexicon-index.mjs",
-    "benchmark:dv7": "node --import tsx scripts/run-dv7-benchmark.mjs"
+    "benchmark:dv7": "node --import tsx scripts/run-dv7-benchmark.mjs",
+    "benchmark:dv8": "node --import tsx scripts/run-dv8-benchmark.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

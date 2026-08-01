@@ -1,19 +1,21 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260731-DV7 is a deterministic, zero-generative-model
-language prototype. DV7 replaces finished-answer matching as the main knowledge
-path with typed questions, atomic propositions, explicit reasoning rules,
-proposition realization, and session memory.
+Lexi Language 1.0 Pre-build 260801-DV8 is a deterministic,
+zero-generative-model language prototype. DV8 replaces the remaining
+question-to-relation shortcut with a typed query language, compiled word-sense
+index, normalized fact store, compositional executor, proposition-aware
+dialogue state, and calibrated abstention.
 
-The same prompt, embedded sources, and session state always follow the same
+The same input, embedded sources, and session state always follow the same
 inspectable path:
 
-`Discourse → Session memory → Basic phrases → Numeric reasoning → Semantic parser
-→ Knowledge graph → Reasoner → Proposition realizer → legacy fallbacks`
+`Discourse → session/proposition state → deterministic gates → compiled lexical
+index → typed query plan → normalized fact indexes → query executor → answer
+realizer → calibrated abstention or bounded legacy fallback`
 
-Lexi does not call a generative model, predict tokens, use learned embeddings, or
-silently invent a missing fact. Every knowledge-graph response carries the
-proposition IDs and proof rules used to construct it.
+Lexi does not call a generative model, predict tokens, use learned embeddings,
+or silently invent a missing fact. DV8 factual responses carry the normalized
+fact IDs and execution rules used to construct them.
 
 ## Run the prototype
 
@@ -24,125 +26,107 @@ npm install
 npm run dev
 ```
 
-Open the local address printed in the terminal. Enter sends a message;
-Shift+Enter adds a line. While Lexi is resolving a response, the send control
-becomes a stop control. Shift-click the Alphaine wordmark to reveal the model
-build and interactive release history.
+Open the printed local address. Enter sends a message; Shift+Enter adds a line.
+The send control becomes a stop control while Lexi resolves a response.
+Shift-click the Alphaine wordmark to reveal the build and release history.
 
-## The DV7 architecture
+## DV8 modules
 
-- `modules/semantic/` turns varied question forms into a typed
-  `SemanticQuery`: question kind, subject, object, relation, requested property,
-  condition, quantity, time, style, and negation.
-- `modules/knowledge-graph/` contains reviewed entities and atomic propositions
-  covering foundational science, nature, everyday objects, places, geography,
-  people, processes, units, formulas, and technical concepts.
-- `modules/knowledge-graph/reasoner.ts` answers direct facts, follows explicit
-  classification and inheritance links, derives inverse locations, compares
-  two subjects on one shared relation, and returns an inspectable proof.
-- `modules/proposition/` realizes propositions into reviewed English structures.
-  It does not store one complete answer for every possible wording.
-- `modules/memory/` keeps a name, age, location, preferences, active subjects,
-  previous question, and previous answer inside one `LexiSession`. It does not
-  persist those values across sessions.
-- `modules/benchmark/` runs hand-authored ordinary questions, conversational
-  memory scenarios, and one end-to-end reachability test for every unique
-  subject–predicate pair. Failures are classified as parser, routing, content,
-  proposition, or memory misses.
-- `core/basic-phrases/` remains the independent foundation for greetings,
-  identity, model age, thanks, farewells, and other exact basic exchanges.
-- `modules/extended-pack/` remains the DV6 compatibility and fallback layer for
-  authored topics, deterministic calculations, conversational patterns,
-  summaries, and learning paths.
-- `modules/dictionary/` lazily reads the complete compressed Wordset dictionary
-  for definition requests not answered by the graph.
-- `modules/search/`, `modules/context/`, `modules/connect/`, and
-  `modules/structure/` preserve the original example-context fallback.
-- `modules/discourse/` separates explicit multi-part requests, preserves known
-  compound entity names, carries bounded follow-up subjects, and recombines up
-  to four answers.
+- `modules/dv8/parser.ts` builds a `QueryPlan` with operations, variables,
+  triple patterns, filters, conditions, quantifiers, time, negation, and style.
+- `modules/dv8/lexicon.ts` compiles graph names into a token trie and preserves
+  explicit senses for ambiguous spellings.
+- `modules/dv8/facts.ts` expands lists into atomic facts, converts safe values
+  to entity edges or typed literals, normalizes units, and builds forward and
+  inverse indexes.
+- `modules/dv8/executor.ts` runs joins, inheritance, filters, aggregates,
+  comparisons, negatives, quantifiers, conditions, and temporal checks.
+- `modules/dv8/dialogue.ts` records answer propositions, subjects, proof, and
+  conversational goals for bounded follow-ups.
+- `modules/dv8/tasks.ts` provides bounded conversion, sorting, grammar repair,
+  reviewed phrase translation, extractive summarization, and rewriting.
+- `modules/dv8/realizer.ts` constructs reviewed English from execution results.
 
-The fallback corpus contains 62 context pages, 4,180 input-response examples,
-and 8,360 paired sentences. It is useful training-style material and a final
-fallback, but it is no longer the primary knowledge architecture.
+The existing `modules/knowledge-graph/` remains the reviewed factual source.
+`core/basic-phrases/`, `modules/extended-pack/`, the full Wordset dictionary,
+and the original Search → Context → Connect → Structure path remain bounded
+compatibility layers.
 
-## Measured DV7 coverage
+The fallback corpus contains 62 pages, 4,180 input-response examples, and 8,360
+paired sentences. It is no longer the primary factual architecture.
 
-The checked-in graph currently contains:
+## Measured DV8 coverage
 
-- 590 entities and 1,683 recognized aliases
-- 3,132 benchmarkable propositions across 42 relations
-- 409,902 same-relation subject pairs available to comparison rules
-- 12 open-question, 8 boolean-question, and 60 comparison forms
-- 10 answer styles
+DV8 replaces the old single availability headline with six measurements. The
+checked-in blind suite contains 4,124 stateless cases plus 120 dialogue
+sessions. The validated result is:
 
-Those actual records produce a conservative executable surface of
-246,567,600 semantic constructions, or **492.79× DV6’s 500,347-construction
-baseline**. The calculation counts only existing propositions and pairs of
-subjects that share a recorded relation.
+- knowledge: 588/588 (100.0%)
+- language robustness: 3,202/3,202 (100.0%)
+- reasoning: 171/171 (100.0%)
+- dialogue: 120/120 (100.0%)
+- precision and calibrated abstention: 163/163 (100.0%)
+- local latency: 0.23 ms p50 and 0.30 ms p95 over 300 samples
 
-That scale measure is separate from the empirical coverage benchmark. The
-checked-in DV7 suite currently passes **3,211 of 3,211** cases: 110 curated
-ordinary questions, 17 stateful memory/reference turns, and 3,084 generated
-subject–predicate reachability checks. It proves the tested surface remains
-executable; it is not a claim that Lexi knows every fact or understands arbitrary
-language.
-
-Run the report with:
+The frozen DV7 path passes 3,940/4,124 on the same stateless suite. The measured
+like-for-like total success gain is therefore **1.0467×**. DV8 does not claim a
+1,000× improvement because the checked-in evidence does not support it. The
+suite is a regression instrument over a declared surface, not proof of
+universal English understanding.
 
 ```bash
 npm run benchmark:dv7
+npm run benchmark:dv8
 ```
 
-The exact methodology is in `docs/DV7_COVERAGE.md`.
+See `docs/DV8_BENCHMARK.md` for the method. The historical DV7 construction
+surface remains documented in `docs/DV7_COVERAGE.md` and is not used as DV8's
+headline.
 
-## Extend DV7 knowledge
+## Extend DV8
 
-Add entities and typed facts to a data pack under
-`modules/knowledge-graph/data/`. Prefer one proposition per fact and use
-qualifiers for scope, condition, time, unit, or uncertainty. Add aliases only
-when they identify the same entity rather than a merely related subject.
+Add reviewed entities and typed facts under `modules/knowledge-graph/data/`.
+Prefer one proposition per fact and qualifiers for scope, condition, time,
+unit, or uncertainty. An alias must identify the same entity, not a merely
+related subject.
 
-For each new relation or question form:
+For a new relation or language form:
 
-1. declare the predicate and its inheritance or inverse behavior
-2. update the typed semantic parser
-3. add a reviewed realization structure
-4. add positive, paraphrased, and collision/unsupported tests
-5. run `npm run benchmark:dv7` and `npm test`
+1. declare its predicate semantics and inverse/inheritance behavior
+2. map wording to a typed DV8 plan rather than a finished answer
+3. add the executor rule and reviewed realization
+4. add positive, paraphrased, negative, ambiguity, and abstention cases
+5. run both benchmarks and the full test suite
 
-Add English example pages to `data/example-contexts/` only when the graph is not
-the right representation. The canonical format is documented in
-`data/example-contexts/README.md`, with a machine-readable schema in
+Add example pages only when a graph proposition is the wrong representation.
+Their format is documented in `data/example-contexts/README.md` and
 `data/example-contexts/schema.json`.
 
 ## Dictionary and thesaurus
 
-The complete requested sources are vendored under `data/lexicon/vendor/`:
+The requested complete sources are vendored under `data/lexicon/vendor/`:
 
 - Wordset dictionary: compressed complete dictionary archive
 - Moby Thesaurus: complete `words.txt` relation dataset
 
-`npm run lexicon:build` deterministically extracts the fast conversational
-index in `data/lexicon/runtime-index.json`. The full Wordset archive is published
-at `public/lexicon/wordset-dictionary.json.gz`, loaded on demand, and cached for
-the current runtime. Source hashes, repository URLs, license notes, and the
-redistributed Wordset license remain beside the artifacts.
+`npm run lexicon:build` creates the fast conversational runtime index. The full
+Wordset archive is published at `public/lexicon/wordset-dictionary.json.gz` and
+loaded on demand. Source hashes, repository URLs, license notes, and the
+Wordset license remain beside the artifacts.
 
 ## Release and verification
 
-Every build change must add exactly one newest record to
-`lib/lexi/releases.ts`. The interactive release graph and footer are protected
-by tests so they cannot silently drift apart.
+Every build change must add one newest entry to `lib/lexi/releases.ts`. DV8's
+interactive tooltip displays knowledge, language, reasoning, dialogue,
+precision, and latency separately.
 
 ```bash
 npm run lint
 npm run corpus:validate
 npm run benchmark:dv7
+npm run benchmark:dv8
 npm test
 ```
 
-See `docs/ARCHITECTURE.md` for the component contracts,
-`docs/DOCUMENTATION_MAPPING.md` for the relationship to the original Lexi
-documentation, `docs/LINGUISTIC_SOURCES.md` for reviewed linguistic references,
-and `docs/RELEASES.md` for the permanent release rule.
+See `docs/ARCHITECTURE.md`, `docs/DOCUMENTATION_MAPPING.md`,
+`docs/LINGUISTIC_SOURCES.md`, and `docs/RELEASES.md` for detailed contracts.

@@ -5,6 +5,10 @@ export type LexiRelease = {
   date: string;
   capabilityIndex: number;
   metric?: string;
+  measurements?: readonly {
+    label: string;
+    value: string;
+  }[];
   notes: readonly string[];
 };
 
@@ -59,7 +63,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV4",
     shortLabel: "DV4",
     date: "30 July 2026",
-    capabilityIndex: 8,
+    capabilityIndex: 5,
     metric: "3.99× availability",
     notes: [
       "Added 347 linguistic, conversational, and reference-resolution features.",
@@ -72,7 +76,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV5",
     shortLabel: "DV5",
     date: "30 July 2026",
-    capabilityIndex: 9,
+    capabilityIndex: 6,
     metric: "5 release milestones",
     notes: [
       "Added an interactive, version-linked capability history inside Lexi.",
@@ -85,7 +89,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV6",
     shortLabel: "DV6",
     date: "30 July 2026",
-    capabilityIndex: 18,
+    capabilityIndex: 12,
     metric: "7.02× availability",
     notes: [
       "Expanded the direct layer to 500,347 constructions across 222 subjects and 1,000 recognized names.",
@@ -98,12 +102,34 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260731-DV7",
     shortLabel: "DV7",
     date: "31 July 2026",
-    capabilityIndex: 100,
+    capabilityIndex: 55,
     metric: "492.79× semantic availability",
     notes: [
       "Rebuilt question understanding around typed subjects, relations, properties, conditions, quantities, and time.",
       "Added a 590-entity, 3,132-proposition knowledge graph with explicit inheritance, transitive classification, comparison, and derived-location proofs.",
       "Added session memory and passed all 3,211 ordinary-question, reachability, reasoning, conversation, and reference benchmark cases.",
+    ],
+  },
+  {
+    build: "260801-DV8",
+    label: "Pre-build 260801-DV8",
+    shortLabel: "DV8",
+    date: "1 August 2026",
+    capabilityIndex: 100,
+    metric: "4,124-case blind benchmark",
+    measurements: [
+      { label: "Knowledge", value: "100.0%" },
+      { label: "Language", value: "100.0%" },
+      { label: "Reasoning", value: "100.0%" },
+      { label: "Dialogue", value: "100.0%" },
+      { label: "Precision", value: "100.0%" },
+      { label: "Latency p95", value: "0.30 ms" },
+    ],
+    notes: [
+      "Replaced direct question-to-relation routing with typed query plans, compiled word senses, normalized facts, and an indexed execution engine.",
+      "Added forward and inverse joins, filters, aggregates, comparisons, explicit negation, quantifiers, conditions, time checks, unit conversion, and calibrated abstention.",
+      "Expanded session state around answer propositions and conversational goals, then passed all 4,124 held-out cases plus 120 proposition-aware dialogue sessions.",
+      "Measured 1.0467× total success over the frozen DV7 path on the same suite; no 1,000× claim is made because the evidence does not support it.",
     ],
   },
 ] as const;

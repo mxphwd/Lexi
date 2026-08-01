@@ -77,6 +77,7 @@ export type LexiTrace = {
     | "knowledge-graph"
     | "session-memory"
     | "full-dictionary"
+    | "language-engine"
     | "safe-fallback"
     | "combined-response";
   clauseCount?: number;

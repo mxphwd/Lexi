@@ -261,6 +261,16 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                           <mark className="release-metric">{release.metric}</mark>
                         ) : null}
                       </div>
+                      {release.measurements?.length ? (
+                        <dl className="release-measurements">
+                          {release.measurements.map((measurement) => (
+                            <div key={measurement.label}>
+                              <dt>{measurement.label}</dt>
+                              <dd>{measurement.value}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                      ) : null}
                       <ul>
                         {release.notes.map((note) => <li key={note}>{note}</li>)}
                       </ul>

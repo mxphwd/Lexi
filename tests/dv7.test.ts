@@ -57,7 +57,7 @@ test("parses typed subjects, relations, objects, quantities, time, and condition
 
 test("joins direct, inherited, transitive, comparison, and derived-location facts", () => {
   const inherited = respond("Is a penguin an animal?");
-  assert.equal(inherited.trace.source, "knowledge-graph");
+  assert.equal(inherited.trace.source, "language-engine");
   assert.match(inherited.text, /^Yes\./);
   assert.ok(inherited.trace.proof?.some((step) => /transitively/i.test(step)));
 
@@ -69,16 +69,19 @@ test("joins direct, inherited, transitive, comparison, and derived-location fact
   assert.match(comparison.text, /bird has 2/i);
 
   const derived = respond("What continent is Tokyo in?");
-  assert.equal(derived.trace.source, "knowledge-graph");
+  assert.equal(derived.trace.source, "language-engine");
   assert.match(derived.text, /Asia/);
-  assert.ok(derived.trace.matchedExampleIds.some((id) => id.startsWith("proposition:")));
+  assert.ok(derived.trace.matchedExampleIds.some((id) => id.startsWith("fact:")));
 });
 
 test("keeps all sixty measured semantic comparison forms executable", () => {
   assert.equal(semanticComparisonQuestionTemplates.length, 60);
   for (const template of semanticComparisonQuestionTemplates) {
     const reply = respond(template.render("cat", "dog", "diet"));
-    assert.equal(reply.trace.source, "knowledge-graph", template.id);
+    assert.ok(
+      reply.trace.source === "language-engine" || reply.trace.source === "knowledge-graph",
+      template.id,
+    );
     assert.match(reply.text, /meat/i, template.id);
   }
 });
@@ -116,4 +119,3 @@ test("still refuses a factual relation that has no supporting proposition", () =
   assert.notEqual(reply.trace.source, "knowledge-graph");
   assert.doesNotMatch(reply.text, /spider's favorite song is/i);
 });
-

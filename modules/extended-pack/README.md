@@ -1,7 +1,7 @@
 # Extended Pack
 
-The Extended Pack is Lexi Language 1.0 Pre-build 260731-DV7's compatibility and
-fallback layer. DV7 routes typed factual questions through the Knowledge Graph
+The Extended Pack is Lexi Language 1.0 Pre-build 260801-DV8's compatibility and
+fallback layer. DV8 routes typed factual questions through its query engine and
 first; the Extended Pack remains responsible for deterministic calculations,
 complete conversation patterns, authored summaries and learning paths, and
 subjects not yet promoted to atomic propositions. It is authored TypeScript data

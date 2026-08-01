@@ -23,6 +23,13 @@ import {
   matchDv7Conversation,
   matchDv7Knowledge,
 } from "@/modules/dv7";
+import {
+  Dv8DialogueState,
+  dv8EngineStats,
+  matchDv8,
+  matchDv8Task,
+  type QueryPlan,
+} from "@/modules/dv8";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { LexiSessionMemory } from "@/modules/memory";
 import { analyseSentence, searchContexts } from "@/modules/search";
@@ -34,6 +41,8 @@ const entries: ContextEntry[] = contextPages.flatMap((page) => page.entries);
 type EngineState = {
   activeSubjectIds: string[];
   memory?: LexiSessionMemory;
+  dialogue?: Dv8DialogueState;
+  lastPlan?: QueryPlan;
 };
 
 function memoryReply(input: string, state?: EngineState): LexiReply | undefined {
@@ -57,9 +66,23 @@ function memoryReply(input: string, state?: EngineState): LexiReply | undefined 
   };
 }
 
-function respondToClauseCore(input: string, state?: EngineState): LexiReply {
+function respondToClauseCore(
+  input: string,
+  state?: EngineState,
+  options: { dv8: boolean } = { dv8: true },
+): LexiReply {
   const remembered = memoryReply(input, state);
   if (remembered) return remembered;
+
+  if (options.dv8) {
+    const dialogue = state?.dialogue?.interpret(input, lexiKnowledgeGraph);
+    if (dialogue) return dialogue;
+    const dv8Task = matchDv8Task(input);
+    if (dv8Task) {
+      if (state) state.lastPlan = dv8Task.plan;
+      return dv8Task.reply;
+    }
+  }
 
   const prepared = prepareLinguisticInput(input);
   const basicPhrase =
@@ -86,7 +109,13 @@ function respondToClauseCore(input: string, state?: EngineState): LexiReply {
   }
 
   const extended = matchExtendedPack(input);
-  if (extended?.intent.startsWith("reasoning:")) {
+  if (
+    extended?.intent.startsWith("reasoning:") ||
+    extended?.structureId.startsWith("extended-conversation:") ||
+    extended?.intent === "summary" ||
+    extended?.intent === "learning" ||
+    extended?.intent === "similarity"
+  ) {
     const analysis = analyseSentence(input);
     return {
       text: extended.text,
@@ -101,6 +130,19 @@ function respondToClauseCore(input: string, state?: EngineState): LexiReply {
         source: "extended-pack",
       },
     };
+  }
+
+  if (options.dv8) {
+    const dv8 = matchDv8(input, {
+      activeSubjectIds:
+        state?.dialogue?.activeSubjectIds().length
+          ? state.dialogue.activeSubjectIds()
+          : state?.activeSubjectIds,
+    });
+    if (dv8) {
+      if (state) state.lastPlan = dv8.plan;
+      return dv8.reply;
+    }
   }
 
   const semantic = matchDv7Knowledge(input, {
@@ -220,6 +262,7 @@ async function respondToClauseAsync(
     ordinaryReply.trace.source === "core-phrase" ||
     ordinaryReply.trace.source === "extended-pack" ||
     ordinaryReply.trace.source === "knowledge-graph" ||
+    ordinaryReply.trace.source === "language-engine" ||
     ordinaryReply.trace.source === "session-memory"
   ) {
     return ordinaryReply;
@@ -249,16 +292,32 @@ export function respond(input: string): LexiReply {
   return respondWithState(input, state);
 }
 
-function respondWithState(input: string, state: EngineState): LexiReply {
+function respondWithState(
+  input: string,
+  state: EngineState,
+  options: { dv8: boolean } = { dv8: true },
+): LexiReply {
+  state.lastPlan = undefined;
   const clauses = splitIntoClauses(input);
   if (clauses.length > 1) {
     return combineClauseReplies(
       input,
-      clauses.map((clause) => respondToClause(clause, state)),
+      clauses.map((clause) => {
+        const reply = respondToClauseCore(clause, state, options);
+        updateEngineState(clause, reply, state);
+        return reply;
+      }),
     );
   }
 
-  return respondToClause(input, state);
+  const reply = respondToClauseCore(input, state, options);
+  updateEngineState(input, reply, state);
+  return reply;
+}
+
+/** Frozen DV7 routing path used only to measure DV8 against the same blind set. */
+export function respondDv7Baseline(input: string): LexiReply {
+  return respondWithState(input, { activeSubjectIds: [] }, { dv8: false });
 }
 
 export async function respondAsync(
@@ -286,14 +345,17 @@ async function respondAsyncWithState(
 
 export class LexiSession {
   private readonly memory = new LexiSessionMemory();
+  private readonly dialogue = new Dv8DialogueState();
   private readonly state: EngineState = {
     activeSubjectIds: [],
     memory: this.memory,
+    dialogue: this.dialogue,
   };
 
   respond(input: string): LexiReply {
     const reply = respondWithState(input, this.state);
     this.memory.recordTurn(input, reply.text);
+    this.dialogue.record(input, reply, this.state.lastPlan);
     return reply;
   }
 
@@ -303,12 +365,34 @@ export class LexiSession {
   ): Promise<LexiReply> {
     const reply = await respondAsyncWithState(input, dictionaryOptions, this.state);
     this.memory.recordTurn(input, reply.text);
+    this.dialogue.record(input, reply, this.state.lastPlan);
     return reply;
   }
 
   snapshot() {
-    return this.memory.snapshot();
+    return {
+      ...this.memory.snapshot(),
+      propositions: this.dialogue.snapshot(),
+    };
   }
+}
+
+class Dv7BaselineSession {
+  private readonly memory = new LexiSessionMemory();
+  private readonly state: EngineState = {
+    activeSubjectIds: [],
+    memory: this.memory,
+  };
+
+  respond(input: string): LexiReply {
+    const reply = respondWithState(input, this.state, { dv8: false });
+    this.memory.recordTurn(input, reply.text);
+    return reply;
+  }
+}
+
+export function createDv7BaselineSession() {
+  return new Dv7BaselineSession();
 }
 
 export function createLexiSession() {
@@ -318,6 +402,7 @@ export function createLexiSession() {
 export function corpusStats() {
   const extended = extendedPackStats();
   const dv7 = dv7AvailabilityStats();
+  const dv8 = dv8EngineStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
@@ -333,5 +418,6 @@ export function corpusStats() {
     knowledgePropositions: dv7.propositions,
     semanticConstructions: dv7.semanticConstructions,
     availabilityMultipleOverDv6: dv7.multipleOverDv6,
+    dv8,
   };
 }

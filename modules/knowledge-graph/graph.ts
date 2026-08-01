@@ -88,6 +88,8 @@ export class KnowledgeGraph implements SemanticResolver {
   private readonly propositionSignatures = new Map<string, string>();
   private readonly bySubject = new Map<string, KnowledgeProposition[]>();
   private readonly bySubjectPredicate = new Map<string, KnowledgeProposition[]>();
+  private readonly byPredicate = new Map<SemanticRelation, KnowledgeProposition[]>();
+  private readonly byPredicateEntityObject = new Map<string, KnowledgeProposition[]>();
   private readonly aliasEntries: Array<[string, string]> = [];
   private propositionSequence = 0;
 
@@ -158,6 +160,15 @@ export class KnowledgeGraph implements SemanticResolver {
     const predicateEntries = this.bySubjectPredicate.get(key) ?? [];
     predicateEntries.push(completed);
     this.bySubjectPredicate.set(key, predicateEntries);
+    const allPredicateEntries = this.byPredicate.get(completed.predicate) ?? [];
+    allPredicateEntries.push(completed);
+    this.byPredicate.set(completed.predicate, allPredicateEntries);
+    if (completed.object.kind === "entity") {
+      const inverseKey = `${completed.predicate}\u0000${completed.object.entityId}`;
+      const inverseEntries = this.byPredicateEntityObject.get(inverseKey) ?? [];
+      inverseEntries.push(completed);
+      this.byPredicateEntityObject.set(inverseKey, inverseEntries);
+    }
     return completed;
   }
 
@@ -189,16 +200,17 @@ export class KnowledgeGraph implements SemanticResolver {
     return [...(this.bySubjectPredicate.get(`${subjectId}\u0000${predicate}`) ?? [])];
   }
 
+  byRelation(predicate: SemanticRelation): KnowledgeProposition[] {
+    return [...(this.byPredicate.get(predicate) ?? [])];
+  }
+
   inverseObject(
     predicate: SemanticRelation,
     entityId: string,
   ): KnowledgeProposition[] {
-    return [...this.propositions.values()].filter(
-      (proposition) =>
-        proposition.predicate === predicate &&
-        proposition.object.kind === "entity" &&
-        proposition.object.entityId === entityId,
-    );
+    return [
+      ...(this.byPredicateEntityObject.get(`${predicate}\u0000${entityId}`) ?? []),
+    ];
   }
 
   resolveExact(value: string): SemanticEntityMention | undefined {

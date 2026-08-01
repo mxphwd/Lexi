@@ -9,4 +9,5 @@ export type {
   KnowledgeProposition,
   ProofStep,
   PropositionValue,
+  PropositionQualifier,
 } from "./types";

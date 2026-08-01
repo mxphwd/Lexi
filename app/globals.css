@@ -674,7 +674,7 @@ a {
   top: 10px;
   right: 52px;
   color: rgba(50, 57, 50, 0.24);
-  content: "VISUAL CHANGELOG / DV7";
+  content: "VISUAL CHANGELOG / DV8";
   font-family: var(--mono);
   font-size: 0.43rem;
   letter-spacing: 0.09em;
@@ -948,6 +948,37 @@ a {
   color: #5f655f;
   font-size: 0.64rem;
   line-height: 1.4;
+}
+
+.release-measurements {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  margin: 11px 0 0;
+}
+
+.release-measurements div {
+  min-width: 0;
+  padding: 5px 6px;
+  border: 1px solid rgba(63, 86, 69, 0.1);
+  border-radius: 4px;
+  background: rgba(239, 243, 239, 0.72);
+}
+
+.release-measurements dt {
+  color: #8a918a;
+  font-family: var(--mono);
+  font-size: 0.39rem;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.release-measurements dd {
+  margin: 2px 0 0;
+  color: #405d49;
+  font-family: var(--mono);
+  font-size: 0.49rem;
+  font-weight: 650;
 }
 
 .release-tooltip li::marker {

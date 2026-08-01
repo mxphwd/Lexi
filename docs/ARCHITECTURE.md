@@ -1,178 +1,91 @@
-# Lexi DV7 architecture
+# Lexi DV8 architecture
 
 ## Contract
 
-Lexi is deterministic and source-bound. It may retrieve a proposition, join
-propositions through a declared rule, realize the result with a reviewed
-structure, reuse an attributed dictionary definition, return a matched example,
-or refuse the request. No module may invent a factual edge outside those
-sources.
+Lexi is deterministic and source-bound. It can read a recorded fact, join facts
+through a declared rule, run a bounded transformation, realize the resulting
+proposition, use an attributed dictionary definition, match a reviewed example,
+or abstain. It cannot create a factual edge that is absent from those sources.
 
 ```text
-User text
-   │
-   ▼
-Discourse ───────────── bounded clauses and carried subjects
-   │
-   ▼
-Session memory ──────── personal facts and conversation state
-   │
-   ├──► Basic phrases / deterministic calculations
-   │
-   ▼
-Typed semantic parser
-   │    question kind · subjects · relation · object/property
-   │    condition · quantity · time · style · negation
-   ▼
-Curated knowledge graph
-   │
-   ▼
-Compositional reasoner
-   │    direct · inverse · inheritance · classification
-   │    transitive · comparison · derived location
-   ▼
-Proposition realizer
-   │
-   ├──► visible answer
-   └──► proposition IDs + explicit proof trace
-   │
-   ▼ if no supported graph answer
-DV6 Extended Pack → Wordset → Search → Context → Connect → Structure
+English input
+  → bounded clause segmentation and session memory
+  → normalization, morphology, and compiled word-sense resolution
+  → typed QueryPlan (patterns, variables, filters, modifiers, operation)
+  → normalized fact indexes plus proposition-aware dialogue state
+  → deterministic joins, rules, comparisons, aggregates, and truth checks
+  → reviewed answer realization
+  → answer + fact IDs + proof, or calibrated abstention
 ```
 
-## Module boundaries
+## Typed query language
 
-### Discourse
+`modules/dv8/types.ts` declares seven operations: `lookup`, `ask`, `select`,
+`aggregate`, `compare`, `transform`, and `clarify`. Triple patterns contain
+entity, variable, text, number, or boolean terms. Filters cover class/kind,
+literal comparison, containment, time, and conditions. Quantifiers distinguish
+any, all, none, and exact claims.
 
-`modules/discourse/` owns explicit sentence and coordinated-request boundaries.
-It separates at most four clauses, preserves known compound entities, and
-inherits one recognized frame or subject into a bounded follow-up. Two explicit
-subjects can support a paired reference; three possible antecedents require
-clarification. Combination deduplicates answers and aggregates evidence but
-adds no facts.
+`modules/dv8/parser.ts` builds this representation. It does not execute a fact
+while parsing and does not store one finished answer per wording.
 
-### Session memory
+## Compiled lexical senses
 
-`modules/memory/` stores only values explicitly supplied or resolved in the
-current `LexiSession`: name, age, location, up to 20 preferences, active subject
-IDs, previous question, and previous answer. Stateless `respond()` creates no
-continuing memory. New browser loads and new sessions begin empty. Memory is not
-written to a database or used as general knowledge.
+`modules/dv8/lexicon.ts` compiles canonical names, aliases, and lemmatized forms
+into a token trie once. Prompt resolution walks input tokens rather than
+constructing a regular expression for every alias. Every alias retains all of
+its senses. A unique context-compatible kind can select a sense; otherwise the
+plan asks for clarification.
 
-### Basic and deterministic gates
+## Normalized fact indexes
 
-`core/basic-phrases/` covers exact foundational exchanges before semantic
-knowledge routing. Anchored arithmetic and premise-only reasoning from the
-Extended Pack also run first so a graph mention cannot capture the operands of a
-calculation.
+`modules/dv8/facts.ts` creates an indexed view without destroying source
+propositions. Lists become atomic facts. Safe references become entity edges.
+Numbers and units are normalized, while proposition ID, qualifiers, and source
+remain attached. The store indexes subject–predicate, predicate, and
+predicate–object access.
 
-### Typed semantic parser
+## Execution
 
-`modules/semantic/` converts language into a `SemanticQuery`. Its declared
-relations cover definitions, classifications, properties, geography, people,
-quantities, processes, capabilities, composition, and relationships.
+`modules/dv8/executor.ts` runs:
 
-Entity resolution requires a known canonical name or alias. Relation detectors
-run from specific to broad, prevent relation words embedded inside entity names
-from self-triggering, and identify unsupported property frames before the broad
-definition fallback. Conditions, quantities, time, answer style, and negation
-remain explicit modifiers rather than disappearing during normalization.
+- direct and inverse indexed lookup
+- multi-pattern joins and class/kind filters
+- classification paths, transitivity, and declared inheritance
+- distinct count aggregates and unit-compatible comparisons
+- functional-property false answers when a different value is explicit
+- boolean negatives and three-valued yes/no/unknown semantics
+- any/all/none quantifiers over recorded class members
+- condition compatibility and contradiction checks
+- temporal refusal for time-varying predicates without dated evidence
 
-The parser is mechanical. It has no statistical language representation and
-does not infer an entity merely because two words seem semantically similar.
+Every result includes the facts and rule steps that produced it. Missing support
+returns unknown; it is not turned into a positive statement by a lexical
+fallback.
 
-### Curated knowledge graph
+## Routing and abstention
 
-`modules/knowledge-graph/` owns entities, aliases, predicates, propositions, and
-indexes. A proposition records:
+Foundational phrases, bounded calculations, and established conversation
+repairs remain deterministic gates. A factual plan uses the DV8 executor. If a
+known subject is paired with an unsupported property, Lexi names the property
+and abstains before the example corpus. Non-factual interactions such as time,
+date, directions, and emotional support can still use reviewed compatibility
+records.
 
-- one subject
-- one typed predicate
-- an entity, text, number, boolean, or list value
-- optional scope, condition, time, unit, and provenance information
+## Dialogue
 
-Data packs provide foundational taxonomies, science, everyday objects and
-places, geography, people and works, technical concepts, processes, formulas,
-and units. Capital-city entities receive derived country and continent
-propositions during graph construction. Duplicate signatures are rejected
-deterministically.
+`modules/dv8/dialogue.ts` stores up to 24 session-local turn propositions:
+subjects, relation, fact IDs, question, answer, proof, and goal. It supports
+proof, simplification, active-subject, and goal follow-ups. Personal details
+remain in `modules/memory/`. Nothing persists across sessions.
 
-### Compositional reasoner
+## Measurement and limits
 
-`modules/knowledge-graph/reasoner.ts` joins only inspectable facts:
+DV8 reports knowledge, language robustness, reasoning, dialogue, precision, and
+latency separately. `modules/benchmark/dv8.ts` runs a 4,124-case stateless suite,
+120 dialogue sessions, and the frozen DV7 path on the same stateless cases.
 
-- direct lookup uses one recorded proposition
-- classification follows declared `is_a` links
-- transitive classification joins a finite ancestor path
-- inheritance exposes a predicate only when that predicate permits inheritance
-- inverse and equivalent relations follow declared mappings
-- boolean questions match their requested action or object before returning a
-  verdict
-- comparison requires both subjects to have the same requested relation
-
-Every answer returns the propositions and a public `GraphProofStep[]`. Missing
-facts return `undefined`; the engine can then try a bounded legacy source rather
-than treating absence as a negative fact.
-
-### Proposition realizer
-
-`modules/proposition/` maps typed relations to reviewed English structures.
-Open, boolean, count, and comparison responses are constructed from proposition
-values and qualifiers. Style variants change presentation but do not multiply
-or alter facts.
-
-This is the architectural difference between DV6 and DV7: DV6 stored a complete
-field answer for each topic; DV7 can reuse one atomic proposition across varied
-questions, comparisons, follow-ups, and styles.
-
-### Compatibility fallbacks
-
-`modules/extended-pack/` remains the first compatibility fallback for authored
-topic summaries, learning paths, conversation, and deterministic reasoning.
-`modules/dictionary/` handles bounded Wordset definition forms for still-unknown
-subjects. The original Search → Context → Connect → Structure route is retained
-as the final example-context path.
-
-These layers cannot silently override a successful graph answer.
-
-## Traceability
-
-Every reply returns a `LexiTrace` containing normalized input, sentence mode,
-intent, confidence, evidence IDs, selected structure, and source. A graph reply
-also exposes resolved subject IDs and human-readable proof steps. A combined
-reply preserves ordered clause intents and aggregates proposition evidence.
-
-The interface exposes this under “Why this response.”
-
-## Coverage contracts
-
-DV7 reports two deliberately separate measures:
-
-1. **Semantic construction surface** counts executable combinations of actual
-   benchmarkable propositions or actual same-relation subject pairs, supported
-   question frames, and answer styles.
-2. **Coverage benchmark** executes curated ordinary questions, stateful session
-   scenarios, and one generated reachability question for each unique
-   subject–predicate pair.
-
-The benchmark classifies misses as parser, routing, content, proposition, or
-memory failures. A larger graph is not accepted if the end-to-end route cannot
-retrieve its records. See `docs/DV7_COVERAGE.md` for the exact formula and
-current result.
-
-## Release-history contract
-
-`lib/lexi/releases.ts` is the single source for the interactive release graph.
-Its capability index is an internal 0–100 historical index, not an external
-benchmark. Verified availability and benchmark results remain separate
-highlighted measurements. Every `LEXI_BUILD` change must add one newest release
-record; tests enforce synchronization and chronological non-decrease.
-
-## Known limits
-
-DV7 still does not provide open-world inference, current/live information,
-probabilistic ambiguity resolution, arbitrary multi-hop planning, or knowledge
-outside its reviewed graph, dictionary, and corpora. A 3,211/3,211 benchmark
-result means all checked-in cases pass; it does not mean every possible English
-question will pass. Coverage should grow through reviewed propositions,
-collision tests, and new real-world benchmark cases—not inflated permutations.
+Passing the suite does not imply universal language or knowledge. The graph is
+small, many values still originate as reviewed free text, transformations are
+bounded, time-sensitive facts need qualified sources, and the parser cannot
+resolve every English construction. Add real failures blindly before fixes.

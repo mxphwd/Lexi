@@ -3,7 +3,7 @@ import {
   dv7SessionBenchmark,
   type BenchmarkCategory,
 } from "@/data/benchmarks/dv7-basic-questions";
-import { createLexiSession, respond } from "@/lib/lexi/engine";
+import { createDv7BaselineSession, respondDv7Baseline } from "@/lib/lexi/engine";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { relationLabels, type SemanticRelation } from "@/modules/semantic";
 
@@ -103,7 +103,7 @@ function generatedReachabilityResults(): BenchmarkResult[] {
     const entity = lexiKnowledgeGraph.entity(proposition.subjectId);
     if (!entity) continue;
     const prompt = propertyPrompt(proposition.predicate, entity.name);
-    const reply = respond(prompt);
+    const reply = respondDv7Baseline(prompt);
     const expectedId = `proposition:${proposition.id}`;
     const sourcePassed = reply.trace.source === "knowledge-graph";
     const propositionPassed = reply.trace.matchedExampleIds.includes(expectedId);
@@ -131,7 +131,7 @@ function generatedReachabilityResults(): BenchmarkResult[] {
 
 function curatedResults(): BenchmarkResult[] {
   return dv7CuratedBenchmark.map((testCase) => {
-    const reply = respond(testCase.prompt);
+    const reply = respondDv7Baseline(testCase.prompt);
     const sourcePassed =
       !testCase.expectedSource || reply.trace.source === testCase.expectedSource;
     const contentPassed = includesTerms(reply.text, testCase.expectedTerms);
@@ -159,7 +159,7 @@ function curatedResults(): BenchmarkResult[] {
 function sessionResults(): BenchmarkResult[] {
   const results: BenchmarkResult[] = [];
   for (const scenario of dv7SessionBenchmark) {
-    const session = createLexiSession();
+    const session = createDv7BaselineSession();
     scenario.turns.forEach((turn, index) => {
       const reply = session.respond(turn.prompt);
       const sourcePassed =
