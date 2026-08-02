@@ -21,3 +21,14 @@ npm run benchmark:dv8
 ```
 
 See `docs/DV8_BENCHMARK.md` for the method and current result.
+
+DV9 adds data-integrity validation, 40,000 source-derived isolated lexical-plan
+questions, a 1,000-case compressed-shard execution sample, and parser latency:
+
+```bash
+npm run dv9:validate-data
+npm run benchmark:dv9
+```
+
+The DV9 cases are not user-reported failures and are not represented as a
+universal availability score. See `docs/DV9_DATA.md`.

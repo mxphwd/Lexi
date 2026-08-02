@@ -4,12 +4,12 @@ import { LEXI_RELEASES, releaseImprovement } from "../lib/lexi/releases.ts";
 import { LEXI_BUILD } from "../lib/lexi/version.ts";
 
 test("keeps every Lexi version synchronized with its release-note point", () => {
-  assert.equal(LEXI_RELEASES.length, 8);
+  assert.equal(LEXI_RELEASES.length, 9);
   assert.equal(LEXI_RELEASES.at(-1)?.build, LEXI_BUILD);
-  assert.equal(LEXI_RELEASES.at(-1)?.build, "260801-DV8");
+  assert.equal(LEXI_RELEASES.at(-1)?.build, "260802-DV9");
   assert.deepEqual(
     LEXI_RELEASES.map((release) => release.build),
-    ["260720-1A", "260721-0A", "260730-DV3", "260730-DV4", "260730-DV5", "260730-DV6", "260731-DV7", "260801-DV8"],
+    ["260720-1A", "260721-0A", "260730-DV3", "260730-DV4", "260730-DV5", "260730-DV6", "260731-DV7", "260801-DV8", "260802-DV9"],
   );
 
   LEXI_RELEASES.forEach((release, index) => {
@@ -27,4 +27,6 @@ test("keeps every Lexi version synchronized with its release-note point", () => 
   assert.equal(LEXI_RELEASES[6].metric, "492.79× semantic availability");
   assert.equal(LEXI_RELEASES[7].metric, "4,124-case blind benchmark");
   assert.equal(LEXI_RELEASES[7].measurements?.length, 6);
+  assert.equal(LEXI_RELEASES[8].metric, "800,000 validated atomic facts");
+  assert.equal(LEXI_RELEASES[8].measurements?.length, 6);
 });

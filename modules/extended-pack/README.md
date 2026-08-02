@@ -1,6 +1,6 @@
 # Extended Pack
 
-The Extended Pack is Lexi Language 1.0 Pre-build 260801-DV8's compatibility and
+The Extended Pack is Lexi Language 1.0 Pre-build 260802-DV9's compatibility and
 fallback layer. DV8 routes typed factual questions through its query engine and
 first; the Extended Pack remains responsible for deterministic calculations,
 complete conversation patterns, authored summaries and learning paths, and

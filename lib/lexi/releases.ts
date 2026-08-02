@@ -115,7 +115,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260801-DV8",
     shortLabel: "DV8",
     date: "1 August 2026",
-    capabilityIndex: 100,
+    capabilityIndex: 72,
     metric: "4,124-case blind benchmark",
     measurements: [
       { label: "Knowledge", value: "100.0%" },
@@ -130,6 +130,28 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "Added forward and inverse joins, filters, aggregates, comparisons, explicit negation, quantifiers, conditions, time checks, unit conversion, and calibrated abstention.",
       "Expanded session state around answer propositions and conversational goals, then passed all 4,124 held-out cases plus 120 proposition-aware dialogue sessions.",
       "Measured 1.0467× total success over the frozen DV7 path on the same suite; no 1,000× claim is made because the evidence does not support it.",
+    ],
+  },
+  {
+    build: "260802-DV9",
+    label: "Pre-build 260802-DV9",
+    shortLabel: "DV9",
+    date: "2 August 2026",
+    capabilityIndex: 100,
+    metric: "800,000 validated atomic facts",
+    measurements: [
+      { label: "Entities", value: "323,853" },
+      { label: "Senses", value: "163,274" },
+      { label: "Plan examples", value: "100,000" },
+      { label: "Dialogue", value: "40,000" },
+      { label: "Held-out plans", value: "100.0%" },
+      { label: "Parser p95", value: "0.004 ms" },
+    ],
+    notes: [
+      "Added a provenance-bearing lexical data layer with 323,853 entities, 163,274 explicit senses, 3,200 typed relation profiles, and 800,000 schema-validated atomic facts.",
+      "Compiled 100,000 compositional query-plan examples, 1,100 inspectable inference-rule instances, and 40,000 proposition-aware dialogue scenarios without adding finished-answer constructions.",
+      "Passed all 40,000 isolated source-derived language cases and a 1,000-case end-to-end lexical sample; these cases are synthetic held-out checks, not user-reported failures.",
+      "Classified 636,726 rows as source-attested and 163,274 as mechanically derived. DV9 does not mislabel either class as newly independently reviewed general knowledge.",
     ],
   },
 ] as const;

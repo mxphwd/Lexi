@@ -1,9 +1,8 @@
 # Supplied documentation mapping
 
-The uploaded Lexi documentation describes five fundamental stages. DV8 keeps
-those stages as compatibility layers and adds compiled lexical senses, typed
-query plans, normalized fact indexes, execution rules, proposition realization,
-and session state before them:
+The uploaded Lexi documentation describes five fundamental stages. DV8 added
+typed execution; DV9 adds provenance-bearing lexical scale and explicit senses
+without replacing those compatibility layers:
 
 | Documentation mechanism | Prototype implementation |
 | --- | --- |
@@ -12,6 +11,9 @@ and session state before them:
 | Connect related knowledge mechanically | `modules/dv8/executor.ts` performs forward/inverse joins, filters, aggregates, comparison, inheritance, transitivity, negation, quantifiers, condition checks, and temporal checks with explicit proof steps. |
 | Preserve conversational context | `modules/memory/session.ts` stores personal facts, while `modules/dv8/dialogue.ts` stores answer propositions, subjects, proof, and conversational goals only inside the current session. |
 | Measure ordinary-question coverage | `modules/benchmark/dv8.ts` reports knowledge, language, reasoning, dialogue, precision, and latency against 4,124 stateless cases and 120 dialogue sessions. |
+| Scale lexical facts without answer duplication | `scripts/build-dv9-data-pack.mjs` compiles lemma and sense entities, atomic facts, typed relation profiles, plan examples, rules, dialogue scenarios, and an isolated evaluation pack. |
+| Preserve source and uncertainty | `modules/dv9/types.ts` and `schema.ts` retain source identity, evidence locators, confidence, review status, validity intervals, and dispute links. |
+| Resolve long-tail word senses | `modules/dv9/parser.ts`, `loader.ts`, and `realizer.ts` load one lexical shard and select an explicit sense from contextual evidence. |
 | Divide prompts using basic English sentence structure | `modules/discourse/segment.ts` and `reference.ts` separate connected requests and resolve only bounded explicit antecedents; `modules/search/tokenize.ts` supplies sentence mode and basic roles. |
 | Directly answer common subjects across varied question structures | `modules/extended-pack/linguistic-features.ts`, `dv6-linguistic-features.ts`, `question-frames.ts`, `dv6-question-frames.ts`, and `router.ts` map framing, style, semantic focus, and subject aliases to explicit topic fields. |
 | Perform bounded simple reasoning without prediction | `modules/extended-pack/reasoning.ts` contains anchored numeric, sequence, text-measurement, premise-only deduction, and decision-criteria forms with explicit refusal boundaries. |
@@ -23,7 +25,7 @@ and session state before them:
 | Put answer words into prebuilt structures | `modules/structure/patterns.ts` and `modules/structure/index.ts` select and fill declared templates. |
 
 The documentation also warns that a zero-AI program may misunderstand context.
-DV8 turns that warning into an execution contract: an unsupported relation has
+DV8 and DV9 turn that warning into an execution contract: an unsupported relation has
 no fact path, subject-incompatible fallback is blocked, ambiguity remains an
 explicit set of senses, and every accepted fact reveals its IDs and proof path.
 

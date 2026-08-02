@@ -1,23 +1,24 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260801-DV8 is a deterministic,
-zero-generative-model language prototype. DV8 replaces the remaining
-question-to-relation shortcut with a typed query language, compiled word-sense
-index, normalized fact store, compositional executor, proposition-aware
-dialogue state, and calibrated abstention.
-
-The same input, embedded sources, and session state always follow the same
-inspectable path:
-
-`Discourse → session/proposition state → deterministic gates → compiled lexical
-index → typed query plan → normalized fact indexes → query executor → answer
-realizer → calibrated abstention or bounded legacy fallback`
+Lexi Language 1.0 Pre-build 260802-DV9 is a deterministic,
+zero-generative-model language prototype. DV8 supplied the typed language and
+execution engine. DV9 supplies a provenance-aware lexical data layer, explicit
+senses, compiled relation profiles, reusable rule instances, isolated language
+examples, and richer lexical dialogue state.
 
 Lexi does not call a generative model, predict tokens, use learned embeddings,
-or silently invent a missing fact. DV8 factual responses carry the normalized
-fact IDs and execution rules used to construct them.
+or convert an absent fact into a confident answer.
 
-## Run the prototype
+```text
+input
+  → discourse and session state
+  → DV8 typed query planning and factual execution
+  → DV9 lexical plan and one on-demand data shard
+  → explicit sense selection and proposition realization
+  → answer with evidence, or calibrated abstention
+```
+
+## Run Lexi
 
 Requirements: Node.js 22.13 or later.
 
@@ -26,107 +27,109 @@ npm install
 npm run dev
 ```
 
-Open the printed local address. Enter sends a message; Shift+Enter adds a line.
-The send control becomes a stop control while Lexi resolves a response.
-Shift-click the Alphaine wordmark to reveal the build and release history.
+Enter sends a message; Shift+Enter adds a line. Shift-click the Alphaine
+wordmark to reveal the build and interactive release history.
 
-## DV8 modules
+## DV9 data layer
 
-- `modules/dv8/parser.ts` builds a `QueryPlan` with operations, variables,
-  triple patterns, filters, conditions, quantifiers, time, negation, and style.
-- `modules/dv8/lexicon.ts` compiles graph names into a token trie and preserves
-  explicit senses for ambiguous spellings.
-- `modules/dv8/facts.ts` expands lists into atomic facts, converts safe values
-  to entity edges or typed literals, normalizes units, and builds forward and
-  inverse indexes.
-- `modules/dv8/executor.ts` runs joins, inheritance, filters, aggregates,
-  comparisons, negatives, quantifiers, conditions, and temporal checks.
-- `modules/dv8/dialogue.ts` records answer propositions, subjects, proof, and
-  conversational goals for bounded follow-ups.
-- `modules/dv8/tasks.ts` provides bounded conversion, sorting, grammar repair,
-  reviewed phrase translation, extractive summarization, and rewriting.
-- `modules/dv8/realizer.ts` constructs reviewed English from execution results.
+DV9 compiles the vendored Wordset dictionary and Moby thesaurus into small
+first-character shards. A lexical request downloads only the relevant shard.
+The runtime can now:
 
-The existing `modules/knowledge-graph/` remains the reviewed factual source.
-`core/basic-phrases/`, `modules/extended-pack/`, the full Wordset dictionary,
-and the original Search → Context → Connect → Structure path remain bounded
-compatibility layers.
+- select a dictionary sense from contextual words
+- list multiple senses without merging them
+- report recorded parts of speech and usage examples
+- expose attributed Moby associations without calling them strict synonyms
+- answer lexical follow-ups such as “another meaning,” “use it in an example,”
+  and “where did that come from?”
+- retain the active lexical term, selected sense, and conversational goal
 
-The fallback corpus contains 62 pages, 4,180 input-response examples, and 8,360
-paired sentences. It is no longer the primary factual architecture.
+Curated DV8 propositions remain ahead of generic dictionary definitions. This
+preserves reviewed answers for known subjects while expanding the long tail.
 
-## Measured DV8 coverage
+## Data counts
 
-DV8 replaces the old single availability headline with six measurements. The
-checked-in blind suite contains 4,124 stateless cases plus 120 dialogue
-sessions. The validated result is:
+The checked-in DV9 manifest reports:
 
-- knowledge: 588/588 (100.0%)
-- language robustness: 3,202/3,202 (100.0%)
-- reasoning: 171/171 (100.0%)
-- dialogue: 120/120 (100.0%)
-- precision and calibrated abstention: 163/163 (100.0%)
-- local latency: 0.23 ms p50 and 0.30 ms p95 over 300 samples
+- 800,000 schema-validated, provenance-bearing atomic facts
+- 323,853 entities: 160,579 lemmas and 163,274 sense nodes
+- 3,200 typed relation profiles across 32 base predicates
+- 163,274 explicit lexical senses
+- 100,000 compositional query-plan examples
+- 1,100 rule instances across 11 inference families
+- 40,000 multi-turn dialogue scenarios
+- 40,000 isolated source-derived evaluation questions
+- 0 new finished-answer constructions
 
-The frozen DV7 path passes 3,940/4,124 on the same stateless suite. The measured
-like-for-like total success gain is therefore **1.0467×**. DV8 does not claim a
-1,000× improvement because the checked-in evidence does not support it. The
-suite is a regression instrument over a declared surface, not proof of
-universal English understanding.
+“Validated” describes structure, referential integrity, deduplication, source
+identity, and confidence bounds. It does not mean that a human independently
+reviewed every dictionary or thesaurus assertion. DV9 keeps the following
+classes separate:
+
+- 636,726 source-attested rows
+- 163,274 mechanically derived inverse/reference rows
+- 0 newly independently reviewed general-knowledge rows
+
+Moby edges are broad lexical associations, not guaranteed synonyms. The 40,000
+evaluation questions use frames outside the query-plan example pack, but they
+are source-derived rather than user-reported failures.
+
+## Architecture
+
+`modules/dv8/` remains the general typed parser, fact executor, and proposition
+realizer. `modules/dv9/` adds:
+
+- lexical-safe Unicode and punctuation normalization
+- explicit lexical query plans
+- on-demand shard loading and schema validation
+- contextual sense selection and provenance-aware realization
+- lexical proposition and conversational-goal state
+- manifest validation and measured data statistics
+
+Generated resources live under `data/dv9/`; runtime shards live under
+`public/dv9/lexicon/`. The complete source archives remain under
+`data/lexicon/vendor/` with their notices and hashes.
+
+## Build and verify the data
+
+```bash
+npm run dv9:build-data
+npm run dv9:validate-data
+npm run benchmark:dv9
+```
+
+The validator checks artifact hashes, unique IDs, entity references, source
+codes, confidence bounds, pack separation, target counts, and runtime shards.
+The DV9 language check currently maps 40,000/40,000 isolated plan cases,
+validates 40,000/40,000 dialogue-plan scenarios, and executes a 1,000/1,000
+on-demand lexical sample. Parser latency measured during
+the release run was approximately 0.004 ms p95 locally. This is a declared
+lexical surface, not proof of universal question answering.
+
+DV8’s six-metric benchmark remains frozen for regression comparison:
 
 ```bash
 npm run benchmark:dv7
 npm run benchmark:dv8
 ```
 
-See `docs/DV8_BENCHMARK.md` for the method. The historical DV7 construction
-surface remains documented in `docs/DV7_COVERAGE.md` and is not used as DV8's
-headline.
+## Add future data juice
 
-## Extend DV8
+General knowledge should be added as one typed proposition per fact, with:
 
-Add reviewed entities and typed facts under `modules/knowledge-graph/data/`.
-Prefer one proposition per fact and qualifiers for scope, condition, time,
-unit, or uncertainty. An alias must identify the same entity, not a merely
-related subject.
+- stable subject and object IDs
+- declared predicate domain and range
+- source locator and license
+- confidence and review status
+- temporal validity and conditions when applicable
+- dispute records rather than silent overwrites
 
-For a new relation or language form:
+Do not add many finished answers for paraphrases. Add a query-plan example when
+the wording is missing, an inference rule when composition is missing, a
+dialogue scenario when state is missing, or a reviewed proposition when
+knowledge is missing. Real user failures must remain outside the development
+pack until their blind score is recorded.
 
-1. declare its predicate semantics and inverse/inheritance behavior
-2. map wording to a typed DV8 plan rather than a finished answer
-3. add the executor rule and reviewed realization
-4. add positive, paraphrased, negative, ambiguity, and abstention cases
-5. run both benchmarks and the full test suite
-
-Add example pages only when a graph proposition is the wrong representation.
-Their format is documented in `data/example-contexts/README.md` and
-`data/example-contexts/schema.json`.
-
-## Dictionary and thesaurus
-
-The requested complete sources are vendored under `data/lexicon/vendor/`:
-
-- Wordset dictionary: compressed complete dictionary archive
-- Moby Thesaurus: complete `words.txt` relation dataset
-
-`npm run lexicon:build` creates the fast conversational runtime index. The full
-Wordset archive is published at `public/lexicon/wordset-dictionary.json.gz` and
-loaded on demand. Source hashes, repository URLs, license notes, and the
-Wordset license remain beside the artifacts.
-
-## Release and verification
-
-Every build change must add one newest entry to `lib/lexi/releases.ts`. DV8's
-interactive tooltip displays knowledge, language, reasoning, dialogue,
-precision, and latency separately.
-
-```bash
-npm run lint
-npm run corpus:validate
-npm run benchmark:dv7
-npm run benchmark:dv8
-npm test
-```
-
-See `docs/ARCHITECTURE.md`, `docs/DOCUMENTATION_MAPPING.md`,
-`docs/LINGUISTIC_SOURCES.md`, and `docs/RELEASES.md` for detailed contracts.
+See `docs/ARCHITECTURE.md`, `docs/DV9_DATA.md`,
+`docs/DOCUMENTATION_MAPPING.md`, and `docs/RELEASES.md` for the complete
+contracts.

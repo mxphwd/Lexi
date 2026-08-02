@@ -30,6 +30,12 @@ import {
   matchDv8Task,
   type QueryPlan,
 } from "@/modules/dv8";
+import {
+  Dv9DialogueState,
+  dv9EngineStats,
+  matchDv9Data,
+  parseDv9LexicalPlan,
+} from "@/modules/dv9";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { LexiSessionMemory } from "@/modules/memory";
 import { analyseSentence, searchContexts } from "@/modules/search";
@@ -42,6 +48,7 @@ type EngineState = {
   activeSubjectIds: string[];
   memory?: LexiSessionMemory;
   dialogue?: Dv8DialogueState;
+  dv9Dialogue?: Dv9DialogueState;
   lastPlan?: QueryPlan;
 };
 
@@ -257,16 +264,39 @@ async function respondToClauseAsync(
   dictionaryOptions: DictionaryLookupOptions,
   state: EngineState,
 ): Promise<LexiReply> {
+  const dv9Conversation = state.dv9Dialogue?.interpret(input);
+  if (dv9Conversation) return dv9Conversation;
+
+  const lexicalPlan = parseDv9LexicalPlan(input, state.dv9Dialogue?.snapshot());
+  const preferLexicalData = Boolean(
+    lexicalPlan && (
+      lexicalPlan.operation !== "define" ||
+      lexicalPlan.contextHint ||
+      /\b(?:word|term|mean|meaning|dictionary|lexicon)\b/i.test(input)
+    ),
+  );
+  if (preferLexicalData) {
+    const dv9 = await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue).catch(() => undefined);
+    if (dv9) return dv9.reply;
+  }
+
   const ordinaryReply = respondToClause(input, state);
   if (
     ordinaryReply.trace.source === "core-phrase" ||
-    ordinaryReply.trace.source === "extended-pack" ||
     ordinaryReply.trace.source === "knowledge-graph" ||
     ordinaryReply.trace.source === "language-engine" ||
-    ordinaryReply.trace.source === "session-memory"
+    ordinaryReply.trace.source === "session-memory" ||
+    ordinaryReply.trace.source === "dv9-data-engine"
   ) {
     return ordinaryReply;
   }
+
+  const dv9 = preferLexicalData
+    ? undefined
+    : await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue).catch(() => undefined);
+  if (dv9) return dv9.reply;
+
+  if (ordinaryReply.trace.source === "extended-pack") return ordinaryReply;
 
   const term = extractDefinitionTerm(input);
   if (!term) return ordinaryReply;
@@ -333,6 +363,7 @@ async function respondAsyncWithState(
   dictionaryOptions: DictionaryLookupOptions,
   state: EngineState,
 ): Promise<LexiReply> {
+  state.lastPlan = undefined;
   const clauses = splitIntoClauses(input);
   const replies: LexiReply[] = [];
   for (const clause of clauses) {
@@ -346,10 +377,12 @@ async function respondAsyncWithState(
 export class LexiSession {
   private readonly memory = new LexiSessionMemory();
   private readonly dialogue = new Dv8DialogueState();
+  private readonly dv9Dialogue = new Dv9DialogueState();
   private readonly state: EngineState = {
     activeSubjectIds: [],
     memory: this.memory,
     dialogue: this.dialogue,
+    dv9Dialogue: this.dv9Dialogue,
   };
 
   respond(input: string): LexiReply {
@@ -373,6 +406,7 @@ export class LexiSession {
     return {
       ...this.memory.snapshot(),
       propositions: this.dialogue.snapshot(),
+      lexicalDialogue: this.dv9Dialogue.snapshot(),
     };
   }
 }
@@ -403,6 +437,7 @@ export function corpusStats() {
   const extended = extendedPackStats();
   const dv7 = dv7AvailabilityStats();
   const dv8 = dv8EngineStats();
+  const dv9 = dv9EngineStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
@@ -419,5 +454,6 @@ export function corpusStats() {
     semanticConstructions: dv7.semanticConstructions,
     availabilityMultipleOverDv6: dv7.multipleOverDv6,
     dv8,
+    dv9,
   };
 }

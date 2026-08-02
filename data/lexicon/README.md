@@ -21,3 +21,9 @@ npm run lexicon:build
 Review the generated definitions and relations before accepting the change.
 Moby relations are broad thesaurus associations, not always strict synonyms;
 applications that need narrow synonymy should add a reviewed relation type.
+
+DV9 additionally compiles the complete sources into first-character shards
+under `public/dv9/lexicon/`. These preserve explicit Wordset senses and bounded
+Moby associations while avoiding a full-dictionary download for every lexical
+question. Run `npm run dv9:build-data` and `npm run dv9:validate-data` after
+changing either vendored source.

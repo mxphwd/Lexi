@@ -28,6 +28,11 @@ dialogue, precision, and latency measurements over one synthetic availability
 multiplier. A like-for-like gain must run both versions through the same
 evaluator.
 
+Beginning with DV9, large generated data releases must also disclose the
+difference between schema-validated, source-attested, mechanically derived,
+disputed, and independently reviewed facts. Generated held-out questions must
+not be described as real user failures.
+
 The first release has no predecessor and is labelled as the baseline. Every
 later tooltip calculates and displays its percentage change from the immediately
 preceding point.

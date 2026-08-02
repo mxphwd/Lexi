@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "build": "260802-DV9",
+  "generatedAt": "2026-08-02",
+  "methodology": {
+    "validatedDoesNotMeanIndependentlyReviewed": true,
+    "statement": "Every row is schema-checked, referentially valid, deduplicated, and provenance-bearing. Source-attested and mechanically derived rows remain distinct from independently reviewed general-knowledge facts.",
+    "benchmarkIsolation": "The held-out pack uses frames absent from the query-plan example pack and is never imported by the runtime engine."
+  },
+  "targets": {
+    "validatedAtomicFacts": 800000,
+    "entityMinimum": 300000,
+    "entityMaximum": 400000,
+    "typedRelationProfiles": 3200,
+    "explicitLexicalSensesMinimum": 150000,
+    "explicitLexicalSensesMaximum": 200000,
+    "queryPlanExamples": 100000,
+    "inferenceRules": 1100,
+    "dialogueScenarios": 40000,
+    "heldOutBlindQuestions": 40000
+  },
+  "counts": {
+    "validatedAtomicFacts": 800000,
+    "sourceAttestedFacts": 636726,
+    "mechanicallyDerivedFacts": 163274,
+    "independentlyReviewedNewFacts": 0,
+    "entities": 323853,
+    "lemmas": 160579,
+    "explicitLexicalSenses": 163274,
+    "typedRelationProfiles": 3200,
+    "baseRelationPredicates": 32,
+    "queryPlanExamples": 100000,
+    "inferenceRules": 1100,
+    "inferenceRuleFamilies": 11,
+    "dialogueScenarios": 40000,
+    "heldOutBlindQuestions": 40000,
+    "userReportedFailureQuestions": 0,
+    "directFinishedConstructions": 0
+  },
+  "provenance": {
+    "W": {
+      "label": "Wordset dictionary",
+      "repository": "https://github.com/wordset/wordset-dictionary",
+      "license": "CC BY-SA 4.0",
+      "sha256": "5702e39c0049de5a2ef4639ab44adb84d47110d998beafdd74f8e04f160f30c9"
+    },
+    "M": {
+      "label": "Moby thesaurus",
+      "repository": "https://github.com/words/moby",
+      "license": "Public domain Moby source; see vendored notice for additions",
+      "sha256": "63fcdcec2efe34414825945c7837f4381c7df7344ae34fdf1e8368eda19d59f3",
+      "caveat": "Moby edges are lexical associations and are not asserted as strict synonyms."
+    },
+    "D": {
+      "label": "DV9 deterministic derivation",
+      "method": "Referential inverse generated from an attested Wordset sense edge.",
+      "confidence": 1
+    }
+  },
+  "artifacts": {
+    "entities": {
+      "path": "data/dv9/packs/entities.jsonl.gz",
+      "sha256": "d865a2e7d745c97579041d847cbbeb8358c59ee2054b5ba1a96111e5f655fd81",
+      "sizeBytes": 7879894,
+      "count": 323853
+    },
+    "atomicFacts": {
+      "path": "data/dv9/packs/atomic-facts.jsonl.gz",
+      "sha256": "854d12240280dab56256ba82cd1f334322d06578bfbcdc9ef0ed2c9cbb62e7a8",
+      "sizeBytes": 18616737,
+      "count": 800000
+    },
+    "relationProfiles": {
+      "path": "data/dv9/packs/relation-profiles.jsonl.gz",
+      "sha256": "5fa7e0693223571864ff04bc15f36f01b85e6532f4b60aa6c2d1b61ba82ad217",
+      "sizeBytes": 18201,
+      "count": 3200
+    },
+    "queryPlanExamples": {
+      "path": "data/dv9/packs/query-plan-examples.jsonl.gz",
+      "sha256": "a8ad2321b07e0ee70bc60ca48be5c853cf52631e41cef43bf85155f66a6af93a",
+      "sizeBytes": 1330876,
+      "count": 100000
+    },
+    "inferenceRules": {
+      "path": "data/dv9/packs/inference-rules.jsonl.gz",
+      "sha256": "7a2277300552d4344218fe705b8a26080220429648e038c8bc76a5686225f582",
+      "sizeBytes": 7080,
+      "count": 1100
+    },
+    "dialogueScenarios": {
+      "path": "data/dv9/packs/dialogue-scenarios.jsonl.gz",
+      "sha256": "ac9bfef922c5efe04d2679fe914bd6184bb5a83ae55bede84b0e5362ec385128",
+      "sizeBytes": 541841,
+      "count": 40000
+    },
+    "heldOutBlindQuestions": {
+      "path": "data/dv9/packs/held-out-blind-questions.jsonl.gz",
+      "sha256": "ec280bd34a010252f6aefe193084b098fe0f1706e4287fb0fb5e3bc48907c77e",
+      "sizeBytes": 1373035,
+      "count": 40000
+    }
+  },
+  "runtimeShards": [
+    {
+      "shard": "_",
+      "entries": 9,
+      "path": "public/dv9/lexicon/_.json.gz",
+      "sha256": "64749543b0f40edde7b599863e424b9119ce3a37b5ac38ad1e9ca0749e50bd24",
+      "sizeBytes": 1140
+    },
+    {
+      "shard": "3",
+      "entries": 1,
+      "path": "public/dv9/lexicon/3.json.gz",
+      "sha256": "af4044668e04de60b32b268945e42607fdc9dbb0c81383c60eedf2d556bd235e",
+      "sizeBytes": 138
+    },
+    {
+      "shard": "a",
+      "entries": 9901,
+      "path": "public/dv9/lexicon/a.json.gz",
+      "sha256": "edd09d7d2a39e760f3fd57e3ece6dc1b1872a060029920fde03e11e79ad14c85",
+      "sizeBytes": 972071
+    },
+    {
+      "shard": "b",
+      "entries": 10153,
+      "path": "public/dv9/lexicon/b.json.gz",
+      "sha256": "1610bb49d05276f56e62efa22abf0525797317ff4c64a9da9a397bdc1d46d1ff",
+      "sizeBytes": 1014983
+    },
+    {
+      "shard": "c",
+      "entries": 14870,
+      "path": "public/dv9/lexicon/c.json.gz",
+      "sha256": "c7da466ca72a3a0d14c6860c2705c89a320169148890ad3d5819c8d1b294e5b4",
+      "sizeBytes": 1524522
+    },
+    {
+      "shard": "d",
+      "entries": 8262,
+      "path": "public/dv9/lexicon/d.json.gz",
+      "sha256": "3eb6d64dd27cec8ad6ce16134dcec5855165b746d1439b346b1330a581d2bd81",
+      "sizeBytes": 906429
+    },
+    {
+      "shard": "e",
+      "entries": 5646,
+      "path": "public/dv9/lexicon/e.json.gz",
+      "sha256": "b6aee609d98d226388443cb9f2808461c5f7aed038789ea55a9c0701dd7bc816",
+      "sizeBytes": 599426
+    },
+    {
+      "shard": "f",
+      "entries": 7248,
+      "path": "public/dv9/lexicon/f.json.gz",
+      "sha256": "9bc05a96a94ceda9cf5820466a25ef45771b20573a3533ec2ab856007f9a029e",
+      "sizeBytes": 767486
+    },
+    {
+      "shard": "g",
+      "entries": 5877,
+      "path": "public/dv9/lexicon/g.json.gz",
+      "sha256": "0751cd26ea2eab5ae8f239205ce858bd818450764c0a5747bf5c817be01100fb",
+      "sizeBytes": 571666
+    },
+    {
+      "shard": "h",
+      "entries": 6418,
+      "path": "public/dv9/lexicon/h.json.gz",
+      "sha256": "a8f4e8fa3dca2e2367a40f710ebbb08a939de77dd6073ccb41b77994773c2214",
+      "sizeBytes": 633417
+    },
+    {
+      "shard": "i",
+      "entries": 6144,
+      "path": "public/dv9/lexicon/i.json.gz",
+      "sha256": "f8e1d5a15d6d4f707be1228431004bed2a5f96eb9d528e87e85eec3e432e3b11",
+      "sizeBytes": 651240
+    },
+    {
+      "shard": "j",
+      "entries": 1184,
+      "path": "public/dv9/lexicon/j.json.gz",
+      "sha256": "f14afbc8f5951115cf14bcde899facc805262c8e92e848ac4ce855eff4660d27",
+      "sizeBytes": 141973
+    },
+    {
+      "shard": "k",
+      "entries": 1347,
+      "path": "public/dv9/lexicon/k.json.gz",
+      "sha256": "4d5c70d7d6b88fb96dfa63d9179244953c5ded40b75c642955af21d3c0a3a915",
+      "sizeBytes": 137051
+    },
+    {
+      "shard": "l",
+      "entries": 5966,
+      "path": "public/dv9/lexicon/l.json.gz",
+      "sha256": "8e32147ea5e36acef313911b3357edfb0cd87adbb49fc22b9d4e8e22a873b81b",
+      "sizeBytes": 594943
+    },
+    {
+      "shard": "m",
+      "entries": 8553,
+      "path": "public/dv9/lexicon/m.json.gz",
+      "sha256": "c551cdce22e40a8cb4961be83022440445442ab8965071d415844327b7a8ddf1",
+      "sizeBytes": 838832
+    },
+    {
+      "shard": "n",
+      "entries": 4031,
+      "path": "public/dv9/lexicon/n.json.gz",
+      "sha256": "af30b6a1b39393ff3a948f262af4eb72a11d877a1f0f076eae0e961bab1f4cf3",
+      "sizeBytes": 376601
+    },
+    {
+      "shard": "o",
+      "entries": 4261,
+      "path": "public/dv9/lexicon/o.json.gz",
+      "sha256": "acc6b4819add2f8302f6ddfc70a23b3b2da9b2670a3d1fe9c7b5ccfd2400ede7",
+      "sizeBytes": 416864
+    },
+    {
+      "shard": "p",
+      "entries": 12860,
+      "path": "public/dv9/lexicon/p.json.gz",
+      "sha256": "80654ccdc08149468df031720e8acba4efdf26fc2e8654ed548c02d27c0a463d",
+      "sizeBytes": 1324467
+    },
+    {
+      "shard": "q",
+      "entries": 603,
+      "path": "public/dv9/lexicon/q.json.gz",
+      "sha256": "bd557da207238c1d258d9f43e62bfcb89bc3a0a7f5a9f752426ffdf1fd8a540a",
+      "sizeBytes": 77777
+    },
+    {
+      "shard": "r",
+      "entries": 7208,
+      "path": "public/dv9/lexicon/r.json.gz",
+      "sha256": "274d202957453e044e22c44631803ac4de76b2931706b2f1a2a99d8c1c698a05",
+      "sizeBytes": 807903
+    },
+    {
+      "shard": "s",
+      "entries": 18357,
+      "path": "public/dv9/lexicon/s.json.gz",
+      "sha256": "25beea6156f38efa470bbff2e7c04ac10aeb1521064bf20f7b097fcf3d526c5c",
+      "sizeBytes": 1929019
+    },
+    {
+      "shard": "t",
+      "entries": 9023,
+      "path": "public/dv9/lexicon/t.json.gz",
+      "sha256": "8c53fb96fb1f47c3c9c9fde4d4dc8c4cecb9104ff98cbfbffc753236b48f8188",
+      "sizeBytes": 894026
+    },
+    {
+      "shard": "u",
+      "entries": 5028,
+      "path": "public/dv9/lexicon/u.json.gz",
+      "sha256": "0bd72b15130d6b724811aec5644aba46e6b1a22f19e5e2b79c23c0dc1b341029",
+      "sizeBytes": 471910
+    },
+    {
+      "shard": "v",
+      "entries": 2170,
+      "path": "public/dv9/lexicon/v.json.gz",
+      "sha256": "a812389bc26a38ecf2ff7ddfdcc1c81571a664b0c7eb487e6c6d874d9d4a5c61",
+      "sizeBytes": 245652
+    },
+    {
+      "shard": "w",
+      "entries": 4646,
+      "path": "public/dv9/lexicon/w.json.gz",
+      "sha256": "2ef5cee67e99d4167a3504604045fb33c11a33232b0ffdc304324f5c7dba58ff",
+      "sizeBytes": 470217
+    },
+    {
+      "shard": "x",
+      "entries": 147,
+      "path": "public/dv9/lexicon/x.json.gz",
+      "sha256": "8c75b417d9488c885d58a4fd1aefd8d497aaf20b5da5cf9dc398043dd5055c0c",
+      "sizeBytes": 10912
+    },
+    {
+      "shard": "y",
+      "entries": 384,
+      "path": "public/dv9/lexicon/y.json.gz",
+      "sha256": "dccc614b25db4de0d7b08972ed619ad51dce12ba4d0f3a9943f03ec4f09246ac",
+      "sizeBytes": 43326
+    },
+    {
+      "shard": "z",
+      "entries": 282,
+      "path": "public/dv9/lexicon/z.json.gz",
+      "sha256": "7e88d4aefd398a8a297d0b955e7246e2dcd5205d697eb29cde7464c0b7e00d61",
+      "sizeBytes": 28144
+    }
+  ]
+}

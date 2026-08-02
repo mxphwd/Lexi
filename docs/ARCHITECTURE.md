@@ -1,91 +1,107 @@
-# Lexi DV8 architecture
+# Lexi DV9 architecture
 
 ## Contract
 
-Lexi is deterministic and source-bound. It can read a recorded fact, join facts
-through a declared rule, run a bounded transformation, realize the resulting
-proposition, use an attributed dictionary definition, match a reviewed example,
-or abstain. It cannot create a factual edge that is absent from those sources.
+Lexi is deterministic and source-bound. It may read a proposition, select an
+explicit dictionary sense, execute a declared rule, perform a bounded
+transformation, realize a proposition, use a reviewed example, or abstain. It
+may not invent a missing edge or silently reinterpret a thesaurus association
+as a verified fact.
 
 ```text
 English input
-  → bounded clause segmentation and session memory
-  → normalization, morphology, and compiled word-sense resolution
-  → typed QueryPlan (patterns, variables, filters, modifiers, operation)
-  → normalized fact indexes plus proposition-aware dialogue state
-  → deterministic joins, rules, comparisons, aggregates, and truth checks
-  → reviewed answer realization
-  → answer + fact IDs + proof, or calibrated abstention
+  → clause segmentation and session memory
+  → DV8 typed subject/relation/query planning
+  → reviewed knowledge-graph execution when a typed subject is known
+  → DV9 lexical query planning for the unresolved lexical long tail
+  → one compiled shard, explicit senses, provenance, and confidence
+  → proposition realization or calibrated abstention
 ```
 
-## Typed query language
+## DV8 execution foundation
 
-`modules/dv8/types.ts` declares seven operations: `lookup`, `ask`, `select`,
-`aggregate`, `compare`, `transform`, and `clarify`. Triple patterns contain
-entity, variable, text, number, or boolean terms. Filters cover class/kind,
-literal comparison, containment, time, and conditions. Quantifiers distinguish
-any, all, none, and exact claims.
+`modules/dv8/types.ts` defines lookups, boolean questions, selection,
+aggregation, comparison, bounded transformations, and clarification. Its plans
+contain triple patterns, variables, filters, quantifiers, temporal conditions,
+negation, and answer style.
 
-`modules/dv8/parser.ts` builds this representation. It does not execute a fact
-while parsing and does not store one finished answer per wording.
+`modules/dv8/facts.ts` and `executor.ts` provide forward and inverse lookup,
+joins, inheritance, transitivity, comparison, aggregation, condition checks,
+three-valued truth, and proof steps. These remain the primary path for curated
+general knowledge.
 
-## Compiled lexical senses
+## DV9 data model
 
-`modules/dv8/lexicon.ts` compiles canonical names, aliases, and lemmatized forms
-into a token trie once. Prompt resolution walks input tokens rather than
-constructing a regular expression for every alias. Every alias retains all of
-its senses. A unique context-compatible kind can select a sense; otherwise the
-plan asks for clarification.
+`modules/dv9/types.ts` distinguishes provenance, confidence, review status,
+temporal validity, lexical operations, runtime meanings, and dialogue state.
+The generator never stores a finished answer for each wording.
 
-## Normalized fact indexes
+The data graph contains lemma nodes and sense nodes. Its principal atomic
+relations are:
 
-`modules/dv8/facts.ts` creates an indexed view without destroying source
-propositions. Lists become atomic facts. Safe references become entity edges.
-Numbers and units are normalized, while proposition ID, qualifiers, and source
-remain attached. The store indexes subject–predicate, predicate, and
-predicate–object access.
+```text
+lemma  —has_sense→        sense
+sense  —sense_of→         lemma
+sense  —has_definition→   text
+sense  —part_of_speech→   typed literal
+sense  —usage_example→    text
+lemma  —lexically_associated→ lemma
+```
 
-## Execution
+The Moby relation is deliberately named `lexically_associated`; it is not a
+strict synonym assertion.
 
-`modules/dv8/executor.ts` runs:
+## Provenance and uncertainty
 
-- direct and inverse indexed lookup
-- multi-pattern joins and class/kind filters
-- classification paths, transitivity, and declared inheritance
-- distinct count aggregates and unit-compatible comparisons
-- functional-property false answers when a different value is explicit
-- boolean negatives and three-valued yes/no/unknown semantics
-- any/all/none quantifiers over recorded class members
-- condition compatibility and contradiction checks
-- temporal refusal for time-varying predicates without dated evidence
+Every generated fact contains a source code, source-local evidence locator,
+confidence, and review class. The manifest identifies immutable source hashes,
+repositories, and license notes. Source-attested, mechanically derived,
+disputed, and independently reviewed material are different states.
 
-Every result includes the facts and rule steps that produced it. Missing support
-returns unknown; it is not turned into a positive statement by a lexical
-fallback.
+“Validated atomic fact” means the row passed schema, reference, duplicate,
+source, and confidence checks. It does not mean external human fact checking.
+Temporal `validFrom`/`validTo`, conditions, and dispute references are present
+in the DV9 schema for future curated facts.
 
-## Routing and abstention
+## Compiled runtime shards
 
-Foundational phrases, bounded calculations, and established conversation
-repairs remain deterministic gates. A factual plan uses the DV8 executor. If a
-known subject is paired with an unsupported property, Lexi names the property
-and abstains before the example corpus. Non-factual interactions such as time,
-date, directions, and emotional support can still use reviewed compatibility
-records.
+`scripts/build-dv9-data-pack.mjs` compiles 28 first-character shards. Each shard
+contains stable lemma IDs, explicit sense IDs, part-of-speech literals,
+definitions, examples, and bounded attributed associations. The browser loads
+and caches only the shard required by the current term.
 
-## Dialogue
+`modules/dv9/loader.ts` validates every decoded entry before exposing it.
+Punctuation-bearing and Latin-extended headwords use lexical-safe
+normalization, so abbreviations, slashes, apostrophes, and diacritics do not
+collapse into unrelated terms.
 
-`modules/dv8/dialogue.ts` stores up to 24 session-local turn propositions:
-subjects, relation, fact IDs, question, answer, proof, and goal. It supports
-proof, simplification, active-subject, and goal follow-ups. Personal details
-remain in `modules/memory/`. Nothing persists across sessions.
+## Language and dialogue
 
-## Measurement and limits
+`modules/dv9/parser.ts` maps definition, sense-listing, grammatical-category,
+usage-example, lexical-association, and source questions into explicit lexical
+plans. Context hints select among recorded senses without deleting the other
+senses.
 
-DV8 reports knowledge, language robustness, reasoning, dialogue, precision, and
-latency separately. `modules/benchmark/dv8.ts` runs a 4,124-case stateless suite,
-120 dialogue sessions, and the frozen DV7 path on the same stateless cases.
+`modules/dv9/dialogue.ts` stores the active lexical term, selected sense index,
+prior-term stack, and a declared conversational goal. Follow-ups reuse that
+state only inside the current session.
 
-Passing the suite does not imply universal language or knowledge. The graph is
-small, many values still originate as reviewed free text, transformations are
-bounded, time-sensitive facts need qualified sources, and the parser cannot
-resolve every English construction. Add real failures blindly before fixes.
+## Rules and relation profiles
+
+The generated pack contains 3,200 predicate/domain/range profiles and 1,100
+inspectable rule instances across inverse, symmetric, transitive, inheritance,
+containment, comparison, negation, universal/existential quantification,
+temporal validity, and causal-chain families. The generic DV8 executor supplies
+the corresponding execution primitives; profiles constrain their typed use.
+
+## Measurement boundary
+
+The 100,000 query-plan examples are development data. The 40,000 evaluation
+questions are stored separately, use different surface frames, and are never
+imported by the runtime. They are still mechanically source-derived, not a
+substitute for real user failures.
+
+DV9 therefore reports language mapping, end-to-end lexical execution, data
+integrity, and parser latency. It does not convert those results into a universal
+availability multiplier. Future real failures must be frozen and scored before
+their fixes are added.
