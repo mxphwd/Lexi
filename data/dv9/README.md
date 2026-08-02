@@ -9,5 +9,8 @@ JSON Lines compressed with gzip. Their tuple layouts are generated and consumed
 only by the DV9 build, validation, and benchmark scripts; the browser loads the
 smaller term shards under `public/dv9/lexicon/`.
 
+The atomic-fact pack is divided into deterministic 50,000-row shards so every
+artifact remains independently verifiable and safely publishable.
+
 Do not edit generated gzip files manually. Change the generator or reviewed
 source material, regenerate, validate, and inspect the resulting manifest.

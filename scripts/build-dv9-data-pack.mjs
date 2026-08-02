@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { createWriteStream } from "node:fs";
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { once } from "node:events";
 import { createGzip, gunzipSync } from "node:zlib";
@@ -60,6 +60,44 @@ async function writeGzipLines(file, rows) {
   gzip.end();
   await once(output, "close");
   return { ...(await fileMetadata(file)), count };
+}
+
+async function writeGzipLineShards(directory, prefix, rows, rowsPerShard) {
+  await mkdir(directory, { recursive: true });
+  const shards = [];
+  let gzip;
+  let output;
+  let file;
+  let shardCount = 0;
+  let totalCount = 0;
+
+  async function openShard() {
+    file = path.join(directory, `${prefix}-${String(shards.length).padStart(2, "0")}.jsonl.gz`);
+    gzip = createGzip({ level: 9 });
+    output = createWriteStream(file);
+    gzip.pipe(output);
+    shardCount = 0;
+  }
+
+  async function closeShard() {
+    if (!gzip || !output || !file) return;
+    gzip.end();
+    await once(output, "close");
+    shards.push({ ...(await fileMetadata(file)), count: shardCount });
+    gzip = undefined;
+    output = undefined;
+    file = undefined;
+  }
+
+  for await (const row of rows) {
+    if (!gzip) await openShard();
+    if (!gzip.write(`${JSON.stringify(row)}\n`)) await once(gzip, "drain");
+    shardCount += 1;
+    totalCount += 1;
+    if (shardCount >= rowsPerShard) await closeShard();
+  }
+  await closeShard();
+  return { count: totalCount, shards };
 }
 
 async function writeGzipJson(file, value) {
@@ -357,10 +395,11 @@ async function* dialogueRows() {
 
 await mkdir(packRoot, { recursive: true });
 await mkdir(runtimeRoot, { recursive: true });
+await rm(path.join(packRoot, "atomic-facts.jsonl.gz"), { force: true });
 
 const artifacts = {};
 artifacts.entities = await writeGzipLines(path.join(packRoot, "entities.jsonl.gz"), entityRows());
-artifacts.atomicFacts = await writeGzipLines(path.join(packRoot, "atomic-facts.jsonl.gz"), factRows());
+artifacts.atomicFacts = await writeGzipLineShards(packRoot, "atomic-facts", factRows(), 50_000);
 artifacts.relationProfiles = await writeGzipLines(path.join(packRoot, "relation-profiles.jsonl.gz"), relationRows());
 artifacts.queryPlanExamples = await writeGzipLines(path.join(packRoot, "query-plan-examples.jsonl.gz"), queryPlanRows());
 artifacts.inferenceRules = await writeGzipLines(path.join(packRoot, "inference-rules.jsonl.gz"), ruleRows());

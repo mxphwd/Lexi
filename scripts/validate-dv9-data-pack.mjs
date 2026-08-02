@@ -26,7 +26,7 @@ async function* rows(file) {
   }
 }
 
-const artifactEntries = Object.values(manifest.artifacts);
+const artifactEntries = Object.values(manifest.artifacts).flatMap((artifact) => artifact.shards ?? [artifact]);
 for (const artifact of artifactEntries) {
   const file = path.join(root, artifact.path);
   assert(await sha256(file) === artifact.sha256, `Hash mismatch for ${artifact.path}.`);
@@ -61,26 +61,28 @@ let sourceAttestedFacts = 0;
 let mechanicallyDerivedFacts = 0;
 const functionalValues = new Map();
 const functionalPredicates = new Set(["sense_of", "part_of_speech"]);
-for await (const row of rows(path.join(root, manifest.artifacts.atomicFacts.path))) {
-  assert(Array.isArray(row) && row.length === 9, "Invalid fact row.");
-  const [id, subject, predicate, objectKind, objectValue, source, evidence, confidence, reviewStatus] = row;
-  assert(!factIds.has(id), `Duplicate fact ${id}.`);
-  assert(entityIds.has(subject), `Missing fact subject ${subject}.`);
-  assert(relationPredicates.has(predicate), `Missing relation schema for ${predicate}.`);
-  if (objectKind === "entity") assert(entityIds.has(objectValue), `Missing fact object ${objectValue}.`);
-  assert(["W", "M", "D"].includes(source), `Unknown source ${source}.`);
-  assert(typeof evidence === "string" && evidence.length > 0, `Missing evidence for ${id}.`);
-  assert(Number.isFinite(confidence) && confidence >= 0 && confidence <= 1, `Invalid confidence for ${id}.`);
-  if (functionalPredicates.has(predicate)) {
-    const key = `${subject}\u0000${predicate}`;
-    const previous = functionalValues.get(key);
-    assert(previous === undefined || previous === objectValue, `Contradictory functional values for ${key}.`);
-    functionalValues.set(key, objectValue);
+for (const shard of manifest.artifacts.atomicFacts.shards) {
+  for await (const row of rows(path.join(root, shard.path))) {
+    assert(Array.isArray(row) && row.length === 9, "Invalid fact row.");
+    const [id, subject, predicate, objectKind, objectValue, source, evidence, confidence, reviewStatus] = row;
+    assert(!factIds.has(id), `Duplicate fact ${id}.`);
+    assert(entityIds.has(subject), `Missing fact subject ${subject}.`);
+    assert(relationPredicates.has(predicate), `Missing relation schema for ${predicate}.`);
+    if (objectKind === "entity") assert(entityIds.has(objectValue), `Missing fact object ${objectValue}.`);
+    assert(["W", "M", "D"].includes(source), `Unknown source ${source}.`);
+    assert(typeof evidence === "string" && evidence.length > 0, `Missing evidence for ${id}.`);
+    assert(Number.isFinite(confidence) && confidence >= 0 && confidence <= 1, `Invalid confidence for ${id}.`);
+    if (functionalPredicates.has(predicate)) {
+      const key = `${subject}\u0000${predicate}`;
+      const previous = functionalValues.get(key);
+      assert(previous === undefined || previous === objectValue, `Contradictory functional values for ${key}.`);
+      functionalValues.set(key, objectValue);
+    }
+    if (reviewStatus === "mechanically-derived") mechanicallyDerivedFacts += 1;
+    else sourceAttestedFacts += 1;
+    factIds.add(id);
+    facts += 1;
   }
-  if (reviewStatus === "mechanically-derived") mechanicallyDerivedFacts += 1;
-  else sourceAttestedFacts += 1;
-  factIds.add(id);
-  facts += 1;
 }
 assert(facts === manifest.counts.validatedAtomicFacts, `Fact count mismatch: ${facts}.`);
 assert(sourceAttestedFacts === manifest.counts.sourceAttestedFacts, "Source-attested fact count mismatch.");
@@ -137,4 +139,5 @@ console.log(JSON.stringify({
   queryPlans,
   blind,
   runtimeShards: manifest.runtimeShards.length,
+  atomicFactShards: manifest.artifacts.atomicFacts.shards.length,
 }, null, 2));

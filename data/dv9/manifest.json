@@ -65,10 +65,105 @@
       "count": 323853
     },
     "atomicFacts": {
-      "path": "data/dv9/packs/atomic-facts.jsonl.gz",
-      "sha256": "854d12240280dab56256ba82cd1f334322d06578bfbcdc9ef0ed2c9cbb62e7a8",
-      "sizeBytes": 18616737,
-      "count": 800000
+      "count": 800000,
+      "shards": [
+        {
+          "path": "data/dv9/packs/atomic-facts-00.jsonl.gz",
+          "sha256": "1cd0a224be3384e0b2096cd2fadbe3fe153afe26231fe8495d82e5278ea12424",
+          "sizeBytes": 1217041,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-01.jsonl.gz",
+          "sha256": "8cb7f20c63bef05841868aa0f72799961018a37d4e1867b3e7e2011c2fb65bff",
+          "sizeBytes": 1218631,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-02.jsonl.gz",
+          "sha256": "3d66d9c75a288f2a1964776d79801250a3b2899df2d4088c318cca5e6141ff62",
+          "sizeBytes": 1253742,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-03.jsonl.gz",
+          "sha256": "2f92b93ed2b67fb49527e47d4cd7abf644e33fd4edc93d4947d3facadafceb37",
+          "sizeBytes": 1190772,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-04.jsonl.gz",
+          "sha256": "cc0fd803750e7fc4fa8e0f5a408be3ee9e15ed9bc756c5ca6b5a9da1d43b147b",
+          "sizeBytes": 1228438,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-05.jsonl.gz",
+          "sha256": "ac1e36c5af4a2415e10486fe27a5a42c99aaa0fe8feeddb5bc5da972201eb675",
+          "sizeBytes": 1226391,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-06.jsonl.gz",
+          "sha256": "fedf7209e99d71ba8cfc764f8af22c8ad6922ad70f4d987119c8bcf66f8fbca5",
+          "sizeBytes": 1220984,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-07.jsonl.gz",
+          "sha256": "e7dd6998248a0e9ddb38eff3e4090360462ec88e4bbbe270a65e653a4584c3dd",
+          "sizeBytes": 1232896,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-08.jsonl.gz",
+          "sha256": "95e2aa68e50430c4557bc7f966647764eaef395f1e3813d1c43cb3f4e202f30d",
+          "sizeBytes": 1212398,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-09.jsonl.gz",
+          "sha256": "93ca3f0f00f66f43115d681429285f173fa715dc476d7013f8ac2e538082b0d4",
+          "sizeBytes": 1235373,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-10.jsonl.gz",
+          "sha256": "7725335ffaf702770c9fa3eef1f3535071fd3cc9ddc827079cd287c0796a4eaf",
+          "sizeBytes": 1177302,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-11.jsonl.gz",
+          "sha256": "47dcfdcc569ba66108aec9d389b5e964aa267e5a6ff7c6de56e87c09a0e69bd5",
+          "sizeBytes": 1252315,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-12.jsonl.gz",
+          "sha256": "d3144763a17f01443a00230ad932ec8f6cb6610cea2e54b12e1a2751cefb5c98",
+          "sizeBytes": 1204721,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-13.jsonl.gz",
+          "sha256": "cffec01430fb71a406376b56f2f85504054e582089aee68a7b34529b998809aa",
+          "sizeBytes": 1154412,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-14.jsonl.gz",
+          "sha256": "d25de134115fd46f8b1b3172ed7a22baeae9ee1c6e9556e723f0d147ff301cb5",
+          "sizeBytes": 794047,
+          "count": 50000
+        },
+        {
+          "path": "data/dv9/packs/atomic-facts-15.jsonl.gz",
+          "sha256": "7819aa5f2bc2476dd8c29b5fe62373cf6406a0c72b8ebbdc59cf90e82ae4c822",
+          "sizeBytes": 800716,
+          "count": 50000
+        }
+      ]
     },
     "relationProfiles": {
       "path": "data/dv9/packs/relation-profiles.jsonl.gz",
