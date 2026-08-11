@@ -154,6 +154,29 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "Classified 636,726 rows as source-attested and 163,274 as mechanically derived. DV9 does not mislabel either class as newly independently reviewed general knowledge.",
     ],
   },
+  {
+    build: "260811-DV10",
+    label: "Pre-build 260811-DV10",
+    shortLabel: "DV10",
+    date: "11 August 2026",
+    capabilityIndex: 100,
+    metric: "2,500 frozen human failures",
+    measurements: [
+      { label: "Factual knowledge", value: "0.0%" },
+      { label: "Language route", value: "35.0%" },
+      { label: "Reasoning", value: "0.0%" },
+      { label: "Dialogue", value: "100.0%" },
+      { label: "Precision probes", value: "100.0%" },
+      { label: "Sense selection", value: "100.0%" },
+      { label: "Latency p95", value: "120.48 ms" },
+    ],
+    notes: [
+      "Connected typed language plans, source-reviewed propositions, graph traversal, explicit lexical senses, deterministic rules, dialogue goals, realization, and proof into one precedence path.",
+      "Froze 2,500 human-contributed DV9 failures outside every runtime and development pack, retaining questions, expected answers, outcomes, routes, confidence, and failure labels with an immutable artifact hash.",
+      "On that difficult factual pack, DV10 recorded 0 correct answers, 2,141 unsupported abstentions, 287 incorrect answers, and 72 clarifications; it therefore does not claim the 88–92% correctness gate.",
+      "The separate 100-case sense and 100-scenario dialogue surfaces reached 100%, while confident incorrect factual answers remained 3.40%; no availability multiplier is published.",
+    ],
+  },
 ] as const;
 
 export function releaseImprovement(index: number) {

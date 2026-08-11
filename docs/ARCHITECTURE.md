@@ -1,4 +1,4 @@
-# Lexi DV9 architecture
+# Lexi DV10 architecture
 
 ## Contract
 
@@ -10,13 +10,31 @@ as a verified fact.
 
 ```text
 English input
-  → clause segmentation and session memory
-  → DV8 typed subject/relation/query planning
-  → reviewed knowledge-graph execution when a typed subject is known
-  → DV9 lexical query planning for the unresolved lexical long tail
-  → one compiled shard, explicit senses, provenance, and confidence
-  → proposition realization or calibrated abstention
+  → DV10 normalization, compositional plan, and dialogue goal
+  → reviewed proposition, graph traversal, deterministic rule, or explicit sense
+  → legacy DV8/DV9 execution only when its subject and relation remain compatible
+  → calibrated abstention for an incompatible route
+  → proposition realization and proof ledger
 ```
+
+## DV10 connected semantic path
+
+`modules/dv10/types.ts` defines one query-plan vocabulary for subjects, objects,
+relations, conditions, quantities, negation, time, requested answer shape, and
+evidence. `grammar.ts` maps supported compositional language before generic
+clause splitting, so a story problem containing “and” remains one executable
+state transition.
+
+`evidence.ts` stores source-reviewed propositions and reuses the DV8 graph for
+typed membership traversal. `senses.ts` maps multiple contextual phrasings into
+explicit DV9 Wordset senses using declared semantic neighborhoods; it clarifies
+rather than merging tied senses. `realizer.ts` renders only executed
+propositions or rules. `dialogue.ts` records every answer, active proposition,
+proof, reference, and goal across the whole engine, not only lexical turns.
+
+`calibration.ts` rejects a high-confidence legacy response when its proven
+relation cannot satisfy the requested proposition. This is a compatibility
+guard, not a source of new answers.
 
 ## DV8 execution foundation
 
@@ -105,3 +123,10 @@ DV9 therefore reports language mapping, end-to-end lexical execution, data
 integrity, and parser latency. It does not convert those results into a universal
 availability multiplier. Future real failures must be frozen and scored before
 their fixes are added.
+
+DV10 implements that boundary with the immutable 2,500-row artifact documented
+in `docs/DV10_BENCHMARK.md`. The artifact is excluded from runtime imports and
+reports correct answers, correct abstentions, incorrect answers, unsupported
+abstentions, and clarifications separately. DV10 does not pass its factual
+correctness or confident-error acceptance gates, so those failures remain part
+of the published release record.

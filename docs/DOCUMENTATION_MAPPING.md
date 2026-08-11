@@ -1,7 +1,8 @@
 # Supplied documentation mapping
 
 The uploaded Lexi documentation describes five fundamental stages. DV8 added
-typed execution; DV9 adds provenance-bearing lexical scale and explicit senses
+typed execution; DV9 adds provenance-bearing lexical scale and explicit senses,
+and DV10 connects those layers through one proof-bearing semantic precedence path
 without replacing those compatibility layers:
 
 | Documentation mechanism | Prototype implementation |
@@ -13,6 +14,8 @@ without replacing those compatibility layers:
 | Measure ordinary-question coverage | `modules/benchmark/dv8.ts` reports knowledge, language, reasoning, dialogue, precision, and latency against 4,124 stateless cases and 120 dialogue sessions. |
 | Scale lexical facts without answer duplication | `scripts/build-dv9-data-pack.mjs` compiles lemma and sense entities, atomic facts, typed relation profiles, plan examples, rules, dialogue scenarios, and an isolated evaluation pack. |
 | Preserve source and uncertainty | `modules/dv9/types.ts` and `schema.ts` retain source identity, evidence locators, confidence, review status, validity intervals, and dispute links. |
+| Connect language, facts, reasoning, dialogue, and realization | `modules/dv10/` builds typed plans, executes reviewed propositions or rules, selects explicit senses, records dialogue goals, and realizes proof-bearing answers. |
+| Freeze real failures outside development data | `data/dv10/benchmarks/` contains the immutable 2,500-row human-question failure artifact and manifest; runtime modules never import it. |
 | Resolve long-tail word senses | `modules/dv9/parser.ts`, `loader.ts`, and `realizer.ts` load one lexical shard and select an explicit sense from contextual evidence. |
 | Divide prompts using basic English sentence structure | `modules/discourse/segment.ts` and `reference.ts` separate connected requests and resolve only bounded explicit antecedents; `modules/search/tokenize.ts` supplies sentence mode and basic roles. |
 | Directly answer common subjects across varied question structures | `modules/extended-pack/linguistic-features.ts`, `dv6-linguistic-features.ts`, `question-frames.ts`, `dv6-question-frames.ts`, and `router.ts` map framing, style, semantic focus, and subject aliases to explicit topic fields. |

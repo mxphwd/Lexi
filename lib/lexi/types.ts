@@ -79,6 +79,7 @@ export type LexiTrace = {
     | "full-dictionary"
     | "language-engine"
     | "dv9-data-engine"
+    | "semantic-runtime"
     | "safe-fallback"
     | "combined-response";
   clauseCount?: number;

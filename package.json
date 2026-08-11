@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260802-dv9",
+  "version": "1.0.0-prebuild.260811-dv10",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -19,9 +19,11 @@
     "lexicon:build": "node scripts/build-lexicon-index.mjs",
     "dv9:build-data": "node scripts/build-dv9-data-pack.mjs",
     "dv9:validate-data": "node scripts/validate-dv9-data-pack.mjs",
+    "dv10:freeze-failures": "node --import tsx scripts/build-dv10-failure-benchmark.mjs",
     "benchmark:dv7": "node --import tsx scripts/run-dv7-benchmark.mjs",
     "benchmark:dv8": "node --import tsx scripts/run-dv8-benchmark.mjs",
-    "benchmark:dv9": "node --import tsx scripts/run-dv9-benchmark.mjs"
+    "benchmark:dv9": "node --import tsx scripts/run-dv9-benchmark.mjs",
+    "benchmark:dv10": "node --import tsx scripts/run-dv10-benchmark.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

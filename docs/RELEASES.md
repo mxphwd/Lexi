@@ -33,6 +33,12 @@ difference between schema-validated, source-attested, mechanically derived,
 disputed, and independently reviewed facts. Generated held-out questions must
 not be described as real user failures.
 
+Beginning with DV10, every acceptance report must keep outcome classes
+separate, publish the frozen artifact identity, and show unmet gates. A release
+may not convert a failed factual suite into a capability multiplier. Sense,
+dialogue, calibration, latency, language-route, reasoning, and factual-knowledge
+surfaces remain separate measurements.
+
 The first release has no predecessor and is labelled as the baseline. Every
 later tooltip calculates and displays its percentage change from the immediately
 preceding point.

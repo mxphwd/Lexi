@@ -1,0 +1,30 @@
+{
+  "build": "260811-DV10",
+  "artifactSha256": "1b45838b516c9f0836575bec701d422e9ab000646ee054c8ca93d35da5b484b6",
+  "total": 2500,
+  "outcomes": {
+    "correct-answer": 0,
+    "correct-abstention": 0,
+    "incorrect-answer": 287,
+    "unsupported-abstention": 2141,
+    "clarification": 72
+  },
+  "measurements": {
+    "knowledge": 0,
+    "languageRobustness": 0.35,
+    "reasoning": 0,
+    "dialogue": 1,
+    "precision": 1,
+    "senseSelection": 1,
+    "confidentIncorrectRate": 0.034,
+    "latencyP50Milliseconds": 64.1571249999979,
+    "latencyP95Milliseconds": 120.48129199999676
+  },
+  "targets": {
+    "ordinaryCorrectness": { "minimum": 0.88, "stretch": 0.92, "actual": 0, "met": false },
+    "confidentIncorrect": { "maximum": 0.007, "stretch": 0.004, "actual": 0.034, "met": false },
+    "senseSelection": { "minimum": 0.95, "stretch": 0.98, "actual": 1, "met": true },
+    "dialogue": { "minimum": 0.92, "stretch": 0.95, "actual": 1, "met": true }
+  },
+  "publishedImprovementMultiplier": null
+}

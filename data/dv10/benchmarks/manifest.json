@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "build": "260811-DV10",
+  "frozenAt": "2026-08-11",
+  "importedByRuntime": false,
+  "leakagePolicy": "This artifact is evaluation-only. Runtime modules and development packs must not import it or its answers.",
+  "source": {
+    "name": "Open Trivia Database human-contributed question snapshot",
+    "upstreamRepository": "https://github.com/leakyhose/open-trivia-script-data",
+    "upstreamPath": "data/all_questions.json",
+    "upstreamBlob": "9a095a65cc7427b4e49e55eef1db3923fed55226",
+    "canonicalProvider": "https://opentdb.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceSha256": "40aae7eab2644d73e9f97b164499cc98ca4f8226e03a2991469e4a5bef7caaba",
+    "sourceQuestionCount": 4738
+  },
+  "artifact": {
+    "path": "data/dv10/benchmarks/frozen-human-failures.jsonl.gz",
+    "sha256": "1b45838b516c9f0836575bec701d422e9ab000646ee054c8ca93d35da5b484b6",
+    "frozenFailureCount": 2500
+  },
+  "dv9Baseline": {
+    "evaluatedUntilSourceIndex": 2511,
+    "outcomes": {
+      "unsupported-abstention": 2068,
+      "incorrect-answer": 357,
+      "correct-answer": 12,
+      "clarification": 75
+    },
+    "failureReasons": {
+      "parsing": 1598,
+      "knowledge": 260,
+      "calibration": 121,
+      "reasoning": 103,
+      "routing": 418
+    }
+  },
+  "outcomeClasses": [
+    "correct-answer",
+    "correct-abstention",
+    "incorrect-answer",
+    "unsupported-abstention",
+    "clarification"
+  ],
+  "failureClasses": [
+    "knowledge",
+    "parsing",
+    "sense",
+    "routing",
+    "reasoning",
+    "dialogue",
+    "realization",
+    "calibration"
+  ]
+}

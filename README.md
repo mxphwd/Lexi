@@ -1,22 +1,44 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260802-DV9 is a deterministic,
-zero-generative-model language prototype. DV8 supplied the typed language and
-execution engine. DV9 supplies a provenance-aware lexical data layer, explicit
-senses, compiled relation profiles, reusable rule instances, isolated language
-examples, and richer lexical dialogue state.
+Lexi Language 1.0 Pre-build 260811-DV10 is a deterministic,
+zero-generative-model language prototype. DV10 connects the typed language
+planner, reviewed world propositions, graph traversal, explicit lexical senses,
+deterministic rules, dialogue state, realization, and inspectable proofs through
+one semantic precedence path.
 
 Lexi does not call a generative model, predict tokens, use learned embeddings,
 or convert an absent fact into a confident answer.
 
 ```text
 input
-  → discourse and session state
-  → DV8 typed query planning and factual execution
-  → DV9 lexical plan and one on-demand data shard
-  → explicit sense selection and proposition realization
+  → DV10 normalization, typed plan, and conversational goal
+  → reviewed proposition, graph edge, rule, or explicit lexical sense
+  → subject-compatible calibration
+  → proposition realization and proof ledger
   → answer with evidence, or calibrated abstention
 ```
+
+## DV10 semantic connection
+
+`modules/dv10/` supplies a single front path for compositional plans, reviewed
+evidence, graph-derived member lists, bounded arithmetic, explicit Wordset
+sense selection, follow-up correction, proof questions, and calibrated legacy
+routing. Every successful DV10 answer carries proposition or rule IDs and proof
+steps. A related word is not enough to authorize a factual answer.
+
+DV10 also freezes 2,500 human-contributed questions that the untouched DV9
+engine failed. The gzip artifact and its SHA-256 live under
+`data/dv10/benchmarks/` and are never imported by runtime code. Run:
+
+```bash
+npm run benchmark:dv10
+```
+
+The release measurement is deliberately unflattering: the frozen factual pack
+still records 0 correct answers, so DV10 does not claim the 88–92% ordinary
+correctness target or any improvement multiplier. Separate deterministic probes
+reach 100% for explicit sense selection, dialogue goals, and calibrated
+abstention. See `docs/DV10_BENCHMARK.md` for the full boundary and caveats.
 
 ## Run Lexi
 
@@ -130,6 +152,6 @@ dialogue scenario when state is missing, or a reviewed proposition when
 knowledge is missing. Real user failures must remain outside the development
 pack until their blind score is recorded.
 
-See `docs/ARCHITECTURE.md`, `docs/DV9_DATA.md`,
+See `docs/ARCHITECTURE.md`, `docs/DV9_DATA.md`, `docs/DV10_BENCHMARK.md`,
 `docs/DOCUMENTATION_MAPPING.md`, and `docs/RELEASES.md` for the complete
 contracts.

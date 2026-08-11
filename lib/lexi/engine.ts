@@ -36,6 +36,13 @@ import {
   matchDv9Data,
   parseDv9LexicalPlan,
 } from "@/modules/dv9";
+import {
+  Dv10DialogueState,
+  calibrateDv10LegacyReply,
+  dv10EngineStats,
+  matchDv10,
+  matchDv10Deterministic,
+} from "@/modules/dv10";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { LexiSessionMemory } from "@/modules/memory";
 import { analyseSentence, searchContexts } from "@/modules/search";
@@ -49,6 +56,7 @@ type EngineState = {
   memory?: LexiSessionMemory;
   dialogue?: Dv8DialogueState;
   dv9Dialogue?: Dv9DialogueState;
+  dv10Dialogue?: Dv10DialogueState;
   lastPlan?: QueryPlan;
 };
 
@@ -328,19 +336,26 @@ function respondWithState(
   options: { dv8: boolean } = { dv8: true },
 ): LexiReply {
   state.lastPlan = undefined;
+  const dv10 = options.dv8
+    ? matchDv10Deterministic(input, state.dv10Dialogue)
+    : undefined;
+  if (dv10) {
+    updateEngineState(input, dv10.reply, state);
+    return dv10.reply;
+  }
   const clauses = splitIntoClauses(input);
   if (clauses.length > 1) {
     return combineClauseReplies(
       input,
       clauses.map((clause) => {
-        const reply = respondToClauseCore(clause, state, options);
+        const reply = calibrateDv10LegacyReply(clause, respondToClauseCore(clause, state, options));
         updateEngineState(clause, reply, state);
         return reply;
       }),
     );
   }
 
-  const reply = respondToClauseCore(input, state, options);
+  const reply = calibrateDv10LegacyReply(input, respondToClauseCore(input, state, options));
   updateEngineState(input, reply, state);
   return reply;
 }
@@ -364,10 +379,15 @@ async function respondAsyncWithState(
   state: EngineState,
 ): Promise<LexiReply> {
   state.lastPlan = undefined;
+  const dv10 = await matchDv10(input, dictionaryOptions, state.dv10Dialogue).catch(() => undefined);
+  if (dv10) {
+    updateEngineState(input, dv10.reply, state);
+    return dv10.reply;
+  }
   const clauses = splitIntoClauses(input);
   const replies: LexiReply[] = [];
   for (const clause of clauses) {
-    replies.push(await respondToClauseAsync(clause, dictionaryOptions, state));
+    replies.push(calibrateDv10LegacyReply(clause, await respondToClauseAsync(clause, dictionaryOptions, state)));
   }
 
   if (replies.length > 1) return combineClauseReplies(input, replies);
@@ -378,17 +398,20 @@ export class LexiSession {
   private readonly memory = new LexiSessionMemory();
   private readonly dialogue = new Dv8DialogueState();
   private readonly dv9Dialogue = new Dv9DialogueState();
+  private readonly dv10Dialogue = new Dv10DialogueState();
   private readonly state: EngineState = {
     activeSubjectIds: [],
     memory: this.memory,
     dialogue: this.dialogue,
     dv9Dialogue: this.dv9Dialogue,
+    dv10Dialogue: this.dv10Dialogue,
   };
 
   respond(input: string): LexiReply {
     const reply = respondWithState(input, this.state);
     this.memory.recordTurn(input, reply.text);
     this.dialogue.record(input, reply, this.state.lastPlan);
+    this.dv10Dialogue.recordTurn(input, reply);
     return reply;
   }
 
@@ -399,6 +422,7 @@ export class LexiSession {
     const reply = await respondAsyncWithState(input, dictionaryOptions, this.state);
     this.memory.recordTurn(input, reply.text);
     this.dialogue.record(input, reply, this.state.lastPlan);
+    this.dv10Dialogue.recordTurn(input, reply);
     return reply;
   }
 
@@ -407,6 +431,7 @@ export class LexiSession {
       ...this.memory.snapshot(),
       propositions: this.dialogue.snapshot(),
       lexicalDialogue: this.dv9Dialogue.snapshot(),
+      semanticDialogue: this.dv10Dialogue.snapshot(),
     };
   }
 }
@@ -438,6 +463,7 @@ export function corpusStats() {
   const dv7 = dv7AvailabilityStats();
   const dv8 = dv8EngineStats();
   const dv9 = dv9EngineStats();
+  const dv10 = dv10EngineStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
@@ -455,5 +481,6 @@ export function corpusStats() {
     availabilityMultipleOverDv6: dv7.multipleOverDv6,
     dv8,
     dv9,
+    dv10,
   };
 }
