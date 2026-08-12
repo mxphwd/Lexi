@@ -74,4 +74,11 @@ export class Dv9DialogueState {
       goal: this.goal,
     };
   }
+
+  restore(snapshot: Dv9DialogueSnapshot) {
+    this.activeTerm = snapshot.activeTerm;
+    this.activeSenseIndex = snapshot.activeSenseIndex;
+    this.previousTerms.splice(0, this.previousTerms.length, ...snapshot.previousTerms);
+    this.goal = snapshot.goal;
+  }
 }

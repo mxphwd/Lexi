@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "release": "DV11",
+  "evaluationOnly": true,
+  "runtimeImportAllowed": false,
+  "developmentImportAllowed": false,
+  "requiredRealFailureRows": { "minimum": 2000, "maximum": 5000 },
+  "realFailureRows": 0,
+  "ordinarySchemaFixtureRows": 11,
+  "files": {
+    "real-user-failures.jsonl": "sha256:9da4a6439c3b353d5c36eea1cf2cb2c6b9a62df9f3a7c2179e4e53b2c091c5c0",
+    "ordinary-questions.jsonl": "sha256:855e04608474004a44a20ef9dea47ba1737bdeeee81e181a63a3687ff95672e6"
+  },
+  "categories": ["everyday-fact", "definition", "explanation", "procedure", "comparison", "arithmetic", "logic", "dialogue", "reference", "ambiguity", "multi-part"],
+  "note": "The gate remains unmet until 2,000–5,000 independently reviewed actual Lexi failures are available; proxy or generated rows are not counted."
+}

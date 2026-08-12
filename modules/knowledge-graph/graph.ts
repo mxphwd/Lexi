@@ -25,6 +25,16 @@ function normalizeAlias(value: string): string {
     .trim();
 }
 
+type SeedFactObject = Extract<EntitySeedFact, { value: unknown }>;
+
+function isSeedFactObject(value: EntitySeedFact | unknown): value is SeedFactObject {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isSeedStringList(value: EntitySeedFact): value is readonly string[] {
+  return Array.isArray(value) && value.every((item) => typeof item === "string");
+}
+
 function propositionValue(fact: EntitySeedFact): {
   object: PropositionValue;
   qualifiers?: KnowledgeProposition["qualifiers"];
@@ -38,13 +48,17 @@ function propositionValue(fact: EntitySeedFact): {
   if (typeof fact === "boolean") {
     return { object: { kind: "boolean", value: fact } };
   }
-  if (Array.isArray(fact)) {
+  if (isSeedStringList(fact)) {
     return {
       object: {
         kind: "list",
         values: fact.map(String),
       },
     };
+  }
+
+  if (!isSeedFactObject(fact)) {
+    throw new TypeError("Unsupported knowledge seed fact.");
   }
 
   const qualifiers = {
@@ -74,9 +88,9 @@ function propositionValue(fact: EntitySeedFact): {
 function factEntries(
   fact: EntitySeedFact | readonly EntitySeedFact[],
 ): EntitySeedFact[] {
-  if (!Array.isArray(fact)) return [fact];
-  if (fact.length > 0 && fact.every((item) => typeof item === "object" && !Array.isArray(item))) {
-    return [...fact] as EntitySeedFact[];
+  if (!Array.isArray(fact)) return [fact as EntitySeedFact];
+  if (fact.length > 0 && fact.every(isSeedFactObject)) {
+    return [...fact] as SeedFactObject[];
   }
   return [fact as readonly string[]];
 }

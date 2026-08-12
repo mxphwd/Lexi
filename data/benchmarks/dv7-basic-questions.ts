@@ -168,7 +168,7 @@ export const dv7CuratedBenchmark: readonly CuratedBenchmarkCase[] = [
 
 export type SessionBenchmarkScenario = {
   id: string;
-  turns: readonly Array<{
+  turns: ReadonlyArray<{
     prompt: string;
     expectedTerms: readonly string[];
     expectedSource?: string;

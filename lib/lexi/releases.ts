@@ -177,6 +177,29 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "The separate 100-case sense and 100-scenario dialogue surfaces reached 100%, while confident incorrect factual answers remained 3.40%; no availability multiplier is published.",
     ],
   },
+  {
+    build: "260812-DV11",
+    label: "Pre-build 260812-DV11",
+    shortLabel: "DV11",
+    date: "12 August 2026",
+    capabilityIndex: 100,
+    metric: "79 gated remediations",
+    measurements: [
+      { label: "Real failures", value: "0 / 2,000" },
+      { label: "DV8 regression", value: "4,124 / 4,124" },
+      { label: "Rules", value: "1,100 compiled" },
+      { label: "Multiplier", value: "Not published" },
+      { label: "Typecheck", value: "Passing" },
+      { label: "Release gate", value: "Pending" },
+    ],
+    notes: [
+      "Introduced one typed request, query-plan, execution-result, proof, trace, dialogue, and realization contract across Lexi.",
+      "Added constraint-aware retrieval, inverse joins, filters, quantities, temporal checks, quantifiers, package validation, provenance, conflict detection, and transactional cancellation.",
+      "Replaced construction multipliers with independent outcome, component, calibration, regression, leakage, performance, and package-compatibility gates.",
+      "Prepared versioned knowledge packages for later DV11AD releases without importing evaluation answers into runtime data.",
+      "Kept the ordinary-question acceptance gate closed because no independently reviewed real-failure rows have been imported yet; no 50–60% answer-possibility claim is published.",
+    ],
+  },
 ] as const;
 
 export function releaseImprovement(index: number) {

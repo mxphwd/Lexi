@@ -57,6 +57,9 @@ export type Dv9RuntimeShard = Record<string, Dv9RuntimeEntry>;
 export type Dv9LoaderOptions = {
   fetcher?: DictionaryFetcher;
   basePath?: string;
+  signal?: AbortSignal;
+  timeoutMilliseconds?: number;
+  maximumRetries?: number;
 };
 
 export type Dv9DataManifest = {

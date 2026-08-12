@@ -41,6 +41,19 @@ function followUpPlan(original: string, normalized: string, context?: Dv9Dialogu
   if (!term) return undefined;
   let operation: Dv9LexicalOperation | undefined;
   let requestedSense: number | undefined;
+  const correctedContext = normalized.match(/^(?:no )?(?:i meant|in the context of) (.+)$/)?.[1];
+  if (correctedContext && correctedContext !== "its other sense") {
+    return {
+      id: `dv9:follow-up:correct-sense:${term}:${correctedContext}`,
+      original,
+      normalized,
+      operation: "define",
+      term,
+      contextHint: correctedContext,
+      confidence: 0.98,
+      evidence: ["active lexical proposition", "operation:define", `context:${correctedContext}`],
+    };
+  }
   if (/^(?:(?:what is |show me |give me )?(?:another|the other|its other) (?:meaning|sense)|no i meant its other sense)$/.test(normalized)) {
     operation = "list-senses";
     requestedSense = context.activeSenseIndex + 1;

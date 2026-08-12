@@ -2,10 +2,6 @@
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
-import {
-  corpusStats,
-  createLexiSession,
-} from "@/lib/lexi/engine";
 import type { LexiReply } from "@/lib/lexi/types";
 import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
 import { hasUnsupportedWritingSystem } from "@/modules/search";
@@ -17,7 +13,11 @@ const DOCUMENTATION_QUOTE =
 
 const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
-const stats = corpusStats();
+
+type LexiSessionHandle = {
+  respond(input: string): LexiReply;
+  respondAsync(input: string, options?: { signal?: AbortSignal }): Promise<LexiReply>;
+};
 
 export function LexiInterface() {
   const [input, setInput] = useState("");
@@ -27,11 +27,13 @@ export function LexiInterface() {
   const [showVersion, setShowVersion] = useState(false);
   const [releaseNotesOpen, setReleaseNotesOpen] = useState(false);
   const [brandEntrance, setBrandEntrance] = useState(true);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const stopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const brandTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
+  const stopTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
+  const brandTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
   const requestRef = useRef(0);
-  const sessionRef = useRef(createLexiSession());
+  const sessionRef = useRef<LexiSessionHandle | null>(null);
+  const sessionLoadRef = useRef<Promise<LexiSessionHandle> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
   const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
@@ -44,6 +46,7 @@ export function LexiInterface() {
 
     return () => {
       requestRef.current += 1;
+      abortControllerRef.current?.abort("component-unmounted");
       if (timerRef.current) clearTimeout(timerRef.current);
       if (stopTimerRef.current) clearTimeout(stopTimerRef.current);
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
@@ -57,6 +60,22 @@ export function LexiInterface() {
     textarea.style.height = `${Math.min(textarea.scrollHeight, 90)}px`;
   }
 
+  function loadSession(): Promise<LexiSessionHandle> {
+    if (sessionRef.current) return Promise.resolve(sessionRef.current);
+    if (!sessionLoadRef.current) {
+      sessionLoadRef.current = import("@/lib/lexi/engine")
+        .then(({ createLexiSession }) => {
+          const session = createLexiSession();
+          sessionRef.current = session;
+          return session;
+        })
+        .finally(() => {
+          sessionLoadRef.current = null;
+        });
+    }
+    return sessionLoadRef.current;
+  }
+
   function submitMessage(event?: FormEvent) {
     event?.preventDefault();
     if (!canSend) return;
@@ -66,14 +85,21 @@ export function LexiInterface() {
     const startedAt = performance.now();
     const minimumThinkingTime = Math.min(1650, 840 + prompt.length * 11);
     requestRef.current = requestId;
+    abortControllerRef.current?.abort("superseded");
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
     setComposerState("thinking");
     setAboutOpen(false);
     setReply(null);
 
-    void sessionRef.current.respondAsync(prompt)
-      .catch(() => sessionRef.current.respond(prompt))
+    void loadSession()
+      .then((session) => session.respondAsync(prompt, { signal: controller.signal }))
+      .catch((error) => {
+        if (controller.signal.aborted || (error instanceof DOMException && error.name === "AbortError")) return null;
+        return sessionRef.current?.respond(prompt) ?? null;
+      })
       .then((preparedReply) => {
-        if (requestRef.current !== requestId) return;
+        if (!preparedReply || requestRef.current !== requestId || controller.signal.aborted) return;
 
         const remainingDelay = Math.max(
           0,
@@ -86,6 +112,7 @@ export function LexiInterface() {
           setInput("");
           requestAnimationFrame(resizeTextarea);
           timerRef.current = null;
+          if (abortControllerRef.current === controller) abortControllerRef.current = null;
         }, remainingDelay);
       });
   }
@@ -93,6 +120,8 @@ export function LexiInterface() {
   function stopThinking() {
     if (composerState !== "thinking") return;
     requestRef.current += 1;
+    abortControllerRef.current?.abort("user-canceled");
+    abortControllerRef.current = null;
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = null;
     setComposerState("stopping");
@@ -156,7 +185,7 @@ export function LexiInterface() {
                 ref={textareaRef}
                 value={input}
                 rows={1}
-                maxLength={600}
+                maxLength={12000}
                 className="composer-input"
                 placeholder="Talk to Lexi..."
                 aria-label="Message Lexi"
@@ -228,6 +257,7 @@ export function LexiInterface() {
                   <summary>Why this response</summary>
                   <dl>
                     <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
+                    {reply.trace.executionStatus ? <div><dt>Status</dt><dd>{reply.trace.executionStatus}</dd></div> : null}
                     <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
                     <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
                     {reply.trace.clauseIntents ? (
@@ -235,12 +265,13 @@ export function LexiInterface() {
                     ) : null}
                     <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
                     <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
+                    {reply.trace.propositionIds?.length ? <div><dt>Claims</dt><dd>{reply.trace.propositionIds.join(", ")}</dd></div> : null}
+                    {reply.trace.sources?.length ? <div><dt>Sources</dt><dd>{reply.trace.sources.map((source) => `${source.sourceId} · ${source.sourceLocation}`).join("; ")}</dd></div> : null}
+                    {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    Direct pack: {stats.extendedTopics} subjects through{" "}
-                    {stats.linguisticFeatures} linguistic features and at least{" "}
-                    {stats.extendedConstructions.toLocaleString()} recognized constructions.
-                    Corpus fallback: {stats.examples} examples across {stats.pages} pages.
+                    DV11 executes typed plans against lazily loaded indexed propositions.
+                    Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>
               </article>

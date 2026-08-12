@@ -32,7 +32,9 @@ import {
 } from "@/modules/dv8";
 import {
   Dv9DialogueState,
+  Dv9ShardLoadError,
   dv9EngineStats,
+  findDv9Entry,
   matchDv9Data,
   parseDv9LexicalPlan,
 } from "@/modules/dv9";
@@ -40,9 +42,9 @@ import {
   Dv10DialogueState,
   calibrateDv10LegacyReply,
   dv10EngineStats,
-  matchDv10,
   matchDv10Deterministic,
 } from "@/modules/dv10";
+import { Dv11RuntimeSession, dv11EngineStats, installDv9LexicalEntry } from "@/modules/dv11";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { LexiSessionMemory } from "@/modules/memory";
 import { analyseSentence, searchContexts } from "@/modules/search";
@@ -57,6 +59,7 @@ type EngineState = {
   dialogue?: Dv8DialogueState;
   dv9Dialogue?: Dv9DialogueState;
   dv10Dialogue?: Dv10DialogueState;
+  dv11?: Dv11RuntimeSession;
   lastPlan?: QueryPlan;
 };
 
@@ -240,12 +243,6 @@ function updateEngineState(
   }
 }
 
-function respondToClause(input: string, state: EngineState): LexiReply {
-  const reply = respondToClauseCore(input, state);
-  updateEngineState(input, reply, state);
-  return reply;
-}
-
 function dictionaryReply(input: string, term: string, word: string, wordsetId: string, definition: string, partOfSpeech?: string): LexiReply {
   const analysis = analyseSentence(input);
   const label = word ? word[0].toLocaleUpperCase("en-US") + word.slice(1) : term;
@@ -267,11 +264,42 @@ function dictionaryReply(input: string, term: string, word: string, wordsetId: s
   };
 }
 
+function lexicalLoadFailureReply(input: string, error: unknown): LexiReply {
+  const analysis = analyseSentence(input);
+  const canceled = error instanceof Dv9ShardLoadError && error.code === "canceled";
+  return {
+    text: canceled ? "The request was canceled." : "The lexical source required for this question could not be loaded or validated. I will not route the question to unrelated context data.",
+    trace: {
+      normalizedInput: analysis.normalized,
+      sentenceMode: analysis.mode,
+      interpretedIntent: canceled ? "dv11:canceled" : "dv11:lexical-load-error",
+      confidence: 0,
+      matchedExampleIds: [],
+      matchedTerms: [error instanceof Dv9ShardLoadError ? `lexical-error:${error.code}` : "lexical-error:unknown"],
+      selectedStructure: canceled ? "dv11:canceled" : "dv11:typed-loading-error",
+      source: "safe-fallback",
+      proof: [error instanceof Error ? error.message : String(error)],
+      runtimeVersion: "DV11",
+      executionStatus: canceled ? "canceled" : "error",
+      failureStage: "retrieval",
+      failureCode: canceled ? "DV11_CANCELED" : "DV11_LEXICAL_LOAD_ERROR",
+    },
+  };
+}
+
+function installLexicalEntryWhenNew(state: EngineState, entry: Awaited<ReturnType<typeof findDv9Entry>>) {
+  if (!entry || !state.dv11) return;
+  const store = state.dv11.store;
+  const alreadyHasExplicitSense = store.resolveExact(entry.w).some((candidate) => store.sensesForEntity(candidate.entityId).length > 0);
+  if (!alreadyHasExplicitSense) installDv9LexicalEntry(store, entry);
+}
+
 async function respondToClauseAsync(
   input: string,
   dictionaryOptions: DictionaryLookupOptions,
   state: EngineState,
 ): Promise<LexiReply> {
+  let lexicalLoadError: unknown;
   const dv9Conversation = state.dv9Dialogue?.interpret(input);
   if (dv9Conversation) return dv9Conversation;
 
@@ -284,11 +312,17 @@ async function respondToClauseAsync(
     ),
   );
   if (preferLexicalData) {
-    const dv9 = await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue).catch(() => undefined);
-    if (dv9) return dv9.reply;
+    let dv9;
+    try { dv9 = await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue); }
+    catch (error) { lexicalLoadError = error; }
+    if (dv9) {
+      const entry = lexicalPlan ? await findDv9Entry(lexicalPlan.term, dictionaryOptions) : undefined;
+      installLexicalEntryWhenNew(state, entry);
+      return dv9.reply;
+    }
   }
 
-  const ordinaryReply = respondToClause(input, state);
+  const ordinaryReply = respondToClauseCore(input, state);
   if (
     ordinaryReply.trace.source === "core-phrase" ||
     ordinaryReply.trace.source === "knowledge-graph" ||
@@ -299,19 +333,27 @@ async function respondToClauseAsync(
     return ordinaryReply;
   }
 
-  const dv9 = preferLexicalData
-    ? undefined
-    : await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue).catch(() => undefined);
-  if (dv9) return dv9.reply;
+  let dv9;
+  if (!preferLexicalData) {
+    try { dv9 = await matchDv9Data(input, dictionaryOptions, state.dv9Dialogue); }
+    catch (error) { lexicalLoadError = error; }
+  }
+  if (dv9) {
+    const entry = lexicalPlan ? await findDv9Entry(lexicalPlan.term, dictionaryOptions) : undefined;
+    installLexicalEntryWhenNew(state, entry);
+    return dv9.reply;
+  }
 
   if (ordinaryReply.trace.source === "extended-pack") return ordinaryReply;
 
   const term = extractDefinitionTerm(input);
-  if (!term) return ordinaryReply;
+  if (!term) return lexicalLoadError ? lexicalLoadFailureReply(input, lexicalLoadError) : ordinaryReply;
 
-  const entry = await findWordsetEntry(term, dictionaryOptions);
+  let entry;
+  try { entry = await findWordsetEntry(term, dictionaryOptions); }
+  catch (error) { return lexicalLoadFailureReply(input, error); }
   const meaning = entry?.meanings.find((candidate) => candidate.def.trim());
-  if (!entry || !meaning) return ordinaryReply;
+  if (!entry || !meaning) return lexicalLoadError ? lexicalLoadFailureReply(input, lexicalLoadError) : ordinaryReply;
 
   const reply = dictionaryReply(
     input,
@@ -321,7 +363,6 @@ async function respondToClauseAsync(
     meaning.def,
     meaning.speech_part,
   );
-  updateEngineState(input, reply, state);
   return reply;
 }
 
@@ -336,25 +377,33 @@ function respondWithState(
   options: { dv8: boolean } = { dv8: true },
 ): LexiReply {
   state.lastPlan = undefined;
-  const dv10 = options.dv8
-    ? matchDv10Deterministic(input, state.dv10Dialogue)
-    : undefined;
-  if (dv10) {
-    updateEngineState(input, dv10.reply, state);
-    return dv10.reply;
-  }
+  const runtime = state.dv11 ?? (state.dv11 = new Dv11RuntimeSession());
+  const { reply } = runtime.respond(
+    input,
+    (clause) => {
+      const dv10 = matchDv10Deterministic(clause, state.dv10Dialogue);
+      return calibrateDv10LegacyReply(clause, dv10?.reply ?? respondToClauseCore(clause, state, options));
+    },
+  );
+  if (!reply.trace.executionStatus || !["canceled", "error"].includes(reply.trace.executionStatus)) updateEngineState(input, reply, state);
+  return reply;
+}
+
+function respondLegacyWithState(
+  input: string,
+  state: EngineState,
+  options: { dv8: boolean } = { dv8: true },
+): LexiReply {
+  state.lastPlan = undefined;
   const clauses = splitIntoClauses(input);
   if (clauses.length > 1) {
-    return combineClauseReplies(
+    const reply = combineClauseReplies(
       input,
-      clauses.map((clause) => {
-        const reply = calibrateDv10LegacyReply(clause, respondToClauseCore(clause, state, options));
-        updateEngineState(clause, reply, state);
-        return reply;
-      }),
+      clauses.map((clause) => calibrateDv10LegacyReply(clause, respondToClauseCore(clause, state, options))),
     );
+    updateEngineState(input, reply, state);
+    return reply;
   }
-
   const reply = calibrateDv10LegacyReply(input, respondToClauseCore(input, state, options));
   updateEngineState(input, reply, state);
   return reply;
@@ -362,7 +411,7 @@ function respondWithState(
 
 /** Frozen DV7 routing path used only to measure DV8 against the same blind set. */
 export function respondDv7Baseline(input: string): LexiReply {
-  return respondWithState(input, { activeSubjectIds: [] }, { dv8: false });
+  return respondLegacyWithState(input, { activeSubjectIds: [] }, { dv8: false });
 }
 
 export async function respondAsync(
@@ -379,19 +428,20 @@ async function respondAsyncWithState(
   state: EngineState,
 ): Promise<LexiReply> {
   state.lastPlan = undefined;
-  const dv10 = await matchDv10(input, dictionaryOptions, state.dv10Dialogue).catch(() => undefined);
-  if (dv10) {
-    updateEngineState(input, dv10.reply, state);
-    return dv10.reply;
-  }
-  const clauses = splitIntoClauses(input);
-  const replies: LexiReply[] = [];
-  for (const clause of clauses) {
-    replies.push(calibrateDv10LegacyReply(clause, await respondToClauseAsync(clause, dictionaryOptions, state)));
-  }
-
-  if (replies.length > 1) return combineClauseReplies(input, replies);
-  return replies[0] ?? respondToClause(input, state);
+  const lexicalSnapshot = state.dv9Dialogue?.snapshot();
+  const runtime = state.dv11 ?? (state.dv11 = new Dv11RuntimeSession());
+  const { reply } = await runtime.respondAsync(
+    input,
+    async (clause) => calibrateDv10LegacyReply(
+      clause,
+      await respondToClauseAsync(clause, dictionaryOptions, state),
+    ),
+    { signal: dictionaryOptions.signal },
+  );
+  if (reply.trace.executionStatus && ["canceled", "error"].includes(reply.trace.executionStatus)) {
+    if (lexicalSnapshot) state.dv9Dialogue?.restore(lexicalSnapshot);
+  } else updateEngineState(input, reply, state);
+  return reply;
 }
 
 export class LexiSession {
@@ -399,16 +449,19 @@ export class LexiSession {
   private readonly dialogue = new Dv8DialogueState();
   private readonly dv9Dialogue = new Dv9DialogueState();
   private readonly dv10Dialogue = new Dv10DialogueState();
+  private readonly dv11 = new Dv11RuntimeSession();
   private readonly state: EngineState = {
     activeSubjectIds: [],
     memory: this.memory,
     dialogue: this.dialogue,
     dv9Dialogue: this.dv9Dialogue,
     dv10Dialogue: this.dv10Dialogue,
+    dv11: this.dv11,
   };
 
   respond(input: string): LexiReply {
     const reply = respondWithState(input, this.state);
+    if (reply.trace.executionStatus && ["canceled", "error"].includes(reply.trace.executionStatus)) return reply;
     this.memory.recordTurn(input, reply.text);
     this.dialogue.record(input, reply, this.state.lastPlan);
     this.dv10Dialogue.recordTurn(input, reply);
@@ -420,6 +473,7 @@ export class LexiSession {
     dictionaryOptions: DictionaryLookupOptions = {},
   ): Promise<LexiReply> {
     const reply = await respondAsyncWithState(input, dictionaryOptions, this.state);
+    if (reply.trace.executionStatus && ["canceled", "error"].includes(reply.trace.executionStatus)) return reply;
     this.memory.recordTurn(input, reply.text);
     this.dialogue.record(input, reply, this.state.lastPlan);
     this.dv10Dialogue.recordTurn(input, reply);
@@ -432,6 +486,7 @@ export class LexiSession {
       propositions: this.dialogue.snapshot(),
       lexicalDialogue: this.dv9Dialogue.snapshot(),
       semanticDialogue: this.dv10Dialogue.snapshot(),
+      dv11: this.dv11.snapshot(),
     };
   }
 }
@@ -444,7 +499,7 @@ class Dv7BaselineSession {
   };
 
   respond(input: string): LexiReply {
-    const reply = respondWithState(input, this.state, { dv8: false });
+    const reply = respondLegacyWithState(input, this.state, { dv8: false });
     this.memory.recordTurn(input, reply.text);
     return reply;
   }
@@ -464,6 +519,7 @@ export function corpusStats() {
   const dv8 = dv8EngineStats();
   const dv9 = dv9EngineStats();
   const dv10 = dv10EngineStats();
+  const dv11 = dv11EngineStats();
   return {
     pages: contextPages.length,
     examples: entries.length,
@@ -477,10 +533,9 @@ export function corpusStats() {
       extended.linguisticFeatures + discourseReferenceFeatureCount,
     knowledgeEntities: dv7.entities,
     knowledgePropositions: dv7.propositions,
-    semanticConstructions: dv7.semanticConstructions,
-    availabilityMultipleOverDv6: dv7.multipleOverDv6,
     dv8,
     dv9,
     dv10,
+    dv11,
   };
 }

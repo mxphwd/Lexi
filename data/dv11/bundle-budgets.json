@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 2,
+  "maximumInitialChunkBytes": 786432,
+  "maximumLazyChunkBytes": 3145728,
+  "maximumTotalClientJavaScriptBytes": 4194304,
+  "largeKnowledgeDataMustBeExternal": true
+}

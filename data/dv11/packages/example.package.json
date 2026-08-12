@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "packageId": "alphaine.lexi.dv11ad.example",
+    "version": "11.0.1",
+    "minimumRuntime": "DV11",
+    "contentHash": "fnv1a:c9b32c24",
+    "generatedAt": "2026-08-12",
+    "dependencies": [],
+    "counts": { "entities": 1, "propositions": 1, "senses": 0, "schemas": 0, "rules": 0 },
+    "capabilities": ["example-domain"]
+  },
+  "entities": [
+    { "id": "example:entity", "canonicalName": "example entity", "kind": "concept", "aliases": ["sample entity"], "senseIds": [] }
+  ],
+  "propositions": [
+    {
+      "id": "example:proposition:definition",
+      "subjectId": "example:entity",
+      "relation": "definition",
+      "object": { "kind": "text", "value": "a package-format validation example" },
+      "qualifiers": {},
+      "provenance": [{ "sourceId": "alphaine-example", "sourceLocation": "data/dv11/packages/example.package.json", "extractionMethod": "curated", "reviewStatus": "independently-reviewed", "confidence": 1, "createdAt": "2026-08-12", "license": "project-internal", "disputeStatus": "undisputed" }],
+      "polarity": "positive"
+    }
+  ],
+  "schemas": [],
+  "senses": []
+}

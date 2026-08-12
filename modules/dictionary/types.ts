@@ -19,4 +19,6 @@ export type DictionaryFetcher = (source: string) => Promise<Response>;
 export type DictionaryLookupOptions = {
   fetcher?: DictionaryFetcher;
   source?: string;
+  signal?: AbortSignal;
+  timeoutMilliseconds?: number;
 };

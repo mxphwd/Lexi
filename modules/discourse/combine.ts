@@ -15,9 +15,9 @@ function combinedMode(replies: LexiReply[]): SentenceMode {
 }
 
 export function combineClauseReplies(input: string, replies: LexiReply[]): LexiReply {
-  const uniqueReplies = replies.filter(
-    (reply, index) => replies.findIndex((candidate) => candidate.text === reply.text) === index,
-  );
+  // Preserve the ordered clause contract even when two clauses realize to the
+  // same surface text. Equality of wording is not equality of propositions.
+  const uniqueReplies = replies;
 
   if (uniqueReplies.length === 1) return uniqueReplies[0];
 

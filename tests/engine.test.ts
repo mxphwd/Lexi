@@ -115,7 +115,7 @@ test("handles foundational phrases before the corpus modules", () => {
   const age = respond("How old are you?");
   assert.equal(age.trace.interpretedIntent, "model-age");
   assert.equal(age.trace.source, "core-phrase");
-  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260811-DV10/);
+  assert.match(age.text, /Lexi Language 1\.0 Pre-build 260812-DV11/);
 
   assert.equal(respond("What’s your name?").trace.interpretedIntent, "identity");
   assert.equal(respond("HOW ARE YOU?").trace.interpretedIntent, "wellbeing");
@@ -205,7 +205,7 @@ test("combines multiple bounded answers with reviewed structures", () => {
   assert.equal(twoPart.trace.selectedStructure, "discourse-multipart");
   assert.match(twoPart.text, /^First:/);
   assert.match(twoPart.text, /Second:/);
-  assert.match(twoPart.text, /260811-DV10/);
+  assert.match(twoPart.text, /260812-DV11/);
 
   const modules = respond(
     "Explain the Context Module and then explain the Search Module.",
@@ -401,7 +401,7 @@ test("combines inherited basic-question frames without dictionary collisions", a
   assert.equal(reply.trace.source, "combined-response");
   assert.deepEqual(reply.trace.clauseIntents, ["identity", "model-age"]);
   assert.match(reply.text, /I’m Lexi/);
-  assert.match(reply.text, /260811-DV10/);
+  assert.match(reply.text, /260812-DV11/);
 });
 
 test("handles extended conversational phrases without approximate corpus matching", () => {

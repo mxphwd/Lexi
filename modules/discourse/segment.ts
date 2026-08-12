@@ -2,8 +2,6 @@ import { prepareDiscourseInput } from "@/modules/extended-pack";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { resolveClauseReferences } from "./reference";
 
-const MAX_CLAUSES = 4;
-
 const coordinatedRequestBoundary =
   /\s*(?:(?:,\s*)?(?:and then|and|also|then)|,)\s+(?=(?:please\s+)?(?:tell|explain|define|describe|summarize|introduce|provide|illustrate|list|name|compare|contrast|break|show|give|help|what|who|where|when|why|how|can|could|would|do|does|did|is|are|will|should|may)\b)/gi;
 
@@ -116,10 +114,5 @@ export function splitIntoClauses(input: string): string[] {
     .flatMap(inheritSharedRequestFrame),
   );
 
-  if (clauses.length <= MAX_CLAUSES) return clauses;
-
-  return [
-    ...clauses.slice(0, MAX_CLAUSES - 1),
-    clauses.slice(MAX_CLAUSES - 1).join("; "),
-  ];
+  return clauses;
 }

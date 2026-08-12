@@ -76,7 +76,17 @@ export type SemanticModifiers = {
   condition?: string;
   quantity?: number;
   time?: string;
-  style?: "plain" | "brief" | "simple" | "detailed" | "technical" | "stepwise";
+  style?:
+    | "plain"
+    | "brief"
+    | "simple"
+    | "detailed"
+    | "technical"
+    | "stepwise"
+    | "balanced"
+    | "practical"
+    | "exampled"
+    | "analogy";
   negated: boolean;
 };
 

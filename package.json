@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260811-dv10",
+  "version": "1.0.0-prebuild.260812-dv11",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -9,7 +9,9 @@
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
     "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
-    "test": "npm run build && node --import tsx --test tests/*.test.*",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test:unit": "node --import tsx --test tests/*.test.*",
+    "test": "npm run typecheck && npm run build && npm run test:unit",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "corpus:generate": "node scripts/generate-example-contexts.mjs",
     "corpus:generate-basic": "node scripts/generate-basic-conversations.mjs",
@@ -23,7 +25,14 @@
     "benchmark:dv7": "node --import tsx scripts/run-dv7-benchmark.mjs",
     "benchmark:dv8": "node --import tsx scripts/run-dv8-benchmark.mjs",
     "benchmark:dv9": "node --import tsx scripts/run-dv9-benchmark.mjs",
-    "benchmark:dv10": "node --import tsx scripts/run-dv10-benchmark.mjs"
+    "benchmark:dv10": "node --import tsx scripts/run-dv10-benchmark.mjs",
+    "benchmark:dv11": "node --import tsx scripts/run-dv11-benchmark.mjs",
+    "benchmark:dv11:performance": "node --import tsx scripts/run-dv11-performance.mjs",
+    "benchmark:dv11:leakage": "node --import tsx scripts/check-dv11-benchmark-leakage.mjs",
+    "dv11:validate-packages": "node --import tsx scripts/validate-dv11-packages.mjs",
+    "budget:dv11": "node scripts/check-dv11-bundle-budget.mjs",
+    "failure:record:dv11": "node scripts/capture-dv11-failure.mjs",
+    "verify:dv11": "npm run typecheck && npm run corpus:validate && npm run dv9:validate-data && npm run dv11:validate-packages && npm run benchmark:dv11:leakage && npm run test:unit"
   },
   "dependencies": {
     "next": "16.2.6",

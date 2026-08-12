@@ -86,6 +86,39 @@ export type LexiTrace = {
   clauseIntents?: string[];
   subjectIds?: string[];
   proof?: string[];
+  runtimeVersion?: "DV11";
+  executionStatus?:
+    | "supported"
+    | "contradicted"
+    | "unknown"
+    | "insufficient"
+    | "ambiguous"
+    | "partial"
+    | "canceled"
+    | "error";
+  failureStage?: string;
+  failureCode?: string;
+  propositionIds?: string[];
+  sources?: Array<{
+    sourceId: string;
+    sourceLocation: string;
+    reviewStatus: string;
+  }>;
+  confidenceComponents?: Record<string, number>;
+  stages?: Array<{
+    stage: string;
+    status: "passed" | "partial" | "failed" | "skipped" | "canceled";
+    code: string;
+    confidence?: number;
+    detail: string;
+    durationMilliseconds?: number;
+  }>;
+  clauseResults?: Array<{
+    clauseId: string;
+    status: string;
+    confidence: number;
+    propositionIds: string[];
+  }>;
 };
 
 export type LexiReply = {

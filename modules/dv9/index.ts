@@ -7,7 +7,7 @@ import { dv9DataManifest, validateDv9Manifest } from "./schema";
 import type { Dv9LexicalPlan, Dv9LoaderOptions } from "./types";
 
 export { Dv9DialogueState } from "./dialogue";
-export { findDv9Entry, loadDv9Shard, dv9ShardFor } from "./loader";
+export { Dv9ShardLoadError, dv9ShardCacheStats, findDv9Entry, loadDv9Shard, dv9ShardFor } from "./loader";
 export { parseDv9LexicalPlan } from "./parser";
 export { dv9LexicalLookupForms, dv9NormalizeLexical } from "./normalize";
 export { dv9DataManifest, validateDv9Manifest } from "./schema";
