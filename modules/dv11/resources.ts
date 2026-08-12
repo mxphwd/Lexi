@@ -10,8 +10,21 @@ function candidates(plan: Dv11QueryPlan): Omit<Dv11ResourceRequest, "schemaVersi
   const unresolvedMentions = plan.clauses.flatMap((clause) => clause.unresolvedSlots.length
     ? clause.mentions.filter((mention) => !mention.selectedEntityId).map((mention) => mention.span.text)
     : []);
+  const stop = new Set(["a", "an", "and", "are", "as", "at", "be", "by", "can", "did", "do", "does", "for", "from", "has", "have", "how", "in", "is", "it", "its", "me", "of", "on", "or", "tell", "the", "their", "this", "to", "was", "were", "what", "when", "where", "which", "who", "why", "with", "would", "you"]);
+  const relationWords = new Set(["author", "border", "cause", "contain", "create", "created", "discover", "discovered", "found", "founded", "invent", "invented", "locate", "located", "make", "made", "produce", "produced", "write", "writes", "written", "wrote"]);
+  const words = dv11NormalizeText(plan.normalized).match(/[\p{L}\p{M}\p{N}][\p{L}\p{M}\p{N}'-]*/gu) ?? [];
+  const phrases: string[] = [];
+  for (let width = Math.min(5, words.length); width >= 1; width -= 1) {
+    for (let start = 0; start + width <= words.length; start += 1) {
+      const slice = words.slice(start, start + width);
+      if (slice.every((word) => stop.has(word))) continue;
+      if (width === 1 && relationWords.has(slice[0])) continue;
+      const phrase = slice.join(" ");
+      if (phrase.length >= 2) phrases.push(phrase);
+    }
+  }
   return {
-    aliases: [...new Set([...lexicalTerms, ...unresolvedMentions].map(dv11NormalizeText).filter(Boolean))].slice(0, 32),
+    aliases: [...new Set([...lexicalTerms, ...unresolvedMentions, ...phrases].map(dv11NormalizeText).filter(Boolean))].slice(0, 96),
     entityIds: [...new Set(plan.clauses.flatMap((clause) => clause.mentions.flatMap((mention) => mention.selectedEntityId ? [mention.selectedEntityId] : [])))].slice(0, 32),
     senseIds: [...new Set(plan.clauses.flatMap((clause) => clause.mentions.flatMap((mention) => mention.selectedSenseId ? [mention.selectedSenseId] : [])))].slice(0, 32),
     predicates: [...new Set(plan.clauses.flatMap((clause) => clause.patterns.map((pattern) => String(pattern.relation))))].slice(0, 32),

@@ -322,6 +322,28 @@ export type Dv11PredicateSchema = {
   worldAssumption: "open" | "closed";
 };
 
+export type Dv11RelationAliasFrame = {
+  relation: Dv11Relation;
+  property: string;
+  aliases: string[];
+  answerShape: Dv11AnswerShape;
+  sourcePackageId: string;
+};
+
+export type Dv11DialogueBehaviorFrame = {
+  id: string;
+  utterances: string[];
+  action: "recall-topic" | "repeat-answer" | "explain-proof" | "clarify-goal" | "compare-active" | "list-more";
+  sourcePackageId: string;
+};
+
+export type Dv11RuleBinding = {
+  id: string;
+  family: "inverse" | "transitive" | "inheritance" | "containment" | "membership" | "causal-chain" | "comparison";
+  relation: Dv11Relation;
+  enabled: boolean;
+};
+
 export type Dv11Entity = {
   id: string;
   canonicalName: string;
@@ -479,7 +501,7 @@ export type Dv11PackageManifest = {
   contentHash: string;
   generatedAt: string;
   dependencies: Array<{ packageId: string; versionRange: string }>;
-  counts: { entities: number; propositions: number; senses: number; schemas: number; rules: number; lexemes?: number; lexicalSenses?: number; lexicalClaims?: number };
+  counts: { entities: number; propositions: number; senses: number; schemas: number; rules: number; lexemes?: number; lexicalSenses?: number; lexicalClaims?: number; relationAliases?: number; dialogueBehaviors?: number; compiledQueryExamples?: number; compiledDialogueScenarios?: number };
   capabilities: string[];
 };
 
@@ -492,6 +514,9 @@ export type Dv11KnowledgePackage = {
   lexemes?: Dv11Lexeme[];
   lexicalSenses?: Dv11LexicalSense[];
   lexicalClaims?: Dv11LexicalClaim[];
+  relationAliases?: Dv11RelationAliasFrame[];
+  dialogueBehaviors?: Dv11DialogueBehaviorFrame[];
+  ruleBindings?: Dv11RuleBinding[];
 };
 
 export type Dv11ResourceRequest = {
@@ -516,6 +541,13 @@ export type Dv11ResourceResponse = {
     indexedPredicates: number;
     indexedDomains: number;
     serverQueryableLexicalFacts: number;
+    indexedWorldAliases?: number;
+    indexedWorldEntities?: number;
+    indexedWorldPredicates?: number;
+    serverQueryableWorldPropositions?: number;
+    independentlyLoadablePackages?: number;
+    compiledQueryExamples?: number;
+    compiledDialogueScenarios?: number;
   };
 };
 

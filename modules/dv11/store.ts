@@ -7,6 +7,7 @@ import type {
   Dv11Entity,
   Dv11EntityCandidate,
   Dv11EntityKind,
+  Dv11DialogueBehaviorFrame,
   Dv11KnowledgePackage,
   Dv11Lexeme,
   Dv11LexicalClaim,
@@ -14,6 +15,8 @@ import type {
   Dv11PackageManifest,
   Dv11PredicateSchema,
   Dv11Proposition,
+  Dv11RelationAliasFrame,
+  Dv11RuleBinding,
   Dv11SenseCandidate,
   Dv11TemporalConstraint,
   Dv11Value,
@@ -95,6 +98,9 @@ export class Dv11KnowledgeStore {
   private readonly lexicalSenses = new Map<string, Dv11LexicalSense>();
   private readonly lexicalClaims = new Map<string, Dv11LexicalClaim>();
   private readonly packageManifests = new Map<string, Dv11PackageManifest>();
+  private readonly relationAliases = new Map<string, Dv11RelationAliasFrame>();
+  private readonly dialogueBehaviors = new Map<string, Dv11DialogueBehaviorFrame>();
+  private readonly ruleBindings = new Map<string, Dv11RuleBinding>();
 
   addEntity(entity: Dv11Entity) {
     const existing = this.entities.get(entity.id);
@@ -176,6 +182,32 @@ export class Dv11KnowledgeStore {
     this.lexicalClaims.set(claim.id, { ...claim, values: [...claim.values], provenance: [...claim.provenance] });
   }
 
+  addRelationAlias(frame: Dv11RelationAliasFrame) {
+    if (!dv11PredicateSchema(frame.relation)) throw new Error(`Missing predicate schema for relation aliases ${frame.relation}.`);
+    const existing = this.relationAliases.get(String(frame.relation));
+    const aliases = [...new Set([...(existing?.aliases ?? []), ...frame.aliases].map(dv11NormalizeText).filter((value) => value.length >= 2))];
+    this.relationAliases.set(String(frame.relation), {
+      ...frame,
+      property: existing?.property ?? frame.property,
+      answerShape: existing?.answerShape ?? frame.answerShape,
+      aliases,
+      sourcePackageId: existing?.sourcePackageId ?? frame.sourcePackageId,
+    });
+  }
+
+  addDialogueBehavior(frame: Dv11DialogueBehaviorFrame) {
+    const existing = this.dialogueBehaviors.get(frame.id);
+    if (existing && JSON.stringify(existing) !== JSON.stringify(frame)) throw new Error(`Dialogue behavior conflict for ${frame.id}.`);
+    this.dialogueBehaviors.set(frame.id, { ...frame, utterances: [...new Set(frame.utterances.map(dv11NormalizeText))] });
+  }
+
+  addRuleBinding(binding: Dv11RuleBinding) {
+    if (!dv11PredicateSchema(binding.relation)) throw new Error(`Missing predicate schema for rule binding ${binding.id}.`);
+    const existing = this.ruleBindings.get(binding.id);
+    if (existing && JSON.stringify(existing) !== JSON.stringify(binding)) throw new Error(`Rule binding conflict for ${binding.id}.`);
+    this.ruleBindings.set(binding.id, binding);
+  }
+
   addProposition(proposition: Dv11Proposition) {
     if (this.propositions.has(proposition.id)) {
       const existing = this.propositions.get(proposition.id)!;
@@ -214,6 +246,9 @@ export class Dv11KnowledgeStore {
     const lexemeSnapshot = new Map(this.lexemes);
     const lexicalSenseSnapshot = new Map(this.lexicalSenses);
     const lexicalClaimSnapshot = new Map(this.lexicalClaims);
+    const relationAliasSnapshot = new Map(this.relationAliases);
+    const dialogueBehaviorSnapshot = new Map(this.dialogueBehaviors);
+    const ruleBindingSnapshot = new Map(this.ruleBindings);
     const manifestSnapshot = new Map(this.packageManifests);
     const schemaSnapshot = new Map(dv11PredicateSchemas);
     try {
@@ -223,6 +258,9 @@ export class Dv11KnowledgeStore {
       for (const sense of pack.senses) this.addSense(sense);
       for (const sense of pack.lexicalSenses ?? []) this.addLexicalSense(sense);
       for (const claim of pack.lexicalClaims ?? []) this.addLexicalClaim(claim);
+      for (const frame of pack.relationAliases ?? []) this.addRelationAlias(frame);
+      for (const frame of pack.dialogueBehaviors ?? []) this.addDialogueBehavior(frame);
+      for (const binding of pack.ruleBindings ?? []) this.addRuleBinding(binding);
       for (const proposition of pack.propositions) this.addProposition(proposition);
       this.packageManifests.set(pack.manifest.packageId, pack.manifest);
     } catch (error) {
@@ -232,6 +270,9 @@ export class Dv11KnowledgeStore {
       this.lexemes.clear();
       this.lexicalSenses.clear();
       this.lexicalClaims.clear();
+      this.relationAliases.clear();
+      this.dialogueBehaviors.clear();
+      this.ruleBindings.clear();
       this.packageManifests.clear();
       dv11PredicateSchemas.clear();
       for (const [id, entity] of entitySnapshot) this.entities.set(id, entity);
@@ -240,6 +281,9 @@ export class Dv11KnowledgeStore {
       for (const [id, lexeme] of lexemeSnapshot) this.lexemes.set(id, lexeme);
       for (const [id, sense] of lexicalSenseSnapshot) this.lexicalSenses.set(id, sense);
       for (const [id, claim] of lexicalClaimSnapshot) this.lexicalClaims.set(id, claim);
+      for (const [id, frame] of relationAliasSnapshot) this.relationAliases.set(id, frame);
+      for (const [id, frame] of dialogueBehaviorSnapshot) this.dialogueBehaviors.set(id, frame);
+      for (const [id, binding] of ruleBindingSnapshot) this.ruleBindings.set(id, binding);
       for (const [id, manifest] of manifestSnapshot) this.packageManifests.set(id, manifest);
       for (const [id, schema] of schemaSnapshot) dv11PredicateSchemas.set(id, schema);
       this.rebuildIndexes();
@@ -280,6 +324,9 @@ export class Dv11KnowledgeStore {
   allLexemes() { return [...this.lexemes.values()]; }
   allLexicalSenses() { return [...this.lexicalSenses.values()]; }
   allLexicalClaims() { return [...this.lexicalClaims.values()]; }
+  relationAliasFrames() { return [...this.relationAliases.values()]; }
+  dialogueBehaviorFrames() { return [...this.dialogueBehaviors.values()]; }
+  activeRuleBindings() { return [...this.ruleBindings.values()].filter((binding) => binding.enabled); }
   sensesForEntity(entityId: string) { return [...this.senses.values()].filter((sense) => sense.entityId === entityId); }
   resolveLexeme(text: string) { return [...(this.lexicalAliases.get(dv11NormalizeText(text)) ?? [])].map((id) => this.lexemes.get(id)).filter((value): value is Dv11Lexeme => Boolean(value)); }
   lexicalSensesFor(lexemeId: string) { return [...this.lexicalSenses.values()].filter((sense) => sense.lexemeId === lexemeId); }
@@ -350,7 +397,8 @@ export class Dv11KnowledgeStore {
     };
     const correctionStopWords = new Set([
       "about", "after", "before", "cause", "contents", "contrast", "could", "define", "describe", "exactly", "explain", "favorite",
-      "given", "please", "should", "state", "their", "there", "these", "those", "which", "whole", "would",
+      "founded", "given", "invent", "invented", "located", "please", "produce", "produced", "should", "state", "their", "there",
+      "these", "those", "which", "whole", "would", "write", "writes", "writing", "written", "wrote",
     ]);
     for (let index = 0; index < tokens.length; index += 1) {
       const token = tokens[index];
@@ -394,6 +442,9 @@ export class Dv11KnowledgeStore {
       lexicalSenses: this.lexicalSenses.size,
       lexicalClaims: this.lexicalClaims.size,
       installedPackages: this.packageManifests.size,
+      relationAliasFrames: this.relationAliases.size,
+      dialogueBehaviorFrames: this.dialogueBehaviors.size,
+      activeRuleBindings: this.activeRuleBindings().length,
       queryableClaims: this.propositions.size + this.lexicalClaims.size,
     };
   }
@@ -431,6 +482,9 @@ export function validateDv11Package(pack: Dv11KnowledgePackage, installed = new 
   if ((pack.manifest.counts.lexemes ?? 0) !== (pack.lexemes?.length ?? 0)) errors.push("Lexeme count does not match manifest.");
   if ((pack.manifest.counts.lexicalClaims ?? 0) !== (pack.lexicalClaims?.length ?? 0)) errors.push("Lexical claim count does not match manifest.");
   if ((pack.manifest.counts.lexicalSenses ?? 0) !== (pack.lexicalSenses?.length ?? 0)) errors.push("Lexical sense count does not match manifest.");
+  if ((pack.manifest.counts.relationAliases ?? 0) !== (pack.relationAliases?.length ?? 0)) errors.push("Relation-alias count does not match manifest.");
+  if ((pack.manifest.counts.dialogueBehaviors ?? 0) !== (pack.dialogueBehaviors?.length ?? 0)) errors.push("Dialogue-behavior count does not match manifest.");
+  if (pack.manifest.counts.rules !== (pack.ruleBindings?.length ?? 0)) errors.push("Rule-binding count does not match manifest.");
   const expectedHash = dv11PackageContentHash({
     entities: pack.entities,
     propositions: pack.propositions,
@@ -439,11 +493,17 @@ export function validateDv11Package(pack: Dv11KnowledgePackage, installed = new 
     ...(pack.lexemes ? { lexemes: pack.lexemes } : {}),
     ...(pack.lexicalSenses ? { lexicalSenses: pack.lexicalSenses } : {}),
     ...(pack.lexicalClaims ? { lexicalClaims: pack.lexicalClaims } : {}),
+    ...(pack.relationAliases ? { relationAliases: pack.relationAliases } : {}),
+    ...(pack.dialogueBehaviors ? { dialogueBehaviors: pack.dialogueBehaviors } : {}),
+    ...(pack.ruleBindings ? { ruleBindings: pack.ruleBindings } : {}),
   });
   if (pack.manifest.contentHash.startsWith("fnv1a:") && pack.manifest.contentHash !== expectedHash) errors.push("Package content hash is invalid.");
   for (const dependency of pack.manifest.dependencies) if (!installed.has(dependency.packageId)) errors.push(`Missing dependency ${dependency.packageId}.`);
   if (new Set(pack.entities.map((item) => item.id)).size !== pack.entities.length) errors.push("Duplicate entity IDs in package.");
   if (new Set(pack.propositions.map((item) => item.id)).size !== pack.propositions.length) errors.push("Duplicate proposition IDs in package.");
+  if (new Set((pack.relationAliases ?? []).map((item) => String(item.relation))).size !== (pack.relationAliases?.length ?? 0)) errors.push("Duplicate relation-alias frames in package.");
+  if (new Set((pack.dialogueBehaviors ?? []).map((item) => item.id)).size !== (pack.dialogueBehaviors?.length ?? 0)) errors.push("Duplicate dialogue-behavior frames in package.");
+  if (new Set((pack.ruleBindings ?? []).map((item) => item.id)).size !== (pack.ruleBindings?.length ?? 0)) errors.push("Duplicate rule bindings in package.");
   if (new Set((pack.lexemes ?? []).map((item) => item.id)).size !== (pack.lexemes?.length ?? 0)) errors.push("Duplicate lexeme IDs in package.");
   if (new Set((pack.lexicalSenses ?? []).map((item) => item.id)).size !== (pack.lexicalSenses?.length ?? 0)) errors.push("Duplicate lexical sense IDs in package.");
   if (new Set((pack.lexicalClaims ?? []).map((item) => item.id)).size !== (pack.lexicalClaims?.length ?? 0)) errors.push("Duplicate lexical claim IDs in package.");

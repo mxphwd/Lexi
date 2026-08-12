@@ -1,10 +1,10 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260812-DV11 is a deterministic,
-zero-generative-model language prototype. The DV11 servicing patch connects the
-typed runtime directly to its package registry and a Worker-side global resource
-catalog. The browser retains only matched records and reports the exact number
-of world propositions and lexical claims that are live and queryable.
+Lexi Language 1.0 Pre-build 260812-DV11AD1 is a deterministic,
+zero-generative-model language prototype. DV11AD1 adds a source-attested
+ordinary-knowledge layer to the connected DV11 runtime. The Worker selects and
+loads only compatible packages; the browser retains matched records and reports
+the exact number of world propositions and lexical claims that are queryable.
 
 Lexi does not call a generative model, predict tokens, use learned embeddings,
 or convert an absent fact into a confident answer.
@@ -19,6 +19,24 @@ input
   → proposition realization and proof ledger
   → answer with evidence, or calibrated abstention
 ```
+
+## DV11AD1 ordinary-knowledge extension
+
+DV11AD1 contains 719,949 queryable world propositions across 506,655 entities
+and 199 typed predicates. Global indexes cover 1,528,693 normalized aliases as
+well as entity, predicate, subject, object, and domain lookups. Ten independently
+loadable logical domains are implemented as 2,302 small physical shards, so a
+question never requires the browser to retain the full knowledge graph.
+
+The pack also compiles 29,640 relation-language mappings, 5,000 dialogue
+scenarios, six executable dialogue behaviors, and thirteen reusable reasoning
+bindings. Every proposition carries a source locator, extraction method, review
+status, confidence, creation date, license, and dispute status. These records
+are source-attested and structurally validated; they are not presented as
+independently human-reviewed facts or as evidence of a universal accuracy rate.
+
+See `docs/DV11AD1.md` for package boundaries, generation, validation, licensing,
+and the exact live-count contract.
 
 ## DV11 live package connection
 
@@ -130,7 +148,8 @@ attributed lexical source layer and adds:
 - manifest validation and measured data statistics
 
 Generated resources live under `data/dv9/`; runtime shards live under
-`public/dv9/lexicon/`; global DV11 indexes live under `public/dv11/service/`.
+`public/dv9/lexicon/`; global DV11 indexes and DV11AD1 package shards live under
+`public/dv11/service/`.
 The complete source archives remain under
 `data/lexicon/vendor/` with their notices and hashes.
 
@@ -141,6 +160,9 @@ npm run dv9:build-data
 npm run dv9:validate-data
 npm run dv11:build-service-data
 npm run dv11:validate-service-data
+npm run dv11ad1:fetch-source
+npm run dv11ad1:build
+npm run dv11ad1:validate
 npm run benchmark:dv9
 ```
 
@@ -177,6 +199,6 @@ knowledge is missing. Real user failures must remain outside the development
 pack until their blind score is recorded.
 
 See `docs/ARCHITECTURE.md`, `docs/DV9_DATA.md`, `docs/DV10_BENCHMARK.md`,
-`docs/DV11_SERVICING_PATCH.md`,
+`docs/DV11_SERVICING_PATCH.md`, `docs/DV11AD1.md`,
 `docs/DOCUMENTATION_MAPPING.md`, and `docs/RELEASES.md` for the complete
 contracts.

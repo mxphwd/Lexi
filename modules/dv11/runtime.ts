@@ -308,13 +308,14 @@ function replyFromResult(input: string, result: Dv11ExecutionResult, stages: Dv1
 }
 
 export class Dv11RuntimeSession {
-  readonly dialogue = new Dv11DialogueState();
+  readonly dialogue: Dv11DialogueState;
   readonly packages: Dv11PackageRegistry;
 
   constructor(
     readonly store: Dv11KnowledgeStore = dv11KnowledgeStore,
     readonly resources: Dv11KnowledgeResourceClient | undefined = createDefaultDv11ResourceClient(),
   ) {
+    this.dialogue = new Dv11DialogueState(store);
     this.packages = new Dv11PackageRegistry(store);
   }
 

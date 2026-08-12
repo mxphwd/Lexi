@@ -13,6 +13,7 @@ import {
   executeDv11Plan,
   matchDv11CompiledLanguage,
   parseDv11Query,
+  realizeDv11Result,
   validateDv11Package,
 } from "@/modules/dv11";
 import { handleLexiResources } from "@/worker/lexi-resources";
@@ -160,4 +161,51 @@ test("resolves the global alias index behind the Worker boundary", async () => {
   const result = await response?.json() as { packages: Array<{ lexemes?: Array<{ lemma: string }> }>; service: { serverQueryableLexicalFacts: number } };
   assert.equal(result.packages[0]?.lexemes?.[0]?.lemma, "zeppelin");
   assert.equal(result.service.serverQueryableLexicalFacts, 800_000);
+});
+
+test("loads only compatible AD1 world shards and executes proposition-backed answers", async () => {
+  const assets = {
+    async fetch(input: RequestInfo | URL) {
+      try {
+        const pathname = new URL(input instanceof Request ? input.url : String(input)).pathname;
+        return new Response(new Uint8Array(await readFile(new URL(`../public${pathname}`, import.meta.url))), { status: 200 });
+      } catch {
+        return new Response("missing", { status: 404 });
+      }
+    },
+  };
+  const response = await handleLexiResources(new Request("https://lexi.test/api/lexi/resources", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      schemaVersion: 1,
+      normalized: "what did william shakespeare write",
+      aliases: ["what did william shakespeare", "william shakespeare", "william", "shakespeare"],
+      entityIds: [],
+      senseIds: [],
+      predicates: ["written_by"],
+      domains: ["everyday-core"],
+      loadedPackageIds: [],
+    }),
+  }), assets);
+  assert.equal(response?.status, 200);
+  const payload = await response?.json() as {
+    packages: Array<{ manifest: { packageId: string }; propositions: unknown[] }>;
+    service: { serverQueryableWorldPropositions: number; independentlyLoadablePackages: number };
+  };
+  const worldPackages = payload.packages.filter((pack) => pack.manifest.packageId.includes("dv11ad1"));
+  assert.ok(worldPackages.length > 0);
+  assert.ok(worldPackages.length <= 4);
+  assert.equal(payload.service.serverQueryableWorldPropositions, 719_949);
+  assert.equal(payload.service.independentlyLoadablePackages, 10);
+
+  const store = createDv11KnowledgeStore();
+  for (const pack of worldPackages) store.addPackage(pack as never);
+  const plan = parseDv11Query("What did William Shakespeare write?", {}, store).plan;
+  assert.equal(plan.clauses[0].patterns[0].relation, "written_by");
+  assert.deepEqual(plan.clauses[0].patterns[0].object, { kind: "entity", entityId: "wd:Q692" });
+  const result = executeDv11Plan(plan, store);
+  assert.equal(result.status, "supported");
+  assert.match(realizeDv11Result(result, store).text, /The Tempest|Sonnet/i);
+  assert.ok(result.proof.every((step) => step.premiseIds.every((id) => id.startsWith("ad1:"))));
 });

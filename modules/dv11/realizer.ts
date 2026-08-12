@@ -1,3 +1,4 @@
+import { dv11PredicateSchema } from "./schema";
 import { dv11KnowledgeStore, type Dv11KnowledgeStore } from "./store";
 import type { Dv11ClausePlan, Dv11ClauseResult, Dv11ExecutionResult, Dv11Proposition, Dv11Value } from "./types";
 
@@ -86,7 +87,8 @@ function relationSentence(proposition: Dv11Proposition, value: string, store: Dv
     procedure: `To prepare ${subject}: ${value}`,
     closest_to: `${value} is the closest recorded ${subject}${closestTarget ? ` to ${closestTarget}` : ""}`,
   };
-  return frames[proposition.relation] ?? `${subject}'s ${String(proposition.relation).replace(/_/g, " ")} is ${value}`;
+  const relationLabel = dv11PredicateSchema(proposition.relation)?.label ?? String(proposition.relation).replace(/^(?:wdt:)?P\d+$/i, "recorded relationship").replace(/_/g, " ");
+  return frames[proposition.relation] ?? `${subject}'s ${relationLabel} is ${value}`;
 }
 
 function realizeSupported(plan: Dv11ClausePlan, result: Dv11ClauseResult, store: Dv11KnowledgeStore) {

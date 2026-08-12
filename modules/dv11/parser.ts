@@ -52,7 +52,7 @@ const relationFrames: ReadonlyArray<{ relation: Dv11Relation; property: string; 
   { relation: "habitat", property: "habitat", patterns: [/\bwhere (?:do|does|did) .+ live\b/, /\bhabitat\b/], answerShape: "text" },
   { relation: "invented_by", property: "inventor", patterns: [/\bwho (?:was .+ )?invented\b/, /\binvented by\b/, /\bwhat did .+ invent\b/, /\b(?:person|person who|who) came up with\b/, /\binventor\b/], answerShape: "entity" },
   { relation: "created_by", property: "creator", patterns: [/\bwho created\b/, /\bcreated by\b/], answerShape: "entity" },
-  { relation: "written_by", property: "author", patterns: [/\bwho wrote\b/, /\bwritten by\b/, /\bauthor of\b/], answerShape: "entity" },
+  { relation: "written_by", property: "author", patterns: [/\bwho wrote\b/, /^what did .+ write\b/, /\bwritten by\b/, /\bauthor of\b/], answerShape: "entity" },
   { relation: "discovered_by", property: "discoverer", patterns: [/\bwho discovered\b/, /\bdiscovered by\b/], answerShape: "entity" },
   { relation: "founded_by", property: "founder", patterns: [/\bwho founded\b/, /\bfounded by\b/], answerShape: "entity" },
   { relation: "founded_year", property: "founding year", patterns: [/\bwhen was .+ founded\b/, /\bfounding year\b/], answerShape: "number" },
@@ -165,8 +165,13 @@ function mentionsFor(text: string, span: Dv11SourceSpan, store: Dv11KnowledgeSto
   });
 }
 
-function relationCandidates(normalized: string) {
-  return relationFrames
+function containsPhrase(input: string, phrase: string) {
+  const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?:^|[^\\p{L}\\p{N}])${escaped}(?:$|[^\\p{L}\\p{N}])`, "u").test(input);
+}
+
+function relationCandidates(normalized: string, store: Dv11KnowledgeStore) {
+  const builtIn = relationFrames
     .map((frame, index) => ({
       frame,
       score: frame.patterns.some((pattern) => pattern.test(normalized)) ? 1_000 - index * 4
@@ -175,6 +180,17 @@ function relationCandidates(normalized: string) {
     }))
     .filter((item) => item.score > 0)
     .sort((left, right) => right.score - left.score);
+  const dynamic = store.relationAliasFrames().flatMap((frame) => {
+    const matched = frame.aliases.filter((alias) => containsPhrase(normalized, alias)).sort((left, right) => right.length - left.length);
+    if (!matched.length) return [];
+    return [{
+      frame: { relation: frame.relation, property: frame.property, patterns: [] as RegExp[], answerShape: frame.answerShape },
+      score: 1_180 + Math.min(200, matched[0].length * 3),
+    }];
+  });
+  return [...dynamic, ...builtIn]
+    .sort((left, right) => right.score - left.score)
+    .filter((item, index, all) => all.findIndex((candidate) => candidate.frame.relation === item.frame.relation) === index);
 }
 
 function quantifiers(normalized: string, variable = "answer"): Dv11Quantifier[] {
@@ -258,6 +274,9 @@ function relationTerms(normalized: string, relation: Dv11Relation, mentions: Dv1
   } else if (relation === "continent" && /^what continent is .+ in\b/.test(normalized) && selected.length) {
     subject = entity(selected.at(-1)!.entityId);
     object = answer;
+  } else if (relation === "country" && /^(?:what|which) country (?:is|was|are|were) .+\b(?:in|from)\b/.test(normalized) && selected.length) {
+    subject = entity(selected.at(-1)!.entityId);
+    object = answer;
   } else if (relation === "count" && /\b(?:in|of|within)\b/.test(normalized) && selected.length > 1) {
     subject = entity(selected.at(-1)!.entityId);
   } else if (/^(?:list|name|give(?: me)?)\b/.test(normalized) && relation === "is_a" && selected[0]) {
@@ -324,7 +343,7 @@ function conditionGraph(normalized: string, fallbackPattern: Dv11Pattern): Dv11C
 
 function genericPlans(request: Dv11NormalizedRequest, clause: Dv11SourceSpan, context: Dv11ParserContext, store: Dv11KnowledgeStore): Dv11ClausePlan[] {
   const normalized = dv11NormalizeText(clause.text);
-  const detected = relationCandidates(normalized);
+  const detected = relationCandidates(normalized, store);
   const openProperty = normalized.match(/^(?:what|who) (?:is|are|was|were) the (.+?) (?:of|for|from|in)\b/)?.[1];
   const unsupportedCompoundProperty = openProperty && /\b(?:shoe|favorite|preferred|personal)\b/.test(openProperty);
   if (openProperty && (unsupportedCompoundProperty || !detected.some((item) => !["definition", "is_a"].includes(item.frame.relation)))) {
@@ -350,7 +369,10 @@ function genericPlans(request: Dv11NormalizedRequest, clause: Dv11SourceSpan, co
         return { ...mention, candidates, selectedEntityId: undefined, selectedSenseId: undefined };
       }
       if (mention.selectedEntityId || mention.candidates.length < 2) return mention;
-      const supported = mention.candidates.filter((candidate) => store.direct(candidate.entityId, frame.relation).length > 0);
+      const supported = mention.candidates.filter((candidate) =>
+        store.direct(candidate.entityId, frame.relation).length > 0
+        || store.inverse(frame.relation, { kind: "entity", entityId: candidate.entityId }).length > 0,
+      );
       return supported.length === 1
         ? { ...mention, selectedEntityId: supported[0].entityId, candidates: [supported[0]] }
         : mention;
@@ -400,6 +422,7 @@ function genericPlans(request: Dv11NormalizedRequest, clause: Dv11SourceSpan, co
     const unresolvedSlots: string[] = [];
     if (
       pattern.subject.kind === "variable" &&
+      pattern.subject.name !== terms.answerVariable &&
       operationFor(normalized, shape, speech) !== "aggregate" &&
       !["member", "negative classification"].includes(frame.property)
     ) unresolvedSlots.push("subject");

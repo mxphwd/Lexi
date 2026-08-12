@@ -10,6 +10,7 @@ import type {
   Dv11QueryPlan,
   Dv11Value,
 } from "./types";
+import type { Dv11KnowledgeStore } from "./store";
 
 function cloneSnapshot(snapshot: Dv11DialogueSnapshot): Dv11DialogueSnapshot {
   return structuredClone(snapshot);
@@ -56,6 +57,7 @@ export class Dv11DialogueState {
 
   snapshot() { return cloneSnapshot(this.state); }
   restore(snapshot: Dv11DialogueSnapshot) { this.state = cloneSnapshot(snapshot); }
+  constructor(private readonly store?: Dv11KnowledgeStore) {}
   parserContext() {
     const last = this.state.turns.at(-1);
     return {
@@ -107,6 +109,26 @@ export class Dv11DialogueState {
     // A dialogue operation may not swallow neighboring clauses. Mixed and
     // multi-part requests continue through the common executor and adapters.
     if (plan.clauses.length !== 1) return undefined;
+    const compiledBehavior = this.store?.dialogueBehaviorFrames().find((frame) => frame.utterances.includes(dv11NormalizeText(plan.original).replace(/[?.!]+$/g, "")));
+    if (compiledBehavior?.action === "recall-topic") {
+      const active = this.state.activeEntityIds[0];
+      const entity = active ? this.store?.entity(active) : undefined;
+      const result = this.single(plan, entity ? "supported" : "unknown", {}, [], entity ? undefined : "There is no active world entity in this conversation.");
+      if (entity) result.clauses[0].text = `We are discussing ${entity.canonicalName}.`;
+      return result;
+    }
+    if (compiledBehavior?.action === "repeat-answer") {
+      const last = this.state.turns.at(-1);
+      const result = this.single(plan, last ? "supported" : "unknown", {}, [], last ? undefined : "There is no previous answer to repeat.");
+      if (last) result.clauses[0].text = last.answerText;
+      return result;
+    }
+    if (compiledBehavior?.action === "clarify-goal") {
+      const goal = [...this.state.goals].reverse().find((candidate) => candidate.status === "pending");
+      const result = this.single(plan, goal ? "supported" : "unknown", {}, [], goal ? undefined : "There is no unfinished conversational goal.");
+      if (goal) result.clauses[0].text = `The unfinished goal is ${goal.type}${goal.unresolvedSlots.length ? `; it still needs ${goal.unresolvedSlots.join(", ")}` : ""}.`;
+      return result;
+    }
     if (clause.operation === "explain-proof") {
       const last = this.state.turns.at(-1);
       if (!last) return this.single(plan, "unknown", {}, [], "There is no previous supported answer to prove.");

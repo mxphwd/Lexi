@@ -25,7 +25,7 @@ import { dv11KnowledgeStore } from "./store";
 
 export function dv11EngineStats() {
   return {
-    build: "260812-DV11",
+    build: "260812-DV11AD1",
     architecture: "unified-typed-semantic-runtime",
     parser: dv11ParserStats(),
     liveKnowledge: dv11KnowledgeStore.stats(),

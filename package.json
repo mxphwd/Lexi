@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260812-dv11",
+  "version": "1.0.0-prebuild.260812-dv11ad1",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -32,9 +32,12 @@
     "dv11:validate-packages": "node --import tsx scripts/validate-dv11-packages.mjs",
     "dv11:build-service-data": "node scripts/build-dv11-service-data.mjs",
     "dv11:validate-service-data": "node scripts/validate-dv11-service-data.mjs",
+    "dv11ad1:fetch-source": "node scripts/fetch-dv11-ad1-source.mjs",
+    "dv11ad1:build": "node --expose-gc --max-old-space-size=4096 scripts/build-dv11-ad1-pack.mjs",
+    "dv11ad1:validate": "node scripts/validate-dv11-ad1-pack.mjs",
     "budget:dv11": "node scripts/check-dv11-bundle-budget.mjs",
     "failure:record:dv11": "node scripts/capture-dv11-failure.mjs",
-    "verify:dv11": "npm run typecheck && npm run corpus:validate && npm run dv9:validate-data && npm run dv11:validate-packages && npm run dv11:validate-service-data && npm run benchmark:dv11:leakage && npm run test:unit"
+    "verify:dv11": "npm run typecheck && npm run corpus:validate && npm run dv9:validate-data && npm run dv11:validate-packages && npm run dv11:validate-service-data && npm run dv11ad1:validate && npm run benchmark:dv11:leakage && npm run test:unit"
   },
   "dependencies": {
     "next": "16.2.6",

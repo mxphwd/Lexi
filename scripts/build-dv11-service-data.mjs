@@ -56,7 +56,9 @@ function replaceTerm(prompt, term) {
   };
 }
 
-await rm(outputRoot, { recursive: true, force: true });
+await rm(indexRoot, { recursive: true, force: true });
+await rm(join(outputRoot, "catalog.json"), { force: true });
+await rm(join(outputRoot, "compiled-language.json"), { force: true });
 
 const dv9Manifest = JSON.parse(await readFile(join(dv9Root, "manifest.json"), "utf8"));
 const aliasBuckets = new Map();

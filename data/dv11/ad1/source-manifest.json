@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "extension": "DV11AD1",
+  "targetQueryablePropositions": 720000,
+  "source": {
+    "id": "wikidata5m",
+    "title": "Wikidata5M raw knowledge graph and English aliases",
+    "projectUrl": "https://deepgraphlearning.github.io/project/wikidata5m",
+    "upstream": "Wikidata",
+    "upstreamUrl": "https://www.wikidata.org/wiki/Wikidata:Database_download",
+    "license": "CC0-1.0",
+    "triples": {
+      "url": "https://www.dropbox.com/s/563omb11cxaqr83/wikidata5m_all_triplet.txt.gz?dl=1",
+      "sha256": "a7ee770df8df494e92fc9b9ebdbf446663e3b2c30674fd3e4bf38616a1d8bacc"
+    },
+    "aliases": {
+      "url": "https://www.dropbox.com/s/lnbhc8yuhit4wm5/wikidata5m_alias.tar.gz?dl=1",
+      "sha256": "ece7a2a68c2afcf7e1d633159adddd7a4de03c73334c61c80191000fee26c033"
+    }
+  },
+  "selection": {
+    "maximumPredicates": 220,
+    "minimumSourceFrequency": 50,
+    "maximumAliasesPerEntity": 8,
+    "sourceAttestedOnly": true,
+    "deduplicateMappedTriples": true,
+    "browserRetention": "matched-records-only"
+  },
+  "packages": [
+    "everyday-core",
+    "geography",
+    "natural-science",
+    "math-measurement",
+    "computing",
+    "history-civics",
+    "processes",
+    "causal-explanations",
+    "language-mappings",
+    "dialogue-behavior"
+  ]
+}

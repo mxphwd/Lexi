@@ -201,6 +201,31 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "Kept the ordinary-question acceptance gate closed because no independently reviewed real-failure rows have been imported yet; no 50–60% answer-possibility claim is published.",
     ],
   },
+  {
+    build: "260812-DV11AD1",
+    label: "Pre-build 260812-DV11AD1",
+    shortLabel: "DV11AD1",
+    date: "12 August 2026",
+    capabilityIndex: 100,
+    metric: "719,949 live propositions",
+    measurements: [
+      { label: "World facts", value: "719,949" },
+      { label: "Entities", value: "506,655" },
+      { label: "Aliases", value: "1,528,693" },
+      { label: "Predicates", value: "199" },
+      { label: "Domain packages", value: "10" },
+      { label: "Physical shards", value: "2,302" },
+      { label: "Query mappings", value: "29,640" },
+      { label: "Dialogue scenarios", value: "5,000" },
+    ],
+    notes: [
+      "Added 719,949 source-attested, queryable ordinary-knowledge propositions with claim-level provenance across 506,655 world entities.",
+      "Divided AD1 into ten independently loadable domains backed by 2,302 subject-hashed physical shards and global alias, entity, predicate, subject, object, and domain indexes.",
+      "Moved shard compatibility scoring and million-scale retrieval behind the Worker, retaining only a bounded set of matched packages in the browser before entity relinking and re-execution.",
+      "Compiled 29,640 relation-language mappings, 5,000 dialogue scenarios, six executable dialogue behaviors, and thirteen reusable rule bindings into runtime behavior.",
+      "The pack is source-attested rather than independently human-reviewed, and no answer-possibility or improvement multiplier is published without a frozen blind ordinary-question benchmark.",
+    ],
+  },
 ] as const;
 
 export function releaseImprovement(index: number) {

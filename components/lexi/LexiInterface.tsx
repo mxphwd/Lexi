@@ -271,7 +271,7 @@ export function LexiInterface() {
                     {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    DV11 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
+                    DV11AD1 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
                     Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>
