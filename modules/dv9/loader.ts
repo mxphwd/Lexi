@@ -9,6 +9,8 @@ export const DV9_LEXICON_BASE_PATH = "/dv9/lexicon";
 const defaultPromises = new Map<string, Promise<Dv9RuntimeShard>>();
 const customPromises = new WeakMap<DictionaryFetcher, Map<string, Promise<Dv9RuntimeShard>>>();
 const maximumCachedShards = 12;
+const maximumCachedServiceEntries = 256;
+const servicePromises = new Map<string, Promise<Dv9RuntimeEntry | undefined>>();
 const shardMetadata = new Map(dv9Manifest.runtimeShards.map((item) => [item.shard, item]));
 
 export class Dv9ShardLoadError extends Error {
@@ -113,11 +115,29 @@ export async function loadDv9Shard(shard: string, options: Dv9LoaderOptions = {}
 export async function findDv9Entry(term: string, options: Dv9LoaderOptions = {}): Promise<Dv9RuntimeEntry | undefined> {
   const forms = dv9LexicalLookupForms(term);
   if (!forms.length) return undefined;
+  if (!options.fetcher && !options.basePath && typeof window !== "undefined") {
+    const key = forms.join("|");
+    const cached = servicePromises.get(key);
+    if (cached) return cached;
+    const source = `/api/lexi/lexical?term=${encodeURIComponent(term)}`;
+    const pending = fetchWithPolicy(source, options).then(async (response) => {
+      if (!response.ok) throw new Dv9ShardLoadError("fetch", `DV11 lexical service request failed with ${response.status}.`, source);
+      const value = await response.json() as { schemaVersion?: unknown; entry?: unknown };
+      if (value.schemaVersion !== 1 || value.entry !== null && !isDv9RuntimeEntry(value.entry)) throw new Dv9ShardLoadError("schema", "DV11 lexical service returned an invalid entry.", source);
+      return value.entry ?? undefined;
+    }).catch((error) => {
+      servicePromises.delete(key);
+      throw error;
+    });
+    servicePromises.set(key, pending);
+    while (servicePromises.size > maximumCachedServiceEntries) servicePromises.delete(servicePromises.keys().next().value!);
+    return pending;
+  }
   const shard = await loadDv9Shard(dv9ShardFor(forms[0]), options);
   for (const form of forms) if (shard[form]) return shard[form];
   return undefined;
 }
 
 export function dv9ShardCacheStats() {
-  return { defaultCachedShards: defaultPromises.size, maximumCachedShards, manifestBuild: dv9Manifest.build, manifestSchemaVersion: dv9Manifest.schemaVersion };
+  return { defaultCachedShards: defaultPromises.size, maximumCachedShards, serviceCachedEntries: servicePromises.size, maximumCachedServiceEntries, manifestBuild: dv9Manifest.build, manifestSchemaVersion: dv9Manifest.schemaVersion };
 }

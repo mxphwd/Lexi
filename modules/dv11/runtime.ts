@@ -4,8 +4,10 @@ import { analyseSentence } from "@/modules/search";
 import { calibrateDv11Result } from "./calibration";
 import { Dv11DialogueState } from "./dialogue";
 import { executeDv11Plan } from "./executor";
+import { Dv11PackageRegistry } from "./packages";
 import { parseDv11Query } from "./parser";
 import { realizeDv11Result } from "./realizer";
+import { createDefaultDv11ResourceClient, type Dv11KnowledgeResourceClient } from "./resources";
 import { dv11KnowledgeStore, type Dv11KnowledgeStore } from "./store";
 import type {
   Dv11ClausePlan,
@@ -46,6 +48,7 @@ function legacyMatchesRequestedRelation(clause: Dv11ClausePlan, reply: LexiReply
 }
 
 function preferTypedResult(plan: Dv11ClausePlan, result: Dv11ClauseResult, legacy: LexiReply) {
+  if (plan.operation === "lexical" && ["supported", "insufficient"].includes(result.status) && Boolean(result.lexicalClaims?.length)) return true;
   if (plan.operation === "infer") return true;
   if (["explain-proof", "remember", "recall", "correct", "retract"].includes(plan.operation)
     && ["supported", "contradicted"].includes(result.status)) return true;
@@ -217,7 +220,11 @@ function replyFromResult(input: string, result: Dv11ExecutionResult, stages: Dv1
   stages.push(stage("realization", "passed", "DV11_REALIZED", `Realized ${realized.parts.length} ordered clause result${realized.parts.length === 1 ? "" : "s"}.`, result.calibratedConfidence));
   const analysis = analyseSentence(input);
   const propositions = result.clauses.flatMap((clause) => clause.propositions);
-  const sources = propositions.flatMap((proposition) => proposition.provenance.map((source) => ({ sourceId: source.sourceId, sourceLocation: source.sourceLocation, reviewStatus: source.reviewStatus })));
+  const lexicalClaims = result.clauses.flatMap((clause) => clause.lexicalClaims ?? []);
+  const sources = [
+    ...propositions.flatMap((proposition) => proposition.provenance),
+    ...lexicalClaims.flatMap((claim) => claim.provenance),
+  ].map((source) => ({ sourceId: source.sourceId, sourceLocation: source.sourceLocation, reviewStatus: source.reviewStatus }));
   const subjects = [...new Set(propositions.flatMap((proposition) => [proposition.subjectId, ...(proposition.object.kind === "entity" ? [proposition.object.entityId] : [])]))];
   const legacy = result.clauses.map((clause) => clause.legacyMetadata).filter((value): value is NonNullable<typeof value> => Boolean(value));
   const allLegacy = legacy.length === result.clauses.length;
@@ -271,7 +278,10 @@ function replyFromResult(input: string, result: Dv11ExecutionResult, stages: Dv1
         ? legacy.map((item) => item.interpretedIntent).join(" + ")
         : result.plan.clauses.map((clause) => `dv11:${clause.operation}:${clause.patterns[0]?.relation ?? "dialogue"}`).join(" + ")),
       confidence: result.calibratedConfidence,
-      matchedExampleIds: allLegacy ? legacy.flatMap((item) => item.matchedExampleIds) : propositions.map((proposition) => `proposition:${proposition.id}`),
+      matchedExampleIds: allLegacy ? legacy.flatMap((item) => item.matchedExampleIds) : [
+        ...propositions.map((proposition) => `proposition:${proposition.id}`),
+        ...lexicalClaims.map((claim) => `lexical-claim:${claim.id}`),
+      ],
       matchedTerms: allLegacy ? legacy.flatMap((item) => item.matchedTerms) : result.plan.clauses.flatMap((clause) => clause.evidence),
       selectedStructure: combinedLegacy?.trace.selectedStructure ?? (allLegacy && legacy.length === 1 ? legacy[0].selectedStructure : "dv11:unified-semantic-runtime"),
       source: combinedLegacy?.trace.source ?? (allLegacy
@@ -287,19 +297,26 @@ function replyFromResult(input: string, result: Dv11ExecutionResult, stages: Dv1
       executionStatus: result.status,
       failureStage: result.failureStage,
       failureCode: result.failureCode,
-      propositionIds: propositions.map((proposition) => proposition.id),
+      propositionIds: [...propositions.map((proposition) => proposition.id), ...lexicalClaims.map((claim) => claim.id)],
       sources,
+      liveKnowledge: store.stats(),
       confidenceComponents: result.clauses[0]?.confidence,
       stages,
-      clauseResults: result.clauses.map((clause) => ({ clauseId: clause.clauseId, status: clause.status, confidence: clause.calibratedConfidence, propositionIds: clause.propositions.map((proposition) => proposition.id) })),
+      clauseResults: result.clauses.map((clause) => ({ clauseId: clause.clauseId, status: clause.status, confidence: clause.calibratedConfidence, propositionIds: [...clause.propositions.map((proposition) => proposition.id), ...(clause.lexicalClaims ?? []).map((claim) => claim.id)] })),
     },
   };
 }
 
 export class Dv11RuntimeSession {
   readonly dialogue = new Dv11DialogueState();
+  readonly packages: Dv11PackageRegistry;
 
-  constructor(readonly store: Dv11KnowledgeStore = dv11KnowledgeStore) {}
+  constructor(
+    readonly store: Dv11KnowledgeStore = dv11KnowledgeStore,
+    readonly resources: Dv11KnowledgeResourceClient | undefined = createDefaultDv11ResourceClient(),
+  ) {
+    this.packages = new Dv11PackageRegistry(store);
+  }
 
   private prepare(input: string, options: Dv11EngineOptions) {
     const stages: Dv11TraceStage[] = [];
@@ -315,6 +332,35 @@ export class Dv11RuntimeSession {
     const resolvedPlan = this.dialogue.resolveReferences(parsed.plan);
     stages.push(stage("entity-linking", resolvedPlan.clauses.some((clause) => clause.unresolvedSlots.includes("entity-sense")) ? "partial" : "passed", "DV11_ENTITY_CANDIDATES", `${resolvedPlan.clauses.flatMap((clause) => clause.mentions).length} indexed mention${resolvedPlan.clauses.flatMap((clause) => clause.mentions).length === 1 ? "" : "s"}.`, resolvedPlan.clauses[0]?.confidence.entityLinking));
     return { request: parsed.request, plan: resolvedPlan, stages };
+  }
+
+  private async resolvePackages(input: string, prepared: ReturnType<Dv11RuntimeSession["prepare"]>, options: Dv11EngineOptions) {
+    if (!this.resources) {
+      prepared.stages.push(stage("resource-loading", "skipped", "DV11_RESOURCE_CLIENT_UNAVAILABLE", "No Worker resource client is active in this runtime."));
+      return prepared;
+    }
+    const start = performance.now();
+    try {
+      const response = await this.resources.resolve(prepared.plan, this.packages.loadedPackageIds(), options.signal);
+      let installed = 0;
+      for (const pack of response.packages) {
+        const result = await this.packages.installResolved(pack, pack.manifest.capabilities, options.signal);
+        if (!result.fromCache) installed += 1;
+      }
+      const matches = Object.values(response.matched).reduce((sum, values) => sum + values.length, 0);
+      prepared.stages.push(stage("resource-loading", "passed", "DV11_RESOURCE_PACKAGES", `${installed} package${installed === 1 ? "" : "s"} installed from ${matches} global-index match${matches === 1 ? "" : "es"}; ${this.store.stats().queryableClaims} claims are live and queryable.`, 1, performance.now() - start));
+      if (!response.packages.length) return prepared;
+      const reparsed = this.prepare(input, options);
+      reparsed.stages = [
+        ...prepared.stages,
+        stage("parsing", "passed", "DV11_REPARSED_AFTER_PACKAGE_LOAD", `Reparsed, relinked, and rerouted ${reparsed.plan.clauses.length} clause${reparsed.plan.clauses.length === 1 ? "" : "s"} after matched package installation.`, reparsed.plan.clauses[0]?.confidence.parsing),
+      ];
+      return reparsed;
+    } catch (error) {
+      if (options.signal?.aborted || error instanceof DOMException && error.name === "AbortError") throw error;
+      prepared.stages.push(stage("resource-loading", "failed", "DV11_RESOURCE_LOAD_FAILED", error instanceof Error ? error.message : String(error), 0, performance.now() - start));
+      return prepared;
+    }
   }
 
   respond(input: string, legacy?: (input: string) => LexiReply, options: Dv11EngineOptions = {}) {
@@ -340,7 +386,8 @@ export class Dv11RuntimeSession {
       }));
     }
     result = calibrateDv11Result(result);
-    prepared.stages.push(stage("retrieval", result.clauses.some((clause) => clause.propositions.length) ? "passed" : "partial", "DV11_RETRIEVAL", `${result.clauses.flatMap((clause) => clause.propositions).length} proposition${result.clauses.flatMap((clause) => clause.propositions).length === 1 ? "" : "s"} retained.`, result.clauses[0]?.confidence.evidence));
+    const retainedClaims = result.clauses.reduce((sum, clause) => sum + clause.propositions.length + (clause.lexicalClaims?.length ?? 0), 0);
+    prepared.stages.push(stage("retrieval", retainedClaims ? "passed" : "partial", "DV11_RETRIEVAL", `${retainedClaims} proposition or lexical claim${retainedClaims === 1 ? "" : "s"} retained; ${this.store.stats().queryableClaims} live claims are queryable.`, result.clauses[0]?.confidence.evidence));
     prepared.stages.push(stage("reasoning", result.proof.length ? "passed" : "partial", "DV11_PROOF", `${result.proof.length} proof step${result.proof.length === 1 ? "" : "s"}.`, result.clauses[0]?.confidence.proof));
     prepared.stages.push(stage("calibration", "passed", "DV11_CALIBRATED", `Calibrated result confidence ${result.calibratedConfidence.toFixed(4)}.`, result.calibratedConfidence));
     const reply = replyFromResult(input, result, prepared.stages, this.store);
@@ -351,8 +398,17 @@ export class Dv11RuntimeSession {
 
   async respondAsync(input: string, legacy?: Dv11LegacyResponder, options: Dv11EngineOptions = {}) {
     const snapshot = this.dialogue.snapshot();
-    const prepared = this.prepare(input, options);
+    let prepared = this.prepare(input, options);
     if (prepared.request.warnings.length) return this.respond(input, undefined, options);
+    try {
+      prepared = await this.resolvePackages(input, prepared, options);
+    } catch (error) {
+      this.dialogue.restore(snapshot);
+      const canceled = options.signal?.aborted || error instanceof DOMException && error.name === "AbortError";
+      const result = executeDv11Plan(prepared.plan, this.store, { ...options, signal: canceled ? AbortSignal.abort() : options.signal });
+      const reply = replyFromResult(input, result, [...prepared.stages, stage("resource-loading", canceled ? "canceled" : "failed", canceled ? "DV11_RESOURCE_CANCELED" : "DV11_RESOURCE_ERROR", error instanceof Error ? error.message : String(error), 0)], this.store);
+      return { reply, result };
+    }
     let result = this.dialogue.executeOperation(prepared.plan) ?? executeDv11Plan(prepared.plan, this.store, options);
     result = combineResult(prepared.plan, result.clauses);
     if (legacy) {
@@ -360,6 +416,10 @@ export class Dv11RuntimeSession {
       for (let index = 0; index < result.clauses.length; index += 1) {
         const clause = result.clauses[index];
         if (options.signal?.aborted) break;
+        if (prepared.plan.clauses[index].operation === "lexical" && ["supported", "insufficient"].includes(clause.status) && clause.lexicalClaims?.length) {
+          clauses.push(clause);
+          continue;
+        }
         const legacyReply = await legacy(prepared.plan.clauses[index].source.text);
         if (legacyReply.trace.executionStatus === "canceled" || legacyReply.trace.executionStatus === "error") { clauses.push({ ...clause, status: legacyReply.trace.executionStatus, text: legacyReply.text, legacyMetadata: legacyMetadata(legacyReply) }); continue; }
         if (preferTypedResult(prepared.plan.clauses[index], clause, legacyReply)) { clauses.push(clause); continue; }
@@ -376,7 +436,8 @@ export class Dv11RuntimeSession {
       result = { ...result, status: "canceled", calibratedConfidence: 0, failureStage: "state-mutation", failureCode: "DV11_CANCELED", clauses: result.clauses.map((clause) => ({ ...clause, status: "canceled", calibratedConfidence: 0 })) };
     }
     result = calibrateDv11Result(result);
-    prepared.stages.push(stage("retrieval", result.clauses.some((clause) => clause.propositions.length) ? "passed" : "partial", "DV11_RETRIEVAL", `${result.clauses.flatMap((clause) => clause.propositions).length} propositions retained.`, result.clauses[0]?.confidence.evidence));
+    const retainedClaims = result.clauses.reduce((sum, clause) => sum + clause.propositions.length + (clause.lexicalClaims?.length ?? 0), 0);
+    prepared.stages.push(stage("retrieval", retainedClaims ? "passed" : "partial", "DV11_RETRIEVAL", `${retainedClaims} proposition or lexical claim${retainedClaims === 1 ? "" : "s"} retained; ${this.store.stats().queryableClaims} live claims are queryable.`, result.clauses[0]?.confidence.evidence));
     prepared.stages.push(stage("reasoning", result.proof.length ? "passed" : "partial", "DV11_PROOF", `${result.proof.length} proof steps.`, result.clauses[0]?.confidence.proof));
     prepared.stages.push(stage("calibration", "passed", "DV11_CALIBRATED", `Calibrated result confidence ${result.calibratedConfidence.toFixed(4)}.`, result.calibratedConfidence));
     const reply = replyFromResult(input, result, prepared.stages, this.store);

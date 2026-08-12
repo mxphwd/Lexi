@@ -266,11 +266,12 @@ export function LexiInterface() {
                     <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
                     <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
                     {reply.trace.propositionIds?.length ? <div><dt>Claims</dt><dd>{reply.trace.propositionIds.join(", ")}</dd></div> : null}
+                    {reply.trace.liveKnowledge ? <div><dt>Live knowledge</dt><dd>{reply.trace.liveKnowledge.queryableClaims.toLocaleString()} queryable claims · {reply.trace.liveKnowledge.worldPropositions.toLocaleString()} world propositions · {reply.trace.liveKnowledge.lexicalClaims.toLocaleString()} lexical claims · {reply.trace.liveKnowledge.installedPackages.toLocaleString()} loaded packages</dd></div> : null}
                     {reply.trace.sources?.length ? <div><dt>Sources</dt><dd>{reply.trace.sources.map((source) => `${source.sourceId} · ${source.sourceLocation}`).join("; ")}</dd></div> : null}
                     {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    DV11 executes typed plans against lazily loaded indexed propositions.
+                    DV11 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
                     Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>

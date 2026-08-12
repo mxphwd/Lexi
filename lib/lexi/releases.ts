@@ -197,6 +197,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "Added constraint-aware retrieval, inverse joins, filters, quantities, temporal checks, quantifiers, package validation, provenance, conflict detection, and transactional cancellation.",
       "Replaced construction multipliers with independent outcome, component, calibration, regression, leakage, performance, and package-compatibility gates.",
       "Prepared versioned knowledge packages for later DV11AD releases without importing evaluation answers into runtime data.",
+      "The DV11 servicing patch connected that registry to the runtime, added global alias/entity/predicate/domain/sense indexes, moved large lexical lookup behind the Worker, reparses after matched package loading, and reports exact live queryable counts without changing the DV11 development level.",
       "Kept the ordinary-question acceptance gate closed because no independently reviewed real-failure rows have been imported yet; no 50–60% answer-possibility claim is published.",
     ],
   },

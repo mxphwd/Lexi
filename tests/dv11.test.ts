@@ -3,7 +3,19 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { createLexiSession, respond } from "@/lib/lexi/engine";
 import { dv11EvaluatorMutationCases, gradeDv11Response, type Dv11BenchmarkRow } from "@/modules/benchmark";
-import { createDv11KnowledgeStore, Dv11PackageRegistry, executeDv11Plan, parseDv11Query, validateDv11Package } from "@/modules/dv11";
+import {
+  createDv11KnowledgeStore,
+  Dv11PackageRegistry,
+  Dv11RuntimeSession,
+  Dv11StaticKnowledgeResourceClient,
+  dv11CompiledLanguageStats,
+  dv11LexicalPackageFromEntry,
+  executeDv11Plan,
+  matchDv11CompiledLanguage,
+  parseDv11Query,
+  validateDv11Package,
+} from "@/modules/dv11";
+import { handleLexiResources } from "@/worker/lexi-resources";
 
 test("uses one typed plan and enforces bound object and temporal constraints", () => {
   const distance = parseDv11Query("How far is the Moon from Mars?").plan;
@@ -83,4 +95,69 @@ test("returns a typed complexity limit instead of silently truncating", () => {
   assert.equal(reply.trace.executionStatus, "insufficient");
   assert.equal(reply.trace.failureCode, "DV11_COMPLEXITY_LIMIT");
   assert.match(reply.text, /limit:tokens|documented/i);
+});
+
+test("compiles DV9 query examples and dialogue scenarios into executable behavior", () => {
+  const stats = dv11CompiledLanguageStats();
+  assert.equal(stats.sourceExamples, 100_000);
+  assert.equal(stats.sourceDialogueScenarios, 40_000);
+  assert.equal(matchDv11CompiledLanguage("Which words are associated with zeppelin?")?.operation, "related");
+  assert.equal(matchDv11CompiledLanguage("Use it in an example.", { activeLexemeLabel: "zeppelin", activeSenseIndex: 0 })?.term, "zeppelin");
+});
+
+test("loads matched lexical packages, reparses, and reports only live queryable claims", async () => {
+  const entry = {
+    e: "lexeme:test:zeppelin", w: "zeppelin", i: "zeppelin-noun",
+    m: [
+      ["sense:test:zeppelin", "noun", "a rigid airship", "The zeppelin crossed the sky"] as const,
+      ["sense:test:zeppelin:verb", "verb", "to transport by rigid airship", null] as const,
+    ],
+    r: ["airship", "dirigible"],
+  };
+  const pack = dv11LexicalPackageFromEntry(entry);
+  const service = { indexedAliases: 160_579, indexedEntities: 323_853, indexedSenses: 163_274, indexedPredicates: 6, indexedDomains: 10, serverQueryableLexicalFacts: 800_000 };
+  let resolutions = 0;
+  const resources = new Dv11StaticKnowledgeResourceClient(async (_plan, loaded) => {
+    resolutions += 1;
+    return { schemaVersion: 1, packages: loaded.includes(pack.manifest.packageId) ? [] : [pack], matched: { aliases: ["zeppelin"], entityIds: [], senseIds: [], predicates: [], domains: [] }, service };
+  });
+  const store = createDv11KnowledgeStore();
+  const before = store.stats();
+  const runtime = new Dv11RuntimeSession(store, resources);
+  const first = await runtime.respondAsync("Define zeppelin.");
+  assert.match(first.reply.text, /rigid airship/i);
+  assert.equal(first.reply.trace.source, "semantic-runtime");
+  assert.equal(first.reply.trace.liveKnowledge?.worldEntities, before.worldEntities);
+  assert.equal(first.reply.trace.liveKnowledge?.worldPropositions, before.worldPropositions);
+  assert.equal(first.reply.trace.liveKnowledge?.lexemes, 1);
+  assert.ok((first.reply.trace.liveKnowledge?.queryableClaims ?? 0) > before.queryableClaims);
+  assert.ok(first.reply.trace.stages?.some((stage) => stage.code === "DV11_REPARSED_AFTER_PACKAGE_LOAD"));
+  const followUp = await runtime.respondAsync("Use it in an example.");
+  assert.match(followUp.reply.text, /zeppelin crossed the sky/i);
+  const repair = await runtime.respondAsync("No, I meant its other sense.");
+  assert.match(repair.reply.text, /transport by rigid airship/i);
+  assert.equal(repair.result.plan.clauses[0].pluginId, "compiled-lexical-language");
+  assert.ok(resolutions >= 2);
+});
+
+test("resolves the global alias index behind the Worker boundary", async () => {
+  const assets = {
+    async fetch(input: RequestInfo | URL) {
+      try {
+        const pathname = new URL(input instanceof Request ? input.url : String(input)).pathname;
+        return new Response(new Uint8Array(await readFile(new URL(`../public${pathname}`, import.meta.url))), { status: 200 });
+      } catch {
+        return new Response("missing", { status: 404 });
+      }
+    },
+  };
+  const response = await handleLexiResources(new Request("https://lexi.test/api/lexi/resources", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ schemaVersion: 1, normalized: "define zeppelin", aliases: ["zeppelin"], entityIds: [], senseIds: [], predicates: ["has_definition"], domains: ["lexical"], loadedPackageIds: [] }),
+  }), assets);
+  assert.equal(response?.status, 200);
+  const result = await response?.json() as { packages: Array<{ lexemes?: Array<{ lemma: string }> }>; service: { serverQueryableLexicalFacts: number } };
+  assert.equal(result.packages[0]?.lexemes?.[0]?.lemma, "zeppelin");
+  assert.equal(result.service.serverQueryableLexicalFacts, 800_000);
 });

@@ -1,11 +1,14 @@
 export { calibrateDv11Clause, calibrateDv11Result, dv11ReliabilityBuckets, registerDv11CalibrationProfile } from "./calibration";
 export { Dv11DialogueState } from "./dialogue";
 export { executeDv11Plan } from "./executor";
-export { installDv9LexicalEntry } from "./lexical";
+export { dv11LexicalPackageFromEntry, installDv9LexicalEntry } from "./lexical";
 export { dv11NormalizeText, dv11Number, dv11Tokens, normalizeDv11Request, splitDv11Clauses, stableHash } from "./normalize";
 export { dv11ParserStats, parseDv11Query, registerDv11ParserPlugin } from "./parser";
 export { Dv11PackageRegistry } from "./packages";
 export type { Dv11PackageDescriptor, Dv11PackageLoadResult } from "./packages";
+export { createDefaultDv11ResourceClient, Dv11HttpKnowledgeResourceClient, Dv11StaticKnowledgeResourceClient } from "./resources";
+export type { Dv11KnowledgeResourceClient } from "./resources";
+export { dv11CompiledLanguageStats, matchDv11CompiledLanguage } from "./compiled-language";
 export { realizeDv11Result } from "./realizer";
 export { compiledDv11Rules, dv11Rule, dv11RuleStats } from "./rules";
 export type { Dv11CompiledRule, Dv11RuleFamily, Dv11RuleType } from "./rules";
@@ -15,6 +18,7 @@ export { Dv11RuntimeSession } from "./runtime";
 export type * from "./types";
 
 import { dv11ParserStats } from "./parser";
+import { dv11CompiledLanguageStats } from "./compiled-language";
 import { dv11PredicateSchemas } from "./schema";
 import { dv11RuleStats } from "./rules";
 import { dv11KnowledgeStore } from "./store";
@@ -24,7 +28,9 @@ export function dv11EngineStats() {
     build: "260812-DV11",
     architecture: "unified-typed-semantic-runtime",
     parser: dv11ParserStats(),
+    liveKnowledge: dv11KnowledgeStore.stats(),
     store: dv11KnowledgeStore.stats(),
+    compiledLanguage: dv11CompiledLanguageStats(),
     predicateSchemas: dv11PredicateSchemas.size,
     rules: dv11RuleStats(),
     executionStatuses: 8,

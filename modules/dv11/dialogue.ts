@@ -62,6 +62,9 @@ export class Dv11DialogueState {
       activeEntityIds: [...this.state.activeEntityIds],
       activeRelation: last?.plan.clauses.at(-1)?.patterns.at(-1)?.relation,
       previousAnswerShape: this.state.requestedAnswerShape,
+      activeLexemeId: this.state.activeLexemeId,
+      activeLexemeLabel: this.state.activeLexemeLabel,
+      activeSenseIndex: this.state.activeSenseIndex,
     };
   }
 
@@ -110,7 +113,13 @@ export class Dv11DialogueState {
       return {
         status: last.result.proof.length ? "supported" : "insufficient",
         plan,
-        clauses: [{ ...this.baseClause(clause, last.result.proof.length ? "supported" : "insufficient"), proof: structuredClone(last.result.proof), propositions: last.result.clauses.flatMap((item) => structuredClone(item.propositions)), reason: last.result.proof.length ? undefined : "The previous answer has no explicit proof." }],
+        clauses: [{
+          ...this.baseClause(clause, last.result.proof.length ? "supported" : "insufficient"),
+          proof: structuredClone(last.result.proof),
+          propositions: last.result.clauses.flatMap((item) => structuredClone(item.propositions)),
+          lexicalClaims: last.result.clauses.flatMap((item) => structuredClone(item.lexicalClaims ?? [])),
+          reason: last.result.proof.length ? undefined : "The previous answer has no explicit proof.",
+        }],
         proof: structuredClone(last.result.proof),
         calibratedConfidence: last.result.proof.length ? 0.95 : 0,
         failureStage: last.result.proof.length ? undefined : "reasoning",
@@ -175,6 +184,15 @@ export class Dv11DialogueState {
     if (["canceled", "error"].includes(result.status)) return;
     const turnId = `turn:${this.state.turns.length + 1}:${stableHash(userText)}`;
     const propositions = result.clauses.flatMap((clause) => clause.propositions);
+    const lexicalClause = plan.clauses.find((clause) => clause.lexicalRequest);
+    const lexicalResult = result.clauses.find((clause) => clause.lexicalClaims?.length);
+    if (lexicalClause?.lexicalRequest && lexicalResult) {
+      const claim = lexicalResult.lexicalClaims?.[0];
+      this.state.activeLexemeId = claim?.lexemeId ?? this.state.activeLexemeId;
+      this.state.activeLexemeLabel = lexicalClause.lexicalRequest.term;
+      this.state.activeSenseIndex = lexicalResult.selectedLexicalSenseIndex ?? lexicalClause.lexicalRequest.requestedSense ?? 0;
+      this.state.lexicalGoal = lexicalClause.lexicalRequest.operation;
+    }
     const memories = propositions.filter((proposition) => proposition.subjectId === "session:user");
     for (const memory of memories) {
       const superseded = memory.supersedes ?? [];

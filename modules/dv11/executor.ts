@@ -329,6 +329,86 @@ function emptyResult(plan: Dv11ClausePlan, status: Dv11ClauseResult["status"], r
   return { clauseId: plan.id, status, answerShape: plan.answerShape, bindings: [], propositions: [], proof: [], missingSlots: [...plan.unresolvedSlots], reason, confidence, calibratedConfidence: 0 };
 }
 
+function lexicalResult(plan: Dv11ClausePlan, store: Dv11KnowledgeStore): Dv11ClauseResult {
+  const request = plan.lexicalRequest;
+  if (!request) return emptyResult(plan, "error", "The lexical operation has no typed request.");
+  const lexemes = store.resolveLexeme(request.term);
+  if (!lexemes.length) return emptyResult(plan, "unknown", `No loaded lexical record matches “${request.term}”.`);
+  if (lexemes.length > 1) return emptyResult(plan, "ambiguous", `More than one loaded lexeme matches “${request.term}”.`);
+  const lexeme = lexemes[0];
+  const senses = store.lexicalSensesFor(lexeme.id);
+  let selectedIndex = request.requestedSense ?? 0;
+  if (request.contextHint && senses.length) {
+    const hints = new Set(dv11NormalizeText(request.contextHint).match(/[\p{L}\p{M}\p{N}]+/gu) ?? []);
+    const ranked = senses.map((sense, index) => ({
+      index,
+      score: [...hints].filter((hint) => dv11NormalizeText(`${sense.partOfSpeech} ${sense.definition} ${sense.example ?? ""} ${sense.contextualFeatures.join(" ")}`).includes(hint)).length,
+    })).sort((left, right) => right.score - left.score || left.index - right.index);
+    selectedIndex = ranked[0]?.index ?? 0;
+  }
+  selectedIndex = Math.min(Math.max(0, selectedIndex), Math.max(0, senses.length - 1));
+  const selected = senses[selectedIndex];
+  const selectedOnly = request.operation === "define" || request.operation === "example" || request.requestedSense !== undefined;
+  const allClaims = store.lexicalClaimsFor(lexeme.id, selectedOnly ? selected?.id : undefined);
+  const relation = request.operation === "define" || request.operation === "list-senses" ? "definition"
+    : request.operation === "part-of-speech" ? "part-of-speech"
+      : request.operation === "example" ? "usage-example"
+        : request.operation === "related" ? "association"
+          : request.operation === "provenance" ? "provenance"
+            : undefined;
+  const claims = relation === "provenance" || request.operation === "recall-topic"
+    ? allClaims
+    : allClaims.filter((claim) => claim.relation === relation);
+  const title = lexeme.lemma ? lexeme.lemma[0].toLocaleUpperCase("en-US") + lexeme.lemma.slice(1) : lexeme.lemma;
+  let text = "";
+  if (request.operation === "define") text = selected
+    ? `${title} means ${selected.definition.replace(/[.!?]+$/, "")} (${selected.partOfSpeech}).`
+    : `I have a lexical record for “${lexeme.lemma}”, but it has no definition.`;
+  else if (request.operation === "list-senses") {
+    if (request.requestedSense !== undefined && selected) text = `Another recorded sense of ${lexeme.lemma} is: ${selected.definition.replace(/[.!?]+$/, "")} (${selected.partOfSpeech}).`;
+    else text = senses.length
+      ? `${lexeme.lemma} has ${senses.length} recorded ${senses.length === 1 ? "sense" : "senses"}: ${senses.slice(0, 6).map((sense, index) => `${index + 1}. ${sense.definition.replace(/[.!?]+$/, "")} (${sense.partOfSpeech}).`).join(" ")}${senses.length > 6 ? ` ${senses.length - 6} more senses are recorded.` : ""}`
+      : `I have no recorded lexical senses for “${lexeme.lemma}”.`;
+  } else if (request.operation === "part-of-speech") {
+    const parts = [...new Set(senses.map((sense) => sense.partOfSpeech).filter(Boolean))];
+    text = parts.length ? `${title} is recorded as ${parts.join(", ")}.` : `The loaded lexical record does not include a part of speech for “${lexeme.lemma}”.`;
+  } else if (request.operation === "example") {
+    const example = selected?.example ?? senses.find((sense) => sense.example)?.example;
+    text = example ? `Recorded example: “${example.replace(/[.!?]+$/, "")}.”` : `The loaded lexical record does not include a usage example for “${lexeme.lemma}”.`;
+  } else if (request.operation === "related") {
+    const values = claims.flatMap((claim) => claim.values).slice(0, 8);
+    text = values.length ? `Moby associates ${lexeme.lemma} with ${values.join(", ")}. These are broad lexical associations, not guaranteed strict synonyms.` : `I do not have an attributed Moby association for “${lexeme.lemma}”.`;
+  } else if (request.operation === "provenance") {
+    const sources = [...new Map(allClaims.flatMap((claim) => claim.provenance).map((source) => [`${source.sourceId}:${source.sourceLocation}`, source])).values()];
+    text = sources.length ? `The loaded record for “${lexeme.lemma}” is attributed to ${sources.map((source) => `${source.sourceId} (${source.sourceLocation})`).join(", ")}.` : `The loaded record for “${lexeme.lemma}” has no attached source.`;
+  } else text = `We are discussing ${lexeme.lemma}.`;
+  const hasEvidence = request.operation === "recall-topic" || (request.operation === "list-senses" ? senses.length > 0 : claims.length > 0);
+  const proof: Dv11ProofStep[] = (claims.length ? claims : allClaims.slice(0, 1)).map((claim, index) => ({
+    id: `proof:lexical:${plan.id}:${index}`,
+    ruleId: "typed-lexical-retrieval",
+    premiseIds: [claim.id],
+    conclusion: `${request.operation}:${lexeme.id}`,
+    explanation: `Selected the separate lexical ${claim.relation} claim ${claim.id} for ${lexeme.lemma}.`,
+  }));
+  if (request.operation === "recall-topic" && !proof.length) proof.push({ id: `proof:lexical-topic:${plan.id}`, ruleId: "dialogue-topic-recall", premiseIds: [lexeme.id], conclusion: lexeme.lemma, explanation: `Recalled the active lexeme ${lexeme.id} from transactional dialogue state.` });
+  const confidence = { ...plan.confidence, evidence: hasEvidence ? 0.92 : 0.35, proof: proof.length ? 0.9 : 0.25, conflict: 1, realization: 0.96 };
+  return {
+    clauseId: plan.id,
+    status: hasEvidence ? "supported" : "insufficient",
+    answerShape: plan.answerShape,
+    bindings: [],
+    propositions: [],
+    lexicalClaims: claims.length ? claims : allClaims.slice(0, 1),
+    selectedLexicalSenseIndex: selectedIndex,
+    proof,
+    missingSlots: hasEvidence ? [] : [`lexical-${relation ?? "evidence"}`],
+    reason: hasEvidence ? undefined : `The lexeme exists, but the requested ${relation ?? "evidence"} is unavailable.`,
+    confidence,
+    calibratedConfidence: 0,
+    text,
+  };
+}
+
 function executeAbilityQuantifier(
   plan: Dv11ClausePlan,
   store: Dv11KnowledgeStore,
@@ -398,6 +478,7 @@ function executeAbilityQuantifier(
 
 function executeClause(plan: Dv11ClausePlan, store: Dv11KnowledgeStore, options: Dv11EngineOptions): Dv11ClauseResult {
   throwIfAborted(options.signal);
+  if (plan.operation === "lexical") return lexicalResult(plan, store);
   if (plan.unresolvedSlots.length) return emptyResult(plan, plan.unresolvedSlots.includes("entity-sense") ? "ambiguous" : "insufficient", `Missing ${plan.unresolvedSlots.join(", ")}.`);
   if (plan.operation === "calculate") {
     const calculated = calculateExpression(plan.source.text);

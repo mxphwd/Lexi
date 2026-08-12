@@ -1,4 +1,5 @@
 import { dv11NormalizeText, dv11Number, normalizeDv11Request, stableHash } from "./normalize";
+import { matchDv11CompiledLanguage } from "./compiled-language";
 import { dv11KnowledgeStore, type Dv11KnowledgeStore } from "./store";
 import type {
   Dv11AnswerShape,
@@ -23,12 +24,15 @@ export type Dv11ParserContext = {
   activeEntityIds?: readonly string[];
   activeRelation?: string;
   previousAnswerShape?: Dv11AnswerShape;
+  activeLexemeId?: string;
+  activeLexemeLabel?: string;
+  activeSenseIndex?: number;
 };
 
 export type Dv11ParserPlugin = {
   id: string;
   priority: number;
-  supports(request: Dv11NormalizedRequest, clause: Dv11SourceSpan): number;
+  supports(request: Dv11NormalizedRequest, clause: Dv11SourceSpan, context: Dv11ParserContext, store: Dv11KnowledgeStore): number;
   parse(request: Dv11NormalizedRequest, clause: Dv11SourceSpan, context: Dv11ParserContext, store: Dv11KnowledgeStore): Dv11ClausePlan[];
 };
 
@@ -475,6 +479,42 @@ const logicPlugin: Dv11ParserPlugin = {
   },
 };
 
+const compiledLexicalPlugin: Dv11ParserPlugin = {
+  id: "compiled-lexical-language",
+  priority: 102,
+  supports(_request, clause, context) {
+    const matched = matchDv11CompiledLanguage(clause.text, context);
+    return matched ? matched.evidence.some((item) => item.startsWith("compiled-dialogue:")) ? 1.1 : 0.99 : 0;
+  },
+  parse(request, clause, context, store) {
+    const matched = matchDv11CompiledLanguage(clause.text, context);
+    if (!matched) return [];
+    const plan = genericPlans(request, clause, context, store)[0];
+    if (matched.contextHint && plan.mentions.some((mention) => mention.selectedSenseId)) {
+      return [{ ...plan, evidence: [...plan.evidence, ...matched.evidence, "curated-world-sense-preferred"], pluginId: "compositional-general" }];
+    }
+    return [{
+      ...plan,
+      operation: "lexical",
+      answerShape: matched.operation === "list-senses" ? "entities" : matched.operation === "recall-topic" ? "text" : "text",
+      patterns: [],
+      filters: [],
+      quantifiers: [],
+      temporal: [],
+      conditions: [],
+      order: [],
+      offset: 0,
+      limit: undefined,
+      negated: false,
+      unresolvedSlots: [],
+      lexicalRequest: { operation: matched.operation, term: matched.term, contextHint: matched.contextHint, requestedSense: matched.requestedSense },
+      evidence: [...plan.evidence, ...matched.evidence, `lexeme:${matched.term}`],
+      pluginId: "compiled-lexical-language",
+      confidence: { ...plan.confidence, parsing: 0.97, routing: 0.99, entityLinking: 0.9, senseSelection: matched.contextHint ? 0.92 : 0.78 },
+    }];
+  },
+};
+
 const dialoguePlugin: Dv11ParserPlugin = {
   id: "dialogue-memory",
   priority: 110,
@@ -504,7 +544,7 @@ const generalPlugin: Dv11ParserPlugin = {
   parse: genericPlans,
 };
 
-const plugins: Dv11ParserPlugin[] = [dialoguePlugin, logicPlugin, arithmeticPlugin, generalPlugin];
+const plugins: Dv11ParserPlugin[] = [dialoguePlugin, logicPlugin, compiledLexicalPlugin, arithmeticPlugin, generalPlugin];
 
 export function registerDv11ParserPlugin(plugin: Dv11ParserPlugin) {
   if (plugins.some((candidate) => candidate.id === plugin.id)) throw new Error(`Parser plugin ${plugin.id} already exists.`);
@@ -523,7 +563,7 @@ export function parseDv11Query(
   const alternatives: Dv11QueryPlan["alternatives"] = [];
   for (const clause of request.clauses) {
     const rankedPlugins = plugins
-      .map((plugin) => ({ plugin, score: plugin.supports(request, clause) }))
+      .map((plugin) => ({ plugin, score: plugin.supports(request, clause, context, store) }))
       .filter((item) => item.score > 0)
       .sort((left, right) => right.score - left.score || right.plugin.priority - left.plugin.priority);
     const parsed = rankedPlugins[0]?.plugin.parse(request, clause, context, store) ?? [];

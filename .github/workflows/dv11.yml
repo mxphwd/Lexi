@@ -18,6 +18,7 @@ jobs:
       - run: npm run typecheck
       - run: npm run benchmark:dv11:leakage
       - run: npm run dv11:validate-packages
+      - run: npm run dv11:validate-service-data
       - run: npm run build
       - run: npm run budget:dv11
       - run: npm run test:unit

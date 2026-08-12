@@ -105,6 +105,18 @@ export type LexiTrace = {
     reviewStatus: string;
   }>;
   confidenceComponents?: Record<string, number>;
+  liveKnowledge?: {
+    worldEntities: number;
+    worldAliases: number;
+    worldPropositions: number;
+    worldSenses: number;
+    lexemes: number;
+    lexicalAliases: number;
+    lexicalSenses: number;
+    lexicalClaims: number;
+    installedPackages: number;
+    queryableClaims: number;
+  };
   stages?: Array<{
     stage: string;
     status: "passed" | "partial" | "failed" | "skipped" | "canceled";

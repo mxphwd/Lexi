@@ -8,6 +8,9 @@ import type {
   Dv11EntityCandidate,
   Dv11EntityKind,
   Dv11KnowledgePackage,
+  Dv11Lexeme,
+  Dv11LexicalClaim,
+  Dv11LexicalSense,
   Dv11PackageManifest,
   Dv11PredicateSchema,
   Dv11Proposition,
@@ -87,6 +90,10 @@ export class Dv11KnowledgeStore {
   private readonly byObject = new Map<string, Set<string>>();
   private readonly bySubjectRelation = new Map<string, Set<string>>();
   private readonly senses = new Map<string, Dv11SenseCandidate>();
+  private readonly lexemes = new Map<string, Dv11Lexeme>();
+  private readonly lexicalAliases = new Map<string, Set<string>>();
+  private readonly lexicalSenses = new Map<string, Dv11LexicalSense>();
+  private readonly lexicalClaims = new Map<string, Dv11LexicalClaim>();
   private readonly packageManifests = new Map<string, Dv11PackageManifest>();
 
   addEntity(entity: Dv11Entity) {
@@ -141,6 +148,34 @@ export class Dv11KnowledgeStore {
     this.senses.set(sense.senseId, { ...sense, domains: [...sense.domains], evidence: [...sense.evidence] });
   }
 
+  addLexeme(lexeme: Dv11Lexeme) {
+    const existing = this.lexemes.get(lexeme.id);
+    if (existing && JSON.stringify(existing) !== JSON.stringify(lexeme)) throw new Error(`Lexeme conflict for ${lexeme.id}.`);
+    this.lexemes.set(lexeme.id, { ...lexeme, aliases: [...lexeme.aliases], senseIds: [...lexeme.senseIds] });
+    for (const alias of [lexeme.lemma, ...lexeme.aliases]) {
+      const normalized = dv11NormalizeText(alias);
+      if (!normalized) continue;
+      const ids = this.lexicalAliases.get(normalized) ?? new Set<string>();
+      ids.add(lexeme.id);
+      this.lexicalAliases.set(normalized, ids);
+    }
+  }
+
+  addLexicalSense(sense: Dv11LexicalSense) {
+    if (!this.lexemes.has(sense.lexemeId)) throw new Error(`Missing lexeme ${sense.lexemeId} for lexical sense ${sense.id}.`);
+    const existing = this.lexicalSenses.get(sense.id);
+    if (existing && JSON.stringify(existing) !== JSON.stringify(sense)) throw new Error(`Lexical sense conflict for ${sense.id}.`);
+    this.lexicalSenses.set(sense.id, { ...sense, domains: [...sense.domains], contextualFeatures: [...sense.contextualFeatures], provenance: [...sense.provenance] });
+  }
+
+  addLexicalClaim(claim: Dv11LexicalClaim) {
+    if (!this.lexemes.has(claim.lexemeId)) throw new Error(`Missing lexeme ${claim.lexemeId} for lexical claim ${claim.id}.`);
+    if (claim.senseId && !this.lexicalSenses.has(claim.senseId)) throw new Error(`Missing lexical sense ${claim.senseId} for ${claim.id}.`);
+    const existing = this.lexicalClaims.get(claim.id);
+    if (existing && JSON.stringify(existing) !== JSON.stringify(claim)) throw new Error(`Lexical claim conflict for ${claim.id}.`);
+    this.lexicalClaims.set(claim.id, { ...claim, values: [...claim.values], provenance: [...claim.provenance] });
+  }
+
   addProposition(proposition: Dv11Proposition) {
     if (this.propositions.has(proposition.id)) {
       const existing = this.propositions.get(proposition.id)!;
@@ -176,23 +211,35 @@ export class Dv11KnowledgeStore {
     const entitySnapshot = new Map(this.entities);
     const propositionSnapshot = new Map(this.propositions);
     const senseSnapshot = new Map(this.senses);
+    const lexemeSnapshot = new Map(this.lexemes);
+    const lexicalSenseSnapshot = new Map(this.lexicalSenses);
+    const lexicalClaimSnapshot = new Map(this.lexicalClaims);
     const manifestSnapshot = new Map(this.packageManifests);
     const schemaSnapshot = new Map(dv11PredicateSchemas);
     try {
       for (const schema of pack.schemas) registerDv11PredicateSchema(schema);
       for (const entity of pack.entities) this.addEntity(entity);
+      for (const lexeme of pack.lexemes ?? []) this.addLexeme(lexeme);
       for (const sense of pack.senses) this.addSense(sense);
+      for (const sense of pack.lexicalSenses ?? []) this.addLexicalSense(sense);
+      for (const claim of pack.lexicalClaims ?? []) this.addLexicalClaim(claim);
       for (const proposition of pack.propositions) this.addProposition(proposition);
       this.packageManifests.set(pack.manifest.packageId, pack.manifest);
     } catch (error) {
       this.entities.clear();
       this.propositions.clear();
       this.senses.clear();
+      this.lexemes.clear();
+      this.lexicalSenses.clear();
+      this.lexicalClaims.clear();
       this.packageManifests.clear();
       dv11PredicateSchemas.clear();
       for (const [id, entity] of entitySnapshot) this.entities.set(id, entity);
       for (const [id, proposition] of propositionSnapshot) this.propositions.set(id, proposition);
       for (const [id, sense] of senseSnapshot) this.senses.set(id, sense);
+      for (const [id, lexeme] of lexemeSnapshot) this.lexemes.set(id, lexeme);
+      for (const [id, sense] of lexicalSenseSnapshot) this.lexicalSenses.set(id, sense);
+      for (const [id, claim] of lexicalClaimSnapshot) this.lexicalClaims.set(id, claim);
       for (const [id, manifest] of manifestSnapshot) this.packageManifests.set(id, manifest);
       for (const [id, schema] of schemaSnapshot) dv11PredicateSchemas.set(id, schema);
       this.rebuildIndexes();
@@ -205,11 +252,18 @@ export class Dv11KnowledgeStore {
     this.aliasTrie.children.clear();
     this.aliasTrie.entityIds.clear();
     this.correctionBuckets.clear();
+    this.lexicalAliases.clear();
     this.bySubject.clear();
     this.byRelation.clear();
     this.byObject.clear();
     this.bySubjectRelation.clear();
     for (const entity of this.entities.values()) for (const alias of [entity.canonicalName, ...entity.aliases]) this.indexAlias(alias, entity.id);
+    for (const lexeme of this.lexemes.values()) for (const alias of [lexeme.lemma, ...lexeme.aliases]) {
+      const normalized = dv11NormalizeText(alias);
+      const ids = this.lexicalAliases.get(normalized) ?? new Set<string>();
+      ids.add(lexeme.id);
+      this.lexicalAliases.set(normalized, ids);
+    }
     for (const proposition of this.propositions.values()) {
       this.addIndex(this.bySubject, proposition.subjectId, proposition.id);
       this.addIndex(this.byRelation, proposition.relation, proposition.id);
@@ -223,7 +277,13 @@ export class Dv11KnowledgeStore {
   allEntities() { return [...this.entities.values()]; }
   allPropositions() { return [...this.propositions.values()]; }
   allSenses() { return [...this.senses.values()]; }
+  allLexemes() { return [...this.lexemes.values()]; }
+  allLexicalSenses() { return [...this.lexicalSenses.values()]; }
+  allLexicalClaims() { return [...this.lexicalClaims.values()]; }
   sensesForEntity(entityId: string) { return [...this.senses.values()].filter((sense) => sense.entityId === entityId); }
+  resolveLexeme(text: string) { return [...(this.lexicalAliases.get(dv11NormalizeText(text)) ?? [])].map((id) => this.lexemes.get(id)).filter((value): value is Dv11Lexeme => Boolean(value)); }
+  lexicalSensesFor(lexemeId: string) { return [...this.lexicalSenses.values()].filter((sense) => sense.lexemeId === lexemeId); }
+  lexicalClaimsFor(lexemeId: string, senseId?: string) { return [...this.lexicalClaims.values()].filter((claim) => claim.lexemeId === lexemeId && (!senseId || !claim.senseId || claim.senseId === senseId)); }
   manifests() { return [...this.packageManifests.values()]; }
 
   private propositionsFor(index: Map<string, Set<string>>, key: string) {
@@ -324,7 +384,18 @@ export class Dv11KnowledgeStore {
   }
 
   stats() {
-    return { entities: this.entities.size, aliases: this.aliases.size, propositions: this.propositions.size, senses: this.senses.size, packages: this.packageManifests.size };
+    return {
+      worldEntities: this.entities.size,
+      worldAliases: this.aliases.size,
+      worldPropositions: this.propositions.size,
+      worldSenses: this.senses.size,
+      lexemes: this.lexemes.size,
+      lexicalAliases: this.lexicalAliases.size,
+      lexicalSenses: this.lexicalSenses.size,
+      lexicalClaims: this.lexicalClaims.size,
+      installedPackages: this.packageManifests.size,
+      queryableClaims: this.propositions.size + this.lexicalClaims.size,
+    };
   }
 
   validateIntegrity() {
@@ -340,6 +411,11 @@ export class Dv11KnowledgeStore {
     }
     for (const [key, ids] of [...this.bySubject, ...this.byRelation, ...this.byObject, ...this.bySubjectRelation]) for (const id of ids) if (!this.propositions.has(id)) errors.push(`Index ${key} points to missing ${id}.`);
     for (const sense of this.senses.values()) if (!this.entities.has(sense.entityId)) errors.push(`Sense ${sense.senseId} points to missing ${sense.entityId}.`);
+    for (const sense of this.lexicalSenses.values()) if (!this.lexemes.has(sense.lexemeId)) errors.push(`Lexical sense ${sense.id} points to missing ${sense.lexemeId}.`);
+    for (const claim of this.lexicalClaims.values()) {
+      if (!this.lexemes.has(claim.lexemeId)) errors.push(`Lexical claim ${claim.id} points to missing ${claim.lexemeId}.`);
+      if (claim.senseId && !this.lexicalSenses.has(claim.senseId)) errors.push(`Lexical claim ${claim.id} points to missing ${claim.senseId}.`);
+    }
     return [...new Set(errors)];
   }
 }
@@ -352,11 +428,25 @@ export function validateDv11Package(pack: Dv11KnowledgePackage, installed = new 
   if (pack.manifest.counts.propositions !== pack.propositions.length) errors.push("Proposition count does not match manifest.");
   if (pack.manifest.counts.senses !== pack.senses.length) errors.push("Sense count does not match manifest.");
   if (pack.manifest.counts.schemas !== pack.schemas.length) errors.push("Schema count does not match manifest.");
-  const expectedHash = dv11PackageContentHash({ entities: pack.entities, propositions: pack.propositions, schemas: pack.schemas, senses: pack.senses });
+  if ((pack.manifest.counts.lexemes ?? 0) !== (pack.lexemes?.length ?? 0)) errors.push("Lexeme count does not match manifest.");
+  if ((pack.manifest.counts.lexicalClaims ?? 0) !== (pack.lexicalClaims?.length ?? 0)) errors.push("Lexical claim count does not match manifest.");
+  if ((pack.manifest.counts.lexicalSenses ?? 0) !== (pack.lexicalSenses?.length ?? 0)) errors.push("Lexical sense count does not match manifest.");
+  const expectedHash = dv11PackageContentHash({
+    entities: pack.entities,
+    propositions: pack.propositions,
+    schemas: pack.schemas,
+    senses: pack.senses,
+    ...(pack.lexemes ? { lexemes: pack.lexemes } : {}),
+    ...(pack.lexicalSenses ? { lexicalSenses: pack.lexicalSenses } : {}),
+    ...(pack.lexicalClaims ? { lexicalClaims: pack.lexicalClaims } : {}),
+  });
   if (pack.manifest.contentHash.startsWith("fnv1a:") && pack.manifest.contentHash !== expectedHash) errors.push("Package content hash is invalid.");
   for (const dependency of pack.manifest.dependencies) if (!installed.has(dependency.packageId)) errors.push(`Missing dependency ${dependency.packageId}.`);
   if (new Set(pack.entities.map((item) => item.id)).size !== pack.entities.length) errors.push("Duplicate entity IDs in package.");
   if (new Set(pack.propositions.map((item) => item.id)).size !== pack.propositions.length) errors.push("Duplicate proposition IDs in package.");
+  if (new Set((pack.lexemes ?? []).map((item) => item.id)).size !== (pack.lexemes?.length ?? 0)) errors.push("Duplicate lexeme IDs in package.");
+  if (new Set((pack.lexicalSenses ?? []).map((item) => item.id)).size !== (pack.lexicalSenses?.length ?? 0)) errors.push("Duplicate lexical sense IDs in package.");
+  if (new Set((pack.lexicalClaims ?? []).map((item) => item.id)).size !== (pack.lexicalClaims?.length ?? 0)) errors.push("Duplicate lexical claim IDs in package.");
   return errors;
 }
 

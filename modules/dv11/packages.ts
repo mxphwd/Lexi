@@ -38,6 +38,21 @@ export class Dv11PackageRegistry {
     this.descriptors.set(descriptor.manifest.packageId, descriptor);
   }
 
+  loadedPackageIds() {
+    return this.store.manifests().map((manifest) => manifest.packageId);
+  }
+
+  async installResolved(pack: Dv11KnowledgePackage, routes: readonly string[] = ["*"], signal?: AbortSignal) {
+    const installed = this.store.manifests().find((manifest) => manifest.packageId === pack.manifest.packageId);
+    if (installed) {
+      if (installed.contentHash !== pack.manifest.contentHash) throw new Error(`Installed package conflict: ${pack.manifest.packageId}`);
+      return { packageId: pack.manifest.packageId, installed: true, fromCache: true, durationMilliseconds: 0, bytes: 0 } satisfies Dv11PackageLoadResult;
+    }
+    const bytes = new TextEncoder().encode(JSON.stringify(pack)).byteLength;
+    this.register({ manifest: pack.manifest, routes, estimatedBytes: bytes, load: async () => pack });
+    return this.load(pack.manifest.packageId, signal);
+  }
+
   candidatesForRoute(route: string) {
     return [...this.descriptors.values()].filter((descriptor) => descriptor.routes.includes(route) || descriptor.routes.includes("*"));
   }

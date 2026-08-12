@@ -1,22 +1,42 @@
 # Alphaine Lexi Language
 
-Lexi Language 1.0 Pre-build 260811-DV10 is a deterministic,
-zero-generative-model language prototype. DV10 connects the typed language
-planner, reviewed world propositions, graph traversal, explicit lexical senses,
-deterministic rules, dialogue state, realization, and inspectable proofs through
-one semantic precedence path.
+Lexi Language 1.0 Pre-build 260812-DV11 is a deterministic,
+zero-generative-model language prototype. The DV11 servicing patch connects the
+typed runtime directly to its package registry and a Worker-side global resource
+catalog. The browser retains only matched records and reports the exact number
+of world propositions and lexical claims that are live and queryable.
 
 Lexi does not call a generative model, predict tokens, use learned embeddings,
 or convert an absent fact into a confident answer.
 
 ```text
 input
-  → DV10 normalization, typed plan, and conversational goal
-  → reviewed proposition, graph edge, rule, or explicit lexical sense
+  → DV11 normalization and typed query plan
+  → global alias/entity/predicate/domain/sense index lookup in the Worker
+  → matched package installation, reparse, relink, and execution
+  → reviewed proposition, rule, or separate lexical claim
   → subject-compatible calibration
   → proposition realization and proof ledger
   → answer with evidence, or calibrated abstention
 ```
+
+## DV11 live package connection
+
+`modules/dv11/` owns one request, query-plan, executor, proof, realization,
+dialogue, trace, package, and resource-client contract. On asynchronous browser
+requests it parses first, asks `/api/lexi/resources` for compatible packages,
+installs only returned records, reparses against the updated store, and executes
+again. The Worker reads the large DV9 shards; normal browser lookups no longer
+download an entire first-letter shard.
+
+Lexemes, lexical senses, and lexical claims have separate stores from world
+entities, semantic senses, and world propositions. This prevents a dictionary
+sense node from becoming a world entity merely because the same spelling is
+used in both systems.
+
+The trace shown under “Why this response” reports live queryable counts from
+the store. Those numbers are deliberately different from the catalog’s global
+indexed-source counts. See `docs/DV11_SERVICING_PATCH.md`.
 
 ## DV10 semantic connection
 
@@ -54,8 +74,9 @@ wordmark to reveal the build and interactive release history.
 
 ## DV9 data layer
 
-DV9 compiles the vendored Wordset dictionary and Moby thesaurus into small
-first-character shards. A lexical request downloads only the relevant shard.
+DV9 compiles the vendored Wordset dictionary and Moby thesaurus into compressed
+source shards. In DV11, a lexical request resolves the relevant source record in
+the Worker and transfers only a small typed package to the browser.
 The runtime can now:
 
 - select a dictionary sense from contextual words
@@ -98,18 +119,19 @@ are source-derived rather than user-reported failures.
 
 ## Architecture
 
-`modules/dv8/` remains the general typed parser, fact executor, and proposition
-realizer. `modules/dv9/` adds:
+`modules/dv11/` is the active semantic runtime. `modules/dv9/` remains the
+attributed lexical source layer and adds:
 
 - lexical-safe Unicode and punctuation normalization
 - explicit lexical query plans
-- on-demand shard loading and schema validation
+- Worker-side on-demand shard loading and schema validation
 - contextual sense selection and provenance-aware realization
 - lexical proposition and conversational-goal state
 - manifest validation and measured data statistics
 
 Generated resources live under `data/dv9/`; runtime shards live under
-`public/dv9/lexicon/`. The complete source archives remain under
+`public/dv9/lexicon/`; global DV11 indexes live under `public/dv11/service/`.
+The complete source archives remain under
 `data/lexicon/vendor/` with their notices and hashes.
 
 ## Build and verify the data
@@ -117,6 +139,8 @@ Generated resources live under `data/dv9/`; runtime shards live under
 ```bash
 npm run dv9:build-data
 npm run dv9:validate-data
+npm run dv11:build-service-data
+npm run dv11:validate-service-data
 npm run benchmark:dv9
 ```
 
@@ -153,5 +177,6 @@ knowledge is missing. Real user failures must remain outside the development
 pack until their blind score is recorded.
 
 See `docs/ARCHITECTURE.md`, `docs/DV9_DATA.md`, `docs/DV10_BENCHMARK.md`,
+`docs/DV11_SERVICING_PATCH.md`,
 `docs/DOCUMENTATION_MAPPING.md`, and `docs/RELEASES.md` for the complete
 contracts.

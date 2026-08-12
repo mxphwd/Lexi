@@ -61,7 +61,7 @@ export function calibrateDv11Clause(clause: Dv11ClauseResult): Dv11ClauseResult 
   if (clause.status === "ambiguous") calibrated = Math.min(calibrated, 0.35);
   if (clause.status === "insufficient" || clause.status === "partial") calibrated = Math.min(calibrated, 0.74);
   if (clause.propositions.some((proposition) => proposition.provenance.some((source) => source.reviewStatus === "disputed"))) calibrated = Math.min(calibrated, 0.4);
-  if (!clause.proof.length && clause.propositions.length) calibrated = Math.min(calibrated, 0.45);
+  if (!clause.proof.length && (clause.propositions.length || clause.lexicalClaims?.length)) calibrated = Math.min(calibrated, 0.45);
   return { ...clause, calibratedConfidence: Number(calibrated.toFixed(4)) };
 }
 

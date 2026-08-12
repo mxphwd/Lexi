@@ -94,7 +94,10 @@ function realizeSupported(plan: Dv11ClausePlan, result: Dv11ClauseResult, store:
   if (result.answerShape === "proof") {
     if (!result.proof.length) return "The previous answer has no attached proof.";
     const proof = result.proof.map((step, index) => `${index + 1}. ${step.explanation}`).join(" ");
-    const sources = [...new Set(result.propositions.flatMap((proposition) => proposition.provenance.map((source) => source.title ?? `${source.sourceId} (${source.sourceLocation})`)))];
+    const sources = [...new Set([
+      ...result.propositions.flatMap((proposition) => proposition.provenance),
+      ...(result.lexicalClaims ?? []).flatMap((claim) => claim.provenance),
+    ].map((source) => source.title ?? `${source.sourceId} (${source.sourceLocation})`))];
     return `${proof}${sources.length ? ` Source${sources.length === 1 ? "" : "s"}: ${join(sources)}.` : ""}`;
   }
   if (result.answerShape === "boolean" && result.verdict !== undefined) return result.verdict ? "Yes." : "No.";

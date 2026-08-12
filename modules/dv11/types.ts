@@ -57,7 +57,17 @@ export type Dv11Operation =
   | "correct"
   | "retract"
   | "clarify"
-  | "explain-proof";
+  | "explain-proof"
+  | "lexical";
+
+export type Dv11LexicalOperation =
+  | "define"
+  | "list-senses"
+  | "part-of-speech"
+  | "example"
+  | "related"
+  | "provenance"
+  | "recall-topic";
 
 export type Dv11Relation = SemanticRelation | (string & {});
 
@@ -230,6 +240,12 @@ export type Dv11ClausePlan = {
   evidence: string[];
   confidence: Dv11ConfidenceComponents;
   pluginId: string;
+  lexicalRequest?: {
+    operation: Dv11LexicalOperation;
+    term: string;
+    contextHint?: string;
+    requestedSense?: number;
+  };
 };
 
 export type Dv11QueryPlan = {
@@ -314,6 +330,36 @@ export type Dv11Entity = {
   senseIds: string[];
 };
 
+export type Dv11Lexeme = {
+  id: string;
+  lemma: string;
+  normalizedLemma: string;
+  aliases: string[];
+  senseIds: string[];
+  packageId: string;
+  sourceShard: string;
+};
+
+export type Dv11LexicalSense = {
+  id: string;
+  lexemeId: string;
+  partOfSpeech: string;
+  definition: string;
+  example?: string;
+  domains: string[];
+  contextualFeatures: string[];
+  provenance: Dv11Provenance[];
+};
+
+export type Dv11LexicalClaim = {
+  id: string;
+  lexemeId: string;
+  senseId?: string;
+  relation: "definition" | "part-of-speech" | "usage-example" | "association" | "provenance";
+  values: string[];
+  provenance: Dv11Provenance[];
+};
+
 export type Dv11ProofStep = {
   id: string;
   ruleId: string;
@@ -330,6 +376,8 @@ export type Dv11ClauseResult = {
   answerShape: Dv11AnswerShape;
   bindings: Dv11Binding[];
   propositions: Dv11Proposition[];
+  lexicalClaims?: Dv11LexicalClaim[];
+  selectedLexicalSenseIndex?: number;
   proof: Dv11ProofStep[];
   aggregate?: Dv11Value;
   verdict?: boolean;
@@ -417,6 +465,10 @@ export type Dv11DialogueSnapshot = {
   goals: Dv11DialogueGoal[];
   memories: Dv11Proposition[];
   corrections: Array<{ turnId: string; supersededPropositionIds: string[]; replacementIds: string[] }>;
+  activeLexemeId?: string;
+  activeLexemeLabel?: string;
+  activeSenseIndex?: number;
+  lexicalGoal?: Dv11LexicalOperation;
 };
 
 export type Dv11PackageManifest = {
@@ -427,7 +479,7 @@ export type Dv11PackageManifest = {
   contentHash: string;
   generatedAt: string;
   dependencies: Array<{ packageId: string; versionRange: string }>;
-  counts: { entities: number; propositions: number; senses: number; schemas: number; rules: number };
+  counts: { entities: number; propositions: number; senses: number; schemas: number; rules: number; lexemes?: number; lexicalSenses?: number; lexicalClaims?: number };
   capabilities: string[];
 };
 
@@ -437,6 +489,47 @@ export type Dv11KnowledgePackage = {
   propositions: Dv11Proposition[];
   schemas: Dv11PredicateSchema[];
   senses: Dv11SenseCandidate[];
+  lexemes?: Dv11Lexeme[];
+  lexicalSenses?: Dv11LexicalSense[];
+  lexicalClaims?: Dv11LexicalClaim[];
+};
+
+export type Dv11ResourceRequest = {
+  schemaVersion: 1;
+  normalized: string;
+  aliases: string[];
+  entityIds: string[];
+  senseIds: string[];
+  predicates: string[];
+  domains: string[];
+  loadedPackageIds: string[];
+};
+
+export type Dv11ResourceResponse = {
+  schemaVersion: 1;
+  packages: Dv11KnowledgePackage[];
+  matched: { aliases: string[]; entityIds: string[]; senseIds: string[]; predicates: string[]; domains: string[] };
+  service: {
+    indexedAliases: number;
+    indexedEntities: number;
+    indexedSenses: number;
+    indexedPredicates: number;
+    indexedDomains: number;
+    serverQueryableLexicalFacts: number;
+  };
+};
+
+export type Dv11LiveKnowledgeStats = {
+  worldEntities: number;
+  worldAliases: number;
+  worldPropositions: number;
+  worldSenses: number;
+  lexemes: number;
+  lexicalAliases: number;
+  lexicalSenses: number;
+  lexicalClaims: number;
+  installedPackages: number;
+  queryableClaims: number;
 };
 
 export type Dv11EngineOptions = {

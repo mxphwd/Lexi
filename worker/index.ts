@@ -1,6 +1,7 @@
 /** Cloudflare Worker entry point for Lexi Language. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
+import { handleLexiResources } from "./lexi-resources";
 
 interface Fetcher {
   fetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
@@ -29,10 +30,16 @@ interface ExecutionContext {
 // const imageConfig: ImageConfig = { dangerouslyAllowSVG: true };
 
 const worker = {
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+  async fetch(request: Request, env: Env | undefined, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
-    if (url.pathname === "/_vinext/image") {
+    if (url.pathname === "/api/lexi/resources" || url.pathname === "/api/lexi/lexical") {
+      const assets = env?.ASSETS ?? { fetch: (input: RequestInfo | URL, init?: RequestInit) => fetch(input, init) };
+      const lexicalResource = await handleLexiResources(request, assets);
+      if (lexicalResource) return lexicalResource;
+    }
+
+    if (url.pathname === "/_vinext/image" && env) {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {
         fetchAsset: (path) => env.ASSETS.fetch(new Request(new URL(path, request.url))),
