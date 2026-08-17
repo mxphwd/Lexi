@@ -1,3 +1,5 @@
 # Lexi
 
-Lexi (*derrived from “Lexicon”*) is Alphaine’s deterministic, zero-generative language model prototype, built from explicit linguistic rules, typed knowledge, and inspectable mechanical reasoning rather than token prediction. It answers from traceable evidence and abstains when it cannot support a response.
+Lexi (*derived from “Lexicon”*) is the first experimental zero-AI, full rule-based machine language model.
+
+> Release Candinate (RC) is based on *development version 12* with additional package batch 3 (DV12AD3)
