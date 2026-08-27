@@ -14,7 +14,8 @@ test("keeps every Lexi version synchronized with its release-note point", () => 
   );
 
   LEXI_RELEASES.forEach((release, index) => {
-    assert.ok(release.notes.length >= 2);
+    assert.ok(release.notes.length >= 2 && release.notes.length <= 3);
+    assert.equal(release.focus.length, 3);
     assert.ok(release.capabilityIndex > 0 && release.capabilityIndex <= 100);
     assert.match(release.metric ?? "", /\d/, `${release.build} needs a numeric strength`);
     if (index > 0) {

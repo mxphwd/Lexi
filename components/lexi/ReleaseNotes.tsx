@@ -271,19 +271,44 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                           <mark className="release-metric">{release.metric}</mark>
                         ) : null}
                       </div>
+                      <div className="release-capability">
+                        <span>Capability index</span>
+                        <div className="release-capability-track" aria-hidden="true">
+                          <i
+                            style={{
+                              "--capability": release.capabilityIndex / 100,
+                            } as CSSProperties}
+                          />
+                        </div>
+                        <strong>{release.capabilityIndex}</strong>
+                      </div>
+                      <div className="release-focus" aria-label="Release focus">
+                        {release.focus.map((focus, focusIndex) => (
+                          <span
+                            key={focus}
+                            style={{ "--focus-order": focusIndex } as CSSProperties}
+                          >
+                            <i aria-hidden="true" />
+                            {focus}
+                          </span>
+                        ))}
+                      </div>
                       {release.measurements?.length ? (
                         <dl className="release-measurements">
-                          {release.measurements.map((measurement) => (
-                            <div key={measurement.label}>
+                          {release.measurements.map((measurement, measurementIndex) => (
+                            <div
+                              key={measurement.label}
+                              style={{
+                                "--measurement-order": measurementIndex,
+                              } as CSSProperties}
+                            >
                               <dt>{measurement.label}</dt>
                               <dd>{measurement.value}</dd>
                             </div>
                           ))}
                         </dl>
                       ) : null}
-                      <ul>
-                        {release.notes.map((note) => <li key={note}>{note}</li>)}
-                      </ul>
+                      <p className="release-summary">{release.notes.join(" ")}</p>
                       <div className="release-comparison">
                         <span>Overall improvement</span>
                         {improvement === null ? (
