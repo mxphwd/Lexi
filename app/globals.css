@@ -615,6 +615,18 @@ a {
   animation: version-enter 280ms ease both;
 }
 
+.version-extension {
+  position: static;
+  display: inline-block;
+  margin-left: 0.18em;
+  color: rgba(54, 91, 69, 0.72);
+  font-size: 0.62em;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 0;
+  vertical-align: super;
+}
+
 .version-divider {
   margin: 0 7px;
   color: rgba(46, 51, 46, 0.3);
@@ -638,6 +650,16 @@ a {
 
 .release-trigger:hover {
   color: rgba(46, 67, 55, 0.82);
+}
+
+.release-point-label sup,
+.release-extension {
+  margin-left: 0.18em;
+  color: rgba(54, 91, 69, 0.76);
+  font-family: var(--mono);
+  font-size: 0.58em;
+  line-height: 0;
+  vertical-align: super;
 }
 
 .release-overlay {

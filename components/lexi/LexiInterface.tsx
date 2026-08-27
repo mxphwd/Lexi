@@ -3,7 +3,10 @@
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
 import type { LexiReply } from "@/lib/lexi/types";
-import { LEXI_VERSION_LABEL } from "@/lib/lexi/version";
+import {
+  LEXI_BASE_VERSION_LABEL,
+  LEXI_EXTENSION_BADGE,
+} from "@/lib/lexi/version";
 import { hasUnsupportedWritingSystem } from "@/modules/search";
 
 type ComposerState = "idle" | "thinking" | "stopping";
@@ -271,7 +274,7 @@ export function LexiInterface() {
                     {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    DV11AD1 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
+                    DV11 +1 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
                     Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>
@@ -302,7 +305,10 @@ export function LexiInterface() {
             title="Open GitHub · Shift-click for build information"
           >
             {showVersion ? (
-              <span className="version-text">{LEXI_VERSION_LABEL}</span>
+              <span className="version-text">
+                {LEXI_BASE_VERSION_LABEL}
+                <sup className="version-extension">{LEXI_EXTENSION_BADGE}</sup>
+              </span>
             ) : (
               <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
                 {BRAND_LETTERS.map((letter, index) => (

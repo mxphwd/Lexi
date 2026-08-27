@@ -15,6 +15,12 @@ Whenever `LEXI_BUILD` changes, add one corresponding newest record to
 5. one quantitative highlight when a verified measurement exists
 6. separate measurement chips when a version reports multiple capabilities
 
+Additional-data packs do not create new release points or new mother-version
+identifiers. Increment the mother release's extensionLevel instead: AD1 is
+shown as a superscript +1, AD2 as +2, and so on. Merge the pack's verified
+counts and notes into that mother release while keeping the internal package
+identifier available for compatibility and diagnostics.
+
 Never manufacture a benchmark. The graph's capability index is an internal,
 relative 0–100 development index built from deterministic response reach,
 contextual precision, lexical coverage, and model transparency. Verified

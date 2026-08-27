@@ -22,10 +22,11 @@ import { dv11CompiledLanguageStats } from "./compiled-language";
 import { dv11PredicateSchemas } from "./schema";
 import { dv11RuleStats } from "./rules";
 import { dv11KnowledgeStore } from "./store";
+import { LEXI_BUILD_DISPLAY } from "@/lib/lexi/version";
 
 export function dv11EngineStats() {
   return {
-    build: "260812-DV11AD1",
+    build: LEXI_BUILD_DISPLAY,
     architecture: "unified-typed-semantic-runtime",
     parser: dv11ParserStats(),
     liveKnowledge: dv11KnowledgeStore.stats(),

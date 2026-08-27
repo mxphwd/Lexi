@@ -227,7 +227,12 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                   key={release.build}
                   style={pointStyle}
                 >
-                  <span className="release-point-label">{release.shortLabel}</span>
+                  <span className="release-point-label">
+                    {release.shortLabel}
+                    {release.extensionLevel ? (
+                      <sup>+{release.extensionLevel}</sup>
+                    ) : null}
+                  </span>
                   <button
                     className={`release-point ${activeIndex === index ? "is-active" : ""}`}
                     type="button"
@@ -254,7 +259,12 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                     >
                       <div className="release-tooltip-heading">
                         <div>
-                          <strong>{release.label}</strong>
+                          <strong>
+                            {release.label}
+                            {release.extensionLevel ? (
+                              <sup className="release-extension">+{release.extensionLevel}</sup>
+                            ) : null}
+                          </strong>
                           <time>{release.date}</time>
                         </div>
                         {release.metric ? (

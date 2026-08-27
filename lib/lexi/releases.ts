@@ -2,6 +2,7 @@ export type LexiRelease = {
   build: string;
   label: string;
   shortLabel: string;
+  extensionLevel?: number;
   date: string;
   capabilityIndex: number;
   metric?: string;
@@ -181,30 +182,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     build: "260812-DV11",
     label: "Pre-build 260812-DV11",
     shortLabel: "DV11",
-    date: "12 August 2026",
-    capabilityIndex: 100,
-    metric: "79 gated remediations",
-    measurements: [
-      { label: "Real failures", value: "0 / 2,000" },
-      { label: "DV8 regression", value: "4,124 / 4,124" },
-      { label: "Rules", value: "1,100 compiled" },
-      { label: "Multiplier", value: "Not published" },
-      { label: "Typecheck", value: "Passing" },
-      { label: "Release gate", value: "Pending" },
-    ],
-    notes: [
-      "Introduced one typed request, query-plan, execution-result, proof, trace, dialogue, and realization contract across Lexi.",
-      "Added constraint-aware retrieval, inverse joins, filters, quantities, temporal checks, quantifiers, package validation, provenance, conflict detection, and transactional cancellation.",
-      "Replaced construction multipliers with independent outcome, component, calibration, regression, leakage, performance, and package-compatibility gates.",
-      "Prepared versioned knowledge packages for later DV11AD releases without importing evaluation answers into runtime data.",
-      "The DV11 servicing patch connected that registry to the runtime, added global alias/entity/predicate/domain/sense indexes, moved large lexical lookup behind the Worker, reparses after matched package loading, and reports exact live queryable counts without changing the DV11 development level.",
-      "Kept the ordinary-question acceptance gate closed because no independently reviewed real-failure rows have been imported yet; no 50–60% answer-possibility claim is published.",
-    ],
-  },
-  {
-    build: "260812-DV11AD1",
-    label: "Pre-build 260812-DV11AD1",
-    shortLabel: "DV11AD1",
+    extensionLevel: 1,
     date: "12 August 2026",
     capabilityIndex: 100,
     metric: "719,949 live propositions",
@@ -219,10 +197,12 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       { label: "Dialogue scenarios", value: "5,000" },
     ],
     notes: [
-      "Added 719,949 source-attested, queryable ordinary-knowledge propositions with claim-level provenance across 506,655 world entities.",
-      "Divided AD1 into ten independently loadable domains backed by 2,302 subject-hashed physical shards and global alias, entity, predicate, subject, object, and domain indexes.",
-      "Moved shard compatibility scoring and million-scale retrieval behind the Worker, retaining only a bounded set of matched packages in the browser before entity relinking and re-execution.",
-      "Compiled 29,640 relation-language mappings, 5,000 dialogue scenarios, six executable dialogue behaviors, and thirteen reusable rule bindings into runtime behavior.",
+      "Introduced one typed request, query-plan, execution-result, proof, trace, dialogue, and realization contract across Lexi.",
+      "Added constraint-aware retrieval, inverse joins, filters, quantities, temporal checks, quantifiers, package validation, provenance, conflict detection, and transactional cancellation.",
+      "Replaced construction multipliers with independent outcome, component, calibration, regression, leakage, performance, and package-compatibility gates.",
+      "The DV11 servicing patch connected that registry to the runtime, added global alias/entity/predicate/domain/sense indexes, moved large lexical lookup behind the Worker, reparses after matched package loading, and reports exact live queryable counts without changing the DV11 development level.",
+      "The +1 data extension added 719,949 source-attested, queryable ordinary-knowledge propositions and 506,655 world entities across ten independently loadable domains.",
+      "Its 2,302 subject-hashed shards, 29,640 relation-language mappings, 5,000 dialogue scenarios, six dialogue behaviors, and thirteen rule bindings remain part of DV11 rather than a separate version.",
       "The pack is source-attested rather than independently human-reviewed, and no answer-possibility or improvement multiplier is published without a frozen blind ordinary-question benchmark.",
     ],
   },
