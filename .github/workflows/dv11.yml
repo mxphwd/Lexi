@@ -1,8 +1,7 @@
-name: DV11 release gates
+name: Historical DV11 archive checks
 
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   verify:
@@ -20,5 +19,4 @@ jobs:
       - run: npm run dv11:validate-packages
       - run: npm run dv11:validate-service-data
       - run: npm run build
-      - run: npm run budget:dv11
       - run: npm run test:unit

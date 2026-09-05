@@ -1,0 +1,16 @@
+name: DV12 RC gate (independent evidence required)
+on:
+  workflow_dispatch:
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify:dv12
+      - run: npm run gate:dv12:rc
+      # No deployment step may precede the nonzero-exit RC gate.

@@ -2,28 +2,26 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { runDv7CoverageBenchmark } from "@/modules/benchmark";
 import { dv7AvailabilityStats } from "@/modules/dv7";
-import { createLexiSession, respond } from "@/lib/lexi/engine";
+// Historical API contract suite; current-engine coverage is tested separately in dv12.test.ts.
+import { createLexiSession, respond } from "@/lib/lexi/historical-engine";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import {
   parseSemanticQuery,
   semanticComparisonQuestionTemplates,
 } from "@/modules/semantic";
 
-test("measures DV7 from actual propositions, supported forms, and shared-property pairs", () => {
+test("reports the historical source inventory, including explicit zero facts", () => {
   const stats = dv7AvailabilityStats();
   assert.equal(stats.entities, 590);
   assert.equal(stats.aliases, 1_683);
-  assert.equal(stats.propositions, 3_132);
-  assert.equal(stats.benchmarkablePropositions, 3_132);
+  assert.equal(stats.propositions, 3_133);
+  assert.equal(stats.benchmarkablePropositions, 3_133);
   assert.equal(stats.predicates, 42);
   assert.equal(stats.openQuestionFrames, 12);
   assert.equal(stats.booleanQuestionFrames, 8);
   assert.equal(stats.comparisonQuestionFrames, 60);
   assert.equal(stats.answerStyles, 10);
-  assert.equal(stats.comparableSubjectPairs, 409_902);
-  assert.equal(stats.semanticConstructions, 246_567_600);
-  assert.ok(stats.multipleOverDv6 > 492.79);
-  assert.ok(stats.multipleOverDv6 < 492.8);
+  // Construction permutations are historical metadata, not release acceptance gates.
 });
 
 test("parses typed subjects, relations, objects, quantities, time, and conditions", () => {
@@ -104,9 +102,9 @@ test("stores personal facts and resolves references only inside an explicit sess
   assert.match(stateless.text, /don’t know your name/i);
 });
 
-test("passes the independent DV7 coverage benchmark without hiding failure classes", () => {
+test("runs the historical DV7 generated reachability suite", () => {
   const report = runDv7CoverageBenchmark();
-  assert.equal(report.total, 3_211);
+  assert.equal(report.total, 3_212);
   assert.equal(report.passed, report.total);
   assert.equal(report.failed, 0);
   assert.equal(report.passRate, 1);

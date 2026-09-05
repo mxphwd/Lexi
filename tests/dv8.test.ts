@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createLexiSession, respond } from "@/lib/lexi/engine";
+// Historical API contract suite; current-engine coverage is tested separately in dv12.test.ts.
+import { createLexiSession, respond } from "@/lib/lexi/historical-engine";
 import { runDv8BlindBenchmark } from "@/modules/benchmark";
 import {
   dv8EngineStats,

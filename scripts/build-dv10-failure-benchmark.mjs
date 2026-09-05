@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { gzipSync } from "node:zlib";
-import { createLexiSession } from "../lib/lexi/engine.ts";
+import { createLexiSession } from "../lib/lexi/historical-engine.ts";
 
 const root = process.cwd();
 const sourcePath = process.argv[2] ?? "/private/tmp/open-trivia-all.json";

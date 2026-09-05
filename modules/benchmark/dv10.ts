@@ -5,7 +5,8 @@ import path from "node:path";
 import readline from "node:readline";
 import { performance } from "node:perf_hooks";
 import { createGunzip } from "node:zlib";
-import { createLexiSession } from "@/lib/lexi/engine";
+// Historical API contract suite; current-engine coverage is tested separately in dv12.test.ts.
+import { createLexiSession } from "@/lib/lexi/historical-engine";
 import { parseDv10Plan } from "@/modules/dv10";
 import manifest from "@/data/dv10/benchmarks/manifest.json";
 

@@ -1,7 +1,8 @@
 import { performance } from "node:perf_hooks";
 import { dv8CuratedBlindCases } from "@/data/benchmarks/dv8-blind";
 import type { LexiReply } from "@/lib/lexi/types";
-import { createLexiSession, respond, respondDv7Baseline } from "@/lib/lexi/engine";
+// Historical API contract suite; current-engine coverage is tested separately in dv12.test.ts.
+import { createLexiSession, respond, respondDv7Baseline } from "@/lib/lexi/historical-engine";
 import { lexiKnowledgeGraph } from "@/modules/knowledge-graph";
 import { relationLabels, type SemanticRelation } from "@/modules/semantic";
 import { contentTokens } from "@/modules/dv8/normalize";

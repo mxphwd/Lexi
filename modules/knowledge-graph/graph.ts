@@ -303,7 +303,8 @@ function addSeed(graph: KnowledgeGraph, seed: KnowledgeEntitySeed) {
     seed.id,
   );
   for (const [predicate, fact] of Object.entries(seed.facts)) {
-    if (!fact) continue;
+    // Explicit zero and false values are knowledge, not missing fields.
+    if (fact === undefined || fact === null) continue;
     for (const entry of factEntries(fact)) {
       const converted = propositionValue(entry);
       graph.addProposition({

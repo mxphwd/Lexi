@@ -1,0 +1,22 @@
+{
+  "manifest": {
+    "id": "alphaine/language-bridge",
+    "version": "1.0.0",
+    "runtime": {"major": 12, "schema": 1},
+    "dependencies": []
+  },
+  "entities": [],
+  "relations": [],
+  "facts": [],
+  "rules": [],
+  "language": [
+    {"id":"capital-city","template":"name the capital city of {subject}","relation":"capital"},
+    {"id":"place-of-birth","template":"tell me the place of birth of {subject}","relation":"birthplace"},
+    {"id":"constituent-parts","template":"show the constituent parts of {subject}","relation":"has_part"}
+  ],
+  "dialogue": [
+    {"utterance":"can you show the evidence","action":"proof"},
+    {"utterance":"please repeat that answer","action":"repeat"},
+    {"utterance":"show the next results","action":"more"}
+  ]
+}

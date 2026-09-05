@@ -86,7 +86,10 @@ export type LexiTrace = {
   clauseIntents?: string[];
   subjectIds?: string[];
   proof?: string[];
-  runtimeVersion?: "DV11";
+  runtimeVersion?: "DV11" | "DV12";
+  confidenceAvailable?: boolean;
+  plans?: unknown[];
+  liveIndex?: {propositions:number;entities:number;requestBytes:number;loadedShards:number};
   executionStatus?:
     | "supported"
     | "contradicted"

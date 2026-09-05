@@ -1332,6 +1332,16 @@ a {
   }
 }
 
+.failure-export { margin-top: 12px; }
+.failure-export label { display: block; margin: 8px 0; }
+.failure-export input:not([type="checkbox"]), .failure-export textarea {
+  display: block; width: 100%; margin: 6px 0; padding: 7px; border: 1px solid #d8dcd8;
+  border-radius: 6px; background: rgba(255,255,255,.65); font: inherit;
+}
+.failure-export textarea { min-height: 160px; font-family: monospace; font-size: 11px; }
+.failure-export button { margin: 5px 6px 5px 0; padding: 5px 8px; border: 1px solid #d8dcd8; border-radius: 5px; }
+.failure-export button:disabled { opacity: .45; }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

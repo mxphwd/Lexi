@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { createLexiSession, respondAsync } from "@/lib/lexi/engine";
+// Historical API contract suite; current-engine coverage is tested separately in dv12.test.ts.
+import { createLexiSession, respondAsync } from "@/lib/lexi/historical-engine";
 import { runDv9Benchmark } from "@/modules/benchmark";
 import {
   dv9DataManifest,

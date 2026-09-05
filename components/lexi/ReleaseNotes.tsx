@@ -203,7 +203,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         </header>
 
         <div className="release-chart-shell">
-          <span className="release-axis release-axis-y">Capability of Lexi</span>
+          <span className="release-axis release-axis-y">Historical development index</span>
           <div
             ref={plotRef}
             className="release-plot"
@@ -272,7 +272,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                         ) : null}
                       </div>
                       <div className="release-capability">
-                        <span>Capability index</span>
+                        <span>Authored milestone index</span>
                         <div className="release-capability-track" aria-hidden="true">
                           <i
                             style={{
@@ -312,7 +312,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                       <div className="release-comparison">
                         <span>Overall improvement</span>
                         {improvement === null ? (
-                          <strong>Baseline release</strong>
+                          <strong>{index === 0 ? "Baseline release" : "Not independently measured"}</strong>
                         ) : (
                           <strong>
                             +{formatImprovement(improvement)}% compared with{" "}
@@ -330,8 +330,8 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         </div>
 
         <p className="release-index-note" id="release-index-note">
-          Relative capability index · deterministic reach, contextual precision,
-          lexical coverage, and model transparency · 0–100
+          Historical authored index, not answer accuracy. Earlier diagnostic scores
+          are not comparable; independent DV12 measurement is pending.
         </p>
       </section>
     </div>

@@ -1,0 +1,21 @@
+name: DV12 development verification
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify:dv12
+      - run: npm run build:github-pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dv12-evidence
+          path: docs/dv12/

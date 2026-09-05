@@ -7,6 +7,10 @@ const projectRoot = import.meta.dirname;
 export default defineConfig({
   root: path.join(projectRoot, "github-pages"),
   base: "./",
+  define: {
+    __LEXI_STATIC_BUILD__: "true",
+    __LEXI_CONFIGURED_BACKEND__: JSON.stringify(process.env.LEXI_BACKEND_URL ?? ""),
+  },
   publicDir: false,
   resolve: {
     alias: {

@@ -2,6 +2,7 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 import { handleLexiResources } from "./lexi-resources";
+import { handleDv12 } from "./dv12-handler";
 
 interface Fetcher {
   fetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
@@ -32,6 +33,10 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env | undefined, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    if (url.pathname === "/api/lexi/respond") {
+      const assets = env?.ASSETS ?? { fetch: (input: RequestInfo | URL, init?: RequestInit) => fetch(input, init) };
+      return handleDv12(request, assets);
+    }
 
     if (url.pathname === "/api/lexi/resources" || url.pathname === "/api/lexi/lexical") {
       const assets = env?.ASSETS ?? { fetch: (input: RequestInfo | URL, init?: RequestInit) => fetch(input, init) };

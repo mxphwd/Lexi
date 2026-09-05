@@ -1,0 +1,3397 @@
+{
+  "version": "DV12",
+  "population": "Ordinary English development diagnostics across declared question families; not a representative random sample.",
+  "independence": "Development diagnostics are not a public-use availability estimate.",
+  "diagnostic": {
+    "samples": 62,
+    "answerable": 62,
+    "correctAnswers": 47,
+    "answerPossibility": 0.7580645161290323,
+    "outcomes": {
+      "correct-answer": 47,
+      "correct-abstention": 0,
+      "incorrect-answer": 0,
+      "unsupported-abstention": 9,
+      "clarification": 1,
+      "partial-answer": 0,
+      "evaluator-error": 5
+    },
+    "precision": {
+      "denominator": 47,
+      "value": 1,
+      "unresolved": 5,
+      "lowerBound": 0.9038461538461539,
+      "upperBound": 1
+    },
+    "highConfidenceError": {
+      "threshold": 0.8,
+      "samples": 0,
+      "errors": 0,
+      "rate": null
+    },
+    "latency": {
+      "p50": 0.8802919999999972,
+      "p95": 23.48391699999999,
+      "p99": 97.54458399999993
+    }
+  },
+  "categories": {
+    "arithmetic": {
+      "samples": 10,
+      "answerable": 10,
+      "correctAnswers": 10,
+      "answerPossibility": 1,
+      "outcomes": {
+        "correct-answer": 10,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 10,
+        "value": 1,
+        "unresolved": 0,
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.8061670000000163,
+        "p95": 23.48391699999999,
+        "p99": 23.48391699999999
+      }
+    },
+    "quantities": {
+      "samples": 4,
+      "answerable": 4,
+      "correctAnswers": 4,
+      "answerPossibility": 1,
+      "outcomes": {
+        "correct-answer": 4,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 4,
+        "value": 1,
+        "unresolved": 0,
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.4530420000000106,
+        "p95": 0.8328750000000014,
+        "p99": 0.8328750000000014
+      }
+    },
+    "ordinary-facts": {
+      "samples": 16,
+      "answerable": 16,
+      "correctAnswers": 12,
+      "answerPossibility": 0.75,
+      "outcomes": {
+        "correct-answer": 12,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 3,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 1
+      },
+      "precision": {
+        "denominator": 12,
+        "value": 1,
+        "unresolved": 1,
+        "lowerBound": 0.9230769230769231,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.8509999999999991,
+        "p95": 97.54458399999993,
+        "p99": 97.54458399999993
+      }
+    },
+    "reasoning": {
+      "samples": 9,
+      "answerable": 9,
+      "correctAnswers": 9,
+      "answerPossibility": 1,
+      "outcomes": {
+        "correct-answer": 9,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 9,
+        "value": 1,
+        "unresolved": 0,
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.7147080000000017,
+        "p95": 3.0230419999999754,
+        "p99": 3.0230419999999754
+      }
+    },
+    "language": {
+      "samples": 6,
+      "answerable": 6,
+      "correctAnswers": 4,
+      "answerPossibility": 0.6666666666666666,
+      "outcomes": {
+        "correct-answer": 4,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 1,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 1
+      },
+      "precision": {
+        "denominator": 4,
+        "value": 1,
+        "unresolved": 1,
+        "lowerBound": 0.8,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.8101249999999993,
+        "p95": 1.733791999999994,
+        "p99": 1.733791999999994
+      }
+    },
+    "multi-part": {
+      "samples": 2,
+      "answerable": 2,
+      "correctAnswers": 2,
+      "answerPossibility": 1,
+      "outcomes": {
+        "correct-answer": 2,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 2,
+        "value": 1,
+        "unresolved": 0,
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.8597500000000196,
+        "p95": 0.9047920000000147,
+        "p99": 0.9047920000000147
+      }
+    },
+    "dialogue": {
+      "samples": 6,
+      "answerable": 6,
+      "correctAnswers": 5,
+      "answerPossibility": 0.8333333333333334,
+      "outcomes": {
+        "correct-answer": 5,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 1
+      },
+      "precision": {
+        "denominator": 5,
+        "value": 1,
+        "unresolved": 1,
+        "lowerBound": 0.8333333333333334,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 1.243458000000004,
+        "p95": 1.5680830000000014,
+        "p99": 1.5680830000000014
+      }
+    },
+    "ambiguity": {
+      "samples": 1,
+      "answerable": 1,
+      "correctAnswers": 0,
+      "answerPossibility": 0,
+      "outcomes": {
+        "correct-answer": 0,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 1,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 0,
+        "value": null,
+        "unresolved": 0,
+        "lowerBound": null,
+        "upperBound": null
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.5674999999999955,
+        "p95": 0.5674999999999955,
+        "p99": 0.5674999999999955
+      }
+    },
+    "reference": {
+      "samples": 2,
+      "answerable": 2,
+      "correctAnswers": 1,
+      "answerPossibility": 0.5,
+      "outcomes": {
+        "correct-answer": 1,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 0,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 1
+      },
+      "precision": {
+        "denominator": 1,
+        "value": 1,
+        "unresolved": 1,
+        "lowerBound": 0.5,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 1.0544999999999902,
+        "p95": 1.2487909999999829,
+        "p99": 1.2487909999999829
+      }
+    },
+    "explanations": {
+      "samples": 2,
+      "answerable": 2,
+      "correctAnswers": 0,
+      "answerPossibility": 0,
+      "outcomes": {
+        "correct-answer": 0,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 1,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 1
+      },
+      "precision": {
+        "denominator": 0,
+        "value": null,
+        "unresolved": 1,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 0.8342079999999896,
+        "p95": 13.964541999999994,
+        "p99": 13.964541999999994
+      }
+    },
+    "procedures": {
+      "samples": 2,
+      "answerable": 2,
+      "correctAnswers": 0,
+      "answerPossibility": 0,
+      "outcomes": {
+        "correct-answer": 0,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 2,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 0,
+        "value": null,
+        "unresolved": 0,
+        "lowerBound": null,
+        "upperBound": null
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 22.14945799999998,
+        "p95": 22.830208999999968,
+        "p99": 22.830208999999968
+      }
+    },
+    "comparisons": {
+      "samples": 2,
+      "answerable": 2,
+      "correctAnswers": 0,
+      "answerPossibility": 0,
+      "outcomes": {
+        "correct-answer": 0,
+        "correct-abstention": 0,
+        "incorrect-answer": 0,
+        "unsupported-abstention": 2,
+        "clarification": 0,
+        "partial-answer": 0,
+        "evaluator-error": 0
+      },
+      "precision": {
+        "denominator": 0,
+        "value": null,
+        "unresolved": 0,
+        "lowerBound": null,
+        "upperBound": null
+      },
+      "highConfidenceError": {
+        "threshold": 0.8,
+        "samples": 0,
+        "errors": 0,
+        "rate": null
+      },
+      "latency": {
+        "p50": 11.527749999999969,
+        "p95": 37.548666000000026,
+        "p99": 37.548666000000026
+      }
+    }
+  },
+  "independent": {
+    "samples": 0,
+    "answerable": 0,
+    "correctAnswers": 0,
+    "answerPossibility": null,
+    "outcomes": {
+      "correct-answer": 0,
+      "correct-abstention": 0,
+      "incorrect-answer": 0,
+      "unsupported-abstention": 0,
+      "clarification": 0,
+      "partial-answer": 0,
+      "evaluator-error": 0
+    },
+    "precision": {
+      "denominator": 0,
+      "value": null,
+      "unresolved": 0,
+      "lowerBound": null,
+      "upperBound": null
+    },
+    "highConfidenceError": {
+      "threshold": 0.8,
+      "samples": 0,
+      "errors": 0,
+      "rate": null
+    },
+    "latency": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    }
+  },
+  "rcGate": {
+    "minimumIndependentRows": 2000,
+    "available": 0,
+    "calibrationAvailable": false,
+    "unresolvedP0": [
+      "ARCH-03",
+      "ARCH-08",
+      "ARCH-10",
+      "PARSE-03",
+      "PARSE-07",
+      "PARSE-08",
+      "PARSE-12",
+      "PARSE-13",
+      "PARSE-15",
+      "PARSE-16",
+      "PARSE-19",
+      "PARSE-20",
+      "PARSE-21",
+      "RETRIEVE-03",
+      "RETRIEVE-04",
+      "RETRIEVE-05",
+      "RETRIEVE-06",
+      "RETRIEVE-11",
+      "DATA-04",
+      "DATA-09",
+      "DATA-10",
+      "DATA-11",
+      "DATA-12",
+      "DATA-14",
+      "DATA-15",
+      "DATA-16",
+      "REASON-04",
+      "REASON-05",
+      "REASON-09",
+      "REASON-12",
+      "REASON-14",
+      "REASON-15",
+      "REASON-17",
+      "REASON-19",
+      "REASON-21",
+      "REASON-24",
+      "REASON-25",
+      "REASON-26",
+      "REASON-28",
+      "DIALOGUE-07",
+      "DIALOGUE-08",
+      "DIALOGUE-11",
+      "DIALOGUE-12",
+      "DIALOGUE-14",
+      "REALIZE-01",
+      "REALIZE-03",
+      "REALIZE-04",
+      "REALIZE-05",
+      "REALIZE-07",
+      "CONF-02",
+      "CONF-03",
+      "CONF-04",
+      "CONF-05",
+      "CONF-06",
+      "CONF-07",
+      "CONF-08",
+      "EVAL-01",
+      "EVAL-02",
+      "EVAL-05",
+      "EVAL-09",
+      "EVAL-10",
+      "EVAL-11",
+      "EVAL-14",
+      "EVAL-16",
+      "EVAL-17",
+      "OPS-05",
+      "OPS-10",
+      "RC-01"
+    ],
+    "missingCategories": [
+      "ordinary-facts",
+      "arithmetic",
+      "quantities",
+      "reasoning",
+      "language",
+      "multi-part",
+      "dialogue",
+      "ambiguity",
+      "reference",
+      "explanations",
+      "procedures",
+      "comparisons"
+    ],
+    "adjudicationPending": 0,
+    "thresholds": {
+      "answerPossibility": 0.6,
+      "answerPrecision": 0.99,
+      "maximumHighConfidenceError": 0.007,
+      "minimumHighConfidenceSamples": 600
+    },
+    "passed": false
+  },
+  "rows": [
+    {
+      "id": "dv12-diagnostic-0001",
+      "category": "arithmetic",
+      "prompt": "What is 2 plus 3 times 4?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 14
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 23.48391699999999,
+      "confidence": null,
+      "output": "14.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is 2 plus 3 times 4"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0002",
+      "category": "arithmetic",
+      "prompt": "Calculate (2 + 3) * 4",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 20
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.9105840000000001,
+      "confidence": null,
+      "output": "20.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "Calculate (2 + 3) * 4"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0003",
+      "category": "arithmetic",
+      "prompt": "What is 1,000 plus 2,000?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 3000
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8061670000000163,
+      "confidence": null,
+      "output": "3,000.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is 1,000 plus 2,000"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0004",
+      "category": "arithmetic",
+      "prompt": "What is half of 30?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 15
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.4777909999999963,
+      "confidence": null,
+      "output": "15.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is half of 30"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0005",
+      "category": "arithmetic",
+      "prompt": "What is 25 percent of 80?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 20
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8231250000000045,
+      "confidence": null,
+      "output": "20.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is 25 percent of 80"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0006",
+      "category": "arithmetic",
+      "prompt": "What is 10 minus 2 times 3?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 4
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6854580000000112,
+      "confidence": null,
+      "output": "4.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is 10 minus 2 times 3"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0007",
+      "category": "arithmetic",
+      "prompt": "Calculate -2^2",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": -4
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6058749999999975,
+      "confidence": null,
+      "output": "-4.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "Calculate -2^2"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0008",
+      "category": "arithmetic",
+      "prompt": "Calculate 2^3^2",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 512
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.5144170000000088,
+      "confidence": null,
+      "output": "512.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "Calculate 2^3^2"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0009",
+      "category": "arithmetic",
+      "prompt": "What is two hundred and one plus nineteen?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 220
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.2381670000000042,
+      "confidence": null,
+      "output": "220.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "What is two hundred and one plus nineteen"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0010",
+      "category": "arithmetic",
+      "prompt": "Calculate 3.5 * 2",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 7
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.7769999999999868,
+      "confidence": null,
+      "output": "7.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "calculate",
+          "expression": "Calculate 3.5 * 2"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0011",
+      "category": "quantities",
+      "prompt": "How many minutes are in 2 hours?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 120,
+            "unit": "minutes"
+          }
+        ],
+        "tolerance": 0.000001
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.7151670000000081,
+      "confidence": null,
+      "output": "120 minutes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "convert",
+          "value": 2,
+          "from": "hours",
+          "to": "minutes"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0012",
+      "category": "quantities",
+      "prompt": "Convert 100 celsius to fahrenheit",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 212,
+            "unit": "fahrenheit"
+          }
+        ],
+        "tolerance": 0.000001
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8328750000000014,
+      "confidence": null,
+      "output": "212 fahrenheit.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "convert",
+          "value": 100,
+          "from": "celsius",
+          "to": "fahrenheit"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0013",
+      "category": "quantities",
+      "prompt": "Convert 1 kilometer to meters",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 1000,
+            "unit": "meters"
+          }
+        ],
+        "tolerance": 0.000001
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4508340000000146,
+      "confidence": null,
+      "output": "1,000 meters.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "convert",
+          "value": 1,
+          "from": "kilometer",
+          "to": "meters"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0014",
+      "category": "quantities",
+      "prompt": "Convert 10 pounds to kg",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 4.5359237,
+            "unit": "kg"
+          }
+        ],
+        "tolerance": 0.000001
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4530420000000106,
+      "confidence": null,
+      "output": "4.5359237 kg.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "convert",
+          "value": 10,
+          "from": "pounds",
+          "to": "kg"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0015",
+      "category": "ordinary-facts",
+      "prompt": "How many legs does a snake have?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 0
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.5232910000000004,
+      "confidence": null,
+      "output": "Snake has 0 legs.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-snake"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00190"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0016",
+      "category": "ordinary-facts",
+      "prompt": "How many legs does a spider have?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 8
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6692090000000235,
+      "confidence": null,
+      "output": "Spider has 8 legs.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-spider"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00162"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0017",
+      "category": "ordinary-facts",
+      "prompt": "How many legs does a cat have?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 4
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6370830000000183,
+      "confidence": null,
+      "output": "Cat has 4 legs.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-cat"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00041"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0018",
+      "category": "ordinary-facts",
+      "prompt": "How many legs does a bird have?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 2
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6958750000000009,
+      "confidence": null,
+      "output": "Bird has 2 legs.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "class-bird"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00014"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0019",
+      "category": "ordinary-facts",
+      "prompt": "What is the atomic number of oxygen?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 8
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8509999999999991,
+      "confidence": null,
+      "output": "The atomic number of oxygen is 8.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "element-oxygen"
+              },
+              "relation": "atomic_number",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00465"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0020",
+      "category": "ordinary-facts",
+      "prompt": "What is the atomic number of carbon?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 6
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6877909999999758,
+      "confidence": null,
+      "output": "The atomic number of carbon is 6.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "element-carbon"
+              },
+              "relation": "atomic_number",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00471"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0021",
+      "category": "ordinary-facts",
+      "prompt": "What is the atomic number of hydrogen?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 1
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.7955000000000041,
+      "confidence": null,
+      "output": "The atomic number of hydrogen is 1.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "element-hydrogen"
+              },
+              "relation": "atomic_number",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00460"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0022",
+      "category": "ordinary-facts",
+      "prompt": "What is the capital of France?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-paris"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8802919999999972,
+      "confidence": null,
+      "output": "France has the capital Paris.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "country-france"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00377"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0023",
+      "category": "ordinary-facts",
+      "prompt": "What is Germany's capital?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-berlin"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.1776249999999777,
+      "confidence": null,
+      "output": "Germany has the capital Berlin.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "country-germany"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00382"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0024",
+      "category": "ordinary-facts",
+      "prompt": "What is the capital of Japan?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-tokyo"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.9379999999999882,
+      "confidence": null,
+      "output": "Japan has the capital Tokyo.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "country-japan"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00397"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0025",
+      "category": "ordinary-facts",
+      "prompt": "What is the capital of Italy?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-rome"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.603082999999998,
+      "confidence": null,
+      "output": "Italy has the capital Rome.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "country-italy"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00387"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0026",
+      "category": "ordinary-facts",
+      "prompt": "What is the capital of Spain?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-madrid"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.511540999999994,
+      "confidence": null,
+      "output": "Spain has the capital Madrid.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "country-spain"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00392"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0027",
+      "category": "reasoning",
+      "prompt": "Can penguins fly?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": false
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.6303749999999866,
+      "confidence": null,
+      "output": "No. Penguin cannot fly.",
+      "status": "contradicted",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-penguin"
+              },
+              "relation": "ability",
+              "object": {
+                "kind": "boolean",
+                "value": true
+              },
+              "scope": "fly"
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00130"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0028",
+      "category": "reasoning",
+      "prompt": "Can penguins swim?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": true
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4946250000000134,
+      "confidence": null,
+      "output": "Yes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-penguin"
+              },
+              "relation": "ability",
+              "object": {
+                "kind": "boolean",
+                "value": true
+              },
+              "scope": "swim"
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00131"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0029",
+      "category": "reasoning",
+      "prompt": "Do spiders have six legs?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": false
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.5214170000000138,
+      "confidence": null,
+      "output": "No. Spider has 8 legs.",
+      "status": "contradicted",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-spider"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "number",
+                "value": 6
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00162"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0030",
+      "category": "reasoning",
+      "prompt": "Do spiders have eight legs?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": true
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4371669999999881,
+      "confidence": null,
+      "output": "Yes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-spider"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "number",
+                "value": 8
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00162"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0031",
+      "category": "reasoning",
+      "prompt": "Can all birds fly?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": false
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.086500000000001,
+      "confidence": null,
+      "output": "No. Penguin cannot fly.",
+      "status": "contradicted",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "variable",
+                "name": "member"
+              },
+              "relation": "is_a",
+              "object": {
+                "kind": "entity",
+                "id": "class-bird"
+              }
+            },
+            {
+              "subject": {
+                "kind": "variable",
+                "name": "member"
+              },
+              "relation": "ability",
+              "object": {
+                "kind": "boolean",
+                "value": true
+              },
+              "scope": "fly"
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean",
+          "quantifier": {
+            "kind": "all"
+          }
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00127",
+        "core:dv7-p00130",
+        "core:dv7-p00134",
+        "core:dv7-p00137",
+        "core:dv7-p00140",
+        "inherit:animal-chicken:core:dv7-p00016",
+        "core:dv7-p00016"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0032",
+      "category": "reasoning",
+      "prompt": "Is a penguin an animal?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": true
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.7830419999999947,
+      "confidence": null,
+      "output": "Yes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-penguin"
+              },
+              "relation": "is_a",
+              "object": {
+                "kind": "entity",
+                "id": "class-animal"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "transitive:animal-penguin:core:dv7-p00013",
+        "core:dv7-p00127",
+        "core:dv7-p00013"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0033",
+      "category": "reasoning",
+      "prompt": "Is a cat a mammal?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": true
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.7147080000000017,
+      "confidence": null,
+      "output": "Yes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-cat"
+              },
+              "relation": "is_a",
+              "object": {
+                "kind": "entity",
+                "id": "class-mammal"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "boolean"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00038"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0034",
+      "category": "language",
+      "prompt": "Could you explain gravity?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Gravity is the attraction associated with mass and the curvature of spacetime."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 0.9511669999999981,
+      "confidence": null,
+      "output": "Gravity is the attraction associated with mass and the curvature of spacetime.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "topic-gravity"
+              },
+              "relation": "definition",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p01678"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0035",
+      "category": "language",
+      "prompt": "What is a computer?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "A computer is an electronic machine that stores and processes data according to instructions."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8101249999999993,
+      "confidence": null,
+      "output": "A computer is an electronic machine that stores and processes data according to instructions.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "topic-computer"
+              },
+              "relation": "definition",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p01510"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0036",
+      "category": "language",
+      "prompt": "Hello",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Hello. What would you like to explore?"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4395839999999964,
+      "confidence": null,
+      "output": "Hello. What would you like to explore?",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "social",
+          "act": "greeting"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0037",
+      "category": "language",
+      "prompt": "Thank you",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "You’re welcome."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 0.4642080000000135,
+      "confidence": null,
+      "output": "You’re welcome.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "social",
+          "act": "thanks"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0038",
+      "category": "multi-part",
+      "prompt": "What are the capitals of France and Germany?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-paris"
+          },
+          {
+            "kind": "entity",
+            "id": "city-berlin"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.8597500000000196,
+      "confidence": null,
+      "output": "Paris and Berlin.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "variable",
+                "name": "subject"
+              },
+              "relation": "capital",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [
+            {
+              "left": {
+                "kind": "variable",
+                "name": "subject"
+              },
+              "op": "member",
+              "right": {
+                "kind": "list",
+                "ordered": true,
+                "values": [
+                  {
+                    "kind": "entity",
+                    "id": "country-france"
+                  },
+                  {
+                    "kind": "entity",
+                    "id": "country-germany"
+                  }
+                ]
+              }
+            }
+          ],
+          "answer": "answer",
+          "shape": "list",
+          "limit": 2
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00377",
+        "core:dv7-p00382"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0039",
+      "category": "multi-part",
+      "prompt": "My name is Mina. What is my name?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "Mina"
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.9047920000000147,
+      "confidence": null,
+      "output": "I’ll remember your name as Mina for this session.\n\nYour name is Mina.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "set",
+          "field": "name",
+          "value": "Mina"
+        },
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "name"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0040",
+      "category": "dialogue",
+      "prompt": "What is my name?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "Mina"
+          }
+        ]
+      },
+      "turns": [
+        "My name is Mina"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.0106250000000045,
+      "confidence": null,
+      "output": "Your name is Mina.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "name"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0041",
+      "category": "dialogue",
+      "prompt": "Where do I live?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "Seoul"
+          }
+        ]
+      },
+      "turns": [
+        "My name is Mina and I live in Seoul"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.334417000000002,
+      "confidence": null,
+      "output": "You live in Seoul.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "residence"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0042",
+      "category": "dialogue",
+      "prompt": "Where am I from?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "Paris"
+          }
+        ]
+      },
+      "turns": [
+        "I am from Paris",
+        "I live in London"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.243458000000004,
+      "confidence": null,
+      "output": "You are from Paris.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "origin"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0043",
+      "category": "dialogue",
+      "prompt": "What do I like?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "tea"
+          },
+          {
+            "kind": "text",
+            "value": "coffee"
+          }
+        ]
+      },
+      "turns": [
+        "I like tea",
+        "I like coffee"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.5680830000000014,
+      "confidence": null,
+      "output": "You like tea and coffee.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "likes"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0044",
+      "category": "dialogue",
+      "prompt": "What is my name?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "Lena"
+          }
+        ]
+      },
+      "turns": [
+        "My name is Mina",
+        "Actually, my name is Lena"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.4670839999999998,
+      "confidence": null,
+      "output": "Your name is Lena.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "memory",
+          "action": "recall",
+          "field": "name"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0045",
+      "category": "ambiguity",
+      "prompt": "What is a bank?",
+      "answerable": true,
+      "expected": {
+        "clarification": [
+          "bank"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "clarification",
+        "reason": "Requested a labeled missing slot.",
+        "adjudication": false
+      },
+      "milliseconds": 0.5674999999999955,
+      "confidence": null,
+      "output": "Which meaning of bank do you mean? 1. river bank (geography) 2. bank (finance)",
+      "status": "ambiguous",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "mention",
+                "text": "bank",
+                "role": "subject",
+                "candidates": [
+                  "dv12:river-bank",
+                  "place-bank"
+                ]
+              },
+              "relation": "definition",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0046",
+      "category": "reference",
+      "prompt": "How many legs does it have?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 8
+          }
+        ]
+      },
+      "turns": [
+        "What is a spider?"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.0544999999999902,
+      "confidence": null,
+      "output": "Spider has 8 legs.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "animal-spider"
+              },
+              "relation": "leg_count",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00162"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0047",
+      "category": "reference",
+      "prompt": "What about the latter?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "text",
+            "value": "the fourth planet from the Sun, a rocky world with a thin carbon-dioxide atmosphere"
+          }
+        ]
+      },
+      "turns": [
+        "What is Earth? What is Mars?"
+      ],
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "evaluator-error",
+        "reason": "Textual equivalence needs adjudication.",
+        "adjudication": true
+      },
+      "milliseconds": 1.2487909999999829,
+      "confidence": null,
+      "output": "Mars is the fourth planet from the Sun, often called the Red Planet.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "space-mars"
+              },
+              "relation": "definition",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p00287"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0048",
+      "category": "ordinary-facts",
+      "prompt": "Where was Albert Einstein born?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Ulm"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 80.85424999999998,
+      "confidence": null,
+      "output": "I do not have evidence for the requested relation and constraints.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "person-albert-einstein"
+              },
+              "relation": "birthplace",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0049",
+      "category": "ordinary-facts",
+      "prompt": "How many teeth does an adult human usually have?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "32"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 10.974333999999999,
+      "confidence": null,
+      "output": "I could not map this request to a supported relation or operation.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "unknown",
+          "reason": "I could not map this request to a supported relation or operation."
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0050",
+      "category": "explanations",
+      "prompt": "Why do we sleep?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Sleep supports health and memory."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "evaluator-error",
+        "reason": "Unapproved paraphrase needs human adjudication.",
+        "adjudication": true
+      },
+      "milliseconds": 0.8342079999999896,
+      "confidence": null,
+      "output": "Sleep is used to support restoration, memory, regulation, and normal functioning.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "topic-sleep"
+              },
+              "relation": "purpose",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "explanation"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p02043"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0051",
+      "category": "explanations",
+      "prompt": "Why do humans need water?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Water supports transport, temperature regulation, and chemical reactions."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 13.964541999999994,
+      "confidence": null,
+      "output": "I could not identify humans need water well enough to answer that request.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "mention",
+                "text": "humans need water",
+                "role": "subject",
+                "candidates": []
+              },
+              "relation": "cause",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "explanation"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0052",
+      "category": "procedures",
+      "prompt": "How do I boil an egg?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Put the egg in water, heat it, cook it, and cool it."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 22.830208999999968,
+      "confidence": null,
+      "output": "I could not identify boil an egg well enough to answer that request.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "mention",
+                "text": "boil an egg",
+                "role": "subject",
+                "candidates": []
+              },
+              "relation": "steps",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "procedure"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0053",
+      "category": "procedures",
+      "prompt": "How do I reset a forgotten password?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Use the account recovery process."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 22.14945799999998,
+      "confidence": null,
+      "output": "I could not identify reset a forgotten password well enough to answer that request.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "mention",
+                "text": "reset a forgotten password",
+                "role": "subject",
+                "candidates": []
+              },
+              "relation": "steps",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "procedure"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0054",
+      "category": "comparisons",
+      "prompt": "What is the difference between weather and climate?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Weather is short-term; climate is long-term patterns."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 37.548666000000026,
+      "confidence": null,
+      "output": "I could not identify difference between weather and climate well enough to answer that request.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "mention",
+                "text": "difference between weather and climate",
+                "role": "subject",
+                "candidates": []
+              },
+              "relation": "definition",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0055",
+      "category": "comparisons",
+      "prompt": "Which is better for writing notes, a pen or pencil?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "It depends on whether permanence or erasability matters."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 11.527749999999969,
+      "confidence": null,
+      "output": "I could not map this request to a supported relation or operation.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "unknown",
+          "reason": "I could not map this request to a supported relation or operation."
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0056",
+      "category": "reasoning",
+      "prompt": "If all cats are mammals and all mammals are animals, are all cats animals?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Yes."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 1.2628750000000082,
+      "confidence": null,
+      "output": "Yes.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "logic",
+          "premises": [
+            {
+              "subject": "cats",
+              "relation": "subset",
+              "object": "mammals"
+            },
+            {
+              "subject": "mammals",
+              "relation": "subset",
+              "object": "animals"
+            }
+          ],
+          "conclusion": {
+            "subject": "cats",
+            "relation": "subset",
+            "object": "animals"
+          }
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0057",
+      "category": "reasoning",
+      "prompt": "If all cats are mammals, are all mammals cats?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "That does not follow from the premise."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Matches an explicitly approved realization.",
+        "adjudication": false
+      },
+      "milliseconds": 3.0230419999999754,
+      "confidence": null,
+      "output": "That does not follow from the premise.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "logic",
+          "premises": [
+            {
+              "subject": "cats",
+              "relation": "subset",
+              "object": "mammals"
+            }
+          ],
+          "conclusion": {
+            "subject": "mammals",
+            "relation": "subset",
+            "object": "cats"
+          }
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0058",
+      "category": "language",
+      "prompt": "What does the Context Module do?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "It determines context from recorded examples."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "evaluator-error",
+        "reason": "Unapproved paraphrase needs human adjudication.",
+        "adjudication": true
+      },
+      "milliseconds": 1.3537079999999833,
+      "confidence": null,
+      "output": "The Context Module is used to decide what kind of response a corpus-routed request supports.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "topic-context-module"
+              },
+              "relation": "purpose",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p02260"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0059",
+      "category": "language",
+      "prompt": "How is Lexi different from an LLM?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Lexi uses explicit deterministic rules rather than a generative neural language model."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 1.733791999999994,
+      "confidence": null,
+      "output": "I could not map this request to a supported relation or operation.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "unknown",
+          "reason": "I could not map this request to a supported relation or operation."
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0060",
+      "category": "dialogue",
+      "prompt": "I feel worried.",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "I’m sorry you’re feeling worried."
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "evaluator-error",
+        "reason": "Unapproved paraphrase needs human adjudication.",
+        "adjudication": true
+      },
+      "milliseconds": 0.9171249999999986,
+      "confidence": null,
+      "output": "I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "social",
+          "act": "concern"
+        }
+      ],
+      "propositionIds": []
+    },
+    {
+      "id": "dv12-diagnostic-0061",
+      "category": "ordinary-facts",
+      "prompt": "What continent is Tokyo in?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "Asia"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "evaluator-error",
+        "reason": "Unapproved paraphrase needs human adjudication.",
+        "adjudication": true
+      },
+      "milliseconds": 0.9493750000000318,
+      "confidence": null,
+      "output": "Tokyo is in Asia.",
+      "status": "supported",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "entity",
+                "id": "city-tokyo"
+              },
+              "relation": "continent",
+              "object": {
+                "kind": "variable",
+                "name": "answer"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "value"
+        }
+      ],
+      "propositionIds": [
+        "core:dv7-p03010"
+      ]
+    },
+    {
+      "id": "dv12-diagnostic-0062",
+      "category": "ordinary-facts",
+      "prompt": "What did Alexander Graham Bell invent?",
+      "answerable": true,
+      "expected": {
+        "text": [
+          "telephone"
+        ]
+      },
+      "provenance": {
+        "kind": "development-diagnostic",
+        "author": "Codex development audit",
+        "capturedAt": "2026-09-04"
+      },
+      "grade": {
+        "outcome": "unsupported-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 97.54458399999993,
+      "confidence": null,
+      "output": "I do not have evidence for the requested relation and constraints.",
+      "status": "unknown",
+      "plans": [
+        {
+          "kind": "query",
+          "atoms": [
+            {
+              "subject": {
+                "kind": "variable",
+                "name": "answer"
+              },
+              "relation": "inventor",
+              "object": {
+                "kind": "entity",
+                "id": "person-alexander-bell"
+              }
+            }
+          ],
+          "filters": [],
+          "answer": "answer",
+          "shape": "list"
+        }
+      ],
+      "propositionIds": []
+    }
+  ]
+}

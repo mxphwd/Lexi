@@ -66,10 +66,10 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV4",
     date: "30 July 2026",
     capabilityIndex: 5,
-    metric: "3.99× availability",
+    metric: "347 language features",
     focus: ["Follow-ups", "Rewrites", "Comparisons"],
     notes: [
-      "Added 347 language and dialogue features, raising direct-answer availability by 3.99×.",
+      "Added 347 language and dialogue features; the former 3.99× figure counted constructions, not independently measured answers.",
       "Follow-ups, polite rewrites, summaries, and comparisons became more precise.",
     ],
   },
@@ -92,11 +92,11 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV6",
     date: "30 July 2026",
     capabilityIndex: 12,
-    metric: "7.02× availability",
+    metric: "500,347 constructions",
     focus: ["800 features", "Reasoning", "Technical"],
     notes: [
       "Expanded Lexi to 500,347 constructions and exactly 800 linguistic features.",
-      "Technical contexts, deterministic reasoning, and basic conversation pushed availability 7.02×.",
+      "Technical contexts and deterministic reasoning expanded the catalogs; the former availability multiplier was not a public-use measurement.",
     ],
   },
   {
@@ -105,11 +105,11 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV7",
     date: "31 July 2026",
     capabilityIndex: 55,
-    metric: "492.79× semantic availability",
+    metric: "3,132 seed propositions",
     focus: ["Typed meaning", "Knowledge graph", "Memory"],
     notes: [
       "Rebuilt understanding around typed relations, conditions, quantities, and time.",
-      "A 3,132-proposition knowledge graph, explicit reasoning, and session memory powered the 492.79× semantic-reach gain.",
+      "Added a 3,132-proposition knowledge graph and session memory; combinatorial semantic-reach totals were not measured answer rates.",
     ],
   },
   {
@@ -118,7 +118,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV8",
     date: "1 August 2026",
     capabilityIndex: 72,
-    metric: "4,124-case blind benchmark",
+    metric: "4,124 generated checks",
     focus: ["Query plans", "Execution", "Calibration"],
     measurements: [
       { label: "Knowledge", value: "100.0%" },
@@ -130,7 +130,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     ],
     notes: [
       "Replaced direct routing with typed query plans, word senses, indexed facts, and compositional execution.",
-      "The engine passed the 4,124-case held-out benchmark while exposing proof and calibrated abstention.",
+      "The 4,124 checks were generated reachability diagnostics, not an independently authored blind benchmark.",
     ],
   },
   {
@@ -139,7 +139,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV9",
     date: "2 August 2026",
     capabilityIndex: 100,
-    metric: "800,000 validated atomic facts",
+    metric: "800,000 lexical claims",
     focus: ["Atomic facts", "Word senses", "Typed data"],
     measurements: [
       { label: "Entities", value: "323,853" },
@@ -150,7 +150,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       { label: "Parser p95", value: "0.004 ms" },
     ],
     notes: [
-      "Added 800,000 validated atomic facts, 323,853 entities, and 163,274 explicit senses.",
+      "Added 800,000 largely lexical claims, 323,853 records, and 163,274 explicit senses; these are not equivalent to world-question coverage.",
       "Query-plan examples, inference rules, and dialogue scenarios formed Lexi’s large typed data layer.",
     ],
   },
@@ -160,7 +160,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV10",
     date: "11 August 2026",
     capabilityIndex: 100,
-    metric: "2,500 frozen human failures",
+    metric: "2,500 generated proxy cases",
     focus: ["Unified path", "Failure set", "Proof"],
     measurements: [
       { label: "Factual knowledge", value: "0.0%" },
@@ -173,7 +173,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     ],
     notes: [
       "Unified plans, reviewed propositions, graph reasoning, dialogue goals, and proof in one execution path.",
-      "A frozen 2,500-failure set exposed weak factual coverage while protecting precision claims.",
+      "The frozen 2,500-case proxy set exposed weaknesses; it was not a collection of genuine user failures.",
     ],
   },
   {
@@ -183,7 +183,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     extensionLevel: 1,
     date: "12 August 2026",
     capabilityIndex: 100,
-    metric: "719,949 live propositions",
+    metric: "719,949 packaged propositions",
     focus: ["One contract", "Worker retrieval", "Loadable packs"],
     measurements: [
       { label: "World facts", value: "719,949" },
@@ -192,19 +192,28 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       { label: "Predicates", value: "199" },
       { label: "Domain packages", value: "10" },
       { label: "Physical shards", value: "2,302" },
-      { label: "Query mappings", value: "29,640" },
-      { label: "Dialogue scenarios", value: "5,000" },
+      { label: "Alias combinations (not examples)", value: "29,640" },
+      { label: "Dialogue frames", value: "6" },
     ],
     notes: [
       "Unified Lexi around one typed request-to-proof contract and moved large knowledge retrieval behind the Worker.",
-      "The +1 extension added 719,949 live propositions across ten loadable domains without becoming a separate version.",
+      "The +1 extension packaged 719,949 propositions across ten domains; packaged totals do not describe currently loaded or successfully answerable facts.",
     ],
   },
+  {
+    build:"260904-DV12",label:"Pre-build 260904-DV12",shortLabel:"DV12",date:"4 September 2026",
+    capabilityIndex:100,metric:"256 bounded alias buckets",
+    focus:["Server execution","Traceable reasoning","Honest measurement"],
+    notes:[
+      "Rebuilt the active execution path around typed plans, transactional dialogue, and server-side evidence retrieval.",
+      "Added executable packages, arithmetic and temporal safeguards; independent answerability and RC readiness remain unverified."
+    ],
+    measurements:[{label:"Alias buckets",value:"256"},{label:"Independent evaluation rows",value:"0"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
+  }
 ] as const;
 
 export function releaseImprovement(index: number) {
   if (index <= 0 || index >= LEXI_RELEASES.length) return null;
-  const current = LEXI_RELEASES[index].capabilityIndex;
-  const previous = LEXI_RELEASES[index - 1].capabilityIndex;
-  return ((current - previous) / previous) * 100;
+  // No releases were measured on the same independent population.
+  return null;
 }

@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 import { loadDv11Jsonl, gradeDv11Response, summarizeDv11Rows } from "../modules/benchmark/dv11.ts";
-import { createLexiSession, respond } from "../lib/lexi/engine.ts";
+import { createLexiSession, respond } from "../lib/lexi/historical-engine.ts";
 import { parseDv11Query } from "../modules/dv11/parser.ts";
 import { performance } from "node:perf_hooks";
 

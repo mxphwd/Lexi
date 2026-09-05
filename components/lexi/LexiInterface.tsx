@@ -2,7 +2,9 @@
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
+import { FailureExport } from "@/components/lexi/FailureExport";
 import type { LexiReply } from "@/lib/lexi/types";
+import type { BrowserSession } from "@/lib/lexi/client";
 import {
   LEXI_BASE_VERSION_LABEL,
   LEXI_EXTENSION_BADGE,
@@ -17,15 +19,14 @@ const DOCUMENTATION_QUOTE =
 const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
 
-type LexiSessionHandle = {
-  respond(input: string): LexiReply;
-  respondAsync(input: string, options?: { signal?: AbortSignal }): Promise<LexiReply>;
-};
+type LexiSessionHandle = BrowserSession;
 
 export function LexiInterface() {
   const [input, setInput] = useState("");
   const [composerState, setComposerState] = useState<ComposerState>("idle");
   const [reply, setReply] = useState<LexiReply | null>(null);
+  const [lastPrompt,setLastPrompt]=useState("");
+  const [privateValues,setPrivateValues]=useState<string[]>([]);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [showVersion, setShowVersion] = useState(false);
   const [releaseNotesOpen, setReleaseNotesOpen] = useState(false);
@@ -66,7 +67,7 @@ export function LexiInterface() {
   function loadSession(): Promise<LexiSessionHandle> {
     if (sessionRef.current) return Promise.resolve(sessionRef.current);
     if (!sessionLoadRef.current) {
-      sessionLoadRef.current = import("@/lib/lexi/engine")
+      sessionLoadRef.current = import("@/lib/lexi/client")
         .then(({ createLexiSession }) => {
           const session = createLexiSession();
           sessionRef.current = session;
@@ -84,9 +85,8 @@ export function LexiInterface() {
     if (!canSend) return;
 
     const prompt = input.trim();
+    setLastPrompt(prompt);
     const requestId = requestRef.current + 1;
-    const startedAt = performance.now();
-    const minimumThinkingTime = Math.min(1650, 840 + prompt.length * 11);
     requestRef.current = requestId;
     abortControllerRef.current?.abort("superseded");
     const controller = new AbortController();
@@ -96,27 +96,26 @@ export function LexiInterface() {
     setReply(null);
 
     void loadSession()
-      .then((session) => session.respondAsync(prompt, { signal: controller.signal }))
+      .then(async (session) => {
+        const prepared = await session.prepareAsync(prompt, { signal: controller.signal });
+        if (requestRef.current !== requestId || controller.signal.aborted) return;
+        const accepted = session.commit(prepared, controller.signal);
+        setPrivateValues(session.snapshot().memories.map(m=>m.value));
+        setReply(accepted);
+        setInput("");
+        requestAnimationFrame(resizeTextarea);
+      })
       .catch((error) => {
         if (controller.signal.aborted || (error instanceof DOMException && error.name === "AbortError")) return null;
-        return sessionRef.current?.respond(prompt) ?? null;
+        if (requestRef.current === requestId) setReply({
+          text: error instanceof Error ? error.message : "Lexi could not complete the request. Your session was not changed.",
+          trace: { normalizedInput: prompt, sentenceMode: "interrogative", interpretedIntent: "dv12:service-error", confidence: 0, confidenceAvailable: false, matchedExampleIds: [], matchedTerms: [], selectedStructure: "service-error", source: "safe-fallback", executionStatus: "error" },
+        });
       })
-      .then((preparedReply) => {
-        if (!preparedReply || requestRef.current !== requestId || controller.signal.aborted) return;
-
-        const remainingDelay = Math.max(
-          0,
-          minimumThinkingTime - (performance.now() - startedAt),
-        );
-        timerRef.current = setTimeout(() => {
-          if (requestRef.current !== requestId) return;
-          setReply(preparedReply);
-          setComposerState("idle");
-          setInput("");
-          requestAnimationFrame(resizeTextarea);
-          timerRef.current = null;
-          if (abortControllerRef.current === controller) abortControllerRef.current = null;
-        }, remainingDelay);
+      .finally(() => {
+        if (requestRef.current !== requestId) return;
+        setComposerState("idle");
+        if (abortControllerRef.current === controller) abortControllerRef.current = null;
       });
   }
 
@@ -261,7 +260,7 @@ export function LexiInterface() {
                   <dl>
                     <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
                     {reply.trace.executionStatus ? <div><dt>Status</dt><dd>{reply.trace.executionStatus}</dd></div> : null}
-                    <div><dt>Confidence</dt><dd>{Math.round(reply.trace.confidence * 100)}%</dd></div>
+                    <div><dt>Confidence</dt><dd>{reply.trace.confidenceAvailable === false ? "Not yet calibrated" : Math.round(reply.trace.confidence * 100) + "%"}</dd></div>
                     <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
                     {reply.trace.clauseIntents ? (
                       <div><dt>Parts</dt><dd>{reply.trace.clauseIntents.join(" → ")}</dd></div>
@@ -274,10 +273,11 @@ export function LexiInterface() {
                     {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    DV11 +1 executes typed plans against matched Worker-loaded packages and reports only records installed in the live queryable store.
+                    DV12 executes typed plans on the server. Confidence and public-use answerability remain unverified until independently evaluated.
                     Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>
+                <FailureExport key={lastPrompt} prompt={lastPrompt} reply={reply} privateValues={privateValues}/>
               </article>
             ) : null}
           </div>
