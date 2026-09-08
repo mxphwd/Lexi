@@ -6,14 +6,10 @@ import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {admitFeedback} from '../scripts/review-dv13-feedback.mjs';
-import {createElement} from 'react';
-import {renderToStaticMarkup} from 'react-dom/server';
 import {Session} from '../modules/dv12/runtime';
 import {handleDv12,type ClientState} from '../worker/dv12-handler';
 import {gradeDv13,adjudicate,fingerprint,checkCohortSeparation,validateReviewedCase,type ReviewedCase} from '../modules/evaluation/dv13';
 import type {Case} from '../modules/evaluation/dv12';
-import {ResponseEvidence} from '../components/lexi/ResponseEvidence';
-import {appendTurn} from '../lib/lexi/conversation';
 import {failurePreview} from '../lib/lexi/failure-export';
 
 const assets={async fetch(input:RequestInfo|URL){
@@ -63,25 +59,6 @@ test('DV13 repeated lexical follow-ups keep the selected sense',async()=>{
   data=await send('2',data.state);assert.equal(data.reply.trace.executionStatus,'supported');
   const claims=data.reply.trace.propositionIds;
   for(const input of ['Why?','Why?']){data=await send(input,data.state);assert.deepEqual(data.reply.trace.propositionIds,claims);}
-});
-test('DV13 evidence UI distinguishes facts, calculations, memory and unsupported requests',()=>{
-  const s=new Session();
-  const factual=renderToStaticMarkup(createElement(ResponseEvidence,{reply:s.respond('What is the capital of France?')}));
-  assert.match(factual,/Read a recorded fact/);assert.match(factual,/recorded claim/);assert.doesNotMatch(factual,/safe fallback/);
-  const arithmetic=renderToStaticMarkup(createElement(ResponseEvidence,{reply:s.respond('2 + 3')}));
-  assert.match(arithmetic,/Calculated using arithmetic rules/);assert.doesNotMatch(arithmetic,/from 0 source/);
-  s.respond('My name is Mina');
-  const memory=renderToStaticMarkup(createElement(ResponseEvidence,{reply:s.respond('What is my name?')}));
-  assert.match(memory,/information you supplied in this session/);
-  const unsupported=renderToStaticMarkup(createElement(ResponseEvidence,{reply:s.respond('qzxv unsupported')}));
-  assert.match(unsupported,/no recorded factual evidence/);assert.match(unsupported,/not yet calibrated/);
-});
-test('DV13 conversation history is bounded and appending a reply preserves earlier turns',()=>{
-  const reply=new Session().respond('Hello');
-  let turns=Array.from({length:32},(_,id)=>({id,prompt:String(id),reply}));
-  turns=appendTurn(turns,{id:32,prompt:'new',reply});
-  assert.equal(turns.length,32);assert.equal(turns[0].id,1);assert.equal(turns.at(-1)?.prompt,'new');
-  turns=appendTurn(turns,{id:32,prompt:'accepted once',reply});assert.equal(turns.length,32);
 });
 test('DV13 feedback includes only opted-in context and redacts before JSON serialization',()=>{
   const reply=new Session().respond('Hello');

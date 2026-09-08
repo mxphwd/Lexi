@@ -3,14 +3,14 @@
 Lexi is deterministic and source-bound. Supported English becomes a typed plan, which executes against explicit facts, dictionary senses or declared operations. Missing evidence produces clarification or abstention. A supported status means the engine found evidence under its rules; it does not certify the source as correct.
 
 ```text
-React conversation surface
+Centered composer surface
   → BrowserSession sends input and bounded session state
   → POST /api/lexi/respond
   → request scaffolding, clause boundaries and typed grammar
   → evidence retrieval, package validation and argument binding
   → bounded rules, arithmetic, conversions or memory operations
   → answer realization, actual proof steps and source records
-  → transactional browser acceptance and visible conversation history
+  → transactional browser acceptance and one centered reply
 ```
 
 ## Version boundary
@@ -29,9 +29,9 @@ The server loads integrity-pinned shards on demand. Facts distinguish source rec
 
 ## Browser state and feedback
 
-The browser holds a bounded transcript (32 replies), session memories and transactional revision in memory. It does not persist them across reloads. Previous replies remain visible while a request is pending; canceled requests cannot commit a reply or new memory. Clearing the conversation resets both transcript and session. Each reply shows its own sources, proof, outcome and calibration availability.
+The browser displays only the current reply while keeping transactional session memory in the request client. It does not persist session memory across reloads, and canceled requests cannot commit a reply or new memory. The compact trace retains sources, proof identifiers, outcome and calibration availability without changing the DV12 interaction design.
 
-Feedback is a redacted, editable local download only. Including earlier visible prompts is separately opt-in. Export consent is not consent to inclusion in an evaluation dataset. Admission requires documented human checks for sharing consent, privacy, complete context, expected answer and cohort selection.
+Feedback is a redacted, editable local download only. Export consent is not consent to inclusion in an evaluation dataset. Admission requires documented human checks for sharing consent, privacy, complete context, expected answer and cohort selection.
 
 ## Evaluation boundary
 

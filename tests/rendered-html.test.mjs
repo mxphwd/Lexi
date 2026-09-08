@@ -23,8 +23,8 @@ test("server-renders the finished Lexi surface", async () => {
   assert.match(html, /<title>Lexi Language — Alphaine<\/title>/i);
   assert.match(html, /Talk to Lexi\.\.\./);
   assert.match(html, /About Lexi/);
-  assert.match(html, /Which city is the capital of France/);
-  assert.match(html, /DV13 · Development build/);
+  assert.match(html, /reply-region/);
+  assert.doesNotMatch(html, /Try an example|Conversation · Last 32 replies|Which city is the capital of France/);
   assert.match(html, /Alphaine/);
   assert.doesNotMatch(html, /github\.com\/yourmelody/);
   assert.equal((html.match(/href="https:\/\/github\.com\/mxphwd"/g) ?? []).length, 3);

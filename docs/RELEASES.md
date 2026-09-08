@@ -1,6 +1,6 @@
 # Current development release: DV13
 
-Build **260908-DV13**, 8 September 2026. Expanded question wording and follow-ups, visible conversation and evidence, and explicit feedback/evaluation review. This is a development build, not an RC; independent accuracy and confidence remain unverified. See [DV13 details](dv13/README.md).
+Build **260908-DV13**, 8 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, and explicit feedback/evaluation review. This is a development build, not an RC; independent accuracy and confidence remain unverified. See [DV13 details](dv13/README.md).
 
 # Lexi release-history rule
 

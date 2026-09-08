@@ -4,7 +4,7 @@ Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-base
 
 Current release: **DV13** — **260908-DV13**, development build dated 8 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
 
-DV13 expands question wording and follow-ups, keeps the last 32 conversation replies visible, and presents actual evidence and calculation steps. Its evaluation workflow separates authored regressions, reviewed real-use failures, and held-out evidence.
+DV13 expands equivalent question wording and proof follow-ups while retaining explicit evidence requirements. Its evaluation workflow separates authored regressions, reviewed real-use failures, and held-out evidence.
 
 ## Run locally
 
@@ -15,7 +15,7 @@ npm ci
 npm run dev
 ```
 
-Try “Which city is the capital of France?”, “What is 20 percent of 50?”, or “Can penguins fly?”, then “Why?”. Conversation history and personal memory are session-local and clear on reload or with **Clear conversation & memory**.
+Try “Which city is the capital of France?”, “What is 20 percent of 50?”, or “Can penguins fly?”, then “Why?”.
 
 ## Verify and review
 

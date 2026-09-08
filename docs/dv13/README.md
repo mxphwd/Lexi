@@ -6,7 +6,7 @@ DV13 implements three focused improvements:
 
 1. Equivalent wording for relational questions, compatible answer nouns, nested polite requests, possessives and bounded follow-ups. “Which city is the capital of France?” now shares the plan and evidence of “What is the capital of France?”. Repeated HTTP proof requests retain the original query and selected dictionary sense.
 2. A reviewable evaluation workflow: frozen baseline and paraphrase cohorts, explicit real-use admission, cohort overlap checks, response-bound human adjudication and a failing RC gate when evidence is missing.
-3. A visible session conversation (last 32 replies), working examples and a source/proof panel that distinguishes recorded facts, calculations and personal memory. “Evidence: safe fallback” is no longer shown for supported facts.
+3. Human-readable proof descriptions attached to response traces, with source and proposition metadata preserved for inspection without changing the compact DV12 interface.
 
 The interface preserves Lexi’s existing visual theme and stop behavior. Feedback remains local and opt-in. The active foundation remains `modules/dv12`; protocol and data compatibility do not require duplicating the engine under another version folder. Response traces and release metadata identify DV13.
 

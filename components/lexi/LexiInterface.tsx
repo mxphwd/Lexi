@@ -2,9 +2,8 @@
 
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { ReleaseNotes } from "@/components/lexi/ReleaseNotes";
-import { ResponseEvidence } from "@/components/lexi/ResponseEvidence";
-import { appendTurn, type ConversationTurn } from "@/lib/lexi/conversation";
 import { FailureExport } from "@/components/lexi/FailureExport";
+import type { LexiReply } from "@/lib/lexi/types";
 import type { BrowserSession } from "@/lib/lexi/client";
 import {
   LEXI_BASE_VERSION_LABEL,
@@ -15,7 +14,7 @@ import { hasUnsupportedWritingSystem } from "@/modules/search";
 type ComposerState = "idle" | "thinking" | "stopping";
 
 const DOCUMENTATION_QUOTE =
-  "Lexi Language is Alphaine’s experiment in rule-based language understanding. Alphaine builds Lexi around explicit rules and recorded knowledge, with sources and reasoning you can inspect. Its English coverage is limited, and recorded sources can contain errors.";
+  "Lexi model, including Lexi Language is Alphaine’s approach to the next step of language models, challenging traditional AI-based LLM(or Large Language Model)s. Alphaine aims to create mechanical thinking language model using the fundamentals of linguistics that delivers exactly how it knows about it, without hallucination.";
 
 const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
@@ -25,8 +24,8 @@ type LexiSessionHandle = BrowserSession;
 export function LexiInterface() {
   const [input, setInput] = useState("");
   const [composerState, setComposerState] = useState<ComposerState>("idle");
-  const [turns, setTurns] = useState<ConversationTurn[]>([]);
-  const [pendingPrompt, setPendingPrompt] = useState("");
+  const [reply, setReply] = useState<LexiReply | null>(null);
+  const [lastPrompt,setLastPrompt]=useState("");
   const [privateValues,setPrivateValues]=useState<string[]>([]);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [showVersion, setShowVersion] = useState(false);
@@ -39,7 +38,6 @@ export function LexiInterface() {
   const requestRef = useRef(0);
   const sessionRef = useRef<LexiSessionHandle | null>(null);
   const sessionLoadRef = useRef<Promise<LexiSessionHandle> | null>(null);
-  const conversationRef = useRef<HTMLDivElement | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
   const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
@@ -58,11 +56,6 @@ export function LexiInterface() {
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
     };
   }, []);
-
-  useEffect(() => {
-    const conversation = conversationRef.current;
-    if (conversation) conversation.scrollTop = conversation.scrollHeight;
-  }, [turns, pendingPrompt]);
 
   function resizeTextarea() {
     const textarea = textareaRef.current;
@@ -92,7 +85,7 @@ export function LexiInterface() {
     if (!canSend) return;
 
     const prompt = input.trim();
-    setPendingPrompt(prompt);
+    setLastPrompt(prompt);
     const requestId = requestRef.current + 1;
     requestRef.current = requestId;
     abortControllerRef.current?.abort("superseded");
@@ -100,28 +93,28 @@ export function LexiInterface() {
     abortControllerRef.current = controller;
     setComposerState("thinking");
     setAboutOpen(false);
+    setReply(null);
 
     void loadSession()
       .then(async (session) => {
         const prepared = await session.prepareAsync(prompt, { signal: controller.signal });
         if (requestRef.current !== requestId || controller.signal.aborted) return;
         const accepted = session.commit(prepared, controller.signal);
-        setPrivateValues(values => [...new Set([...values, ...session.snapshot().memories.map(m=>m.value)])]);
-        setTurns(current => appendTurn(current, {id: requestId, prompt, reply: accepted}));
+        setPrivateValues(session.snapshot().memories.map(m=>m.value));
+        setReply(accepted);
         setInput("");
         requestAnimationFrame(resizeTextarea);
       })
       .catch((error) => {
         if (controller.signal.aborted || (error instanceof DOMException && error.name === "AbortError")) return null;
-        if (requestRef.current === requestId) setTurns(current => appendTurn(current, {id: requestId, prompt, reply: {
+        if (requestRef.current === requestId) setReply({
           text: error instanceof Error ? error.message : "Lexi could not complete the request. Your session was not changed.",
           trace: { normalizedInput: prompt, sentenceMode: "interrogative", interpretedIntent: "dv13:service-error", confidence: 0, confidenceAvailable: false, matchedExampleIds: [], matchedTerms: [], selectedStructure: "service-error", source: "safe-fallback", executionStatus: "error" },
-        }}));
+        });
       })
       .finally(() => {
         if (requestRef.current !== requestId) return;
         setComposerState("idle");
-        setPendingPrompt("");
         if (abortControllerRef.current === controller) abortControllerRef.current = null;
       });
   }
@@ -134,7 +127,6 @@ export function LexiInterface() {
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = null;
     setComposerState("stopping");
-    setPendingPrompt("");
     stopTimerRef.current = window.setTimeout(() => {
       setComposerState("idle");
       stopTimerRef.current = null;
@@ -175,7 +167,7 @@ export function LexiInterface() {
 
   return (
     <main className="lexi-page">
-      <section className={`lexi-stage ${turns.length ? "has-reply" : ""}`} aria-label="Talk to Lexi">
+      <section className={`lexi-stage ${reply ? "has-reply" : ""}`} aria-label="Talk to Lexi">
         <form className="composer-form" onSubmit={submitMessage}>
           <div className={`composer-frame state-${shellState}`}>
             <div className="composer-glow" aria-hidden="true" />
@@ -258,36 +250,38 @@ export function LexiInterface() {
           </p>
         </form>
 
-        {!turns.length && !pendingPrompt && <div className="capability-guide">
-          <p>Ask about recorded facts, definitions, or calculations.</p>
-          <div className="example-prompts" aria-label="Try an example">
-            {['Which city is the capital of France?', 'What is 20 percent of 50?', 'Can penguins fly?'].map(prompt =>
-              <button type="button" key={prompt} onClick={() => {setInput(prompt); textareaRef.current?.focus(); requestAnimationFrame(resizeTextarea);}}>{prompt}</button>)}
-          </div>
-          <p className="session-note">DV13 · Development build. English only. Public-use accuracy has not been established.</p>
-        </div>}
-        {(turns.length > 0 || pendingPrompt) && <>
-          <div className="conversation-toolbar">
-            <p>Conversation · Last 32 replies · Clears on reload</p>
-            <button type="button" disabled={composerState !== 'idle'} onClick={() => {
-              sessionRef.current = null; sessionLoadRef.current = null;
-              setTurns([]); setPrivateValues([]); setInput('');
-              textareaRef.current?.focus(); requestAnimationFrame(resizeTextarea);
-            }}>Clear conversation &amp; memory</button>
-          </div>
-          <div ref={conversationRef} className="conversation" tabIndex={0} role="log" aria-label="Conversation with Lexi" aria-live="polite" aria-relevant="additions">
-            {turns.map((turn, index) => <div className="conversation-turn" key={turn.id}>
-              <p className="user-message"><span>You</span>{turn.prompt}</p>
-              <article className="reply-card" aria-label="Lexi response">
-                <p>{turn.reply.text}</p>
-                <ResponseEvidence reply={turn.reply}/>
-                <FailureExport prompt={turn.prompt} reply={turn.reply} privateValues={privateValues} turns={turns.slice(0,index).filter(t=>!['error','canceled'].includes(t.reply.trace.executionStatus??'')).map(t=>t.prompt)}/>
+        <div className={`reply-region ${reply ? "is-visible" : ""}`} aria-live="polite">
+          <div className="reply-shell">
+            {reply ? (
+              <article className="reply-card">
+                <p>{reply.text}</p>
+                <details className="trace">
+                  <summary>Why this response</summary>
+                  <dl>
+                    <div><dt>Context</dt><dd>{reply.trace.interpretedIntent}</dd></div>
+                    {reply.trace.executionStatus ? <div><dt>Status</dt><dd>{reply.trace.executionStatus}</dd></div> : null}
+                    <div><dt>Confidence</dt><dd>{reply.trace.confidenceAvailable === false ? "Not yet calibrated" : Math.round(reply.trace.confidence * 100) + "%"}</dd></div>
+                    <div><dt>Structure</dt><dd>{reply.trace.selectedStructure}</dd></div>
+                    {reply.trace.clauseIntents ? (
+                      <div><dt>Parts</dt><dd>{reply.trace.clauseIntents.join(" → ")}</dd></div>
+                    ) : null}
+                    <div><dt>Evidence</dt><dd>{reply.trace.matchedTerms.join(", ") || "safe fallback"}</dd></div>
+                    <div><dt>Examples</dt><dd>{reply.trace.matchedExampleIds.join(", ")}</dd></div>
+                    {reply.trace.propositionIds?.length ? <div><dt>Claims</dt><dd>{reply.trace.propositionIds.join(", ")}</dd></div> : null}
+                    {reply.trace.liveKnowledge ? <div><dt>Live knowledge</dt><dd>{reply.trace.liveKnowledge.queryableClaims.toLocaleString()} queryable claims · {reply.trace.liveKnowledge.worldPropositions.toLocaleString()} world propositions · {reply.trace.liveKnowledge.lexicalClaims.toLocaleString()} lexical claims · {reply.trace.liveKnowledge.installedPackages.toLocaleString()} loaded packages</dd></div> : null}
+                    {reply.trace.sources?.length ? <div><dt>Sources</dt><dd>{reply.trace.sources.map((source) => `${source.sourceId} · ${source.sourceLocation}`).join("; ")}</dd></div> : null}
+                    {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
+                  </dl>
+                  <p className="corpus-note">
+                    DV13 executes typed plans on the server. Confidence and public-use answerability remain unverified until independently evaluated.
+                    Evaluation-only failures are isolated from every runtime and development pack.
+                  </p>
+                </details>
+                <FailureExport key={lastPrompt} prompt={lastPrompt} reply={reply} privateValues={privateValues}/>
               </article>
-            </div>)}
-            {pendingPrompt && <div className="conversation-turn"><p className="user-message"><span>You</span>{pendingPrompt}</p><p role="status">Lexi is working…</p></div>}
+            ) : null}
           </div>
-        </>}
-
+        </div>
       </section>
 
       <ReleaseNotes

@@ -213,10 +213,10 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
   {
     build:"260908-DV13",label:"Pre-build 260908-DV13",shortLabel:"DV13",date:"8 September 2026",
     capabilityIndex:100,metric:"Development build",
-    focus:["Flexible wording","Reviewed evaluation","Visible evidence"],
+    focus:["Flexible wording","Reviewed evaluation","Trace evidence"],
     notes:[
       "Expanded equivalent question forms and proof follow-ups while preserving scoped requests and evidence requirements.",
-      "Added visible conversation history, working examples and readable evidence; feedback enters evaluation only after explicit review.",
+      "Added response-bound evidence steps and a reviewed feedback workflow while preserving the compact DV12 interaction design.",
       "Independent accuracy, confidence calibration and release-candidate readiness remain unverified."
     ],
     measurements:[{label:"Release status",value:"Development"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
