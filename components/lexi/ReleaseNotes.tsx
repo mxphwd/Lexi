@@ -7,7 +7,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { LEXI_RELEASES, releaseImprovement } from "@/lib/lexi/releases";
+import { LEXI_RELEASES, releaseIndexChange } from "@/lib/lexi/releases";
 
 type ReleaseNotesProps = {
   open: boolean;
@@ -27,10 +27,6 @@ function makePlotPoints(): PlotPoint[] {
 }
 
 const PLOT_POINTS = makePlotPoints();
-
-function formatImprovement(value: number) {
-  return value >= 100 ? Math.round(value).toString() : value.toFixed(1);
-}
 
 export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -203,7 +199,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         </header>
 
         <div className="release-chart-shell">
-          <span className="release-axis release-axis-y">Historical development index</span>
+          <span className="release-axis release-axis-y">Audited capability maturity</span>
           <div
             ref={plotRef}
             className="release-plot"
@@ -212,7 +208,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
             <canvas ref={canvasRef} className="release-line" aria-hidden="true" />
             {points.map((point, index) => {
               const release = LEXI_RELEASES[index];
-              const improvement = releaseImprovement(index);
+              const indexChange = releaseIndexChange(index);
               const pointStyle = {
                 "--point-x": `${point.x}%`,
                 "--point-y": `${point.y}%`,
@@ -272,7 +268,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                         ) : null}
                       </div>
                       <div className="release-capability">
-                        <span>Authored milestone index</span>
+                        <span>Calibrated capability index</span>
                         <div className="release-capability-track" aria-hidden="true">
                           <i
                             style={{
@@ -282,6 +278,9 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                         </div>
                         <strong>{release.capabilityIndex}</strong>
                       </div>
+                      <p className="release-evidence-basis">
+                        Evidence · {release.evidenceBasis}
+                      </p>
                       <div className="release-focus" aria-label="Release focus">
                         {release.focus.map((focus, focusIndex) => (
                           <span
@@ -310,12 +309,16 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                       ) : null}
                       <p className="release-summary">{release.notes.join(" ")}</p>
                       <div className="release-comparison">
-                        <span>Overall improvement</span>
-                        {improvement === null ? (
-                          <strong>{index === 0 ? "Baseline release" : "Not independently measured"}</strong>
+                        <span>Index change</span>
+                        {indexChange === null ? (
+                          <strong>Baseline release</strong>
+                        ) : indexChange === 0 ? (
+                          <strong>
+                            No engine-index change from {LEXI_RELEASES[index - 1].shortLabel}
+                          </strong>
                         ) : (
                           <strong>
-                            +{formatImprovement(improvement)}% compared with{" "}
+                            {indexChange > 0 ? "+" : ""}{indexChange} points from{" "}
                             {LEXI_RELEASES[index - 1].shortLabel}
                           </strong>
                         )}
@@ -330,8 +333,9 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         </div>
 
         <p className="release-index-note" id="release-index-note">
-          Historical authored index, not answer accuracy. Earlier diagnostic scores
-          are not comparable; independent DV12 measurement is pending.
+          Calibrated engineering-capability index, not answer accuracy. It combines
+          language, executable knowledge, reasoning, dialogue, evidence discipline,
+          and runtime integration. No release yet has independent public-use coverage.
         </p>
       </section>
     </div>

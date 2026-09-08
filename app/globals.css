@@ -1000,6 +1000,15 @@ a {
   animation: release-meter-enter 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.release-evidence-basis {
+  margin: 6px 0 0;
+  color: #7b827c;
+  font-family: var(--mono);
+  font-size: 0.45rem;
+  letter-spacing: 0.025em;
+  line-height: 1.35;
+}
+
 .release-focus {
   display: flex;
   flex-wrap: wrap;

@@ -5,6 +5,7 @@ export type LexiRelease = {
   extensionLevel?: number;
   date: string;
   capabilityIndex: number;
+  evidenceBasis: string;
   metric?: string;
   focus: readonly string[];
   measurements?: readonly {
@@ -15,10 +16,11 @@ export type LexiRelease = {
 };
 
 /**
- * The capability index is an authored 0–100 development index, not an external
- * benchmark. It combines deterministic response reach, contextual precision,
- * lexical coverage, and model transparency so unlike early builds can share
- * one readable historical curve.
+ * The capability index is an audited 0–100 engineering-maturity index, not an
+ * answer-accuracy percentage. It weights language mapping (25), executable
+ * knowledge (20), compositional reasoning (20), dialogue (10), evidence and
+ * calibration discipline (15), and runtime integration (10). Evidence quality
+ * limits each historical score; see docs/RELEASE_GRAPH_CALIBRATION.md.
  */
 export const LEXI_RELEASES: readonly LexiRelease[] = [
   {
@@ -26,7 +28,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260720-1A",
     shortLabel: "260720-1A",
     date: "20 July 2026",
-    capabilityIndex: 1,
+    capabilityIndex: 3,
+    evidenceBasis: "Inventory audit · implementation structure only",
     metric: "4 core modules",
     focus: ["Core pipeline", "Deterministic", "Inspectable"],
     notes: [
@@ -39,7 +42,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260721-0A",
     shortLabel: "260721-0A",
     date: "21 July 2026",
-    capabilityIndex: 2,
+    capabilityIndex: 7,
+    evidenceBasis: "Inventory audit · example and lexical counts",
     metric: "4,180 recorded examples",
     focus: ["Conversation", "Definitions", "Connections"],
     notes: [
@@ -52,7 +56,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV3",
     shortLabel: "DV3",
     date: "30 July 2026",
-    capabilityIndex: 3,
+    capabilityIndex: 12,
+    evidenceBasis: "Inventory audit · construction and subject counts",
     metric: "17,861 direct constructions",
     focus: ["Extended pack", "122 subjects", "Direct answers"],
     notes: [
@@ -65,7 +70,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV4",
     shortLabel: "DV4",
     date: "30 July 2026",
-    capabilityIndex: 5,
+    capabilityIndex: 18,
+    evidenceBasis: "Inventory audit · implemented feature counts",
     metric: "347 language features",
     focus: ["Follow-ups", "Rewrites", "Comparisons"],
     notes: [
@@ -78,7 +84,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV5",
     shortLabel: "DV5",
     date: "30 July 2026",
-    capabilityIndex: 6,
+    capabilityIndex: 18,
+    evidenceBasis: "Release-system change · no engine capability added",
     metric: "5 release milestones",
     focus: ["Release graph", "Measurements", "History"],
     notes: [
@@ -91,7 +98,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260730-DV6",
     shortLabel: "DV6",
     date: "30 July 2026",
-    capabilityIndex: 12,
+    capabilityIndex: 27,
+    evidenceBasis: "Inventory audit · construction and feature counts",
     metric: "500,347 constructions",
     focus: ["800 features", "Reasoning", "Technical"],
     notes: [
@@ -104,9 +112,15 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260731-DV7",
     shortLabel: "DV7",
     date: "31 July 2026",
-    capabilityIndex: 55,
-    metric: "3,132 seed propositions",
+    capabilityIndex: 42,
+    evidenceBasis: "Mixed authored/generated diagnostics · not independent",
+    metric: "110 authored ordinary cases",
     focus: ["Typed meaning", "Knowledge graph", "Memory"],
+    measurements: [
+      { label: "Authored ordinary cases", value: "110" },
+      { label: "Generated reachability", value: "3,084" },
+      { label: "Seed propositions", value: "3,132" },
+    ],
     notes: [
       "Rebuilt understanding around typed relations, conditions, quantities, and time.",
       "Added a 3,132-proposition knowledge graph and session memory; combinatorial semantic-reach totals were not measured answer rates.",
@@ -117,15 +131,16 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260801-DV8",
     shortLabel: "DV8",
     date: "1 August 2026",
-    capabilityIndex: 72,
+    capabilityIndex: 52,
+    evidenceBasis: "Generated regression suite · not public-use coverage",
     metric: "4,124 generated checks",
     focus: ["Query plans", "Execution", "Calibration"],
     measurements: [
-      { label: "Knowledge", value: "100.0%" },
-      { label: "Language", value: "100.0%" },
-      { label: "Reasoning", value: "100.0%" },
-      { label: "Dialogue", value: "100.0%" },
-      { label: "Precision", value: "100.0%" },
+      { label: "Generated knowledge suite", value: "100.0%" },
+      { label: "Generated language suite", value: "100.0%" },
+      { label: "Generated reasoning suite", value: "100.0%" },
+      { label: "Generated dialogue suite", value: "100.0%" },
+      { label: "Generated precision suite", value: "100.0%" },
       { label: "Latency p95", value: "0.30 ms" },
     ],
     notes: [
@@ -138,7 +153,8 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260802-DV9",
     shortLabel: "DV9",
     date: "2 August 2026",
-    capabilityIndex: 100,
+    capabilityIndex: 57,
+    evidenceBasis: "Source-derived pack validation · runtime reach limited",
     metric: "800,000 lexical claims",
     focus: ["Atomic facts", "Word senses", "Typed data"],
     measurements: [
@@ -146,7 +162,7 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       { label: "Senses", value: "163,274" },
       { label: "Plan examples", value: "100,000" },
       { label: "Dialogue", value: "40,000" },
-      { label: "Held-out plans", value: "100.0%" },
+      { label: "Generated held-out plans", value: "40,000 / 40,000" },
       { label: "Parser p95", value: "0.004 ms" },
     ],
     notes: [
@@ -159,8 +175,9 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     label: "Pre-build 260811-DV10",
     shortLabel: "DV10",
     date: "11 August 2026",
-    capabilityIndex: 100,
-    metric: "2,500 generated proxy cases",
+    capabilityIndex: 60,
+    evidenceBasis: "Human-authored quiz failure set · imperfect evaluator",
+    metric: "2,500 OpenTDB failures",
     focus: ["Unified path", "Failure set", "Proof"],
     measurements: [
       { label: "Factual knowledge", value: "0.0%" },
@@ -182,8 +199,9 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     shortLabel: "DV11",
     extensionLevel: 1,
     date: "12 August 2026",
-    capabilityIndex: 100,
-    metric: "719,949 packaged propositions",
+    capabilityIndex: 68,
+    evidenceBasis: "Runtime/inventory validation · no coverage benchmark",
+    metric: "719,949 source-attested propositions",
     focus: ["One contract", "Worker retrieval", "Loadable packs"],
     measurements: [
       { label: "World facts", value: "719,949" },
@@ -202,30 +220,29 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
   },
   {
     build:"260904-DV12",label:"Pre-build 260904-DV12",shortLabel:"DV12",date:"4 September 2026",
-    capabilityIndex:100,metric:"256 bounded alias buckets",
+    capabilityIndex:76,evidenceBasis:"62-case authored development diagnostic · not independent",metric:"47 / 62 authored answers",
     focus:["Server execution","Traceable reasoning","Honest measurement"],
     notes:[
       "Rebuilt the active execution path around typed plans, transactional dialogue, and server-side evidence retrieval.",
       "Added executable packages, arithmetic and temporal safeguards; independent answerability and RC readiness remain unverified."
     ],
-    measurements:[{label:"Alias buckets",value:"256"},{label:"Independent evaluation rows",value:"0"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
+    measurements:[{label:"Development diagnostic",value:"47 / 62"},{label:"Answerable success",value:"75.8%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
   },
   {
     build:"260908-DV13",label:"Pre-build 260908-DV13",shortLabel:"DV13",date:"8 September 2026",
-    capabilityIndex:100,metric:"Development build",
+    capabilityIndex:79,evidenceBasis:"91-case authored development diagnostic · not independent",metric:"71 / 86 authored answers",
     focus:["Flexible wording","Reviewed evaluation","Trace evidence"],
     notes:[
       "Expanded equivalent question forms and proof follow-ups while preserving scoped requests and evidence requirements.",
       "Added response-bound evidence steps and a reviewed feedback workflow while preserving the compact DV12 interaction design.",
       "Independent accuracy, confidence calibration and release-candidate readiness remain unverified."
     ],
-    measurements:[{label:"Release status",value:"Development"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
+    measurements:[{label:"Development diagnostic",value:"71 / 86"},{label:"Answerable success",value:"82.6%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
   }
 
 ] as const;
 
-export function releaseImprovement(index: number) {
+export function releaseIndexChange(index: number) {
   if (index <= 0 || index >= LEXI_RELEASES.length) return null;
-  // No releases were measured on the same independent population.
-  return null;
+  return LEXI_RELEASES[index].capabilityIndex - LEXI_RELEASES[index - 1].capabilityIndex;
 }
