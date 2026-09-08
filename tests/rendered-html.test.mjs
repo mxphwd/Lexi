@@ -23,6 +23,8 @@ test("server-renders the finished Lexi surface", async () => {
   assert.match(html, /<title>Lexi Language — Alphaine<\/title>/i);
   assert.match(html, /Talk to Lexi\.\.\./);
   assert.match(html, /About Lexi/);
+  assert.match(html, /Which city is the capital of France/);
+  assert.match(html, /DV13 · Development build/);
   assert.match(html, /Alphaine/);
   assert.doesNotMatch(html, /github\.com\/yourmelody/);
   assert.equal((html.match(/href="https:\/\/github\.com\/mxphwd"/g) ?? []).length, 3);
@@ -58,7 +60,7 @@ test("ships the modular corpus and complete lexical source artifacts", async () 
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
-  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260904-dv12");
+  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260908-dv13");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });

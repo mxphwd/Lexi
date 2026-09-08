@@ -209,7 +209,19 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       "Added executable packages, arithmetic and temporal safeguards; independent answerability and RC readiness remain unverified."
     ],
     measurements:[{label:"Alias buckets",value:"256"},{label:"Independent evaluation rows",value:"0"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
+  },
+  {
+    build:"260908-DV13",label:"Pre-build 260908-DV13",shortLabel:"DV13",date:"8 September 2026",
+    capabilityIndex:100,metric:"Development build",
+    focus:["Flexible wording","Reviewed evaluation","Visible evidence"],
+    notes:[
+      "Expanded equivalent question forms and proof follow-ups while preserving scoped requests and evidence requirements.",
+      "Added visible conversation history, working examples and readable evidence; feedback enters evaluation only after explicit review.",
+      "Independent accuracy, confidence calibration and release-candidate readiness remain unverified."
+    ],
+    measurements:[{label:"Release status",value:"Development"},{label:"Public answerability",value:"Unmeasured"},{label:"RC gate",value:"Blocked"}]
   }
+
 ] as const;
 
 export function releaseImprovement(index: number) {

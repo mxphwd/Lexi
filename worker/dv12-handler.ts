@@ -47,15 +47,17 @@ export async function handleDv12(request:Request,assets:AssetFetcher):Promise<Re
     const next=prepared.execution.state;
     const cleared=prepared.execution.results.some(r=>r.selectedPlan.kind==='memory'&&r.selectedPlan.action==='clear');
     const plan=prepared.execution.results.length===1?prepared.execution.results[0].selectedPlan:undefined;
-    let replayInput=prepared.execution.request.original;
+    // Reconstruct the underlying answer on later proof/repeat turns, not the follow-up itself.
+    let replayInput=plan?.kind==='followup' && previous ? previous : prepared.execution.request.original;
     if(plan?.kind==='lexical')replayInput='Define '+plan.term;
-    // Resolve the common entity-reference case explicitly before storing replay input.
-    if(plan?.kind==='query'&&plan.atoms.length===1&&plan.atoms[0].subject.kind==='entity'&&plan.atoms[0].object.kind==='variable'&&/\b(?:it|there|former|latter|he|she)\b/i.test(body.input)){
+    // Canonicalize simple bound lookups, including ellipsis, for stateless HTTP follow-ups.
+    // Scoped/negative/aggregate requests retain their original wording and constraints.
+    if(plan?.kind==='query'&&plan.atoms.length===1&&plan.atoms[0].subject.kind==='entity'&&plan.atoms[0].object.kind==='variable'&&['value','explanation'].includes(plan.shape)&&!plan.filters.length&&!plan.aggregate&&!plan.quantifier&&!plan.atoms[0].negative&&!plan.atoms[0].from&&!plan.atoms[0].to&&!plan.atoms[0].scope){
       const {coreStore}=await import('../modules/dv12/store');
       const subject=coreStore().entity(plan.atoms[0].subject.id);
       if(subject)replayInput='What is the '+plan.atoms[0].relation.replaceAll('_',' ')+' of '+subject.name+'?';
     }
-    const clientState:ClientState={revision:next.revision,nextTurn:next.nextTurn,memories:next.memories,topics:next.topics,answerEntities:next.answerEntities,previousInput:cleared?undefined:replayInput,previousSenseId:plan?.kind==='lexical'?plan.senseId:undefined};
+    const clientState:ClientState={revision:next.revision,nextTurn:next.nextTurn,memories:next.memories,topics:next.topics,answerEntities:next.answerEntities,previousInput:cleared?undefined:replayInput,previousSenseId:plan?.kind==='lexical'?plan.senseId:plan?.kind==='followup'?(body.state as ClientState|undefined)?.previousSenseId:undefined};
     return Response.json({version:12,reply:prepared.reply,state:clientState,coverage:prepared.execution.coverage},{headers:{'cache-control':'no-store'}});
   }catch(error){
     const message=error instanceof Error?error.message:'EXECUTION_ERROR';

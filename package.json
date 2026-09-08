@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260904-dv12",
+  "version": "1.0.0-prebuild.260908-dv13",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -46,7 +46,16 @@
     "dv11ad1:validate": "node scripts/validate-dv11-ad1-pack.mjs",
     "budget:dv11": "node scripts/check-dv11-bundle-budget.mjs",
     "failure:record:dv11": "node scripts/capture-dv11-failure.mjs",
-    "verify:dv11": "npm run typecheck && npm run corpus:validate && npm run dv9:validate-data && npm run dv11:validate-packages && npm run dv11:validate-service-data && npm run dv11ad1:validate && npm run benchmark:dv11:leakage && npm run test:unit"
+    "verify:dv11": "npm run typecheck && npm run corpus:validate && npm run dv9:validate-data && npm run dv11:validate-packages && npm run dv11:validate-service-data && npm run dv11ad1:validate && npm run benchmark:dv11:leakage && npm run test:unit",
+    "test:dv13": "node --import tsx --test tests/dv13.test.ts",
+    "benchmark:dv13": "node --import tsx scripts/run-dv13-evaluation.mjs",
+    "gate:dv13:rc": "node --import tsx scripts/run-dv13-evaluation.mjs --rc",
+    "feedback:dv13:stage": "node --import tsx scripts/review-dv13-feedback.mjs stage",
+    "feedback:dv13:admit": "node --import tsx scripts/review-dv13-feedback.mjs admit",
+    "dv13:validate": "node --import tsx scripts/validate-dv13-release.mjs",
+    "budget:dv13": "node scripts/check-dv12-budget.mjs --dv13",
+    "benchmark:dv13:performance": "node --import tsx scripts/run-dv12-performance.mjs --dv13",
+    "verify:dv13": "npm run typecheck && npm run dv12:validate && npm run dv11ad1:validate && npm run dv13:validate && npm run build && npm run budget:dv13 && npm run test:unit && npm run benchmark:dv13 && npm run benchmark:dv13:performance"
   },
   "dependencies": {
     "next": "16.2.6",

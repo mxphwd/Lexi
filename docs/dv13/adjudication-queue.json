@@ -1,0 +1,93 @@
+[
+  {
+    "caseId": "dv12-diagnostic-0047",
+    "prompt": "What about the latter?",
+    "turns": [
+      "What is Earth? What is Mars?"
+    ],
+    "expected": {
+      "values": [
+        {
+          "kind": "text",
+          "value": "the fourth planet from the Sun, a rocky world with a thin carbon-dioxide atmosphere"
+        }
+      ]
+    },
+    "output": "Mars is the fourth planet from the Sun, often called the Red Planet.",
+    "reason": "Textual equivalence needs adjudication.",
+    "responseHash": "3ba2b86e9ba944d01ba52083635c67ae808faa0bcbf5d68e3761982f55959189",
+    "outcome": null,
+    "reviewer": "",
+    "reviewedAt": "",
+    "rationale": "",
+    "humanReviewed": false
+  },
+  {
+    "caseId": "dv12-diagnostic-0050",
+    "prompt": "Why do we sleep?",
+    "expected": {
+      "text": [
+        "Sleep supports health and memory."
+      ]
+    },
+    "output": "Sleep is used to support restoration, memory, regulation, and normal functioning.",
+    "reason": "Unapproved paraphrase needs human adjudication.",
+    "responseHash": "1f207576b72560ca1cd3ff3a0241467906ab2c0fff46daf5eabe6e49cb5e8608",
+    "outcome": null,
+    "reviewer": "",
+    "reviewedAt": "",
+    "rationale": "",
+    "humanReviewed": false
+  },
+  {
+    "caseId": "dv12-diagnostic-0058",
+    "prompt": "What does the Context Module do?",
+    "expected": {
+      "text": [
+        "It determines context from recorded examples."
+      ]
+    },
+    "output": "The Context Module is used to decide what kind of response a corpus-routed request supports.",
+    "reason": "Unapproved paraphrase needs human adjudication.",
+    "responseHash": "2100da2c08cafff03581a1f27de34f62a41926101bb84fa25876eb7c20d18284",
+    "outcome": null,
+    "reviewer": "",
+    "reviewedAt": "",
+    "rationale": "",
+    "humanReviewed": false
+  },
+  {
+    "caseId": "dv12-diagnostic-0060",
+    "prompt": "I feel worried.",
+    "expected": {
+      "text": [
+        "I’m sorry you’re feeling worried."
+      ]
+    },
+    "output": "I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?",
+    "reason": "Unapproved paraphrase needs human adjudication.",
+    "responseHash": "efcf034bda4ed41f7a02d2c918730795970ce42649fa510771a3f5e5a439582d",
+    "outcome": null,
+    "reviewer": "",
+    "reviewedAt": "",
+    "rationale": "",
+    "humanReviewed": false
+  },
+  {
+    "caseId": "dv12-diagnostic-0061",
+    "prompt": "What continent is Tokyo in?",
+    "expected": {
+      "text": [
+        "Asia"
+      ]
+    },
+    "output": "Tokyo is in Asia.",
+    "reason": "Unapproved paraphrase needs human adjudication.",
+    "responseHash": "4ad0c5f050f3085639b6ebf8a6770cf455fde690b7b500b4b8a532b64f090726",
+    "outcome": null,
+    "reviewer": "",
+    "reviewedAt": "",
+    "rationale": "",
+    "humanReviewed": false
+  }
+]

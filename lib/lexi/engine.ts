@@ -1,4 +1,4 @@
-/** Authoritative DV12 API. Older responders are explicit, test-only baselines. */
+/** Authoritative DV13 API, using the compatible DV12 execution contract. Older responders are explicit, test-only baselines. */
 import { Session } from '../../modules/dv12/runtime';
 import type { Options } from '../../modules/dv12/types';
 import type { ResourceLoader } from '../../modules/dv12/runtime';

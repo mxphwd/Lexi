@@ -1,0 +1,75 @@
+{
+  "version": 13,
+  "population": "Frozen DV12 diagnostics plus authored DV13 wording regressions. Real-use and held-out cohorts require documented human review.",
+  "files": [
+    {
+      "path": "../../dv12/evaluation/development.jsonl",
+      "cohort": "baseline",
+      "sha256": "33be81f6c610d769ce26426515d4d3fb1ce5ab197ae8802eea395119fdcf67be"
+    },
+    {
+      "path": "paraphrases.jsonl",
+      "cohort": "paraphrases",
+      "sha256": "495f3cabb7322abdfe5d2f376c8dcb365df6adbb462af299098938a7d76fdfd4"
+    },
+    {
+      "path": "real-failures.jsonl",
+      "cohort": "real-failures",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent.jsonl",
+      "cohort": "independent",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "baselineMustRemainCorrect": [
+    "dv12-diagnostic-0001",
+    "dv12-diagnostic-0002",
+    "dv12-diagnostic-0003",
+    "dv12-diagnostic-0004",
+    "dv12-diagnostic-0005",
+    "dv12-diagnostic-0006",
+    "dv12-diagnostic-0007",
+    "dv12-diagnostic-0008",
+    "dv12-diagnostic-0009",
+    "dv12-diagnostic-0010",
+    "dv12-diagnostic-0011",
+    "dv12-diagnostic-0012",
+    "dv12-diagnostic-0013",
+    "dv12-diagnostic-0014",
+    "dv12-diagnostic-0015",
+    "dv12-diagnostic-0016",
+    "dv12-diagnostic-0017",
+    "dv12-diagnostic-0018",
+    "dv12-diagnostic-0019",
+    "dv12-diagnostic-0020",
+    "dv12-diagnostic-0021",
+    "dv12-diagnostic-0022",
+    "dv12-diagnostic-0023",
+    "dv12-diagnostic-0024",
+    "dv12-diagnostic-0025",
+    "dv12-diagnostic-0026",
+    "dv12-diagnostic-0027",
+    "dv12-diagnostic-0028",
+    "dv12-diagnostic-0029",
+    "dv12-diagnostic-0030",
+    "dv12-diagnostic-0031",
+    "dv12-diagnostic-0032",
+    "dv12-diagnostic-0033",
+    "dv12-diagnostic-0034",
+    "dv12-diagnostic-0035",
+    "dv12-diagnostic-0036",
+    "dv12-diagnostic-0037",
+    "dv12-diagnostic-0038",
+    "dv12-diagnostic-0039",
+    "dv12-diagnostic-0040",
+    "dv12-diagnostic-0041",
+    "dv12-diagnostic-0042",
+    "dv12-diagnostic-0043",
+    "dv12-diagnostic-0044",
+    "dv12-diagnostic-0046",
+    "dv12-diagnostic-0056",
+    "dv12-diagnostic-0057"
+  ]
+}

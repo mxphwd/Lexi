@@ -1,132 +1,40 @@
-# Lexi DV10 architecture
+# Lexi DV13 architecture
 
-## Contract
-
-Lexi is deterministic and source-bound. It may read a proposition, select an
-explicit dictionary sense, execute a declared rule, perform a bounded
-transformation, realize a proposition, use a reviewed example, or abstain. It
-may not invent a missing edge or silently reinterpret a thesaurus association
-as a verified fact.
+Lexi is deterministic and source-bound. Supported English becomes a typed plan, which executes against explicit facts, dictionary senses or declared operations. Missing evidence produces clarification or abstention. A supported status means the engine found evidence under its rules; it does not certify the source as correct.
 
 ```text
-English input
-  → DV10 normalization, compositional plan, and dialogue goal
-  → reviewed proposition, graph traversal, deterministic rule, or explicit sense
-  → legacy DV8/DV9 execution only when its subject and relation remain compatible
-  → calibrated abstention for an incompatible route
-  → proposition realization and proof ledger
+React conversation surface
+  → BrowserSession sends input and bounded session state
+  → POST /api/lexi/respond
+  → request scaffolding, clause boundaries and typed grammar
+  → evidence retrieval, package validation and argument binding
+  → bounded rules, arithmetic, conversions or memory operations
+  → answer realization, actual proof steps and source records
+  → transactional browser acceptance and visible conversation history
 ```
 
-## DV10 connected semantic path
+## Version boundary
 
-`modules/dv10/types.ts` defines one query-plan vocabulary for subjects, objects,
-relations, conditions, quantities, negation, time, requested answer shape, and
-evidence. `grammar.ts` maps supported compositional language before generic
-clause splitting, so a story problem containing “and” remains one executable
-state transition.
+DV13 is the product/runtime release. It reuses and extends the execution foundation in `modules/dv12`, with request and evidence helpers in `modules/dv13`. The wire protocol, session schema and knowledge-package runtime contract remain version 12 for compatibility; they are not release labels. The response trace identifies DV13. The package catalog is unchanged. Older engines remain historical baselines; the DV12 folder is shared active code, not a frozen DV12 binary.
 
-`evidence.ts` stores source-reviewed propositions and reuses the DV8 graph for
-typed membership traversal. `senses.ts` maps multiple contextual phrasings into
-explicit DV9 Wordset senses using declared semantic neighborhoods; it clarifies
-rather than merging tied senses. `realizer.ts` renders only executed
-propositions or rules. `dialogue.ts` records every answer, active proposition,
-proof, reference, and goal across the whole engine, not only lexical turns.
+## Wording and dialogue
 
-`calibration.ts` rejects a high-confidence legacy response when its proven
-relation cannot satisfy the requested proposition. This is a compatibility
-guard, not a source of new answers.
+`modules/dv13/language.ts` removes anchored request wrappers such as “Could you please tell me”. It never deletes arbitrary content, negative instructions, or conditions. `modules/dv12/parser.ts` binds relational question forms, compatible answer nouns, possessives, coordination and bounded elliptical follow-ups. Original clause text and spans remain available. Unknown subjects and incompatible answer nouns are not guessed.
 
-## DV8 execution foundation
+A simple follow-up may replace one explicit subject. Multi-relation queries and temporal/scoped ellipsis require a full request. Proof requests reuse recorded proof; “Why?” means “What evidence supports your previous answer?”, not an invented causal explanation. The HTTP handler retains the underlying replay request and selected lexical sense across repeated proof turns. Complex requests retain their original scope rather than being flattened into generic property lookups.
 
-`modules/dv8/types.ts` defines lookups, boolean questions, selection,
-aggregation, comparison, bounded transformations, and clarification. Its plans
-contain triple patterns, variables, filters, quantifiers, temporal conditions,
-negation, and answer style.
+## Evidence and resources
 
-`modules/dv8/facts.ts` and `executor.ts` provide forward and inverse lookup,
-joins, inheritance, transitivity, comparison, aggregation, condition checks,
-three-valued truth, and proof steps. These remain the primary path for curated
-general knowledge.
+The server loads integrity-pinned shards on demand. Facts distinguish source records, review status and provenance. The DV12 execution budgets, immutable base store, disposable request overlays, open-world restrictions and package checks remain in force. DV13 adds human-readable descriptions of executed proof steps; it does not add new evidence by describing them.
 
-## DV9 data model
+## Browser state and feedback
 
-`modules/dv9/types.ts` distinguishes provenance, confidence, review status,
-temporal validity, lexical operations, runtime meanings, and dialogue state.
-The generator never stores a finished answer for each wording.
+The browser holds a bounded transcript (32 replies), session memories and transactional revision in memory. It does not persist them across reloads. Previous replies remain visible while a request is pending; canceled requests cannot commit a reply or new memory. Clearing the conversation resets both transcript and session. Each reply shows its own sources, proof, outcome and calibration availability.
 
-The data graph contains lemma nodes and sense nodes. Its principal atomic
-relations are:
+Feedback is a redacted, editable local download only. Including earlier visible prompts is separately opt-in. Export consent is not consent to inclusion in an evaluation dataset. Admission requires documented human checks for sharing consent, privacy, complete context, expected answer and cohort selection.
 
-```text
-lemma  —has_sense→        sense
-sense  —sense_of→         lemma
-sense  —has_definition→   text
-sense  —part_of_speech→   typed literal
-sense  —usage_example→    text
-lemma  —lexically_associated→ lemma
-```
+## Evaluation boundary
 
-The Moby relation is deliberately named `lexically_associated`; it is not a
-strict synonym assertion.
+Evaluation tooling in `modules/evaluation` and `scripts` is excluded from runtime imports. Frozen DV12 diagnostics and DV13 authored paraphrases are development evidence. Reviewed failures used during development cannot count as held-out results. Exact normalized prompt/context overlaps are rejected across cohorts; human review must additionally check semantic duplicates and prior exposure.
 
-## Provenance and uncertainty
-
-Every generated fact contains a source code, source-local evidence locator,
-confidence, and review class. The manifest identifies immutable source hashes,
-repositories, and license notes. Source-attested, mechanically derived,
-disputed, and independently reviewed material are different states.
-
-“Validated atomic fact” means the row passed schema, reference, duplicate,
-source, and confidence checks. It does not mean external human fact checking.
-Temporal `validFrom`/`validTo`, conditions, and dispute references are present
-in the DV9 schema for future curated facts.
-
-## Compiled runtime shards
-
-`scripts/build-dv9-data-pack.mjs` compiles 28 first-character shards. Each shard
-contains stable lemma IDs, explicit sense IDs, part-of-speech literals,
-definitions, examples, and bounded attributed associations. The browser loads
-and caches only the shard required by the current term.
-
-`modules/dv9/loader.ts` validates every decoded entry before exposing it.
-Punctuation-bearing and Latin-extended headwords use lexical-safe
-normalization, so abbreviations, slashes, apostrophes, and diacritics do not
-collapse into unrelated terms.
-
-## Language and dialogue
-
-`modules/dv9/parser.ts` maps definition, sense-listing, grammatical-category,
-usage-example, lexical-association, and source questions into explicit lexical
-plans. Context hints select among recorded senses without deleting the other
-senses.
-
-`modules/dv9/dialogue.ts` stores the active lexical term, selected sense index,
-prior-term stack, and a declared conversational goal. Follow-ups reuse that
-state only inside the current session.
-
-## Rules and relation profiles
-
-The generated pack contains 3,200 predicate/domain/range profiles and 1,100
-inspectable rule instances across inverse, symmetric, transitive, inheritance,
-containment, comparison, negation, universal/existential quantification,
-temporal validity, and causal-chain families. The generic DV8 executor supplies
-the corresponding execution primitives; profiles constrain their typed use.
-
-## Measurement boundary
-
-The 100,000 query-plan examples are development data. The 40,000 evaluation
-questions are stored separately, use different surface frames, and are never
-imported by the runtime. They are still mechanically source-derived, not a
-substitute for real user failures.
-
-DV9 therefore reports language mapping, end-to-end lexical execution, data
-integrity, and parser latency. It does not convert those results into a universal
-availability multiplier. Future real failures must be frozen and scored before
-their fixes are added.
-
-DV10 implements that boundary with the immutable 2,500-row artifact documented
-in `docs/DV10_BENCHMARK.md`. The artifact is excluded from runtime imports and
-reports correct answers, correct abstentions, incorrect answers, unsupported
-abstentions, and clarifications separately. DV10 does not pass its factual
-correctness or confident-error acceptance gates, so those failures remain part
-of the published release record.
+Unresolved text equivalence is exported for adjudication. Human decisions bind to a hash of the exact case, output, plan and values; changed answers need new review. RC readiness still requires independent coverage, held-out calibration and closure of inherited critical requirements. No generated test becomes independent human evidence.

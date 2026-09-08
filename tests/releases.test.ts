@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {LEXI_RELEASES,releaseImprovement} from '../lib/lexi/releases';
 import {LEXI_BUILD,LEXI_EXTENSION_BADGE} from '../lib/lexi/version';
-test('DV12 has one release point; AD1 remains a badge and unmeasured gains are not published',()=>{
-  assert.equal(LEXI_RELEASES.length,12);
+test('DV13 has one release point; AD1 remains a badge and unmeasured gains are not published',()=>{
+  assert.equal(LEXI_RELEASES.length,13);
   assert.equal(LEXI_RELEASES.at(-1)?.build,LEXI_BUILD);
   assert.equal(LEXI_RELEASES[10].extensionLevel,1);
   assert.equal(LEXI_EXTENSION_BADGE,'');

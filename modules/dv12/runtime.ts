@@ -1,3 +1,4 @@
+import { evidenceSteps } from '../dv13/evidence';
 import type { LexiReply } from '../../lib/lexi/types';
 import { execute, result } from './executor';
 import { parse, parseClause } from './parser';
@@ -133,13 +134,14 @@ function normalizeClarification(input:string){
 export function toReply(execution:Execution,store?:Store):LexiReply{
   const facts=execution.results.flatMap(r=>r.facts),proof=execution.results.flatMap(r=>r.proof);
   return {text:execution.results.map(r=>r.text).join('\n\n'),trace:{
-    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv12:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
-    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV12',executionStatus:execution.status,
+    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv13:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
+    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV13',executionStatus:execution.status,
     plans:execution.results.map(r=>r.selectedPlan),
     liveIndex:execution.liveIndex??(store?{propositions:store.stats().facts,entities:store.stats().entities,requestBytes:store.requestBytes(),loadedShards:execution.coverage?.loadedShards??0}:undefined),
-    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv12:proposition-realization',source:'semantic-runtime',
+    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv13:proposition-realization',source:'semantic-runtime',
     propositionIds:[...new Set(facts.map(f=>f.id))],subjectIds:[...new Set(facts.map(f=>f.subject))],
     sources:facts.map(f=>({sourceId:f.source.id,sourceLocation:f.source.location,reviewStatus:f.source.review})),
+    evidenceSteps:evidenceSteps(execution.results),
     proof:proof.map(p=>p.rule+': '+p.premises.join(', ')+(p.constraints.length?' ['+p.constraints.join('; ')+']':'')),
     clauseCount:execution.results.length,clauseResults:execution.results.map((r,i)=>({clauseId:execution.request.clauses[i]?.id??'request',status:r.status,confidence:r.confidence??0,propositionIds:r.facts.map(f=>f.id)})),
     failureStage:execution.results.some(r=>r.code?.startsWith('ASSET'))?'retrieval':execution.results.some(r=>r.code==='UNRESOLVED_ARGUMENT')?'entity-linking':execution.results.some(r=>r.code==='UNSATISFIED_WORD_RESTRICTION')?'realization':!['supported','contradicted'].includes(execution.status)?'execution':undefined,

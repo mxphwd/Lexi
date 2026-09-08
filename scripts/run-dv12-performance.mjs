@@ -28,6 +28,6 @@ if(process.argv.includes('--child')){
   for(let i=0;i<300;i++)long.respond('My name is Person '+i);
   const snapshot=long.snapshot(),peakRssKiB=Math.max(process.resourceUsage().maxRSS,...cold.map(x=>x.peakRssKiB));
   const report={environment:{node:process.version,platform:process.platform,architecture:process.arch},method:'Local Node process with real file-backed packages; not browser or production-network latency. Cold timers include imports and first index construction. maxRSS is OS high-water memory, not before/after snapshots. Eight cold samples do not establish a stable tail estimate.',cold:stats(cold.map(c=>c.milliseconds)),routes,longSession:{turns:300,milliseconds:performance.now()-longStart,retainedTurns:snapshot.history.length,retainedMemories:snapshot.memories.length,nextTurn:snapshot.nextTurn},peakRssKiB,cache:assetCacheStats(),passed:Object.values(routes).every(r=>r.p95<2000)&&peakRssKiB<512*1024&&snapshot.history.length<=32};
-  await fs.writeFile(new URL('../docs/dv12/performance.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
+  await fs.writeFile(new URL('../docs/'+(process.argv.includes('--dv13')?'dv13':'dv12')+'/performance.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));if(!report.passed)process.exitCode=1;
 }

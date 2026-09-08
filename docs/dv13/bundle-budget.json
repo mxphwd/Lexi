@@ -1,0 +1,12 @@
+{
+  "initialBytes": 271254,
+  "totalBytes": 336624,
+  "initialFiles": 3,
+  "totalFiles": 6,
+  "limits": {
+    "initialBytes": 1000000,
+    "totalBytes": 1500000
+  },
+  "violations": [],
+  "passed": true
+}

@@ -1,3 +1,4 @@
+import { requestContent, compatibleAnswerNoun } from '../dv13/language';
 import { expressionText, numberWords } from './numbers';
 import { parseLogic } from './logic';
 import { parseInventory } from './word-problems';
@@ -76,7 +77,7 @@ function property(name:string,store:Store): string|undefined {
 }
 function grammar(text:string,store:Store,state:State): Alternative[] {
   let s=text.replace(/[?!.]+$/,'').trim().replace(/^actually[, ]+/i,'');
-  s=s.replace(/^(?:please\s+|(?:could|would|can) you (?:please )?|tell me )/i,'').trim();
+  s=requestContent(s);
   s=s.replace(/^what's\b/i,'what is').replace(/\bcan't\b/gi,'cannot').replace(/\bdon't\b/gi,'do not').replace(/\bdoesn't\b/gi,'does not');
   const n=normalize(s), results:Alternative[]=[];
   const add=(plan:Plan,grammar:string,score=1)=>results.push({plan,grammar,score});
@@ -112,7 +113,7 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
     const p=state.previous.results[0].selectedPlan;
     if(p.kind==='memory' && p.field && ['set','add'].includes(p.action))add({kind:'memory',action:'set',field:p.field,value:m[1]},'targeted-correction');
   }
-  const follow:Record<string,'proof'|'repeat'|'shorter'|'simpler'|'more'>={'how do you know':'proof','why do you say that':'proof','show your proof':'proof','repeat':'repeat','say that again':'repeat','shorter':'shorter','simpler':'simpler','more':'more','continue':'more'};
+  const follow:Record<string,'proof'|'repeat'|'shorter'|'simpler'|'more'>={'why':'proof','why is that':'proof','explain that':'proof','what is your source':'proof','where did that come from':'proof','how do you know':'proof','why do you say that':'proof','show your proof':'proof','repeat':'repeat','say that again':'repeat','shorter':'shorter','simpler':'simpler','more':'more','continue':'more'};
   if(follow[n])add({kind:'followup',action:follow[n]},'dialogue');
   const exp=expressionText(s);
   if (/^[\d\s.+*/^()%,-]+$/.test(exp) && /\d/.test(exp)) add({kind:'calculate',expression:s},'arithmetic');
@@ -122,9 +123,9 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
     add(query(subj(m[1]),'definition'),'explicit-world-definition',.96);
     add({kind:'lexical',term:m[1]},'explicit-definition',.9);
   }
-  if((m=s.match(/^(?:what (?:is|are)|which (?:is|are)) (?:the )?(.+?) of (.+)$/i))) {
-    const rel=property(m[1],store); if(rel) {
-      const subjects=m[2].split(/\s+and\s+/i), terms=subjects.map(subj);
+  if((m=s.match(/^(?:(?:what|which)(?: (city|country|continent|person|place))? (?:is|are) |name )?(?:the )?(.+?) of (.+)$/i))) {
+    const rel=property(m[2],store); if(rel && compatibleAnswerNoun(m[1],rel)) {
+      const subjects=m[3].split(/\s+and\s+/i), terms=subjects.map(subj);
       if(subjects.length===1)add(query(terms[0],rel),'property-of',.98);
       else if(terms.every(t=>t.kind==='entity')){
         const q=query(variable('subject'),rel,'list');
@@ -133,7 +134,7 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
       }
     }
   }
-  if((m=s.match(/^what (?:is|are) (.+?)'s (.+)$/i))) {const rel=property(m[2],store);if(rel)add(query(subj(m[1]),rel),'possessive-property',.98);}
+  if((m=s.match(/^(?:what (?:is|are) |name )?(.+?)'s (.+)$/i))) {const rel=property(m[2],store);if(rel)add(query(subj(m[1]),rel),'possessive-property',.98);}
   if((m=s.match(/^what is (?:the )?(average|mean|sum|minimum|maximum) (.+?) of (.+)$/i))){
     const relation=property(m[2],store);
     if(relation){const q=query(variable('member'),'is_a','value',obj(m[3]));q.atoms.push({subject:variable('member'),relation,object:variable('measurement')});q.answer='measurement';q.aggregate={op:({average:'mean',mean:'mean',sum:'sum',minimum:'min',maximum:'max'} as const)[m[1].toLowerCase() as 'average'],variable:'measurement'};add(q,'aggregate-property',1);}
@@ -200,9 +201,17 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
   if((m=s.match(/^(?:how much (?:larger|bigger|smaller)|how many times (?:larger|bigger)|what is the size difference between) (?:is )?(.+?) (?:than|and) (.+)$/i)))add({kind:'compare',subjects:[subj(m[1]),subj(m[2])],relation:'diameter',mode:/how many times/i.test(s)?'ratio':'difference'},'comparison');
   if((m=s.match(/^(?:which is (?:bigger|larger|smaller)|compare) (.+?) (?:and|or|with) (.+)$/i)))add({kind:'compare',subjects:[subj(m[1]),subj(m[2])],relation:'diameter',mode:'qualitative'},'comparison');
   if(/^which (?:one )?is (?:bigger|larger|smaller)$/.test(n)&&state.topics.length===2)add({kind:'compare',subjects:state.topics.map(entity),relation:'diameter',mode:'qualitative'},'comparison-reference');
-  if((m=s.match(/^what about (.+)$/i))&&state.previous?.results[0]){
-    const previous=state.previous.results[0].selectedPlan;
-    if(previous.kind==='query'){const q=structuredClone(previous);q.atoms[0].subject=subj(m[1]);add(q,'ellipsis',.98);}
+  if((m=s.match(/^(?:what about|how about|and) (.+)$/i))&&state.previous){
+    const target=subj(m[1]);
+    const candidates=state.previous.results.map(r=>r.selectedPlan).filter((p):p is Select=>p.kind==='query');
+    const previous=candidates.find(p=>p.atoms[0]?.subject.kind==='entity'&&target.kind==='entity'&&p.atoms[0].subject.id===target.id)
+      ?? (state.previous.results.length===1?candidates[0]:undefined);
+    // Only one explicit subject can be replaced; joins and scoped questions need a full request.
+    if(previous && previous.atoms.length===1 && previous.atoms[0].subject.kind==='entity'
+      && !previous.atoms[0].from && !previous.atoms[0].to && !previous.atoms[0].scope
+      && !previous.filters.length && !previous.quantifier && !previous.aggregate){
+      const q=structuredClone(previous);q.atoms[0].subject=target;add(q,'ellipsis',.98);
+    }
   }
   if((m=s.match(/^what (?:is|are) not (?:a |an )?(.+)$/i))) { const q=query(variable('answer'),'is_a','list',obj(m[1]));q.atoms[0].negative=true;add(q,'negative-classification'); }
   if((m=s.match(/^(?:is|are) (.+?) not (?:a |an )?(.+)$/i))){
@@ -227,7 +236,7 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
   return results.length?results.sort((a,b)=>b.score-a.score):[{plan:{kind:'unknown',reason:'I could not map this request to a supported relation or operation.'},grammar:'unrecognized',score:0}];
 }
 export function parseClause(text:string,start:number,id:string,store:Store,state:State):Clause {
-  let content=text;const style:Clause['style']={excludedWords:[]};
+  let content=requestContent(text);const style:Clause['style']={excludedWords:[]};
   const excluded=content.match(/\s+without using (?:the )?word ["']?([\p{L}-]+)["']?[.!?]*$/iu);
   if(excluded){style.excludedWords.push(normalize(excluded[1]));content=content.slice(0,excluded.index);}
   if(/\s+in one sentence[.!?]*$/i.test(content)){style.sentences=1;content=content.replace(/\s+in one sentence[.!?]*$/i,'');}

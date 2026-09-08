@@ -1,0 +1,72 @@
+{
+  "environment": {
+    "node": "v22.19.0",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "method": "Local Node process with real file-backed packages; not browser or production-network latency. Cold timers include imports and first index construction. maxRSS is OS high-water memory, not before/after snapshots. Eight cold samples do not establish a stable tail estimate.",
+  "cold": {
+    "samples": 8,
+    "p50": 100.72845899999999,
+    "p95": 102.438125,
+    "p99": 102.438125
+  },
+  "routes": {
+    "factual": {
+      "samples": 20,
+      "p50": 0.7313750000000709,
+      "p95": 1.5266670000000886,
+      "p99": 51.962999999999965
+    },
+    "arithmetic": {
+      "samples": 20,
+      "p50": 0.41650000000004184,
+      "p95": 0.9394159999999374,
+      "p99": 5.117333000000144
+    },
+    "ranking": {
+      "samples": 20,
+      "p50": 284.2771670000002,
+      "p95": 297.1082080000001,
+      "p99": 345.3533749999999
+    },
+    "multiClause": {
+      "samples": 20,
+      "p50": 0.9370419999995647,
+      "p95": 1.389208999999937,
+      "p99": 2.193500000000313
+    },
+    "package": {
+      "samples": 20,
+      "p50": 31.178208999999697,
+      "p95": 32.890166000000136,
+      "p99": 44.790750000000116
+    },
+    "lexical": {
+      "samples": 20,
+      "p50": 24.63524999999936,
+      "p95": 30.345291999999972,
+      "p99": 39.39650000000074
+    },
+    "dialogue": {
+      "samples": 20,
+      "p50": 0.511000000000422,
+      "p95": 1.1735420000004524,
+      "p99": 3.398749999998472
+    }
+  },
+  "longSession": {
+    "turns": 300,
+    "milliseconds": 122.9705840000006,
+    "retainedTurns": 32,
+    "retainedMemories": 1,
+    "nextTurn": 301
+  },
+  "peakRssKiB": 427584,
+  "cache": {
+    "entries": 4,
+    "estimatedRetainedBytes": 12298677,
+    "budgetBytes": 12582912
+  },
+  "passed": true
+}

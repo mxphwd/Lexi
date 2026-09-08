@@ -1,4 +1,4 @@
-name: DV12 RC gate (independent evidence required)
+name: DV13 RC gate (independent evidence required)
 on:
   workflow_dispatch:
 jobs:
@@ -11,6 +11,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run verify:dv12
-      - run: npm run gate:dv12:rc
+      - run: npm run verify:dv13
+      - run: npm run gate:dv13:rc
       # No deployment step may precede the nonzero-exit RC gate.
