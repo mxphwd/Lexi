@@ -4,6 +4,7 @@ import { parseLogic } from './logic';
 import { parseInventory } from './word-problems';
 import { temporalSuffix } from './temporal';
 import { compiledGrammar } from './grammar-plugins';
+import { periodTerminatesClause } from './sentence-boundaries';
 import { normalize, type Store } from './store';
 import { entity, variable, type Alternative, type Clause, type Plan, type Request, type Select, type State, type Term } from './types';
 
@@ -16,7 +17,7 @@ export function segment(input: string): Array<{text:string; start:number; end:nu
     start=end;
   };
   for (let i=0;i<input.length;i++) {
-    const c=input[i], prev=input[i-1]??'', next=input[i+1]??'';
+    const c=input[i], prev=input[i-1]??'';
     if (c===quote || !quote&&(c==='"' || c==="'" && !/[\p{L}\p{N}]/u.test(prev))) {
       if (quote===c) quote=''; else if (!quote) quote=c;
     }
@@ -24,7 +25,7 @@ export function segment(input: string): Array<{text:string; start:number; end:nu
     if (c==='(') depth++; if (c===')') depth=Math.max(0,depth-1);
     if (depth) continue;
     if (/[!?;]/.test(c)) emit(i+1);
-    else if (c==='.' && !(/\d/.test(prev)&&/\d/.test(next)) && !/\b(?:Mr|Mrs|Ms|Dr|Prof|St|[A-Z])\.$/.test(input.slice(start,i+1)) && (!next || /\s/.test(next))) emit(i+1);
+    else if (c==='.' && periodTerminatesClause(input,i,start)) emit(i+1);
     else {
       const connector = input.slice(i).match(/^\s+(?:and|but|then|while)\s+(?=(?:what|who|where|when|why|how|which|can|does|do|is|are|I|my|forget|explain|tell)\b)/i);
       if (connector) { emit(i); start=i+connector[0].length; i=start-1; }

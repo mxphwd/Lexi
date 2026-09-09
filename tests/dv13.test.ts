@@ -7,6 +7,7 @@ import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {admitFeedback} from '../scripts/review-dv13-feedback.mjs';
 import {Session} from '../modules/dv12/runtime';
+import {segment} from '../modules/dv12/parser';
 import {handleDv12,type ClientState} from '../worker/dv12-handler';
 import {gradeDv13,adjudicate,fingerprint,checkCohortSeparation,validateReviewedCase,type ReviewedCase} from '../modules/evaluation/dv13';
 import type {Case} from '../modules/evaluation/dv12';
@@ -41,6 +42,37 @@ test('DV13 wording support retains scope, negation, ambiguous names and unknown 
   assert.equal(p.kind,'query');if(p.kind==='query')assert.equal(p.atoms[0].from,'1800-01-01');
   assert.equal(new Session().prepare('Please tell me what is a bank?').execution.status,'ambiguous');
   const s=new Session();s.respond('What is Earth? What is Mars?');assert.match(s.respond('What about the latter?').text,/Mars/);
+});
+test('DV13 preserves multiword memory values containing periods and abbreviations',async()=>{
+  const fullName='Sir. Sebastian H. Ray Sr.';
+  assert.deepEqual(
+    segment(`My name is ${fullName} What is my name?`).map((clause)=>clause.text),
+    [`My name is ${fullName}`, 'What is my name?'],
+  );
+  const session=new Session();
+  const reply=session.respond(`My name is ${fullName} What is my name?`);
+  assert.match(reply.text,/Your name is Sir\. Sebastian H\. Ray Sr\./);
+  assert.equal(session.snapshot().memories.find((memory)=>memory.field==='name')?.value,'Sir. Sebastian H. Ray Sr');
+
+  session.respond('I live in St. Louis.');
+  assert.match(session.respond('Where do I live?').text,/St\. Louis/);
+  session.respond('I prefer products from Acme Co. Ltd.');
+  assert.match(session.respond('What do I prefer?').text,/Acme Co\. Ltd/);
+
+  let http=await send(`My name is ${fullName}`);
+  assert.equal(http.state.memories.find((memory:{field:string})=>memory.field==='name')?.value,'Sir. Sebastian H. Ray Sr');
+  http=await send('What is my name?',http.state);
+  assert.match(http.reply.text,/Sir\. Sebastian H\. Ray Sr\./);
+});
+test('DV13 abbreviation protection does not absorb a following request',()=>{
+  assert.deepEqual(
+    segment('My name is Dana Ray Sr. What is gravity?').map((clause)=>clause.text),
+    ['My name is Dana Ray Sr.', 'What is gravity?'],
+  );
+  assert.deepEqual(
+    segment('I am from the U.S. Where am I from?').map((clause)=>clause.text),
+    ['I am from the U.S.', 'Where am I from?'],
+  );
 });
 test('DV13 HTTP preserves repeated evidence follow-ups and a changed subject',async()=>{
   let data=await send('Which city is the capital of France?');
