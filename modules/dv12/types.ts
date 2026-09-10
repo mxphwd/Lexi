@@ -30,7 +30,7 @@ export type Plan = Select
   | { kind: 'unknown'; reason: string; slot?: string };
 export type Alternative = { plan: Plan; grammar: string; score: number };
 export type Clause = { id: string; text: string; start: number; end: number; alternatives: Alternative[]; style: { excludedWords: string[]; sentences?: number; bullets?: boolean } };
-export type Request = { version: 12; original: string; clauses: Clause[] };
+export type Request = { version: 12; original: string; clauses: Clause[]; fastPath?: 'inert-terminal-punctuation' };
 export type Proof = { id: string; rule: string; premises: string[]; bindings: Record<string, Value>; constraints: string[] };
 export type Row = { bindings: Record<string, Value>; facts: Fact[]; proof: Proof[] };
 export type Result = { choices?:Choice[]; status: Status; values: Value[]; facts: Fact[]; proof: Proof[]; text: string; code?: string; missing?: string[]; confidence: number | null; confidenceKind: 'unavailable' | 'held-out'; coverage?: { matched: number; unknown: number; complete: boolean }; selectedPlan: Plan; claims: Array<{ text: string; factIds: string[]; proofIds: string[] }> };

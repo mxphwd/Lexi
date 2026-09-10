@@ -4,6 +4,7 @@ import { parseLogic } from './logic';
 import { parseInventory } from './word-problems';
 import { temporalSuffix } from './temporal';
 import { compiledGrammar } from './grammar-plugins';
+import { inertTerminalPunctuation } from './punctuation-fast-path';
 import { periodTerminatesClause } from './sentence-boundaries';
 import { normalize, type Store } from './store';
 import { entity, variable, type Alternative, type Clause, type Plan, type Request, type Select, type State, type Term } from './types';
@@ -257,6 +258,9 @@ export function parse(input:string,store:Store,state:State):Request {
   if(input.length>12000 || (input.match(/\S+/g)?.length??0)>2048)throw new Error('INPUT_BUDGET');
   const inventory=parseInventory(input);
   if(inventory)return {version:12,original:input,clauses:[{id:'clause:1',text:input,start:0,end:input.length,style:{excludedWords:[]},alternatives:[{plan:inventory,grammar:'inventory-transitions',score:1}]}]};
-  const spans=segment(input.replace(/[‘’]/g,"'").replace(/[“”]/g,'"'));
+  const normalizedQuotes=input.replace(/[‘’]/g,"'").replace(/[“”]/g,'"');
+  const fast=inertTerminalPunctuation(normalizedQuotes);
+  if(fast)return {version:12,original:input,fastPath:fast.kind,clauses:[parseClause(fast.text,fast.start,'clause:1',store,state)]};
+  const spans=segment(normalizedQuotes);
   return {version:12,original:input,clauses:spans.map((span,i)=>parseClause(span.text,span.start,'clause:'+(i+1),store,state))};
 }

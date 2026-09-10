@@ -74,6 +74,26 @@ test('DV13 abbreviation protection does not absorb a following request',()=>{
     ['I am from the U.S.', 'Where am I from?'],
   );
 });
+test('DV13 fast-paths inert terminal symbols without changing the answer',()=>{
+  for(const [plain,marked] of [
+    ['Hello','Hello!'],
+    ['What is gravity','What is gravity?'],
+    ['What is the capital of France','What is the capital of France?!'],
+    ['What is my name','What is my name？'],
+  ]){
+    const plainResult=new Session().prepare(plain);
+    const markedResult=new Session().prepare(marked);
+    assert.equal(markedResult.execution.request.fastPath,'inert-terminal-punctuation',marked);
+    assert.equal(markedResult.execution.stages[0].code,'TYPED_PLAN_PUNCTUATION_FAST_PATH',marked);
+    assert.deepEqual(markedResult.execution.results,plainResult.execution.results,marked);
+    assert.equal(markedResult.reply.text,plainResult.reply.text,marked);
+  }
+});
+test('DV13 keeps semantically meaningful symbols on the full parser path',()=>{
+  for(const prompt of ['5!','What is 2.5 + 3?','Explain "What?"','What is gravity? What is math?']){
+    assert.equal(new Session().prepare(prompt).execution.request.fastPath,undefined,prompt);
+  }
+});
 test('DV13 HTTP preserves repeated evidence follow-ups and a changed subject',async()=>{
   let data=await send('Which city is the capital of France?');
   const original=data.reply.trace.propositionIds;

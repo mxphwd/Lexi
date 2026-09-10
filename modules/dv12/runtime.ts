@@ -59,12 +59,15 @@ function* program(input:string,initial:State,store:Store,options:Options,resourc
   }
   const results:Result[]=[];
   if(resumedPlan&&request.clauses.length===1)request.clauses[0].alternatives=[{plan:resumedPlan,grammar:'clarification-continuation',score:1}];
-  stages.push({stage:'parsing',code:'TYPED_PLAN',detail:request.clauses.length+' clauses',milliseconds:performance.now()-started});
+  stages.push({stage:'parsing',code:request.fastPath?'TYPED_PLAN_PUNCTUATION_FAST_PATH':'TYPED_PLAN',detail:request.clauses.length+' clauses'+(request.fastPath?'; inert terminal punctuation elided':''),milliseconds:performance.now()-started});
   let coverage:Coverage|undefined;
   const topics:string[]=[];
   for(let i=0;i<request.clauses.length;i++){
     checkAbort(options.signal);
-    let clause=request.clauses[i].alternatives[0].plan.kind==='inventory'||resumedPlan?request.clauses[i]:parseClause(request.clauses[i].text,request.clauses[i].start,request.clauses[i].id,store,state);
+    // A single clause was parsed against this exact state and store already.
+    // Multi-clause requests still reparse so later clauses can use earlier
+    // topic and memory mutations.
+    let clause=request.clauses.length===1||request.clauses[i].alternatives[0].plan.kind==='inventory'||resumedPlan?request.clauses[i]:parseClause(request.clauses[i].text,request.clauses[i].start,request.clauses[i].id,store,state);
     let chosen:Result|undefined;
     for(let j=0;j<Math.min(4,clause.alternatives.length);j++){
       const candidate=clause.alternatives[j];
