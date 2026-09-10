@@ -27,6 +27,11 @@ function makePlotPoints(): PlotPoint[] {
 }
 
 const PLOT_POINTS = makePlotPoints();
+const FOUNDATION_INDEX = LEXI_RELEASES.findIndex((release) => release.foundation);
+const FOUNDATION_TRANSITION_INDEX =
+  FOUNDATION_INDEX >= 0 && FOUNDATION_INDEX + 1 < LEXI_RELEASES.length
+    ? FOUNDATION_INDEX + 1
+    : -1;
 
 export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -88,6 +93,20 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
 
       context.setTransform(scale, 0, 0, scale, 0, 0);
       context.clearRect(0, 0, width, height);
+      const pixels = points.map((point) => ({
+        x: (point.x / 100) * width,
+        y: (point.y / 100) * height,
+      }));
+
+      if (FOUNDATION_TRANSITION_INDEX > 0) {
+        const transitionX = pixels[FOUNDATION_TRANSITION_INDEX].x;
+        const foundationShade = context.createLinearGradient(0, 0, transitionX, 0);
+        foundationShade.addColorStop(0, "rgba(82, 87, 83, 0.085)");
+        foundationShade.addColorStop(0.78, "rgba(82, 87, 83, 0.05)");
+        foundationShade.addColorStop(1, "rgba(82, 87, 83, 0)");
+        context.fillStyle = foundationShade;
+        context.fillRect(0, 0, transitionX, height);
+      }
 
       context.save();
       context.strokeStyle = "rgba(48, 58, 50, 0.105)";
@@ -102,46 +121,80 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
       });
       context.restore();
 
-      const pixels = points.map((point) => ({
-        x: (point.x / 100) * width,
-        y: (point.y / 100) * height,
-      }));
       const lengths = pixels.slice(1).map((point, index) => {
         const previous = pixels[index];
         return Math.hypot(point.x - previous.x, point.y - previous.y);
       });
       const totalLength = lengths.reduce((sum, length) => sum + length, 0);
-      let remaining = totalLength * progress;
+      const visibleLength = totalLength * progress;
+      const foundationLength = FOUNDATION_TRANSITION_INDEX > 0
+        ? lengths.slice(0, FOUNDATION_TRANSITION_INDEX).reduce((sum, length) => sum + length, 0)
+        : 0;
+      const strokeContext = context;
 
-      context.save();
-      context.beginPath();
-      context.moveTo(pixels[0].x, pixels[0].y);
-      for (let index = 1; index < pixels.length; index += 1) {
-        const previous = pixels[index - 1];
-        const current = pixels[index];
-        const length = lengths[index - 1];
-        if (remaining >= length) {
-          context.lineTo(current.x, current.y);
-          remaining -= length;
-          continue;
+      function strokeProgress(
+        startIndex: number,
+        endIndex: number,
+        budget: number,
+        strokeStyle: string,
+        dash: number[],
+        shadowColor: string,
+        shadowBlur: number,
+      ) {
+        if (budget <= 0 || endIndex <= startIndex) return;
+        let remaining = budget;
+        strokeContext.save();
+        strokeContext.beginPath();
+        strokeContext.moveTo(pixels[startIndex].x, pixels[startIndex].y);
+        for (let index = startIndex + 1; index <= endIndex; index += 1) {
+          const previous = pixels[index - 1];
+          const current = pixels[index];
+          const length = lengths[index - 1];
+          if (remaining >= length) {
+            strokeContext.lineTo(current.x, current.y);
+            remaining -= length;
+            continue;
+          }
+          if (remaining > 0) {
+            const ratio = remaining / length;
+            strokeContext.lineTo(
+              previous.x + (current.x - previous.x) * ratio,
+              previous.y + (current.y - previous.y) * ratio,
+            );
+          }
+          break;
         }
-        if (remaining > 0) {
-          const ratio = remaining / length;
-          context.lineTo(
-            previous.x + (current.x - previous.x) * ratio,
-            previous.y + (current.y - previous.y) * ratio,
-          );
-        }
-        break;
+        strokeContext.strokeStyle = strokeStyle;
+        strokeContext.lineWidth = 1.7;
+        strokeContext.lineCap = "round";
+        strokeContext.lineJoin = "round";
+        strokeContext.setLineDash(dash);
+        strokeContext.shadowColor = shadowColor;
+        strokeContext.shadowBlur = shadowBlur;
+        strokeContext.stroke();
+        strokeContext.restore();
       }
-      context.strokeStyle = "rgba(70, 116, 89, 0.94)";
-      context.lineWidth = 1.7;
-      context.lineCap = "round";
-      context.lineJoin = "round";
-      context.shadowColor = "rgba(95, 153, 119, 0.22)";
-      context.shadowBlur = 9;
-      context.stroke();
-      context.restore();
+
+      if (FOUNDATION_TRANSITION_INDEX > 0) {
+        strokeProgress(
+          0,
+          FOUNDATION_TRANSITION_INDEX,
+          Math.min(visibleLength, foundationLength),
+          "rgba(91, 96, 92, 0.78)",
+          [2.5, 5.5],
+          "rgba(91, 96, 92, 0.16)",
+          5,
+        );
+      }
+      strokeProgress(
+        Math.max(FOUNDATION_TRANSITION_INDEX, 0),
+        pixels.length - 1,
+        Math.max(0, visibleLength - foundationLength),
+        "rgba(70, 116, 89, 0.94)",
+        [],
+        "rgba(95, 153, 119, 0.22)",
+        9,
+      );
     }
 
     function animate(now: number) {
@@ -217,7 +270,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
 
               return (
                 <div
-                  className={`release-point-anchor ${
+                  className={`release-point-anchor ${release.foundation ? "is-foundation" : ""} ${
                     activeIndex === index ? "is-active" : ""
                   }`}
                   key={release.build}
@@ -230,7 +283,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                     ) : null}
                   </span>
                   <button
-                    className={`release-point ${activeIndex === index ? "is-active" : ""}`}
+                    className={`release-point ${release.foundation ? "is-foundation" : ""} ${activeIndex === index ? "is-active" : ""}`}
                     type="button"
                     aria-label={`Open notes for ${release.label}`}
                     aria-expanded={activeIndex === index}

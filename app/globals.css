@@ -839,6 +839,10 @@ a {
   animation-delay: calc(360ms + var(--release-order) * 125ms);
 }
 
+.release-point-anchor.is-foundation .release-point-label {
+  color: rgba(72, 77, 73, 0.72);
+}
+
 .release-point {
   position: absolute;
   top: 0;
@@ -868,6 +872,33 @@ a {
   border-radius: 50%;
   background: #48765a;
   transition: transform 180ms ease, background 180ms ease;
+}
+
+.release-point.is-foundation {
+  border-color: rgba(86, 91, 87, 0.74);
+  background: rgba(247, 248, 246, 0.98);
+  box-shadow:
+    0 0 0 4px rgba(86, 91, 87, 0.075),
+    0 2px 8px rgba(54, 59, 55, 0.1);
+}
+
+.release-point.is-foundation span {
+  background: #656b66;
+}
+
+.release-point.is-foundation:hover,
+.release-point.is-foundation.is-active,
+.release-point.is-foundation:focus-visible {
+  border-color: #555b56;
+  box-shadow:
+    0 0 0 5px rgba(86, 91, 87, 0.12),
+    0 3px 11px rgba(54, 59, 55, 0.16);
+}
+
+.release-point.is-foundation:hover span,
+.release-point.is-foundation.is-active span,
+.release-point.is-foundation:focus-visible span {
+  background: #4f5550;
 }
 
 .release-point:hover,

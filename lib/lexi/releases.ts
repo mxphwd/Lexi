@@ -2,6 +2,7 @@ export type LexiRelease = {
   build: string;
   label: string;
   shortLabel: string;
+  foundation?: true;
   extensionLevel?: number;
   date: string;
   capabilityIndex: number;
@@ -24,31 +25,18 @@ export type LexiRelease = {
  */
 export const LEXI_RELEASES: readonly LexiRelease[] = [
   {
-    build: "260720-1A",
-    label: "Pre-build 260720-1A",
-    shortLabel: "260720-1A",
-    date: "20 July 2026",
-    capabilityIndex: 3,
-    evidenceBasis: "Inventory audit · implementation structure only",
-    metric: "4 core modules",
-    focus: ["Core pipeline", "Deterministic", "Inspectable"],
-    notes: [
-      "Established Search, Context, Connect, and Structure as Lexi’s first mechanical pipeline.",
-      "It also introduced deterministic example matching and an inspectable response trace.",
-    ],
-  },
-  {
-    build: "260721-0A",
-    label: "Pre-build 260721-0A",
-    shortLabel: "260721-0A",
-    date: "21 July 2026",
+    build: "260720-1A+260721-0A",
+    label: "Initial build",
+    shortLabel: "Initial build",
+    foundation: true,
+    date: "20–21 July 2026",
     capabilityIndex: 7,
-    evidenceBasis: "Inventory audit · example and lexical counts",
+    evidenceBasis: "Combined inventory audit · builds 260720-1A and 260721-0A",
     metric: "4,180 recorded examples",
-    focus: ["Conversation", "Definitions", "Connections"],
+    focus: ["Core pipeline", "Conversation", "Definitions"],
     notes: [
-      "Added a foundational phrase gate and expanded daily conversation to 4,180 examples.",
-      "Connected requests and full Wordset definitions made basic answers more dependable.",
+      "Combined Lexi’s first two foundation builds: the Search, Context, Connect, and Structure pipeline plus its initial deterministic trace.",
+      "Foundational conversation, connected requests, and Wordset definitions grew that base to 4,180 recorded examples.",
     ],
   },
   {

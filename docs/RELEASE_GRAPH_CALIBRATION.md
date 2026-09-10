@@ -20,8 +20,7 @@ only. Development diagnostics are not treated as independent tests.
 
 | Release | Score | Change | Language /25 | Knowledge /20 | Reasoning /20 | Dialogue /10 | Evidence /15 | Runtime /10 | Strongest available evidence |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 260720-1A | 3 | baseline | 1 | 0 | 0 | 1 | 0 | 1 | implementation inventory |
-| 260721-0A | 7 | +4 | 3 | 1 | 0 | 2 | 0 | 1 | example and lexical inventory |
+| Initial build (260720-1A + 260721-0A) | 7 | baseline | 3 | 1 | 0 | 2 | 0 | 1 | combined implementation, example, and lexical inventory |
 | DV3 | 12 | +5 | 5 | 3 | 1 | 2 | 0 | 1 | construction and subject inventory |
 | DV4 | 18 | +6 | 7 | 4 | 2 | 3 | 1 | 1 | language-feature inventory |
 | DV5 | 18 | +0 | 7 | 4 | 2 | 3 | 1 | 1 | release UI; no engine capability change |
