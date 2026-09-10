@@ -1,5 +1,16 @@
-import type { AnswerStyle } from "@/modules/extended-pack/linguistic-features";
 import type { SemanticRelation } from "./types";
+
+type AnswerStyle =
+  | "plain"
+  | "brief"
+  | "simple"
+  | "detailed"
+  | "exampled"
+  | "stepwise"
+  | "technical"
+  | "practical"
+  | "analogy"
+  | "balanced";
 
 export type SemanticQuestionTemplate = {
   id: string;

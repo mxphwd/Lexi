@@ -2,19 +2,18 @@ import { result } from '../modules/dv12/executor';
 import { sourceMappings } from '../modules/dv12/schema';
 import { normalize, type Store } from '../modules/dv12/store';
 import type { ResourceLoader } from '../modules/dv12/runtime';
-import type { Atom, Fact, Plan, Term, Value } from '../modules/dv12/types';
-import type { Dv11KnowledgePackage } from '../modules/dv11/types';
+import type { Atom, Fact, ImportedKnowledgePackage, Plan, Term, Value } from '../modules/dv12/types';
 import { assetJson, hash, type AssetFetcher, type Metadata } from './dv12-assets';
 import { DV12_CATALOG } from './dv12-integrity';
 import { PackageRegistry } from '../modules/dv12/packages';
 import { retrievalFrontier } from '../modules/dv12/executor';
 type Reference=readonly [string,string];
-type Catalog={version:12;world:{sourceShards:Record<string,Metadata&{packageId:string}>;indexes:{alias:{shards:Record<string,Metadata>};subject:{shards:Record<string,Metadata>};object:{shards:Record<string,Metadata>};predicate:Metadata;domain:Metadata}};lexical:{indexes:{alias:{shards:Record<string,Metadata>}};packages:Array<{sourceShards:Array<Metadata&{shard:string}>}>}};
+type Catalog={version:12;world:{sourceShards:Record<string,Metadata&{packageId:string}>;indexes:{alias:{shards:Record<string,Metadata>};subject:{shards:Record<string,Metadata>};object:{shards:Record<string,Metadata>};predicate:Metadata}};lexical:{indexes:{alias:{shards:Record<string,Metadata>}};packages:Array<{sourceShards:Array<Metadata&{shard:string}>}>}};
 type Alias=readonly [string,string,string,number];
 type NormalizedDescriptor=Metadata&{id:string;version:string;templates:string[];utterances:string[];decodedSha256:string;decodedSizeBytes:number};
 async function bucket(s:string){return (await hash(new TextEncoder().encode(s))).slice(0,2);}
 function atoms(plan:Plan):Atom[]{return plan.kind==='query'?plan.atoms:plan.kind==='compare'?plan.subjects.map(subject=>({subject,relation:plan.relation,object:{kind:'variable',name:'answer'}})):[];}
-function migrate(pack:Dv11KnowledgePackage,store:Store){
+function migrate(pack:ImportedKnowledgePackage,store:Store){
   const reviewedIdentities:Record<string,string>={
     'wd:Q30':'country-united-states',
     'wd:Q937':'person-albert-einstein',
@@ -112,7 +111,7 @@ export function resourceLoader(assets:AssetFetcher,origin:string):ResourceLoader
     const remaining=candidates.filter(key=>!loaded.has(key)),selected=remaining.slice(0,Math.max(0,12-loaded.size));
     for(const key of selected){
       const meta=c.world.sourceShards[key];if(!meta)throw new Error('PACKAGE_INDEX_INTEGRITY');
-      const pack=await assetJson<Dv11KnowledgePackage>(assets,origin,meta,need.signal);
+      const pack=await assetJson<ImportedKnowledgePackage>(assets,origin,meta,need.signal);
       migrate(pack,need.store);loaded.add(key);
     }
     return {coverage:{candidateShards:totalCandidates,loadedShards:loaded.size,excludedShards:Math.max(0,remaining.length-selected.length),complete:remaining.length===selected.length,missing:remaining.slice(selected.length),loadedIds:[...loaded]}};

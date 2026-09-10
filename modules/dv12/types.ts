@@ -40,6 +40,32 @@ export type State = { version: 12; revision: number; nextTurn: number; memories:
 export type Coverage = { candidateShards: number; loadedShards: number; excludedShards: number; complete: boolean; missing: string[]; loadedIds: string[] };
 export type Execution = { request: Request; results: Result[]; state: State; status: Status; stages: Array<{ stage: string; code: string; detail: string; milliseconds: number }>; coverage?: Coverage; liveIndex?:{propositions:number;entities:number;requestBytes:number;loadedShards:number} };
 export type Options = { signal?: AbortSignal; now?: string; maxRows?: number; maxDepth?: number; maxMilliseconds?: number };
+/** Minimal source-package contract consumed by the active DV12/DV13 loader. */
+export type ImportedKnowledgePackage = {
+  manifest: {
+    schemaVersion: 1;
+    minimumRuntime: string;
+    dependencies: Array<{ packageId: string; versionRange: string }>;
+  };
+  entities: Array<{ id: string; canonicalName: string; aliases: string[]; kind: string }>;
+  propositions: Array<{
+    id: string;
+    subjectId: string;
+    relation: string;
+    object: { kind: 'entity'; entityId: string };
+    polarity: 'positive' | 'negative';
+    provenance: Array<{
+      sourceId: string;
+      sourceLocation: string;
+      extractionMethod: string;
+      reviewStatus: string;
+      confidence: number;
+      createdAt: string;
+      license?: string;
+      disputeStatus: string;
+    }>;
+  }>;
+};
 export const variable = (name: string): Term => ({ kind: 'variable', name });
 export const entity = (id: string): Value => ({ kind: 'entity', id });
 export const literal = (value: string): Value => ({ kind: 'text', value });

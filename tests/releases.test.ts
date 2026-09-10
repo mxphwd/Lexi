@@ -19,6 +19,7 @@ test('release graph uses the audited capability calibration and AD1 remains a ba
     '260904-DV12','260908-DV13'
   ]);
   assert.equal(LEXI_RELEASES.slice(1).reduce((count,release)=>count+release.sourceBuilds.length-1,0),6);
+  assert.match(LEXI_RELEASES.at(-1)?.notes.join(' ')??'',/DV6 maintenance/i);
   assert.ok((LEXI_RELEASES.at(-1)?.capabilityIndex??100)<100);
   for(const [index,release] of LEXI_RELEASES.entries()){
     assert.ok(release.notes.length>=2&&release.notes.length<=3);

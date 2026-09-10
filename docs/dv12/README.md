@@ -8,14 +8,14 @@ This build replaces active legacy answer substitution with one typed execution p
 
 The browser sends a bounded request to /api/lexi/respond. The Worker normalizes and parses clauses, finds compatible evidence, loads integrity-pinned resources, rebinds arguments, executes typed operations, realizes bound answers, and returns a small response and transactional session state. Entire world packages do not travel to the browser.
 
-The active implementation is modules/dv12. lib/lexi/historical-engine.ts and the older modules remain as explicitly historical baselines. Their tests do not establish current-engine parity. Legacy completed answers are never promoted to synthetic factual evidence.
+The active implementation is modules/dv12. The superseded DV7–DV11 responder chain and completed-answer fallbacks were removed during the DV6 maintenance cleanup; their exact source remains in Git history. Legacy completed answers are never promoted to synthetic factual evidence.
 
 Implemented operations include relational lookup, scoped ability verification, explicit negatives, inverses and symmetry, bounded inheritance/transitivity, typed positive-premise rules, filters, aggregates, measurement ordering, arithmetic precedence, fractions/percentages, dimension-checked conversion, bounded inventory transfers, subset/disjoint premise logic, basic temporal intervals, compound personal memory, deletion, references, and proof follow-ups. Each operation has limits: this is not a general English or unrestricted reasoning engine.
 
 ## Running and checking
 
 - npm run dev: local interface and local API.
-- npm run verify:dv12: strict types, data integrity, existing AD1 validation, production build, client budgets, historical plus DV12 regressions, development diagnostics, and local performance checks.
+- npm run verify:dv12: strict types, runtime reachability, live-asset integrity, production build, client budgets, DV12 regressions, development diagnostics, and local performance checks.
 - npm run gate:dv12:rc: deliberately fails until independent evidence, calibration, category coverage, and unresolved P0 work meet the gate.
 - npm run dv12:build-indexes: rebuilds the DV12 catalog, 256 bounded alias buckets, and normalized packages.
 
@@ -29,7 +29,7 @@ Keep world entities, lexical senses and language examples separate. Package lang
 
 Facts require IDs, existing subjects, declared relations, typed objects, source identifiers/locations, review state, extraction method, and license. Quantities need explicit units. Changing claims require reviewed validity intervals; importing a file does not establish currentness. A normalized package is a versioned overlay: it cannot silently overwrite an existing fact. Replacement/removal of active claims remains a separately tracked limitation.
 
-Existing AD1 remains available through source-predicate-preserving migration. P36/P1376 direction, P31/P279 distinction, language/residence/birthplace distinctions and combined P61 semantics are retained. Only two reviewed cross-store identity links have been added; broad entity reconciliation is unfinished.
+The live AD1 propositions remain available through source-predicate-preserving migration, but the retired DV11 browser/service adapter and its unused alias, entity, sense and domain indexes are gone. P36/P1376 direction, P31/P279 distinction, language/residence/birthplace distinctions and combined P61 semantics are retained. Only two reviewed cross-store identity links have been added; broad entity reconciliation is unfinished.
 
 ## Budgets and unsupported work
 

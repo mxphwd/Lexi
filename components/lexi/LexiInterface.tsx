@@ -9,7 +9,7 @@ import {
   LEXI_BASE_VERSION_LABEL,
   LEXI_EXTENSION_BADGE,
 } from "@/lib/lexi/version";
-import { hasUnsupportedWritingSystem } from "@/modules/search";
+import { hasUnsupportedWritingSystem } from "@/modules/search/tokenize";
 
 type ComposerState = "idle" | "thinking" | "stopping";
 

@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 async function render() {
@@ -37,26 +37,15 @@ test("server-renders the finished Lexi surface", async () => {
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
-test("ships the modular corpus and complete lexical source artifacts", async () => {
-  const contextFiles = (await readdir(new URL("../data/example-contexts/", import.meta.url)))
-    .filter((file) => /^\d{2,}-.+\.json$/.test(file));
-  assert.equal(contextFiles.length, 62);
-
-  const pages = await Promise.all(
-    contextFiles.map(async (file) =>
-      JSON.parse(await readFile(new URL(`../data/example-contexts/${file}`, import.meta.url), "utf8")),
-    ),
-  );
-  assert.equal(pages.reduce((sum, page) => sum + page.entries.length, 0), 4_180);
-
-  const wordset = await stat(new URL("../data/lexicon/vendor/wordset/allwords_wordset.json.gz", import.meta.url));
-  const moby = await stat(new URL("../data/lexicon/vendor/moby/words.txt", import.meta.url));
-  assert.ok(wordset.size > 8_000_000);
-  assert.ok(moby.size > 20_000_000);
-
-  for (const moduleName of ["search", "context", "connect", "structure", "discourse", "extended-pack"]) {
-    const moduleEntry = await stat(new URL(`../modules/${moduleName}/index.ts`, import.meta.url));
-    assert.ok(moduleEntry.isFile());
+test("ships the current runtime assets without retired responder resources", async () => {
+  assert.ok((await stat(new URL("../public/dv12/catalog.json.gz", import.meta.url))).size > 100_000);
+  assert.ok((await stat(new URL("../data/dv12/source-catalogs/world.json", import.meta.url))).size > 100_000);
+  assert.ok((await stat(new URL("../data/lexicon/vendor/wordset/LICENSE", import.meta.url))).isFile());
+  for (const currentPath of ["modules/dv12/runtime.ts", "modules/dv13/language.ts", "worker/dv12-resources.ts"]) {
+    assert.ok((await stat(new URL(`../${currentPath}`, import.meta.url))).isFile());
+  }
+  for (const retiredPath of ["lib/lexi/historical-engine.ts", "worker/lexi-resources.ts", "data/example-contexts", "public/lexicon/wordset-dictionary.json.gz"]) {
+    await assert.rejects(stat(new URL(`../${retiredPath}`, import.meta.url)));
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");

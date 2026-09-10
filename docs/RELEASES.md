@@ -1,6 +1,6 @@
 # Current development version: DV6
 
-Technical build **260908-DV13**, 8 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, and explicit feedback/evaluation review. This is a development version, not an RC; independent accuracy and confidence remain unverified. See [current-build details](dv13/README.md).
+Technical build **260908-DV13**, maintained through 10 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, explicit feedback/evaluation review, and a deep removal of superseded runtime layers and unreferenced assets. This cleanup remains part of DV6 rather than creating a new development version. This is not an RC; independent accuracy and confidence remain unverified. See [current-build details](dv13/README.md).
 
 # Lexi release-history rule
 

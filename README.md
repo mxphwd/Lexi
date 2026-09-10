@@ -4,7 +4,7 @@ Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-base
 
 Current development version: **DV6**. Current technical build: **260908-DV13**, dated 8 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
 
-The current build expands equivalent question wording and proof follow-ups while retaining explicit evidence requirements. Its evaluation workflow separates authored regressions, reviewed real-use failures, and held-out evidence.
+The current build expands equivalent question wording and proof follow-ups while retaining explicit evidence requirements. A DV6 maintenance cleanup removed superseded responder stacks and unreferenced assets; its evaluation workflow still separates authored regressions, reviewed real-use failures, and held-out evidence.
 
 ## Run locally
 
@@ -28,6 +28,7 @@ The development verification checks types, data integrity, release metadata, the
 
 - [How it works](docs/ARCHITECTURE.md)
 - [DV13 changes and limitations](docs/dv13/README.md)
+- [DV6 maintenance cleanup audit](docs/DV6_MAINTENANCE_CLEANUP.md)
 - [Evaluation and feedback review](data/dv13/evaluation/README.md)
 - [Release history](docs/RELEASES.md)
 

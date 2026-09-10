@@ -16,7 +16,10 @@ async function asset(m){
 const {value:catalog}=await asset(DV12_CATALOG);
 if(catalog.version!==12||Object.keys(catalog.world.indexes.alias.shards).length!==256)throw new Error('CATALOG_SCHEMA');
 for(const d of Object.values(catalog.world.indexes.alias.shards))await asset(d);
-await asset(catalog.world.indexes.predicate);await asset(catalog.world.indexes.domain);
+await asset(catalog.world.indexes.predicate);
+for(const index of [catalog.world.indexes.subject,catalog.world.indexes.object,catalog.lexical.indexes.alias])for(const descriptor of Object.values(index.shards))await asset(descriptor);
+for(const descriptor of Object.values(catalog.world.sourceShards))await asset(descriptor);
+for(const pack of catalog.lexical.packages)for(const descriptor of pack.sourceShards)await asset(descriptor);
 const registry=new PackageRegistry(coreStore());
 for(const d of catalog.normalized){
   registry.register({id:d.id,version:d.version,sha256:d.decodedSha256,decodedBytes:d.decodedSizeBytes,load:async()=>(await asset(d)).decoded});
@@ -44,6 +47,8 @@ async function scan(folder){
   }
 }
 for(const dir of ['modules/dv12','worker','lib/lexi','data/dv12/packages','public/dv12'])await scan(path.resolve(dir));
-if(signatures.length){for(const dir of ['public/dv11','data/example-contexts','data/dv9'])await scan(path.resolve(dir));}
+if(signatures.length){
+  for(const dir of ['public/dv11/service/ad1/packages','public/dv9/lexicon'])await scan(path.resolve(dir));
+}
 if(forbidden.length)throw new Error('INDEPENDENT_DATA_LEAKAGE:'+JSON.stringify(forbidden.slice(0,10)));
 console.log(JSON.stringify({catalog:'verified',aliasBuckets:256,normalizedPackages:catalog.normalized.length,independentRows:independent.length,leakageStatus:independent.length?'scanned':'not evaluable: no independent rows',passed:true},null,2));

@@ -15,7 +15,7 @@ Centered composer surface
 
 ## Version boundary
 
-DV13 is the product/runtime release. It reuses and extends the execution foundation in `modules/dv12`, with request and evidence helpers in `modules/dv13`. The wire protocol, session schema and knowledge-package runtime contract remain version 12 for compatibility; they are not release labels. The response trace identifies DV13. The package catalog is unchanged. Older engines remain historical baselines; the DV12 folder is shared active code, not a frozen DV12 binary.
+DV13 is the product/runtime release. It reuses and extends the execution foundation in `modules/dv12`, with request and evidence helpers in `modules/dv13`. The wire protocol, session schema and knowledge-package runtime contract remain version 12 for compatibility; they are not release labels. The response trace identifies DV13. Superseded DV7–DV11 responders have been removed from the active tree and remain recoverable through Git history. The DV12 folder is shared active code, not a frozen DV12 binary.
 
 ## Wording and dialogue
 
@@ -25,7 +25,7 @@ A simple follow-up may replace one explicit subject. Multi-relation queries and 
 
 ## Evidence and resources
 
-The server loads integrity-pinned shards on demand. Facts distinguish source records, review status and provenance. The DV12 execution budgets, immutable base store, disposable request overlays, open-world restrictions and package checks remain in force. DV13 adds human-readable descriptions of executed proof steps; it does not add new evidence by describing them.
+The server loads one integrity-pinned DV12 catalog and only the compatible shards required by the request. The retired standalone resource endpoint and unreferenced legacy indexes are not shipped. Facts distinguish source records, review status and provenance. The DV12 execution budgets, immutable base store, disposable request overlays, open-world restrictions and package checks remain in force. DV13 adds human-readable descriptions of executed proof steps; it does not add new evidence by describing them.
 
 ## Browser state and feedback
 

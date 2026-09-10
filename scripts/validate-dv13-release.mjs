@@ -9,8 +9,10 @@ assert.equal(pkg.version,'1.0.0-prebuild.'+LEXI_BUILD.toLowerCase());
 assert.equal(lock.version,pkg.version);assert.equal(lock.packages[''].version,pkg.version);
 assert.equal(LEXI_RELEASE_STATUS,'development');assert.equal(LEXI_RELEASES.at(-1).build,LEXI_BUILD);
 assert.equal(new Session().respond('Hello').trace.runtimeVersion,'DV13');
-assert.match(await read('README.md'),/Current release: \*\*DV13\*\*/);
-assert.match(await read('README.md'),/Not a release candidate/);
+const readme=await read('README.md');
+assert.match(readme,/Current development version: \*\*DV6\*\*/);
+assert.match(readme,/Current technical build: \*\*260908-DV13\*\*/);
+assert.match(readme,/Not a release candidate/);
 // Engine imports must not pull evaluation corpora or grading helpers into the response path.
 for(const dir of ['app','components','lib','worker','modules']){
   async function walk(path){for(const entry of await fs.readdir(new URL(path,root),{withFileTypes:true})){

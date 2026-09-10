@@ -10,6 +10,12 @@ DV13 implements three focused improvements:
 
 The interface preserves Lexi’s existing visual theme and stop behavior. Feedback remains local and opt-in. The active foundation remains `modules/dv12`; protocol and data compatibility do not require duplicating the engine under another version folder. Response traces and release metadata identify DV13.
 
+## DV6 maintenance cleanup
+
+The 10 September cleanup is part of DV6, not a new development version or technical build. It removed the unreachable DV7–DV11 responder chain, the obsolete standalone resource endpoint, historical benchmark executors, dormant example corpora and source archives, and public assets not referenced by the active catalog. The current typed engine, live lexical/world shards, package format, UI, release history, source attribution, and DV12/DV13 evaluation boundary remain intact. `npm run audit:cleanup` now rejects retired runtime imports, missing or altered catalog assets, and newly orphaned public files.
+
+The complete retention rule, removed-path inventory, footprint measurements, and integrity safeguards are recorded in the [DV6 maintenance cleanup audit](../DV6_MAINTENANCE_CLEANUP.md).
+
 ## Verification
 
 `npm run verify:dv13` runs types, integrity checks, release validation, the production build, client budget checks, all tests, evaluation and local performance measurements. `npm run build:github-pages` builds the optional static distribution. `npm run gate:dv13:rc` returns nonzero until the RC requirements are met.

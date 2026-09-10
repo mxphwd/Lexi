@@ -4,24 +4,35 @@ import crypto from 'node:crypto';
 import zlib from 'node:zlib';
 const root=process.cwd(),out=path.join(root,'public/dv12');
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
-const read=p=>{const b=fs.readFileSync(path.join(root,'public',p));return JSON.parse(p.endsWith('.gz')?zlib.gunzipSync(b):b);};
-const world=read('/dv11/service/ad1/catalog.json'),lexical=read('/dv11/service/catalog.json');
-fs.mkdirSync(path.join(out,'aliases'),{recursive:true});
-const buckets=Array.from({length:256},()=>({}));
-for(const m of Object.values(world.indexes.alias.shards)){
-  for(const [alias,records] of Object.entries(read(m.path))){
-    const bucket=parseInt(digest(alias).slice(0,2),16);buckets[bucket][alias]=records;
-  }
-}
+const worldSource=JSON.parse(fs.readFileSync(path.join(root,'data/dv12/source-catalogs/world.json'),'utf8'));
+const lexicalSource=JSON.parse(fs.readFileSync(path.join(root,'data/dv12/source-catalogs/lexical.json'),'utf8'));
 function write(relative,value){
   const decoded=Buffer.from(JSON.stringify(value)),bytes=zlib.gzipSync(decoded,{level:9}),file=path.join(out,relative);
   fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,bytes);
   return {path:'/dv12/'+relative,sha256:digest(bytes),sizeBytes:bytes.length,decodedSha256:digest(decoded),decodedSizeBytes:decoded.length};
 }
+function metadata(p){const bytes=fs.readFileSync(path.join(root,'public',p)),decoded=p.endsWith('.gz')?zlib.gunzipSync(bytes):bytes;return {path:p,sha256:digest(bytes),sizeBytes:bytes.length,decodedSha256:digest(decoded),decodedSizeBytes:decoded.length};}
+// The 256 current alias buckets are authoritative. Retired DV11 alias, entity,
+// sense, and domain indexes are intentionally not copied into this catalog.
 const aliases={};
-for(let i=0;i<256;i++)aliases[i.toString(16).padStart(2,'0')]=write('aliases/'+i.toString(16).padStart(2,'0')+'.json.gz',buckets[i]);
-function metadata(p){const bytes=fs.readFileSync(path.join(root,'public',p));return {path:p,sha256:digest(bytes),sizeBytes:bytes.length};}
-const manifest={version:12,mappingVersion:'12.0.0',world:{...world,indexes:{...world.indexes,alias:{...world.indexes.alias,shards:aliases},predicate:{...world.indexes.predicate,...metadata(world.indexes.predicate.path)},domain:{...world.indexes.domain,...metadata(world.indexes.domain.path)}}},lexical};
+for(let i=0;i<256;i++){
+  const key=i.toString(16).padStart(2,'0'),asset='/dv12/aliases/'+key+'.json.gz';
+  aliases[key]=metadata(asset);
+}
+const world={
+  sourceShards:worldSource.sourceShards,
+  indexes:{
+    alias:{strategy:'sha256-prefix',entries:worldSource.indexes.alias.entries,shards:aliases},
+    subject:worldSource.indexes.subject,
+    object:worldSource.indexes.object,
+    predicate:{...worldSource.indexes.predicate,...metadata(worldSource.indexes.predicate.path)},
+  },
+};
+const lexical={
+  indexes:{alias:lexicalSource.indexes.alias},
+  packages:lexicalSource.packages.map(pack=>({sourceShards:pack.sourceShards})),
+};
+const manifest={version:12,mappingVersion:'12.1.0-clean',world,lexical};
 manifest.normalized=[];
 for(const filename of fs.readdirSync(path.join(root,'data/dv12/packages')).filter(name=>name.endsWith('.json')).sort()){
   const pack=JSON.parse(fs.readFileSync(path.join(root,'data/dv12/packages',filename),'utf8'));

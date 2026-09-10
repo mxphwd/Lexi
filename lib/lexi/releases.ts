@@ -317,12 +317,13 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
       build: release.build,
       capabilityIndex: release.capabilityIndex,
     })),
-    date: "4–8 September 2026",
-    evidenceBasis: "Combined authored development diagnostics · DV12–DV13 · not independent",
+    date: "4–10 September 2026",
+    evidenceBasis: "Authored DV12–DV13 diagnostics + DV6 runtime reachability audit · not independent",
     focus: ["Server execution", "Flexible wording", "Reviewed evidence"],
     notes: [
       "Builds 260904-DV12 and 260908-DV13 share the same active typed server engine; the second refined wording, follow-ups, and inspectable evidence rather than replacing it.",
       "The latest development diagnostic reached 71 of 86 answerable authored cases, while independent accuracy and RC readiness remain unverified.",
+      "A DV6 maintenance pass removed the unreachable historical responders, obsolete resource route, dormant corpora, and unreferenced public assets without changing the active model version.",
     ],
   },
 ] as const;
