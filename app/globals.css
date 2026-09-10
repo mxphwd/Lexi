@@ -977,6 +977,18 @@ a {
   letter-spacing: 0.02em;
 }
 
+.release-build-lineage {
+  display: block;
+  max-width: 180px;
+  margin-top: 4px;
+  color: #7c837d;
+  font-family: var(--mono);
+  font-size: 0.41rem;
+  font-weight: 500;
+  letter-spacing: 0.018em;
+  line-height: 1.4;
+}
+
 .release-metric {
   flex: 0 0 auto;
   padding: 4px 7px;

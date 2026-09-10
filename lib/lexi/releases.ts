@@ -1,5 +1,6 @@
 export type LexiRelease = {
   build: string;
+  sourceBuilds: readonly string[];
   label: string;
   shortLabel: string;
   foundation?: true;
@@ -23,7 +24,7 @@ export type LexiRelease = {
  * calibration discipline (15), and runtime integration (10). Evidence quality
  * limits each historical score; see docs/RELEASE_GRAPH_CALIBRATION.md.
  */
-export const LEXI_RELEASES: readonly LexiRelease[] = [
+const HISTORICAL_BUILD_RECORDS = [
   {
     build: "260720-1A+260721-0A",
     label: "Initial build",
@@ -228,6 +229,77 @@ export const LEXI_RELEASES: readonly LexiRelease[] = [
     measurements:[{label:"Development diagnostic",value:"71 / 86"},{label:"Answerable success",value:"82.6%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
   }
 
+] as const;
+
+/**
+ * The public graph records architectural milestones rather than every build
+ * label. Exact historical build identifiers remain attached to each milestone
+ * so the consolidation never erases the underlying development record.
+ */
+export const LEXI_RELEASES: readonly LexiRelease[] = [
+  {
+    ...HISTORICAL_BUILD_RECORDS[0],
+    build: "260721-0A",
+    sourceBuilds: ["260720-1A", "260721-0A"],
+  },
+  {
+    ...HISTORICAL_BUILD_RECORDS[4],
+    label: "Extended language",
+    shortLabel: "Extended language",
+    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(1, 5).map((release) => release.build),
+    date: "30 July 2026",
+    evidenceBasis: "Combined inventory audit · DV3–DV6",
+    focus: ["Extended pack", "Language forms", "Bounded reasoning"],
+    notes: [
+      "Combined DV3–DV6 into the direct-language era: the Extended Pack, broader wording, follow-ups, and deterministic reasoning.",
+      "DV5 added the release record but no engine capability; DV6 completed the era at 500,347 constructions and 800 added linguistic features.",
+    ],
+  },
+  {
+    ...HISTORICAL_BUILD_RECORDS[6],
+    label: "Semantic engine",
+    shortLabel: "Semantic engine",
+    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(5, 7).map((release) => release.build),
+    date: "31 July–1 August 2026",
+    evidenceBasis: "Combined authored/generated diagnostics · DV7–DV8",
+    focus: ["Typed meaning", "Query execution", "Session memory"],
+    notes: [
+      "Combined DV7 and DV8 into Lexi’s semantic rebuild: typed meaning, a proposition graph, session memory, query plans, and compositional execution.",
+      "DV8 completed the DV7 architecture with indexed word senses and 4,124 generated regression checks, not a public-use accuracy benchmark.",
+    ],
+  },
+  {
+    ...HISTORICAL_BUILD_RECORDS[7],
+    label: "Typed data",
+    shortLabel: "Typed data",
+    sourceBuilds: [HISTORICAL_BUILD_RECORDS[7].build],
+  },
+  {
+    ...HISTORICAL_BUILD_RECORDS[9],
+    label: "Connected runtime",
+    shortLabel: "Connected runtime",
+    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(8, 10).map((release) => release.build),
+    date: "11–12 August 2026",
+    evidenceBasis: "Combined runtime, package, and inventory validation · DV10–DV11",
+    focus: ["Unified contract", "Worker retrieval", "Loadable knowledge"],
+    notes: [
+      "Combined DV10 and DV11 into the connected-runtime era, joining typed plans, evidence, dialogue, packages, and proof through one execution contract.",
+      "The DV11 +1 extension moved retrieval behind the Worker and supplied 719,949 source-attested propositions across ten domains.",
+    ],
+  },
+  {
+    ...HISTORICAL_BUILD_RECORDS[11],
+    label: "Current engine",
+    shortLabel: "Current engine",
+    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(10, 12).map((release) => release.build),
+    date: "4–8 September 2026",
+    evidenceBasis: "Combined authored development diagnostics · DV12–DV13 · not independent",
+    focus: ["Server execution", "Flexible wording", "Reviewed evidence"],
+    notes: [
+      "Combined DV12 and DV13 because both run the same active typed server engine; DV13 refined wording, follow-ups, and inspectable evidence rather than replacing it.",
+      "The latest development diagnostic reached 71 of 86 answerable authored cases, while independent accuracy and RC readiness remain unverified.",
+    ],
+  },
 ] as const;
 
 export function releaseIndexChange(index: number) {

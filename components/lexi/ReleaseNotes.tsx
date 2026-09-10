@@ -100,11 +100,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
 
       if (FOUNDATION_TRANSITION_INDEX > 0) {
         const transitionX = pixels[FOUNDATION_TRANSITION_INDEX].x;
-        const foundationShade = context.createLinearGradient(0, 0, transitionX, 0);
-        foundationShade.addColorStop(0, "rgba(82, 87, 83, 0.085)");
-        foundationShade.addColorStop(0.78, "rgba(82, 87, 83, 0.05)");
-        foundationShade.addColorStop(1, "rgba(82, 87, 83, 0)");
-        context.fillStyle = foundationShade;
+        context.fillStyle = "rgba(82, 87, 83, 0.055)";
         context.fillRect(0, 0, transitionX, height);
       }
 
@@ -315,6 +311,9 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                             ) : null}
                           </strong>
                           <time>{release.date}</time>
+                          <span className="release-build-lineage">
+                            Builds · {release.sourceBuilds.join(" · ")}
+                          </span>
                         </div>
                         {release.metric ? (
                           <mark className="release-metric">{release.metric}</mark>
