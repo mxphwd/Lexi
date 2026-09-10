@@ -1,12 +1,13 @@
-# Current development release: DV13
+# Current development version: DV6
 
-Build **260908-DV13**, 8 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, and explicit feedback/evaluation review. This is a development build, not an RC; independent accuracy and confidence remain unverified. See [DV13 details](dv13/README.md).
+Technical build **260908-DV13**, 8 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, and explicit feedback/evaluation review. This is a development version, not an RC; independent accuracy and confidence remain unverified. See [current-build details](dv13/README.md).
 
 # Lexi release-history rule
 
 The interactive release graph records Lexi's architectural milestones. It was
-introduced in build 260730-DV5, and its public history is consolidated into six
-model eras rather than presenting every intermediate build as a new generation.
+introduced in build 260730-DV5. Its public history is consolidated into Initial
+build and DV2–DV6 rather than presenting every intermediate build as a new
+development version. Intermediate builds appear as smaller graph markers.
 
 ## Required action for every future version
 

@@ -19,6 +19,17 @@ type PlotPoint = {
   y: number;
 };
 
+type BuildPoint = PlotPoint & {
+  build: string;
+  foundation: boolean;
+  order: number;
+  parentIndex: number;
+};
+
+type LinePoint = PlotPoint & {
+  majorIndex?: number;
+};
+
 function makePlotPoints(): PlotPoint[] {
   return LEXI_RELEASES.map((release, index) => ({
     x: 5 + (index / (LEXI_RELEASES.length - 1)) * 90,
@@ -33,12 +44,46 @@ const FOUNDATION_TRANSITION_INDEX =
     ? FOUNDATION_INDEX + 1
     : -1;
 
+function makeBuildPoints(): BuildPoint[] {
+  let order = 0;
+  return LEXI_RELEASES.flatMap((release, parentIndex) => {
+    if (parentIndex === 0) return [];
+    const previous = PLOT_POINTS[parentIndex - 1];
+    const current = PLOT_POINTS[parentIndex];
+    return release.sourceBuilds.slice(0, -1).map((sourceBuild, buildIndex) => {
+      const ratio = (buildIndex + 1) / release.sourceBuilds.length;
+      const point = {
+        build: sourceBuild.build,
+        x: previous.x + (current.x - previous.x) * ratio,
+        y: 94 - sourceBuild.capabilityIndex * 0.84,
+        parentIndex,
+        foundation: parentIndex === FOUNDATION_TRANSITION_INDEX,
+        order,
+      };
+      order += 1;
+      return point;
+    });
+  });
+}
+
+const BUILD_POINTS = makeBuildPoints();
+const LINE_POINTS: LinePoint[] = PLOT_POINTS.flatMap((point, majorIndex) => [
+  ...BUILD_POINTS
+    .filter((buildPoint) => buildPoint.parentIndex === majorIndex)
+    .map(({ x, y }) => ({ x, y })),
+  { ...point, majorIndex },
+]);
+const FOUNDATION_LINE_TRANSITION_INDEX = LINE_POINTS.findIndex(
+  (point) => point.majorIndex === FOUNDATION_TRANSITION_INDEX,
+);
+
 export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const plotRef = useRef<HTMLDivElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const points = PLOT_POINTS;
+  const linePoints = LINE_POINTS;
 
   function closeReleaseNotes() {
     setActiveIndex(null);
@@ -93,13 +138,13 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
 
       context.setTransform(scale, 0, 0, scale, 0, 0);
       context.clearRect(0, 0, width, height);
-      const pixels = points.map((point) => ({
+      const pixels = linePoints.map((point) => ({
         x: (point.x / 100) * width,
         y: (point.y / 100) * height,
       }));
 
       if (FOUNDATION_TRANSITION_INDEX > 0) {
-        const transitionX = pixels[FOUNDATION_TRANSITION_INDEX].x;
+        const transitionX = (points[FOUNDATION_TRANSITION_INDEX].x / 100) * width;
         context.fillStyle = "rgba(82, 87, 83, 0.055)";
         context.fillRect(0, 0, transitionX, height);
       }
@@ -123,8 +168,8 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
       });
       const totalLength = lengths.reduce((sum, length) => sum + length, 0);
       const visibleLength = totalLength * progress;
-      const foundationLength = FOUNDATION_TRANSITION_INDEX > 0
-        ? lengths.slice(0, FOUNDATION_TRANSITION_INDEX).reduce((sum, length) => sum + length, 0)
+      const foundationLength = FOUNDATION_LINE_TRANSITION_INDEX > 0
+        ? lengths.slice(0, FOUNDATION_LINE_TRANSITION_INDEX).reduce((sum, length) => sum + length, 0)
         : 0;
       const strokeContext = context;
 
@@ -171,10 +216,10 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         strokeContext.restore();
       }
 
-      if (FOUNDATION_TRANSITION_INDEX > 0) {
+      if (FOUNDATION_LINE_TRANSITION_INDEX > 0) {
         strokeProgress(
           0,
-          FOUNDATION_TRANSITION_INDEX,
+          FOUNDATION_LINE_TRANSITION_INDEX,
           Math.min(visibleLength, foundationLength),
           "rgba(91, 96, 92, 0.78)",
           [2.5, 5.5],
@@ -183,7 +228,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         );
       }
       strokeProgress(
-        Math.max(FOUNDATION_TRANSITION_INDEX, 0),
+        Math.max(FOUNDATION_LINE_TRANSITION_INDEX, 0),
         pixels.length - 1,
         Math.max(0, visibleLength - foundationLength),
         "rgba(70, 116, 89, 0.94)",
@@ -214,7 +259,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
       observer.disconnect();
       cancelAnimationFrame(animationFrame);
     };
-  }, [open, points]);
+  }, [linePoints, open, points]);
 
   if (!open) return null;
 
@@ -255,6 +300,22 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
             onMouseLeave={() => setActiveIndex(null)}
           >
             <canvas ref={canvasRef} className="release-line" aria-hidden="true" />
+            {BUILD_POINTS.map((buildPoint) => (
+              <span
+                aria-label={`Build ${buildPoint.build} within ${LEXI_RELEASES[buildPoint.parentIndex].label}`}
+                className={`release-build-point ${buildPoint.foundation ? "is-foundation" : ""}`}
+                key={buildPoint.build}
+                role="img"
+                style={{
+                  "--build-x": `${buildPoint.x}%`,
+                  "--build-y": `${buildPoint.y}%`,
+                  "--build-order": buildPoint.order,
+                } as CSSProperties}
+                tabIndex={0}
+              >
+                <span>Build {buildPoint.build}</span>
+              </span>
+            ))}
             {points.map((point, index) => {
               const release = LEXI_RELEASES[index];
               const indexChange = releaseIndexChange(index);
@@ -312,7 +373,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                           </strong>
                           <time>{release.date}</time>
                           <span className="release-build-lineage">
-                            Builds · {release.sourceBuilds.join(" · ")}
+                            Builds · {release.sourceBuilds.map((source) => source.build).join(" · ")}
                           </span>
                         </div>
                         {release.metric ? (

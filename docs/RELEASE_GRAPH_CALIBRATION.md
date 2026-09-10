@@ -19,34 +19,35 @@ answer accuracy. Generated regression suites establish bounded regressions
 only. Development diagnostics are not treated as independent tests.
 
 The public graph now consolidates the thirteen historical build labels into six
-architectural milestones. Each milestone uses the maturity score of its final
-included build; the source-build lineage remains visible in the interface and
-the detailed reports remain unchanged.
+development versions: Initial build and DV2–DV6. Each large point uses the
+maturity score of its final included build. Earlier builds appear as smaller
+markers at their historical capability levels; the detailed reports remain
+unchanged.
 
 | Release | Score | Change | Language /25 | Knowledge /20 | Reasoning /20 | Dialogue /10 | Evidence /15 | Runtime /10 | Strongest available evidence |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | Initial build (260720-1A–260721-0A) | 7 | baseline | 3 | 1 | 0 | 2 | 0 | 1 | implementation, example, and lexical inventory |
-| Extended language (DV3–DV6) | 27 | +20 | 10 | 6 | 5 | 4 | 1 | 1 | construction and feature inventory |
-| Semantic engine (DV7–DV8) | 52 | +25 | 15 | 11 | 13 | 6 | 4 | 3 | authored cases and generated regression checks |
-| Typed data (DV9) | 57 | +5 | 16 | 14 | 13 | 6 | 4 | 4 | source-derived pack validation |
-| Connected runtime (DV10–DV11 +1) | 68 | +11 | 17 | 17 | 14 | 7 | 6 | 7 | runtime/package validation and source-attested inventory |
-| Current engine (DV12–DV13) | 79 | +11 | 21 | 17 | 17 | 8 | 9 | 7 | authored development diagnostics |
+| DV2 (builds 260730-DV3–260730-DV6) | 27 | +20 | 10 | 6 | 5 | 4 | 1 | 1 | construction and feature inventory |
+| DV3 (builds 260731-DV7–260801-DV8) | 52 | +25 | 15 | 11 | 13 | 6 | 4 | 3 | authored cases and generated regression checks |
+| DV4 (build 260802-DV9) | 57 | +5 | 16 | 14 | 13 | 6 | 4 | 4 | source-derived pack validation |
+| DV5 +1 (builds 260811-DV10–260812-DV11) | 68 | +11 | 17 | 17 | 14 | 7 | 6 | 7 | runtime/package validation and source-attested inventory |
+| DV6 (builds 260904-DV12–260908-DV13) | 79 | +11 | 21 | 17 | 17 | 8 | 9 | 7 | authored development diagnostics |
 
 ## Consolidation audit
 
 - Initial build combines 260720-1A and 260721-0A because both formed and
   populated the same four-module deterministic foundation.
-- Extended language combines DV3–DV6 because each expanded the same direct
+- DV2 combines builds 260730-DV3–260730-DV6 because each expanded the same direct
   construction, corpus, and routing system. DV5 changed the release interface
   and added no engine-index capability.
-- Semantic engine combines DV7–DV8 because DV7 introduced the typed semantic
+- DV3 combines builds 260731-DV7–260801-DV8 because the first introduced the typed semantic
   architecture and DV8 completed its indexed parser and executor.
-- Typed data keeps DV9 separate because it introduced a distinct provenance,
+- DV4 keeps build 260802-DV9 separate because it introduced a distinct provenance,
   sense, sharding, and typed-data layer at a new scale.
-- Connected runtime combines DV10–DV11 +1 because these builds progressively
+- DV5 combines builds 260811-DV10–260812-DV11 +1 because they progressively
   connected plans, evidence, packages, Worker retrieval, and the AD1 knowledge
   layer through one runtime contract.
-- Current engine combines DV12–DV13 because DV13 deliberately reuses the DV12
+- DV6 combines builds 260904-DV12–260908-DV13 because the second deliberately reuses the first
   active engine and adds language, evidence, and evaluation refinements rather
   than a replacement architecture.
 

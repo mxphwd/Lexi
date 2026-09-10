@@ -2,9 +2,9 @@
 
 Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
-Current release: **DV13** — **260908-DV13**, development build dated 8 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
+Current development version: **DV6**. Current technical build: **260908-DV13**, dated 8 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
 
-DV13 expands equivalent question wording and proof follow-ups while retaining explicit evidence requirements. Its evaluation workflow separates authored regressions, reviewed real-use failures, and held-out evidence.
+The current build expands equivalent question wording and proof follow-ups while retaining explicit evidence requirements. Its evaluation workflow separates authored regressions, reviewed real-use failures, and held-out evidence.
 
 ## Run locally
 

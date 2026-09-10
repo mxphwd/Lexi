@@ -292,7 +292,7 @@ export function execute(plan:Plan,store:Store,state:State,options:Options={}):Re
     r.status='supported';return r;
   }
   if(plan.kind==='social'){
-    r.status='supported';r.text={greeting:'Hello. What would you like to explore?',thanks:'You’re welcome.',farewell:'Goodbye.',identity:'I’m Lexi, Alphaine’s deterministic language model. I use explicit language rules and recorded knowledge, not generative AI.',age:'I don’t have a human age. This is the DV13 development build.',help:'I can look up recorded facts and definitions, calculate, compare supported quantities, and remember what you tell me during this session.',concern:'I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?',apology:'That’s all right. We can continue.',permission:'Of course. What would you like to ask?'}[plan.act];return r;
+    r.status='supported';r.text={greeting:'Hello. What would you like to explore?',thanks:'You’re welcome.',farewell:'Goodbye.',identity:'I’m Lexi, Alphaine’s deterministic language model. I use explicit language rules and recorded knowledge, not generative AI.',age:'I don’t have a human age. This is the DV6 development version.',help:'I can look up recorded facts and definitions, calculate, compare supported quantities, and remember what you tell me during this session.',concern:'I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?',apology:'That’s all right. We can continue.',permission:'Of course. What would you like to ask?'}[plan.act];return r;
   }
   if(plan.kind==='followup'){
     const prev=state.previous;if(!prev)return {...r,code:'NO_PREVIOUS_RESULT'};
