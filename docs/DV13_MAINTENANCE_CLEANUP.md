@@ -1,10 +1,10 @@
-# DV6 maintenance cleanup
+# DV13 maintenance cleanup
 
 Date: **10 September 2026**
 
 Technical build: **260908-DV13** (unchanged)
 
-Public development milestone: **DV6** (unchanged)
+Public development version: **DV13** (unchanged)
 
 ## Decision rule
 

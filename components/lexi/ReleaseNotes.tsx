@@ -143,12 +143,6 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         y: (point.y / 100) * height,
       }));
 
-      if (FOUNDATION_TRANSITION_INDEX > 0) {
-        const transitionX = (points[FOUNDATION_TRANSITION_INDEX].x / 100) * width;
-        context.fillStyle = "rgba(82, 87, 83, 0.055)";
-        context.fillRect(0, 0, transitionX, height);
-      }
-
       context.save();
       context.strokeStyle = "rgba(48, 58, 50, 0.105)";
       context.lineWidth = 1;
@@ -373,7 +367,7 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
                           </strong>
                           <time>{release.date}</time>
                           <span className="release-build-lineage">
-                            Builds · {release.sourceBuilds.map((source) => source.build).join(" · ")}
+                            Build · {release.build}
                           </span>
                         </div>
                         {release.metric ? (

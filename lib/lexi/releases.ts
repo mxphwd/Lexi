@@ -29,18 +29,32 @@ export type LexiRelease = {
  */
 const HISTORICAL_BUILD_RECORDS = [
   {
-    build: "260720-1A+260721-0A",
+    build: "260720-1A",
     label: "Initial build",
     shortLabel: "Initial build",
     foundation: true,
-    date: "20–21 July 2026",
-    capabilityIndex: 7,
-    evidenceBasis: "Combined inventory audit · builds 260720-1A and 260721-0A",
-    metric: "4,180 recorded examples",
-    focus: ["Core pipeline", "Conversation", "Definitions"],
+    date: "20 July 2026",
+    capabilityIndex: 3,
+    evidenceBasis: "Inventory audit · implementation structure only",
+    metric: "4 core modules",
+    focus: ["Core pipeline", "Deterministic", "Inspectable"],
     notes: [
-      "Combined Lexi’s first two foundation builds: the Search, Context, Connect, and Structure pipeline plus its initial deterministic trace.",
-      "Foundational conversation, connected requests, and Wordset definitions grew that base to 4,180 recorded examples.",
+      "Established Search, Context, Connect, and Structure as Lexi’s first mechanical pipeline.",
+      "It also introduced deterministic example matching and an inspectable response trace.",
+    ],
+  },
+  {
+    build: "260721-0A",
+    label: "DV2",
+    shortLabel: "DV2",
+    date: "21 July 2026",
+    capabilityIndex: 7,
+    evidenceBasis: "Inventory audit · example and lexical counts",
+    metric: "4,180 recorded examples",
+    focus: ["Conversation", "Definitions", "Connections"],
+    notes: [
+      "Added a foundational phrase gate and expanded daily conversation to 4,180 examples.",
+      "Connected requests and full Wordset definitions made basic answers more dependable.",
     ],
   },
   {
@@ -221,13 +235,13 @@ const HISTORICAL_BUILD_RECORDS = [
     measurements:[{label:"Development diagnostic",value:"47 / 62"},{label:"Answerable success",value:"75.8%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
   },
   {
-    build:"260908-DV13",label:"Pre-build 260908-DV13",shortLabel:"DV13",date:"8 September 2026",
-    capabilityIndex:79,evidenceBasis:"91-case authored development diagnostic · not independent",metric:"71 / 86 authored answers",
+    build:"260908-DV13",label:"Pre-build 260908-DV13",shortLabel:"DV13",date:"8–10 September 2026",
+    capabilityIndex:79,evidenceBasis:"91-case authored development diagnostic + runtime reachability audit · not independent",metric:"71 / 86 authored answers",
     focus:["Flexible wording","Reviewed evaluation","Trace evidence"],
     notes:[
       "Expanded equivalent question forms and proof follow-ups while preserving scoped requests and evidence requirements.",
       "Added response-bound evidence steps and a reviewed feedback workflow while preserving the compact DV12 interaction design.",
-      "Independent accuracy, confidence calibration and release-candidate readiness remain unverified."
+      "A DV13 maintenance pass removed unreachable historical responders and unreferenced assets; independent accuracy, confidence calibration, and release-candidate readiness remain unverified."
     ],
     measurements:[{label:"Development diagnostic",value:"71 / 86"},{label:"Answerable success",value:"82.6%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
   }
@@ -235,98 +249,19 @@ const HISTORICAL_BUILD_RECORDS = [
 ] as const;
 
 /**
- * The public graph records architectural milestones rather than every build
- * label. Exact historical build identifiers remain attached to each milestone
- * so the consolidation never erases the underlying development record.
+ * Every development version is a first-class graph point again. The exact
+ * dated build identifier remains available for technical diagnostics, while
+ * the public sequence runs from Initial build through DV13.
  */
-export const LEXI_RELEASES: readonly LexiRelease[] = [
-  {
-    ...HISTORICAL_BUILD_RECORDS[0],
-    build: "260721-0A",
+export const LEXI_RELEASES: readonly LexiRelease[] = HISTORICAL_BUILD_RECORDS.map(
+  (release) => ({
+    ...release,
+    label: release.shortLabel,
     sourceBuilds: [
-      { build: "260720-1A", capabilityIndex: 3 },
-      { build: "260721-0A", capabilityIndex: 7 },
+      { build: release.build, capabilityIndex: release.capabilityIndex },
     ],
-  },
-  {
-    ...HISTORICAL_BUILD_RECORDS[4],
-    label: "DV2",
-    shortLabel: "DV2",
-    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(1, 5).map((release) => ({
-      build: release.build,
-      capabilityIndex: release.capabilityIndex,
-    })),
-    date: "30 July 2026",
-    evidenceBasis: "Combined inventory audit · DV3–DV6",
-    focus: ["Extended pack", "Language forms", "Bounded reasoning"],
-    notes: [
-      "Builds 260730-DV3 through 260730-DV6 formed one direct-language generation: the Extended Pack, broader wording, follow-ups, and deterministic reasoning.",
-      "Build 260730-DV5 changed the release interface but not engine capability; the final build reached 500,347 constructions and 800 added linguistic features.",
-    ],
-  },
-  {
-    ...HISTORICAL_BUILD_RECORDS[6],
-    label: "DV3",
-    shortLabel: "DV3",
-    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(5, 7).map((release) => ({
-      build: release.build,
-      capabilityIndex: release.capabilityIndex,
-    })),
-    date: "31 July–1 August 2026",
-    evidenceBasis: "Combined authored/generated diagnostics · DV7–DV8",
-    focus: ["Typed meaning", "Query execution", "Session memory"],
-    notes: [
-      "Builds 260731-DV7 and 260801-DV8 formed Lexi’s semantic rebuild: typed meaning, a proposition graph, session memory, query plans, and compositional execution.",
-      "The second build completed the architecture with indexed word senses and 4,124 generated regression checks, not a public-use accuracy benchmark.",
-    ],
-  },
-  {
-    ...HISTORICAL_BUILD_RECORDS[7],
-    label: "DV4",
-    shortLabel: "DV4",
-    sourceBuilds: [{
-      build: HISTORICAL_BUILD_RECORDS[7].build,
-      capabilityIndex: HISTORICAL_BUILD_RECORDS[7].capabilityIndex,
-    }],
-    notes: [
-      "Build 260802-DV9 introduced Lexi’s large typed-data generation with source-bearing lexical claims, explicit word senses, entities, and sharded retrieval.",
-      "Its query examples, rules, and dialogue scenarios expanded the data layer without claiming independent world-question coverage.",
-    ],
-  },
-  {
-    ...HISTORICAL_BUILD_RECORDS[9],
-    label: "DV5",
-    shortLabel: "DV5",
-    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(8, 10).map((release) => ({
-      build: release.build,
-      capabilityIndex: release.capabilityIndex,
-    })),
-    date: "11–12 August 2026",
-    evidenceBasis: "Combined runtime, package, and inventory validation · DV10–DV11",
-    focus: ["Unified contract", "Worker retrieval", "Loadable knowledge"],
-    notes: [
-      "Builds 260811-DV10 and 260812-DV11 formed one connected runtime, joining typed plans, evidence, dialogue, packages, and proof through one execution contract.",
-      "Its +1 extension moved retrieval behind the Worker and supplied 719,949 source-attested propositions across ten domains.",
-    ],
-  },
-  {
-    ...HISTORICAL_BUILD_RECORDS[11],
-    label: "DV6",
-    shortLabel: "DV6",
-    sourceBuilds: HISTORICAL_BUILD_RECORDS.slice(10, 12).map((release) => ({
-      build: release.build,
-      capabilityIndex: release.capabilityIndex,
-    })),
-    date: "4–10 September 2026",
-    evidenceBasis: "Authored DV12–DV13 diagnostics + DV6 runtime reachability audit · not independent",
-    focus: ["Server execution", "Flexible wording", "Reviewed evidence"],
-    notes: [
-      "Builds 260904-DV12 and 260908-DV13 share the same active typed server engine; the second refined wording, follow-ups, and inspectable evidence rather than replacing it.",
-      "The latest development diagnostic reached 71 of 86 answerable authored cases, while independent accuracy and RC readiness remain unverified.",
-      "A DV6 maintenance pass removed the unreachable historical responders, obsolete resource route, dormant corpora, and unreferenced public assets without changing the active model version.",
-    ],
-  },
-] as const;
+  }),
+);
 
 export function releaseIndexChange(index: number) {
   if (index <= 0 || index >= LEXI_RELEASES.length) return null;

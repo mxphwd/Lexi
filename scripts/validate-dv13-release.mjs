@@ -10,7 +10,7 @@ assert.equal(lock.version,pkg.version);assert.equal(lock.packages[''].version,pk
 assert.equal(LEXI_RELEASE_STATUS,'development');assert.equal(LEXI_RELEASES.at(-1).build,LEXI_BUILD);
 assert.equal(new Session().respond('Hello').trace.runtimeVersion,'DV13');
 const readme=await read('README.md');
-assert.match(readme,/Current development version: \*\*DV6\*\*/);
+assert.match(readme,/Current development version: \*\*DV13\*\*/);
 assert.match(readme,/Current technical build: \*\*260908-DV13\*\*/);
 assert.match(readme,/Not a release candidate/);
 // Engine imports must not pull evaluation corpora or grading helpers into the response path.

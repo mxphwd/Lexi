@@ -8,7 +8,7 @@ This build replaces active legacy answer substitution with one typed execution p
 
 The browser sends a bounded request to /api/lexi/respond. The Worker normalizes and parses clauses, finds compatible evidence, loads integrity-pinned resources, rebinds arguments, executes typed operations, realizes bound answers, and returns a small response and transactional session state. Entire world packages do not travel to the browser.
 
-The active implementation is modules/dv12. The superseded DV7–DV11 responder chain and completed-answer fallbacks were removed during the DV6 maintenance cleanup; their exact source remains in Git history. Legacy completed answers are never promoted to synthetic factual evidence.
+The active implementation is modules/dv12. The superseded DV7–DV11 responder chain and completed-answer fallbacks were removed during the DV13 maintenance cleanup; their exact source remains in Git history. Legacy completed answers are never promoted to synthetic factual evidence.
 
 Implemented operations include relational lookup, scoped ability verification, explicit negatives, inverses and symmetry, bounded inheritance/transitivity, typed positive-premise rules, filters, aggregates, measurement ordering, arithmetic precedence, fractions/percentages, dimension-checked conversion, bounded inventory transfers, subset/disjoint premise logic, basic temporal intervals, compound personal memory, deletion, references, and proof follow-ups. Each operation has limits: this is not a general English or unrestricted reasoning engine.
 
