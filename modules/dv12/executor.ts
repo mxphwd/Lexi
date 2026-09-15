@@ -4,6 +4,7 @@ import { solveInventory } from './word-problems';
 import {validatePlan} from './validate-plan';
 import { normalize, Store, valueKey } from './store';
 import { checkAbort, entity, type Atom, type Fact, type Filter, type Options, type Plan, type Result, type Row, type Select, type State, type Term, type Value } from './types';
+import { propositionTruth } from './truth';
 
 export function result(plan:Plan,status:Result['status']='unknown',code?:string):Result {
   return {selectedPlan:plan,status,code,values:[],facts:[],proof:[],text:'',claims:[],confidence:null,confidenceKind:'unavailable'};
@@ -177,10 +178,25 @@ function queryResult(plan:Select,store:Store,options:Options):Result {
   }
   for(const atom of plan.atoms)rows=applyAtom(rows,atom,store,now,budget);
   rows=rows.filter(row=>plan.filters.every(f=>checkFilter(f,row)));
+  // A reviewed entity edge outranks an older prose attribution for an
+  // entity-valued answer. The prose remains reachable through provenance.
+  const answerAtom=plan.atoms.find(atom=>atom.object.kind==='variable'&&atom.object.name===plan.answer&&store.schema(atom.relation)?.objectTypes?.length);
+  if(answerAtom&&rows.some(row=>row.bindings[plan.answer]?.kind==='entity'))rows=rows.filter(row=>row.bindings[plan.answer]?.kind==='entity');
   if(rows.some(row=>row.facts.some(f=>store.find(f.subject,f.relation,f.object).some(other=>!!other.negative!==!!f.negative&&store.compatible(other,{subject:entity(f.subject),relation:f.relation,object:f.object,scope:f.scope,from:f.from,to:f.to},now))))){
-    collect(r,rows,store);r.status='ambiguous';r.code='CONFLICTING_FACTS';return r;
+    collect(r,rows,store);r.status='conflict';r.code='CONFLICTING_FACTS';return r;
   }
   if(plan.shape==='boolean'){
+    if(plan.atoms.length===1){
+      const a=plan.atoms[0],expected=bound(a.object,{bindings:{},facts:[],proof:[]});
+      if(expected){
+        const all=candidates(store,a,{bindings:{},facts:[],proof:[]},now,budget);
+        const truth=propositionTruth(all,expected,!!a.negative,!!store.schema(a.relation)?.functional,equal);
+        if(truth==='conflict'){
+          r.status='conflict';r.code='CONFLICTING_FACTS';r.facts=all.filter(f=>equal(f.object,expected));
+          r.proof=r.facts.map(f=>({id:'conflict:'+f.id,rule:'four-valued-conflict',premises:[f.id],bindings:{},constraints:[f.negative?'negative assertion':'positive assertion']}));return r;
+        }
+      }
+    }
     if(rows.length){collect(r,rows,store);r.status='supported';r.values=[{kind:'boolean',value:true}];return r;}
     if(plan.atoms.length===1){
       const a=plan.atoms[0],expected=bound(a.object,{bindings:{},facts:[],proof:[]});
@@ -191,10 +207,14 @@ function queryResult(plan:Select,store:Store,options:Options):Result {
     return r;
   }
   if(!rows.length){r.code='NO_COMPATIBLE_EVIDENCE';return r;}
+  if(plan.shape==='procedure'){
+    rows=rows.filter(row=>row.facts.every(f=>f.source.review==='reviewed'));
+    if(!rows.length){r.code='PROCEDURE_REQUIRES_REVIEW';return r;}
+  }
   // Functional conflicts are evaluated in the same scope, not hidden by choosing a first row.
   if(plan.atoms.length===1&&store.schema(plan.atoms[0].relation)?.functional&&plan.atoms[0].subject.kind==='entity'){
     const values=new Set(rows.map(row=>valueKey(row.bindings[plan.answer]??row.facts.at(-1)!.object)));
-    if(values.size>1){collect(r,rows,store);r.status='ambiguous';r.code='CONFLICTING_FACTS';return r;}
+    if(values.size>1){collect(r,rows,store);r.status='conflict';r.code='CONFLICTING_FACTS';return r;}
   }
   collect(r,rows,store); // All premises survive aggregation and pagination.
   if(plan.aggregate){
@@ -227,13 +247,13 @@ function queryResult(plan:Select,store:Store,options:Options):Result {
 }
 export function execute(plan:Plan,store:Store,state:State,options:Options={}):Result {
   checkAbort(options.signal);
-  validatePlan(plan);
+  validatePlan(plan,store);
   if(plan.kind==='query')return queryResult(plan,store,options);
   const r=result(plan);
   if(plan.kind==='inventory'){
     const solved=solveInventory(plan);r.proof=solved.proof;
     if(solved.value===undefined){r.status='ambiguous';r.missing=[solved.missing!];return r;}
-    r.status='supported';r.values=[{kind:'number',value:solved.value}];r.text=plan.owner+' has '+solved.value+' '+plan.item+'.';return r;
+    r.status='supported';r.values=[{kind:'number',value:solved.value}];r.text=plan.owners?.length?'Together, '+join(plan.owners.map(owner=>owner[0].toUpperCase()+owner.slice(1)))+' have '+solved.value+' '+plan.item+'.':plan.owner+' has '+solved.value+' '+plan.item+'.';return r;
   }
   if(plan.kind==='logic'){
     const solved=solveLogic(plan);r.proof=solved.proof;
@@ -274,7 +294,7 @@ export function execute(plan:Plan,store:Store,state:State,options:Options={}):Re
     return r;
   }
   if(plan.kind==='memory'){
-    if(plan.action==='clear'){state.memories=[];state.topics=[];state.answerEntities=[];state.previous=undefined;state.pending=undefined;state.history=[];r.text='I have cleared this session’s remembered information.';}
+    if(plan.action==='clear'){state.memories=[];state.topics=[];state.answerEntities=[];state.discourse={mentions:[],activePropositionIds:[],comparisonSet:[],unresolvedSlots:[],goals:[]};state.previous=undefined;state.pending=undefined;state.history=[];r.text='I have cleared this session’s remembered information.';}
     else if(plan.action==='delete'){state.memories=state.memories.filter(m=>m.field!==plan.field);r.text='I have forgotten your '+plan.field+'.';}
     else if(plan.action==='recall'){
       const memories=state.memories.filter(m=>m.field===plan.field);
@@ -292,7 +312,7 @@ export function execute(plan:Plan,store:Store,state:State,options:Options={}):Re
     r.status='supported';return r;
   }
   if(plan.kind==='social'){
-    r.status='supported';r.text={greeting:'Hello. What would you like to explore?',thanks:'You’re welcome.',farewell:'Goodbye.',identity:'I’m Lexi, Alphaine’s deterministic language model. I use explicit language rules and recorded knowledge, not generative AI.',age:'I don’t have a human age. This is the DV6 development version.',help:'I can look up recorded facts and definitions, calculate, compare supported quantities, and remember what you tell me during this session.',concern:'I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?',apology:'That’s all right. We can continue.',permission:'Of course. What would you like to ask?'}[plan.act];return r;
+    r.status='supported';r.text={greeting:'Hello. What would you like to explore?',thanks:'You’re welcome.',farewell:'Goodbye.',identity:'I’m Lexi, Alphaine’s deterministic language model. I use explicit language rules and recorded knowledge, not generative AI.',age:'I don’t have a human age. This is the DV14 development version.',help:'I can look up recorded facts and definitions, calculate, compare supported quantities, and remember what you tell me during this session. Creative writing, translation, recommendations, and live news are outside this deterministic build.',concern:'I’m sorry you’re having a difficult time. Would you like to tell me what is on your mind?',apology:'That’s all right. We can continue.',permission:'Of course. What would you like to ask?'}[plan.act];return r;
   }
   if(plan.kind==='followup'){
     const prev=state.previous;if(!prev)return {...r,code:'NO_PREVIOUS_RESULT'};

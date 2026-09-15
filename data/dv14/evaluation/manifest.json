@@ -1,0 +1,16 @@
+{
+  "version": 14,
+  "population": "Disclosed DV14 structural diagnostics. Public-use answer accuracy remains unknown until a separately authored blind cohort is complete.",
+  "files": [
+    {"path":"development.jsonl","cohort":"development","sha256":"2967e3b8d5e7418e211ce8c04de76ea418a8ad53b3b38f244907c4f7256eaaa4","required":14},
+    {"path":"independent.jsonl","cohort":"independent","sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","required":2000},
+    {"path":"calibration.jsonl","cohort":"calibration","sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","required":600}
+  ],
+  "releaseGate": {
+    "minimumIndependentCases": 2000,
+    "minimumHighConfidenceCases": 600,
+    "minimumAnswerPrecision": 0.99,
+    "maximumHighConfidenceError": 0.007,
+    "broadAccuracyClaimPermitted": false
+  }
+}

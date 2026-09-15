@@ -4,6 +4,12 @@ type Inventory=Extract<Plan,{kind:'inventory'}>;
 const name=(s:string)=>s.trim().toLowerCase();
 /** Strict state-transition grammar. Unknown text cannot be silently skipped. */
 export function parseInventory(input:string):Inventory|undefined{
+  const combined=input.trim().replace(/[?!.]+$/,'').match(/^([a-z ]+?) has (.+?) ([a-z-]+) and ([a-z ]+?) has (.+?)(?: \3)?;?\s*how many (?:\3 )?do they have together$/i);
+  if(combined){
+    const first=numberWords(combined[2]),second=numberWords(combined[5]);if(first===undefined||second===undefined)return;
+    const owners=[name(combined[1]),name(combined[4])],item=name(combined[3]);
+    return {kind:'inventory',steps:[{op:'set',owner:owners[0],item,value:first},{op:'set',owner:owners[1],item,value:second}],owner:'combined',owners,item};
+  }
   const statements=input.trim().replace(/[?!.]+$/,'').split(/[.;]\s*/);
   if(statements.length<2)return;
   const last=statements.pop()!,q=last.match(/^how many ([a-z -]+?) (?:does|do) ([a-z ]+?) have(?: (?:left|now))?$/i);
@@ -41,6 +47,6 @@ export function solveInventory(plan:Inventory):{value?:number;proof:Proof[];miss
     }
     proof.push({id:'inventory:'+i,rule:'request-local-'+step.op,premises:i?['inventory:'+(i-1)]:[],bindings:{after:{kind:'number',value:after}},constraints:[step.owner,step.item,'user-provided assumption; not persistent world knowledge']});
   }
-  const value=amounts.get(key(plan.owner,plan.item));
+  const value=plan.owners?.length?plan.owners.reduce<number|undefined>((sum,owner)=>{const amount=amounts.get(key(owner,plan.item));return sum===undefined||amount===undefined?undefined:sum+amount;},0):amounts.get(key(plan.owner,plan.item));
   return {value,proof,missing:value===undefined?'Starting amount for '+plan.owner+' ('+plan.item+')':undefined};
 }

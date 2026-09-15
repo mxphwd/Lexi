@@ -1,0 +1,578 @@
+{
+  "version": "DV14",
+  "build": "260915-DV14",
+  "releaseStatus": "development",
+  "population": "Disclosed DV14 structural diagnostics. Public-use answer accuracy remains unknown until a separately authored blind cohort is complete.",
+  "warning": "Development regressions are not an availability or accuracy estimate.",
+  "development": {
+    "samples": 14,
+    "answerable": 9,
+    "correctAnswers": 9,
+    "answerPossibility": 1,
+    "outcomes": {
+      "correct-answer": 9,
+      "correct-abstention": 5,
+      "incorrect-answer": 0,
+      "unsupported-abstention": 0,
+      "clarification": 0,
+      "partial-answer": 0,
+      "evaluator-error": 0
+    },
+    "precision": {
+      "denominator": 9,
+      "value": 1,
+      "unresolved": 0,
+      "lowerBound": 1,
+      "upperBound": 1
+    },
+    "highConfidenceError": {
+      "threshold": 0.8,
+      "samples": 0,
+      "errors": 0,
+      "rate": null
+    },
+    "latency": {
+      "p50": 3.9034580000000005,
+      "p95": 903.3255419999998,
+      "p99": 903.3255419999998
+    }
+  },
+  "stageMetrics": {
+    "samples": 14,
+    "fullParse": 0.8571428571428571,
+    "typedPlan": 0.7857142857142857,
+    "entityBound": 1,
+    "retrievalComplete": 0.4,
+    "executionSucceeded": 0.6428571428571429,
+    "realizationVerified": 1,
+    "failures": {
+      "none": 7,
+      "execution": 2,
+      "planning": 3,
+      "parsing": 2
+    }
+  },
+  "independent": {
+    "samples": 0,
+    "measured": false
+  },
+  "calibration": {
+    "samples": 0,
+    "fitted": false
+  },
+  "gate": {
+    "minimumIndependentCases": 2000,
+    "availableIndependentCases": 0,
+    "minimumCalibrationCases": 600,
+    "availableCalibrationCases": 0,
+    "developmentRegressions": [],
+    "broadAccuracyClaimPermitted": false,
+    "passed": false
+  },
+  "rows": [
+    {
+      "id": "dv14-structural-0001",
+      "category": "paraphrase",
+      "prompt": "Could you tell me the French capital?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-paris"
+          }
+        ],
+        "relation": "capital",
+        "subject": "country-france"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 35.569582999999994,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "France has the capital Paris."
+    },
+    {
+      "id": "dv14-structural-0002",
+      "category": "inverse-relation",
+      "prompt": "Paris is the capital of which country?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "country-france"
+          }
+        ],
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 2.850332999999978,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "France."
+    },
+    {
+      "id": "dv14-structural-0003",
+      "category": "passive-voice",
+      "prompt": "Who was the telephone invented by?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "person-alexander-bell"
+          }
+        ],
+        "relation": "inventor",
+        "subject": "technology-telephone"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 2.475625000000008,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "Telephone was invented by Alexander Graham Bell."
+    },
+    {
+      "id": "dv14-structural-0004",
+      "category": "inverse-relation",
+      "prompt": "What did Alexander Graham Bell invent?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "technology-telephone"
+          }
+        ],
+        "relation": "inventor"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 2.655208999999985,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "telephone."
+    },
+    {
+      "id": "dv14-structural-0005",
+      "category": "coordination",
+      "prompt": "What are the capitals of France, Germany, and Italy?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "entity",
+            "id": "city-paris"
+          },
+          {
+            "kind": "entity",
+            "id": "city-berlin"
+          },
+          {
+            "kind": "entity",
+            "id": "city-rome"
+          }
+        ],
+        "ordered": true,
+        "relation": "capital"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 3.9034580000000005,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "Paris, Berlin, and Rome."
+    },
+    {
+      "id": "dv14-structural-0006",
+      "category": "negation",
+      "prompt": "Is Paris not the capital of France?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "boolean",
+            "value": false
+          }
+        ],
+        "relation": "capital",
+        "subject": "country-france"
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 2.420792000000006,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "contradicted",
+        "failureStage": "none"
+      },
+      "output": "No. France has the capital Paris."
+    },
+    {
+      "id": "dv14-structural-0007",
+      "category": "quantifier",
+      "prompt": "Are exactly twenty one animals mammals?",
+      "answerable": false,
+      "expected": {},
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 318.45033400000005,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": true,
+        "executionSucceeded": false,
+        "realizationVerified": true,
+        "status": "unknown",
+        "failureStage": "execution",
+        "failureCode": "OPEN_UNIVERSE"
+      },
+      "output": "I do not have a complete enough universe of evidence to establish that claim."
+    },
+    {
+      "id": "dv14-structural-0008",
+      "category": "comparison",
+      "prompt": "Compare Earth and Mars",
+      "answerable": false,
+      "expected": {},
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 584.1350419999999,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": false,
+        "entityBound": true,
+        "retrievalComplete": false,
+        "executionSucceeded": false,
+        "realizationVerified": true,
+        "status": "unknown",
+        "failureStage": "planning"
+      },
+      "output": "Which measurable property should I compare?"
+    },
+    {
+      "id": "dv14-structural-0009",
+      "category": "comparison",
+      "prompt": "What percentage larger is Earth than Mars in diameter?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 87.9630741997
+          }
+        ],
+        "tolerance": 0.000001
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 6.683790999999928,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "none"
+      },
+      "output": "The percentage difference in recorded diameter is 87.9630741997."
+    },
+    {
+      "id": "dv14-structural-0010",
+      "category": "arithmetic",
+      "prompt": "What is 15% more than 80?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 92
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 1.7452500000001692,
+      "confidence": null,
+      "stages": {
+        "fullParse": false,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "parsing"
+      },
+      "output": "92."
+    },
+    {
+      "id": "dv14-structural-0011",
+      "category": "word-problem",
+      "prompt": "Alice has five apples and Bob has three apples; how many apples do they have together?",
+      "answerable": true,
+      "expected": {
+        "values": [
+          {
+            "kind": "number",
+            "value": 8
+          }
+        ]
+      },
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-answer",
+        "reason": "Bound answer roles and typed values match.",
+        "adjudication": false
+      },
+      "milliseconds": 0.90037499999994,
+      "confidence": null,
+      "stages": {
+        "fullParse": false,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": null,
+        "executionSucceeded": true,
+        "realizationVerified": true,
+        "status": "supported",
+        "failureStage": "parsing"
+      },
+      "output": "Together, Alice and Bob have 8 apples."
+    },
+    {
+      "id": "dv14-structural-0012",
+      "category": "freshness",
+      "prompt": "What is the current population of France?",
+      "answerable": false,
+      "expected": {},
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 903.3255419999998,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": false,
+        "entityBound": true,
+        "retrievalComplete": false,
+        "executionSucceeded": false,
+        "realizationVerified": true,
+        "status": "unknown",
+        "failureStage": "planning"
+      },
+      "output": "I cannot establish a current answer without time-valid evidence for this request."
+    },
+    {
+      "id": "dv14-structural-0013",
+      "category": "out-of-scope",
+      "prompt": "Write a poem about Paris",
+      "answerable": false,
+      "expected": {},
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 625.2642919999998,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": false,
+        "entityBound": true,
+        "retrievalComplete": false,
+        "executionSucceeded": false,
+        "realizationVerified": true,
+        "status": "unknown",
+        "failureStage": "planning"
+      },
+      "output": "That request is outside Lexi's deterministic creative writing capability contract."
+    },
+    {
+      "id": "dv14-structural-0014",
+      "category": "nested-join",
+      "prompt": "What is the capital of the country where Einstein was born?",
+      "answerable": false,
+      "expected": {},
+      "provenance": {
+        "kind": "audit-regression",
+        "author": "DV14 structural audit",
+        "capturedAt": "2026-09-15"
+      },
+      "grade": {
+        "outcome": "correct-abstention",
+        "reason": "Knowledge or operation unavailable.",
+        "adjudication": false
+      },
+      "milliseconds": 69.28370799999993,
+      "confidence": null,
+      "stages": {
+        "fullParse": true,
+        "typedPlan": true,
+        "entityBound": true,
+        "retrievalComplete": true,
+        "executionSucceeded": false,
+        "realizationVerified": true,
+        "status": "unknown",
+        "failureStage": "execution",
+        "failureCode": "NO_COMPATIBLE_EVIDENCE"
+      },
+      "output": "I found no compatible fact for the requested subject, relation, object, scope, and time."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 ## Result
 
 The release-notes curve is an audited engineering-capability index, not an
-answer-accuracy percentage. The current DV13 score is **79/100**. A score of
+answer-accuracy percentage. The current DV14 score is **84/100**. A score of
 100 is reserved for a mature release with independently measured ordinary-
 question coverage, calibrated confidence, broad compositional reasoning, and
 production-ready execution. Lexi has not reached that evidence standard.
@@ -18,8 +18,8 @@ facts, or generated questions can support a dimension but cannot stand in for
 answer accuracy. Generated regression suites establish bounded regressions
 only. Development diagnostics are not treated as independent tests.
 
-The public graph presents the full thirteen-version sequence from Initial build
-through DV13. Each point keeps the maturity score and evidence of its exact
+The public graph presents the full fourteen-version sequence from Initial build
+through DV14. Each point keeps the maturity score and evidence of its exact
 technical build; no intermediate development version is folded into another.
 
 | Release | Score | Change | Language /25 | Knowledge /20 | Reasoning /20 | Dialogue /10 | Evidence /15 | Runtime /10 | Strongest available evidence |
@@ -37,6 +37,7 @@ technical build; no intermediate development version is folded into another.
 | DV11 +1 | 68 | +8 | 17 | 17 | 14 | 7 | 6 | 7 | runtime/package validation and source-attested inventory |
 | DV12 | 76 | +8 | 19 | 17 | 17 | 8 | 8 | 7 | 47/62 authored development diagnostic answers |
 | DV13 | 79 | +3 | 21 | 17 | 17 | 8 | 9 | 7 | 71/86 authored development diagnostic answers |
+| DV14 | 84 | +5 | 23 | 17 | 19 | 9 | 9 | 7 | 14 disclosed structural cases plus integrity tests; no independent cases |
 
 ## Evidence audit
 
@@ -64,6 +65,10 @@ technical build; no intermediate development version is folded into another.
   paraphrase cases. The populations differ, both remain development-owned, and
   both contain zero independent evaluation rows, so they support maturity
   scoring rather than public accuracy claims.
+- DV14 introduces a compositional semantic IR, canonical identities, three
+  composite index families, adaptive retrieval coverage, four-valued conflict
+  handling, and sentence-level claim metadata. Its 14 new cases are disclosed
+  development regressions; its independent and calibration cohorts are empty.
 
 ## Sources inspected
 

@@ -244,6 +244,16 @@ const HISTORICAL_BUILD_RECORDS = [
       "A DV13 maintenance pass removed unreachable historical responders and unreferenced assets; independent accuracy, confidence calibration, and release-candidate readiness remain unverified."
     ],
     measurements:[{label:"Development diagnostic",value:"71 / 86"},{label:"Answerable success",value:"82.6%"},{label:"Independent evaluation rows",value:"0"},{label:"RC gate",value:"Blocked"}]
+  },
+  {
+    build:"260915-DV14",label:"Pre-build 260915-DV14",shortLabel:"DV14",date:"15 September 2026",
+    capabilityIndex:84,evidenceBasis:"Structural regression suite and runtime integrity checks · not independent",metric:"14 disclosed structural cases",
+    focus:["Compositional semantics","Adaptive retrieval","Verified claims"],
+    notes:[
+      "Introduced span-preserving semantic plans for role changes, coordination, negation, quantifiers, comparisons, time, and bounded joins.",
+      "Added canonical identities, composite shard indexes, adaptive retrieval budgets, four-valued conflicts, answer-clause verification, and stricter runtime boundaries. Public-use accuracy remains unknown."
+    ],
+    measurements:[{label:"Structural development cases",value:"14"},{label:"Composite index families",value:"3"},{label:"Independent evaluation rows",value:"0"},{label:"Calibration profiles",value:"0"},{label:"RC gate",value:"Blocked"}]
   }
 
 ] as const;
@@ -251,7 +261,7 @@ const HISTORICAL_BUILD_RECORDS = [
 /**
  * Every development version is a first-class graph point again. The exact
  * dated build identifier remains available for technical diagnostics, while
- * the public sequence runs from Initial build through DV13.
+ * the public sequence runs from Initial build through DV14.
  */
 export const LEXI_RELEASES: readonly LexiRelease[] = HISTORICAL_BUILD_RECORDS.map(
   (release) => ({

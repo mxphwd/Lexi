@@ -86,7 +86,7 @@ export type LexiTrace = {
   clauseIntents?: string[];
   subjectIds?: string[];
   proof?: string[];
-  runtimeVersion?: "DV11" | "DV12" | "DV13";
+  runtimeVersion?: "DV11" | "DV12" | "DV13" | "DV14";
   evidenceSteps?: Array<{id:string;description:string;premises:string[];details:string[]}>;
   confidenceAvailable?: boolean;
   plans?: unknown[];
@@ -97,6 +97,7 @@ export type LexiTrace = {
     | "unknown"
     | "insufficient"
     | "ambiguous"
+    | "conflict"
     | "partial"
     | "canceled"
     | "error";

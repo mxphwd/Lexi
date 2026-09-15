@@ -1,0 +1,29 @@
+{
+  "version": "DV14",
+  "policy": "The compositional parser owns new language behavior. Exact and regex constructions are compatibility candidates only and may not bypass typed planning, validation, execution, or evidence checks.",
+  "components": [
+    {
+      "component": "modules/dv12/semantic-parser.ts",
+      "status": "primary",
+      "purpose": "Span-preserving semantic interpretation and typed-plan compilation"
+    },
+    {
+      "component": "modules/dv12/parser.ts legacy alternatives",
+      "status": "compatibility",
+      "purpose": "Preserve deterministic DV7-DV13 behavior while coverage migrates",
+      "removalCriteria": "Remove each construction only after an equivalent compositional parse has deterministic regression coverage and no DV7-DV14 regression."
+    },
+    {
+      "component": "modules/dv13/language.ts",
+      "status": "shared-lexical-support",
+      "purpose": "Answer-noun compatibility used by the compositional parser",
+      "removalCriteria": "Move into a typed lexicon after relation-domain coverage and sense tests replace its phrase inventory."
+    }
+  ],
+  "forbidden": [
+    "A second executor pipeline",
+    "A regex route that directly realizes factual text",
+    "A compatibility fallback after a complete, typed, subject-compatible plan",
+    "Treating generated construction totals as measured answer capability"
+  ]
+}

@@ -187,7 +187,8 @@ test('DV12 dated queries reject undated changing claims and preserve intervals',
 test('DV12 sums repeated measurements on distinct subjects and retains units',()=>{
   const store=new Store(),source:Fact['source']={id:'test',location:'test:sum',method:'fixture',review:'seed',license:'test'};
   for(const id of ['a','b']){store.addEntity({id,name:id,aliases:[],type:'object'});store.addFact({id:'mass:'+id,subject:id,relation:'mass',object:{kind:'number',value:3,unit:'kg'},source});}
-  const q:Select={kind:'query',atoms:[{subject:variable('subject'),relation:'mass',object:variable('answer')}],filters:[],shape:'value',answer:'answer',aggregate:{op:'sum',variable:'answer'},universeComplete:true};
+  store.addCompletenessCertificate({id:'test:mass-complete',dataset:'fixture',predicate:'mass',restriction:'fixture subjects',snapshot:'2026-09-04',sourceBoundary:'this test store',source:{...source,review:'reviewed'}});
+  const q:Select={kind:'query',atoms:[{subject:variable('subject'),relation:'mass',object:variable('answer')}],filters:[],shape:'value',answer:'answer',aggregate:{op:'sum',variable:'answer'},universeComplete:true,completenessCertificate:'test:mass-complete'};
   assert.deepEqual(execute(q,store,emptyState()).values,[{kind:'number',value:6,unit:'kg'}]);
 });
 test('DV12 evaluation rejects denials, alternatives, incidental mention and wrong units',()=>{

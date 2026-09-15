@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "runtime": "DV14",
+  "sourceSnapshot": "2026-09-15",
+  "mappings": [
+    {"externalId":"wd:Q30","canonicalId":"country-united-states","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q145","canonicalId":"country-united-kingdom","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q142","canonicalId":"country-france","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q183","canonicalId":"country-germany","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q38","canonicalId":"country-italy","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q90","canonicalId":"city-paris","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q64","canonicalId":"city-berlin","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q220","canonicalId":"city-rome","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q937","canonicalId":"person-albert-einstein","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q34286","canonicalId":"person-alexander-bell","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q11012","canonicalId":"technology-telephone","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q2","canonicalId":"space-earth","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1},
+    {"externalId":"wd:Q111","canonicalId":"space-mars","criterion":"reviewed Wikidata identity","reviewer":"Alphaine DV14 migration","confidence":1}
+  ]
+}

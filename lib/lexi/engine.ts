@@ -1,4 +1,4 @@
-/** Authoritative DV13 API, using the compatible DV12 execution contract. */
+/** Authoritative DV14 API, retaining the compatible version-12 wire contract. */
 import { Session } from '../../modules/dv12/runtime';
 import type { Options } from '../../modules/dv12/types';
 import type { ResourceLoader } from '../../modules/dv12/runtime';

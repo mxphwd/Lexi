@@ -1,6 +1,6 @@
 import { Store } from './store';
-import type { Entity, Fact, Relation, Rule, LanguageFrame, DialogueFrame } from './types';
-export type Package={manifest:{id:string;version:string;runtime:{major:12;schema:1};dependencies:Array<{id:string;range:string}>};entities:Entity[];relations:Relation[];facts:Fact[];rules:Rule[];language:LanguageFrame[];dialogue:DialogueFrame[]};
+import type { CompletenessCertificate, DialogueFrame, Entity, EventRecord, Fact, LanguageFrame, ProcedureRecord, Relation, Rule } from './types';
+export type Package={manifest:{id:string;version:string;runtime:{major:12;schema:1};dependencies:Array<{id:string;range:string}>};entities:Entity[];relations:Relation[];facts:Fact[];rules:Rule[];language:LanguageFrame[];dialogue:DialogueFrame[];events?:EventRecord[];procedures?:ProcedureRecord[];completeness?:CompletenessCertificate[]};
 export type Descriptor={id:string;version:string;sha256:string;decodedBytes:number;load(signal?:AbortSignal):Promise<Uint8Array>};
 function version(v:string){if(!/^\d+\.\d+\.\d+$/.test(v))throw new Error('INVALID_VERSION');return v.split('.').map(Number);}
 export function satisfies(actual:string,range:string){
@@ -28,6 +28,7 @@ export class PackageRegistry{
       const pack=JSON.parse(new TextDecoder().decode(bytes)) as Package;
       if(pack.manifest?.runtime?.major!==12||pack.manifest.runtime.schema!==1||pack.manifest.id!==id||pack.manifest.version!==d.version)throw new Error('PACKAGE_COMPATIBILITY');
       for(const key of ['entities','relations','facts','rules','language','dialogue'] as const)if(!Array.isArray(pack[key]))throw new Error('PACKAGE_SCHEMA');
+      if(pack.events!==undefined&&!Array.isArray(pack.events)||pack.procedures!==undefined&&!Array.isArray(pack.procedures)||pack.completeness!==undefined&&!Array.isArray(pack.completeness))throw new Error('PACKAGE_SCHEMA');
       if(!Array.isArray(pack.manifest.dependencies))throw new Error('PACKAGE_DEPENDENCIES');
       for(const dependency of pack.manifest.dependencies)await visit(dependency.id,dependency.range);
       visiting.delete(id);done.add(id);packs.push(pack);
@@ -35,7 +36,7 @@ export class PackageRegistry{
     for(const id of ids)await visit(id);
     const staged=new Store(this.base);
     for(const pack of packs){pack.relations.forEach(r=>staged.addSchema(r));pack.entities.forEach(e=>staged.addEntity(e));}
-    for(const pack of packs){pack.facts.forEach(f=>staged.addFact(f));pack.rules.forEach(r=>staged.addRule(r));pack.language.forEach(f=>staged.addLanguageFrame(f));pack.dialogue.forEach(f=>staged.addDialogueFrame(f));}
+    for(const pack of packs){pack.facts.forEach(f=>staged.addFact(f));pack.rules.forEach(r=>staged.addRule(r));pack.language.forEach(f=>staged.addLanguageFrame(f));pack.dialogue.forEach(f=>staged.addDialogueFrame(f));pack.events?.forEach(event=>staged.addEvent(event));pack.procedures?.forEach(procedure=>staged.addProcedure(procedure));pack.completeness?.forEach(certificate=>staged.addCompletenessCertificate(certificate));}
     signal?.throwIfAborted();return staged;
   }
 }

@@ -14,7 +14,12 @@ export function numberWords(text: string): number | undefined {
   return seen ? sum + group : undefined;
 }
 export function expressionText(input: string) {
-  return input.toLowerCase().replace(/[?!.]+$/, '').replace(/^(?:please\s+)?(?:calculate|compute|evaluate|what is|what's)\s+/, '')
+  const prepared=input.toLowerCase().replace(/[?!.]+$/, '').replace(/^(?:please\s+)?(?:calculate|compute|evaluate|what is|what's)\s+/, '')
+    .replace(/^([+-]?\d+(?:\.\d+)?)\s*(?:percent|%)\s+more than\s+([+-]?\d+(?:\.\d+)?)$/, '($2 * (1 + $1 / 100))')
+    .replace(/^([+-]?\d+(?:\.\d+)?)\s*(?:percent|%)\s+less than\s+([+-]?\d+(?:\.\d+)?)$/, '($2 * (1 - $1 / 100))')
+    .replace(/^([+-]?\d+(?:\.\d+)?)\s+increased by\s+([+-]?\d+(?:\.\d+)?)\s*(?:percent|%)$/, '($1 * (1 + $2 / 100))')
+    .replace(/^([+-]?\d+(?:\.\d+)?)\s+decreased by\s+([+-]?\d+(?:\.\d+)?)\s*(?:percent|%)$/, '($1 * (1 - $2 / 100))');
+  return prepared
     .replace(/\b(\d{1,3}(?:,\d{3})+(?:\.\d+)?)\b/g, x => x.replaceAll(',', ''))
     .replace(/\bhalf of\b/g, '0.5 *').replace(/\b(?:a |one )?quarter of\b/g, '0.25 *')
     .replace(/\b(\d+(?:\.\d+)?)\s*(?:percent|%)\s+of\s+/g, '($1 / 100) * ')
@@ -68,6 +73,9 @@ unit(['kg','kilogram','kilograms'], 'mass', 1); unit(['g','gram','grams'], 'mass
 unit(['l','liter','liters','litre','litres'], 'volume', 1); unit(['ml','milliliter','milliliters'], 'volume', .001);
 unit(['kelvin','kelvins','k'], 'temperature', 1); unit(['celsius','degrees celsius','°c'], 'temperature', 1, 273.15); unit(['fahrenheit','degrees fahrenheit','°f'], 'temperature', 5/9, 255.3722222222222);
 unit(['m/s','meters per second'], 'speed', 1); unit(['km/h','kilometers per hour','kph'], 'speed', 1/3.6); unit(['mph','miles per hour'], 'speed', .44704);
+unit(['m2','m²','square meter','square meters'], 'area', 1); unit(['km2','km²','square kilometer','square kilometers'], 'area', 1e6);
+unit(['m3','m³','cubic meter','cubic meters'], 'volume-cubic', 1); unit(['cm3','cm³','cubic centimeter','cubic centimeters'], 'volume-cubic', 1e-6);
+unit(['kg/m3','kg/m³','kilograms per cubic meter'], 'density', 1); unit(['g/cm3','g/cm³','grams per cubic centimeter'], 'density', 1000);
 export function canonical(value: number, name?: string) {
   if (!name) return { value, dimension: 'scalar' };
   const u = units.get(name.toLowerCase());

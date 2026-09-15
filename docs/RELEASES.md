@@ -1,12 +1,12 @@
-# Current development version: DV13
+# Current development version: DV14
 
-Technical build **260908-DV13**, maintained through 10 September 2026. Expanded question wording and proof follow-ups, inspectable trace evidence, explicit feedback/evaluation review, and a deep removal of superseded runtime layers and unreferenced assets. The cleanup remains part of DV13 rather than creating a new development version. This is not an RC; independent accuracy and confidence remain unverified. See [current-build details](dv13/README.md).
+Technical build **260915-DV14**, dated 15 September 2026. Added compositional semantic plans, canonical identities, composite/adaptive retrieval, four-valued conflicts, verified answer clauses, richer discourse state, and strict runtime validation. This is not an RC; independent accuracy and calibrated confidence remain unavailable. See [current-build details](dv14/README.md).
 
 # Lexi release-history rule
 
 The interactive release graph records every Lexi development version. It was
 introduced in build 260730-DV5. The public sequence runs from Initial build
-through DV13, while each point retains its exact dated technical build.
+through DV14, while each point retains its exact dated technical build.
 
 ## Required action for every future version
 

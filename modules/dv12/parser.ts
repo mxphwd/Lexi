@@ -6,6 +6,7 @@ import { temporalSuffix } from './temporal';
 import { compiledGrammar } from './grammar-plugins';
 import { inertTerminalPunctuation } from './punctuation-fast-path';
 import { periodTerminatesClause } from './sentence-boundaries';
+import { compositionalAlternatives, expandSemanticClauses, semanticAnalysis } from './semantic-parser';
 import { normalize, type Store } from './store';
 import { entity, variable, type Alternative, type Clause, type Plan, type Request, type Select, type State, type Term } from './types';
 
@@ -39,7 +40,10 @@ export function mention(text: string, role: 'subject'|'object', store: Store, st
   let id: string|undefined;
   if (['latter','second one'].includes(n)) id=state.topics[1];
   else if (['former','first one'].includes(n)) id=state.topics[0];
-  else if (['it','its','that','this','he','she','him','her'].includes(n)) id=state.topics.length===1 ? state.topics[0] : undefined;
+  else if (['it','its','that','this','he','she','him','her'].includes(n)) {
+    const ranked=[...state.discourse.mentions].sort((a,b)=>b.focus-a.focus||b.turn-a.turn);
+    id=ranked[0]?.entityId??(state.topics.length===1 ? state.topics[0] : undefined);
+  }
   else if (n==='there') id=state.answerEntities.length===1 ? state.answerEntities[0] : undefined;
   if (id) return entity(id);
   const domain=clean.match(/^(.+?) in (?:the )?(?:field of )?(finance|geography|computing|biology|chemistry|astronomy)$/i);
@@ -85,6 +89,7 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
   const add=(plan:Plan,grammar:string,score=1)=>results.push({plan,grammar,score});
   const subj=(t:string)=>mention(t,'subject',store,state), obj=(t:string)=>mention(t,'object',store,state);
   let m:RegExpMatchArray|null;
+  results.push(...compositionalAlternatives(s,store,state,mention));
   results.push(...compiledGrammar(s,store,subj));
   if(s!==text.replace(/[?!.]+$/,'').trim())results.push(...compiledGrammar(text.replace(/[?!.]+$/,'').trim(),store,subj));
   const logic=parseLogic(s);if(logic)add(logic,'scoped-assumptions');
@@ -114,6 +119,9 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
   if((m=s.match(/^i meant (.+)$/i)) && state.previous?.results.length===1) {
     const p=state.previous.results[0].selectedPlan;
     if(p.kind==='memory' && p.field && ['set','add'].includes(p.action))add({kind:'memory',action:'set',field:p.field,value:m[1]},'targeted-correction');
+    if(p.kind==='query'&&p.atoms.length===1&&p.atoms[0].subject.kind==='entity'&&!p.filters.length&&!p.quantifier&&!p.aggregate){
+      const replacement=subj(m[1]);if(replacement.kind==='entity'){const corrected=structuredClone(p);corrected.atoms[0].subject=replacement;add(corrected,'targeted-subject-correction',1);}
+    }
   }
   const follow:Record<string,'proof'|'repeat'|'shorter'|'simpler'|'more'>={'why':'proof','why is that':'proof','explain that':'proof','what is your source':'proof','where did that come from':'proof','how do you know':'proof','why do you say that':'proof','show your proof':'proof','repeat':'repeat','say that again':'repeat','shorter':'shorter','simpler':'simpler','more':'more','continue':'more'};
   if(follow[n])add({kind:'followup',action:follow[n]},'dialogue');
@@ -200,9 +208,7 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
     q.order={variable:'measure',direction:normalize(m[2])==='smallest'?1:-1};
     q.offset=({first:0,second:1,third:2,fourth:3,fifth:4} as Record<string,number>)[m[1]??'first'];q.limit=1;add(q,'ordinal');
   }
-  if((m=s.match(/^(?:how much (?:larger|bigger|smaller)|how many times (?:larger|bigger)|what is the size difference between) (?:is )?(.+?) (?:than|and) (.+)$/i)))add({kind:'compare',subjects:[subj(m[1]),subj(m[2])],relation:'diameter',mode:/how many times/i.test(s)?'ratio':'difference'},'comparison');
-  if((m=s.match(/^(?:which is (?:bigger|larger|smaller)|compare) (.+?) (?:and|or|with) (.+)$/i)))add({kind:'compare',subjects:[subj(m[1]),subj(m[2])],relation:'diameter',mode:'qualitative'},'comparison');
-  if(/^which (?:one )?is (?:bigger|larger|smaller)$/.test(n)&&state.topics.length===2)add({kind:'compare',subjects:state.topics.map(entity),relation:'diameter',mode:'qualitative'},'comparison-reference');
+  if((m=s.match(/^(?:how much (?:larger|bigger|smaller)|how many times (?:larger|bigger)|what is the size difference between) (?:is )?(.+?) (?:than|and) (.+?) (?:in|by) (diameter|mass|weight)$/i))){const relation=property(m[3],store);if(relation)add({kind:'compare',subjects:[subj(m[1]),subj(m[2])],relation,mode:/how many times/i.test(s)?'ratio':'difference'},'explicit-comparison');}
   if((m=s.match(/^(?:what about|how about|and) (.+)$/i))&&state.previous){
     const target=subj(m[1]);
     const candidates=state.previous.results.map(r=>r.selectedPlan).filter((p):p is Select=>p.kind==='query');
@@ -251,7 +257,7 @@ export function parseClause(text:string,start:number,id:string,store:Store,state
       const target=a.plan.atoms.at(-1)!;target.from=time.from;target.to=time.to;
     }else a.plan={kind:'unknown',reason:'Temporal scope is not supported for this operation.'};
   }
-  return {id,text,start,end:start+text.length,alternatives,style};
+  return {id,text,start,end:start+text.length,alternatives,semantic:semanticAnalysis(content,store),style};
 }
 export function parse(input:string,store:Store,state:State):Request {
   if(!input.trim())throw new Error('INVALID_EMPTY_REQUEST');
@@ -259,8 +265,14 @@ export function parse(input:string,store:Store,state:State):Request {
   const inventory=parseInventory(input);
   if(inventory)return {version:12,original:input,clauses:[{id:'clause:1',text:input,start:0,end:input.length,style:{excludedWords:[]},alternatives:[{plan:inventory,grammar:'inventory-transitions',score:1}]}]};
   const normalizedQuotes=input.replace(/[‘’]/g,"'").replace(/[“”]/g,'"');
+  const whole=semanticAnalysis(normalizedQuotes,store);
+  if(whole.intent?.kind==='lookup'&&whole.intent.relations.length>1){
+    const expanded=expandSemanticClauses(normalizedQuotes,store);
+    return {version:12,original:input,clauses:expanded.map((text,i)=>parseClause(text,0,'clause:'+(i+1),store,state))};
+  }
   const fast=inertTerminalPunctuation(normalizedQuotes);
   if(fast)return {version:12,original:input,fastPath:fast.kind,clauses:[parseClause(fast.text,fast.start,'clause:1',store,state)]};
   const spans=segment(normalizedQuotes);
-  return {version:12,original:input,clauses:spans.map((span,i)=>parseClause(span.text,span.start,'clause:'+(i+1),store,state))};
+  const expanded=spans.flatMap((source)=>expandSemanticClauses(source.text,store).map((text)=>({text,start:source.start})));
+  return {version:12,original:input,clauses:expanded.map((span,i)=>parseClause(span.text,span.start,'clause:'+(i+1),store,state))};
 }

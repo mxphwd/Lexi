@@ -2,6 +2,7 @@ import { Session } from '../modules/dv12/runtime';
 import { emptyState, type State } from '../modules/dv12/types';
 import { resourceLoader } from './dv12-resources';
 import { readBounded, type AssetFetcher } from './dv12-assets';
+import { validateHttpRequest, validateHttpResponse } from '../modules/dv12/runtime-validation';
 
 export type ClientState=Pick<State,'revision'|'nextTurn'|'memories'|'topics'|'answerEntities'> & {previousInput?:string;previousSenseId?:string};
 let active=0;
@@ -24,8 +25,7 @@ export async function handleDv12(request:Request,assets:AssetFetcher):Promise<Re
   active++;
   try{
     const signal=AbortSignal.any([request.signal,AbortSignal.timeout(20000)]);
-    const body=JSON.parse(new TextDecoder().decode(await readBounded(request.body,65536,signal))) as {version?:number;input?:unknown;state?:unknown};
-    if(body.version!==12||typeof body.input!=='string'||!body.input.trim()||body.input.length>12000)throw new Error('INVALID_REQUEST');
+    const body=validateHttpRequest(JSON.parse(new TextDecoder().decode(await readBounded(request.body,65536,signal))));
     const state=stateFromClient(body.state),loader=resourceLoader(assets,request.url);
     const previous=(body.state as Partial<ClientState>|undefined)?.previousInput;
     if(previous!==undefined){
@@ -58,7 +58,8 @@ export async function handleDv12(request:Request,assets:AssetFetcher):Promise<Re
       if(subject)replayInput='What is the '+plan.atoms[0].relation.replaceAll('_',' ')+' of '+subject.name;
     }
     const clientState:ClientState={revision:next.revision,nextTurn:next.nextTurn,memories:next.memories,topics:next.topics,answerEntities:next.answerEntities,previousInput:cleared?undefined:replayInput,previousSenseId:plan?.kind==='lexical'?plan.senseId:plan?.kind==='followup'?(body.state as ClientState|undefined)?.previousSenseId:undefined};
-    return Response.json({version:12,reply:prepared.reply,state:clientState,coverage:prepared.execution.coverage},{headers:{'cache-control':'no-store'}});
+    const payload=validateHttpResponse({version:12,reply:prepared.reply,state:clientState,coverage:prepared.execution.coverage});
+    return Response.json(payload,{headers:{'cache-control':'no-store'}});
   }catch(error){
     const message=error instanceof Error?error.message:'EXECUTION_ERROR';
     const code=/^[A-Z0-9_:.-]+$/.test(message)?message:'EXECUTION_ERROR';

@@ -49,7 +49,7 @@ test("ships the current runtime assets without retired responder resources", asy
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
-  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260908-dv13");
+  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260915-dv14");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });

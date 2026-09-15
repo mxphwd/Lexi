@@ -1,6 +1,7 @@
 import { join, valueText } from './executor';
 import { type Store } from './store';
 import type { Clause, Fact, Result } from './types';
+import { buildVerifiedClaims } from './answer-document';
 
 const finish=(s:string)=>s ? s[0].toLocaleUpperCase('en-US')+s.slice(1).replace(/[.!?]+$/,'')+'.':'';
 function factSentence(f:Fact,store:Store):string {
@@ -19,7 +20,7 @@ function factSentence(f:Fact,store:Store):string {
   if(f.relation==='purpose'&&f.object.kind==='text'&&/^[a-z ]+ (?:helps?|supports?|allows?|provides?|is|are) /i.test(object))return finish(object);
   if(['author','inventor','creator','discoverer'].includes(f.relation)&&f.object.kind==='text'&&/\b(?:is|was|are|were)\b/.test(object))return finish(object);
   if(f.negative)return finish('The recorded evidence states that '+subject+' does not have '+f.relation.replaceAll('_',' ')+' '+object);
-  if(['cause','mechanism','effect','definition'].includes(f.relation)&&f.object.kind==='text'&&/[.!?]$/.test(object))return finish(object);
+  if(['cause','mechanism','effect','definition','purpose'].includes(f.relation)&&f.object.kind==='text')return finish('The recorded '+f.relation.replaceAll('_',' ')+' for '+subject+' is: '+object);
   if(frames[f.relation])return finish(subject+' '+frames[f.relation]+' '+object);
   return finish('The '+f.relation.replaceAll('_',' ')+' of '+subject+' is '+object);
 }
@@ -30,9 +31,13 @@ function qualifiedSentence(f:Fact,store:Store){
 export function realize(r:Result,clause:Clause,store:Store):Result {
   const p=r.selectedPlan;
   if(!r.text){
-    if(r.status==='ambiguous')r.text=r.code==='CONFLICTING_FACTS'?'The recorded sources disagree on that property.':'Which meaning of '+join(r.missing??['that term'])+' do you mean?'+(r.choices?' '+r.choices.map((c,i)=>(i+1)+'. '+c.label).join(' '):'');
+    if(r.status==='conflict')r.text='The recorded sources contain conflicting claims for that exact property and scope.';
+    else if(r.status==='ambiguous')r.text=r.code==='CONFLICTING_FACTS'?'The recorded sources disagree on that property.':'Which meaning of '+join(r.missing??['that term'])+' do you mean?'+(r.choices?' '+r.choices.map((c,i)=>(i+1)+'. '+c.label).join(' '):'');
     else if(['error','canceled'].includes(r.status))r.text=r.status==='canceled'?'Request canceled.':'I could not complete this request ('+(r.code??'execution error')+').';
-    else if(!r.values.length)r.text=r.code==='OPEN_UNIVERSE'?'I do not have a complete enough set of evidence to establish that claim.':r.missing?.length?'I could not identify '+join(r.missing)+' well enough to answer that request.':'I do not have evidence for the requested relation and constraints.';
+    else if(!r.values.length){
+      const messages:Record<string,string>={OPEN_UNIVERSE:'I do not have a complete enough universe of evidence to establish that claim.',NO_COMPATIBLE_EVIDENCE:'I found no compatible fact for the requested subject, relation, object, scope, and time.',RETRIEVAL_TRUNCATED:'I could not complete retrieval within the query budget.',INCOMPATIBLE_DIMENSIONS:'Those quantities use incompatible dimensions.',UNSUPPORTED_OPERATION:'That operation is outside Lexi’s deterministic capability contract.'};
+      r.text=messages[r.code??'']??(r.missing?.length?'I could not identify '+join(r.missing)+' well enough to answer that request.':'I do not have evidence for the requested relation and constraints.');
+    }
     else if(p.kind==='calculate'||p.kind==='convert')r.text=valueText(r.values[0],store)+'.';
     else if(p.kind==='compare'){
       const names=p.subjects.map(t=>t.kind==='entity'?store.entity(t.id)?.name??t.id:'the subject');
@@ -67,6 +72,11 @@ export function realize(r:Result,clause:Clause,store:Store):Result {
   if(clause.style.bullets&&!/^\d+\./.test(r.text))r.text=r.text.split(/(?<=[.!?])\s+/).map(s=>'- '+s).join('\n');
   const factual=p.kind==='query'||p.kind==='compare'||p.kind==='lexical';
   if(factual&&['supported','contradicted','insufficient'].includes(r.status)&&r.values.length&&!r.facts.length){r.status='unknown';r.code='UNPROVEN_REALIZATION';r.text='I could not attach evidence to that answer.';}
-  if(r.values.length||r.proof.length)r.claims=[{text:r.text,factIds:r.facts.map(f=>f.id),proofIds:r.proof.map(p=>p.id)}];
+  if(r.values.length||r.proof.length||r.facts.length){
+    r.claims=buildVerifiedClaims(r,store);
+    if(factual&&r.claims.some((claim)=>!claim.verified)){
+      r.status='insufficient';r.code='UNVERIFIED_REALIZED_CLAIM';r.text='I could not verify every clause of the drafted answer against its evidence.';r.values=[];r.claims=[];
+    }
+  }
   return r;
 }

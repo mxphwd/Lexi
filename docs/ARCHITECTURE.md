@@ -1,4 +1,4 @@
-# Lexi DV13 architecture
+# Lexi DV14 architecture
 
 Lexi is deterministic and source-bound. Supported English becomes a typed plan, which executes against explicit facts, dictionary senses or declared operations. Missing evidence produces clarification or abstention. A supported status means the engine found evidence under its rules; it does not certify the source as correct.
 
@@ -15,7 +15,7 @@ Centered composer surface
 
 ## Version boundary
 
-DV13 is the product/runtime release. It reuses and extends the execution foundation in `modules/dv12`, with request and evidence helpers in `modules/dv13`. The wire protocol, session schema and knowledge-package runtime contract remain version 12 for compatibility; they are not release labels. The response trace identifies DV13. Superseded DV7–DV11 responders have been removed from the active tree and remain recoverable through Git history. The DV12 folder is shared active code, not a frozen DV12 binary.
+DV14 is the current development build. It reuses and extends the execution foundation in `modules/dv12`, with request and evidence helpers in `modules/dv13`. The wire protocol remains version 12 for compatibility; it is not a release label. The response trace identifies DV14. Superseded DV7–DV11 responders remain recoverable through Git history.
 
 ## Wording and dialogue
 
@@ -25,7 +25,7 @@ A simple follow-up may replace one explicit subject. Multi-relation queries and 
 
 ## Evidence and resources
 
-The server loads one integrity-pinned DV12 catalog and only the compatible shards required by the request. The retired standalone resource endpoint and unreferenced legacy indexes are not shipped. Facts distinguish source records, review status and provenance. The DV12 execution budgets, immutable base store, disposable request overlays, open-world restrictions and package checks remain in force. DV13 adds human-readable descriptions of executed proof steps; it does not add new evidence by describing them.
+The server loads one integrity-pinned catalog and compatible shards through subject–predicate, predicate–object, entity-type, alias, subject, object, and predicate indexes. Discovery supplies symbols to reparsing but never authorizes an answer. Facts retain multiple source assertions. Immutable base data, disposable request overlays, open-world restrictions, adaptive hard budgets, cancellation, and package checks remain in force.
 
 ## Browser state and feedback
 
@@ -35,6 +35,6 @@ Feedback is a redacted, editable local download only. Export consent is not cons
 
 ## Evaluation boundary
 
-Evaluation tooling in `modules/evaluation` and `scripts` is excluded from runtime imports. Frozen DV12 diagnostics and DV13 authored paraphrases are development evidence. Reviewed failures used during development cannot count as held-out results. Exact normalized prompt/context overlaps are rejected across cohorts; human review must additionally check semantic duplicates and prior exposure.
+Evaluation tooling in `modules/evaluation` and `scripts` is excluded from runtime imports. DV12/DV13 diagnostics and DV14 structural cases are development evidence. Reviewed failures used during development cannot count as held-out results. The DV14 independent and calibration cohorts are intentionally empty, so confidence and public-use accuracy remain unknown.
 
 Unresolved text equivalence is exported for adjudication. Human decisions bind to a hash of the exact case, output, plan and values; changed answers need new review. RC readiness still requires independent coverage, held-out calibration and closure of inherited critical requirements. No generated test becomes independent human evidence.

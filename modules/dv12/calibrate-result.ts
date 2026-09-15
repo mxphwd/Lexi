@@ -1,9 +1,10 @@
 import rawProfiles from '../../data/dv12/calibration/profiles.json';
 import {calibratedProbability,type Profile} from './calibration';
 import type {Result} from './types';
+import {confidenceFeatures} from './confidence';
 const profiles=rawProfiles as Profile[];
 /** Exactly one relation/operation group, never repeated sequential re-binning. */
-export function calibrateResult(r:Result,parseScore:number){
+export function calibrateResult(r:Result,parseScore:number,candidateMargin=0){
   const group=r.selectedPlan.kind==='query'?'query:'+r.selectedPlan.atoms.map(a=>a.relation).join('+'):r.selectedPlan.kind;
   const matching=profiles.filter(p=>p.group===group);
   if(matching.length>1)throw new Error('OVERLAPPING_CALIBRATION_GROUPS');
@@ -11,6 +12,7 @@ export function calibrateResult(r:Result,parseScore:number){
   const complete=['supported','contradicted'].includes(r.status)?1:.4;
   const evidence=r.facts.some(f=>f.source.disputed)?0:sourceQuality;
   const score=Math.min(parseScore,evidence,complete);
+  r.confidenceFeatures=confidenceFeatures(r,parseScore,candidateMargin);
   const p=calibratedProbability(matching[0],group,score);
   r.confidence=p;r.confidenceKind=p===null?'unavailable':'held-out';
   if(p!==null&&p<.6&&['supported','contradicted'].includes(r.status)){

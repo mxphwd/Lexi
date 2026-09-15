@@ -3,7 +3,7 @@ import { relations } from './schema';
 import { canonical } from './numbers';
 import { installFoundations } from './foundations';
 import { validDate } from './temporal';
-import type { Atom, Entity, Fact, Relation, Value, Rule, LanguageFrame, DialogueFrame } from './types';
+import type { Atom, CompletenessCertificate, Entity, EventRecord, Fact, ProcedureRecord, Relation, Value, Rule, LanguageFrame, DialogueFrame } from './types';
 
 export const normalize = (s: string) => s.normalize('NFKC').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').toLocaleLowerCase('en-US').replace(/\s+/g, ' ').trim();
 export const valueKey = (v: Value): string => v.kind === 'list' ? `${v.ordered ? 'list' : 'set'}:${v.values.map(valueKey).join('|')}` : JSON.stringify(v);
@@ -35,8 +35,11 @@ export class Store {
   private rules=new Map<string,Rule>();
   private languageFrames=new Map<string,LanguageFrame>();
   private dialogueFrames=new Map<string,DialogueFrame>();
+  private events=new Map<string,EventRecord>();
+  private procedures=new Map<string,ProcedureRecord>();
+  private certificates=new Map<string,CompletenessCertificate>();
   private bytes = 0;
-  constructor(readonly base?: Store, readonly maxBytes = 12 * 1024 * 1024) { if (!base) relations().forEach(r => this.addSchema(r)); }
+  constructor(readonly base?: Store, readonly maxBytes = 24 * 1024 * 1024) { if (!base) relations().forEach(r => this.addSchema(r)); }
   addSchema(r: Relation) { if (!r.id || !r.world || !r.range.length) throw new Error('INVALID_SCHEMA'); this.schemas.set(r.id, freeze(structuredClone({...r,aliases:r.aliases.map(normalize)}))); }
   schema(id: string): Relation | undefined { return this.schemas.get(id) ?? this.base?.schema(id); }
   allSchemas(): Relation[] { return [...new Map([...(this.base?.allSchemas() ?? []), ...this.schemas.values()].map(r => [r.id, r])).values()]; }
@@ -57,6 +60,21 @@ export class Store {
   frames():LanguageFrame[]{return [...(this.base?.frames()??[]),...this.languageFrames.values()];}
   addDialogueFrame(frame:DialogueFrame){if(frame.utterance.length>160||!['proof','repeat','shorter','simpler','more'].includes(frame.action))throw new Error('INVALID_DIALOGUE_FRAME');this.dialogueFrames.set(normalize(frame.utterance),freeze({...frame}));}
   dialogueFrame(input:string):DialogueFrame|undefined{return this.dialogueFrames.get(normalize(input))??this.base?.dialogueFrame(input);}
+  addEvent(event:EventRecord){
+    if(!event.id||!event.type||this.events.has(event.id)||!event.source?.id||!event.source.location||!event.source.license)throw new Error('INVALID_EVENT');
+    for(const values of Object.values(event.roles))for(const value of values??[])validateValue(value,id=>!!this.entity(id));
+    for(const date of [event.from,event.to])if(date&&!validDate(date))throw new Error('INVALID_EVENT_DATE');
+    this.reserve(JSON.stringify(event).length*2);this.events.set(event.id,freeze(structuredClone(event)));
+  }
+  findEvents(type?:string):EventRecord[]{return [...(this.base?.findEvents(type)??[]),...[...this.events.values()].filter(event=>!type||event.type===type)];}
+  addProcedure(procedure:ProcedureRecord){
+    if(!procedure.id||!procedure.name||this.procedures.has(procedure.id)||!procedure.steps.length||procedure.steps.length>128||procedure.source.review!=='reviewed')throw new Error('INVALID_PROCEDURE');
+    if(new Set(procedure.steps.map(step=>step.id)).size!==procedure.steps.length)throw new Error('DUPLICATE_PROCEDURE_STEP');
+    this.reserve(JSON.stringify(procedure).length*2);this.procedures.set(procedure.id,freeze(structuredClone(procedure)));
+  }
+  findProcedures(text:string):ProcedureRecord[]{const key=normalize(text);return [...(this.base?.findProcedures(text)??[]),...[...this.procedures.values()].filter(procedure=>[procedure.name,...procedure.aliases].some(alias=>normalize(alias)===key))];}
+  addCompletenessCertificate(certificate:CompletenessCertificate){if(!certificate.id||!certificate.dataset||!certificate.predicate||!certificate.restriction||!certificate.sourceBoundary||!validDate(certificate.snapshot)||!certificate.source?.id||certificate.source.review!=='reviewed'||this.completeness(certificate.id))throw new Error('INVALID_COMPLETENESS_CERTIFICATE');this.certificates.set(certificate.id,freeze(structuredClone(certificate)));}
+  completeness(id:string):CompletenessCertificate|undefined{return this.certificates.get(id)??this.base?.completeness(id);}
   addEntity(e: Entity) {
     if (!e.id || !e.name || !Array.isArray(e.aliases) || !e.type) throw new Error('INVALID_ENTITY');
     const previous = this.entity(e.id);
@@ -87,7 +105,9 @@ export class Store {
     if (schema.domain.length && !schema.domain.includes(this.entity(f.subject)!.type)) throw new Error('SUBJECT_DOMAIN');
     validateValue(f.object, id => !!this.entity(id));
     if(f.object.kind==='entity'&&schema.objectTypes?.length&&!schema.objectTypes.includes(this.entity(f.object.id)!.type))throw new Error('OBJECT_DOMAIN');
-    if (!f.source?.id || !f.source.location || !f.source.method || !f.source.license || !f.source.review) throw new Error('MISSING_PROVENANCE');
+    const sources=f.sources?.length?f.sources:[f.source];
+    if (sources.some(source=>!source?.id || !source.location || !source.method || !source.license || !source.review)) throw new Error('MISSING_PROVENANCE');
+    if(f.sources&&new Set(f.sources.map(source=>source.id+'\0'+source.location)).size!==f.sources.length)throw new Error('DUPLICATE_PROVENANCE');
     for (const date of [f.from, f.to, f.source.snapshot]) if (date && !validDate(date)) throw new Error('INVALID_DATE');
     if (f.from && f.to && f.from > f.to) throw new Error('INVALID_INTERVAL');
     const stored = freeze(structuredClone(f)); this.reserve(JSON.stringify(stored).length * 2); this.facts.set(f.id, stored);
@@ -102,12 +122,10 @@ export class Store {
   loadedFactIds():string[]{return [...(this.base?.loadedFactIds()??[]),...this.facts.keys()];}
   stats(): {overlayBytes:number; facts:number; entities:number} { return { overlayBytes: this.bytes, facts: this.facts.size + (this.base?.stats().facts ?? 0), entities: this.allEntities().length }; }
   compatible(f: Fact, atom: Atom, now: string) {
-    if (f.source.disputed) return false;
     if (atom.scope && normalize(f.scope ?? '') !== normalize(atom.scope)) return false;
     if (f.condition) return false; // Opaque legacy conditions cannot be silently assumed true.
     const from = atom.from ?? now, to = atom.to ?? from;
     if((atom.from||atom.to)&&!f.from&&!f.to&&this.schema(f.relation)?.temporal!=='stable')return false;
-    if(this.schema(f.relation)?.temporal==='changing'&&(!f.from||!f.to))return false;
     if (f.from && f.from > from || f.to && f.to < to) return false;
     return true;
   }

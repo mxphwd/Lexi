@@ -71,18 +71,19 @@ function* program(input:string,initial:State,store:Store,options:Options,resourc
     let chosen:Result|undefined;
     for(let j=0;j<Math.min(4,clause.alternatives.length);j++){
       const candidate=clause.alternatives[j];
+      if(j>0&&clause.alternatives[0].grammar.startsWith('compositional:')&&clause.alternatives[0].score===1)continue;
       // A failed factual-property plan cannot fall back to defining the whole question.
       if(j>0&&clause.alternatives[0].plan.kind==='query'&&candidate.plan.kind==='lexical'&&clause.alternatives[0].plan.atoms[0].relation!=='definition')continue;
       let r=runPlan(candidate.plan,store,state,options);
       if(resources&&['unknown','insufficient'].includes(r.status)&&['query','lexical','compare','unknown'].includes(candidate.plan.kind)){
-        for(let pass=0;pass<4;pass++){
+        for(let pass=0;pass<12;pass++){
         const before=store.stats().facts;
         let loaded:ResourceAnswer;
         try {loaded=yield {plan:candidate.plan,text:clause.text,store,signal:options.signal};}
         catch(error){r=failure(candidate.plan,error);break;}
         checkAbort(options.signal);coverage=loaded.coverage??coverage;
         if(loaded.store)store=loaded.store;
-        stages.push({stage:'retrieval',code:'RESOURCE_PASS',detail:'pass '+(pass+1)+'; live indexed propositions '+store.stats().facts,milliseconds:performance.now()-started});
+        stages.push({stage:'retrieval',code:loaded.coverage?.complete?'RESOURCE_COMPLETE':'RESOURCE_PASS',detail:'pass '+(pass+1)+'; live indexed propositions '+store.stats().facts+'; pages '+(loaded.coverage?.loadedShards??0)+'/'+(loaded.coverage?.candidateShards??0)+(loaded.coverage?.truncationReason?'; '+loaded.coverage.truncationReason:''),milliseconds:performance.now()-started});
         if(loaded.result)r=loaded.result;
         else{
           const reparse=resumedPlan?clause:parseClause(clause.text,clause.start,clause.id,store,state);
@@ -90,15 +91,17 @@ function* program(input:string,initial:State,store:Store,options:Options,resourc
           r=runPlan(compatible?.plan??candidate.plan,store,state,options);
           clause=reparse;
         }
-        if(!['unknown','insufficient'].includes(r.status)||store.stats().facts===before&&!loaded.store)break;
+        if(!['unknown','insufficient'].includes(r.status)||loaded.coverage?.complete||store.stats().facts===before&&!loaded.store)break;
         }
       }
-      if(!chosen||['supported','contradicted','insufficient','ambiguous'].includes(r.status))chosen=r;
-      if(['supported','contradicted','insufficient','ambiguous','error','canceled'].includes(r.status))break;
+      if(!chosen||['supported','contradicted','conflict','insufficient','ambiguous'].includes(r.status))chosen=r;
+      if(['supported','contradicted','conflict','insufficient','ambiguous','error','canceled'].includes(r.status))break;
     }
     try{
       chosen=realize(chosen??result({kind:'unknown',reason:'No executable plan'}),clause,store);
-      chosen=calibrateResult(chosen,clause.alternatives.find(a=>a.plan===chosen?.selectedPlan)?.score??clause.alternatives[0].score);
+      const selectedScore=clause.alternatives.find(a=>a.plan===chosen?.selectedPlan)?.score??clause.alternatives[0].score;
+      const runnerUp=clause.alternatives.filter(a=>a.plan!==chosen?.selectedPlan).reduce((max,a)=>Math.max(max,a.score),0);
+      chosen=calibrateResult(chosen,selectedScore,selectedScore-runnerUp);
     }catch(error){chosen=failure(chosen?.selectedPlan??clause.alternatives[0].plan,error);}
     if(chosen.status==='ambiguous'&&chosen.missing?.length===1)state.pending={clause:clause.text,slot:chosen.missing[0],plan:chosen.selectedPlan,choices:chosen.choices};
     else if(['supported','contradicted'].includes(chosen.status))state.pending=undefined;
@@ -107,6 +110,14 @@ function* program(input:string,initial:State,store:Store,options:Options,resourc
     const ids=topicIds(chosen.selectedPlan);ids.forEach(id=>{if(!topics.includes(id))topics.push(id);});
     if(ids.length)state.topics=ids;
     state.answerEntities=chosen.values.flatMap(v=>v.kind==='entity'?[v.id]:[]);
+    state.discourse.activePlan=structuredClone(chosen.selectedPlan);
+    state.discourse.activePropositionIds=[...new Set(chosen.facts.map(f=>f.id))];
+    state.discourse.unresolvedSlots=chosen.missing??[];
+    state.discourse.comparisonSet=chosen.selectedPlan.kind==='compare'?chosen.selectedPlan.subjects.flatMap(term=>term.kind==='entity'?[term.id]:[]):state.discourse.comparisonSet;
+    if(chosen.selectedPlan.kind==='query'&&chosen.selectedPlan.shape==='list')state.discourse.listCursor={plan:structuredClone(chosen.selectedPlan),offset:(chosen.selectedPlan.offset??0)+chosen.values.length};
+    const subjectMentions=chosen.selectedPlan.kind==='query'?chosen.selectedPlan.atoms.flatMap(atom=>atom.subject.kind==='entity'?[atom.subject.id]:[]):chosen.selectedPlan.kind==='compare'?chosen.selectedPlan.subjects.flatMap(term=>term.kind==='entity'?[term.id]:[]):[];
+    const nextMentions=[...subjectMentions.map(entityId=>({entityId,role:'subject' as const,turn:initial.nextTurn,focus:3})),...state.answerEntities.map(entityId=>({entityId,role:'answer' as const,turn:initial.nextTurn,focus:2}))];
+    state.discourse.mentions=[...state.discourse.mentions,...nextMentions].slice(-64);
     if(['error','canceled'].includes(chosen.status)){
       for(const unexecuted of request.clauses.slice(i+1)){
         const r=result(unexecuted.alternatives[0].plan,'error','PREVIOUS_CLAUSE_FAILED');
@@ -137,11 +148,11 @@ function normalizeClarification(input:string){
 export function toReply(execution:Execution,store?:Store):LexiReply{
   const facts=execution.results.flatMap(r=>r.facts),proof=execution.results.flatMap(r=>r.proof);
   return {text:execution.results.map(r=>r.text).join('\n\n'),trace:{
-    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv13:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
-    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV13',executionStatus:execution.status,
+    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv14:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
+    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV14',executionStatus:execution.status,
     plans:execution.results.map(r=>r.selectedPlan),
     liveIndex:execution.liveIndex??(store?{propositions:store.stats().facts,entities:store.stats().entities,requestBytes:store.requestBytes(),loadedShards:execution.coverage?.loadedShards??0}:undefined),
-    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv13:proposition-realization',source:'semantic-runtime',
+    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv14:verified-answer-document',source:'semantic-runtime',
     propositionIds:[...new Set(facts.map(f=>f.id))],subjectIds:[...new Set(facts.map(f=>f.subject))],
     sources:facts.map(f=>({sourceId:f.source.id,sourceLocation:f.source.location,reviewStatus:f.source.review})),
     evidenceSteps:evidenceSteps(execution.results),
@@ -149,6 +160,7 @@ export function toReply(execution:Execution,store?:Store):LexiReply{
     clauseCount:execution.results.length,clauseResults:execution.results.map((r,i)=>({clauseId:execution.request.clauses[i]?.id??'request',status:r.status,confidence:r.confidence??0,propositionIds:r.facts.map(f=>f.id)})),
     failureStage:execution.results.some(r=>r.code?.startsWith('ASSET'))?'retrieval':execution.results.some(r=>r.code==='UNRESOLVED_ARGUMENT')?'entity-linking':execution.results.some(r=>r.code==='UNSATISFIED_WORD_RESTRICTION')?'realization':!['supported','contradicted'].includes(execution.status)?'execution':undefined,
     failureCode:execution.results.find(r=>!['supported','contradicted'].includes(r.status))?.code,
+    confidenceComponents:execution.results.length===1?execution.results[0].confidenceFeatures:undefined,
     stages:execution.stages.map(s=>({stage:s.stage,status:s.stage==='execution'?!['supported','contradicted'].includes(execution.status)?'partial':'passed':'passed',code:s.code,detail:s.detail,durationMilliseconds:s.milliseconds})),
   }};
 }

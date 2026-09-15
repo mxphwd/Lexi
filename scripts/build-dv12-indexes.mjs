@@ -19,6 +19,25 @@ for(let i=0;i<256;i++){
   const key=i.toString(16).padStart(2,'0'),asset='/dv12/aliases/'+key+'.json.gz';
   aliases[key]=metadata(asset);
 }
+const composite={subjectPredicate:Array.from({length:256},()=>new Map()),predicateObject:Array.from({length:256},()=>new Map()),entityType:Array.from({length:256},()=>new Map())};
+const add=(buckets,id,key,shard)=>{const bucket=buckets[Number.parseInt(crypto.createHash('sha256').update(id).digest('hex').slice(0,2),16)],set=bucket.get(key)??new Set();set.add(shard);bucket.set(key,set);};
+for(const [shard,meta] of Object.entries(worldSource.sourceShards)){
+  const bytes=fs.readFileSync(path.join(root,'public',meta.path)),pack=JSON.parse(zlib.gunzipSync(bytes));
+  for(const entity of pack.entities??[])add(composite.entityType,entity.id,entity.id,entity.kind);
+  for(const proposition of pack.propositions??[]){
+    add(composite.subjectPredicate,proposition.subjectId,proposition.subjectId+'\0'+proposition.relation,shard);
+    if(proposition.object?.kind==='entity')add(composite.predicateObject,proposition.object.entityId,proposition.relation+'\0'+proposition.object.entityId,shard);
+  }
+}
+const writeComposite=(name,buckets)=>{
+  const shards={};let entries=0;
+  for(let i=0;i<256;i++){
+    const key=i.toString(16).padStart(2,'0'),value=Object.fromEntries([...buckets[i]].sort(([a],[b])=>a.localeCompare(b)).map(([entry,values])=>[entry,[...values].sort()]));
+    entries+=Object.keys(value).length;shards[key]=write('indexes/'+name+'/'+key+'.json.gz',value);
+  }
+  return {strategy:'sha256-entity-prefix',entries,shards};
+};
+const compositeIndexes={subjectPredicate:writeComposite('subject-predicate',composite.subjectPredicate),predicateObject:writeComposite('predicate-object',composite.predicateObject),entityType:writeComposite('entity-type',composite.entityType)};
 const world={
   sourceShards:worldSource.sourceShards,
   indexes:{
@@ -26,6 +45,7 @@ const world={
     subject:worldSource.indexes.subject,
     object:worldSource.indexes.object,
     predicate:{...worldSource.indexes.predicate,...metadata(worldSource.indexes.predicate.path)},
+    ...compositeIndexes,
   },
 };
 const lexical={
