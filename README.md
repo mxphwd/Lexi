@@ -1,6 +1,6 @@
 # Lexi
 
-Lexi (from “Lexicon”) is Lexi Lab’s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
+Lexi (from “Lexicon”) is [Lexi Lab](about_lexilab.md)'s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
 Current development version is build version **DV15** or build number **260921-DV15**.
 
