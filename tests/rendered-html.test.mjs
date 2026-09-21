@@ -62,3 +62,24 @@ test("release-note corner label follows the current version dynamically", async 
   assert.match(component, /import \{ LEXI_BUILD_DISPLAY \}/);
   assert.doesNotMatch(styles, /VISUAL CHANGELOG \/ DV\d+/i);
 });
+
+test("keeps Lexi's state and entrance motion available", async () => {
+  const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+
+  for (const motionName of [
+    "page-enter",
+    "composer-stage-enter",
+    "revolve",
+    "stop-light-spread",
+    "reply-card-enter",
+    "letter-enter",
+    "release-panel-enter",
+  ]) {
+    assert.match(styles, new RegExp(`@keyframes ${motionName}\\b`));
+  }
+
+  assert.match(styles, /\.state-thinking \.composer-glow::before[\s\S]*?animation: revolve/);
+  assert.match(styles, /\.state-stopping \.stop-light[\s\S]*?animation: stop-light-spread/);
+  assert.match(styles, /\.reply-card[\s\S]*?animation: reply-card-enter/);
+  assert.doesNotMatch(styles, /\*::before,[\s\S]*?animation-duration:\s*1ms\s*!important/);
+});

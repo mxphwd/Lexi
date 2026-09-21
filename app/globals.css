@@ -51,6 +51,7 @@ a {
   place-items: center;
   overflow: hidden;
   background: var(--industrial-white);
+  animation: page-enter 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .lexi-stage {
@@ -60,6 +61,7 @@ a {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
+  animation: composer-stage-enter 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .composer-form {
@@ -77,6 +79,7 @@ a {
   transition:
     box-shadow 360ms ease,
     transform 460ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform, box-shadow;
 }
 
 .composer-frame::before {
@@ -458,6 +461,7 @@ a {
   border: 1px solid rgba(47, 52, 47, 0.16);
   border-radius: 8px;
   background: var(--panel-white);
+  animation: reply-card-enter 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .reply-card::before {
@@ -1226,6 +1230,21 @@ a {
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+@keyframes page-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes composer-stage-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reply-card-enter {
+  from { opacity: 0; filter: blur(2px); transform: translateY(-4px) scale(0.992); }
+  to { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); }
+}
+
 @keyframes stop-light-spread {
   0% { opacity: 0.3; transform: translate(50%, -50%) scale(0.25); }
   24% { opacity: 0.52; transform: translate(50%, -50%) scale(3.2); }
@@ -1455,13 +1474,10 @@ a {
 .failure-export button { margin: 5px 6px 5px 0; padding: 5px 8px; border: 1px solid #d8dcd8; border-radius: 5px; }
 .failure-export button:disabled { opacity: .45; }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 1ms !important;
-  }
-}
+/*
+ * Lexi deliberately retains its small state transitions in every rendering
+ * environment. A previous blanket reduced-motion rule forced every animation
+ * and transition in the UI to one millisecond, which made the entire surface
+ * appear static in browsers that expose that preference. Individual motion is
+ * intentionally quiet, finite where possible, and tied to a visible state.
+ */
