@@ -1,8 +1,8 @@
 # Lexi
 
-Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
+Lexi (from “Lexicon”) is Lexi Lab’s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
-Current development version is build version **DV15** or **260921-DV15**.
+Current development version is build version **DV15** or build number **260921-DV15**.
 
 
 ## Run locally
@@ -31,5 +31,3 @@ The development verification checks types, data integrity, release metadata, the
 - [DV13 maintenance cleanup audit](docs/DV13_MAINTENANCE_CLEANUP.md)
 - [Evaluation and feedback review](data/dv13/evaluation/README.md)
 - [Release history](docs/RELEASES.md)
-
-GitHub Pages is a static preview and needs `LEXI_BACKEND_URL` configured to an authorized response endpoint. Normal Sites hosting includes the server. See [the hosting boundary](docs/dv12/README.md#hosting-and-pages).
