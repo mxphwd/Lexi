@@ -1,12 +1,12 @@
-# Current development version: DV14
+# Current development version: DV15
 
-Technical build **260915-DV14**, dated 15 September 2026. Added compositional semantic plans, canonical identities, composite/adaptive retrieval, four-valued conflicts, verified answer clauses, richer discourse state, and strict runtime validation. This is not an RC; independent accuracy and calibrated confidence remain unavailable. See [current-build details](dv14/README.md).
+Technical build **260921-DV15**, dated 21 September 2026. Added 550 Basic packs, 200 Advanced packs, 120,000 source-attested propositions, global pack indexes, strict pack validation, and bounded request-local retrieval. This is not an RC; independent accuracy and calibrated confidence remain unavailable. See [current-build details](dv15/README.md).
 
 # Lexi release-history rule
 
 The interactive release graph records every Lexi development version. It was
 introduced in build 260730-DV5. The public sequence runs from Initial build
-through DV14, while each point retains its exact dated technical build.
+through DV15, while each point retains its exact dated technical build.
 
 ## Required action for every future version
 

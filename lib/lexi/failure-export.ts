@@ -11,5 +11,5 @@ export function failurePreview(prompt:string,expected:string,reply:LexiReply,pri
     return text;
   };
   const walk=(value:unknown):unknown=>typeof value==='string'?redact(value):Array.isArray(value)?value.map(walk):value&&typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,walk(v)])):value;
-  return JSON.stringify(walk({version:14,build:LEXI_BUILD,prompt,turns,expected,observedOutput:reply.text,trace:reply.trace,classification:'unreviewed',provenance:{kind:'local-opt-in-export',capturedAt:new Date().toISOString(),consent:'local-download-only',context:'Only explicitly included visible prompts; review for missing context before evaluation.'}}),null,2);
+  return JSON.stringify(walk({version:15,build:LEXI_BUILD,prompt,turns,expected,observedOutput:reply.text,trace:reply.trace,classification:'unreviewed',provenance:{kind:'local-opt-in-export',capturedAt:new Date().toISOString(),consent:'local-download-only',context:'Only explicitly included visible prompts; review for missing context before evaluation.'}}),null,2);
 }

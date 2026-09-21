@@ -11,6 +11,6 @@ for(const file of all){
 if(initialBytes>1000000)violations.push('Initial JavaScript exceeds 1 MB uncompressed');
 if(totalBytes>1500000)violations.push('Total JavaScript exceeds 1.5 MB uncompressed');
 const report={initialBytes,totalBytes,initialFiles:initial.size,totalFiles:all.size,limits:{initialBytes:1000000,totalBytes:1500000},violations,passed:!violations.length};
-const release=process.argv.includes('--dv14')?'dv14':process.argv.includes('--dv13')?'dv13':'dv12';
+const release=process.argv.includes('--dv15')?'dv15':process.argv.includes('--dv14')?'dv14':process.argv.includes('--dv13')?'dv13':'dv12';
 await fs.writeFile(new URL('../docs/'+release+'/bundle-budget.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));if(violations.length)process.exitCode=1;

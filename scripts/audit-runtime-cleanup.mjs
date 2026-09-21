@@ -65,7 +65,7 @@ const forbiddenRuntime = [...reachable].map(file => path.relative(root, file)).f
 
 const catalogPath = path.join(root, "public/dv12/catalog.json.gz");
 const catalog = JSON.parse(zlib.gunzipSync(fs.readFileSync(catalogPath)));
-const descriptors = [
+const dv12Descriptors = [
   ...Object.values(catalog.world.sourceShards),
   ...Object.values(catalog.world.indexes.alias.shards),
   ...Object.values(catalog.world.indexes.subject.shards),
@@ -78,7 +78,16 @@ const descriptors = [
   ...catalog.lexical.packages.flatMap(pack => pack.sourceShards),
   ...catalog.normalized,
 ];
-const livePaths = new Set(["/dv12/catalog.json.gz", ...descriptors.map(item => item.path)]);
+const dv15CatalogPath = path.join(root, "public/dv15/catalog.json.gz");
+const dv15Catalog = JSON.parse(zlib.gunzipSync(fs.readFileSync(dv15CatalogPath)));
+const dv15Descriptors = [
+  ...Object.values(dv15Catalog.packs),
+  ...Object.values(dv15Catalog.indexes.alias.shards),
+  ...Object.values(dv15Catalog.indexes.entity.shards),
+  dv15Catalog.indexes.relation,
+];
+const descriptors = [...dv12Descriptors, ...dv15Descriptors];
+const livePaths = new Set(["/dv12/catalog.json.gz", "/dv15/catalog.json.gz", ...descriptors.map(item => item.path)]);
 let liveAssetBytes = 0;
 const invalidAssets = [];
 for (const descriptor of descriptors) {
@@ -90,12 +99,12 @@ for (const descriptor of descriptors) {
 const allowedStatic = new Set(["/og-v2.png", "/lexicon/ATTRIBUTION.txt", "/lexicon/WORDSET-LICENSE.txt"]);
 const unreferencedPublic = filesBelow(path.join(root, "public"), false)
   .map(file => "/" + path.relative(path.join(root, "public"), file).split(path.sep).join("/"))
-  .filter(file => !livePaths.has(file) && !allowedStatic.has(file));
+  .filter(file => path.basename(file) !== ".DS_Store" && !livePaths.has(file) && !allowedStatic.has(file));
 
 const report = {
   passed: !stale.length && !forbiddenRuntime.length && !invalidAssets.length && !unreferencedPublic.length,
   runtime: { roots: roots.map(file => path.relative(root, file)), reachableSourceFiles: reachable.size, forbiddenRuntime },
-  assets: { referencedFiles: livePaths.size, referencedBytes: liveAssetBytes + fs.statSync(catalogPath).size, invalidAssets, unreferencedPublic },
+  assets: { referencedFiles: livePaths.size, referencedBytes: liveAssetBytes + fs.statSync(catalogPath).size + fs.statSync(dv15CatalogPath).size, invalidAssets, unreferencedPublic },
   retiredPathsRemaining: stale,
 };
 console.log(JSON.stringify(report, null, 2));

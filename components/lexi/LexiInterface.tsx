@@ -273,7 +273,7 @@ export function LexiInterface() {
                     {reply.trace.failureCode ? <div><dt>Failure</dt><dd>{reply.trace.failureStage} · {reply.trace.failureCode}</dd></div> : null}
                   </dl>
                   <p className="corpus-note">
-                    DV14 executes compositional typed plans on the server. Confidence and public-use answerability remain unverified until independently evaluated.
+                    DV15 executes compositional typed plans and lazily loads bounded Basic and Advanced data packs. Confidence and public-use answerability remain unverified until independently evaluated.
                     Evaluation-only failures are isolated from every runtime and development pack.
                   </p>
                 </details>

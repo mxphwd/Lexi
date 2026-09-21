@@ -1,0 +1,10 @@
+{
+  "version": "DV15",
+  "build": "260921-DV15",
+  "status": "implemented",
+  "packCounts": {"basic": 550, "advanced": 200, "total": 750},
+  "knowledge": {"propositions": 120000, "entities": 105223, "relations": 88, "entityAliases": 467868},
+  "runtimeBudgets": {"packsPerPass": 6, "propositionsPerPass": 1500, "decodedBytesPerPass": 3145728},
+  "integrity": {"packHashes": true, "decodedHashes": true, "strictManifests": true, "referentialIntegrity": true, "claimProvenance": true},
+  "measurement": {"independentEvaluationRows": 0, "calibrationProfiles": 0, "publicAccuracyKnown": false}
+}

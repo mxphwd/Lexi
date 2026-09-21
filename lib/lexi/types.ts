@@ -86,7 +86,7 @@ export type LexiTrace = {
   clauseIntents?: string[];
   subjectIds?: string[];
   proof?: string[];
-  runtimeVersion?: "DV11" | "DV12" | "DV13" | "DV14";
+  runtimeVersion?: "DV11" | "DV12" | "DV13" | "DV14" | "DV15";
   evidenceSteps?: Array<{id:string;description:string;premises:string[];details:string[]}>;
   confidenceAvailable?: boolean;
   plans?: unknown[];

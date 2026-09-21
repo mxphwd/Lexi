@@ -148,11 +148,11 @@ function normalizeClarification(input:string){
 export function toReply(execution:Execution,store?:Store):LexiReply{
   const facts=execution.results.flatMap(r=>r.facts),proof=execution.results.flatMap(r=>r.proof);
   return {text:execution.results.map(r=>r.text).join('\n\n'),trace:{
-    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv14:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
-    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV14',executionStatus:execution.status,
+    normalizedInput:execution.request.original.toLowerCase(),sentenceMode:'interrogative',interpretedIntent:'dv15:'+execution.results.map(r=>r.selectedPlan.kind).join('+'),
+    confidence:execution.results.length===1?execution.results[0].confidence??0:0,confidenceAvailable:execution.results.length===1&&execution.results[0].confidence!==null,runtimeVersion:'DV15',executionStatus:execution.status,
     plans:execution.results.map(r=>r.selectedPlan),
     liveIndex:execution.liveIndex??(store?{propositions:store.stats().facts,entities:store.stats().entities,requestBytes:store.requestBytes(),loadedShards:execution.coverage?.loadedShards??0}:undefined),
-    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv14:verified-answer-document',source:'semantic-runtime',
+    matchedExampleIds:[],matchedTerms:[],selectedStructure:'dv15:verified-answer-document',source:'semantic-runtime',
     propositionIds:[...new Set(facts.map(f=>f.id))],subjectIds:[...new Set(facts.map(f=>f.subject))],
     sources:facts.map(f=>({sourceId:f.source.id,sourceLocation:f.source.location,reviewStatus:f.source.review})),
     evidenceSteps:evidenceSteps(execution.results),

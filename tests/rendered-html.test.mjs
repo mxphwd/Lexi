@@ -39,9 +39,10 @@ test("server-renders the finished Lexi surface", async () => {
 
 test("ships the current runtime assets without retired responder resources", async () => {
   assert.ok((await stat(new URL("../public/dv12/catalog.json.gz", import.meta.url))).size > 100_000);
+  assert.ok((await stat(new URL("../public/dv15/catalog.json.gz", import.meta.url))).size > 100_000);
   assert.ok((await stat(new URL("../data/dv12/source-catalogs/world.json", import.meta.url))).size > 100_000);
   assert.ok((await stat(new URL("../data/lexicon/vendor/wordset/LICENSE", import.meta.url))).isFile());
-  for (const currentPath of ["modules/dv12/runtime.ts", "modules/dv13/language.ts", "worker/dv12-resources.ts"]) {
+  for (const currentPath of ["modules/dv12/runtime.ts", "modules/dv13/language.ts", "modules/dv15/validator.ts", "worker/dv12-resources.ts", "worker/dv15-resources.ts"]) {
     assert.ok((await stat(new URL(`../${currentPath}`, import.meta.url))).isFile());
   }
   for (const retiredPath of ["lib/lexi/historical-engine.ts", "worker/lexi-resources.ts", "data/example-contexts", "public/lexicon/wordset-dictionary.json.gz"]) {
@@ -49,7 +50,7 @@ test("ships the current runtime assets without retired responder resources", asy
   }
 
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
-  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260915-dv14");
+  assert.equal(JSON.parse(packageJson).version, "1.0.0-prebuild.260921-dv15");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });

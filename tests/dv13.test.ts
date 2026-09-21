@@ -99,7 +99,7 @@ test('DV13 HTTP preserves repeated evidence follow-ups and a changed subject',as
   const original=data.reply.trace.propositionIds;
   for(const input of ['Why?','Why is that?','How do you know?']){
     data=await send(input,data.state);assert.equal(data.reply.trace.executionStatus,'supported');
-    assert.deepEqual(data.reply.trace.propositionIds,original);assert.equal(data.reply.trace.runtimeVersion,'DV14');
+    assert.deepEqual(data.reply.trace.propositionIds,original);assert.equal(data.reply.trace.runtimeVersion,'DV15');
   }
   data=await send('And Germany?',data.state);assert.match(data.reply.text,/Berlin/);
   data=await send('Why?',data.state);assert.equal(data.reply.trace.executionStatus,'supported');
@@ -116,7 +116,7 @@ test('DV13 feedback includes only opted-in context and redacts before JSON seria
   const reply=new Session().respond('Hello');
   const secret='Mina "M"';
   const without=JSON.parse(failurePreview(secret,'My email is mina@example.com',reply,[secret]));
-  assert.equal(without.version,14);assert.deepEqual(without.turns,[]);assert.equal(without.prompt,'[personal value]');
+  assert.equal(without.version,15);assert.deepEqual(without.turns,[]);assert.equal(without.prompt,'[personal value]');
   const withContext=JSON.parse(failurePreview('Why?','',reply,[secret],[`My name is ${secret}`]));
   assert.deepEqual(withContext.turns,['My name is [personal value]']);
   assert.equal(withContext.classification,'unreviewed');assert.equal(withContext.provenance.consent,'local-download-only');

@@ -10,6 +10,7 @@ import { retrievalFrontier } from '../modules/dv12/executor';
 import { canonicalIdentity } from '../modules/dv12/identity';
 import { validateImportedKnowledgePackage } from '../modules/dv12/runtime-validation';
 import { semanticAnalysis } from '../modules/dv12/semantic-parser';
+import { dv15ResourceLoader } from './dv15-resources';
 type Reference=readonly [string,string];
 type CompositeIndex={shards:Record<string,Metadata>};
 type Catalog={version:12;world:{sourceShards:Record<string,Metadata&{packageId:string}>;indexes:{alias:{shards:Record<string,Metadata>};subject:{shards:Record<string,Metadata>};object:{shards:Record<string,Metadata>};predicate:Metadata;subjectPredicate?:CompositeIndex;predicateObject?:CompositeIndex;entityType?:CompositeIndex}};lexical:{indexes:{alias:{shards:Record<string,Metadata>}};packages:Array<{sourceShards:Array<Metadata&{shard:string}>}>}};
@@ -53,7 +54,19 @@ function migrate(untrusted:ImportedKnowledgePackage,store:Store){
 export function resourceLoader(assets:AssetFetcher,origin:string):ResourceLoader{
   const loaded=new Set<string>(),normalizedLoaded=new Set<string>();let totalCandidates=0,loadedBytes=0;
   let activeStore:Store|undefined;
+  const dv15=dv15ResourceLoader(assets,origin);
   return async need=>{
+    if(need.plan.kind!=='lexical'){
+      const expanded=await dv15(need);
+      if(expanded?.result)return expanded;
+      if(expanded?.store){
+        // A complete DV15 candidate set means its selected packs are exhausted,
+        // not that the older composite source catalog has been exhausted. Keep
+        // one retrieval pass open when execution still needs evidence.
+        if(expanded.coverage?.complete)return {store:expanded.store,coverage:{...expanded.coverage,complete:false,truncationReason:'source-fallback-pending'}};
+        return expanded;
+      }
+    }
     if(activeStore!==need.store){activeStore=need.store;loaded.clear();normalizedLoaded.clear();totalCandidates=0;loadedBytes=0;}
     const c=await assetJson<Catalog&{normalized?:NormalizedDescriptor[]}>(assets,origin,DV12_CATALOG,need.signal);
     if(c.version!==12)throw new Error('CATALOG_VERSION');

@@ -145,6 +145,12 @@ function grammar(text:string,store:Store,state:State): Alternative[] {
     }
   }
   if((m=s.match(/^(?:what (?:is|are) |name )?(.+?)'s (.+)$/i))) {const rel=property(m[2],store);if(rel)add(query(subj(m[1]),rel),'possessive-property',.98);}
+  if((m=s.match(/^what (.+?) (?:is|are) (.+?) (?:a member of|part of)$/i))) {
+    const rel=property(m[1],store); if(rel)add(query(subj(m[2]),rel),'membership-property',.98);
+  }
+  if((m=s.match(/^what (.+?) (?:does|do) (.+?) have$/i))) {
+    const rel=property(m[1],store); if(rel)add(query(subj(m[2]),rel),'have-property',.97);
+  }
   if((m=s.match(/^what is (?:the )?(average|mean|sum|minimum|maximum) (.+?) of (.+)$/i))){
     const relation=property(m[2],store);
     if(relation){const q=query(variable('member'),'is_a','value',obj(m[3]));q.atoms.push({subject:variable('member'),relation,object:variable('measurement')});q.answer='measurement';q.aggregate={op:({average:'mean',mean:'mean',sum:'sum',minimum:'min',maximum:'max'} as const)[m[1].toLowerCase() as 'average'],variable:'measurement'};add(q,'aggregate-property',1);}

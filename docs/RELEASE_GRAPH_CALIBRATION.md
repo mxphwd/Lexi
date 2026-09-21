@@ -3,7 +3,7 @@
 ## Result
 
 The release-notes curve is an audited engineering-capability index, not an
-answer-accuracy percentage. The current DV14 score is **84/100**. A score of
+answer-accuracy percentage. The current DV15 score is **87/100**. A score of
 100 is reserved for a mature release with independently measured ordinary-
 question coverage, calibrated confidence, broad compositional reasoning, and
 production-ready execution. Lexi has not reached that evidence standard.
@@ -18,8 +18,8 @@ facts, or generated questions can support a dimension but cannot stand in for
 answer accuracy. Generated regression suites establish bounded regressions
 only. Development diagnostics are not treated as independent tests.
 
-The public graph presents the full fourteen-version sequence from Initial build
-through DV14. Each point keeps the maturity score and evidence of its exact
+The public graph presents the full fifteen-version sequence from Initial build
+through DV15. Each point keeps the maturity score and evidence of its exact
 technical build; no intermediate development version is folded into another.
 
 | Release | Score | Change | Language /25 | Knowledge /20 | Reasoning /20 | Dialogue /10 | Evidence /15 | Runtime /10 | Strongest available evidence |
@@ -38,6 +38,7 @@ technical build; no intermediate development version is folded into another.
 | DV12 | 76 | +8 | 19 | 17 | 17 | 8 | 8 | 7 | 47/62 authored development diagnostic answers |
 | DV13 | 79 | +3 | 21 | 17 | 17 | 8 | 9 | 7 | 71/86 authored development diagnostic answers |
 | DV14 | 84 | +5 | 23 | 17 | 19 | 9 | 9 | 7 | 14 disclosed structural cases plus integrity tests; no independent cases |
+| DV15 | 87 | +3 | 23 | 19 | 19 | 9 | 9 | 8 | all 750 packs and 120,000 propositions integrity-validated; no independent cases |
 
 ## Evidence audit
 
@@ -69,6 +70,10 @@ technical build; no intermediate development version is folded into another.
   composite index families, adaptive retrieval coverage, four-valued conflict
   handling, and sentence-level claim metadata. Its 14 new cases are disclosed
   development regressions; its independent and calibration cohorts are empty.
+- DV15 promotes 120,000 source-attested propositions into 550 Basic and 200
+  Advanced runtime-selectable packs. All pack and index files are validated,
+  but the runtime regressions are disclosed development checks rather than an
+  independent measure of ordinary-question answerability.
 
 ## Sources inspected
 
@@ -76,7 +81,8 @@ The calibration uses `docs/DV7_COVERAGE.md`, `docs/DV8_BENCHMARK.md`,
 `docs/DV9_DATA.md`, `docs/DV10_BENCHMARK.md`,
 `docs/DV11_SERVICING_PATCH.md`, `docs/DV11AD1.md`, the DV11 evaluation
 manifest, DV12 and DV13 evaluation results, their benchmark implementations,
-the package manifests, and the historical release commits.
+the DV14 structural suite, the DV15 pack manifest, and the historical release
+commits.
 
 A future graph revision should use one frozen, leakage-checked, independently
 reviewed population across releases. Until that exists, no point on this curve

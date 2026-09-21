@@ -2,9 +2,9 @@
 
 Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
-Current development version: **DV14**. Current technical build: **260915-DV14**, dated 15 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
+Current development version: **DV15**. Current technical build: **260921-DV15**, dated 21 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
 
-The current build introduces a span-preserving compositional language layer, canonical identity mappings, composite retrieval indexes, four-valued conflict handling, verified answer clauses, richer discourse state, and stricter request/package/response validation. Its evaluation workflow still separates disclosed development regressions from independent and calibration evidence.
+The current build adds 550 Basic and 200 Advanced lazy data packs: 120,000 source-attested propositions selected through global alias, entity, and relation indexes. Packs remain separate from the core algorithm and are loaded into bounded request-local overlays only when a compatible question needs them.
 
 ## Run locally
 
@@ -20,8 +20,7 @@ Try “Which city is the capital of France?”, “What is 20 percent of 50?”,
 ## Verify and review
 
 ```sh
-npm run verify:dv14
-npm run gate:dv14:rc
+npm run verify:dv15
 ```
 
 The development verification checks types, data integrity, release metadata, the production build, delivery budgets, regressions and diagnostics. The RC gate intentionally fails until independent evidence, calibration and inherited critical requirements meet its thresholds.
@@ -29,6 +28,7 @@ The development verification checks types, data integrity, release metadata, the
 - [How it works](docs/ARCHITECTURE.md)
 - [DV13 changes and limitations](docs/dv13/README.md)
 - [DV14 changes and limitations](docs/dv14/README.md)
+- [DV15 packs, processing and limitations](docs/dv15/README.md)
 - [DV13 maintenance cleanup audit](docs/DV13_MAINTENANCE_CLEANUP.md)
 - [Evaluation and feedback review](data/dv13/evaluation/README.md)
 - [Release history](docs/RELEASES.md)

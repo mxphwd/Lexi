@@ -107,6 +107,6 @@ test('DV14 capability boundaries, canonical identities and runtime validation ar
 
 test('DV14 confidence remains unavailable but emits a raw feature vector',()=>{
   const reply=new Session().respond('What is the capital of France?');
-  assert.equal(reply.trace.confidenceAvailable,false);assert.equal(reply.trace.runtimeVersion,'DV14');
+  assert.equal(reply.trace.confidenceAvailable,false);assert.equal(reply.trace.runtimeVersion,'DV15');
   assert.equal(reply.trace.confidenceComponents?.realizationVerification,1);
 });

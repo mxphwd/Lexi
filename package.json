@@ -1,6 +1,6 @@
 {
   "name": "alphaine-lexi-language",
-  "version": "1.0.0-prebuild.260915-dv14",
+  "version": "1.0.0-prebuild.260921-dv15",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -38,7 +38,13 @@
     "dv14:validate": "node --import tsx scripts/validate-dv14-release.mjs",
     "budget:dv14": "node scripts/check-dv12-budget.mjs --dv14",
     "benchmark:dv14:performance": "node --import tsx scripts/run-dv12-performance.mjs --dv14",
-    "verify:dv14": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv14:validate && npm run build && npm run budget:dv14 && npm run test:unit && npm run benchmark:dv14 && npm run benchmark:dv14:performance"
+    "verify:dv14": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv14:validate && npm run build && npm run budget:dv14 && npm run test:unit && npm run benchmark:dv14 && npm run benchmark:dv14:performance",
+    "dv15:build-packs": "node scripts/build-dv15-data-packs.mjs",
+    "dv15:validate": "node --import tsx scripts/validate-dv15-release.mjs",
+    "test:dv15": "node --import tsx --test tests/dv15.test.ts",
+    "budget:dv15": "node scripts/check-dv12-budget.mjs --dv15",
+    "benchmark:dv15:performance": "node --import tsx scripts/run-dv12-performance.mjs --dv15",
+    "verify:dv15": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv15:validate && npm run build && npm run budget:dv15 && npm run test:unit && npm run benchmark:dv15:performance"
   },
   "dependencies": {
     "next": "16.2.6",

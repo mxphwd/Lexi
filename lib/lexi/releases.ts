@@ -254,6 +254,16 @@ const HISTORICAL_BUILD_RECORDS = [
       "Added canonical identities, composite shard indexes, adaptive retrieval budgets, four-valued conflicts, answer-clause verification, and stricter runtime boundaries. Public-use accuracy remains unknown."
     ],
     measurements:[{label:"Structural development cases",value:"14"},{label:"Composite index families",value:"3"},{label:"Independent evaluation rows",value:"0"},{label:"Calibration profiles",value:"0"},{label:"RC gate",value:"Blocked"}]
+  },
+  {
+    build:"260921-DV15",label:"Pre-build 260921-DV15",shortLabel:"DV15",date:"21 September 2026",
+    capabilityIndex:87,evidenceBasis:"Complete pack-integrity validation and disclosed runtime regressions · not independent",metric:"120,000 newly queryable propositions",
+    focus:["Basic packs","Advanced packs","Lazy retrieval"],
+    notes:[
+      "Introduced 550 Basic and 200 Advanced independently loadable data packs containing 120,000 source-attested propositions across 88 relation types.",
+      "Added global entity, alias, and relation indexes with bounded request-local loading; this expands executable knowledge but does not establish an answer-availability percentage."
+    ],
+    measurements:[{label:"Basic packs",value:"550"},{label:"Advanced packs",value:"200"},{label:"Queryable propositions",value:"120,000"},{label:"Indexed entities",value:"105,223"},{label:"Independent evaluation rows",value:"0"}]
   }
 
 ] as const;
@@ -261,7 +271,7 @@ const HISTORICAL_BUILD_RECORDS = [
 /**
  * Every development version is a first-class graph point again. The exact
  * dated build identifier remains available for technical diagnostics, while
- * the public sequence runs from Initial build through DV14.
+ * the public sequence runs from Initial build through DV15.
  */
 export const LEXI_RELEASES: readonly LexiRelease[] = HISTORICAL_BUILD_RECORDS.map(
   (release) => ({

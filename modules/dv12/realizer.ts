@@ -6,6 +6,7 @@ import { buildVerifiedClaims } from './answer-document';
 const finish=(s:string)=>s ? s[0].toLocaleUpperCase('en-US')+s.slice(1).replace(/[.!?]+$/,'')+'.':'';
 function factSentence(f:Fact,store:Store):string {
   const subject=store.entity(f.subject)?.name??f.subject, object=valueText(f.object,store);
+  const relation=store.schema(f.relation)?.aliases[0]??f.relation.replaceAll('_',' ');
   if(f.relation==='temperature'&&f.scope)return finish(subject+' has a recorded '+f.scope+' of '+object);
   const frames:Record<string,string>={
     definition:'is', is_a:'is', instance_of:'is an instance of', subclass_of:'is a subclass of',
@@ -19,10 +20,10 @@ function factSentence(f:Fact,store:Store):string {
   if(f.relation==='leg_count')return finish(subject+' has '+object+' legs'+(f.scope?' ('+f.scope+')':''));
   if(f.relation==='purpose'&&f.object.kind==='text'&&/^[a-z ]+ (?:helps?|supports?|allows?|provides?|is|are) /i.test(object))return finish(object);
   if(['author','inventor','creator','discoverer'].includes(f.relation)&&f.object.kind==='text'&&/\b(?:is|was|are|were)\b/.test(object))return finish(object);
-  if(f.negative)return finish('The recorded evidence states that '+subject+' does not have '+f.relation.replaceAll('_',' ')+' '+object);
+  if(f.negative)return finish('The recorded evidence states that '+subject+' does not have '+relation+' '+object);
   if(['cause','mechanism','effect','definition','purpose'].includes(f.relation)&&f.object.kind==='text')return finish('The recorded '+f.relation.replaceAll('_',' ')+' for '+subject+' is: '+object);
   if(frames[f.relation])return finish(subject+' '+frames[f.relation]+' '+object);
-  return finish('The '+f.relation.replaceAll('_',' ')+' of '+subject+' is '+object);
+  return finish('The '+relation+' of '+subject+' is '+object);
 }
 function qualifiedSentence(f:Fact,store:Store){
   const text=factSentence(f,store),qualifiers=[f.scope&&!['temperature','ability','leg_count'].includes(f.relation)?f.scope:'',f.from?'valid from '+f.from:'',f.to?'through '+f.to:''].filter(Boolean);
