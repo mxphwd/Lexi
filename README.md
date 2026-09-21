@@ -4,6 +4,8 @@ Lexi (from “Lexicon”) is Lexi Lab’s experimental, deterministic, rule-base
 
 Current development version is build version **DV15** or build number **260921-DV15**.
 
+Lexi **Release Candinate (RC)** which was initially planned to be released based on build version DV13 is cancelled due to delayed core tests of the model and omitted refinements. Although the Lexi team is expecting to release the Release Candinate (RC) version along side its base build of DV17, this is not final.
+
 
 ## Run locally
 
