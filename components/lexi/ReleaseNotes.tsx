@@ -8,6 +8,7 @@ import {
   useState,
 } from "react";
 import { LEXI_RELEASES, releaseIndexChange } from "@/lib/lexi/releases";
+import { LEXI_BUILD_DISPLAY } from "@/lib/lexi/version";
 
 type ReleaseNotesProps = {
   open: boolean;
@@ -270,6 +271,9 @@ export function ReleaseNotes({ open, onClose }: ReleaseNotesProps) {
         aria-labelledby="release-title"
         aria-describedby="release-index-note"
       >
+        <span className="release-current-build" aria-label={`Current release ${LEXI_BUILD_DISPLAY}`}>
+          Visual changelog / {LEXI_BUILD_DISPLAY}
+        </span>
         <header className="release-header">
           <div>
             <span className="release-kicker">Alphaine / development record</span>

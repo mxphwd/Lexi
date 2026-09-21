@@ -691,15 +691,15 @@ a {
   animation: release-panel-enter 440ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.release-window::before {
+.release-current-build {
   position: absolute;
   top: 10px;
   right: 52px;
   color: rgba(50, 57, 50, 0.24);
-  content: "VISUAL CHANGELOG / DV9";
   font-family: var(--mono);
   font-size: 0.43rem;
   letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 .release-header {

@@ -54,3 +54,11 @@ test("ships the current runtime assets without retired responder resources", asy
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.ok((await stat(new URL("../public/og-v2.png", import.meta.url))).size > 100_000);
 });
+
+test("release-note corner label follows the current version dynamically", async () => {
+  const component = await readFile(new URL("../components/lexi/ReleaseNotes.tsx", import.meta.url), "utf8");
+  const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(component, /Visual changelog \/ \{LEXI_BUILD_DISPLAY\}/);
+  assert.match(component, /import \{ LEXI_BUILD_DISPLAY \}/);
+  assert.doesNotMatch(styles, /VISUAL CHANGELOG \/ DV\d+/i);
+});
