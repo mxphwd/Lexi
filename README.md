@@ -35,4 +35,5 @@ The development verification checks types, data integrity, release metadata, the
 - [Release history](docs/RELEASES.md)
 
 Model tests and benchmarks are conducted and provided using **GPT-5.6 Terra and Sol** models on **ChatGPT Codex**.
+> Which model is used for model tests and benchmark really depends on how much credits I have left at the moment.
 > Ironic scene where Lexi, an attempt to make zero-AI LLM, is tested using an AI LLM. Let's forget about this and save my precious time.
