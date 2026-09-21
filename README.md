@@ -4,7 +4,6 @@ Lexi (from “Lexicon”) is Alphaine’s experimental, deterministic, rule-base
 
 Current development version: **DV15**. Current technical build: **260921-DV15**, dated 21 September 2026. **Not a release candidate.** Public-use accuracy and confidence calibration have not been established.
 
-The current build adds 550 Basic and 200 Advanced lazy data packs: 120,000 source-attested propositions selected through global alias, entity, and relation indexes. Packs remain separate from the core algorithm and are loaded into bounded request-local overlays only when a compatible question needs them.
 
 ## Run locally
 
