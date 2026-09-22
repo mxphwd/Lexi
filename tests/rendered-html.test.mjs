@@ -97,6 +97,8 @@ test("uses a deterministic runtime preparation gate before interaction", async (
   assert.match(component, /SPLASH_TEST_COMMAND/);
   assert.match(component, /showDeveloperSplash/);
   assert.match(component, /MAX_SPLASH_TEST_SECONDS/);
+  assert.match(component, /SPLASH_THRESHOLD_MS = 1500/);
+  assert.match(component, /if \(!splashWasShown\)/);
   assert.match(component, /brand-word lexi-splash-brand reenter/);
   assert.match(component, /brandEntrance && !splashVisible/);
   assert.doesNotMatch(styles, /@keyframes splash-brand-enter/);

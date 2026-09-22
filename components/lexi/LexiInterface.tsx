@@ -22,6 +22,7 @@ const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
 const SPLASH_TEST_COMMAND = /^splash\s+-([0-9]+(?:\.[0-9]+)?)$/i;
 const MAX_SPLASH_TEST_SECONDS = 300;
+const SPLASH_THRESHOLD_MS = 1500;
 
 type LexiSessionHandle = BrowserSession;
 
@@ -53,19 +54,25 @@ export function LexiInterface() {
   useEffect(() => {
     let canceled = false;
     let handoffTimer: number | null = null;
+    let preparationThresholdTimer: number | null = null;
+    let splashWasShown = false;
+
+    preparationThresholdTimer = window.setTimeout(() => {
+      if (canceled) return;
+      splashWasShown = true;
+      setReadiness("preparing");
+    }, SPLASH_THRESHOLD_MS);
+
     void import("@/lib/lexi/client")
       .then(async ({ prepareLexiRuntime }) => {
         const outcome = await prepareLexiRuntime();
         if (canceled) return;
-        if (!outcome.needed) {
+        if (preparationThresholdTimer) clearTimeout(preparationThresholdTimer);
+        preparationThresholdTimer = null;
+        if (!splashWasShown) {
           setReadiness("ready");
           return;
         }
-        setReadiness("preparing");
-        // Keep the deterministic splash on-screen long enough to register even
-        // when a cold Worker took longer than the initial readiness window.
-        await new Promise<void>((resolve) => window.setTimeout(resolve, 500));
-        if (canceled) return;
         setReadiness("handoff");
         handoffTimer = window.setTimeout(() => {
           if (!canceled) setReadiness("ready");
@@ -74,7 +81,14 @@ export function LexiInterface() {
       .catch(() => {
         // A failed preflight must never make Lexi unavailable; normal request
         // error handling remains the source of a user-visible service error.
-        if (!canceled) setReadiness("ready");
+        if (preparationThresholdTimer) clearTimeout(preparationThresholdTimer);
+        preparationThresholdTimer = null;
+        if (!canceled && splashWasShown) {
+          setReadiness("handoff");
+          handoffTimer = window.setTimeout(() => {
+            if (!canceled) setReadiness("ready");
+          }, 460);
+        } else if (!canceled) setReadiness("ready");
       });
 
     brandTimerRef.current = setTimeout(() => {
@@ -90,6 +104,7 @@ export function LexiInterface() {
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
       if (developerSplashTimerRef.current) clearTimeout(developerSplashTimerRef.current);
       if (developerSplashHandoffTimerRef.current) clearTimeout(developerSplashHandoffTimerRef.current);
+      if (preparationThresholdTimer) clearTimeout(preparationThresholdTimer);
       if (handoffTimer) clearTimeout(handoffTimer);
       canceled = true;
     };
