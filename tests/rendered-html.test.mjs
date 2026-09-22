@@ -32,6 +32,7 @@ test("server-renders the finished Lexi surface", async () => {
   assert.equal((html.match(/<strong>Alphaine<\/strong>/g) ?? []).length, 2);
   assert.match(html, /brand-word reenter/);
   assert.match(html, /class="stop-light"/);
+  assert.match(html, /lexi-readiness-checking/);
   assert.doesNotMatch(html, /Hello, I’m Lexi\./);
   assert.match(html, /Currently, languages apart from English are unsupported\./);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
@@ -74,6 +75,7 @@ test("keeps Lexi's state and entrance motion available", async () => {
     "reply-card-enter",
     "letter-enter",
     "release-panel-enter",
+    "splash-brand-enter",
   ]) {
     assert.match(styles, new RegExp(`@keyframes ${motionName}\\b`));
   }
@@ -82,4 +84,18 @@ test("keeps Lexi's state and entrance motion available", async () => {
   assert.match(styles, /\.state-stopping \.stop-light[\s\S]*?animation: stop-light-spread/);
   assert.match(styles, /\.reply-card[\s\S]*?animation: reply-card-enter/);
   assert.doesNotMatch(styles, /\*::before,[\s\S]*?animation-duration:\s*1ms\s*!important/);
+});
+
+test("uses a deterministic runtime preparation gate before interaction", async () => {
+  const component = await readFile(new URL("../components/lexi/LexiInterface.tsx", import.meta.url), "utf8");
+  const client = await readFile(new URL("../lib/lexi/client.ts", import.meta.url), "utf8");
+  const handler = await readFile(new URL("../worker/dv12-handler.ts", import.meta.url), "utf8");
+
+  assert.match(component, /prepareLexiRuntime/);
+  assert.match(component, /lexi-splash/);
+  assert.match(component, /readiness !== "ready"/);
+  assert.match(client, /preparationNeeded/);
+  assert.match(handler, /prepareDv12Runtime/);
+  assert.match(handler, /DV12_CATALOG/);
+  assert.match(handler, /DV15_CATALOG/);
 });

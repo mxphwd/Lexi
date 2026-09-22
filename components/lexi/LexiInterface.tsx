@@ -12,6 +12,7 @@ import {
 import { hasUnsupportedWritingSystem } from "@/modules/search/tokenize";
 
 type ComposerState = "idle" | "thinking" | "stopping";
+type ReadinessState = "checking" | "preparing" | "handoff" | "ready";
 
 const DOCUMENTATION_QUOTE =
   "Lexi model, including Lexi Language is Alphaine’s approach to the next step of language models, challenging traditional AI-based LLM(or Large Language Model)s. Alphaine aims to create mechanical thinking language model using the fundamentals of linguistics that delivers exactly how it knows about it, without hallucination.";
@@ -31,6 +32,7 @@ export function LexiInterface() {
   const [showVersion, setShowVersion] = useState(false);
   const [releaseNotesOpen, setReleaseNotesOpen] = useState(false);
   const [brandEntrance, setBrandEntrance] = useState(true);
+  const [readiness, setReadiness] = useState<ReadinessState>("checking");
   const timerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
   const stopTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
   const brandTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
@@ -40,9 +42,36 @@ export function LexiInterface() {
   const sessionLoadRef = useRef<Promise<LexiSessionHandle> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
-  const canSend = input.trim().length > 0 && !unsupported && composerState === "idle";
+  const canSend = input.trim().length > 0 && !unsupported && composerState === "idle" && readiness === "ready";
 
   useEffect(() => {
+    let canceled = false;
+    let handoffTimer: number | null = null;
+    const startedAt = performance.now();
+
+    void import("@/lib/lexi/client")
+      .then(async ({ prepareLexiRuntime }) => {
+        const outcome = await prepareLexiRuntime();
+        if (canceled) return;
+        if (!outcome.needed) {
+          setReadiness("ready");
+          return;
+        }
+        setReadiness("preparing");
+        const remaining = Math.max(0, 500 - (performance.now() - startedAt));
+        if (remaining) await new Promise<void>((resolve) => window.setTimeout(resolve, remaining));
+        if (canceled) return;
+        setReadiness("handoff");
+        handoffTimer = window.setTimeout(() => {
+          if (!canceled) setReadiness("ready");
+        }, 460);
+      })
+      .catch(() => {
+        // A failed preflight must never make Lexi unavailable; normal request
+        // error handling remains the source of a user-visible service error.
+        if (!canceled) setReadiness("ready");
+      });
+
     brandTimerRef.current = setTimeout(() => {
       setBrandEntrance(false);
       brandTimerRef.current = null;
@@ -54,6 +83,8 @@ export function LexiInterface() {
       if (timerRef.current) clearTimeout(timerRef.current);
       if (stopTimerRef.current) clearTimeout(stopTimerRef.current);
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
+      if (handoffTimer) clearTimeout(handoffTimer);
+      canceled = true;
     };
   }, []);
 
@@ -166,7 +197,7 @@ export function LexiInterface() {
         : "idle";
 
   return (
-    <main className="lexi-page">
+    <main className={`lexi-page lexi-readiness-${readiness}`} aria-busy={readiness !== "ready"}>
       <section className={`lexi-stage ${reply ? "has-reply" : ""}`} aria-label="Talk to Lexi">
         <form className="composer-form" onSubmit={submitMessage}>
           <div className={`composer-frame state-${shellState}`}>
@@ -192,6 +223,7 @@ export function LexiInterface() {
                 placeholder="Talk to Lexi..."
                 aria-label="Message Lexi"
                 aria-describedby={unsupported ? "language-warning" : undefined}
+                disabled={readiness !== "ready"}
                 onChange={(event) => {
                   setInput(event.target.value);
                   requestAnimationFrame(resizeTextarea);
@@ -288,6 +320,14 @@ export function LexiInterface() {
         open={releaseNotesOpen}
         onClose={() => setReleaseNotesOpen(false)}
       />
+
+      {readiness === "preparing" || readiness === "handoff" ? (
+        <div className={`lexi-splash ${readiness === "handoff" ? "is-handing-off" : ""}`} role="status" aria-label="Preparing Lexi">
+          <span className="lexi-splash-brand" aria-label="Alphaine trademark">
+            <span>Alphaine</span><sup>TM</sup>
+          </span>
+        </div>
+      ) : null}
 
       <footer className="brand-footer">
         <div className={`brand-footer-inner ${showVersion ? "shows-version" : ""}`}>

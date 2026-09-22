@@ -54,6 +54,44 @@ a {
   animation: page-enter 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.lexi-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: var(--industrial-white);
+  color: rgba(46, 51, 46, 0.46);
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 460ms cubic-bezier(0.16, 1, 0.3, 1), visibility 460ms step-end;
+}
+
+.lexi-splash.is-handing-off {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lexi-splash-brand {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 1.16rem;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  animation: splash-brand-enter 480ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.lexi-splash-brand sup {
+  margin-left: 0.18em;
+  font-family: var(--mono);
+  font-size: 0.34em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  vertical-align: super;
+}
+
 .lexi-stage {
   position: relative;
   display: flex;
@@ -1233,6 +1271,11 @@ a {
 @keyframes page-enter {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes splash-brand-enter {
+  from { opacity: 0; filter: blur(3px); transform: translateY(5px); }
+  to { opacity: 1; filter: blur(0); transform: translateY(0); }
 }
 
 @keyframes composer-stage-enter {

@@ -6,6 +6,42 @@ import { validateHttpRequest, validateHttpResponse } from '../modules/dv12/runti
 
 export type ClientState=Pick<State,'revision'|'nextTurn'|'memories'|'topics'|'answerEntities'> & {previousInput?:string;previousSenseId?:string};
 let active=0;
+let preparedRuntime=false;
+let preparation:Promise<void>|undefined;
+
+/**
+ * Loads only the bounded, shared runtime foundation. It deliberately does not
+ * choose or import a subject data pack: those remain request-local and are
+ * selected from the user's actual query.
+ */
+export async function prepareDv12Runtime(assets:AssetFetcher,origin:string):Promise<Response>{
+  const preparationNeeded=!preparedRuntime;
+  if(!preparation){
+    preparation=(async()=>{
+      const [{coreStore},{assetJson},{DV12_CATALOG},{DV15_CATALOG}]=await Promise.all([
+        import('../modules/dv12/store'),
+        import('./dv12-assets'),
+        import('./dv12-integrity'),
+        import('./dv15-integrity'),
+      ]);
+      coreStore();
+      await Promise.all([
+        assetJson(assets,origin,DV12_CATALOG),
+        assetJson(assets,origin,DV15_CATALOG),
+      ]);
+      preparedRuntime=true;
+    })().catch(error=>{preparation=undefined;throw error;});
+  }
+  try{
+    await preparation;
+    return Response.json({version:15,ready:true,preparationNeeded},{headers:{'cache-control':'no-store'}});
+  }catch(error){
+    const message=error instanceof Error?error.message:'PREPARATION_ERROR';
+    const code=/^[A-Z0-9_:.-]+$/.test(message)?message:'PREPARATION_ERROR';
+    return Response.json({version:15,error:code},{status:503,headers:{'cache-control':'no-store'}});
+  }
+}
+
 function stateFromClient(value:unknown):State{
   const state=emptyState();if(value===undefined||value===null)return state;
   if(typeof value!=='object')throw new Error('INVALID_SESSION');

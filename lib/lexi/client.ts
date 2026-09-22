@@ -3,6 +3,27 @@ import type { ClientState } from '../../worker/dv12-handler';
 import {backendEndpoint} from './backend';
 import {responseJson} from './transport';
 import {validateHttpResponse} from '../../modules/dv12/runtime-validation';
+
+export type RuntimePreparation={needed:boolean;ready:boolean};
+
+function warmEndpoint(){
+  const endpoint=backendEndpoint();
+  return endpoint.includes('?')?endpoint+'&prepare=1':endpoint+'?prepare=1';
+}
+
+/**
+ * Prepares the deterministic runtime before the first visible prompt. The
+ * server decides whether its core store and pack indexes were cold; the
+ * browser merely uses that decision to choose whether a splash is warranted.
+ */
+export async function prepareLexiRuntime(signal?:AbortSignal):Promise<RuntimePreparation>{
+  const response=await fetch(warmEndpoint(),{method:'GET',headers:{accept:'application/json'},cache:'no-store',signal});
+  if(!response.ok)throw new Error('Lexi preparation is unavailable ('+response.status+').');
+  const payload=await response.json() as {version?:unknown;ready?:unknown;preparationNeeded?:unknown};
+  if(payload.version!==15||payload.ready!==true||typeof payload.preparationNeeded!=='boolean')throw new Error('Invalid Lexi preparation response.');
+  return {needed:payload.preparationNeeded,ready:true};
+}
+
 export type ClientPrepared={reply:LexiReply;state:ClientState;revision:number;ticket:number};
 export class BrowserSession{
   private state:ClientState={revision:0,nextTurn:1,memories:[],topics:[],answerEntities:[]};

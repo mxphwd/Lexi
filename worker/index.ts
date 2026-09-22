@@ -1,7 +1,7 @@
 /** Cloudflare Worker entry point for Lexi Language. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
-import { handleDv12 } from "./dv12-handler";
+import { handleDv12, prepareDv12Runtime } from "./dv12-handler";
 
 interface Fetcher {
   fetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
@@ -34,6 +34,7 @@ const worker = {
     const url = new URL(request.url);
     if (url.pathname === "/api/lexi/respond") {
       const assets = env?.ASSETS ?? { fetch: (input: RequestInfo | URL, init?: RequestInit) => fetch(input, init) };
+      if (request.method === "GET") return prepareDv12Runtime(assets, request.url);
       return handleDv12(request, assets);
     }
 
