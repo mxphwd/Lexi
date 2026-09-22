@@ -75,7 +75,6 @@ test("keeps Lexi's state and entrance motion available", async () => {
     "reply-card-enter",
     "letter-enter",
     "release-panel-enter",
-    "splash-brand-enter",
   ]) {
     assert.match(styles, new RegExp(`@keyframes ${motionName}\\b`));
   }
@@ -90,6 +89,7 @@ test("uses a deterministic runtime preparation gate before interaction", async (
   const component = await readFile(new URL("../components/lexi/LexiInterface.tsx", import.meta.url), "utf8");
   const client = await readFile(new URL("../lib/lexi/client.ts", import.meta.url), "utf8");
   const handler = await readFile(new URL("../worker/dv12-handler.ts", import.meta.url), "utf8");
+  const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 
   assert.match(component, /prepareLexiRuntime/);
   assert.match(component, /lexi-splash/);
@@ -97,6 +97,9 @@ test("uses a deterministic runtime preparation gate before interaction", async (
   assert.match(component, /SPLASH_TEST_COMMAND/);
   assert.match(component, /showDeveloperSplash/);
   assert.match(component, /MAX_SPLASH_TEST_SECONDS/);
+  assert.match(component, /brand-word lexi-splash-brand reenter/);
+  assert.match(component, /brandEntrance && !splashVisible/);
+  assert.doesNotMatch(styles, /@keyframes splash-brand-enter/);
   assert.match(client, /preparationNeeded/);
   assert.match(handler, /prepareDv12Runtime/);
   assert.match(handler, /DV12_CATALOG/);

@@ -362,8 +362,11 @@ export function LexiInterface() {
 
       {splashVisible ? (
         <div className={`lexi-splash ${splashHandoff ? "is-handing-off" : ""}`} role="status" aria-label="Preparing Lexi">
-          <span className="lexi-splash-brand" aria-label="Alphaine trademark">
-            <span>Alphaine</span><sup>TM</sup>
+          <span className="brand-word lexi-splash-brand reenter" aria-label="Alphaine trademark">
+            {BRAND_LETTERS.map((letter, index) => (
+              <span key={`splash-${letter}-${index}`} style={{ "--letter": index } as React.CSSProperties}>{letter}</span>
+            ))}
+            <sup>TM</sup>
           </span>
         </div>
       ) : null}
@@ -389,7 +392,7 @@ export function LexiInterface() {
                 <sup className="version-extension">{LEXI_EXTENSION_BADGE}</sup>
               </span>
             ) : (
-              <span className={`brand-word ${brandEntrance ? "reenter" : ""}`} aria-label="Alphaine trademark">
+              <span className={`brand-word ${brandEntrance && !splashVisible ? "reenter" : ""}`} aria-label="Alphaine trademark">
                 {BRAND_LETTERS.map((letter, index) => (
                   <span key={`${letter}-${index}`} style={{ "--letter": index } as React.CSSProperties}>{letter}</span>
                 ))}
