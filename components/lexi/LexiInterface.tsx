@@ -13,12 +13,15 @@ import { hasUnsupportedWritingSystem } from "@/modules/search/tokenize";
 
 type ComposerState = "idle" | "thinking" | "stopping";
 type ReadinessState = "checking" | "preparing" | "handoff" | "ready";
+type DeveloperSplashState = "off" | "visible" | "handoff";
 
 const DOCUMENTATION_QUOTE =
   "Lexi model, including Lexi Language is Alphaine’s approach to the next step of language models, challenging traditional AI-based LLM(or Large Language Model)s. Alphaine aims to create mechanical thinking language model using the fundamentals of linguistics that delivers exactly how it knows about it, without hallucination.";
 
 const GITHUB_URL = "https://github.com/mxphwd";
 const BRAND_LETTERS = [..."Alphaine"];
+const SPLASH_TEST_COMMAND = /^splash\s+-([0-9]+(?:\.[0-9]+)?)$/i;
+const MAX_SPLASH_TEST_SECONDS = 300;
 
 type LexiSessionHandle = BrowserSession;
 
@@ -33,16 +36,19 @@ export function LexiInterface() {
   const [releaseNotesOpen, setReleaseNotesOpen] = useState(false);
   const [brandEntrance, setBrandEntrance] = useState(true);
   const [readiness, setReadiness] = useState<ReadinessState>("checking");
+  const [developerSplash, setDeveloperSplash] = useState<DeveloperSplashState>("off");
   const timerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
   const stopTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
   const brandTimerRef = useRef<ReturnType<typeof setTimeout> | number | null>(null);
+  const developerSplashTimerRef = useRef<number | null>(null);
+  const developerSplashHandoffTimerRef = useRef<number | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const requestRef = useRef(0);
   const sessionRef = useRef<LexiSessionHandle | null>(null);
   const sessionLoadRef = useRef<Promise<LexiSessionHandle> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const unsupported = hasUnsupportedWritingSystem(input);
-  const canSend = input.trim().length > 0 && !unsupported && composerState === "idle" && readiness === "ready";
+  const canSend = input.trim().length > 0 && !unsupported && composerState === "idle" && readiness === "ready" && developerSplash === "off";
 
   useEffect(() => {
     let canceled = false;
@@ -82,6 +88,8 @@ export function LexiInterface() {
       if (timerRef.current) clearTimeout(timerRef.current);
       if (stopTimerRef.current) clearTimeout(stopTimerRef.current);
       if (brandTimerRef.current) clearTimeout(brandTimerRef.current);
+      if (developerSplashTimerRef.current) clearTimeout(developerSplashTimerRef.current);
+      if (developerSplashHandoffTimerRef.current) clearTimeout(developerSplashHandoffTimerRef.current);
       if (handoffTimer) clearTimeout(handoffTimer);
       canceled = true;
     };
@@ -110,11 +118,41 @@ export function LexiInterface() {
     return sessionLoadRef.current;
   }
 
+  function splashTestSeconds(prompt: string): number | null {
+    const match = SPLASH_TEST_COMMAND.exec(prompt);
+    if (!match) return null;
+    const seconds = Number(match[1]);
+    return Number.isFinite(seconds) && seconds > 0 && seconds <= MAX_SPLASH_TEST_SECONDS ? seconds : null;
+  }
+
+  function showDeveloperSplash(seconds: number) {
+    if (developerSplashTimerRef.current) clearTimeout(developerSplashTimerRef.current);
+    if (developerSplashHandoffTimerRef.current) clearTimeout(developerSplashHandoffTimerRef.current);
+    setDeveloperSplash("visible");
+    developerSplashTimerRef.current = window.setTimeout(() => {
+      setDeveloperSplash("handoff");
+      developerSplashHandoffTimerRef.current = window.setTimeout(() => {
+        setDeveloperSplash("off");
+        developerSplashHandoffTimerRef.current = null;
+      }, 460);
+      developerSplashTimerRef.current = null;
+    }, seconds * 1000);
+  }
+
   function submitMessage(event?: FormEvent) {
     event?.preventDefault();
     if (!canSend) return;
 
     const prompt = input.trim();
+    const testSeconds = splashTestSeconds(prompt);
+    if (testSeconds !== null) {
+      setInput("");
+      setReply(null);
+      setAboutOpen(false);
+      requestAnimationFrame(resizeTextarea);
+      showDeveloperSplash(testSeconds);
+      return;
+    }
     setLastPrompt(prompt);
     const requestId = requestRef.current + 1;
     requestRef.current = requestId;
@@ -194,6 +232,8 @@ export function LexiInterface() {
       : composerState === "stopping"
         ? "stopping"
         : "idle";
+  const splashVisible = readiness === "preparing" || readiness === "handoff" || developerSplash !== "off";
+  const splashHandoff = readiness === "handoff" || developerSplash === "handoff";
 
   return (
     <main className={`lexi-page lexi-readiness-${readiness}`} aria-busy={readiness !== "ready"}>
@@ -320,8 +360,8 @@ export function LexiInterface() {
         onClose={() => setReleaseNotesOpen(false)}
       />
 
-      {readiness === "preparing" || readiness === "handoff" ? (
-        <div className={`lexi-splash ${readiness === "handoff" ? "is-handing-off" : ""}`} role="status" aria-label="Preparing Lexi">
+      {splashVisible ? (
+        <div className={`lexi-splash ${splashHandoff ? "is-handing-off" : ""}`} role="status" aria-label="Preparing Lexi">
           <span className="lexi-splash-brand" aria-label="Alphaine trademark">
             <span>Alphaine</span><sup>TM</sup>
           </span>

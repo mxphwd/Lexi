@@ -94,6 +94,9 @@ test("uses a deterministic runtime preparation gate before interaction", async (
   assert.match(component, /prepareLexiRuntime/);
   assert.match(component, /lexi-splash/);
   assert.match(component, /readiness !== "ready"/);
+  assert.match(component, /SPLASH_TEST_COMMAND/);
+  assert.match(component, /showDeveloperSplash/);
+  assert.match(component, /MAX_SPLASH_TEST_SECONDS/);
   assert.match(client, /preparationNeeded/);
   assert.match(handler, /prepareDv12Runtime/);
   assert.match(handler, /DV12_CATALOG/);
