@@ -47,8 +47,6 @@ export function LexiInterface() {
   useEffect(() => {
     let canceled = false;
     let handoffTimer: number | null = null;
-    const startedAt = performance.now();
-
     void import("@/lib/lexi/client")
       .then(async ({ prepareLexiRuntime }) => {
         const outcome = await prepareLexiRuntime();
@@ -58,8 +56,9 @@ export function LexiInterface() {
           return;
         }
         setReadiness("preparing");
-        const remaining = Math.max(0, 500 - (performance.now() - startedAt));
-        if (remaining) await new Promise<void>((resolve) => window.setTimeout(resolve, remaining));
+        // Keep the deterministic splash on-screen long enough to register even
+        // when a cold Worker took longer than the initial readiness window.
+        await new Promise<void>((resolve) => window.setTimeout(resolve, 500));
         if (canceled) return;
         setReadiness("handoff");
         handoffTimer = window.setTimeout(() => {
