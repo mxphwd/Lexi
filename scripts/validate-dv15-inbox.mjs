@@ -6,6 +6,8 @@ import { validateDataPack } from '../modules/dv15/validator.ts';
 const root = process.cwd();
 const inbox = path.resolve(process.argv[2] ?? 'data/dv15/inbox');
 const reportPath = path.join(root, 'artifacts/dv15-inbox-validation.json');
+const manifestPath = path.join(root, 'data/dv15/pack-manifest.json');
+const publishedIds = new Set(fs.existsSync(manifestPath) ? (JSON.parse(fs.readFileSync(manifestPath, 'utf8')).packs ?? []).map((pack) => pack.id) : []);
 const files = fs.existsSync(inbox) ? fs.readdirSync(inbox, { recursive: true }).filter((name) => String(name).endsWith('.json') && path.basename(String(name)) !== 'schema.json').map((name) => path.join(inbox, String(name))).sort() : [];
 const packs = [];
 const seen = new Map();
@@ -14,6 +16,7 @@ for (const file of files) {
   try {
     const bytes = fs.readFileSync(file);
     const pack = validateDataPack(JSON.parse(bytes));
+    if (publishedIds.has(pack.manifest.id)) throw new Error(`DV15_INBOX_PUBLISHED_ID_COLLISION:${pack.manifest.id}`);
     for (const id of [...pack.relations.map((x) => `relation:${x.id}`), ...pack.entities.map((x) => `entity:${x.id}`), ...pack.facts.map((x) => `fact:${x.id}`)]) {
       const previous = seen.get(id);
       if (previous) throw new Error(`DV15_INBOX_DUPLICATE_ID:${id}:${previous}`);
