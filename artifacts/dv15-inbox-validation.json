@@ -1,0 +1,255 @@
+{
+  "schema": "lexi.dv15.inbox.v1",
+  "generatedAt": "2026-09-28T10:34:09.815Z",
+  "inbox": "data/dv15/inbox",
+  "files": [
+    {
+      "file": "data/dv15/inbox/advanced/accounting/004.json",
+      "id": "alphaine.lexi.dv15.advanced.accounting.004",
+      "tier": "advanced",
+      "category": "accounting",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "7af0d8b69e552a766dd55628af18987de2c9e12e8aea954cbcf2dddd85ed3282"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/architecture/015.json",
+      "id": "alphaine.lexi.dv15.advanced.architecture.015",
+      "tier": "advanced",
+      "category": "architecture",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "0010744fd5ab3a124e26830e757b16c761bab62c65e909a24414cbbdd8050516"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/biology/009.json",
+      "id": "alphaine.lexi.dv15.advanced.biology.009",
+      "tier": "advanced",
+      "category": "biology",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "45e90d87fd367b87b56290130dbf03d71afe6ed7b11f694142e146b6cc57a8a5"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/chemistry/010.json",
+      "id": "alphaine.lexi.dv15.advanced.chemistry.010",
+      "tier": "advanced",
+      "category": "chemistry",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "a247b033de3f225c922fa08f02e7e6df6088d8dc699c4feb1701e505749bbe4f"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/climate-science/014.json",
+      "id": "alphaine.lexi.dv15.advanced.climate-science.014",
+      "tier": "advanced",
+      "category": "climate-science",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "5c6e04f4064d95996c7d36ce8fc62ea7036c3d027e4113eaea3b000d51ec0da2"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/cybersecurity/006.json",
+      "id": "alphaine.lexi.dv15.advanced.cybersecurity.006",
+      "tier": "advanced",
+      "category": "cybersecurity",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "cbcc28247ca2a21d0515e62935d1625559cc6f8a2b89c5c8abe387b074527a99"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/data-science/007.json",
+      "id": "alphaine.lexi.dv15.advanced.data-science.007",
+      "tier": "advanced",
+      "category": "data-science",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "04d57b5da0f2ec2165c3bcdba4ed45f3398f6b5616897f91ef81bd51f02661d1"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/economics/011.json",
+      "id": "alphaine.lexi.dv15.advanced.economics.011",
+      "tier": "advanced",
+      "category": "economics",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "25341c7035df0df1b3edfac7b1b9dcf50b8ae8234feee1664b5685c1cacbeaab"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/education/013.json",
+      "id": "alphaine.lexi.dv15.advanced.education.013",
+      "tier": "advanced",
+      "category": "education",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "ee378f12997ee16fa474c4175bda25df6a215ee5fac1c288ff431a9cdcae34e2"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/engineering/008.json",
+      "id": "alphaine.lexi.dv15.advanced.engineering.008",
+      "tier": "advanced",
+      "category": "engineering",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "db1278c511e007c8d2b70c865f276b7820e532c48a787179870123ea7f8136d2"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/finance/003.json",
+      "id": "alphaine.lexi.dv15.advanced.finance.003",
+      "tier": "advanced",
+      "category": "finance",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "849447a11e2530fa31a8716fe4313a2031c0fd4de3409c065869b0a7c18a3d7d"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/law/002.json",
+      "id": "alphaine.lexi.dv15.advanced.law.002",
+      "tier": "advanced",
+      "category": "law",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "0af61e36fdbd2e66bb2c40a529f0962c2d9fd9f854226933a3d37901abd282d0"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/medicine/001.json",
+      "id": "alphaine.lexi.dv15.advanced.medicine.001",
+      "tier": "advanced",
+      "category": "medicine",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "8875889c7886373dd25d58db06f89b60f061f88f1a3b9654ed597044499f0119"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/operations/012.json",
+      "id": "alphaine.lexi.dv15.advanced.operations.012",
+      "tier": "advanced",
+      "category": "operations",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "a834949a13ade836a961ddcd497b8379538b60de8d47b698fc7688c5e71dff06"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/psychology/016.json",
+      "id": "alphaine.lexi.dv15.advanced.psychology.016",
+      "tier": "advanced",
+      "category": "psychology",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "3c98aeb1f016c8a11d40e1f009ef4a95dfed8fcbd283e7a2d3e43d7fcb25cbac"
+    },
+    {
+      "file": "data/dv15/inbox/advanced/software-engineering/005.json",
+      "id": "alphaine.lexi.dv15.advanced.software-engineering.005",
+      "tier": "advanced",
+      "category": "software-engineering",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "0b0218450e33c2291003b4815fe3e9fe83ab146c575ec654eb86dc0a183da13b"
+    },
+    {
+      "file": "data/dv15/inbox/basic/civic-literacy/005.json",
+      "id": "alphaine.lexi.dv15.basic.civic-literacy.005",
+      "tier": "basic",
+      "category": "civic-literacy",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "4675334c5169c5361b2ef49c95b059494f294bb4ec6a35df07f62a2c1f6bcfaa"
+    },
+    {
+      "file": "data/dv15/inbox/basic/communication-basics/008.json",
+      "id": "alphaine.lexi.dv15.basic.communication-basics.008",
+      "tier": "basic",
+      "category": "communication-basics",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "29ae49af62e453dc87792a1fb0366eb67f56eddc9fa5deccf3d6d2b9646dba65"
+    },
+    {
+      "file": "data/dv15/inbox/basic/digital-literacy/002.json",
+      "id": "alphaine.lexi.dv15.basic.digital-literacy.002",
+      "tier": "basic",
+      "category": "digital-literacy",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "952c4edfa9e35b08df3283fcf2cdcb17ffb6da637ca604f88aa217479c32f603"
+    },
+    {
+      "file": "data/dv15/inbox/basic/health-literacy/004.json",
+      "id": "alphaine.lexi.dv15.basic.health-literacy.004",
+      "tier": "basic",
+      "category": "health-literacy",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "372176bbf0070d2301a43d2191b53c192dbf223ba649a3587d32d726991a4258"
+    },
+    {
+      "file": "data/dv15/inbox/basic/personal-finance/003.json",
+      "id": "alphaine.lexi.dv15.basic.personal-finance.003",
+      "tier": "basic",
+      "category": "personal-finance",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "5c01834a8b8ff4f17b0d21ac36238983fda1be833ee860edb9329e670f700647"
+    },
+    {
+      "file": "data/dv15/inbox/basic/project-basics/007.json",
+      "id": "alphaine.lexi.dv15.basic.project-basics.007",
+      "tier": "basic",
+      "category": "project-basics",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "392ff1efa3c9c35a715c512316046af0fbe601d7e4e94cddfb164b4eabfd0c21"
+    },
+    {
+      "file": "data/dv15/inbox/basic/research-basics/006.json",
+      "id": "alphaine.lexi.dv15.basic.research-basics.006",
+      "tier": "basic",
+      "category": "research-basics",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "da975b5ff1792f96013f1c4cc7c8cafc4cb944551674b064a4372bed39998d52"
+    },
+    {
+      "file": "data/dv15/inbox/basic/workplace-basics/001.json",
+      "id": "alphaine.lexi.dv15.basic.workplace-basics.001",
+      "tier": "basic",
+      "category": "workplace-basics",
+      "propositions": 150,
+      "entities": 151,
+      "relations": 1,
+      "sha256": "af3beeb8dd79343a7b930ceed2628941980f2ee7ddcb323ff62aaf6635bb26bb"
+    }
+  ],
+  "errors": [],
+  "totals": {
+    "files": 24,
+    "propositions": 3600,
+    "entities": 3624,
+    "relations": 24
+  },
+  "passed": true
+}
