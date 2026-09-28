@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lexi DV15 staged DataPack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest", "relations", "entities", "facts"],
+  "properties": {
+    "manifest": {"type": "object", "additionalProperties": false, "required": ["id", "version", "tier", "category", "runtime", "sourceSnapshot", "propositionCount", "entityCount", "relationCount"]},
+    "relations": {"type": "array", "items": {"type": "object"}},
+    "entities": {"type": "array", "items": {"type": "object"}},
+    "facts": {"type": "array", "minItems": 100, "maxItems": 256, "items": {"type": "object"}}
+  }
+}

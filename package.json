@@ -40,10 +40,12 @@
     "benchmark:dv14:performance": "node --import tsx scripts/run-dv12-performance.mjs --dv14",
     "verify:dv14": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv14:validate && npm run build && npm run budget:dv14 && npm run test:unit && npm run benchmark:dv14 && npm run benchmark:dv14:performance",
     "dv15:build-packs": "node scripts/build-dv15-data-packs.mjs",
+    "dv15:validate-inbox": "node --import tsx scripts/validate-dv15-inbox.mjs",
     "dv15:validate": "node --import tsx scripts/validate-dv15-release.mjs",
     "test:dv15": "node --import tsx --test tests/dv15.test.ts",
     "budget:dv15": "node scripts/check-dv12-budget.mjs --dv15",
     "benchmark:dv15:performance": "node --import tsx scripts/run-dv12-performance.mjs --dv15",
+    "benchmark:dv15:capability": "node --import tsx scripts/run-dv15-capability-benchmark.mjs",
     "verify:dv15": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv15:validate && npm run build && npm run budget:dv15 && npm run test:unit && npm run benchmark:dv15:performance"
   },
   "dependencies": {
