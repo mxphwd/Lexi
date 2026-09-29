@@ -44,9 +44,15 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
-    server: isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
-      : undefined,
+    // The DV15 inbox is a local, cold data volume. It can contain many
+    // thousands of source packs and must never turn a UI edit into a full
+    // filesystem scan. Runtime assets are loaded through the Worker instead.
+    server: {
+      watch: {
+        ignored: ['**/data/dv15/inbox/**', '**/data/dv15/compact/**'],
+        ...(isCodexSeatbeltSandbox ? { useFsEvents: false, usePolling: true } : {}),
+      },
+    },
     plugins: [
       vinext(),
       sites(),

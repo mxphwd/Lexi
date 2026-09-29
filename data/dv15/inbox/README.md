@@ -1,6 +1,6 @@
 # DV15 package inbox
 
-This directory is the handoff point for a separate Lexi data-generation chat. A generator may add unpacked `*.json` files under `basic/<category>/` or `advanced/<category>/`. The runtime never reads this directory directly: the main build validates the files, compiles them into gzip packs, and updates the catalog and shard indexes consumed by the Worker.
+This directory is the handoff point for a separate Lexi data-generation chat. A generator may add unpacked `*.json` files under `basic/<category>/` or `advanced/<category>/`. It is a local, cold source volume: it is ignored by Git, excluded from the development watcher, and never deployed. The runtime never reads this directory directly.
 
 ## What Lexi actually loads
 
@@ -44,7 +44,8 @@ Required quality rules:
 
 1. The generation chat writes packs only into this inbox, never into `public/dv15`, `worker/`, or runtime modules.
 2. Run `npm run dv15:validate-inbox`. It validates every staged pack, checks cross-pack ID collisions and manifest consistency, and emits a machine-readable report in `artifacts/dv15-inbox-validation.json`.
-3. The integration chat reviews the report, runs the pack compiler, and regenerates `public/dv15/catalog.json.gz`, pack files, indexes, `data/dv15/pack-manifest.json`, and `worker/dv15-integrity.ts` together.
-4. Run the DV15 validation and tests before committing. A pack is not live merely because it exists in this inbox.
+3. The integration chat reviews the report and runs `npm run dv15:compact-inbox`. The compact build discards entities and relations unused by every fact, removes redundant one-item provenance arrays, and emits gzip packs under the ignored `data/dv15/compact/` volume.
+4. Only reviewed compact packs are promoted into the bounded Worker catalog. That promotion regenerates `public/dv15/catalog.json.gz`, pack files, indexes, `data/dv15/pack-manifest.json`, and `worker/dv15-integrity.ts` together.
+5. Run the DV15 validation and tests before committing. A pack is not live merely because it exists in this inbox or compact volume.
 
 For linguistic or dialogue material, first convert each supported claim into typed entities and relations. Raw paragraphs are not a runtime package format; adding a new prose/context format would require a versioned compiler and executor contract rather than silently placing text beside the packs.

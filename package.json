@@ -41,6 +41,8 @@
     "verify:dv14": "npm run typecheck && npm run audit:cleanup && npm run dv12:validate && npm run dv14:validate && npm run build && npm run budget:dv14 && npm run test:unit && npm run benchmark:dv14 && npm run benchmark:dv14:performance",
     "dv15:build-packs": "node scripts/build-dv15-data-packs.mjs",
     "dv15:validate-inbox": "node --import tsx scripts/validate-dv15-inbox.mjs",
+    "dv15:compact-inbox": "node --import tsx scripts/compact-dv15-inbox.mjs --write",
+    "dv15:measure-storage": "node scripts/measure-dv15-storage.mjs",
     "dv15:validate": "node --import tsx scripts/validate-dv15-release.mjs",
     "test:dv15": "node --import tsx --test tests/dv15.test.ts",
     "budget:dv15": "node scripts/check-dv12-budget.mjs --dv15",
