@@ -22,7 +22,7 @@ Try “Which city is the capital of France?”, “What is 20 percent of 50?”,
 npm run verify:dv15
 ```
 
-The development verification checks types, data integrity, release metadata, the production build, delivery budgets, regressions and diagnostics. The RC gate intentionally fails until independent evidence, calibration and inherited critical requirements meet its thresholds.
+Lexi includes a built-in benchmarking module that allows developers to verify Lexi's answer capability and percentage of failure.
 
 - [How it works](docs/ARCHITECTURE.md)
 - [DV13 changes and limitations](docs/dv13/README.md)
@@ -32,6 +32,6 @@ The development verification checks types, data integrity, release metadata, the
 - [Evaluation and feedback review](data/dv13/evaluation/README.md)
 - [Release history](docs/RELEASES.md)
 
-Model tests and benchmarks are conducted and provided using **GPT-5.6 Terra and Sol** models on **ChatGPT Codex**.
+Model tests and benchmarks above are conducted and provided using **GPT-5.6 Terra and Sol** models on **ChatGPT Codex**.
 *(Which model is used for model tests and benchmark really depends on how much credits I have left at the moment.)*
 > Ironic scene where Lexi, an attempt to make zero-AI LLM, is tested using an AI LLM. Let's forget about this and save my precious time.
