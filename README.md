@@ -4,7 +4,7 @@
 
 Lexi (from “Lexicon”) is [Lexi Lab](about_lexilab.md)'s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
-Current development version is build version **DV15** or build number **260921-DV15**.
+Latest development version is build version **DV15** or build number **260921-DV15**.
 
 ## Run locally
 
@@ -34,5 +34,6 @@ Lexi includes a built-in benchmarking module that allows developers to verify Le
 - [Release history](docs/RELEASES.md)
 
 Model tests and benchmarks above are conducted and provided using **GPT-5.6 Terra and Sol** models on **ChatGPT Codex**.
-*(Which model is used for model tests and benchmark really depends on how much credits I have left at the moment.)*
-> Ironic scene where Lexi, an attempt to make zero-AI LLM, is tested using an AI LLM. Let's forget about this and save my precious time.
+*(Which model is used for model tests and benchmark really depends on how much credits I have left at the moment. I am an unpaid developer at the end of the day)*
+
+ILLIT <3
