@@ -1,10 +1,10 @@
+<mark>Lexi is officially discontinued. Thank you for all of your support! 🥹<mark>
+
 # Lexi
 
 Lexi (from “Lexicon”) is [Lexi Lab](about_lexilab.md)'s experimental, deterministic, rule-based language engine. It maps supported English into explicit operations, uses recorded evidence, and explains or declines an answer without generative AI at runtime.
 
 Current development version is build version **DV15** or build number **260921-DV15**.
-
-<span style="background-color: #FFFF00">Lexi is officially discontinued. Thank you for all of your support!</span>
 
 ## Run locally
 
