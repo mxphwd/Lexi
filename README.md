@@ -4,6 +4,7 @@ Lexi (from “Lexicon”) is [Lexi Lab](about_lexilab.md)'s experimental, determ
 
 Current development version is build version **DV15** or build number **260921-DV15**.
 
+<span style="background-color: #FFFF00">Lexi is officially discontinued. Thank you for all of your support!</span>
 
 ## Run locally
 
