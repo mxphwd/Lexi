@@ -1,4 +1,4 @@
-<mark>Lexi is officially discontinued. Thank you for all of your support! 🥹<mark>
+<mark>Lexi is officially discontinued. Thank you for all of your support!<mark>
 
 # Lexi
 
